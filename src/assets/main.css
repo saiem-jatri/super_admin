@@ -14,3 +14,26 @@ body{
 .menuSection{
     @apply pb-[4px] pt-[22px] w-full text-black leading-[16px] text-[10px] font-[500] block cursor-pointer text-[#676769]
 }
+
+.smallTableHead{
+    @apply leading-[20px] text-[12px] font-[400] text-primaryText text-left w-1/3
+}
+
+.smallTableInnerDiv{
+    @apply w-full flex justify-between py-[8px] pl-[8px] pr-[16px] mt-[12px] rounded-[4px]
+}
+
+.smallTableBody{
+    @apply leading-[20px] text-[14px] font-[500] text-primaryText text-center w-1/3
+}
+
+.smallTableGreenFooter{
+    @apply leading-[22px] text-[14px] font-[500] text-white w-1/3
+}
+.DashBoardTableHead{
+    @apply leading-[16px] text-[11px] font-[500] text-corporateAsh text-center
+}
+
+.DashBoardTableTd{
+    @apply leading-[20px] text-[14px] font-[400] text-primaryText text-center
+}

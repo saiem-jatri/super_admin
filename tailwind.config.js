@@ -8,10 +8,10 @@ module.exports = {
     extend: {
       colors: {
         corporate: '#F04935',
-        corporateLight: '#',
+        primaryText: '#151414',
         corporateBg: '#F7F7F7',
-        corporateGray: '#',
-        corporateBlack: '#',
+        corporateBorder: '#DBDBDB',
+        corporateAsh: '#8D8D8F',
         corporateGreen: '#',
         corporateYellow: '#',
       },
