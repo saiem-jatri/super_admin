@@ -117,46 +117,22 @@
           <div class="flex gap-x-[16px] justify-center items-center mt-[16px]">
             <div class="w-1/4 relative">
               <p class="text-primaryText leading-[24px] text-[16px] font-[500]">Print type</p>
-              <select name="" id="" class="w-full border border-[#DBDBDB] mt-[10px] rounded-[4px] px-2 py-2 focus:outline-none leading-[20px] text-[14px] font-[400]">
-                <option value="volvo" selected >Select print type</option>
-                <option value="saab" class="border-b border-dashed border-[#DBDBDB]">Saab</option>
-                <option value="mercedes">Mercedes</option>
-                <option value="audi">Audi</option>
-              </select>
-              <img src="../assets/svg/down_arrow.svg" class="absolute right-2 bottom-4" alt="">
+              <Dropdown class="w-full p-[1px] mt-[10px]" v-model="selectedCity" :options="cities" optionLabel="name" placeholder="Select a City" />
             </div>
 
             <div class="w-1/4 relative">
-              <p class="text-primaryText leading-[24px] text-[16px] font-[500]">Max seat per ticekt</p>
-              <select name="" id="" class="w-full border border-[#DBDBDB] mt-[10px] rounded-[4px] px-2 py-2 focus:outline-none leading-[20px] text-[14px] font-[400]">
-                <option value="volvo" selected >Select print type</option>
-                <option value="saab">Saab</option>
-                <option value="mercedes">Mercedes</option>
-                <option value="audi">Audi</option>
-              </select>
-              <img src="../assets/svg/down_arrow.svg" class="absolute right-2 bottom-4" alt="">
+              <p class="text-primaryText leading-[24px] text-[16px] font-[500]">Print type</p>
+              <Dropdown class="w-full p-[1px] mt-[10px]" v-model="selectedCity" :options="cities" optionLabel="name" placeholder="Select a City" />
             </div>
 
             <div class="w-1/4 relative">
-              <p class="text-primaryText leading-[24px] text-[16px] font-[500]">Fare type</p>
-              <select name="" id="" class="w-full border border-[#DBDBDB] mt-[10px] rounded-[4px] px-2 py-2 focus:outline-none leading-[20px] text-[14px] font-[400]">
-                <option value="volvo" selected >Select print type</option>
-                <option value="saab">Saab</option>
-                <option value="mercedes">Mercedes</option>
-                <option value="audi">Audi</option>
-              </select>
-              <img src="../assets/svg/down_arrow.svg" class="absolute right-2 bottom-4" alt="">
+              <p class="text-primaryText leading-[24px] text-[16px] font-[500]">Print type</p>
+              <Dropdown class="w-full p-[1px] mt-[10px]" v-model="selectedCity" :options="cities" optionLabel="name" placeholder="Select a City" />
             </div>
 
             <div class="w-1/4 relative">
-              <p class="text-primaryText leading-[24px] text-[16px] font-[500]">Allow pass</p>
-              <select name="" id="" class="w-full border border-[#DBDBDB] mt-[10px] rounded-[4px] px-2 py-2 focus:outline-none leading-[20px] text-[14px] font-[400]">
-                <option value="volvo" selected >Select print type</option>
-                <option value="saab">Saab</option>
-                <option value="mercedes">Mercedes</option>
-                <option value="audi">Audi</option>
-              </select>
-              <img src="../assets/svg/down_arrow.svg" class="absolute right-2 bottom-4" alt="">
+              <p class="text-primaryText leading-[24px] text-[16px] font-[500]">Print type</p>
+              <Dropdown class="w-full p-[1px] mt-[10px]" v-model="selectedCity" :options="cities" optionLabel="name" placeholder="Select a City" />
             </div>
           </div>
 <!--          3rd grid-->
@@ -262,6 +238,32 @@ select {
 select::-ms-expand {
   display: none;
 }
+
+.p-dropdown-label.p-inputtext {
+  padding: 5px 10px !important;
+}
+.p-dropdown-panel .p-dropdown-items .p-dropdown-item:not(:last-child), .p-dropdown-panel .p-dropdown-items .p-dropdown-item:not(:last-child):hover{
+  border-bottom: 1px dotted black;
+}
 </style>
+
+<script>
+export  default {
+  data() {
+    return {
+      selectedCity: null,
+      cities: [
+        {name: 'New York', code: 'NY'},
+        {name: 'Rome', code: 'RM'},
+        {name: 'London', code: 'LDN'},
+        {name: 'Istanbul', code: 'IST'},
+        {name: 'Paris', code: 'PRS'}
+      ]
+    }
+  }
+
+}
+</script>
+
 
 
