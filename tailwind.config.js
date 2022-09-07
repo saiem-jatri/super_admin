@@ -12,7 +12,7 @@ module.exports = {
         corporateBg: '#F7F7F7',
         corporateBorder: '#DBDBDB',
         corporateAsh: '#8D8D8F',
-        corporateGreen: '#',
+        secondaryText: '#4D4D4F',
         corporateYellow: '#',
       },
       fontFamily: {
