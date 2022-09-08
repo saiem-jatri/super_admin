@@ -7,8 +7,8 @@
           <img src="@/assets/imgs/Logo.png" alt="" class="w-[66px] h-[32px]">
         </div>
         <div class="px-[10px] overflow-y-auto h-[calc(100vh-150px)]">
-          <a class="bg-corporate w-full text-white p-1 rounded-sm block cursor-pointer">Dashboard</a>
-          <a class="menu">Bus Company</a>
+          <a class="menu">Dashboard</a>
+          <a class="bg-corporate w-full text-white p-1 rounded-sm block cursor-pointer">Bus Company</a>
           <a class="menu">Routes</a>
           <a class="menu">Routes</a>
           <a class="menu">Counter</a>
@@ -53,9 +53,13 @@
              </div>
            </div>
          </div>
-          <div class="flex gap-x-[24px] p-4 w-1/2 justify-end items-center pr-2 relative">
-            <input type="text" class="w-[270px] h-[40px] border border-[#DBDBDB] placeholder:text-[#4D4D4F] placeholder:text-[14px] leading-[20px] rounded-[4px] pl-8 focus:outline-none" placeholder="PNR or mobile number">
-            <img src="../assets/svg/search.svg" class="h-5 w-5 absolute left-[242px]" alt="">
+          <div class="flex gap-x-[24px] p-4 w-1/2 justify-end items-center pr-2 ">
+<!--            <input type="text" class="w-[270px] h-[40px] border border-[#DBDBDB] placeholder:text-[#4D4D4F] placeholder:text-[14px] leading-[20px] rounded-[4px] pl-8 focus:outline-none" placeholder="PNR or mobile number">-->
+<!--            <img src="../assets/svg/search.svg" class="h-5 w-5 absolute left-[242px]" alt="">-->
+            <div class="w-[270px] h-[40px] border border-[#DBDBDB] flex justify-center items-center leading-[20px] rounded-[4px] pl-[9px] overflow-hidden" >
+              <img src="../assets/svg/search.svg" class="h-5 w-5" alt="">
+              <input type="text" class="outline-none pl-2 placeholder:text-[#4D4D4F] placeholder:text-[14px] placeholder:leading-[20px]" placeholder="PNR or mobile number">
+            </div>
             <img src="../assets/person/person1.png" alt="" class="h-[40px] w-[40px] rounded-full">
             <p class="text-[#151414] leading-[24px] text-[16px] font-[500]">Mostafa Mamun Emon</p>
             <img src="../assets/person/downArrow.svg" alt="" class="w-[12px] h-[6px]">
@@ -72,13 +76,16 @@
           <p class="text-[#1E88E5] leading-[24px] text-[16px] font-[600]">COMPANY INFORMATION</p>
           <p class="text-primaryText leading-[24px] text-[16px] font-[600] mt-[16px]">Company logo</p>
 
-          <div class="w-[480px] h-[100px] border border-dashed border-[#1E88E5] mt-[10px] rounded-[4px] flex justify-center items-center">
-            <div class="flex gap-x-[8px]">
-              <img src="../assets/svg/file.svg" class="w-[18px] h-[15px]" alt="">
-              <p class="text-[#1E88E5] leading-[20px] text-[14px] font-[400]">Upload company logo file</p>
-              <p class="text-[#1E88E5] leading-[20px] text-[14px] font-[400] border-b border-[#1E88E5]">Browse file</p>
+            <div>
+              <input type="file" name="" id="chooseFile" class="hidden">
+              <label for="chooseFile" class="w-[480px] h-[100px] cursor-pointer border border-dashed border-[#1E88E5] mt-[10px] rounded-[4px] flex justify-center items-center">
+                <div class="flex gap-x-[8px]">
+                  <img src="../assets/svg/file.svg" class="w-[18px] h-[15px]" alt="">
+                  <p class="text-[#1E88E5] leading-[20px] text-[14px] font-[400]">Upload company logo file</p>
+                  <p class="text-[#1E88E5] leading-[20px] text-[14px] font-[400] border-b border-[#1E88E5]">Browse file</p>
+                </div>
+              </label>
             </div>
-          </div>
 <!--          input grid start-->
           <div class="flex gap-x-[16px] justify-center items-center mt-[16px]">
             <div class="w-1/4">
@@ -86,7 +93,7 @@
                 <p class="text-primaryText leading-[24px] text-[16px] font-[600]">Company name</p>
                 <img src="../assets/svg/smallStar.svg" class="w-[9px] h-[24px]" alt="">
               </div>
-              <input type="text" class="focus:outline-none mt-[10px] w-full border border-[#DBDBDB] rounded-[4px] pl-2 py-2 placeholder:text-[#676769] placeholder:leading-[20px] placeholder:text-[14px]" placeholder="Enter company name">
+              <input type="text" class="createNormalInput" placeholder="Enter company name">
             </div>
 
             <div class="w-1/4">
@@ -94,7 +101,7 @@
                 <p class="text-primaryText leading-[24px] text-[16px] font-[600]">Different display name</p>
                 <img src="../assets/svg/smallStar.svg" class="w-[9px] h-[24px]" alt="">
               </div>
-              <input type="text" class="focus:outline-none mt-[10px] w-full border border-[#DBDBDB] rounded-[4px] pl-2 py-2 placeholder:text-[#676769] placeholder:leading-[20px] placeholder:text-[14px]" placeholder="Enter company name">
+              <input type="text" class="createNormalInput" placeholder="Enter company name">
             </div>
 
             <div class="w-1/4">
@@ -102,7 +109,7 @@
                 <p class="text-primaryText leading-[24px] text-[16px] font-[600]">Company mobile number</p>
                 <img src="../assets/svg/smallStar.svg" class="w-[9px] h-[24px]" alt="">
               </div>
-              <input type="text" class="focus:outline-none mt-[10px] w-full border border-[#DBDBDB] rounded-[4px] pl-2 py-2 placeholder:text-[#676769] placeholder:leading-[20px] placeholder:text-[14px]" placeholder="Enter company name">
+              <input type="text" class="createNormalInput" placeholder="Enter company name">
             </div>
 
             <div class="w-1/4">
@@ -110,115 +117,321 @@
                 <p class="text-primaryText leading-[24px] text-[16px] font-[600]">Contact person</p>
                 <img src="../assets/svg/smallStar.svg" class="w-[9px] h-[24px]" alt="">
               </div>
-              <input type="text" class="focus:outline-none mt-[10px] w-full border border-[#DBDBDB] rounded-[4px] pl-2 py-2 placeholder:text-[#676769] placeholder:leading-[20px] placeholder:text-[14px]" placeholder="Enter company name">
+              <input type="text" class="createNormalInput" placeholder="Enter company name">
             </div>
           </div>
 <!--          2nd grid-->
           <div class="flex gap-x-[16px] justify-center items-center mt-[16px]">
             <div class="w-1/4 relative">
-              <p class="text-primaryText leading-[24px] text-[16px] font-[500]">Print type</p>
+              <p class="text-primaryText leading-[24px] text-[16px] font-[600]">Print type</p>
               <Dropdown class="w-full p-[1px] mt-[10px]" v-model="selectedCity" :options="cities" optionLabel="name" placeholder="Select a City" />
             </div>
 
             <div class="w-1/4 relative">
-              <p class="text-primaryText leading-[24px] text-[16px] font-[500]">Print type</p>
+              <p class="text-primaryText leading-[24px] text-[16px] font-[600]">Print type</p>
               <Dropdown class="w-full p-[1px] mt-[10px]" v-model="selectedCity" :options="cities" optionLabel="name" placeholder="Select a City" />
             </div>
 
             <div class="w-1/4 relative">
-              <p class="text-primaryText leading-[24px] text-[16px] font-[500]">Print type</p>
+              <p class="text-primaryText leading-[24px] text-[16px] font-[600]">Print type</p>
               <Dropdown class="w-full p-[1px] mt-[10px]" v-model="selectedCity" :options="cities" optionLabel="name" placeholder="Select a City" />
             </div>
 
             <div class="w-1/4 relative">
-              <p class="text-primaryText leading-[24px] text-[16px] font-[500]">Print type</p>
+              <p class="text-primaryText leading-[24px] text-[16px] font-[600]">Print type</p>
               <Dropdown class="w-full p-[1px] mt-[10px]" v-model="selectedCity" :options="cities" optionLabel="name" placeholder="Select a City" />
             </div>
           </div>
 <!--          3rd grid-->
           <div class="flex gap-x-[16px] justify-center items-center mt-[16px]">
             <div class="w-1/4 relative">
-              <p class="text-primaryText leading-[24px] text-[16px] font-[500]">Allow coach details</p>
-              <select name="" id="" class="w-full border border-[#DBDBDB] mt-[10px] rounded-[4px] px-2 py-2 focus:outline-none leading-[20px] text-[14px] font-[400]">
-                <option value="volvo" selected >Select Option</option>
-                <option value="saab">Saab</option>
-                <option value="mercedes">Mercedes</option>
-                <option value="audi">Audi</option>
-              </select>
-              <img src="../assets/svg/down_arrow.svg" class="absolute right-2 bottom-4" alt="">
+              <p class="text-primaryText leading-[24px] text-[16px] font-[600]">Allow coach details</p>
+              <Dropdown class="w-full p-[1px] mt-[10px]" v-model="selectedCity" :opti6ns="cities" optionLabel="name" placeholder="Select a City" />
             </div>
 
             <div class="w-1/4 relative">
-              <p class="text-primaryText leading-[24px] text-[16px] font-[500]">Allow farewise report</p>
-              <select name="" id="" class="w-full border border-[#DBDBDB] mt-[10px] rounded-[4px] px-2 py-2 focus:outline-none leading-[20px] text-[14px] font-[400]">
-                <option value="volvo" selected >No</option>
-                <option value="saab">Yes</option>
-              </select>
-              <img src="../assets/svg/down_arrow.svg" class="absolute right-2 bottom-4" alt="">
+              <p class="text-primaryText leading-[24px] text-[16px] font-[600]">Allow farewise report</p>
+              <Dropdown class="w-full p-[1px] mt-[10px]" v-model="selectedCity" :options="cities" optionLabel="name" placeholder="Select a City" />
             </div>
 
             <div class="w-1/4 relative">
-              <p class="text-primaryText leading-[24px] text-[16px] font-[500]">Allow coachwise trip</p>
-              <select name="" id="" class="w-full border border-[#DBDBDB] mt-[10px] rounded-[4px] px-2 py-2 focus:outline-none leading-[20px] text-[14px] font-[400]">
-                <option value="volvo" selected >No</option>
-                <option value="saab">Yes</option>
-              </select>
-              <img src="../assets/svg/down_arrow.svg" class="absolute right-2 bottom-4" alt="">
+              <p class="text-primaryText leading-[24px] text-[16px] font-[600]">Allow coachwise trip</p>
+              <Dropdown class="w-full p-[1px] mt-[10px]" v-model="selectedCity" :options="cities" optionLabel="name" placeholder="Select a City" />
             </div>
 
             <div class="w-1/4 relative">
-              <p class="text-primaryText leading-[24px] text-[16px] font-[500]">Allow refund</p>
-              <select name="" id="" class="w-full border border-[#DBDBDB] mt-[10px] rounded-[4px] px-2 py-2 focus:outline-none leading-[20px] text-[14px] font-[400]">
-                <option value="volvo" selected >No</option>
-                <option value="saab">Yes</option>
-              </select>
-              <img src="../assets/svg/down_arrow.svg" class="absolute right-2 bottom-4" alt="">
+              <p class="text-primaryText leading-[24px] text-[16px] font-[600]">Allow refund</p>
+              <Dropdown class="w-full p-[1px] mt-[10px]" v-model="selectedCity" :options="cities" optionLabel="name" placeholder="Select a City" />
             </div>
           </div>
 <!--          4th grid-->
           <div class="flex gap-x-[16px] justify-center items-center mt-[16px]">
             <div class="w-1/4 relative">
-              <p class="text-primaryText leading-[24px] text-[16px] font-[500]">Allow due</p>
-              <select name="" id="" class="w-full border border-[#DBDBDB] mt-[10px] rounded-[4px] px-2 py-2 focus:outline-none leading-[20px] text-[14px] font-[400]">
-                <option value="volvo" selected >Select Option</option>
-                <option value="saab">Saab</option>
-                <option value="mercedes">Mercedes</option>
-                <option value="audi">Audi</option>
-              </select>
-              <img src="../assets/svg/down_arrow.svg" class="absolute right-2 bottom-4" alt="">
+              <p class="text-primaryText leading-[24px] text-[16px] font-[600]">Allow due</p>
+              <Dropdown class="w-full p-[1px] mt-[10px]" v-model="selectedCity" :options="cities" optionLabel="name" placeholder="Select a City" />
             </div>
 
             <div class="w-1/4 relative">
-              <p class="text-primaryText leading-[24px] text-[16px] font-[500]">Allow referral</p>
-              <select name="" id="" class="w-full border border-[#DBDBDB] mt-[10px] rounded-[4px] px-2 py-2 focus:outline-none leading-[20px] text-[14px] font-[400]">
-                <option value="volvo" selected >No</option>
-                <option value="saab">Yes</option>
-              </select>
-              <img src="../assets/svg/down_arrow.svg" class="absolute right-2 bottom-4" alt="">
+              <p class="text-primaryText leading-[24px] text-[16px] font-[600]">Allow referral</p>
+              <Dropdown class="w-full p-[1px] mt-[10px]" v-model="selectedCity" :options="cities" optionLabel="name" placeholder="Select a City" />
             </div>
 
             <div class="w-1/4 relative">
-              <p class="text-primaryText leading-[24px] text-[16px] font-[500]">Reservation status</p>
-              <select name="" id="" class="w-full border border-[#DBDBDB] mt-[10px] rounded-[4px] px-2 py-2 focus:outline-none leading-[20px] text-[14px] font-[400]">
-                <option value="volvo" selected >No</option>
-                <option value="saab">Yes</option>
-              </select>
-              <img src="../assets/svg/down_arrow.svg" class="absolute right-2 bottom-4" alt="">
+              <p class="text-primaryText leading-[24px] text-[16px] font-[600]">Reservation status</p>
+              <Dropdown class="w-full p-[1px] mt-[10px]" v-model="selectedCity" :options="cities" optionLabel="name" placeholder="Select a City" />
             </div>
 
             <div class="w-1/4 relative">
-              <p class="text-primaryText leading-[24px] text-[16px] font-[500]">Allow discount</p>
-              <select name="" id="" class="w-full border border-[#DBDBDB] mt-[10px] rounded-[4px] px-2 py-2 focus:outline-none leading-[20px] text-[14px] font-[400]">
-                <option value="volvo" selected >No</option>
-                <option value="saab">Yes</option>
-              </select>
-              <img src="../assets/svg/down_arrow.svg" class="absolute right-2 bottom-4" alt="">
+              <p class="text-primaryText leading-[24px] text-[16px] font-[600]">Allow discount</p>
+              <Dropdown class="w-full p-[1px] mt-[10px]" v-model="selectedCity" :options="cities" optionLabel="name" placeholder="Select a City" />
             </div>
+          </div>
+<!--          5th grid-->
+          <div class="flex gap-x-[16px] justify-center items-center mt-[16px]">
+            <div class="w-1/4 relative">
+              <p class="text-primaryText leading-[24px] text-[16px] font-[600]">Allow net pay edit</p>
+              <Dropdown class="w-full p-[1px] mt-[10px]" v-model="selectedCity" :options="cities" optionLabel="name" placeholder="Select a City" />
+            </div>
+            <div class="w-1/4">
+              <div class="flex justify-between items-center w-full">
+                <p class="text-primaryText leading-[24px] text-[16px] font-[600]">Allowable goods weight</p>
+              </div>
+              <input type="text" class="focus:outline-none mt-[10px] w-full border border-[#DBDBDB] rounded-[4px] pl-2 py-2 placeholder:text-[#676769] placeholder:leading-[20px] placeholder:text-[14px]" placeholder="Enter company name">
+            </div>
+
+            <div class="w-1/4">
+              <div class="flex justify-between items-center w-full">
+                <p class="text-primaryText leading-[24px] text-[16px] font-[600]">Overweight goods charge per KG</p>
+              </div>
+              <input type="text" class="focus:outline-none mt-[10px] w-full border border-[#DBDBDB] rounded-[4px] pl-2 py-2 placeholder:text-[#676769] placeholder:leading-[20px] placeholder:text-[14px]" placeholder="Enter company name">
+            </div>
+
+
+
+            <div class="w-1/4 relative">
+              <p class="text-primaryText leading-[24px] text-[16px] font-[600]">Allow qouta</p>
+              <Dropdown class="w-full p-[1px] mt-[10px]" v-model="selectedCity" :options="cities" optionLabel="name" placeholder="Select a City" />
+            </div>
+          </div>
+<!--          6th grid-->
+          <div class="flex gap-x-[16px] justify-center items-center mt-[16px]">
+            <div class="w-1/4 relative">
+              <p class="text-primaryText leading-[24px] text-[16px] font-[600]">Allow digital ticketing</p>
+              <Dropdown class="w-full p-[1px] mt-[10px]" v-model="selectedCity" :options="cities" optionLabel="name" placeholder="Select a City" />
+            </div>
+
+            <div class="w-1/4 relative">
+              <p class="text-primaryText leading-[24px] text-[16px] font-[600]">Multiple owner (if any)</p>
+              <Dropdown class="w-full p-[1px] mt-[10px]" v-model="selectedCity" :options="cities" optionLabel="name" placeholder="Select a City" />
+            </div>
+
+            <div class="w-1/4">
+              <div class="flex justify-between items-center w-full">
+                <p class="text-primaryText leading-[24px] text-[16px] font-[600]">Complain number</p>
+              </div>
+              <input type="text" class="focus:outline-none mt-[10px] w-full border border-[#DBDBDB] rounded-[4px] pl-2 py-2 placeholder:text-[#676769] placeholder:leading-[20px] placeholder:text-[14px]" placeholder="Enter company name">
+            </div>
+
+
+            <div class="w-1/4">
+              <div class="flex justify-between items-center w-full">
+                <p class="text-primaryText leading-[24px] text-[16px] font-[600]">Facebook link</p>
+              </div>
+              <input type="text" class="focus:outline-none mt-[10px] w-full border border-[#DBDBDB] rounded-[4px] pl-2 py-2 placeholder:text-[#676769] placeholder:leading-[20px] placeholder:text-[14px]" placeholder="Enter company name">
+            </div>
+          </div>
+<!--          7th grid-->
+          <div class="flex gap-x-[16px] justify-center items-center mt-[16px]">
+            <div class="w-1/4">
+              <p class="text-primaryText leading-[24px] text-[16px] font-[600]">Auto renewal trips</p>
+                <div class="w-full mt-[10px] h-[40px] border border-[#DBDBDB] flex justify-between items-center leading-[20px] rounded-[4px] overflow-hidden divide-x" >
+                    <div class="flex justify-between items-center">
+                        <div class="flex justify-between items-center w-[270px]">
+                          <select class="form-select appearance-none w-full block px-3 pl-[22px] py-1.5 text-base bg-white rounded focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none" aria-label="Default select example">
+                            <option selected>3</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                          </select>
+                          <img src="../assets/svg/down_arrow.svg" class="w-[12px] h-5 ml-10" alt="">
+                        </div>
+                    </div>
+                  <p class="p-4 text-[#676769] leading-[20px] text-[14px] font-[400]">Days</p>
+                </div>
+
+            </div>
+
+            <div class="w-1/4">
+              <p class="text-primaryText leading-[24px] text-[16px] font-[600]">Trail start date</p>
+              <div class="w-full h-[40px] border border-[#DBDBDB] flex justify-between items-center mt-[10px] leading-[20px] rounded-[4px] px-[20px] xl:px-[8px] overflow-hidden" >
+                <input type="text" class="outline-none pl-2 placeholder:text-[#4D4D4F] placeholder:text-[14px] placeholder:leading-[20px]" placeholder="Select trail end date">
+                <img src="../assets/svg/count2.svg" class="h-5 w-5" alt="">
+              </div>
+            </div>
+
+            <div class="w-1/4">
+              <p class="text-primaryText leading-[24px] text-[16px] font-[600]">Trail end date</p>
+              <div class="w-full h-[40px] border border-[#DBDBDB] flex justify-between items-center mt-[10px] leading-[20px] rounded-[4px] px-[20px] xl:px-[8px] overflow-hidden" >
+                <input type="text" class="outline-none pl-2 placeholder:text-[#4D4D4F] placeholder:text-[14px] placeholder:leading-[20px]" placeholder="Select trail end date">
+                <img src="../assets/svg/count2.svg" class="h-5 w-5" alt="">
+              </div>
+            </div>
+
+
+            <div class="w-1/4">
+              <p class="text-primaryText leading-[24px] text-[16px] font-[600]">Online ticket commission</p>
+              <div class="w-full mt-[10px] h-[40px] border border-[#DBDBDB] flex justify-between items-center leading-[20px] rounded-[4px] overflow-hidden divide-x" >
+                <p class="p-4 text-[#676769] leading-[20px] text-[14px] font-[400] w-1/2">Days</p>
+                <div class="p-2">
+                  <div class="flex justify-between items-center w-1/2 px-4 bg-[#F7F7F7]">
+                    <select class="form-select appearance-none bg-[#F7F7F7] px-3 py-1 text-base bg-white rounded focus:outline-none" aria-label="Default select example">
+                      <option selected class="leading-[20px] text-[14px] font-[500]">Percentage %</option>
+                      <option value="1">One</option>
+                      <option value="2">Two</option>
+                      <option value="3">Three</option>
+                    </select>
+                    <img src="../assets/svg/down_arrow.svg" class="w-[12px] h-5" alt="">
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+<!--          8th grid-->
+          <div class="flex gap-x-[16px]  items-center mt-[16px]">
+            <div class="w-1/4 relative">
+              <p class="text-primaryText leading-[24px] text-[16px] font-[600]">Challan type</p>
+              <Dropdown class="w-full p-[1px] mt-[10px]" v-model="selectedCity" :opti6ns="cities" optionLabel="name" placeholder="Select a City" />
+            </div>
+
+            <div class="w-1/4 relative">
+              <p class="text-primaryText leading-[24px] text-[16px] font-[600]">Ticket holding time</p>
+              <Dropdown class="w-full p-[1px] mt-[10px]" v-model="selectedCity" :options="cities" optionLabel="name" placeholder="Select a City" />
+            </div>
+
           </div>
         </div>
 
       </div>
+<!--          2nd section start-->
+      <div class="border-b border-[#DBDBDB]">
+        <div class="p-[16px]">
+            <p class="text-[#1E88E5] leading-[24px] text-[16px] font-[600]">Default trip order</p>
+          <div class="mt-[16px] flex gap-x-[16px] items-center">
+            <div class="w-1/4">
+              <p class="text-primaryText leading-[24px] text-[16px] font-[500]">Multiple owner (if any)</p>
+              <div class="flex justify-center items-center mt-[10px]">
+                  <button class="w-1/2 bg-corporate bg-opacity-30 text-white leading-[20px] text-[14px] flex justify-center items-center font-[400] h-[40px] rounded-l-[4px]">Ascending</button>
+                <button class="w-1/2 bg-white text-[#676769] leading-[20px] text-[14px] border border-[#DBDBDB] flex justify-center items-center font-[400] h-[40px] rounded-r-[4px]">Descending</button>
+              </div>
+            </div>
+            <div class="w-1/4">
+              <p class="text-primaryText leading-[24px] text-[16px] font-[500]">Multiple owner (if any)</p>
+              <Dropdown class="w-full p-[1px] mt-[10px]" v-model="selectedCity" :options="cities" optionLabel="name" placeholder="Select a City" />
+            </div>
 
+          </div>
+        </div>
+      </div>
+
+<!--          3rd section start-->
+          <div class="border-b border-[#DBDBDB]">
+            <div class="p-[16px]">
+              <p class="text-[#1E88E5] leading-[24px] text-[16px] font-[600]">USER TYPE</p>
+              <div class="mt-[21px] flex gap-x-[16px] items-center">
+                <button class="createUserTypeButton">Owner</button>
+                <button class="createUserTypeButton">Company admin</button>
+                <button class="createUserTypeButton">Accounts department</button>
+                <button class="createUserTypeButton">Counter manager</button>
+                <button class="createUserTypeButton">Manager</button>
+              </div>
+              <div class="mt-[24px] flex gap-x-[16px] items-center">
+                <input type="text" class="focus:outline-none w-1/4 mt-[10px] w-full border border-[#DBDBDB] rounded-[4px] pl-2 py-2 placeholder:text-[#676769] placeholder:leading-[20px] placeholder:text-[14px] " placeholder="Enter role name">
+                <button class="flex justify-center items-center bg-[#1E88E5] mt-1 bg-opacity-30 text-white leading-[20px] text-[14px] font-[400] border border-corporateBorder rounded-full px-[24px] py-[12px]">Add role</button>
+              </div>
+
+            </div>
+          </div>
+<!--          4th section start-->
+          <div class="border-b border-[#DBDBDB]">
+            <div class="p-[16px]">
+              <p class="text-[#1E88E5] leading-[24px] text-[16px] font-[600]">MULTIPLE OWNER 1</p>
+              <div class="flex gap-x-[16px] items-center border-b border-dashed border-corporateBorder py-[16px]">
+                <div class="w-1/4">
+                    <p class="text-primaryText leading-[24px] text-[16px] font-[600]">Multiple owner name</p>
+                  <input type="text" class="createNormalInput" placeholder="Enter company owner details">
+                </div>
+
+                <div class="w-1/4">
+                    <p class="text-primaryText leading-[24px] text-[16px] font-[600]">Multiple owner number</p>
+                  <input type="text" class="createNormalInput" placeholder="Enter company email address">
+                </div>
+
+                <div class="w-1/4">
+                    <p class="text-primaryText leading-[24px] text-[16px] font-[600]">Multiple owner degisnation</p>
+                  <input type="text" class="createNormalInput" placeholder="Enter company address">
+                </div>
+              </div>
+
+              <div class="w-full border border-dashed border-[#1E88E5] flex justify-center items-center bg-[#EFF7FD] rounded-[4px]">
+                  <div class="flex justify-center items-center gap-x-[11px] py-[12px]">
+                    <img src="../assets/svg/createPlus.svg" class="w-[10px] h-[10px]" alt="">
+                    <p class="text-primaryText font-[600] leading-[20px] text-[14px]">Add another company owner</p>
+                  </div>
+              </div>
+            </div>
+          </div>
+<!--          5th section start-->
+          <div class="border-b border-[#DBDBDB]">
+            <div class="p-[16px]">
+              <p class="text-[#1E88E5] leading-[24px] text-[16px] font-[600]">SMS SERVICES</p>
+              <div class="flex gap-x-[16px] items-center mt-[16px]">
+                <div class="w-1/4 relative">
+                  <p class="text-primaryText leading-[24px] text-[16px] font-[600]">Required phone</p>
+                  <Dropdown class="w-full p-[1px] mt-[10px]" v-model="selectedCity" :opti6ns="cities" optionLabel="name" placeholder="Select a City" />
+                </div>
+
+                <div class="w-1/4 relative">
+                  <p class="text-primaryText leading-[24px] text-[16px] font-[600]">Allow SMS</p>
+                  <Dropdown class="w-full p-[1px] mt-[10px]" v-model="selectedCity" :options="cities" optionLabel="name" placeholder="Select a City" />
+                </div>
+              </div>
+            </div>
+          </div>
+<!--          6th section start-->
+          <div class="border-b-2 border-[#DBDBDB]">
+            <div class="p-[16px]">
+              <div class="border-b border-dashed border-corporateBorder py-[16px]">
+                <p class="text-primaryText leading-[24px] text-[16px] font-[600]">Terms & condition</p>
+                <textarea name="" id="" cols="30" rows="10" class="w-full mt-[18px] border border-corporateBorder rounded-[4px] p-[8px] focus:outline-none placeholder:text-[#676769] placeholder:leading-[20px] placeholder:text-[14px]" placeholder="Enter terms & condition"></textarea>
+                <p class="text-[#676769] leading-[16px] text-[12px] font-[400] mt-[8px]">*Max 500 charecters</p>
+              </div>
+
+              <div class="border-b border-dashed border-corporateBorder py-[16px]">
+                <p class="text-primaryText leading-[24px] text-[16px] font-[600]">Luguage policy</p>
+                <textarea name="" id="" cols="30" rows="10" class="w-full mt-[18px] border border-corporateBorder rounded-[4px] p-[8px] focus:outline-none placeholder:text-[#676769] placeholder:leading-[20px] placeholder:text-[14px]" placeholder="Enter luguage policy"></textarea>
+                <p class="text-[#676769] leading-[16px] text-[12px] font-[400] mt-[8px]">*Max 500 charecters</p>
+              </div>
+
+
+                <p class="text-primaryText leading-[24px] text-[16px] font-[600] mt-[16px]">Cancellation policy</p>
+                <textarea name="" id="" cols="30" rows="10" class="w-full mt-[18px] border border-corporateBorder rounded-[4px] p-[8px] focus:outline-none placeholder:text-[#676769] placeholder:leading-[20px] placeholder:text-[14px]" placeholder="Enter cancellation policy"></textarea>
+                <p class="text-[#676769] leading-[16px] text-[12px] font-[400] mt-[8px]">*Max 500 charecters</p>
+
+            </div>
+          </div>
+
+          <div class="px-[16px] py-[20px] w-full flex justify-between items-center">
+              <div class="flex gap-x-[16px] items-center">
+                <p class="text-primaryText font-[600] leading-[24px] text-[16px] ">Status</p>
+                <div class="flex justify-center items-center">
+                  <button class="bg-[#48A43F] w-[110px] text-white leading-[20px] text-[14px] flex justify-center items-center font-[400] h-[40px] rounded-l-[4px]">Active</button>
+                  <button class="bg-[#F7F7F7] w-[110px] text-primaryText leading-[20px] text-[14px] border border-[#DBDBDB] flex justify-center items-center font-[400] h-[40px] rounded-r-[4px]">Inactive</button>
+                </div>
+              </div>
+            <button class="flex justify-center items-center text-white leading-[20px] text-[14px] font-[600] bg-corporate bg-opacity-30 rounded-full px-[24px] py-[13px]">Create company</button>
+          </div>
         </div>
       </div>
     </div>
@@ -243,7 +456,7 @@ select::-ms-expand {
   padding: 5px 10px !important;
 }
 .p-dropdown-panel .p-dropdown-items .p-dropdown-item:not(:last-child), .p-dropdown-panel .p-dropdown-items .p-dropdown-item:not(:last-child):hover{
-  border-bottom: 1px dotted black;
+  border-bottom: 1px dotted #DBDBDB;
 }
 </style>
 

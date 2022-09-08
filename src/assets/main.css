@@ -51,3 +51,18 @@ body{
 .companyTableStatus {
     @apply bg-[#48A43F] flex justify-center items-center text-white leading-[16px] text-[12px] font-[500] w-[60px] h-[24px] rounded-[4px]
 }
+
+.createUserTypeButton {
+    @apply flex justify-center items-center text-primaryText leading-[20px] text-[14px] font-[600] border border-corporateBorder rounded-full px-[24px] py-[5px]
+}
+.createFilledActiveTypeButton{
+    @apply flex justify-center items-center bg-corporateSuccess text-white leading-[20px] text-[14px] font-[500] border border-corporateBorder rounded-full px-[24px] py-[5px]
+}
+
+.createNormalInput {
+    @apply focus:outline-none w-1/4 mt-[10px] w-full border border-[#DBDBDB] rounded-[4px] pl-2 py-2 placeholder:text-[#676769] placeholder:leading-[20px] placeholder:text-[14px]
+}
+
+.createNormalInputActive {
+    @apply focus:outline-none w-1/4 mt-[10px] w-full border border-[#DBDBDB] rounded-[4px] pl-2 py-2 placeholder:text-primaryText placeholder:leading-[20px] placeholder:text-[14px]
+}

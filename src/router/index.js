@@ -4,6 +4,7 @@ import ForgetPassword from '@/views/forgetPassword.vue'
 import Dashboard from '@/views/dashboard.vue'
 import BusCompany from '@/views/bus_company.vue'
 import CreateCompany from '@/views/create_company.vue'
+import CreateFilled from '@/views/create_filled.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -32,6 +33,11 @@ const router = createRouter({
       path: '/create',
       name: 'create',
       component: CreateCompany
+    },
+    {
+      path: '/createFilled',
+      name: 'createFilled',
+      component: CreateFilled
     },
 
   ]
