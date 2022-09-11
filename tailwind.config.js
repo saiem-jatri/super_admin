@@ -13,7 +13,7 @@ module.exports = {
         corporateBorder: '#DBDBDB',
         corporateAsh: '#8D8D8F',
         corporateSuccess: '#48A43F',
-        corporateYellow: '#',
+        corporateSecondaryBlack: '#4D4D4F',
       },
       fontFamily: {
         inter: ['"Inter"', ...defaultTheme.fontFamily.sans]

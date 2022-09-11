@@ -38,11 +38,15 @@
     <div class="h-screen w-full overflow-y-auto bg-[#F7F7F7]">
       <!-- Top nav bar start-->
       <div class="bg-white h-[72px] sticky top-0 border-b border-[#DBDBDB] z-10">
-        <div class="flex justify-between">
-          <p class="p-6 text-[#151414] leading-[28px] text-[20px] font-[600]">Dashboard</p>
-          <div class="flex gap-x-2 p-4 justify-center items-center">
-            <img src="../assets/person/person1.png" alt="" class="h-[40px] w-[40px] rounded-full">
-            <p class="text-[#151414] leading-[24px] text-[16px] font-[500]">Mostafa Mamun Emon</p>
+        <div class="flex justify-between items-center">
+          <p class="p-6 text-[#151414] leading-[28px] text-[20px] font-[600]">DashBoard</p>
+          <div class="w-[230px] xl:w-[270px] h-[40px] border border-[#DBDBDB] flex justify-center items-center leading-[20px] rounded-[4px] pl-14 xl:pl-[9px] overflow-hidden" >
+            <img src="../assets/svg/search.svg" class="h-5 w-5" alt="">
+            <input type="text" class="outline-none pl-2 placeholder:text-[#4D4D4F] placeholder:text-[14px] placeholder:leading-[20px]" placeholder="PNR or mobile number">
+          </div>
+          <div class="flex gap-x-2 p-4 justify-center items-center mr-6 ">
+            <img src="../assets/person/person1.png" alt="" class="h-[30px] xl:h-[40px] w-[30px] xl:w-[40px] rounded-full">
+            <p class="text-[#151414] leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[500]">Mostafa Mamun Emon</p>
             <img src="../assets/person/downArrow.svg" alt="" class="w-[12px] h-[6px]">
           </div>
         </div>
@@ -50,20 +54,20 @@
       <!-- top nav bar end -->
       <!-- body start-->
       <div class="p-[30px]">
-        <p class="leading-[36px] text-[28px] font-[500]">Sales Summary </p>
+        <p class="xl:leading-[36px] xl:text-[28px] leading-[30px] text-[24px] font-[500]">Sales Summary </p>
 
         <div class="flex justify-between gap-x-[30px] mt-[16px]">
           <!-- 1st small table -->
           <div class="w-1/3 bg-white rounded-[6px] p-[16px]">
             <div class="flex w-full justify-between">
-              <p class="text-primaryText leading-[20px] text-[14px] font-[600]">Today’s Total Sales Count</p>
-              <img src="../assets/svg/count.svg" class="w-[16.67px] h-[16.67px]" alt="">
+              <p class="text-primaryText leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px] font-[600]">Today’s Total Sales Count</p>
+              <img src="../assets/svg/count.svg" class="w-[12px] h-[12px] xl:w-[16.67px] xl:h-[16.67px]" alt="">
             </div>
 
             <div class="smallTableInnerDiv bg-[#F1F9F1]">
               <p class="w-1/3"></p>
-              <p class="leading-[20px] text-[13px] font-[400] text-primaryText text-center w-1/3">Count</p>
-              <p class="leading-[20px] text-[13px] font-[400] text-primaryText text-center w-1/3">Amount</p>
+              <p class="leading-[16px] text-[10px] xl:leading-[20px] xl:text-[13px] font-[400] text-primaryText text-center w-1/3">Count</p>
+              <p class="leading-[16px] text-[10px] xl:leading-[20px] xl:text-[13px] font-[400] text-primaryText text-center w-1/3">Amount</p>
             </div>
 
             <div class="smallTableInnerDiv bg-[#F1F9F1]">
@@ -236,20 +240,20 @@
         <div class="mt-[32px] bg-white p-[16px] rounded-[8px]">
           <div class="flex justify-between ">
             <div class="flex gap-x-4 items-center">
-              <img src="../assets/svg/startBus.svg" class="w-10 h-10" alt="">
-              <p class="leading-[36px] text-[28px] font-[500] text-primaryText">Top 20 Bus Operators</p>
+              <img src="../assets/svg/startBus.svg" class="w-8 h-8 xl:w-10 xl:h-10" alt="">
+              <p class="leading-[24px] text-[16px] xl:leading-[36px] xl:text-[28px] font-[500] text-primaryText">Top 20 Bus Operators</p>
             </div>
 
             <div class="flex gap-x-4 items-center">
               <div class="flex flex-col gap-y-[10px] relative">
-                <label for="from" class="leading-[24px] text-[16px] font-[500] text-primaryText">From</label>
-                <input type="text" class="border border-corporateBorder py-[6px] rounded-[4px] focus:outline-none px-2 placeholder:text-[#676769] w-[270px]" placeholder="Select Date">
-                <img src="../assets/svg/count2.svg" class="h-5 w-5 absolute right-3 bottom-3" alt="">
+                <label for="from" class="leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[500] text-primaryText">From</label>
+                <input type="text" class="border border-corporateBorder py-[4px] xl:py-[6px] rounded-[4px] focus:outline-none px-2 placeholder:text-[#676769] w-[270px]" placeholder="Select Date">
+                <img src="../assets/svg/count2.svg" class="h-3 w-3 xl:h-5 xl:w-5 absolute right-3 bottom-3" alt="">
               </div>
 
               <div class="flex flex-col gap-y-[10px] relative">
-                <label for="to" class="leading-[24px] text-[16px] font-[500] text-primaryText">To</label>
-                <input type="text" class="border border-corporateBorder py-[6px] rounded-[4px] focus:outline-none px-2 placeholder:text-[#676769] w-[270px]" placeholder="Select Date">
+                <label for="to" class="leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[500] text-primaryText">To</label>
+                <input type="text" class="border border-corporateBorder py-[4px] xl:py-[6px] rounded-[4px] focus:outline-none px-2 placeholder:text-[#676769] w-[270px]" placeholder="Select Date">
                 <img src="../assets/svg/count2.svg" class="h-5 w-5 absolute right-3 bottom-3" alt="">
               </div>
 

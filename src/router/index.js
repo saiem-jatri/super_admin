@@ -5,6 +5,9 @@ import Dashboard from '@/views/dashboard.vue'
 import BusCompany from '@/views/bus_company.vue'
 import CreateCompany from '@/views/create_company.vue'
 import CreateFilled from '@/views/create_filled.vue'
+import CompanyOwner from '@/views/bus_company_owner.vue'
+import CompanyTicket from '@/views/bus_company_Ticket.vue'
+import companyCreateOwner from '@/views/bus_company_create_owner.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -39,6 +42,22 @@ const router = createRouter({
       name: 'createFilled',
       component: CreateFilled
     },
+    {
+      path: '/companyOwner',
+      name: 'companyOwner',
+      component: CompanyOwner
+    },
+    {
+      path: '/companyTicket',
+      name: 'companyTicket',
+      component: CompanyTicket
+    },
+    {
+      path: '/createOwner',
+      name: 'createOwner',
+      component: companyCreateOwner
+    },
+
 
   ]
 })

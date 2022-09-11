@@ -38,16 +38,21 @@
     <div class="h-screen w-full overflow-y-auto bg-[#F7F7F7]">
       <!-- Top nav bar start-->
       <div class="bg-white h-[72px] sticky top-0 border-b border-[#DBDBDB] z-10">
-        <div class="flex justify-between">
-          <p class="p-6 text-[#151414] w-1/2 leading-[28px] text-[20px] font-[600]">Bus Company</p>
-          <div class="flex gap-x-2 p-4 w-1/2 justify-end items-center pr-12">
-          <button class="bg-corporate flex gap-x-3 justify-center items-center text-white rounded-full px-4 py-2 mr-4"><span><img src="../assets/svg/plus.svg" class="h-[9.33px] w-[9.33px]" alt=""></span>Add Company</button>
-            <img src="../assets/person/person1.png" alt="" class="h-[40px] w-[40px] rounded-full">
-            <p class="text-[#151414] leading-[24px] text-[16px] font-[500]">Mostafa Mamun Emon</p>
+        <div class="flex justify-between items-center">
+          <p class="p-6 text-[#151414] leading-[28px] text-[20px] font-[600]">Bus Company</p>
+          <div class="w-[230px] xl:w-[270px] h-[40px] border border-[#DBDBDB] flex justify-center items-center leading-[20px] rounded-[4px] pl-14 xl:pl-[9px] overflow-hidden" >
+            <img src="../assets/svg/search.svg" class="h-5 w-5" alt="">
+            <input type="text" class="outline-none pl-2 placeholder:text-[#4D4D4F] placeholder:text-[14px] placeholder:leading-[20px]" placeholder="PNR or mobile number">
+          </div>
+          <div class="flex gap-x-2 p-4 justify-center items-center mr-6 ">
+            <button class="bg-corporate flex gap-x-3 justify-center items-center text-white rounded-full px-4 py-2 mr-4 leading-[12px] text-[10px] xl:leading-[16px] xl:text-[12px]"><span><img src="../assets/svg/plus.svg" class="h-[9.33px] w-[9.33px]" alt=""></span>Add Company</button>
+            <img src="../assets/person/person1.png" alt="" class="h-[30px] xl:h-[40px] w-[30px] xl:w-[40px] rounded-full">
+            <p class="text-[#151414] leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[500]">Mostafa Mamun Emon</p>
             <img src="../assets/person/downArrow.svg" alt="" class="w-[12px] h-[6px]">
           </div>
         </div>
       </div>
+
       <!-- top nav bar end -->
       <!-- body start-->
       <div class="px-[30px] py-[24px]">
@@ -82,13 +87,13 @@
               <tr class="border-b border-[#EDEDED]">
                 <td class="text-primaryText border-r border-[#DBDBDB] text-center">01</td>
                 <td class="flex justify-between items-center px-[16px] py-[18px] border-r border-[#DBDBDB]">
-                    <p class="leading-[20px] text-[14px] font-[400] text-primaryText">Tisha Group and Tubaline</p>
-                  <img src="../assets/logo/login_logo.svg" class="w-[61px] h-[30px]" alt="">
+                    <p class="leading-[16px] text-[11px] xl:leading-[20px] xl:text-[14px] font-[400] text-primaryText">Tisha Group and Tubaline</p>
+                  <img src="../assets/logo/login_logo.svg" class="w-[50px] h-[20px] xl:w-[61px] xl:h-[30px]" alt="">
                 </td>
-                <td class=" leading-[20px] text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText">
+                <td class="leading-[16px] text-[11px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText">
                   MD Fahim Ahmed <br> +8801708630439
                 </td>
-                <td class="leading-[20px] text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText">
+                <td class="leading-[16px] text-[11px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText">
                   09 July 2022- <br>
                   14 July 2022
                 </td>
@@ -107,13 +112,13 @@
               <tr class="border-b border-[#EDEDED]">
                 <td class="text-primaryText border-r border-[#DBDBDB] text-center">01</td>
                 <td class="flex justify-between items-center px-[16px] py-[18px] border-r border-[#DBDBDB]">
-                  <p class="leading-[20px] text-[14px] font-[400] text-primaryText">Tisha Group and Tubaline</p>
-                  <img src="../assets/logo/login_logo.svg" class="w-[61px] h-[30px]" alt="">
+                  <p class="leading-[16px] text-[11px] xl:leading-[20px] xl:text-[14px] font-[400] text-primaryText">Tisha Group and Tubaline</p>
+                  <img src="../assets/logo/login_logo.svg" class="w-[50px] h-[20px] xl:w-[61px] xl:h-[30px]" alt="">
                 </td>
-                <td class=" leading-[20px] text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText">
+                <td class="leading-[16px] text-[11px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText">
                   MD Fahim Ahmed <br> +8801708630439
                 </td>
-                <td class="leading-[20px] text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText">
+                <td class="leading-[16px] text-[11px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText">
                   09 July 2022- <br>
                   14 July 2022
                 </td>
@@ -132,13 +137,13 @@
               <tr class="border-b border-[#EDEDED]">
                 <td class="text-primaryText border-r border-[#DBDBDB] text-center">01</td>
                 <td class="flex justify-between items-center px-[16px] py-[18px] border-r border-[#DBDBDB]">
-                  <p class="leading-[20px] text-[14px] font-[400] text-primaryText">Tisha Group and Tubaline</p>
-                  <img src="../assets/logo/login_logo.svg" class="w-[61px] h-[30px]" alt="">
+                  <p class="leading-[16px] text-[11px] xl:leading-[20px] xl:text-[14px] font-[400] text-primaryText">Tisha Group and Tubaline</p>
+                  <img src="../assets/logo/login_logo.svg" class="w-[50px] h-[20px] xl:w-[61px] xl:h-[30px]" alt="">
                 </td>
-                <td class=" leading-[20px] text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText">
+                <td class="leading-[16px] text-[11px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText">
                   MD Fahim Ahmed <br> +8801708630439
                 </td>
-                <td class="leading-[20px] text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText">
+                <td class="leading-[16px] text-[11px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText">
                   09 July 2022- <br>
                   14 July 2022
                 </td>
@@ -157,13 +162,13 @@
               <tr class="border-b border-[#EDEDED]">
                 <td class="text-primaryText border-r border-[#DBDBDB] text-center">01</td>
                 <td class="flex justify-between items-center px-[16px] py-[18px] border-r border-[#DBDBDB]">
-                  <p class="leading-[20px] text-[14px] font-[400] text-primaryText">Tisha Group and Tubaline</p>
-                  <img src="../assets/logo/login_logo.svg" class="w-[61px] h-[30px]" alt="">
+                  <p class="leading-[16px] text-[11px] xl:leading-[20px] xl:text-[14px] font-[400] text-primaryText">Tisha Group and Tubaline</p>
+                  <img src="../assets/logo/login_logo.svg" class="w-[50px] h-[20px] xl:w-[61px] xl:h-[30px]" alt="">
                 </td>
-                <td class=" leading-[20px] text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText">
+                <td class="leading-[16px] text-[11px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText">
                   MD Fahim Ahmed <br> +8801708630439
                 </td>
-                <td class="leading-[20px] text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText">
+                <td class="leading-[16px] text-[11px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText">
                   09 July 2022- <br>
                   14 July 2022
                 </td>
@@ -182,13 +187,13 @@
               <tr class="border-b border-[#EDEDED]">
                 <td class="text-primaryText border-r border-[#DBDBDB] text-center">01</td>
                 <td class="flex justify-between items-center px-[16px] py-[18px] border-r border-[#DBDBDB]">
-                  <p class="leading-[20px] text-[14px] font-[400] text-primaryText">Tisha Group and Tubaline</p>
-                  <img src="../assets/logo/login_logo.svg" class="w-[61px] h-[30px]" alt="">
+                  <p class="leading-[16px] text-[11px] xl:leading-[20px] xl:text-[14px] font-[400] text-primaryText">Tisha Group and Tubaline</p>
+                  <img src="../assets/logo/login_logo.svg" class="w-[50px] h-[20px] xl:w-[61px] xl:h-[30px]" alt="">
                 </td>
-                <td class=" leading-[20px] text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText">
+                <td class="leading-[16px] text-[11px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText">
                   MD Fahim Ahmed <br> +8801708630439
                 </td>
-                <td class="leading-[20px] text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText">
+                <td class="leading-[16px] text-[11px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText">
                   09 July 2022- <br>
                   14 July 2022
                 </td>
@@ -205,15 +210,15 @@
                 </td>
               </tr>
               <tr class="border-b border-[#EDEDED]">
-                <td class="text-primaryText border-r border-[#DBDBDB] text-center">999</td>
+                <td class="text-primaryText border-r border-[#DBDBDB] text-center">01</td>
                 <td class="flex justify-between items-center px-[16px] py-[18px] border-r border-[#DBDBDB]">
-                  <p class="leading-[20px] text-[14px] font-[400] text-primaryText">Tisha Group and Tubaline</p>
-                  <img src="../assets/logo/login_logo.svg" class="w-[61px] h-[30px]" alt="">
+                  <p class="leading-[16px] text-[11px] xl:leading-[20px] xl:text-[14px] font-[400] text-primaryText">Tisha Group and Tubaline</p>
+                  <img src="../assets/logo/login_logo.svg" class="w-[50px] h-[20px] xl:w-[61px] xl:h-[30px]" alt="">
                 </td>
-                <td class=" leading-[20px] text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText">
+                <td class="leading-[16px] text-[11px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText">
                   MD Fahim Ahmed <br> +8801708630439
                 </td>
-                <td class="leading-[20px] text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText">
+                <td class="leading-[16px] text-[11px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText">
                   09 July 2022- <br>
                   14 July 2022
                 </td>
