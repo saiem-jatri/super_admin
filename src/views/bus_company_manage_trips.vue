@@ -76,7 +76,7 @@
       <!-- top nav bar end -->
       <!-- body start-->
       <div class="px-[30px] py-[24px]">
-<!--        tab start-->
+        <!--        tab start-->
         <div class="border-b border-[#EDEDED]">
           <div class="flex justify-start items-center">
             <a href="#" class="companyOwnerTabActive">Owner</a>
@@ -90,32 +90,37 @@
 
           </div>
         </div>
-<!--        card-->
+        <!--        card-->
         <div class="mt-[16px] bg-white">
-            <div class="p-4 flex justify-between items-center">
-              <div class="flex justify-start items-center gap-x-4 w-full">
-                <div class="w-1/4 xl:w-1/5">
-                  <p class="text-primaryText leading-[20px] text-[14px] xl:leading-[24px] xl:text-[16px] font-[600]">User type</p>
-                  <Dropdown class="w-full p-[1px] mt-[10px] placeholder:text-primaryText placeholder:leading-[16px] placeholder:text-[12px] xl:placeholder:leading-[20px] xl:placeholder:text-[14px]" v-model="selectedCity" :options="cities" optionLabel="name" placeholder="Owner" />
-                </div>
-                <div class="w-1/4 xl:w-1/5">
-                  <div class="flex justify-between items-center w-full">
-                    <p class="text-primaryText leading-[20px] text-[14px] xl:leading-[24px] xl:text-[16px] font-[600]">Name</p>
-                  </div>
-                  <input type="text" class="focus:outline-none mt-[10px] w-full border border-[#DBDBDB] rounded-[4px] pl-2 py-2 placeholder:text-[#676769] placeholder:leading-[16px] placeholder:text-[12px] xl:placeholder:leading-[20px] xl:placeholder:text-[14px]" placeholder="Enter company name">
-                </div>
-
-                <div class="w-1/4 xl:w-1/5">
-                  <div class="flex justify-between items-center w-full">
-                    <p class="text-primaryText leading-[20px] text-[14px] xl:leading-[24px] xl:text-[16px] font-[600]">Mobile number</p>
-                  </div>
-                  <input type="text" class="focus:outline-none mt-[10px] w-full border border-[#DBDBDB] rounded-[4px] pl-2 py-2 placeholder:text-[#676769] placeholder:leading-[16px] placeholder:text-[12px] xl:placeholder:leading-[20px] xl:placeholder:text-[14px]" placeholder="Enter company name">
-                </div>
+          <div class="p-4 flex justify-between items-center">
+            <div class="flex justify-start items-center gap-x-4 w-full">
+              <div class="w-[15%]">
+                <p class="text-primaryText leading-[20px] text-[14px] xl:leading-[24px] xl:text-[16px] font-[600]">From</p>
+                <Dropdown class="w-full py-[7px] mt-[10px] placeholder:text-primaryText placeholder:leading-[16px] placeholder:text-[12px] xl:placeholder:leading-[20px] xl:placeholder:text-[14px]" v-model="selectedCity" :options="cities" optionLabel="name" placeholder="Select location" />
               </div>
-              <button class="flex gap-x-[9px] justify-center items-center bg-corporate text-white leading-[14px] xl:leading-[16px] text-[11px] xl:text-[12px] font-[500] py-3 pl-[17px] pr-[24px] rounded-full"><span>
-                <img src="../assets/svg/white_search.svg" class="w-[25px] xl:w-[20px] xl:h-[20px]" alt="">
+              <div class="w-1/5 xl:w-[15%]">
+                <p class="text-primaryText leading-[20px] text-[14px] xl:leading-[24px] xl:text-[16px] font-[600]">To</p>
+                <Dropdown class="w-full py-[7px] mt-[10px] placeholder:text-primaryText placeholder:leading-[16px] placeholder:text-[12px] xl:placeholder:leading-[20px] xl:placeholder:text-[14px]" v-model="selectedCity" :options="cities" optionLabel="name" placeholder="Select location" />
+              </div>
+
+              <div class="w-1/5 xl:w-[15%]">
+                <div class="flex justify-between items-center w-full">
+                  <p class="text-primaryText leading-[20px] text-[14px] xl:leading-[24px] xl:text-[16px] font-[600]">Trip ID</p>
+                </div>
+                <input type="text" class="focus:outline-none mt-[10px] w-full border border-[#DBDBDB] rounded-[4px] pl-2 py-2 placeholder:text-[#676769] placeholder:leading-[16px] placeholder:text-[12px] xl:placeholder:leading-[20px] xl:placeholder:text-[14px]" placeholder="Enter trip id">
+              </div>
+              <div class="w-1/5 xl:w-[15%]">
+                <p class="text-primaryText leading-[20px] text-[14px] xl:leading-[24px] xl:text-[16px] font-[600]">Direction</p>
+                <Dropdown class="w-full py-[7px] mt-[10px] placeholder:text-primaryText placeholder:leading-[16px] placeholder:text-[12px] xl:placeholder:leading-[20px] xl:placeholder:text-[14px]" v-model="selectedCity" :options="cities" optionLabel="name" placeholder="Select direction" />
+              </div>
+              <div class="w-1/5 xl:w-[15%] mt-8">
+                <button class="flex gap-x-[9px] justify-center items-center bg-corporate text-white leading-[14px] xl:leading-[16px] text-[11px] xl:text-[12px] font-[500] py-3 pl-[17px] pr-[24px] rounded-full"><span>
+                <img src="../assets/svg/white_search.svg" class="w-[25px] xl:w-[13px] xl:h-[13px]" alt="">
               </span>Search</button>
+              </div>
             </div>
+
+          </div>
         </div>
         <div class="bg-white rounded-[8px] mt-4">
           <!-- table start -->
@@ -126,17 +131,14 @@
                 SL
               </th>
               <th scope="col" class="companyTableHead">
-                OWNER NAME
-              </th>
-              <th scope="col" class="companyTableHead">
-                MOBILE
+                Route
               </th>
 
               <th scope="col" class="companyTableHead">
-                Email
+                Date & time
               </th>
               <th scope="col" class="companyTableHead">
-                USER TYPE
+                DIRECTION
               </th>
               <th scope="col" class="companyTableHead">
                 STATUS
@@ -149,18 +151,17 @@
             <tbody>
             <tr class="border-b border-[#EDEDED]">
               <td class="text-primaryText border-r border-[#DBDBDB] text-center leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px]">01</td>
-              <td class="text-primaryText border-r border-[#DBDBDB] text-center leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px]">
-                Fahim Ahmed
-              </td>
+
               <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText">
-                +8801708630439
+                Dhaka - Tangail - Bogura - Rangpur
               </td>
               <td class="leading-[20px] text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText">
-                owner.mail@gmail.com
+                09:45 AM <br>
+                18 July 2022
               </td>
 
               <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText">
-                OWNER
+                Up
               </td>
               <td class="border-r border-[#DBDBDB]">
                 <div class="flex justify-center items-center">
@@ -175,18 +176,17 @@
             </tr>
             <tr class="border-b border-[#EDEDED]">
               <td class="text-primaryText border-r border-[#DBDBDB] text-center leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px]">01</td>
-              <td class="text-primaryText border-r border-[#DBDBDB] text-center leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px]">
-                Fahim Ahmed
-              </td>
+
               <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText">
-                +8801708630439
+                Dhaka - Tangail - Bogura - Rangpur
               </td>
               <td class="leading-[20px] text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText">
-                owner.mail@gmail.com
+                09:45 AM <br>
+                18 July 2022
               </td>
 
               <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText">
-                OWNER
+                Up
               </td>
               <td class="border-r border-[#DBDBDB]">
                 <div class="flex justify-center items-center">
@@ -201,18 +201,17 @@
             </tr>
             <tr class="border-b border-[#EDEDED]">
               <td class="text-primaryText border-r border-[#DBDBDB] text-center leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px]">01</td>
-              <td class="text-primaryText border-r border-[#DBDBDB] text-center leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px]">
-                Fahim Ahmed
-              </td>
+
               <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText">
-                +8801708630439
+                Dhaka - Tangail - Bogura - Rangpur
               </td>
               <td class="leading-[20px] text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText">
-                owner.mail@gmail.com
+                09:45 AM <br>
+                18 July 2022
               </td>
 
               <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText">
-                OWNER
+                Up
               </td>
               <td class="border-r border-[#DBDBDB]">
                 <div class="flex justify-center items-center">
@@ -227,18 +226,17 @@
             </tr>
             <tr class="border-b border-[#EDEDED]">
               <td class="text-primaryText border-r border-[#DBDBDB] text-center leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px]">01</td>
-              <td class="text-primaryText border-r border-[#DBDBDB] text-center leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px]">
-                Fahim Ahmed
-              </td>
+
               <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText">
-                +8801708630439
+                Dhaka - Tangail - Bogura - Rangpur
               </td>
               <td class="leading-[20px] text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText">
-                owner.mail@gmail.com
+                09:45 AM <br>
+                18 July 2022
               </td>
 
               <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText">
-                OWNER
+                Up
               </td>
               <td class="border-r border-[#DBDBDB]">
                 <div class="flex justify-center items-center">
@@ -253,18 +251,17 @@
             </tr>
             <tr class="border-b border-[#EDEDED]">
               <td class="text-primaryText border-r border-[#DBDBDB] text-center leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px]">01</td>
-              <td class="text-primaryText border-r border-[#DBDBDB] text-center leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px]">
-                Fahim Ahmed
-              </td>
+
               <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText">
-                +8801708630439
+                Dhaka - Tangail - Bogura - Rangpur
               </td>
               <td class="leading-[20px] text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText">
-                owner.mail@gmail.com
+                09:45 AM <br>
+                18 July 2022
               </td>
 
               <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText">
-                OWNER
+                Up
               </td>
               <td class="border-r border-[#DBDBDB]">
                 <div class="flex justify-center items-center">
@@ -277,32 +274,7 @@
                 </div>
               </td>
             </tr>
-            <tr class="border-b border-[#EDEDED]">
-              <td class="text-primaryText border-r border-[#DBDBDB] text-center leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px]">01</td>
-              <td class="text-primaryText border-r border-[#DBDBDB] text-center leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px]">
-                Fahim Ahmed
-              </td>
-              <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText">
-                +8801708630439
-              </td>
-              <td class="leading-[20px] text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText">
-                owner.mail@gmail.com
-              </td>
 
-              <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText">
-                OWNER
-              </td>
-              <td class="border-r border-[#DBDBDB]">
-                <div class="flex justify-center items-center">
-                  <p class="companyTableStatus">Active</p>
-                </div>
-              </td>
-              <td class="border-r border-[#DBDBDB]">
-                <div class="py-[5px] px-[18px] flex justify-center items-center gap-x-[16px]">
-                  <button class="companyEditButton"><span><img src="../assets/svg/edit.svg" class="w-3 h-3" alt=""></span>Edit</button>
-                </div>
-              </td>
-            </tr>
 
             </tbody>
           </table>
@@ -313,12 +285,20 @@
   </div>
 </template>
 
-<style scoped>
+<style>
 select {
   /* for Firefox */
   -moz-appearance: none;
   /* for Chrome */
   -webkit-appearance: none;
+}
+.p-dropdown .p-dropdown-label.p-placeholder {
+  color: #6c757d;
+  font-size: 14px;
+}
+
+.p-dropdown-label.p-inputtext {
+  padding: 10px 10px !important;
 }
 
 /* For IE10 */

@@ -4,11 +4,13 @@ import router from './router'
 import './assets/main.css'
 import PrimeVue from 'primevue/config';
 import Dropdown from 'primevue/dropdown';
+import SelectButton from 'primevue/selectbutton';
 
 const app = createApp(App)
 
 app.use(router)
 app.use(PrimeVue);
 app.component('Dropdown', Dropdown);
+app.component('SelectButton', SelectButton);
 app.mount('#app')
 

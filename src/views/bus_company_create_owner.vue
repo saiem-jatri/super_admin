@@ -57,6 +57,8 @@
                 <p class="text-secondaryText leading-[12px] text-[8px] xl:leading-[16px] xl:text-[12px] font-[400]">Manage</p>
                 <img src="../assets/svg/bgBack.svg" alt="" class="w-1 h-2">
                 <p class="text-secondaryText leading-[12px] text-[8px] xl:leading-[16px] xl:text-[12px] font-[400]">Owner</p>
+                <img src="../assets/svg/bgBack.svg" alt="" class="w-1 h-2">
+                <p class="text-secondaryText leading-[12px] text-[8px] xl:leading-[16px] xl:text-[12px] font-[400]">Add user</p>
               </div>
             </div>
           </div>
@@ -114,7 +116,7 @@
               <div class="flex gap-x-4 justify-start items-center">
                 <p class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]">User type:</p>
                 <div class="w-[270px]">
-                  <Dropdown class="w-full p-[1px] mt-[10px] placeholder:text-primaryText" v-model="selectedCity" :options="cities" optionLabel="name" placeholder="Owner" />
+                  <Dropdown class="w-full py-[7px] mt-[10px] placeholder:text-primaryText" v-model="selectedCity" :options="cities" optionLabel="name" placeholder="Owner" />
                 </div>
               </div>
               <div class="form-group  mt-5">
@@ -213,10 +215,20 @@
                       </div>
                     </div>
                   </div>
-
                 </div>
               </div>
             </div>
+          </div>
+          <hr class="mt-[16px] border-t border-corporateBorder">
+          <div class="px-[16px] py-[20px] w-full flex justify-between items-center">
+            <div class="flex gap-x-[16px] items-center">
+              <p class="text-primaryText font-[600] leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] ">Status</p>
+              <div class="flex justify-center items-center">
+                <button class="bg-[#48A43F] w-[90px] xl:w-[110px] text-white leading-[16px] xl:leading-[20px] text-[12px] xl:text-[14px] flex justify-center items-center font-[400] h-[40px] rounded-l-[4px]">Active</button>
+                <button class="bg-[#F7F7F7] w-[90px] xl:w-[110px] text-primaryText leading-[16px] xl:leading-[20px] text-[12px] xl:text-[14px] border border-[#DBDBDB] flex justify-center items-center font-[400] h-[40px] rounded-r-[4px]">Inactive</button>
+              </div>
+            </div>
+            <button class="flex justify-center items-center text-white leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[600] bg-corporate bg-opacity-30 rounded-full px-[20px] py-[11px] xl:px-[24px] xl:py-[13px]">Create company</button>
           </div>
         </div>
         </div>
@@ -225,7 +237,7 @@
   </div>
 </template>
 
-<style scoped>
+<style>
 select {
   /* for Firefox */
   -moz-appearance: none;
@@ -255,8 +267,8 @@ select::-ms-expand {
 
 .form-group input {
   padding: 0;
-  height: 18px;
-  width: 18px;
+  height: 14px;
+  width: 14px;
   margin-bottom: 0;
   display: none;
   cursor: pointer;

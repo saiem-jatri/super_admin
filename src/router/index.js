@@ -8,6 +8,10 @@ import CreateFilled from '@/views/create_filled.vue'
 import CompanyOwner from '@/views/bus_company_owner.vue'
 import CompanyTicket from '@/views/bus_company_Ticket.vue'
 import companyCreateOwner from '@/views/bus_company_create_owner.vue'
+import companyCreateRoute from '@/views/bus_company_create_route.vue'
+import companyCreateCounter from '@/views/bus_company_create_counter.vue'
+import companyManageTrip from '@/views/bus_company_manage_trips.vue'
+import companyCreateCounterman from '@/views/bus_company_create_counterman.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -56,6 +60,26 @@ const router = createRouter({
       path: '/createOwner',
       name: 'createOwner',
       component: companyCreateOwner
+    },
+    {
+      path: '/createRoute',
+      name: 'createRoute',
+      component: companyCreateRoute
+    },
+    {
+      path: '/createCounter',
+      name: 'createCounter',
+      component: companyCreateCounter
+    },
+    {
+      path: '/manageTrip',
+      name: 'companyManageTrip',
+      component: companyManageTrip
+    },
+    {
+      path: '/createCounterman',
+      name: 'manageTrip',
+      component: companyCreateCounterman
     },
 
 
