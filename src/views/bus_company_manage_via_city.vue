@@ -82,61 +82,64 @@
         <!--        card-->
         <div class="mt-[16px] bg-white rounded-[10px]">
           <div class="p-4">
-              <div class="flex justify-between  divide-x divide-corporateBorder">
-                <div class="w-1/2 pr-[60px] xl:pr-[125px]">
-                  <div class="flex justify-between items-center">
-                    <label for="#" class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] text-primaryText font-[400]">Select origin city:</label>
-                    <div class="w-[200px] xl:w-[270px]">
-                      <Dropdown class="w-full p-[1px] mt-[10px] placeholder:text-primaryText" v-model="selectedCity" :options="cities" optionLabel="name" placeholder="Owner" />
-                    </div>
-                  </div>
-                  <div class="flex justify-between items-center mt-[12px] xl:mt-[16px]">
-                    <label for="#" class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] text-primaryText font-[400]">Add via city (optional):</label>
-                    <div class="w-[200px] xl:w-[270px] mb-2">
-                      <Dropdown class="w-full p-[1px] mt-[10px] placeholder:text-primaryText" v-model="selectedCity" :options="cities" optionLabel="name" placeholder="Owner" />
-                    </div>
-                  </div>
-                  <button class="w-full border border-dashed border-[#1E88E5] flex justify-center items-center bg-[#EFF7FD] rounded-[4px] mt-[12px] xl:mt-[16px]">
-                    <div class="flex justify-center items-center gap-x-[11px] py-[8px]">
-                      <img src="../assets/svg/createPlus.svg" class="w-[10px] h-[10px]" alt="">
-                      <p class="text-primaryText font-[600] leading-[16px] xl:leading-[20px] text-[12px] xl:text-[14px]">Add via city</p>
-                    </div>
-                  </button>
-                  <div class="flex justify-between items-center mt-[12px] xl:mt-[8px]">
-                    <label for="#" class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] text-primaryText font-[400]">Select destination city:</label>
-                    <div class="w-[200px] xl:w-[270px] mb-2">
-                      <Dropdown class="w-full p-[1px] mt-[10px] placeholder:text-primaryText" v-model="selectedCity" :options="cities" optionLabel="name" placeholder="Rangpur" />
-                    </div>
-                  </div>
-                  <div class="mt-[12px] xl:mt-[16px] bg-[#F7F7F7] rounded-[4px]">
-                      <div class="py-[2px] xl:py-[6px] pl-[12px] xl:pl-[16px] flex gap-x-[10px] items-center">
-                          <p class="text-primaryText leading-[20px] xl:leading-[24px] text-[14px] xl:text-[16px] font-[400] ">Route direction:</p>
-                        <div class="flex justify-evenly items-center w-[50%]">
-                          <div class="form-group mt-2">
-                            <input type="checkbox" id="read">
-                            <label for="read" class="text-primaryText leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px] font-[400]">up</label>
-                          </div>
-                          <div class="form-group mt-2">
-                            <input type="checkbox" id="down">
-                            <label for="down" class="text-primaryText leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px] font-[400]">down</label>
-                          </div>
-                        </div>
-                      </div>
+            <div class="flex justify-between  divide-x divide-corporateBorder">
+              <div class="w-1/2 pr-[60px] xl:pr-[125px]">
+                <div class="flex justify-between items-center">
+                  <label for="#" class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] text-primaryText font-[400]">Select origin city:</label>
+                  <div class="w-[200px] xl:w-[270px]">
+                    <Dropdown class="w-full p-[1px] mt-[10px] placeholder:text-primaryText" v-model="selectedCity" :options="cities" optionLabel="name" placeholder="Owner" />
                   </div>
                 </div>
-                <div class="w-1/2">
-                  <div class=" pl-4">
-                    <p class="leading-[24px] xl:leading-[28px] text-[18px] xl:text-[20px] text-primaryText font-[600]">Possible best routes</p>
-                    <hr class="mt-[6px] xl:mt-[8px] border-t border-[#EDEDED]">
-                    <div class="h-[200px] w-full flex justify-center items-center">
-                        <div class="flex flex-col gap-y-[10px] justify-center items-center">
-                          <img src="../assets/svg/exclamatory.svg" class="h-5 w-5" alt="">
-                          <p class="text-corporateSecondaryBlack leading-[20px] xl:leading-[24px] text-[14px] xl:text-[16px] text-center">Best possible routes will appeared <br>once you select via city.</p>
-                        </div>
+                <div class="flex justify-between items-center mt-[12px] xl:mt-[16px]">
+                  <label for="#" class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] text-primaryText font-[400]">Add via city (optional):</label>
+                  <div class="w-[200px] xl:w-[270px] mb-2">
+                    <Dropdown class="w-full p-[1px] mt-[10px] placeholder:text-primaryText" v-model="selectedCity" :options="cities" optionLabel="name" placeholder="Owner" />
+                  </div>
+                </div>
+                <button class="w-full border border-dashed border-[#1E88E5] flex justify-center items-center bg-[#EFF7FD] rounded-[4px] mt-[12px] xl:mt-[16px]">
+                  <div class="flex justify-center items-center gap-x-[11px] py-[8px]">
+                    <img src="../assets/svg/createPlus.svg" class="w-[10px] h-[10px]" alt="">
+                    <p class="text-primaryText font-[600] leading-[16px] xl:leading-[20px] text-[12px] xl:text-[14px]">Add via city</p>
+                  </div>
+                </button>
+                <div class="flex justify-between items-center mt-[12px] xl:mt-[8px]">
+                  <label for="#" class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] text-primaryText font-[400]">Select destination city:</label>
+                  <div class="w-[200px] xl:w-[270px] mb-2">
+                    <Dropdown class="w-full p-[1px] mt-[10px] placeholder:text-primaryText" v-model="selectedCity" :options="cities" optionLabel="name" placeholder="Rangpur" />
+                  </div>
+                </div>
+                <div class="mt-[12px] xl:mt-[16px] bg-[#F7F7F7] rounded-[4px]">
+                  <div class="py-[2px] xl:py-[6px] pl-[12px] xl:pl-[16px] flex gap-x-[10px] items-center">
+                    <p class="text-primaryText leading-[20px] xl:leading-[24px] text-[14px] xl:text-[16px] font-[400] ">Route direction:</p>
+                    <div class="flex justify-evenly items-center w-[50%]">
+                      <div class="form-group mt-2">
+                        <input type="checkbox" id="read">
+                        <label for="read" class="text-primaryText leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px] font-[400]">up</label>
+                      </div>
+                      <div class="form-group mt-2">
+                        <input type="checkbox" id="down">
+                        <label for="down" class="text-primaryText leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px] font-[400]">down</label>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
+              <div class="w-1/2">
+                <div class=" pl-4">
+                <div class="flex justify-between items-center">
+                  <p class="leading-[24px] xl:leading-[28px] text-[18px] xl:text-[20px] text-primaryText font-[600]">Possible best routes</p>
+                  <a href="#" class="block border-b border-corporateError text-corporateError leading-[12px] text-[11px] xl:leading-[16px] xl:text-[12px]">Reset</a>
+                </div>
+                  <hr class="mt-[6px] xl:mt-[8px] border-t border-[#EDEDED]">
+                  <div class="mt-[8px] xl:mt-[16px] flex items-center gap-x-[8px]">
+                    <img src="../assets/svg/bar.svg"  alt="">
+                    <div class="w-1/2 bg-[#f7f7f7] rounded-[4px]">
+                        <p class=" py-[6px] pl-[8px] leading-[20px] text-[14px] xl:leading-[24px] xl:text-[16px] text-primaryText">Dhaka - Rangpur</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
           <hr class="mt-[12px] xl:mt-[16px] border-t border-corporateBorder">
           <div class="px-[16px] py-[20px] w-full flex justify-between items-center">
@@ -147,7 +150,7 @@
                 <button class="bg-[#F7F7F7] w-[90px] xl:w-[110px] text-primaryText leading-[16px] xl:leading-[20px] text-[12px] xl:text-[14px] border border-[#DBDBDB] flex justify-center items-center font-[400] h-[40px] rounded-r-[4px]">Inactive</button>
               </div>
             </div>
-            <button class="flex justify-center items-center text-white leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[600] bg-corporate bg-opacity-30 rounded-full px-[20px] py-[11px] xl:px-[24px] xl:py-[13px]">Create company</button>
+            <button class="flex justify-center items-center text-white leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[600] bg-corporate rounded-full px-[20px] py-[11px] xl:px-[24px] xl:py-[13px]">Create routes</button>
           </div>
         </div>
       </div>

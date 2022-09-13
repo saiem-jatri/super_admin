@@ -12,6 +12,13 @@ import companyCreateRoute from '@/views/bus_company_create_route.vue'
 import companyCreateCounter from '@/views/bus_company_create_counter.vue'
 import companyManageTrip from '@/views/bus_company_manage_trips.vue'
 import companyCreateCounterman from '@/views/bus_company_create_counterman.vue'
+import companyCreateSupervisor from '@/views/bus_company_create_supervisor.vue'
+import companyCreateDriver from '@/views/bus_company_create_driver.vue'
+import companyCreateHelper from '@/views/bus_company_create_helper.vue'
+import companyManageCreateDriver from '@/views/bus_company_manage_create_driver.vue'
+import viacity from '@/views/bus_company_manage_via_city.vue'
+import companyManageCompany from  '@/views/bus_company_manage_company.vue'
+import viacityFilled from '@/views/bus_company_manage_via_city_filled.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -76,13 +83,42 @@ const router = createRouter({
       name: 'companyManageTrip',
       component: companyManageTrip
     },
+
     {
-      path: '/createCounterman',
-      name: 'manageTrip',
-      component: companyCreateCounterman
+      path: '/createSupervisor',
+      name: 'companyCreateSupervisor',
+      component: companyCreateSupervisor
     },
-
-
+    {
+      path: '/createDriver',
+      name: 'companyCreateDriver',
+      component: companyCreateDriver
+    },
+    {
+      path: '/createHelper',
+      name: 'companyCreateHelper',
+      component: companyCreateHelper
+    },
+    {
+      path: '/createManageDriver',
+      name: 'companyManageCreateDriver',
+      component: companyManageCreateDriver
+    },
+    {
+      path: '/viaCity',
+      name: 'viacity',
+      component: viacity
+    },
+    {
+      path: '/viaCityFilled',
+      name: 'viacityFilled',
+      component: viacityFilled
+    },
+    {
+      path: '/manageCompany',
+      name: 'companyManageCompany',
+      component: companyManageCompany
+    },
   ]
 })
 

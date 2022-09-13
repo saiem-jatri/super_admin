@@ -14,6 +14,7 @@ module.exports = {
         corporateAsh: '#8D8D8F',
         corporateSuccess: '#48A43F',
         corporateSecondaryBlack: '#4D4D4F',
+        corporateError: '#E0293B'
       },
       fontFamily: {
         inter: ['"Inter"', ...defaultTheme.fontFamily.sans]
