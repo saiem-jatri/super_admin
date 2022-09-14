@@ -44,11 +44,9 @@
               <p class="text-primaryText leading-[12px] text-[10px] xl:leading-[16px] xl:text-[12px] font-[500]">Back</p>
             </button>
             <div class="flex flex-col gap-y-[4px]">
-              <p class="lg:leading-[16px] xl:leading-[28px] lg:text-[14px] xl:text-[20px] font-[600] text-primaryText">Create Company</p>
+              <p class="lg:leading-[16px] xl:leading-[28px] lg:text-[14px] xl:text-[20px] font-[600] text-primaryText">Counter</p>
               <div class="flex justify-center items-center gap-x-[6px]">
-                <p class="text-secondaryText leading-[12px] text-[8px] xl:leading-[16px] xl:text-[12px] font-[400]">Bus Company</p>
-                <img src="../assets/svg/bgBack.svg" alt="" class="w-1 h-2">
-                <p class="text-secondaryText leading-[12px] text-[8px] xl:leading-[16px] xl:text-[12px] font-[400]">Add company</p>
+                <p class="text-secondaryText leading-[12px] text-[8px] xl:leading-[16px] xl:text-[12px] font-[400]">Company</p>
                 <img src="../assets/svg/bgBack.svg" alt="" class="w-1 h-2">
                 <p class="text-secondaryText leading-[12px] text-[8px] xl:leading-[16px] xl:text-[12px] font-[400]">Desh Travels Limited</p>
                 <img src="../assets/svg/bgBack.svg" alt="" class="w-1 h-2">
@@ -85,43 +83,13 @@
             <a href="#" class="companyOwnerTabNonActive">Trips</a>
             <a href="#" class="companyOwnerTabNonActive">Agent</a>
             <a href="#" class="companyOwnerTabNonActive">Counterman</a>
-            <a href="#" class="companyOwnerTabNonActive">Staffs</a>
-            <a href="#" class="companyOwnerTabNonActive">Ticket</a>
+            <a href="#" class="companyOwnerTabNonActive">Supervisor</a>
+            <a href="#" class="companyOwnerTabNonActive">Driver</a>
 
           </div>
         </div>
         <!--        card-->
-        <div class="mt-[16px] bg-white">
-          <div class="p-4 flex justify-between items-center">
-            <div class="flex justify-start items-center gap-x-4 w-full">
-              <div class="w-[15%]">
-                <p class="text-primaryText leading-[20px] text-[14px] xl:leading-[24px] xl:text-[16px] font-[600]">From</p>
-                <Dropdown class="w-full py-[4px] mt-[10px] placeholder:text-primaryText placeholder:leading-[16px] placeholder:text-[12px] xl:placeholder:leading-[20px] xl:placeholder:text-[14px]" v-model="selectedCity" :options="cities" optionLabel="name" placeholder="Select location" />
-              </div>
-              <div class="w-1/5 xl:w-[15%]">
-                <p class="text-primaryText leading-[20px] text-[14px] xl:leading-[24px] xl:text-[16px] font-[600]">To</p>
-                <Dropdown class="w-full py-[4px] mt-[10px] placeholder:text-primaryText placeholder:leading-[16px] placeholder:text-[12px] xl:placeholder:leading-[20px] xl:placeholder:text-[14px]" v-model="selectedCity" :options="cities" optionLabel="name" placeholder="Select location" />
-              </div>
 
-              <div class="w-1/5 xl:w-[15%]">
-                <div class="flex justify-between items-center w-full">
-                  <p class="text-primaryText leading-[20px] text-[14px] xl:leading-[24px] xl:text-[16px] font-[600]">Trip ID</p>
-                </div>
-                <input type="text" class="focus:outline-none mt-[10px] w-full border border-[#DBDBDB] rounded-[4px] pl-2 py-2 placeholder:text-[#676769] placeholder:leading-[16px] placeholder:text-[12px] xl:placeholder:leading-[20px] xl:placeholder:text-[14px]" placeholder="Enter trip id">
-              </div>
-              <div class="w-1/5 xl:w-[15%]">
-                <p class="text-primaryText leading-[20px] text-[14px] xl:leading-[24px] xl:text-[16px] font-[600]">Direction</p>
-                <Dropdown class="w-full py-[4px] mt-[10px] placeholder:text-primaryText placeholder:leading-[16px] placeholder:text-[12px] xl:placeholder:leading-[20px] xl:placeholder:text-[14px]" v-model="selectedCity" :options="cities" optionLabel="name" placeholder="Select direction" />
-              </div>
-              <div class="w-1/5 xl:w-[15%] mt-8">
-                <button class="flex gap-x-[9px] justify-center items-center bg-corporate text-white leading-[14px] xl:leading-[16px] text-[11px] xl:text-[12px] font-[500] py-3 pl-[17px] pr-[24px] rounded-full"><span>
-                <img src="../assets/svg/white_search.svg" class="w-[25px] xl:w-[13px] xl:h-[13px]" alt="">
-              </span>Search</button>
-              </div>
-            </div>
-
-          </div>
-        </div>
         <div class="bg-white rounded-[8px] mt-4">
           <!-- table start -->
           <table class="min-w-full">
@@ -131,14 +99,17 @@
                 SL
               </th>
               <th scope="col" class="companyTableHead">
-                Route
+                OWNER NAME
               </th>
 
               <th scope="col" class="companyTableHead">
-                Date & time
+                MOBILE
               </th>
               <th scope="col" class="companyTableHead">
-                DIRECTION
+                EMAIL
+              </th>
+              <th scope="col" class="companyTableHead">
+                USER TYPE
               </th>
               <th scope="col" class="companyTableHead">
                 STATUS
@@ -153,15 +124,17 @@
               <td class="text-primaryText border-r border-[#DBDBDB] text-center leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px]">01</td>
 
               <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText">
-                Dhaka - Tangail - Bogura - Rangpur
+                Fahim Ahmed
               </td>
               <td class="leading-[20px] text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText">
-                09:45 AM <br>
-                18 July 2022
+                +8801708630439
               </td>
 
               <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText">
-                Up
+                owner.mail@gmail.com
+              </td>
+              <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText">
+                OWNER
               </td>
               <td class="border-r border-[#DBDBDB]">
                 <div class="flex justify-center items-center">
@@ -178,15 +151,17 @@
               <td class="text-primaryText border-r border-[#DBDBDB] text-center leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px]">01</td>
 
               <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText">
-                Dhaka - Tangail - Bogura - Rangpur
+                Fahim Ahmed
               </td>
               <td class="leading-[20px] text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText">
-                09:45 AM <br>
-                18 July 2022
+                +8801708630439
               </td>
 
               <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText">
-                Up
+                owner.mail@gmail.com
+              </td>
+              <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText">
+                OWNER
               </td>
               <td class="border-r border-[#DBDBDB]">
                 <div class="flex justify-center items-center">
@@ -203,15 +178,17 @@
               <td class="text-primaryText border-r border-[#DBDBDB] text-center leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px]">01</td>
 
               <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText">
-                Dhaka - Tangail - Bogura - Rangpur
+                Fahim Ahmed
               </td>
               <td class="leading-[20px] text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText">
-                09:45 AM <br>
-                18 July 2022
+                +8801708630439
               </td>
 
               <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText">
-                Up
+                owner.mail@gmail.com
+              </td>
+              <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText">
+                OWNER
               </td>
               <td class="border-r border-[#DBDBDB]">
                 <div class="flex justify-center items-center">
@@ -228,15 +205,17 @@
               <td class="text-primaryText border-r border-[#DBDBDB] text-center leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px]">01</td>
 
               <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText">
-                Dhaka - Tangail - Bogura - Rangpur
+                Fahim Ahmed
               </td>
               <td class="leading-[20px] text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText">
-                09:45 AM <br>
-                18 July 2022
+                +8801708630439
               </td>
 
               <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText">
-                Up
+                owner.mail@gmail.com
+              </td>
+              <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText">
+                OWNER
               </td>
               <td class="border-r border-[#DBDBDB]">
                 <div class="flex justify-center items-center">
@@ -253,15 +232,17 @@
               <td class="text-primaryText border-r border-[#DBDBDB] text-center leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px]">01</td>
 
               <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText">
-                Dhaka - Tangail - Bogura - Rangpur
+                Fahim Ahmed
               </td>
               <td class="leading-[20px] text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText">
-                09:45 AM <br>
-                18 July 2022
+                +8801708630439
               </td>
 
               <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText">
-                Up
+                owner.mail@gmail.com
+              </td>
+              <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText">
+                OWNER
               </td>
               <td class="border-r border-[#DBDBDB]">
                 <div class="flex justify-center items-center">
@@ -274,6 +255,8 @@
                 </div>
               </td>
             </tr>
+
+
 
 
             </tbody>

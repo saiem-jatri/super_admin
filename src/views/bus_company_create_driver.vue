@@ -95,11 +95,11 @@
               </div>
               <div class="w-1/4">
                 <p class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]">Email address</p>
-                <Dropdown class="w-full py-[7px] mt-[10px]" v-model="selectedCity" :opti6ns="cities" optionLabel="name" placeholder="Enter email address" />
+                <Dropdown class="w-full py-[4px] mt-[10px]" v-model="selectedCity" :opti6ns="cities" optionLabel="name" placeholder="Enter email address" />
               </div>
               <div class="w-1/4">
                 <p class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]">NID number</p>
-                <Dropdown class="w-full py-[7px] mt-[10px]" v-model="selectedCity" :opti6ns="cities" optionLabel="name" placeholder="Enter NID number" />
+                <Dropdown class="w-full py-[4px] mt-[10px]" v-model="selectedCity" :opti6ns="cities" optionLabel="name" placeholder="Enter NID number" />
               </div>
             </div>
             <div class="flex justify-start items-center gap-x-[10px] xl:gap-x-[16px] mt-[12px] xl:mt-[16px]">

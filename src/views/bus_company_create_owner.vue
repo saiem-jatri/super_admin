@@ -116,7 +116,7 @@
               <div class="flex gap-x-4 justify-start items-center">
                 <p class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]">User type:</p>
                 <div class="w-[270px]">
-                  <Dropdown class="w-full py-[7px] mt-[10px] placeholder:text-primaryText" v-model="selectedCity" :options="cities" optionLabel="name" placeholder="Owner" />
+                  <Dropdown class="w-full py-[4px] mb-2 mt-[10px] placeholder:text-primaryText" v-model="selectedCity" :options="cities" optionLabel="name" placeholder="Owner" />
                 </div>
               </div>
               <div class="form-group  mt-5">
@@ -124,7 +124,7 @@
                 <label for="html" class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]">Give All Permission</label>
               </div>
             </div>
-            <hr class="border-t border-corporateBorder mt-3">
+            <hr class="border-t border-corporateBorder mt-[10px]">
             <div class="flex divide-x divide-corporateBorder">
               <div class="w-1/2">
                 <div class="py-[18px] pl-[16px] pr-[46px]">

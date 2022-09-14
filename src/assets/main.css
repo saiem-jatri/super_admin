@@ -60,7 +60,7 @@ body{
 }
 
 .createNormalInput {
-    @apply focus:outline-none w-1/4 mt-[10px] w-full border border-[#DBDBDB] rounded-[4px] pl-2 py-2 placeholder:text-[#676769] placeholder:leading-[16px] placeholder:text-[10px] xl:placeholder:leading-[20px] xl:placeholder:text-[14px]
+    @apply focus:outline-none w-1/4 mt-[10px] w-full border border-[#DBDBDB] rounded-[4px] pl-2 py-[8px] placeholder:text-[#676769] placeholder:leading-[16px] placeholder:text-[10px] xl:placeholder:leading-[20px] xl:placeholder:text-[14px]
 }
 
 .createNormalInputActive {
@@ -72,4 +72,13 @@ body{
 }
 .companyOwnerTabActive{
     @apply block w-[83px] h-[25px] xl:w-[93px] xl:h-[30px] text-center border-b-4 border-corporate leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] rounded-t-[8px] bg-white text-corporate font-[600]
+}
+.viaCityActive{
+    @apply bg-[#48A43F] w-[90px] xl:w-[110px] text-white leading-[16px] xl:leading-[20px] text-[12px] xl:text-[14px] flex justify-center items-center font-[400] h-[40px] rounded-l-[4px]
+}
+.viaCityInActive{
+    @apply bg-[#F7F7F7] w-[90px] xl:w-[110px] text-primaryText leading-[16px] xl:leading-[20px] text-[12px] xl:text-[14px] border border-[#DBDBDB] flex justify-center items-center font-[400] h-[40px] rounded-r-[4px]
+}
+.createBtn{
+    @apply flex justify-center items-center text-white leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[600] bg-corporate rounded-full px-[20px] py-[11px] xl:px-[24px] xl:py-[13px]
 }
