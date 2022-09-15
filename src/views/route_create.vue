@@ -74,7 +74,7 @@
       <div class="px-[30px] py-[24px]">
 
         <!--        card-->
-        <div class="mt-[16px] bg-white rounded-[10px]">
+        <div class="bg-white rounded-[10px]">
           <div class="p-4">
               <div class="flex justify-between  divide-x divide-corporateBorder">
                 <div class="w-1/2 pr-[60px] xl:pr-[125px]">
@@ -84,13 +84,13 @@
                       <Dropdown class="w-full py-[4px] mt-[10px] placeholder:text-primaryText" v-model="selectedCity" :options="cities" optionLabel="name" placeholder="Select operator" />
                     </div>
                   </div>
-                  <div class="flex justify-between items-center mt-[12px] xl:mt-[16px]">
+                  <div class="flex justify-between items-center mt-[12px] xl:mt-[8px]">
                     <label for="#" class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] text-primaryText font-[400]">Select origin city:</label>
                     <div class="w-[200px] xl:w-[270px] mb-2">
                       <Dropdown class="w-full py-[4px] mt-[10px] placeholder:text-primaryText" v-model="selectedCity" :options="cities" optionLabel="name" placeholder="Select origin city" />
                     </div>
                   </div>
-                  <button class="w-full border border-dashed border-[#1E88E5] flex justify-center items-center bg-[#EFF7FD] rounded-[4px] mt-[12px] xl:mt-[16px]">
+                  <button class="w-full border border-dashed border-[#1E88E5] flex justify-center items-center bg-[#EFF7FD] rounded-[4px] mt-[12px] xl:mt-[10px]">
                     <div class="flex justify-center items-center gap-x-[11px] py-[8px]">
                       <img src="../assets/svg/createPlus.svg" class="w-[10px] h-[10px]" alt="">
                       <p class="text-primaryText font-[600] leading-[16px] xl:leading-[20px] text-[12px] xl:text-[14px]">Add via city</p>
