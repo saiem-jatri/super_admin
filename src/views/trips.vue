@@ -36,7 +36,7 @@
       <!-- Top nav bar start-->
       <div class="bg-white h-[72px] sticky top-0 border-b border-[#DBDBDB] z-10">
         <div class="flex justify-between items-center">
-          <p class="p-6 text-[#151414] leading-[28px] text-[20px] font-[600]">Counter</p>
+          <p class="p-6 text-[#151414] leading-[28px] text-[20px] font-[600]">Trips</p>
           <div class="w-[230px] xl:w-[270px] h-[40px] border border-[#DBDBDB] flex justify-center items-center leading-[20px] rounded-[4px] pl-14 xl:pl-[9px] overflow-hidden" >
             <img src="../assets/svg/search.svg" class="h-5 w-5" alt="">
             <input type="text" class="outline-none pl-2 placeholder:text-[#4D4D4F] placeholder:text-[14px] placeholder:leading-[20px]" placeholder="PNR or mobile number">
@@ -92,7 +92,7 @@
             </div>
             <div class="mt-8">
               <button class="flex gap-x-[9px] justify-center items-center bg-corporate text-white leading-[14px] xl:leading-[16px] text-[11px] xl:text-[12px] font-[500] py-3 pl-[17px] pr-[24px] rounded-full"><span>
-                <img src="../assets/svg/white_search.svg" class="w-[25px] xl:w-[13px] xl:h-[13px]" alt="">
+                <img src="../assets/svg/white_search.svg" class="w-[13px] xl:h-[13px]" alt="">
               </span>Search</button>
             </div>
           </div>
@@ -147,8 +147,8 @@
               <td class="border-r border-[#DBDBDB]">
                 <div class="py-[5px] px-[18px] flex justify-evenly items-center gap-x-[16px]">
                   <button class="flex justify-center items-center bg-[#EDEDED] gap-x-[10px] leading-[16px] text-[12px] font-[500] text-primaryText rounded-full w-[80px] h-[26px] xl:w-[90px] xl:h-[36px]"><span><img src="../assets/svg/ash_cross.svg" class="w-[8px] h-[8px]" alt=""></span>Cancel</button>
-                  <button class="companyEditButton"><span><img src="../assets/svg/copy.svg" class="w-[16px] h-[231px]" alt=""></span>Edit</button>
-                  <button class="companyEditButton"><span><img src="../assets/svg/edit.svg" class="w-[16px] h-[231px]" alt=""></span>Edit</button>
+                  <button class="companyEditButton"><span><img src="../assets/svg/copy.svg" class="w-[16px] h-[231px]" alt=""></span>Copy</button>
+                  <button class="flex justify-center items-center gap-x-[10px] bg-[#1E88E5] leading-[16px] text-[12px] font-[500] text-white rounded-full w-[80px] h-[26px] xl:w-[90px] xl:h-[36px]"><span><img src="../assets/svg/white_edit.svg" class="w-[16px] h-[231px]" alt=""></span>Edit</button>
                 </div>
               </td>
             </tr>
@@ -168,25 +168,141 @@
               </td>
               <td class="border-r border-[#DBDBDB]">
                 <div class="flex justify-center items-center">
-                  <button class="flex justify-center items-center bg-[#48A43F] w-[140px] h-[35px] rounded-[8px] gap-x-[8px] leading-[16px] xl:leading-[20px] text-[12px] xl:text-[14px] text-white"> <InputSwitch v-model="checked" /> Active</button>
+                  <button class="flex justify-center items-center bg-[#48A43F] w-[140px] h-[35px] rounded-[8px] gap-x-[8px] leading-[16px] xl:leading-[20px] text-[12px] xl:text-[14px] text-white"> <InputSwitch v-model="checked" class="mr-2" /> Active</button>
 
                 </div>
               </td>
               <td class="border-r border-[#DBDBDB]">
                 <div class="py-[5px] px-[18px] flex justify-evenly items-center gap-x-[16px]">
-                  <button class="companyEditButton"><span><img src="../assets/svg/edit.svg" class="w-[16px] h-[231px]" alt=""></span>Edit</button>
-                  <img src="../assets/svg/man.svg" alt="">
+                  <button class="flex justify-center items-center bg-[#EDEDED] gap-x-[10px] leading-[16px] text-[12px] font-[500] text-primaryText rounded-full w-[80px] h-[26px] xl:w-[90px] xl:h-[36px]"><span><img src="../assets/svg/ash_cross.svg" class="w-[8px] h-[8px]" alt=""></span>Cancel</button>
+                  <button class="companyEditButton"><span><img src="../assets/svg/copy.svg" class="w-[16px] h-[231px]" alt=""></span>Copy</button>
+                  <button class="flex justify-center items-center gap-x-[10px] bg-[#1E88E5] leading-[16px] text-[12px] font-[500] text-white rounded-full w-[80px] h-[26px] xl:w-[90px] xl:h-[36px]"><span><img src="../assets/svg/white_edit.svg" class="w-[16px] h-[231px]" alt=""></span>Edit</button>
                 </div>
               </td>
             </tr>
+            <tr class="border-b border-[#EDEDED]">
+              <td class="text-primaryText border-r border-[#DBDBDB] text-center leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px]">01</td>
 
+              <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText">
+                Dhaka - Tangail - Bogura - Rangpur
+              </td>
+              <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText">
+                09:45 AM <br>
+                18 July 2022
+              </td>
 
+              <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText">
+                Up
+              </td>
+              <td class="border-r border-[#DBDBDB]">
+                <div class="flex justify-center items-center">
+                  <button class="flex justify-center items-center bg-[#48A43F] w-[140px] h-[35px] rounded-[8px] gap-x-[8px] leading-[16px] xl:leading-[20px] text-[12px] xl:text-[14px] text-white"> <InputSwitch v-model="checked" class="mr-2" /> Active</button>
 
+                </div>
+              </td>
+              <td class="border-r border-[#DBDBDB]">
+                <div class="py-[5px] px-[18px] flex justify-evenly items-center gap-x-[16px]">
+                  <button class="flex justify-center items-center bg-[#EDEDED] gap-x-[10px] leading-[16px] text-[12px] font-[500] text-primaryText rounded-full w-[80px] h-[26px] xl:w-[90px] xl:h-[36px]"><span><img src="../assets/svg/ash_cross.svg" class="w-[8px] h-[8px]" alt=""></span>Cancel</button>
+                  <button class="companyEditButton"><span><img src="../assets/svg/copy.svg" class="w-[16px] h-[231px]" alt=""></span>Copy</button>
+                  <button class="flex justify-center items-center gap-x-[10px] bg-[#1E88E5] leading-[16px] text-[12px] font-[500] text-white rounded-full w-[80px] h-[26px] xl:w-[90px] xl:h-[36px]"><span><img src="../assets/svg/white_edit.svg" class="w-[16px] h-[231px]" alt=""></span>Edit</button>
+                </div>
+              </td>
+            </tr>
+            <tr class="border-b border-[#EDEDED]">
+              <td class="text-primaryText border-r border-[#DBDBDB] text-center leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px]">01</td>
+
+              <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText">
+                Dhaka - Tangail - Bogura - Rangpur
+              </td>
+              <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText">
+                09:45 AM <br>
+                18 July 2022
+              </td>
+
+              <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText">
+                Up
+              </td>
+              <td class="border-r border-[#DBDBDB]">
+                <div class="flex justify-center items-center">
+                  <button class="flex justify-center items-center bg-[#48A43F] w-[140px] h-[35px] rounded-[8px] gap-x-[8px] leading-[16px] xl:leading-[20px] text-[12px] xl:text-[14px] text-white"> <InputSwitch v-model="checked" class="mr-2" /> Active</button>
+
+                </div>
+              </td>
+              <td class="border-r border-[#DBDBDB]">
+                <div class="py-[5px] px-[18px] flex justify-evenly items-center gap-x-[16px]">
+                  <button class="flex justify-center items-center bg-[#EDEDED] gap-x-[10px] leading-[16px] text-[12px] font-[500] text-primaryText rounded-full w-[80px] h-[26px] xl:w-[90px] xl:h-[36px]"><span><img src="../assets/svg/ash_cross.svg" class="w-[8px] h-[8px]" alt=""></span>Cancel</button>
+                  <button class="companyEditButton"><span><img src="../assets/svg/copy.svg" class="w-[16px] h-[231px]" alt=""></span>Copy</button>
+                  <button class="flex justify-center items-center gap-x-[10px] bg-[#1E88E5] leading-[16px] text-[12px] font-[500] text-white rounded-full w-[80px] h-[26px] xl:w-[90px] xl:h-[36px]"><span><img src="../assets/svg/white_edit.svg" class="w-[16px] h-[231px]" alt=""></span>Edit</button>
+                </div>
+              </td>
+            </tr>
+            <tr class="border-b border-[#EDEDED]">
+              <td class="text-primaryText border-r border-[#DBDBDB] text-center leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px]">01</td>
+
+              <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText">
+                Dhaka - Tangail - Bogura - Rangpur
+              </td>
+              <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText">
+                09:45 AM <br>
+                18 July 2022
+              </td>
+
+              <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText">
+                Up
+              </td>
+              <td class="border-r border-[#DBDBDB]">
+                <div class="flex justify-center items-center">
+                  <button class="flex justify-center items-center bg-[#48A43F] w-[140px] h-[35px] rounded-[8px] gap-x-[8px] leading-[16px] xl:leading-[20px] text-[12px] xl:text-[14px] text-white"> <InputSwitch v-model="checked" class="mr-2" /> Active</button>
+
+                </div>
+              </td>
+              <td class="border-r border-[#DBDBDB]">
+                <div class="py-[5px] px-[18px] flex justify-evenly items-center gap-x-[16px]">
+                  <button class="flex justify-center items-center bg-[#EDEDED] gap-x-[10px] leading-[16px] text-[12px] font-[500] text-primaryText rounded-full w-[80px] h-[26px] xl:w-[90px] xl:h-[36px]"><span><img src="../assets/svg/ash_cross.svg" class="w-[8px] h-[8px]" alt=""></span>Cancel</button>
+                  <button class="companyEditButton"><span><img src="../assets/svg/copy.svg" class="w-[16px] h-[231px]" alt=""></span>Copy</button>
+                  <button class="flex justify-center items-center gap-x-[10px] bg-[#1E88E5] leading-[16px] text-[12px] font-[500] text-white rounded-full w-[80px] h-[26px] xl:w-[90px] xl:h-[36px]"><span><img src="../assets/svg/white_edit.svg" class="w-[16px] h-[231px]" alt=""></span>Edit</button>
+                </div>
+              </td>
+            </tr>
+            <tr class="border-b border-[#EDEDED]">
+              <td class="text-primaryText border-r border-[#DBDBDB] text-center leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px]">01</td>
+
+              <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText">
+                Dhaka - Tangail - Bogura - Rangpur
+              </td>
+              <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText">
+                09:45 AM <br>
+                18 July 2022
+              </td>
+
+              <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText">
+                Up
+              </td>
+              <td class="border-r border-[#DBDBDB]">
+                <div class="flex justify-center items-center">
+                  <button class="flex justify-center items-center bg-[#48A43F] w-[140px] h-[35px] rounded-[8px] gap-x-[8px] leading-[16px] xl:leading-[20px] text-[12px] xl:text-[14px] text-white"> <InputSwitch v-model="checked" class="mr-2" /> Active</button>
+
+                </div>
+              </td>
+              <td class="border-r border-[#DBDBDB]">
+                <div class="py-[5px] px-[18px] flex justify-evenly items-center gap-x-[16px]">
+                  <button class="flex justify-center items-center bg-[#EDEDED] gap-x-[10px] leading-[16px] text-[12px] font-[500] text-primaryText rounded-full w-[80px] h-[26px] xl:w-[90px] xl:h-[36px]"><span><img src="../assets/svg/ash_cross.svg" class="w-[8px] h-[8px]" alt=""></span>Cancel</button>
+                  <button class="companyEditButton"><span><img src="../assets/svg/copy.svg" class="w-[16px] h-[231px]" alt=""></span>Copy</button>
+                  <button class="flex justify-center items-center gap-x-[10px] bg-[#1E88E5] leading-[16px] text-[12px] font-[500] text-white rounded-full w-[80px] h-[26px] xl:w-[90px] xl:h-[36px]"><span><img src="../assets/svg/white_edit.svg" class="w-[16px] h-[231px]" alt=""></span>Edit</button>
+                </div>
+              </td>
+            </tr>
 
             </tbody>
           </table>
 
         </div>
+       <div class="mt-[12px] xl:mt-[16px] bg-white rounded-[10px]">
+          <div class="flex justify-between items-center px-[16px]">
+            <p class="leading-[24px] xl:leading-[28px] text-[18px] xl:text-[20px] font-[500] text-[#1E88E5] py-[16px]">USER TRIP RESTRICTION</p>
+            <button class="bg-corporate rounded-full text-white leading-[12px] xl:leading-[16px] text-[10px] xl:text-[12px] font-[500] px-3 py-2">Manage restriction</button>
+          </div>
+       </div>
       </div>
     </div>
   </div>

@@ -85,3 +85,18 @@ body{
 .createBtn{
     @apply flex justify-center items-center text-white leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[600] bg-corporate rounded-full px-[20px] py-[11px] xl:px-[24px] xl:py-[13px]
 }
+.seatButton{
+    @apply  w-[25px] xl:w-[30px] h-[20px] xl:h-[24px] text-center text-white bg-corporate rounded-[4px] leading-[16px] xl:leading-[20px] text-[12px] xl:text-[14px]
+}
+.placeholderDesign{
+    @apply placeholder:leading-[16px] xl:placeholder:leading-[20px] placeholder:text-[12px] xl:placeholder:text-[14px] placeholder:text-[#676769]
+}
+.tripPermissionBtnleft{
+    @apply w-1/2 bg-transparent text-corporateSecondaryBlack leading-[16px] xl:leading-[20px] text-[12px] xl:text-[14px] border border-[#DBDBDB] flex justify-center items-center font-[400] h-[40px] rounded-l-[4px]
+}
+.tripPermissionBtnright{
+    @apply w-1/2 bg-transparent text-corporateSecondaryBlack leading-[16px] xl:leading-[20px] text-[12px] xl:text-[14px] border border-[#DBDBDB] flex justify-center items-center font-[400] h-[40px] rounded-r-[4px]
+}
+.tripPermissionBtnleftWithbg{
+    @apply w-1/2 bg-corporate text-white leading-[16px] xl:leading-[20px] text-[12px] xl:text-[14px] flex justify-center items-center font-[400] h-[40px] rounded-l-[4px]
+}

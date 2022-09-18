@@ -28,6 +28,10 @@ import Counter from '@/views/counter.vue'
 import CreateCounter from '@/views/counter_create.vue'
 import THirdPartyCounter from '@/views/thirdparty_counter.vue'
 import Trips from '@/views/trips.vue'
+import TripsInformation from '@/views/tripInformation.vue'
+import TripsBoarding from "@/views/trips-boarding.vue";
+import TripsAdd from "@/views/tripsAdd.vue";
+import TripsPermission from '@/views/trip_permission.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -183,6 +187,27 @@ const router = createRouter({
       path: '/trips',
       name: 'Trips',
       component: Trips
+    },
+    {
+      path: '/tripsInformation',
+      name: 'TripsInformation',
+      component: TripsInformation
+    },
+    {
+      path: '/tripsBoarding',
+      name: 'TripsBoarding',
+      component: TripsBoarding
+    },
+
+    {
+      path: '/tripsAdd',
+      name: 'TripsAdd',
+      component: TripsAdd
+    },
+    {
+      path: '/tripsPermission',
+      name: 'TripsPermission',
+      component: TripsPermission
     },
   ]
 })

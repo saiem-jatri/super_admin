@@ -1,0 +1,125 @@
+<template>
+  <div class="w-full">
+    <p class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600] mb-4">{{title}}</p>
+    <div>
+      <div class="dropdown relative">
+        <button
+            class="
+            w-full
+          dropdown-toggle
+          px-3
+          py-3.5
+          bg-[#F7F7F7]
+          text-primaryText
+          font-medium
+          text-xs
+          leading-tight
+          uppercase
+          rounded
+          focus: focus:outline-none focus:ring-0
+          transition
+          duration-150
+          ease-in-out
+          flex
+          items-center
+          whitespace-nowrap
+        "
+            type="button"
+            id="dropdownMenuButton1"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+        >
+          {{ name }}
+        </button>
+        <ul
+            class="
+          dropdown-menu
+          min-w-max
+          absolute
+          hidden
+          bg-white
+          text-base
+          z-50
+          float-left
+          py-2
+          list-none
+          text-left
+          rounded-lg
+          shadow-lg
+          mt-1
+          hidden
+          m-0
+          bg-clip-padding
+          border-none
+        "
+            aria-labelledby="dropdownMenuButton1"
+        >
+          <li>
+            <a
+                class="
+              dropdown-item
+              text-sm
+              py-2
+              px-4
+              font-normal
+              block
+              w-full
+              whitespace-nowrap
+              bg-transparent
+              text-gray-700
+              hover:bg-gray-100
+            "
+                href="#"
+            >Action</a
+            >
+          </li>
+          <li>
+            <a
+                class="
+              dropdown-item
+              text-sm
+              py-2
+              px-4
+              font-normal
+              block
+              w-full
+              whitespace-nowrap
+              bg-transparent
+              text-gray-700
+              hover:bg-gray-100
+            "
+                href="#"
+            >Another action</a
+            >
+          </li>
+          <li>
+            <a
+                class="
+              dropdown-item
+              text-sm
+              py-2
+              px-4
+              font-normal
+              block
+              w-full
+              whitespace-nowrap
+              bg-transparent
+              text-gray-700
+              hover:bg-gray-100
+            "
+                href="#"
+            >Something else here</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</template>
+
+<script>
+export default {
+  name:'AshDropDown',
+  props:['title','name']
+}
+</script>
