@@ -45,17 +45,13 @@
               <p class="text-primaryText leading-[12px] text-[10px] xl:leading-[16px] xl:text-[12px] font-[500]">Back</p>
             </button>
             <div class="flex flex-col gap-y-[4px]">
-              <p class="lg:leading-[16px] xl:leading-[28px] lg:text-[14px] xl:text-[20px] font-[600] text-primaryText">Company</p>
-              <div class="flex justify-center items-center gap-x-[6px]">
-                <p class="text-secondaryText leading-[12px] text-[8px] xl:leading-[16px] xl:text-[12px] font-[400]">Desh Travels Limited</p>
+              <p class="lg:leading-[16px] xl:leading-[28px] lg:text-[14px] xl:text-[20px] font-[600] text-primaryText">Create Trip</p>
+              <div class="flex justify-center items-center gap-x-[6px] mr-2">
+                <p class="text-secondaryText leading-[12px] text-[8px] xl:leading-[16px] xl:text-[12px] font-[400]">Trips</p>
                 <img src="../assets/svg/bgBack.svg" alt="" class="w-1 h-2">
-                <p class="text-secondaryText leading-[12px] text-[8px] xl:leading-[16px] xl:text-[12px] font-[400]">Manage</p>
+                <p class="text-secondaryText leading-[12px] text-[8px] xl:leading-[16px] xl:text-[12px] font-[400]">Desh Travels</p>
                 <img src="../assets/svg/bgBack.svg" alt="" class="w-1 h-2">
-                <p class="text-secondaryText leading-[12px] text-[8px] xl:leading-[16px] xl:text-[12px] font-[400]">Desh Travels Limited</p>
-                <img src="../assets/svg/bgBack.svg" alt="" class="w-1 h-2">
-                <p class="text-secondaryText leading-[12px] text-[8px] xl:leading-[16px] xl:text-[12px] font-[400]">Route</p>
-                <img src="../assets/svg/bgBack.svg" alt="" class="w-1 h-2">
-                <p class="text-secondaryText leading-[12px] text-[8px] xl:leading-[16px] xl:text-[12px] font-[400]">Add route</p>
+                <p class="text-secondaryText leading-[12px] text-[8px] xl:leading-[16px] xl:text-[12px] font-[400]">Add trip</p>
               </div>
             </div>
           </div>
@@ -79,35 +75,58 @@
       <div class="px-[30px] py-[24px]">
 
         <!--        card-->
-        <div class="mt-[16px] bg-white rounded-[10px]">
+        <div class="bg-white rounded-[8px]">
           <div class="p-4">
-          <div class="flex justify-center items-center gap-x-[10px] xl:gap-x-[16px]">
-            <div class="w-1/4">
-              <p class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]">Counter name</p>
-              <input type="text" class="createNormalInput" placeholder="Enter counter name">
+            <div class="flex items-center gap-x-[6px] mr-2">
+              <p class="text-primaryText leading-[12px] text-[8px] xl:leading-[16px] xl:text-[12px] font-[600]">Trip Information</p>
+              <img src="../assets/svg/bgBack.svg" alt="" class="w-1 h-2">
+              <p class="text-secondaryText leading-[12px] text-[8px] xl:leading-[16px] xl:text-[12px] font-[400]">Boarding & Dropping</p>
+              <img src="../assets/svg/bgBack.svg" alt="" class="w-1 h-2">
+              <p class="text-secondaryText leading-[12px] text-[8px] xl:leading-[16px] xl:text-[12px] font-[400]">Seat & Fare</p>
+              <img src="../assets/svg/bgBack.svg" alt="" class="w-1 h-2">
+              <p class="text-secondaryText leading-[12px] text-[8px] xl:leading-[16px] xl:text-[12px] font-[400]">Permissions & Commissions</p>
+              <img src="../assets/svg/bgBack.svg" alt="" class="w-1 h-2">
+              <p class="text-secondaryText leading-[12px] text-[8px] xl:leading-[16px] xl:text-[12px] font-[400]">Assign Counterman & Agent</p>
+              <img src="../assets/svg/bgBack.svg" alt="" class="w-1 h-2">
+              <p class="text-secondaryText leading-[12px] text-[8px] xl:leading-[16px] xl:text-[12px] font-[400]">Assign Qouta</p>
+              <img src="../assets/svg/bgBack.svg" alt="" class="w-1 h-2">
+              <p class="text-secondaryText leading-[12px] text-[8px] xl:leading-[16px] xl:text-[12px] font-[400]">Trip Facilities & Policies</p>
+              <img src="../assets/svg/bgBack.svg" alt="" class="w-1 h-2">
+              <p class="text-secondaryText leading-[12px] text-[8px] xl:leading-[16px] xl:text-[12px] font-[400]">Preview</p>
             </div>
-            <div class="w-1/4">
-              <p class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]">Counter code</p>
-              <input type="text" class="createNormalInput" placeholder="Enter counter code">
-            </div>
-            <div class="w-1/4">
-              <p class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]">City</p>
-              <Dropdown class="w-full py-[4px] mt-[10px]" v-model="selectedCity" :opti6ns="cities" optionLabel="name" placeholder="Select counter city" />
-            </div>
-            <div class="w-1/4">
-              <p class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]">Stoppage</p>
-              <Dropdown class="w-full py-[4px] mt-[10px]" v-model="selectedCity" :opti6ns="cities" optionLabel="name" placeholder="Select counter stoppage" />
-            </div>
+            <p class="text-[#1E88E5] leading-[20px] xl:leading-[24px] text-[14px] xl:text-[16px] font-[500] mt-2">TRIP INFORMATION</p>
           </div>
-            <div class="flex justify-center items-center gap-x-[10px] xl:gap-x-[16px] mt-[12px] xl:mt-[16px]">
+        </div>
+        <div class="bg-white rounded-[8px] mt-[12px] xl:mt-[16px]">
+          <div class="p-4">
+            <p class="text-[#1E88E5] leading-[20px] xl:leading-[24px] text-[14px] xl:text-[16px] font-[500] mb-4">TRIP INFORMATION</p>
+            <div class="flex justify-center items-center gap-x-[10px] xl:gap-x-[16px]">
               <div class="w-1/4">
-                <p class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]">Mobile</p>
-                <input type="text" class="createNormalInput" placeholder="Enter counter mobile">
+                <ash-dropdown title="Bus operator" name="Desh Travels"></ash-dropdown>
               </div>
               <div class="w-1/4">
-                <p class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]">Address</p>
-                <input type="text" class="createNormalInput" placeholder="Enter counter address">
+                <p class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]">Bus model</p>
+                <Dropdown class="w-full py-[4px] mt-[10px]" v-model="selectedCity" :opti6ns="cities" optionLabel="name" placeholder="Select bus" />
               </div>
+              <div class="w-1/4">
+                <p class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]">Bus reg. no</p>
+                <input type="text" class="createNormalInput" placeholder="Enter bus reg. no">
+              </div>
+              <div class="w-1/4">
+                <p class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]">Coach/Trip number</p>
+                <input type="text" class="createNormalInput" placeholder="Enter coach/trip number">
+              </div>
+            </div>
+            <div class="flex justify-start items-center gap-x-[10px] xl:gap-x-[16px] mt-[12px] xl:mt-[16px]">
+              <div class="w-1/4">
+                <p class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]">Route</p>
+                <Dropdown class="w-full py-[4px] mt-[10px]" v-model="selectedCity" :opti6ns="cities" optionLabel="name" placeholder="Select route" />
+              </div>
+              <div class="w-1/4">
+                <p class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]">Trip heading</p>
+                <input type="text" class="createNormalInput" placeholder="Enter trip heading">
+              </div>
+
               <div class="w-1/4">
                 <p class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]">Future trip validate</p>
                 <div class="w-full mt-[10px] h-[40px] border border-[#DBDBDB] flex justify-between items-center leading-[20px] rounded-[4px] overflow-hidden divide-x" >
@@ -126,34 +145,45 @@
                 </div>
 
               </div>
-              <div class="w-1/4">
-                <p class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]">Stoppage</p>
-                <div class="flex justify-center items-center mt-[10px] border border-corporateBorder divide-x rounded-[4px]">
-                  <button class="bg-white w-1/2 text-primaryText leading-[16px] xl:leading-[20px] text-[12px] xl:text-[14px] flex justify-center items-center font-[400] h-[40px] rounded-l-[4px]">Own</button>
-                  <button class="bg-white w-1/2 text-primaryText leading-[16px] xl:leading-[20px] text-[12px] xl:text-[14px]  flex justify-center items-center font-[400] h-[40px] rounded-r-[4px]">Third party</button>
-                </div>
-              </div>
             </div>
           </div>
           <hr class="mt-[12px] xl:mt-[16px] border-t border-corporateBorder">
-          <div class="px-[16px] py-[20px] w-full flex justify-between items-center">
-            <div class="flex gap-x-[16px] items-center">
-              <p class="text-primaryText font-[600] leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] ">Status</p>
-              <div class="flex justify-center items-center">
-                <button class="bg-[#48A43F] w-[90px] xl:w-[110px] text-white leading-[16px] xl:leading-[20px] text-[12px] xl:text-[14px] flex justify-center items-center font-[400] h-[40px] rounded-l-[4px]">Active</button>
-                <button class="bg-[#F7F7F7] w-[90px] xl:w-[110px] text-primaryText leading-[16px] xl:leading-[20px] text-[12px] xl:text-[14px] border border-[#DBDBDB] flex justify-center items-center font-[400] h-[40px] rounded-r-[4px]">Inactive</button>
+        <div class="p-4">
+          <p class="text-[#1E88E5] leading-[20px] xl:leading-[24px] text-[14px] xl:text-[16px] font-[500]">DATE & TIME</p>
+          <div class="flex justify-center items-center gap-x-[10px] xl:gap-x-[16px] mt-[12px] xl:mt-[16px]">
+            <div class="w-1/4">
+              <p class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]">Departure date</p>
+              <div class="w-full h-[40px] border border-[#DBDBDB] flex justify-between items-center mt-[10px] leading-[20px] rounded-[4px] px-[20px] xl:px-[8px] overflow-hidden" >
+                <input type="text" class="outline-none pl-2 placeholder:text-[#4D4D4F] placeholder:text-[14px] placeholder:leading-[20px]" placeholder="Select date">
+                <img src="../assets/svg/count2.svg" class="h-5 w-5" alt="">
               </div>
             </div>
-            <div class="flex gap-x-1 items-center">
-              <button class="flex justify-center items-center text-white leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[600] bg-corporate bg-opacity-30 rounded-full px-[20px] py-[11px] xl:px-[24px] xl:py-[13px]">Create counter</button>
-              <button class="flex justify-center items-center gap-x-[10px] text-white leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[600] bg-corporate bg-opacity-30 rounded-full px-[20px] py-[11px] xl:px-[24px] xl:py-[13px]">
-                <img src="../assets/svg/save_change.svg" alt=""> Save changes</button>
+            <div class="w-1/4">
+              <p class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]">Departure time</p>
+              <input type="text" class="createNormalInput" placeholder="Enter departure time">
+            </div>
+            <div class="w-1/4">
+              <p class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]">Arrival date</p>
+              <div class="w-full h-[40px] border border-[#DBDBDB] flex justify-between items-center mt-[10px] leading-[20px] rounded-[4px] px-[20px] xl:px-[8px] overflow-hidden" >
+                <input type="text" class="outline-none pl-2 placeholder:text-[#4D4D4F] placeholder:text-[14px] placeholder:leading-[20px]" placeholder="Select arrival date">
+                <img src="../assets/svg/count2.svg" class="h-5 w-5" alt="">
+              </div>
+            </div>
+            <div class="w-1/4">
+              <p class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]">Arrival time</p>
+              <input type="text" class="createNormalInput" placeholder="Enter arrival time">
             </div>
           </div>
+        </div>
+
+        </div>
+        <div class="flex justify-center items-center mt-5">
+          <button class="bg-corporate bg-opacity-30 flex gap-x-3 justify-center items-center text-white rounded-full px-5 py-3 mr-4 leading-[12px] text-[10px] xl:leading-[16px] xl:text-[12px]">Next step<span><img src="../assets/svg/right-white-arrow.svg" class="h-[9.33px] w-[9.33px]" alt=""></span></button>
         </div>
       </div>
     </div>
   </div>
+
 </template>
 
 <style>
@@ -250,7 +280,11 @@ select::-ms-expand {
 </style>
 
 <script>
+import ashDropdown from "../components/AshDropdown.vue";
 export  default {
+  components:{
+    ashDropdown
+  },
   data() {
     return {
       selectedCity: null,

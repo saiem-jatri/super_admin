@@ -24,6 +24,15 @@ import Routes from '@/views/routes.vue'
 import RouteCreate from '@/views/route_create.vue'
 import RoutesViaCity from '@/views/routes_via_city.vue'
 import TripPreview from '@/views/trip_preview.vue'
+import RouteViaCityFilled from '@/views/route_via_city_filled.vue'
+import Counter from '@/views/counter.vue'
+import CreateCounter from '@/views/counter_create.vue'
+import THirdPartyCounter from '@/views/thirdparty_counter.vue'
+import Trips from '@/views/trips.vue'
+import TripsInformation from '@/views/tripInformation.vue'
+import TripsBoarding from "@/views/trips-boarding.vue";
+import TripsAdd from "@/views/tripsAdd.vue";
+import TripsPermission from '@/views/trip_permission.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -135,7 +144,7 @@ const router = createRouter({
       component: companyManageOwner
     },
 
-  //    routes started
+  //    routes start
     {
       path: '/routes',
       name: 'Routes',
@@ -152,9 +161,59 @@ const router = createRouter({
       component: RoutesViaCity
     },
     {
+      path: '/routeViaCityFilled',
+      name: 'RouteViaCityFilled',
+      component: RouteViaCityFilled
+    },
+
+    //  counter start
+    {
+      path: '/counter',
+      name: 'Counter',
+      component: Counter
+    },
+    {
+      path: '/counterCreate',
+      name: 'CreateCounter',
+      component: CreateCounter
+    },
+    {
+      path: '/thirdPartyCounter',
+      name: 'THirdPartyCounter',
+      component: THirdPartyCounter
+    },
+
+  //    Trips started
+    {
+      path: '/trips',
+      name: 'Trips',
+      component: Trips
+    },
+    {
+      path: '/tripsInformation',
+      name: 'TripsInformation',
+      component: TripsInformation
+    },
+    {
+      path: '/tripsBoarding',
+      name: 'TripsBoarding',
+      component: TripsBoarding
+    },
+
+    {
+      path: '/tripsAdd',
+      name: 'TripsAdd',
+      component: TripsAdd
+    },
+    {
+      path: '/tripsPermission',
+      name: 'TripsPermission',
+      component: TripsPermission
+    },
+    {
       path: '/tripPreview',
       name: 'TripPreview',
-      component: TripPreview
+      component: TripPreview,
     },
   ]
 })

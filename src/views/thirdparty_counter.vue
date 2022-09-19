@@ -45,17 +45,11 @@
               <p class="text-primaryText leading-[12px] text-[10px] xl:leading-[16px] xl:text-[12px] font-[500]">Back</p>
             </button>
             <div class="flex flex-col gap-y-[4px]">
-              <p class="lg:leading-[16px] xl:leading-[28px] lg:text-[14px] xl:text-[20px] font-[600] text-primaryText">Company</p>
-              <div class="flex justify-center items-center gap-x-[6px]">
-                <p class="text-secondaryText leading-[12px] text-[8px] xl:leading-[16px] xl:text-[12px] font-[400]">Desh Travels Limited</p>
+              <p class="lg:leading-[16px] xl:leading-[28px] lg:text-[14px] xl:text-[20px] font-[600] text-primaryText">Create Counter</p>
+              <div class="flex justify-center items-center gap-x-[6px] mr-2">
+                <p class="text-secondaryText leading-[12px] text-[8px] xl:leading-[16px] xl:text-[12px] font-[400]">Counter</p>
                 <img src="../assets/svg/bgBack.svg" alt="" class="w-1 h-2">
-                <p class="text-secondaryText leading-[12px] text-[8px] xl:leading-[16px] xl:text-[12px] font-[400]">Manage</p>
-                <img src="../assets/svg/bgBack.svg" alt="" class="w-1 h-2">
-                <p class="text-secondaryText leading-[12px] text-[8px] xl:leading-[16px] xl:text-[12px] font-[400]">Desh Travels Limited</p>
-                <img src="../assets/svg/bgBack.svg" alt="" class="w-1 h-2">
-                <p class="text-secondaryText leading-[12px] text-[8px] xl:leading-[16px] xl:text-[12px] font-[400]">Route</p>
-                <img src="../assets/svg/bgBack.svg" alt="" class="w-1 h-2">
-                <p class="text-secondaryText leading-[12px] text-[8px] xl:leading-[16px] xl:text-[12px] font-[400]">Add route</p>
+                <p class="text-secondaryText leading-[12px] text-[8px] xl:leading-[16px] xl:text-[12px] font-[400]">Add counter</p>
               </div>
             </div>
           </div>
@@ -79,9 +73,13 @@
       <div class="px-[30px] py-[24px]">
 
         <!--        card-->
-        <div class="mt-[16px] bg-white rounded-[10px]">
+        <div class="bg-white rounded-[8px]">
           <div class="p-4">
           <div class="flex justify-center items-center gap-x-[10px] xl:gap-x-[16px]">
+            <div class="w-1/4">
+              <p class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]">Bus operator</p>
+              <Dropdown class="w-full py-[4px] mt-[10px]" v-model="selectedCity" :opti6ns="cities" optionLabel="name" placeholder="Select bus operator" />
+            </div>
             <div class="w-1/4">
               <p class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]">Counter name</p>
               <input type="text" class="createNormalInput" placeholder="Enter counter name">
@@ -92,17 +90,17 @@
             </div>
             <div class="w-1/4">
               <p class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]">City</p>
-              <Dropdown class="w-full py-[4px] mt-[10px]" v-model="selectedCity" :opti6ns="cities" optionLabel="name" placeholder="Select counter city" />
-            </div>
-            <div class="w-1/4">
-              <p class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]">Stoppage</p>
-              <Dropdown class="w-full py-[4px] mt-[10px]" v-model="selectedCity" :opti6ns="cities" optionLabel="name" placeholder="Select counter stoppage" />
+              <Dropdown class="w-full py-[4px] mt-[10px]" v-model="selectedCity" :opti6ns="cities" optionLabel="name" placeholder="Select city" />
             </div>
           </div>
             <div class="flex justify-center items-center gap-x-[10px] xl:gap-x-[16px] mt-[12px] xl:mt-[16px]">
               <div class="w-1/4">
-                <p class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]">Mobile</p>
-                <input type="text" class="createNormalInput" placeholder="Enter counter mobile">
+                <p class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]">Stoppage</p>
+                <Dropdown class="w-full py-[4px] mt-[10px]" v-model="selectedCity" :opti6ns="cities" optionLabel="name" placeholder="Select stoppage" />
+              </div>
+              <div class="w-1/4">
+                <p class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]">Address</p>
+                <input type="text" class="createNormalInput" placeholder="Enter counter address">
               </div>
               <div class="w-1/4">
                 <p class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]">Address</p>
@@ -126,29 +124,58 @@
                 </div>
 
               </div>
+            </div>
+
+            <div class="flex justify-center items-center gap-x-[10px] xl:gap-x-[16px] mt-[12px] xl:mt-[16px]">
               <div class="w-1/4">
-                <p class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]">Stoppage</p>
-                <div class="flex justify-center items-center mt-[10px] border border-corporateBorder divide-x rounded-[4px]">
-                  <button class="bg-white w-1/2 text-primaryText leading-[16px] xl:leading-[20px] text-[12px] xl:text-[14px] flex justify-center items-center font-[400] h-[40px] rounded-l-[4px]">Own</button>
-                  <button class="bg-white w-1/2 text-primaryText leading-[16px] xl:leading-[20px] text-[12px] xl:text-[14px]  flex justify-center items-center font-[400] h-[40px] rounded-r-[4px]">Third party</button>
+                <p class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]">Counter type</p>
+                <div class="flex justify-center items-center mt-[10px]">
+                  <button class=" w-1/2 bg-white text-[#676769] leading-[20px] text-[14px] border border-[#DBDBDB] flex justify-center items-center font-[400] h-[40px] rounded-l-[4px]">Own</button>
+                  <button class=" w-1/2 bg-corporate text-white leading-[20px] text-[14px] flex justify-center items-center font-[400] h-[40px] rounded-r-[4px]">Third party</button>
                 </div>
+              </div>
+              <div class="w-1/4">
+                <p class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]">Third party counter commission</p>
+                <div class="py-[2px] border border-[#DBDBDB] mt-[10px] rounded-[4px] leading-[20px]">
+                  <div class="w-full h-[35px] flex justify-between items-center overflow-hidden divide-x" >
+                    <input class="p-4 text-[#676769] leading-[20px] text-[14px] font-[400] w-2/5 placeholder:text-primaryText focus:outline-none" placeholder="30">
+                    <div class="p-2 w-3/5 ">
+                      <div class="flex justify-between xl:gap-x-2 items-center bg-[#F7F7F7] xl:px-2">
+                        <select class="form-selectpy-1 text-base bg-[#F7F7F7] rounded focus:outline-none xl:w-full" aria-label="Default select example">
+                          <option selected class="leading-[16px] xl:leading-[20px] text-[10px] xl:text-[14px] font-[500]">Percentage %</option>
+                          <option value="1">One</option>
+                          <option value="2">Two</option>
+                          <option value="3">Three</option>
+                        </select>
+                        <img src="../assets/svg/down_arrow.svg" class="w-[12px] h-5" alt="">
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+
+
+              </div>
+              <div class="w-1/4">
+                <p class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]">Payment Type</p>
+                <Dropdown class="w-full py-[4px] mt-[10px]" v-model="selectedCity" :opti6ns="cities" optionLabel="name" placeholder="Prepaid" />
+              </div>
+              <div class="w-1/4">
+                <p class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]">Prepaid CAP (TK)</p>
+                <input type="text" class="createNormalInput" placeholder="Enter CAP amount">
               </div>
             </div>
           </div>
           <hr class="mt-[12px] xl:mt-[16px] border-t border-corporateBorder">
           <div class="px-[16px] py-[20px] w-full flex justify-between items-center">
-            <div class="flex gap-x-[16px] items-center">
+            <div class="flex gap-x-[16px] items-center w-1/4">
               <p class="text-primaryText font-[600] leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] ">Status</p>
               <div class="flex justify-center items-center">
-                <button class="bg-[#48A43F] w-[90px] xl:w-[110px] text-white leading-[16px] xl:leading-[20px] text-[12px] xl:text-[14px] flex justify-center items-center font-[400] h-[40px] rounded-l-[4px]">Active</button>
-                <button class="bg-[#F7F7F7] w-[90px] xl:w-[110px] text-primaryText leading-[16px] xl:leading-[20px] text-[12px] xl:text-[14px] border border-[#DBDBDB] flex justify-center items-center font-[400] h-[40px] rounded-r-[4px]">Inactive</button>
+                <button class="viaCityActive">Active</button>
+                <button class="viaCityInActive">Inactive</button>
               </div>
             </div>
-            <div class="flex gap-x-1 items-center">
-              <button class="flex justify-center items-center text-white leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[600] bg-corporate bg-opacity-30 rounded-full px-[20px] py-[11px] xl:px-[24px] xl:py-[13px]">Create counter</button>
-              <button class="flex justify-center items-center gap-x-[10px] text-white leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[600] bg-corporate bg-opacity-30 rounded-full px-[20px] py-[11px] xl:px-[24px] xl:py-[13px]">
-                <img src="../assets/svg/save_change.svg" alt=""> Save changes</button>
-            </div>
+              <button class="flex justify-center items-center text-white leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[600] bg-corporate rounded-full px-[20px] py-[11px] xl:px-[24px] xl:py-[13px]">Create counter</button>
           </div>
         </div>
       </div>
