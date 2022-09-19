@@ -23,6 +23,7 @@ import companyManageOwner from '@/views/bus_company_manage_owner.vue'
 import Routes from '@/views/routes.vue'
 import RouteCreate from '@/views/route_create.vue'
 import RoutesViaCity from '@/views/routes_via_city.vue'
+import TripPreview from '@/views/trip_preview.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -149,6 +150,11 @@ const router = createRouter({
       path: '/routeViaCity',
       name: 'RoutesViaCity',
       component: RoutesViaCity
+    },
+    {
+      path: '/tripPreview',
+      name: 'TripPreview',
+      component: TripPreview
     },
   ]
 })
