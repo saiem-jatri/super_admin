@@ -23,6 +23,7 @@ import companyManageOwner from '@/views/bus_company_manage_owner.vue'
 import Routes from '@/views/routes.vue'
 import RouteCreate from '@/views/route_create.vue'
 import RoutesViaCity from '@/views/routes_via_city.vue'
+import TripPreview from '@/views/trip_preview.vue'
 import RouteViaCityFilled from '@/views/route_via_city_filled.vue'
 import Counter from '@/views/counter.vue'
 import CreateCounter from '@/views/counter_create.vue'
@@ -35,6 +36,14 @@ import TripsPermission from '@/views/trip_permission.vue'
 import TripsAgent from '@/views/trips_agent.vue'
 import TripsQuota from '@/views/trips_quota.vue'
 import TripFacilities from '@/views/trip_facilities.vue'
+import User from '@/views/user.vue'
+import UserAdmin from '@/views/user_admin.vue'
+import UserCounterman from '@/views/user_counterman.vue'
+import UserAgent from '@/views/user_agent.vue'
+import UserCustomerCare from '@/views/user_customer_care.vue'
+import UserCreateAdmin from '@/views/user_create_admin.vue'
+import UserCreateCounterman from '@/views/user_create_counterman.vue'
+import UserCreateAgent from '@/views/user_create_agent.vue'
 
 const router = createRouter({
     history: createWebHistory(import.meta.env.BASE_URL),
@@ -227,7 +236,65 @@ const router = createRouter({
             name: 'TripFacilities',
             component: TripFacilities
         },
+
+        {
+            path: '/tripsAdd',
+            name: 'TripsAdd',
+            component: TripsAdd
+        },
+        {
+            path: '/tripsPermission',
+            name: 'TripsPermission',
+            component: TripsPermission
+        },
+        {
+            path: '/tripPreview',
+            name: 'TripPreview',
+            component: TripPreview,
+        },
+        //user Start
+        {
+            path: '/user',
+            name: 'User',
+            component: User,
+        },
+        {
+            path: '/userAdmin',
+            name: 'UserAdmin',
+            component: UserAdmin,
+        },
+        {
+            path: '/userCounterman',
+            name: 'UserCounterman',
+            component: UserCounterman,
+        },
+        {
+            path: '/userAgent',
+            name: 'UserAgent',
+            component: UserAgent,
+        },
+        {
+            path: '/userCustomerCare',
+            name: 'UserCustomerCare',
+            component: UserCustomerCare,
+        },
+        {
+            path: '/userCreateAdmin',
+            name: 'UserCreateAdmin',
+            component: UserCreateAdmin,
+        },
+        {
+            path: '/userCreateCounterman',
+            name: 'UserCreateCounterman',
+            component: UserCreateCounterman,
+        },
+        {
+            path: '/userCreateAgent',
+            name: 'UserCreateAgent',
+            component: UserCreateAgent,
+        },
     ]
+
 })
 
 export default router

@@ -10,7 +10,6 @@
           <a class="bg-corporate w-full text-white p-1 rounded-sm block cursor-pointer">Dashboard</a>
           <a class="menu">Bus Company</a>
           <a class="menu">Routes</a>
-          <a class="menu">Routes</a>
           <a class="menu">Counter</a>
           <a class="menu">Trips</a>
           <a class="menu">User</a>
@@ -174,7 +173,7 @@
             </div>
 
             <div class="bg-[#1E88E5] text-white w-full flex justify-between py-[8px] px-[16px] mt-[8px] rounded-[4px]">
-              <p class="smallTableGreenFooter text-left">Total</p>
+              <p class="smallTableGreenFooter text-left">Total Amount</p>
               <p class="smallTableGreenFooter text-center">999999</p>
               <p class="smallTableGreenFooter text-center">5000000 TK</p>
             </div>
@@ -228,7 +227,7 @@
             
 
             <div class="absolute bottom-3 left-2 right-2 w-[95%] bg-[#4633F0] text-white flex justify-between py-[8px] px-[16px] mt-[8px] rounded-[4px]">
-              <p class="smallTableGreenFooter text-left">Total</p>
+              <p class="smallTableGreenFooter text-left">Total Amount</p>
               <p class="smallTableGreenFooter text-center">999999</p>
               <p class="smallTableGreenFooter text-center">5000000 TK</p>
             </div>

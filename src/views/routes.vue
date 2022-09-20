@@ -86,7 +86,7 @@
                 SL
               </th>
               <th scope="col" class="companyTableHead">
-                Route
+                ROUTE
               </th>
               <th scope="col" class="companyTableHead">
                 DIRECTION
@@ -114,7 +114,26 @@
                 </div>
               </td>
               <td class="border-r border-[#DBDBDB]">
-                <div class="py-[5px] px-[18px] flex justify-center items-center gap-x-[16px]">
+                <div class="py-[7px] px-[18px] flex justify-center items-center gap-x-[16px]">
+                  <button class="companyEditButton"><span><img src="../assets/svg/edit.svg" class="w-3 h-3" alt=""></span>Edit</button>
+                </div>
+              </td>
+            </tr>
+            <tr class="border-b border-[#EDEDED]">
+              <td class="text-primaryText border-r border-[#DBDBDB] text-center leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px]">01</td>
+              <td class="text-primaryText border-r border-[#DBDBDB] text-center leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px]">
+                Dhaka - Tangail - Bogura - Rangpur
+              </td>
+              <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText">
+                Down
+              </td>
+              <td class="border-r border-[#DBDBDB]">
+                <div class="flex justify-center items-center">
+                  <p class="companyTableStatus">Active</p>
+                </div>
+              </td>
+              <td class="border-r border-[#DBDBDB]">
+                <div class="py-[7px] px-[18px] flex justify-center items-center gap-x-[16px]">
                   <button class="companyEditButton"><span><img src="../assets/svg/edit.svg" class="w-3 h-3" alt=""></span>Edit</button>
                 </div>
               </td>
@@ -133,7 +152,7 @@
                 </div>
               </td>
               <td class="border-r border-[#DBDBDB]">
-                <div class="py-[5px] px-[18px] flex justify-center items-center gap-x-[16px]">
+                <div class="py-[7px] px-[18px] flex justify-center items-center gap-x-[16px]">
                   <button class="companyEditButton"><span><img src="../assets/svg/edit.svg" class="w-3 h-3" alt=""></span>Edit</button>
                 </div>
               </td>
@@ -152,7 +171,7 @@
                 </div>
               </td>
               <td class="border-r border-[#DBDBDB]">
-                <div class="py-[5px] px-[18px] flex justify-center items-center gap-x-[16px]">
+                <div class="py-[7px] px-[18px] flex justify-center items-center gap-x-[16px]">
                   <button class="companyEditButton"><span><img src="../assets/svg/edit.svg" class="w-3 h-3" alt=""></span>Edit</button>
                 </div>
               </td>
@@ -171,26 +190,7 @@
                 </div>
               </td>
               <td class="border-r border-[#DBDBDB]">
-                <div class="py-[5px] px-[18px] flex justify-center items-center gap-x-[16px]">
-                  <button class="companyEditButton"><span><img src="../assets/svg/edit.svg" class="w-3 h-3" alt=""></span>Edit</button>
-                </div>
-              </td>
-            </tr>
-            <tr class="border-b border-[#EDEDED]">
-              <td class="text-primaryText border-r border-[#DBDBDB] text-center leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px]">01</td>
-              <td class="text-primaryText border-r border-[#DBDBDB] text-center leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px]">
-                Dhaka - Tangail - Bogura - Rangpur
-              </td>
-              <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText">
-                Up
-              </td>
-              <td class="border-r border-[#DBDBDB]">
-                <div class="flex justify-center items-center">
-                  <p class="companyTableStatus">Active</p>
-                </div>
-              </td>
-              <td class="border-r border-[#DBDBDB]">
-                <div class="py-[5px] px-[18px] flex justify-center items-center gap-x-[16px]">
+                <div class="py-[7px] px-[18px] flex justify-center items-center gap-x-[16px]">
                   <button class="companyEditButton"><span><img src="../assets/svg/edit.svg" class="w-3 h-3" alt=""></span>Edit</button>
                 </div>
               </td>

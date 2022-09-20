@@ -210,17 +210,16 @@
                 </td>
               </tr>
               <tr class="border-b border-[#EDEDED]">
-                <td class="text-primaryText border-r border-[#DBDBDB] text-center">01</td>
+                <td class="text-primaryText border-r border-[#DBDBDB] text-center">999</td>
                 <td class="flex justify-between items-center px-[16px] py-[18px] border-r border-[#DBDBDB]">
-                  <p class="leading-[16px] text-[11px] xl:leading-[20px] xl:text-[14px] font-[400] text-primaryText">Tisha Group and Tubaline</p>
+                  <p class="leading-[16px] text-[11px] xl:leading-[20px] xl:text-[14px] font-[400] text-primaryText">Labiba Classic LTD</p>
                   <img src="../assets/logo/login_logo.svg" class="w-[50px] h-[20px] xl:w-[61px] xl:h-[30px]" alt="">
                 </td>
                 <td class="leading-[16px] text-[11px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText">
                   MD Fahim Ahmed <br> +8801708630439
                 </td>
                 <td class="leading-[16px] text-[11px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText">
-                  09 July 2022- <br>
-                  14 July 2022
+                  -
                 </td>
                 <td class="border-r border-[#DBDBDB]">
                   <div class="flex justify-center items-center">

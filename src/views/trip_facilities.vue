@@ -210,12 +210,9 @@
               Trip
               policy</p>
 
-            <!--            <textarea-->
-            <!--                class="mt-2 xl:mt-[10px] border border-corporateBorder rounded-[4px] w-full min-h-[200px] p-4 focus:outline-none"-->
-            <!--                placeholder="Enter trip policy">-->
-
-            <!--            </textarea>-->
-            <textarea id="" class="w-full mt-[18px] border border-corporateBorder rounded-[4px] p-[8px] focus:outline-none placeholder:text-[#676769] placeholder:leading-[20px] placeholder:text-[14px]" cols="30" name=""
+            <textarea id=""
+                      class="w-full mt-[18px] border border-corporateBorder rounded-[4px] p-[8px] focus:outline-none placeholder:text-[#676769] placeholder:leading-[20px] placeholder:text-[14px]"
+                      cols="30" name=""
                       placeholder="Enter terms & condition"
                       rows="10"></textarea>
             <p class="text-[#676769] leading-[16px] text-[12px] font-[400] mt-[8px]">*Max 500 charecters</p>
