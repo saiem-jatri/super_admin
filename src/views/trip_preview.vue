@@ -292,39 +292,16 @@
                     </div>
                     <div class="flex gap-x-[16px] mt-4">
                       <div class="form-group mt-4">
-                        <input type="checkbox" id="read">
-                        <label for="read" class="text-primaryText leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px] font-[400]"> Jatri</label>
+                        <input type="checkbox" id="read1">
+                        <label for="read1" class="text-primaryText leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px] font-[400]"> Jatri</label>
                       </div>
                       <div class="form-group mt-4">
-                        <input type="checkbox" id="read">
-                        <label for="read" class="text-primaryText leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px] font-[400]"> Counter</label>
+                        <input type="checkbox" id="read2">
+                        <label for="read2" class="text-primaryText leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px] font-[400]"> Counter</label>
                       </div>
                       <div class="form-group mt-4">
-                        <input type="checkbox" id="read">
-                        <label for="read" class="text-primaryText leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px] font-[400]"> Agent</label>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-              </div>
-              <div class="flex justify-between gap-x-[20px] xl:gap-x-[27px]">
-                <div class="w-full">
-                  <div class="flex justify-between items-center">
-                    <label for="#" class="leading-[16px] xl:leading-[24px] text-[12px] xl:text-[16px] min-w-[123px]">Bogura - Rangpur:</label>
-                    <input type="text" class="w-[120px] bg-corporateBg rounded-[4px] px-2 py-[6px] focus:outline-none mt-2" placeholder="Enter Fare">
-                    <div class="flex gap-x-[16px]">
-                      <div class="form-group mt-4">
-                        <input type="checkbox" id="read">
-                        <label for="read" class="text-primaryText leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px] font-[400]"> Jatri</label>
-                      </div>
-                      <div class="form-group mt-4">
-                        <input type="checkbox" id="read">
-                        <label for="read" class="text-primaryText leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px] font-[400]"> Counter</label>
-                      </div>
-                      <div class="form-group mt-4">
-                        <input type="checkbox" id="read">
-                        <label for="read" class="text-primaryText leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px] font-[400]"> Agent</label>
+                        <input type="checkbox" id="read3">
+                        <label for="read3" class="text-primaryText leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px] font-[400]"> Agent</label>
                       </div>
                     </div>
                   </div>
@@ -407,15 +384,38 @@
                     <input type="text" class="w-[120px] bg-corporateBg rounded-[4px] px-2 py-[6px] focus:outline-none mt-2" placeholder="Enter Fare">
                     <div class="flex gap-x-[16px]">
                       <div class="form-group mt-4">
-                        <input type="checkbox" id="read">
+                        <input type="checkbox" id="read1">
                         <label for="read" class="text-primaryText leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px] font-[400]"> Jatri</label>
                       </div>
                       <div class="form-group mt-4">
-                        <input type="checkbox" id="read">
+                        <input type="checkbox" id="read2">
                         <label for="read" class="text-primaryText leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px] font-[400]"> Counter</label>
                       </div>
                       <div class="form-group mt-4">
-                        <input type="checkbox" id="read">
+                        <input type="checkbox" id="read3">
+                        <label for="read" class="text-primaryText leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px] font-[400]"> Agent</label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+              <div class="flex justify-between gap-x-[20px] xl:gap-x-[27px]">
+                <div class="w-full">
+                  <div class="flex justify-between items-center">
+                    <label for="#" class="leading-[16px] xl:leading-[24px] text-[12px] xl:text-[16px] min-w-[123px]">Bogura - Rangpur:</label>
+                    <input type="text" class="w-[120px] bg-corporateBg rounded-[4px] px-2 py-[6px] focus:outline-none mt-2" placeholder="Enter Fare">
+                    <div class="flex gap-x-[16px]">
+                      <div class="form-group mt-4">
+                        <input type="checkbox" id="read4">
+                        <label for="read" class="text-primaryText leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px] font-[400]"> Jatri</label>
+                      </div>
+                      <div class="form-group mt-4">
+                        <input type="checkbox" id="read5">
+                        <label for="read" class="text-primaryText leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px] font-[400]"> Counter</label>
+                      </div>
+                      <div class="form-group mt-4">
+                        <input type="checkbox" id="read6">
                         <label for="read" class="text-primaryText leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px] font-[400]"> Agent</label>
                       </div>
                     </div>
@@ -432,7 +432,7 @@
               <div class="flex justify-between">
                 <div>
                   <p class="leading-[20px] xl:leading-[24px] text-[14px] xl:text-[16px] text-primaryText font-[600]">Bus model</p>
-                  <select name="model" id="model" class="px-3 py-2 border border-corporateBorder rounded-[4px] focus:outline-none mt-[10px] appearance-auto">
+                  <select name="model" id="model" class="px-3 py-2 border border-corporateBorder rounded-[4px] focus:outline-none mt-[10px]">
                     <option value="Desh Travels, Hino 1J - 36 Seat">Desh Travels, Hino 1J - 36 Seat</option>
                   </select>
                   <div class="mt-[12px] xl:mt-[14px] bg-[#F1F9F1] rounded-[4px] py-[4px] px-[8px]">
@@ -655,26 +655,26 @@
               <table class="min-w-full rounded">
                 <thead>
                   <tr>
-                    <th scope="col" class="border border-[#EDEDED]" style="border-radius:8px 0 0 0;"> </th>
-                    <th scope="col" class="border border-[#EDEDED] text-4 leading-5 text-[#676769] text-left font-[400] p-[10px]"> Selected seats </th>
-                    <th scope="col" class="border border-[#EDEDED] text-4 leading-5 text-[#676769] text-left font-[400] p-[10px]" style="border-radius:0 8px 0 0;"> Release time </th>
+                    <th scope="col" class="border border-[#DBDBDB]" style="border-radius:8px 0 0 0;"> </th>
+                    <th scope="col" class="border border-[#DBDBDB] text-4 leading-5 text-[#676769] text-left font-[400] p-[10px]"> Selected seats </th>
+                    <th scope="col" class="border border-[#DBDBDB] text-4 leading-5 text-[#676769] text-left font-[400] p-[10px]" style="border-radius:0 8px 0 0;"> Release time </th>
                   </tr>
               </thead>
               <tbody>
                 <tr>
-                  <td class="border border-[#EDEDED] text-4 leading-5 text-left p-[10px]">Jatri</td>
-                  <td class="border border-[#EDEDED] text-4 leading-5 text-left p-[10px]">[C1], [C2], [C3], [C4]</td>
-                  <td class="border border-[#EDEDED] text-4 leading-5 text-left p-[10px]">08:30 PM</td>
+                  <td class="border border-[#DBDBDB] text-4 leading-5 text-left p-[10px]">Jatri</td>
+                  <td class="border border-[#DBDBDB] text-4 leading-5 text-left p-[10px]">[C1], [C2], [C3], [C4]</td>
+                  <td class="border border-[#DBDBDB] text-4 leading-5 text-left p-[10px]">08:30 PM</td>
                 </tr>
                 <tr>
-                  <td class="border border-[#EDEDED] text-4 leading-5 text-left p-[10px]">Counter 1</td>
-                  <td class="border border-[#EDEDED] text-4 leading-5 text-left p-[10px]">[A1], [A2], [A3], [A4]</td>
-                  <td class="border border-[#EDEDED] text-4 leading-5 text-left p-[10px]">08:30 PM</td>
+                  <td class="border border-[#DBDBDB] text-4 leading-5 text-left p-[10px]">Counter 1</td>
+                  <td class="border border-[#DBDBDB] text-4 leading-5 text-left p-[10px]">[A1], [A2], [A3], [A4]</td>
+                  <td class="border border-[#DBDBDB] text-4 leading-5 text-left p-[10px]">08:30 PM</td>
                 </tr>
                 <tr>
-                  <td class="border border-[#EDEDED] text-4 leading-5 text-left p-[10px]">Counter 2</td>
-                  <td class="border border-[#EDEDED] text-4 leading-5 text-left p-[10px]">[B1], [B2]</td>
-                  <td class="border border-[#EDEDED] text-4 leading-5 text-left p-[10px]">08:30 PM</td>
+                  <td class="border border-[#DBDBDB] text-4 leading-5 text-left p-[10px]">Counter 2</td>
+                  <td class="border border-[#DBDBDB] text-4 leading-5 text-left p-[10px]">[B1], [B2]</td>
+                  <td class="border border-[#DBDBDB] text-4 leading-5 text-left p-[10px]">08:30 PM</td>
                 </tr>
               </tbody>
               </table>
@@ -715,58 +715,64 @@
               <p class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600] mb-[17px]">Update for an period</p>
 
               <!-- table start -->
-              <table class="min-w-full rounded">
+              <div class="rounded-lg">
+                <table class="min-w-full rounded-lg">
                 <thead>
-                  <tr>
-                    <th scope="col" class="border border-corporateBorder text-4 leading-6 font-[400] p-[10px] uppercase" style="border-radius:8px 0 0 0;"> DATE</th>
-                    <th scope="col" class="border border-[#DBDBDB] text-4 leading-6 font-[400] p-[10px] uppercase" style="border-radius:0 8px 0 0;"> Check for all </th>
+                  <tr class="border border-[#DBDBDB]">
+                    <th scope="col" class="border-r border-[#EDEDED] text-4 leading-6 font-[400] p-[10px] uppercase" style="border-radius:8px 0 0 0;"> DATE</th>
+                    <th scope="col" class="text-4 leading-6 font-[400] p-[10px] uppercase" style="border-radius:0 8px 0 0;"> 
+                        <span class="flex justify-center gap-x-5"><span>Check for all</span> 
+                      <span class="form-group flex mb-0"><input type="checkbox" id="read11"><label for="read11" class="text-primaryText leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px] font-[400]"></label></span>                  
+                    </span>
+                    </th>
                   </tr>
-              </thead>
+                </thead>
               <tbody>
-                <tr class="bg-corporateBg">
-                  <td class="border border-corporateBorder text-4 text-center leading-6 p-[16px]">18 July 2022</td>
-                  <td class="border border-corporateBorder text-4 text-center leading-6 p-[16px]">
+                <tr class="bg-corporateBg border-l border-r border-[#DBDBDB]">
+                  <td class="border-r border-[#EDEDED] text-4 text-center leading-6 p-[16px]">18 July 2022</td>
+                  <td class="text-4 text-center leading-6 p-[16px]">
+                    <div class="form-group mb-0"><input type="checkbox" id="read12"><label for="read12" class="text-primaryText leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px] font-[400]"></label></div>
+                  </td>
+                </tr>
+                <tr class="border-l border-r border-[#DBDBDB]">
+                  <td class="border-r border-[#EDEDED] text-4 text-center leading-6 p-[16px]">19 July 2022</td>
+                  <td class="text-4 text-center leading-6 p-[16px]">
+                    <div class="form-group mb-0"><input type="checkbox" id="read13"><label for="read13" class="text-primaryText leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px] font-[400]"></label></div>
+                  </td>
+                </tr>
+                <tr class="bg-corporateBg border-l border-r border-[#DBDBDB]">
+                  <td class="border-r border-[#EDEDED] text-4 text-center leading-6 p-[16px]">20 July 2022</td>
+                  <td class="text-4 text-center leading-6 p-[16px]">
+                    <div class="form-group mb-0"><input type="checkbox" id="read14"><label for="read14" class="text-primaryText leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px] font-[400]"></label></div>
+                  </td>
+                </tr>
+                <tr class="border-l border-r border-[#DBDBDB]">
+                  <td class="border-r border-[#EDEDED] text-4 text-center leading-6 p-[16px]">21 July 2022</td>
+                  <td class="text-4 text-center leading-6 p-[16px]">
                     <div class="form-group mb-0"><input type="checkbox" id="read"><label for="read" class="text-primaryText leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px] font-[400]"></label></div>
                   </td>
                 </tr>
-                <tr>
-                  <td class="border border-corporateBorder text-4 text-center leading-6 p-[16px]">19 July 2022</td>
-                  <td class="border border-corporateBorder text-4 text-center leading-6 p-[16px]">
+                <tr class="bg-corporateBg border-l border-r border-[#DBDBDB]">
+                  <td class="border-r border-[#EDEDED] text-4 text-center leading-6 p-[16px]">22 July 2022</td>
+                  <td class="text-4 text-center leading-6 p-[16px]">
                     <div class="form-group mb-0"><input type="checkbox" id="read"><label for="read" class="text-primaryText leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px] font-[400]"></label></div>
                   </td>
                 </tr>
-                <tr class="bg-corporateBg">
-                  <td class="border border-corporateBorder text-4 text-center leading-6 p-[16px]">20 July 2022</td>
-                  <td class="border border-corporateBorder text-4 text-center leading-6 p-[16px]">
+                <tr class="border-l border-r border-[#DBDBDB]">
+                  <td class="border-r border-[#EDEDED] text-4 text-center leading-6 p-[16px]">23 July 2022</td>
+                  <td class="text-4 text-center leading-6 p-[16px]">
                     <div class="form-group mb-0"><input type="checkbox" id="read"><label for="read" class="text-primaryText leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px] font-[400]"></label></div>
                   </td>
                 </tr>
-                <tr>
-                  <td class="border border-corporateBorder text-4 text-center leading-6 p-[16px]">21 July 2022</td>
-                  <td class="border border-corporateBorder text-4 text-center leading-6 p-[16px]">
-                    <div class="form-group mb-0"><input type="checkbox" id="read"><label for="read" class="text-primaryText leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px] font-[400]"></label></div>
-                  </td>
-                </tr>
-                <tr class="bg-corporateBg">
-                  <td class="border border-corporateBorder text-4 text-center leading-6 p-[16px]">22 July 2022</td>
-                  <td class="border border-corporateBorder text-4 text-center leading-6 p-[16px]">
-                    <div class="form-group mb-0"><input type="checkbox" id="read"><label for="read" class="text-primaryText leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px] font-[400]"></label></div>
-                  </td>
-                </tr>
-                <tr>
-                  <td class="border border-corporateBorder text-4 text-center leading-6 p-[16px]">23 July 2022</td>
-                  <td class="border border-corporateBorder text-4 text-center leading-6 p-[16px]">
-                    <div class="form-group mb-0"><input type="checkbox" id="read"><label for="read" class="text-primaryText leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px] font-[400]"></label></div>
-                  </td>
-                </tr>
-                <tr class="bg-corporateBg">
-                  <td class="border border-corporateBorder text-4 text-center leading-6 p-[16px]">18 July 2022</td>
-                  <td class="border border-corporateBorder text-4 text-center leading-6 p-[16px]">
+                <tr class="bg-corporateBg border-l border-r border-b border-[#DBDBDB]">
+                  <td class="border-r border-[#EDEDED] text-4 text-center leading-6 p-[16px]">24 July 2022</td>
+                  <td class="text-4 text-center leading-6 p-[16px]">
                     <div class="form-group mb-0"><input type="checkbox" id="read"><label for="read" class="text-primaryText leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px] font-[400]"></label></div>
                   </td>
                 </tr>
               </tbody>
               </table>
+              </div>
             </div>
           </div>
 
@@ -825,7 +831,6 @@
   
   .form-group label:before {
     content:'';
-    
     background-color: transparent;
     border: 2px solid #151414;
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
@@ -835,6 +840,7 @@
     vertical-align: middle;
     cursor: pointer;
     margin-right: 5px;
+    padding: 8px;
     border-radius: 4px;
   }
   
