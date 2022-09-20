@@ -30,9 +30,15 @@ import CreateCounter from '@/views/counter_create.vue'
 import THirdPartyCounter from '@/views/thirdparty_counter.vue'
 import Trips from '@/views/trips.vue'
 import TripsInformation from '@/views/tripInformation.vue'
-import TripsBoarding from "@/views/trips-boarding.vue";
-import TripsAdd from "@/views/tripsAdd.vue";
+import TripsBoarding from "@/views/trips-boarding.vue"
+import AnotherTripsBoarding from "@/views/another-trips-boarding.vue"
+import TripsAdd from "@/views/tripsAdd.vue"
+import TripsAddNext from "@/views/tripsAddNext.vue"
 import TripsPermission from '@/views/trip_permission.vue'
+import ManageUserRestriction from '@/views/manage-user-restriction.vue'
+import ManageUserRestrictionFilled from '@/views/manage-user-restriction-filled.vue'
+import AssignQuotaFilled from '@/views/assign-quota-filled.vue'
+import TripsModal from '@/views/trips-modal.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -190,6 +196,11 @@ const router = createRouter({
       component: Trips
     },
     {
+      path: '/tripsModal',
+      name: 'TripsModal',
+      component: TripsModal
+    },
+    {
       path: '/tripsInformation',
       name: 'TripsInformation',
       component: TripsInformation
@@ -199,11 +210,21 @@ const router = createRouter({
       name: 'TripsBoarding',
       component: TripsBoarding
     },
+    {
+      path: '/anotherTripsBoarding',
+      name: 'AnotherTripsBoarding',
+      component: AnotherTripsBoarding
+    },
 
     {
       path: '/tripsAdd',
       name: 'TripsAdd',
       component: TripsAdd
+    },
+    {
+      path: '/tripsAddNext',
+      name: 'TripsAddNext',
+      component: TripsAddNext
     },
     {
       path: '/tripsPermission',
@@ -214,6 +235,21 @@ const router = createRouter({
       path: '/tripPreview',
       name: 'TripPreview',
       component: TripPreview,
+    },
+    {
+      path: '/manageUserRestriction',
+      name: 'ManageUserRestriction',
+      component: ManageUserRestriction,
+    },
+    {
+      path: '/manageUserRestrictionFilled',
+      name: 'ManageUserRestrictionFilled',
+      component: ManageUserRestrictionFilled,
+    },
+    {
+      path: '/assignQuotaFilled',
+      name: 'AssignQuotaFilled',
+      component: AssignQuotaFilled,
     },
   ]
 })
