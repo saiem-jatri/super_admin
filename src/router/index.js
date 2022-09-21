@@ -37,7 +37,7 @@ import TripsAddNext from "@/views/tripsAddNext.vue"
 import TripsPermission from '@/views/trip_permission.vue'
 import ManageUserRestriction from '@/views/manage-user-restriction.vue'
 import ManageUserRestrictionFilled from '@/views/manage-user-restriction-filled.vue'
-import AssignQuotaFilled from '@/views/assign-quota-filled.vue'
+import TripsQuotaFilled from '@/views/trips-quota-filled.vue'
 import TripsModal from '@/views/trips-modal.vue'
 import TripsAgent from '@/views/trips_agent.vue'
 import TripsQuota from '@/views/trips_quota.vue'
@@ -270,6 +270,11 @@ const router = createRouter({
             component: TripsQuota
         },
         {
+            path: '/tripsQuotaFilled',
+            name: 'TripsQuotaFilled',
+            component: TripsQuotaFilled,
+        },
+        {
             path: '/tripsFacilities',
             name: 'TripFacilities',
             component: TripFacilities
@@ -358,12 +363,7 @@ const router = createRouter({
             name: 'ManageUserRestrictionFilled',
             component: ManageUserRestrictionFilled,
         },
-        {
-            path: '/assignQuotaFilled',
-            name: 'AssignQuotaFilled',
-            component: AssignQuotaFilled,
-        },
-
+        
         //Agent Start
         {
             path: '/agent',
