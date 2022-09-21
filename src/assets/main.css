@@ -31,7 +31,7 @@ body{
     @apply leading-[20px] text-[10px] xl:leading-[22px] xl:text-[14px] font-[500] text-white w-1/3
 }
 .DashBoardTableHead{
-    @apply leading-[12px] text-[9px] xl:leading-[16px] xl:text-[11px] font-[500] text-corporateAsh text-center py-2 uppercase
+    @apply leading-[12px] text-[9px] xl:leading-[16px] xl:text-[11px] font-[500] text-corporateAsh text-center py-2
 }
 
 .DashBoardTableTd{
@@ -99,4 +99,12 @@ body{
 }
 .tripPermissionBtnleftWithbg{
     @apply w-1/2 bg-corporate text-white leading-[16px] xl:leading-[20px] text-[12px] xl:text-[14px] flex justify-center items-center font-[400] h-[40px] rounded-l-[4px]
+}
+
+.counterDesign {
+    @apply p-[8px] xl:p-[10px] text-primaryText leading-[20px] xl:leading-[24px] text-[14px] xl:text-[16px]
+}
+
+.quotaSeat {
+    @apply w-[35px] xl:w-[50px] h-[25px] xl:h-[36px] text-center text-primaryText border border-corporateBorder rounded-[2px] leading-[16px] xl:leading-[20px] text-[12px] xl:text-[14px]
 }

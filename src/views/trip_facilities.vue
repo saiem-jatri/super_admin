@@ -73,9 +73,10 @@
             <div
                 class="w-[200px] h-[30px] xl:w-[270px] xl:h-[40px] border border-[#DBDBDB] flex justify-center items-center leading-[20px] rounded-[4px] pl-[9px] overflow-hidden">
               <img alt="" class="h-2 w-2 xl:h-5 xl:w-5" src="../assets/svg/search.svg">
-              <input class="outline-none pl-32 xl:pl-2 placeholder:text-[#4D4D4F] placeholder:text-[8px] placeholder:leading-[16px] xl:placeholder:text-[14px] xl:placeholder:leading-[20px]"
-                     placeholder="PNR or mobile number"
-                     type="text">
+              <input
+                  class="outline-none pl-32 xl:pl-2 placeholder:text-[#4D4D4F] placeholder:text-[8px] placeholder:leading-[16px] xl:placeholder:text-[14px] xl:placeholder:leading-[20px]"
+                  placeholder="PNR or mobile number"
+                  type="text">
             </div>
             <div class="flex justify-center items-center gap-x-1">
               <img alt="" class="h-[30px]  w-[30px] xl:h-[40px] xl:w-[40px] rounded-full"
@@ -95,7 +96,7 @@
         <div class="bg-white rounded-[8px]">
           <div class="p-4">
             <div class="flex items-center gap-x-[6px] mr-2">
-              <p class="text-primaryText leading-[12px] text-[8px] xl:leading-[16px] xl:text-[12px] font-[600]">Trip
+              <p class="text-secondaryText leading-[12px] text-[8px] xl:leading-[16px] xl:text-[12px] font-[400]">Trip
                 Information</p>
               <img alt="" class="w-1 h-2" src="../assets/svg/bgBack.svg">
               <p class="text-secondaryText leading-[12px] text-[8px] xl:leading-[16px] xl:text-[12px] font-[400]">
@@ -113,7 +114,7 @@
               <p class="text-secondaryText leading-[12px] text-[8px] xl:leading-[16px] xl:text-[12px] font-[400]">Assign
                 Qouta</p>
               <img alt="" class="w-1 h-2" src="../assets/svg/bgBack.svg">
-              <p class="text-secondaryText leading-[12px] text-[8px] xl:leading-[16px] xl:text-[12px] font-[400]">Trip
+              <p class="text-primaryText leading-[12px] text-[8px] xl:leading-[16px] xl:text-[12px] font-[600]">Trip
                 Facilities & Policies</p>
               <img alt="" class="w-1 h-2" src="../assets/svg/bgBack.svg">
               <p class="text-secondaryText leading-[12px] text-[8px] xl:leading-[16px] xl:text-[12px] font-[400]">
@@ -121,7 +122,7 @@
             </div>
             <div class="flex justify-between items-center">
               <p class="text-corporateSecondaryBlue leading-[20px] xl:leading-[24px] text-[14px] xl:text-[16px] font-[500] mt-2">
-                BOARDING & DROPPING</p>
+                TRIP FACILITES & POLICIES</p>
               <p class="flex gap-x-[10px]">
                 <img alt="" src="../assets/svg/back_arrow.svg">
                 <a class="leading-[12px] xl:leading-[16px] text-[10px] xl:text-[12px] text-primaryText border-b-2 border-primaryText block text-primaryText font-[600]"
@@ -134,112 +135,88 @@
         <div class="bg-white rounded-[8px] mt-[12px] xl:mt-[16px]">
           <div class="p-4">
             <p class="text-corporateSecondaryBlue leading-[20px] xl:leading-[24px] text-[14px] xl:text-[16px] font-[500]">
-              TRIP INFORMATION</p>
-            <div class="flex justify-between items-center">
-              <p class="leading-[12px] xl:leading-[16px] text-[10px] xl:text-[12px] text-primaryText">BOARDING POINT
-                1</p>
-              <div class="form-group mt-4">
-                <input id="read" type="checkbox">
-                <label class="text-primaryText leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px] font-[400]"
-                       for="read">Make
-                  available for Jatri</label>
+              TRIP
+              FACILITES & POLICIES</p>
+
+            <div class="flex gap-x-[18px] justify-start items-center">
+              <div class="form-group w-[238px] mt-3 xl:mt-[18px]">
+                <input id="html" type="checkbox">
+                <label class="text-primaryText leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400]"
+                       for="html">WiFi</label>
+              </div>
+              <div class="form-group w-[238px] mt-3 xl:mt-[18px]">
+                <input id="html" type="checkbox">
+                <label class="text-primaryText leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400]"
+                       for="html">WiFi</label>
+              </div>
+
+              <div class="form-group w-[238px] mt-3 xl:mt-[18px]">
+                <input id="html" type="checkbox">
+                <label class="text-primaryText leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400]"
+                       for="html">WiFi</label>
+              </div>
+
+              <div class="form-group w-[238px] mt-3 xl:mt-[18px]">
+                <input id="html" type="checkbox">
+                <label class="text-primaryText leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400]"
+                       for="html">WiFi</label>
               </div>
             </div>
-            <div class="flex justify-center items-center gap-x-[10px] xl:gap-x-[16px]">
-              <div class="w-1/4">
-                <p class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]">
-                  City</p>
-                <Dropdown v-model="selectedCity" :opti6ns="cities" class="w-full py-[4px] mt-[10px]" optionLabel="name"
-                          placeholder="Select city"/>
+
+            <hr class="mt-[14px] xl:mt-[18px] border-t border-dashed border-corporateBorder">
+            <div class="flex gap-x-[18px] justify-start items-center">
+              <div class="form-group w-[238px] mt-3 xl:mt-[18px]">
+                <input id="html" type="checkbox">
+                <label class="text-primaryText leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400]"
+                       for="html">WiFi</label>
               </div>
-              <div class="w-1/4">
-                <p class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]">
-                  Stoppage</p>
-                <Dropdown v-model="selectedCity" :opti6ns="cities" class="w-full py-[4px] mt-[10px]" optionLabel="name"
-                          placeholder="Select stoppage"/>
+              <div class="form-group w-[238px] mt-3 xl:mt-[18px]">
+                <input id="html" type="checkbox">
+                <label class="text-primaryText leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400]"
+                       for="html">WiFi</label>
               </div>
-              <div class="w-1/4">
-                <p class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]">
-                  Stoppage</p>
-                <Dropdown v-model="selectedCity" :opti6ns="cities" class="w-full py-[4px] mt-[10px]" optionLabel="name"
-                          placeholder="Select stoppage"/>
+
+              <div class="form-group w-[238px] mt-3 xl:mt-[18px]">
+                <input id="html" type="checkbox">
+                <label class="text-primaryText leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400]"
+                       for="html">WiFi</label>
               </div>
-              <div class="w-1/4">
-                <p class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]">
-                  Boarding date</p>
-                <div
-                    class="w-full h-[40px] border border-[#DBDBDB] flex justify-between items-center mt-[10px] leading-[20px] rounded-[4px] xl:px-[8px] overflow-hidden">
-                  <input class="outline-none pl-2 placeholder:text-[#4D4D4F] placeholder:text-[14px] placeholder:leading-[20px]"
-                         placeholder="Select boarding date"
-                         type="text">
-                  <img alt="" class="h-5 w-5 mr-5 2xl:mr-0" src="../assets/svg/count2.svg">
-                </div>
-              </div>
-              <div class="w-1/4">
-                <p class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]">
-                  Boarding time</p>
-                <input class="createNormalInput" placeholder="Enter boarding time" type="text">
+
+              <div class="form-group w-[238px] mt-3 xl:mt-[18px]">
+                <input id="html" type="checkbox">
+                <label class="text-primaryText leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400]"
+                       for="html">WiFi</label>
               </div>
             </div>
-            <button
-                class="w-full border border-dashed border-corporateSecondaryBlue flex justify-center items-center bg-[#EFF7FD] rounded-[4px] mt-4">
-              <div class="flex justify-center items-center gap-x-[11px] py-[12px]">
-                <img alt="" class="w-[10px] h-[10px]" src="../assets/svg/createPlus.svg">
-                <p class="text-primaryText font-[600] leading-[20px] text-[14px]">Add another boarding point</p>
-              </div>
-            </button>
+            <hr class="mt-[14px] xl:mt-[18px] border-t border-dashed border-corporateBorder">
+
+            <div class="mt-3 xl:mt-4 flex gap-x-4 justify-start items-center">
+              <input class="border border-corporateBorder rounded-[4px] px-2 py-[6px] focus:outline-none"
+                     placeholder="Enter facilty"
+                     type="text">
+
+              <button
+                  class="bg-[#F7F7F7] flex gap-x-[11px] justify-center items-center border border-dashed border-corporateBorder px-4 py-[6px] rounded-[4px]">
+                <img alt="" class="w-[10px] h-[10px]" src="../assets/svg/facilities_plus.svg"> Add another facility
+              </button>
+            </div>
           </div>
-          <hr class="mt-[12px] xl:mt-[16px] border-t border-corporateBorder">
+
+          <hr class="border-t border-corporateBorder">
           <div class="p-4">
             <p class="text-corporateSecondaryBlue leading-[20px] xl:leading-[24px] text-[14px] xl:text-[16px] font-[500]">
-              TRIP INFORMATION</p>
+              POLICIES</p>
 
-            <p class="leading-[12px] xl:leading-[16px] text-[10px] xl:text-[12px] text-primaryText mt-3 xl:mt-4">
-              DROPPING POINT 1</p>
+            <p class="text-primaryText leading-[20px] xl:leading-[24px] text-[14px] xl:text-[16px] font-[600] mt-3 xl:mt-4">
+              Trip
+              policy</p>
 
-            <div class="flex justify-center items-center gap-x-[10px] xl:gap-x-[16px] mt-3 xl:mt-4">
-              <div class="w-1/4">
-                <p class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]">
-                  City</p>
-                <Dropdown v-model="selectedCity" :opti6ns="cities" class="w-full py-[4px] mt-[10px]" optionLabel="name"
-                          placeholder="Select city"/>
-              </div>
-              <div class="w-1/4">
-                <p class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]">
-                  Stoppage</p>
-                <Dropdown v-model="selectedCity" :opti6ns="cities" class="w-full py-[4px] mt-[10px]" optionLabel="name"
-                          placeholder="Select stoppage"/>
-              </div>
-              <div class="w-1/4">
-                <p class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]">
-                  Stoppage</p>
-                <Dropdown v-model="selectedCity" :opti6ns="cities" class="w-full py-[4px] mt-[10px]" optionLabel="name"
-                          placeholder="Select stoppage"/>
-              </div>
-              <div class="w-1/4">
-                <p class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]">
-                  Dropping date</p>
-                <div
-                    class="w-full h-[40px] border border-[#DBDBDB] flex justify-between items-center mt-[10px] leading-[20px] rounded-[4px] xl:px-[8px] overflow-hidden">
-                  <input class="outline-none pl-2 placeholder:text-[#4D4D4F] placeholder:text-[14px] placeholder:leading-[20px]"
-                         placeholder="Select boarding date"
-                         type="text">
-                  <img alt="" class="h-5 w-5 mr-5 2xl:mr-0" src="../assets/svg/count2.svg">
-                </div>
-              </div>
-              <div class="w-1/4">
-                <p class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]">
-                  Dropping time</p>
-                <input class="createNormalInput" placeholder="Enter boarding time" type="text">
-              </div>
-            </div>
-            <button
-                class="w-full border border-dashed border-corporateSecondaryBlue flex justify-center items-center bg-[#EFF7FD] rounded-[4px] mt-4">
-              <div class="flex justify-center items-center gap-x-[11px] py-[12px]">
-                <img alt="" class="w-[10px] h-[10px]" src="../assets/svg/createPlus.svg">
-                <p class="text-primaryText font-[600] leading-[20px] text-[14px]">Add another dropping point</p>
-              </div>
-            </button>
+            <textarea id=""
+                      class="w-full mt-[18px] border border-corporateBorder rounded-[4px] p-[8px] focus:outline-none placeholder:text-[#676769] placeholder:leading-[20px] placeholder:text-[14px]"
+                      cols="30" name=""
+                      placeholder="Enter terms & condition"
+                      rows="10"></textarea>
+            <p class="text-[#676769] leading-[16px] text-[12px] font-[400] mt-[8px]">*Max 500 charecters</p>
           </div>
         </div>
         <div class="flex justify-center items-center mt-5">
@@ -255,6 +232,11 @@
 </template>
 
 <style scoped>
+.p-dropdown .p-dropdown-label.p-placeholder {
+  color: black;
+  font-size: 14px;
+}
+
 select {
   /* for Firefox */
   -moz-appearance: none;

@@ -1,4 +1,4 @@
-import { createRouter, createWebHistory } from 'vue-router'
+import {createRouter, createWebHistory} from 'vue-router'
 import Login from '@/views/login/index.vue'
 import ForgetPassword from '@/views/forgetPassword.vue'
 import Dashboard from '@/views/dashboard.vue'
@@ -17,7 +17,7 @@ import companyCreateDriver from '@/views/bus_company_create_driver.vue'
 import companyCreateHelper from '@/views/bus_company_create_helper.vue'
 import companyManageCreateDriver from '@/views/bus_company_manage_create_driver.vue'
 import viacity from '@/views/bus_company_manage_via_city.vue'
-import companyManageCompany from  '@/views/bus_company_manage_company.vue'
+import companyManageCompany from '@/views/bus_company_manage_company.vue'
 import viacityFilled from '@/views/bus_company_manage_via_city_filled.vue'
 import companyManageOwner from '@/views/bus_company_manage_owner.vue'
 import Routes from '@/views/routes.vue'
@@ -41,231 +41,340 @@ import AssignQuotaFilled from '@/views/assign-quota-filled.vue'
 import TripsModal from '@/views/trips-modal.vue'
 import Agent from '@/views/agent.vue'
 import AddAgent from '@/views/add-agent.vue'
+import TripsAgent from '@/views/trips_agent.vue'
+import TripsQuota from '@/views/trips_quota.vue'
+import TripFacilities from '@/views/trip_facilities.vue'
+import User from '@/views/user.vue'
+import UserAdmin from '@/views/user_admin.vue'
+import UserCounterman from '@/views/user_counterman.vue'
+import UserAgent from '@/views/user_agent.vue'
+import UserCustomerCare from '@/views/user_customer_care.vue'
+import UserCreateAdmin from '@/views/user_create_admin.vue'
+import UserCreateCounterman from '@/views/user_create_counterman.vue'
+import UserCreateAgent from '@/views/user_create_agent.vue'
+import UserCreateCustomercare from '@/views/user_create_customercare.vue'
+import MigrateTrip from '@/views/migrate_trip.vue'
 
 const router = createRouter({
-  history: createWebHistory(import.meta.env.BASE_URL),
-  routes: [
-    {
-      path: '/',
-      name: 'home',
-      component: Login
-    },
-    {
-      path: '/forgetPassword',
-      name: 'forgetPassword',
-      component: ForgetPassword
-    },
-    {
-      path: '/dashboard',
-      name: 'dashboard',
-      component: Dashboard
-    },
-    {
-      path: '/company',
-      name: 'company',
-      component: BusCompany
-    },
-    {
-      path: '/create',
-      name: 'create',
-      component: CreateCompany
-    },
-    {
-      path: '/createFilled',
-      name: 'createFilled',
-      component: CreateFilled
-    },
-    {
-      path: '/companyOwner',
-      name: 'companyOwner',
-      component: CompanyOwner
-    },
-    {
-      path: '/companyTicket',
-      name: 'companyTicket',
-      component: CompanyTicket
-    },
-    {
-      path: '/createOwner',
-      name: 'createOwner',
-      component: companyCreateOwner
-    },
-    {
-      path: '/createRoute',
-      name: 'createRoute',
-      component: companyCreateRoute
-    },
-    {
-      path: '/createCounter',
-      name: 'companyCreateCounter',
-      component: companyCreateCounter
-    },
-    {
-      path: '/manageTrip',
-      name: 'companyManageTrip',
-      component: companyManageTrip
-    },
+    history: createWebHistory(import.meta.env.BASE_URL),
+    routes: [
+        {
+            path: '/',
+            name: 'home',
+            component: Login
+        },
+        {
+            path: '/forgetPassword',
+            name: 'forgetPassword',
+            component: ForgetPassword
+        },
+        {
+            path: '/dashboard',
+            name: 'dashboard',
+            component: Dashboard
+        },
+        {
+            path: '/company',
+            name: 'company',
+            component: BusCompany
+        },
+        {
+            path: '/create',
+            name: 'create',
+            component: CreateCompany
+        },
+        {
+            path: '/createFilled',
+            name: 'createFilled',
+            component: CreateFilled
+        },
+        {
+            path: '/companyOwner',
+            name: 'companyOwner',
+            component: CompanyOwner
+        },
+        {
+            path: '/companyTicket',
+            name: 'companyTicket',
+            component: CompanyTicket
+        },
+        {
+            path: '/createOwner',
+            name: 'createOwner',
+            component: companyCreateOwner
+        },
+        {
+            path: '/createRoute',
+            name: 'createRoute',
+            component: companyCreateRoute
+        },
+        {
+            path: '/createCounter',
+            name: 'companyCreateCounter',
+            component: companyCreateCounter
+        },
+        {
+            path: '/manageTrip',
+            name: 'companyManageTrip',
+            component: companyManageTrip
+        },
 
-    {
-      path: '/createSupervisor',
-      name: 'companyCreateSupervisor',
-      component: companyCreateSupervisor
-    },
-    {
-      path: '/createCounterMan',
-      name: 'companyCreateCounterman',
-      component: companyCreateCounterman
-    },
-    {
-      path: '/createDriver',
-      name: 'companyCreateDriver',
-      component: companyCreateDriver
-    },
-    {
-      path: '/createHelper',
-      name: 'companyCreateHelper',
-      component: companyCreateHelper
-    },
-    {
-      path: '/createManageDriver',
-      name: 'companyManageCreateDriver',
-      component: companyManageCreateDriver
-    },
-    {
-      path: '/viaCity',
-      name: 'viacity',
-      component: viacity
-    },
-    {
-      path: '/viaCityFilled',
-      name: 'viacityFilled',
-      component: viacityFilled
-    },
-    {
-      path: '/manageCounter',
-      name: 'companyManageCompany',
-      component: companyManageCompany
-    },
-    {
-      path: '/manageOwner',
-      name: 'companyManageOwner',
-      component: companyManageOwner
-    },
+        {
+            path: '/createSupervisor',
+            name: 'companyCreateSupervisor',
+            component: companyCreateSupervisor
+        },
+        {
+            path: '/createCounterMan',
+            name: 'companyCreateCounterman',
+            component: companyCreateCounterman
+        },
+        {
+            path: '/createDriver',
+            name: 'companyCreateDriver',
+            component: companyCreateDriver
+        },
+        {
+            path: '/createHelper',
+            name: 'companyCreateHelper',
+            component: companyCreateHelper
+        },
+        {
+            path: '/createManageDriver',
+            name: 'companyManageCreateDriver',
+            component: companyManageCreateDriver
+        },
+        {
+            path: '/viaCity',
+            name: 'viacity',
+            component: viacity
+        },
+        {
+            path: '/viaCityFilled',
+            name: 'viacityFilled',
+            component: viacityFilled
+        },
+        {
+            path: '/manageCounter',
+            name: 'companyManageCompany',
+            component: companyManageCompany
+        },
+        {
+            path: '/manageOwner',
+            name: 'companyManageOwner',
+            component: companyManageOwner
+        },
 
-  //    routes start
-    {
-      path: '/routes',
-      name: 'Routes',
-      component: Routes
-    },
-    {
-      path: '/routeCreate',
-      name: 'RouteCreate',
-      component: RouteCreate
-    },
-    {
-      path: '/routeViaCity',
-      name: 'RoutesViaCity',
-      component: RoutesViaCity
-    },
-    {
-      path: '/routeViaCityFilled',
-      name: 'RouteViaCityFilled',
-      component: RouteViaCityFilled
-    },
+        //    routes start
+        {
+            path: '/routes',
+            name: 'Routes',
+            component: Routes
+        },
+        {
+            path: '/routeCreate',
+            name: 'RouteCreate',
+            component: RouteCreate
+        },
+        {
+            path: '/routeViaCity',
+            name: 'RoutesViaCity',
+            component: RoutesViaCity
+        },
+        {
+            path: '/routeViaCityFilled',
+            name: 'RouteViaCityFilled',
+            component: RouteViaCityFilled
+        },
 
-    //  counter start
-    {
-      path: '/counter',
-      name: 'Counter',
-      component: Counter
-    },
-    {
-      path: '/counterCreate',
-      name: 'CreateCounter',
-      component: CreateCounter
-    },
-    {
-      path: '/thirdPartyCounter',
-      name: 'THirdPartyCounter',
-      component: THirdPartyCounter
-    },
+        //  counter start
+        {
+            path: '/counter',
+            name: 'Counter',
+            component: Counter
+        },
+        {
+            path: '/counterCreate',
+            name: 'CreateCounter',
+            component: CreateCounter
+        },
+        {
+            path: '/thirdPartyCounter',
+            name: 'THirdPartyCounter',
+            component: THirdPartyCounter
+        },
 
-  //    Trips started
-    {
-      path: '/trips',
-      name: 'Trips',
-      component: Trips
-    },
-    {
-      path: '/tripsModal',
-      name: 'TripsModal',
-      component: TripsModal
-    },
-    {
-      path: '/tripsInformation',
-      name: 'TripsInformation',
-      component: TripsInformation
-    },
-    {
-      path: '/tripsBoarding',
-      name: 'TripsBoarding',
-      component: TripsBoarding
-    },
-    {
-      path: '/anotherTripsBoarding',
-      name: 'AnotherTripsBoarding',
-      component: AnotherTripsBoarding
-    },
+        //    Trips started
+        {
+            path: '/trips',
+            name: 'Trips',
+            component: Trips
+        },
+        {
+            path: '/tripsInformation',
+            name: 'TripsInformation',
+            component: TripsInformation
+        },
+        {
+            path: '/tripsBoarding',
+            name: 'TripsBoarding',
+            component: TripsBoarding
+        },
+        //    Trips started
+        {
+            path: '/trips',
+            name: 'Trips',
+            component: Trips
+        },
+        {
+            path: '/tripsModal',
+            name: 'TripsModal',
+            component: TripsModal
+        },
+        {
+            path: '/tripsInformation',
+            name: 'TripsInformation',
+            component: TripsInformation
+        },
+        {
+            path: '/tripsBoarding',
+            name: 'TripsBoarding',
+            component: TripsBoarding
+        },
+        {
+            path: '/anotherTripsBoarding',
+            name: 'AnotherTripsBoarding',
+            component: AnotherTripsBoarding
+        },
 
-    {
-      path: '/tripsAdd',
-      name: 'TripsAdd',
-      component: TripsAdd
-    },
-    {
-      path: '/tripsAddNext',
-      name: 'TripsAddNext',
-      component: TripsAddNext
-    },
-    {
-      path: '/tripsPermission',
-      name: 'TripsPermission',
-      component: TripsPermission
-    },
-    {
-      path: '/tripPreview',
-      name: 'TripPreview',
-      component: TripPreview,
-    },
-    {
-      path: '/manageUserRestriction',
-      name: 'ManageUserRestriction',
-      component: ManageUserRestriction,
-    },
-    {
-      path: '/manageUserRestrictionFilled',
-      name: 'ManageUserRestrictionFilled',
-      component: ManageUserRestrictionFilled,
-    },
-    {
-      path: '/assignQuotaFilled',
-      name: 'AssignQuotaFilled',
-      component: AssignQuotaFilled,
-    },
+        {
+            path: '/tripsAdd',
+            name: 'TripsAdd',
+            component: TripsAdd
+        },
+        {
+            path: '/tripsPermission',
+            name: 'TripsPermission',
+            component: TripsPermission
+        },
+        {
+            path: '/tripsAgent',
+            name: 'TripsAgent',
+            component: TripsAgent
+        },
+        {
+            path: '/tripsQuota',
+            name: 'TripsQuota',
+            component: TripsQuota
+        },
+        {
+            path: '/tripsFacilities',
+            name: 'TripFacilities',
+            component: TripFacilities
+        },
 
-    //Agent Start
-    {
-      path: '/agent',
-      name: 'Agent',
-      component: Agent,
-    },
-    {
-      path: '/addAgent',
-      name: 'AddAgent',
-      component: AddAgent,
-    },
-  ]
+        {
+            path: '/tripsAdd',
+            name: 'TripsAdd',
+            component: TripsAdd
+        },
+        {
+            path: '/tripsPermission',
+            name: 'TripsPermission',
+            component: TripsPermission
+        },
+        {
+            path: '/tripPreview',
+            name: 'TripPreview',
+            component: TripPreview,
+        },
+        //user Start
+        {
+            path: '/user',
+            name: 'User',
+            component: User,
+        },
+        {
+            path: '/userAdmin',
+            name: 'UserAdmin',
+            component: UserAdmin,
+        },
+        {
+            path: '/userCounterman',
+            name: 'UserCounterman',
+            component: UserCounterman,
+        },
+        {
+            path: '/userAgent',
+            name: 'UserAgent',
+            component: UserAgent,
+        },
+        {
+            path: '/userCustomerCare',
+            name: 'UserCustomerCare',
+            component: UserCustomerCare,
+        },
+        {
+            path: '/userCreateAdmin',
+            name: 'UserCreateAdmin',
+            component: UserCreateAdmin,
+        },
+        {
+            path: '/userCreateCounterman',
+            name: 'UserCreateCounterman',
+            component: UserCreateCounterman,
+        },
+        {
+            path: '/userCreateAgent',
+            name: 'UserCreateAgent',
+            component: UserCreateAgent,
+        },
+        {
+            path: '/userCreateCustomercare',
+            name: 'UserCreateCustomercare',
+            component: UserCreateCustomercare,
+        },
+
+        //    migrate trip started
+        {
+            path: '/migrateTrip',
+            name: 'MigrateTrip',
+            component: MigrateTrip,
+        },
+        {
+            path: '/tripsAddNext',
+            name: 'TripsAddNext',
+            component: TripsAddNext
+        },
+        {
+            path: '/manageUserRestriction',
+            name: 'ManageUserRestriction',
+            component: ManageUserRestriction,
+        },
+        {
+            path: '/manageUserRestrictionFilled',
+            name: 'ManageUserRestrictionFilled',
+            component: ManageUserRestrictionFilled,
+        },
+        {
+            path: '/assignQuotaFilled',
+            name: 'AssignQuotaFilled',
+            component: AssignQuotaFilled,
+        },
+
+        {
+            path: '/agent',
+            name: 'Agent',
+            component: Agent,
+        },
+        {
+            path: '/addAgent',
+            name: 'AddAgent',
+            component: AddAgent,
+        },
+
+    ]
+
 })
 
 export default router

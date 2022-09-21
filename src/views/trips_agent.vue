@@ -121,7 +121,7 @@
             </div>
             <div class="flex justify-between items-center">
               <p class="text-corporateSecondaryBlue leading-[20px] xl:leading-[24px] text-[14px] xl:text-[16px] font-[500] mt-2">
-                PERMISSIONS & COMMISSIONS</p>
+                ASSIGN COUNTERMAN & AGENT</p>
               <p class="flex gap-x-[10px]">
                 <img alt="" src="../assets/svg/back_arrow.svg">
                 <a class="leading-[12px] xl:leading-[16px] text-[10px] xl:text-[12px] text-primaryText border-b-2 border-primaryText block text-primaryText font-[600]"
@@ -133,210 +133,215 @@
         </div>
         <div class="bg-white rounded-[8px] mt-[12px] xl:mt-[16px]">
           <div class="p-4">
-            <p class="text-corporateSecondaryBlue leading-[20px] xl:leading-[24px] text-[14px] xl:text-[16px] font-[500] mb-4">
-              TRIP PERMISSION</p>
-            <div class="flex justify-center items-center gap-x-[10px] xl:gap-x-[16px]">
-              <div class="w-1/4">
-                <p class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]">Trip
-                  available for online</p>
-                <div class="py-[8px] border border-corporateBorder rounded-[4px] mt-[10px]">
-                  <div class="w-full  rounded-[4px] flex justify-between items-center divide-x divide-corporateBorder">
-                    <input class="w-[80%] focus:outline-none px-[8px] placeholderDesign" placeholder="Enter trip available time"
-                           type="text">
-                    <p class="w-[20%] text-center leading-[16px] xl:leading-[20px] text-[12px] xl:text-[14px] text-corporateSecondaryBlack">
-                      hr</p>
+            <div class="flex justify-between items-center">
+              <p class="text-corporateSecondaryBlue leading-[20px] xl:leading-[24px] text-[14px] xl:text-[16px] font-[500]">
+                ASSIGN COUNTERMAN & AGENT</p>
+              <div class="form-group">
+                <input id="html" type="checkbox">
+                <label class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]"
+                       for="html">Mark
+                  all</label>
+              </div>
+            </div>
+            <div class="p-2">
+              <div class="flex items-center justify-between">
+                <div class="w-[25%]">
+                  <p class="leading-[20px] xl:leading-[24px] text-[14px] xl:text-[16px] text-corporateSecondaryBlack">
+                    Counter 1</p>
+                  <div class="form-group mt-2">
+                    <input id="html" type="checkbox">
+                    <label class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]"
+                           for="html">Mark
+                      all</label>
                   </div>
                 </div>
-              </div>
-
-              <div class="w-1/4">
-                <p class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]">Bus
-                  reg. no</p>
-                <input class="createNormalInput" placeholder="Enter bus reg. no" type="text">
-              </div>
-              <div class="w-1/4">
-                <p class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]">Top
-                  priority</p>
-                <div class="flex justify-center items-center w-full mt-[10px]">
-                  <button class="tripPermissionBtnleft">Yes</button>
-                  <button class="tripPermissionBtnright">No</button>
-                </div>
-              </div>
-              <div class="w-1/4">
-                <p class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]">
-                  Discount</p>
-                <div class="flex justify-center items-center w-full mt-[10px]">
-                  <button class="tripPermissionBtnleft">Yes</button>
-                  <button class="tripPermissionBtnright">No</button>
-                </div>
-              </div>
-            </div>
-            <div class="flex justify-start items-center gap-x-[10px] xl:gap-x-[16px] mt-3 xl:mt-4">
-
-              <div class="w-1/4">
-                <p class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]">
-                  Reserve</p>
-                <div class="flex justify-center items-center w-full mt-[10px]">
-                  <button class="tripPermissionBtnleft">Yes</button>
-                  <button class="tripPermissionBtnright">No</button>
-                </div>
-              </div>
-              <div class="w-1/4">
-                <p class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]">
-                  Cancel</p>
-                <div class="flex justify-center items-center w-full mt-[10px]">
-                  <button class="tripPermissionBtnleft">Yes</button>
-                  <button class="tripPermissionBtnright">No</button>
-                </div>
-              </div>
-            </div>
-          </div>
-          <hr class="mt-[12px] xl:mt-[16px] border-t border-corporateBorder">
-          <div class="p-4">
-            <p class="text-corporateSecondaryBlue leading-[20px] xl:leading-[24px] text-[14px] xl:text-[16px] font-[500] mb-4">
-              ROUTE PERMISSION</p>
-            <div class="flex justify-center items-center gap-x-[10px] xl:gap-x-[16px]">
-              <div class="w-1/4">
-                <p class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]">
-                  Operator</p>
-                <div class="flex justify-center items-center w-full mt-[10px]">
-                  <button class="tripPermissionBtnleft">Yes</button>
-                  <button class="tripPermissionBtnright">No</button>
-                </div>
-              </div>
-
-              <div class="w-1/4">
-                <p class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]">Third
-                  party agent</p>
-                <div class="flex justify-center items-center w-full mt-[10px]">
-                  <button class="tripPermissionBtnleft">Yes</button>
-                  <button class="tripPermissionBtnright">No</button>
-                </div>
-              </div>
-              <div class="w-1/4">
-                <p class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]">
-                  Jatri</p>
-                <div class="flex justify-center items-center w-full mt-[10px]">
-                  <button class="tripPermissionBtnleft">Yes</button>
-                  <button class="tripPermissionBtnright">No</button>
-                </div>
-              </div>
-              <div class="w-1/4">
-                <p class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]">
-                  Customer care</p>
-                <div class="flex justify-center items-center w-full mt-[10px]">
-                  <button class="tripPermissionBtnleftWithbg">Yes</button>
-                  <button class="tripPermissionBtnright">No</button>
-                </div>
-              </div>
-            </div>
-            <div class="flex justify-start items-center gap-x-[10px] xl:gap-x-[16px] mt-3 xl:mt-4">
-
-              <div class="w-1/4">
-                <p class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]">Eid
-                  trip</p>
-                <div class="flex justify-center items-center w-full mt-[10px]">
-                  <button class="tripPermissionBtnleft">Yes</button>
-                  <button class="tripPermissionBtnright">No</button>
-                </div>
-              </div>
-            </div>
-          </div>
-          <hr class="mt-[12px] xl:mt-[16px] border-t border-corporateBorder">
-          <div class="p-4">
-            <p class="text-corporateSecondaryBlue leading-[20px] xl:leading-[24px] text-[14px] xl:text-[16px] font-[500] mb-4">
-              COMMISSION</p>
-            <div class="flex justify-start items-center gap-x-[10px] xl:gap-x-[16px]">
-              <div class="w-1/4">
-                <p class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]">
-                  Ticket commission (Third party)</p>
-                <div class="py-[2px] border border-[#DBDBDB] mt-[10px] rounded-[4px] leading-[20px]">
-                  <div class="w-full h-[35px] flex justify-between items-center overflow-hidden divide-x">
-                    <input
-                        class="p-4 text-[#676769] leading-[20px] text-[14px] font-[400] w-2/5 placeholder:text-primaryText focus:outline-none"
-                        placeholder="Enter ammount">
-                    <div class="p-2 w-3/5 ">
-                      <div class="flex justify-between xl:gap-x-2 items-center bg-[#F7F7F7] xl:px-2">
-                        <select aria-label="Default select example"
-                                class="form-selectpy-1 text-base bg-[#F7F7F7] rounded focus:outline-none xl:w-full">
-                          <option class="leading-[16px] xl:leading-[20px] text-[10px] xl:text-[14px] font-[500]"
-                                  selected>
-                            Percentage %
-                          </option>
-                          <option value="1">One</option>
-                          <option value="2">Two</option>
-                          <option value="3">Three</option>
-                        </select>
-                        <img alt="" class="w-[12px] h-5" src="../assets/svg/down_arrow.svg">
-                      </div>
+                <div class="flex w-[75%] flex-col divide-y divide-dashed">
+                  <div class="flex gap-x-[18px] py-2">
+                    <div class="form-group w-[238px]">
+                      <input id="html" type="checkbox">
+                      <label class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[400]"
+                             for="html">Fahim
+                        Ahmed</label>
                     </div>
-
-                  </div>
-                </div>
-
-
-              </div>
-
-              <div class="w-1/4">
-                <p class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]">Jatri
-                  commission</p>
-                <div class="py-[2px] border border-[#DBDBDB] mt-[10px] rounded-[4px] leading-[20px]">
-                  <div class="w-full h-[35px] flex justify-between items-center overflow-hidden divide-x">
-                    <input
-                        class="p-4 text-[#676769] leading-[20px] text-[14px] font-[400] w-2/5 placeholder:text-primaryText focus:outline-none"
-                        placeholder="Enter ammount">
-                    <div class="p-2 w-3/5 ">
-                      <div class="flex justify-between xl:gap-x-2 items-center bg-[#F7F7F7] xl:px-2">
-                        <select aria-label="Default select example"
-                                class="form-selectpy-1 text-base bg-[#F7F7F7] rounded focus:outline-none xl:w-full">
-                          <option class="leading-[16px] xl:leading-[20px] text-[10px] xl:text-[14px] font-[500]"
-                                  selected>
-                            Percentage %
-                          </option>
-                          <option value="1">One</option>
-                          <option value="2">Two</option>
-                          <option value="3">Three</option>
-                        </select>
-                        <img alt="" class="w-[12px] h-5" src="../assets/svg/down_arrow.svg">
-                      </div>
+                    <div class="form-group w-[238px]">
+                      <input id="html" type="checkbox">
+                      <label class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[400]"
+                             for="html">Fahim
+                        Ahmed</label>
                     </div>
-
+                    <div class="form-group w-[238px]">
+                      <input id="html" type="checkbox">
+                      <label class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[400]"
+                             for="html">Fahim
+                        Ahmed</label>
+                    </div>
+                  </div>
+                  <div class="flex gap-x-[18px] py-2">
+                    <div class="form-group w-[238px]">
+                      <input id="html" type="checkbox">
+                      <label class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[400]"
+                             for="html">Fahim
+                        Ahmed</label>
+                    </div>
+                    <div class="form-group w-[238px]">
+                      <input id="html" type="checkbox">
+                      <label class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[400]"
+                             for="html">Fahim
+                        Ahmed</label>
+                    </div>
+                    <div class="form-group w-[238px]">
+                      <input id="html" type="checkbox">
+                      <label class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[400]"
+                             for="html">Fahim
+                        Ahmed</label>
+                    </div>
                   </div>
                 </div>
-
-
               </div>
-            </div>
-
-          </div>
-
-          <hr class="mt-[12px] xl:mt-[16px] border-t border-corporateBorder">
-          <div class="p-4">
-            <p class="text-corporateSecondaryBlue leading-[20px] xl:leading-[24px] text-[14px] xl:text-[16px] font-[500] mb-4">
-              PUBLISH FOR JATRI</p>
-            <div class="flex justify-start items-center gap-x-[10px] xl:gap-x-[16px]">
-              <div class="w-1/4">
-                <p class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]">
-                  Web</p>
-                <div class="flex justify-center items-center w-full mt-[10px]">
-                  <button class="tripPermissionBtnleft">Yes</button>
-                  <button class="tripPermissionBtnright">No</button>
+              <hr class="border-t border-corporateBorder">
+              <div class="flex items-center justify-between">
+                <div class="w-[25%]">
+                  <p class="leading-[20px] xl:leading-[24px] text-[14px] xl:text-[16px] text-corporateSecondaryBlack">
+                    Counter 2</p>
+                  <div class="form-group mt-2">
+                    <input id="html" type="checkbox">
+                    <label class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]"
+                           for="html">Mark
+                      all</label>
+                  </div>
+                </div>
+                <div class="flex w-[75%] flex-col divide-y divide-dashed">
+                  <div class="flex gap-x-[18px] py-2">
+                    <div class="form-group w-[238px]">
+                      <input id="html" type="checkbox">
+                      <label class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[400]"
+                             for="html">Fahim
+                        Ahmed</label>
+                    </div>
+                    <div class="form-group w-[238px]">
+                      <input id="html" type="checkbox">
+                      <label class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[400]"
+                             for="html">Fahim
+                        Ahmed</label>
+                    </div>
+                    <div class="form-group w-[238px]">
+                      <input id="html" type="checkbox">
+                      <label class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[400]"
+                             for="html">Fahim
+                        Ahmed</label>
+                    </div>
+                  </div>
+                  <div class="flex gap-x-[18px] py-2">
+                    <div class="form-group w-[238px]">
+                      <input id="html" type="checkbox">
+                      <label class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[400]"
+                             for="html">Fahim
+                        Ahmed</label>
+                    </div>
+                    <div class="form-group w-[238px]">
+                      <input id="html" type="checkbox">
+                      <label class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[400]"
+                             for="html">Fahim
+                        Ahmed</label>
+                    </div>
+                    <div class="form-group w-[238px]">
+                      <input id="html" type="checkbox">
+                      <label class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[400]"
+                             for="html">Fahim
+                        Ahmed</label>
+                    </div>
+                  </div>
                 </div>
               </div>
-              <div class="w-1/4">
-                <p class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]">
-                  App</p>
-                <div class="flex justify-center items-center w-full mt-[10px]">
-                  <button class="tripPermissionBtnleft">Yes</button>
-                  <button class="tripPermissionBtnright">No</button>
+              <hr class="border-t border-corporateBorder">
+              <div class="flex items-center justify-between">
+                <div class="w-[25%]">
+                  <p class="leading-[20px] xl:leading-[24px] text-[14px] xl:text-[16px] text-corporateSecondaryBlack">
+                    Counter 3</p>
+                  <div class="form-group mt-2">
+                    <input id="html" type="checkbox">
+                    <label class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]"
+                           for="html">Mark
+                      all</label>
+                  </div>
+                </div>
+                <div class="flex w-[75%] flex-col divide-y divide-dashed">
+                  <div class="flex gap-x-[18px] py-2">
+                    <div class="form-group w-[238px]">
+                      <input id="html" type="checkbox">
+                      <label class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[400]"
+                             for="html">Fahim
+                        Ahmed</label>
+                    </div>
+                    <div class="form-group w-[238px]">
+                      <input id="html" type="checkbox">
+                      <label class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[400]"
+                             for="html">Fahim
+                        Ahmed</label>
+                    </div>
+                    <div class="form-group w-[238px]">
+                      <input id="html" type="checkbox">
+                      <label class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[400]"
+                             for="html">Fahim
+                        Ahmed</label>
+                    </div>
+                  </div>
+                  <div class="flex gap-x-[18px] py-2">
+                    <div class="form-group w-[238px]">
+                      <input id="html" type="checkbox">
+                      <label class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[400]"
+                             for="html">Fahim
+                        Ahmed</label>
+                    </div>
+                    <div class="form-group w-[238px]">
+                      <input id="html" type="checkbox">
+                      <label class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[400]"
+                             for="html">Fahim
+                        Ahmed</label>
+                    </div>
+                    <div class="form-group w-[238px]">
+                      <input id="html" type="checkbox">
+                      <label class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[400]"
+                             for="html">Fahim
+                        Ahmed</label>
+                    </div>
+                  </div>
                 </div>
               </div>
-              <div class="w-1/4">
-                <p class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]">
-                  Customer Care</p>
-                <div class="flex justify-center items-center w-full mt-[10px]">
-                  <button class="tripPermissionBtnleft">Yes</button>
-                  <button class="tripPermissionBtnright">No</button>
+              <hr class="border-t border-corporateBorder">
+              <div class="flex items-center justify-between">
+                <div class="w-[25%] mt-4">
+                  <p class="leading-[20px] xl:leading-[24px] text-[14px] xl:text-[16px] text-corporateSecondaryBlack">
+                    Counter 4</p>
+                  <div class="form-group mt-2">
+                    <input id="html" type="checkbox">
+                    <label class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]"
+                           for="html">Mark
+                      all</label>
+                  </div>
+                </div>
+                <div class="flex w-[75%] flex-col divide-y divide-dashed">
+                  <div class="flex gap-x-[18px] py-2">
+                    <div class="form-group w-[238px]">
+                      <input id="html" type="checkbox">
+                      <label class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[400]"
+                             for="html">Fahim
+                        Ahmed</label>
+                    </div>
+                    <div class="form-group w-[238px]">
+                      <input id="html" type="checkbox">
+                      <label class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[400]"
+                             for="html">Fahim
+                        Ahmed</label>
+                    </div>
+                    <div class="form-group w-[238px]">
+                      <input id="html" type="checkbox">
+                      <label class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[400]"
+                             for="html">Fahim
+                        Ahmed</label>
+                    </div>
+                  </div>
+
                 </div>
               </div>
             </div>
