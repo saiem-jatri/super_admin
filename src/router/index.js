@@ -54,6 +54,7 @@ import UserCreateCounterman from '@/views/user_create_counterman.vue'
 import UserCreateAgent from '@/views/user_create_agent.vue'
 import UserCreateCustomercare from '@/views/user_create_customercare.vue'
 import MigrateTrip from '@/views/migrate_trip.vue'
+import MigrateSelect from '@/views/migrate_select_seat.vue'
 
 const router = createRouter({
     history: createWebHistory(import.meta.env.BASE_URL),
@@ -340,6 +341,11 @@ const router = createRouter({
             path: '/migrateTrip',
             name: 'MigrateTrip',
             component: MigrateTrip,
+        },
+        {
+            path: '/migrateSelect',
+            name: 'MigrateSelect',
+            component: MigrateSelect,
         },
         {
             path: '/tripsAddNext',
