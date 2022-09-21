@@ -55,6 +55,7 @@ import MigrateTrip from '@/views/migrate_trip.vue'
 import Agent from '@/views/agent.vue'
 import AddAgent from '@/views/add-agent.vue'
 import AddAgentNext from '@/views/add-agent-next.vue'
+import AddAgentSave from '@/views/add-agent-save.vue'
 
 const router = createRouter({
     history: createWebHistory(import.meta.env.BASE_URL),
@@ -378,7 +379,12 @@ const router = createRouter({
           path: '/addAgentNext',
           name: 'AddAgentNext',
           component: AddAgentNext,
-      }
+      },
+      {
+        path: '/addAgentSave',
+        name: 'AddAgentSave',
+        component: AddAgentSave,
+    }
 
     ]
 

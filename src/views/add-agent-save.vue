@@ -550,9 +550,8 @@
                 </div>
               </div>
               <div class="flex gap-x-1 items-center">
-                <button
-                    class="flex justify-center items-center text-white leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[500] bg-corporate rounded-full px-[20px] py-[11px] xl:px-[24px] xl:py-[13px]">
-                    Create agent
+                <button class="flex justify-center items-center gap-x-[10px] text-white leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[500] bg-corporate rounded-full px-[20px] py-[11px] xl:px-[24px] xl:py-[13px]">
+                    <img alt="" src="/src/assets/svg/save_change.svg">Save changes 
                 </button>
               </div>
             </div>
