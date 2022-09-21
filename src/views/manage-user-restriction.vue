@@ -58,7 +58,7 @@
               <img src="../assets/person/person1.png" alt="" class="h-[30px] xl:h-[40px] w-[30px] xl:w-[40px] rounded-full">
               <p class="text-[#151414] leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[500]">Mostafa Mamun Emon</p>
               <img src="../assets/person/downArrow.svg" alt="" class="w-[12px] h-[6px]">
-            </div>
+          </div>
         </div>
       </div>
       <!-- top nav bar end -->

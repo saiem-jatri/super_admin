@@ -39,6 +39,8 @@ import ManageUserRestriction from '@/views/manage-user-restriction.vue'
 import ManageUserRestrictionFilled from '@/views/manage-user-restriction-filled.vue'
 import AssignQuotaFilled from '@/views/assign-quota-filled.vue'
 import TripsModal from '@/views/trips-modal.vue'
+import Agent from '@/views/agent.vue'
+import AddAgent from '@/views/add-agent.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -250,6 +252,18 @@ const router = createRouter({
       path: '/assignQuotaFilled',
       name: 'AssignQuotaFilled',
       component: AssignQuotaFilled,
+    },
+
+    //Agent Start
+    {
+      path: '/agent',
+      name: 'Agent',
+      component: Agent,
+    },
+    {
+      path: '/addAgent',
+      name: 'AddAgent',
+      component: AddAgent,
     },
   ]
 })
