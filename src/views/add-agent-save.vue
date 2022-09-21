@@ -159,6 +159,210 @@
                 </div>
                 <div class="w-1/4">
                   <p class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]">
+                    Prepaid CAP (TK)</p>
+                  <Dropdown v-model="selectedCity" :opti6ns="cities" class="w-full py-[4px] mt-[10px]" optionLabel="name"
+                            placeholder="Enter amount"/>
+                </div>
+                <div class="w-1/4">
+                  <p class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]">
+                    Commission rate</p>
+                  <div class="py-[2px] border border-[#DBDBDB] mt-[10px] rounded-[4px] leading-[20px]">
+                    <div class="w-full h-[35px] flex justify-between items-center overflow-hidden divide-x">
+                      <input
+                          class="p-4 text-[#676769] leading-[20px] text-[14px] font-[400] w-2/5 placeholder:text-primaryText focus:outline-none"
+                          placeholder="30">
+                      <div class="p-2 w-3/5 ">
+                        <div class="flex justify-between xl:gap-x-2 items-center bg-[#F7F7F7] xl:px-2">
+                          <select aria-label="Default select example"
+                                  class="form-selectpy-1 text-base bg-[#F7F7F7] rounded focus:outline-none xl:w-full">
+                            <option class="leading-[16px] xl:leading-[20px] text-[10px] xl:text-[14px] font-[500]"
+                                    selected>
+                              Percentage %
+                            </option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                          </select>
+                          <img alt="" class="w-[12px] h-5" src="../assets/svg/down_arrow.svg">
+                        </div>
+                      </div>
+  
+                    </div>
+                  </div>
+  
+  
+                </div>
+              </div>
+            </div>
+            <div class="m-4">
+              <div class="rounded-[4px] border border-corporateBorder">
+                <div class="flex justify-between items-center w-full px-4">
+                  <p class="text-primaryText leading-[24px] xl:leading-[28px] text-[18px] xl:text-[20px] font-[600] text-center">
+                    Permissions</p>
+                  <div class="form-group  mt-5">
+                    <input id="html" type="checkbox">
+                    <label class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]"
+                           for="html">Give
+                      All Permission</label>
+                  </div>
+                </div>
+                <hr class="border-t border-corporateBorder">
+                <div class="px-4">
+                    <div class="pt-[8px] pb-[8px]">
+                  <div class="flex divide-x divide-corporateBorder">
+                    <div class="w-1/2">
+                      <div class="py-[8px] pr-[24px]">
+                        <div class="flex justify-start items-center">
+                          <div class="form-group mb-[15px] flex justify-end">
+                            <input id="booking" type="checkbox">
+                            <label
+                                class="text-primaryText leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px] font-[400]"
+                                for="booking">Ticket booking</label>
+                          </div>
+                        </div>
+                        <hr class="border-t border-dashed border-corporateBorder">
+                        <div class="flex justify-start items-center">
+                          <div class="form-group my-[15px] flex justify-end">
+                            <input id="booking" type="checkbox">
+                            <label
+                                class="text-primaryText leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px] font-[400]"
+                                for="booking">Fare discount</label>
+                          </div>
+                        </div>
+                        <hr class="border-t border-dashed border-corporateBorder">
+                        <div class="flex justify-start items-center">
+                            <div class="form-group Goods ticket my-[15px] flex justify-end">
+                            <input id="booking" type="checkbox">
+                            <label
+                                class="text-primaryText leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px] font-[400]"
+                                for="booking">Report</label>
+                          </div>
+                        </div>
+                        <hr class="border-t border-dashed border-corporateBorder">
+                        <div class="flex justify-start items-center">
+                          <div class="form-group Goods ticket my-[15px] flex justify-end">
+                            <input id="booking" type="checkbox">
+                            <label
+                                class="text-primaryText leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px] font-[400]"
+                                for="booking">Trip pass</label>
+                          </div>
+                        </div>
+                        <hr class="border-t border-dashed border-corporateBorder">
+                        <div class="flex justify-start items-center">
+                          <div class="form-group Goods ticket my-[15px] flex justify-end">
+                            <input id="booking" type="checkbox">
+                            <label
+                                class="text-primaryText leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px] font-[400]"
+                                for="booking">Subroute</label>
+                          </div>
+                        </div>
+                        <hr class="border-t border-dashed border-corporateBorder">
+                        <div class="flex justify-start items-center">
+                          <div class="form-group Goods ticket mt-[15px] mb-0 flex justify-end">
+                            <input id="booking" type="checkbox">
+                            <label
+                                class="text-primaryText leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px] font-[400]"
+                                for="booking">Allow SMS</label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="w-1/2">
+                      <div class="py-[8px] pl-[24px]">
+                        <div class="flex justify-start items-center">
+                          <div class="form-group mb-[15px] flex justify-end">
+                            <input id="booking" type="checkbox">
+                            <label
+                                class="text-primaryText leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px] font-[400]"
+                                for="booking">Cancel ticket</label>
+                          </div>
+                        </div>
+                        <hr class="border-t border-dashed border-corporateBorder">
+                        <div class="flex justify-start items-center">
+                          <div class="form-group my-[15px] flex justify-end">
+                            <input id="booking" type="checkbox">
+                            <label
+                                class="text-primaryText leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px] font-[400]"
+                                for="booking">Extra ticket booking</label>
+                          </div>
+                        </div>
+                        <hr class="border-t border-dashed border-corporateBorder">
+                        <div class="flex justify-start items-center">
+                          <div class="form-group my-[15px] flex justify-end">
+                            <input id="booking" type="checkbox">
+                            <label
+                                class="text-primaryText leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px] font-[400]"
+                                for="booking">Goods ticket booking</label>
+                          </div>
+                        </div>
+                        <hr class="border-t border-dashed border-corporateBorder">
+                        <div class="flex justify-start items-center">
+                          <div class="form-group my-[15px] flex justify-end">
+                            <input id="booking" type="checkbox">
+                            <label
+                                class="text-primaryText leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px] font-[400]"
+                                for="booking">Reservation</label>
+                          </div>
+                        </div>
+                        <hr class="border-t border-dashed border-corporateBorder">
+                        <div class="flex justify-start items-center">
+                          <div class="form-group my-[15px] flex justify-end">
+                            <input id="booking" type="checkbox">
+                            <label
+                                class="text-primaryText leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px] font-[400]"
+                                for="booking">Cancel reservation</label>
+                          </div>
+                        </div>
+                        <hr class="border-t border-dashed border-corporateBorder">
+                        <div class="flex justify-start items-center">
+                          <div class="form-group mt-[15px] mb-0 flex justify-end">
+                            <input id="booking" type="checkbox">
+                            <label
+                                class="text-primaryText leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px] font-[400]"
+                                for="booking">Required passenger mobile number</label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                </div>
+              </div>
+
+
+              <hr class="border-t border-dashed border-corporateBorder my-3 xl:my-4">
+              <div class="">
+                <p class="text-corporateSecondaryBlue leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]">COMPANY 2 INFORMATION</p>
+                <div class="flex justify-start items-center gap-x-[10px] xl:gap-x-[16px] mt-[12px] xl:mt-[16px]">
+                    <div class="w-1/4">
+                  <p class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]">
+                    Company name</p>
+                  <Dropdown v-model="selectedCity" :opti6ns="cities" class="w-full py-[4px] mt-[10px]" optionLabel="name"
+                            placeholder="Select Company name"/>
+                </div>
+                <div class="w-1/4">
+                  <p class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]">
+                    Counter</p>
+                  <Dropdown v-model="selectedCity" :opti6ns="cities" class="w-full py-[4px] mt-[10px]" optionLabel="name"
+                            placeholder="Select counter"/>
+                </div>
+                <div class="w-1/2">
+                  <p class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]">
+                    Route</p>
+                  <Dropdown v-model="selectedCity" :opti6ns="cities" class="w-full py-[4px] mt-[10px]" optionLabel="name"
+                            placeholder="Select route"/>
+                </div>
+                </div>
+              </div>
+              <div class="flex justify-start items-center gap-x-[10px] xl:gap-x-[16px] mt-[12px] xl:mt-[16px]">
+                <div class="w-1/4">
+                  <p class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]">
+                    Payment type</p>
+                  <Dropdown v-model="selectedCity" :opti6ns="cities" class="w-full py-[4px] mt-[10px]" optionLabel="name"
+                            placeholder="Select Payment type"/>
+                </div>
+                <div class="w-1/4">
+                  <p class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]">
                     Commission rate</p>
                   <div class="py-[2px] border border-[#DBDBDB] mt-[10px] rounded-[4px] leading-[20px]">
                     <div class="w-full h-[35px] flex justify-between items-center overflow-hidden divide-x">
@@ -346,9 +550,8 @@
                 </div>
               </div>
               <div class="flex gap-x-1 items-center">
-                <button
-                    class="flex justify-center items-center text-white leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[500] bg-corporate bg-opacity-30 rounded-full px-[20px] py-[11px] xl:px-[24px] xl:py-[13px]">
-                    Create agent
+                <button class="flex justify-center items-center gap-x-[10px] text-white leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[500] bg-corporate rounded-full px-[20px] py-[11px] xl:px-[24px] xl:py-[13px]">
+                    <img alt="" src="/src/assets/svg/save_change.svg">Save changes 
                 </button>
               </div>
             </div>

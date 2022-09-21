@@ -191,8 +191,8 @@
                       class="flex justify-center items-center bg-[#EDEDED] gap-x-[10px] leading-[16px] text-[12px] font-[500] text-primaryText rounded-full w-[80px] h-[26px] xl:w-[90px] xl:h-[36px]">
                     <span><img alt="" class="w-[8px] h-[8px]" src="../assets/svg/ash_cross.svg"></span>Cancel
                   </button>
-                  <button class="companyEditButton"><span><img alt="" class="w-[16px] h-[231px]"
-                                                               src="../assets/svg/copy.svg"></span>Copy
+                  <button class="companyEditButton"><span><img alt="" class="w-[16px] h-[231px]" 
+                    src="../assets/svg/copy.svg"></span>Copy
                   </button>
                   <button
                       class="flex justify-center items-center gap-x-[10px] bg-corporateSecondaryBlue leading-[16px] text-[12px] font-[500] text-white rounded-full w-[80px] h-[26px] xl:w-[90px] xl:h-[36px]">
