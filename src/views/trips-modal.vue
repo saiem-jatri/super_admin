@@ -144,13 +144,11 @@
                   <div class="flex justify-center items-center">
                 <button @click="openModal" class="flex justify-center items-center bg-[#E0293B] w-[140px] h-[35px] rounded-[8px] gap-x-[8px] leading-[16px] xl:leading-[20px] text-[12px] xl:text-[14px] text-white"> <InputSwitch v-model="checked" /> Inactive</button>
   
-                <Dialog header="Header" v-model:visible="displayModal" :breakpoints="{'960px': '75vw', '640px': '90vw'}" :style="{width: '50vw'}" :modal="true" class="w-[360px]">
-                  <p class="m-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                    laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                 <div>
-                    <button @click="closeModal" class="p-button-text text-[12px] leading-6 text-[#E0293B]"> <img src="./assets/svg/close.svg" alt=""> Cancel</button>
-                    <button @click="closeModal" autofocus>Yes</button>
+                <Dialog header="Active trip?" v-model:visible="displayModal" :breakpoints="{'960px': '75vw', '640px': '90vw'}" :style="{width: '360px'}" :modal="true">
+                  <p class="text-[14px] leading-5">By confirming, trip status will be <strong>ACTIVE.</strong> Are you sure you want to switch the status from inactive to <strong>ACTIVE?</strong></p>
+                 <div class="mt-[30px] flex gap-x-8 justify-end items-center">
+                    <button @click="closeModal" class="p-button-text text-[12px] leading-4 font-[500] text-[#E0293B]"> <img src="./assets/svg/close.svg" alt=""> Cancel</button>
+                    <button @click="closeModal" autofocus class="bg-[#F04935] px-6 py-3 text-white text-[12px] leading-4 font-[500] rounded-[100px]">Confirm</button>
                 </div>
               </Dialog>
 
@@ -320,7 +318,7 @@
     </div>
   </template>
   
-  <style>
+  <style scoped>
   select {
     /* for Firefox */
     -moz-appearance: none;
@@ -361,7 +359,25 @@
     border-radius: 50%;
     transition-duration: 0.2s;
   }
+
+.p-dialog .p-dialog-header {
+    text-align: center;
+    padding: 24px 16px 16px;
+}
+.p-dialog .p-dialog-header-icons {
+    display: none;
+}
+.p-dialog .p-dialog-header .p-dialog-title {
+    font-size: 24px;
+    line-height: 32px;
+}
+.p-dialog .p-dialog-content {
+    background: #ffffff;
+    color: #495057;
+    padding: 0 1.5rem 1rem 1.5rem;
+}
   </style>
+
   <script>
   export default {
     data() {
