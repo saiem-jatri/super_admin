@@ -4,7 +4,7 @@
     <div class="h-screen w-[280px] bg-white border-r border-[#DBDBDB]">
       <div class="flex flex-col justify-between">
         <div class="px-[10px] flex justify-center items-center py-[30px]">
-          <img src="@/assets/imgs/Logo.png" alt="" class="w-[66px] h-[32px]">
+          <img alt="" class="w-[66px] h-[32px]" src="@/assets/imgs/Logo.png">
         </div>
         <div class="px-[10px] overflow-y-auto h-[calc(100vh-150px)]">
           <a class="bg-corporate w-full text-white p-1 rounded-sm block cursor-pointer">Dashboard</a>
@@ -17,10 +17,15 @@
           <a class="menu">Migrate Trips</a>
           <a class="menu">Migrate Tickets</a>
           <a class="menu">Trip Expense Configaration</a>
-          <a class="dropDownMenu flex justify-center items-center">Reports <span><img src="../assets/svg/down_arrow.svg" alt="" class="w-[12px] h-[7px]"></span></a>
-          <a class="dropDownMenu flex justify-center items-center">Invoice <span><img src="../assets/svg/down_arrow.svg" alt="" class="w-[12px] h-[7px]"></span></a>
+          <a class="dropDownMenu flex justify-center items-center">Reports <span><img alt=""
+                                                                                      class="w-[12px] h-[7px]"
+                                                                                      src="../assets/svg/down_arrow.svg"></span></a>
+          <a class="dropDownMenu flex justify-center items-center">Invoice <span><img alt=""
+                                                                                      class="w-[12px] h-[7px]"
+                                                                                      src="../assets/svg/down_arrow.svg"></span></a>
           <a class="menu">Offer & Promotion</a>
-          <a class="dropDownMenu flex justify-center items-center">Action in Bulk <span><img src="../assets/svg/down_arrow.svg" alt="" class="w-[12px] h-[7px]"></span></a>
+          <a class="dropDownMenu flex justify-center items-center">Action in Bulk <span><img
+              alt="" class="w-[12px] h-[7px]" src="../assets/svg/down_arrow.svg"></span></a>
           <p class="menuSection ">CONFIGARATION</p>
           <a class="menu">Bus</a>
           <a class="menu">Stopage</a>
@@ -28,25 +33,32 @@
           <a class=" py-[8px] w-full text-black leading-[20px] text-[14px] font-[500] block cursor-pointer">Fees</a>
         </div>
 
-          <button class="p-4 flex justify-center items-center gap-x-4 border-t border-[#DBDBDB]">  <img src="../assets/svg/logout.svg" class="h-[16px] w-[16px]" alt=""> Logout </button>
+        <button class="p-4 flex justify-center items-center gap-x-4 border-t border-[#DBDBDB]"><img
+            alt="" class="h-[16px] w-[16px]" src="../assets/svg/logout.svg"> Logout
+        </button>
 
       </div>
 
     </div>
-<!-- side nav bar end -->
+    <!-- side nav bar end -->
     <div class="h-screen w-full overflow-y-auto bg-[#F7F7F7]">
       <!-- Top nav bar start-->
       <div class="bg-white h-[72px] sticky top-0 border-b border-[#DBDBDB] z-10">
         <div class="flex justify-between items-center">
           <p class="p-6 text-[#151414] leading-[28px] text-[20px] font-[600]">DashBoard</p>
-          <div class="w-[230px] xl:w-[270px] h-[40px] border border-[#DBDBDB] flex justify-center items-center leading-[20px] rounded-[4px] pl-14 xl:pl-[9px] overflow-hidden" >
-            <img src="../assets/svg/search.svg" class="h-5 w-5" alt="">
-            <input type="text" class="outline-none pl-2 placeholder:text-[#4D4D4F] placeholder:text-[14px] placeholder:leading-[20px]" placeholder="PNR or mobile number">
+          <div
+              class="w-[230px] xl:w-[270px] h-[40px] border border-[#DBDBDB] flex justify-center items-center leading-[20px] rounded-[4px] pl-14 xl:pl-[9px] overflow-hidden">
+            <img alt="" class="h-5 w-5" src="../assets/svg/search.svg">
+            <input class="outline-none pl-2 placeholder:text-[#4D4D4F] placeholder:text-[14px] placeholder:leading-[20px]"
+                   placeholder="PNR or mobile number"
+                   type="text">
           </div>
           <div class="flex gap-x-2 p-4 justify-center items-center mr-6 ">
-            <img src="../assets/person/person1.png" alt="" class="h-[30px] xl:h-[40px] w-[30px] xl:w-[40px] rounded-full">
-            <p class="text-[#151414] leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[500]">Mostafa Mamun Emon</p>
-            <img src="../assets/person/downArrow.svg" alt="" class="w-[12px] h-[6px]">
+            <img alt="" class="h-[30px] xl:h-[40px] w-[30px] xl:w-[40px] rounded-full"
+                 src="../assets/person/person1.png">
+            <p class="text-[#151414] leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[500]">Mostafa
+              Mamun Emon</p>
+            <img alt="" class="w-[12px] h-[6px]" src="../assets/person/downArrow.svg">
           </div>
         </div>
       </div>
@@ -59,14 +71,17 @@
           <!-- 1st small table -->
           <div class="w-1/3 bg-white rounded-[6px] p-[16px]">
             <div class="flex w-full justify-between">
-              <p class="text-primaryText leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px] font-[600]">Today’s Total Sales Count</p>
-              <img src="../assets/svg/count.svg" class="w-[12px] h-[12px] xl:w-[16.67px] xl:h-[16.67px]" alt="">
+              <p class="text-primaryText leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px] font-[600]">Today’s
+                Total Sales Count</p>
+              <img alt="" class="w-[12px] h-[12px] xl:w-[16.67px] xl:h-[16.67px]" src="../assets/svg/count.svg">
             </div>
 
             <div class="smallTableInnerDiv bg-[#F1F9F1]">
               <p class="w-1/3"></p>
-              <p class="leading-[16px] text-[10px] xl:leading-[20px] xl:text-[13px] font-[400] text-primaryText text-center w-1/3">Count</p>
-              <p class="leading-[16px] text-[10px] xl:leading-[20px] xl:text-[13px] font-[400] text-primaryText text-center w-1/3">Amount</p>
+              <p class="leading-[16px] text-[10px] xl:leading-[20px] xl:text-[13px] font-[400] text-primaryText text-center w-1/3">
+                Count</p>
+              <p class="leading-[16px] text-[10px] xl:leading-[20px] xl:text-[13px] font-[400] text-primaryText text-center w-1/3">
+                Amount</p>
             </div>
 
             <div class="smallTableInnerDiv bg-[#F1F9F1]">
@@ -121,7 +136,7 @@
           <div class="w-1/3 bg-white rounded-[6px] p-[16px]">
             <div class="flex w-full justify-between">
               <p class="text-primaryText leading-[20px] text-[14px] font-[600]">Last Week Total Sales Count</p>
-              <img src="../assets/svg/count2.svg" class="w-[16.67px] h-[16.67px]" alt="">
+              <img alt="" class="w-[16.67px] h-[16.67px]" src="../assets/svg/count2.svg">
             </div>
 
             <div class="smallTableInnerDiv bg-[#EFF7FD]">
@@ -172,7 +187,8 @@
               <p class="smallTableBody">5000000 TK</p>
             </div>
 
-            <div class="bg-[#1E88E5] text-white w-full flex justify-between py-[8px] px-[16px] mt-[8px] rounded-[4px]">
+            <div
+                class="bg-corporateSecondaryBlue text-white w-full flex justify-between py-[8px] px-[16px] mt-[8px] rounded-[4px]">
               <p class="smallTableGreenFooter text-left">Total Amount</p>
               <p class="smallTableGreenFooter text-center">999999</p>
               <p class="smallTableGreenFooter text-center">5000000 TK</p>
@@ -184,7 +200,7 @@
           <div class="w-1/3 bg-white rounded-[6px] p-[16px] relative">
             <div class="flex w-full justify-between">
               <p class="text-primaryText leading-[20px] text-[14px] font-[600]">Online Sales Breakdown</p>
-              <img src="../assets/svg/count3.svg" class="w-[16.67px] h-[16.67p bg-[#F2F0FE]x]" alt="">
+              <img alt="" class="w-[16.67px] h-[16.67p bg-[#F2F0FE]x]" src="../assets/svg/count3.svg">
             </div>
 
             <div class="smallTableInnerDiv bg-[#F2F0FE]">
@@ -192,7 +208,6 @@
               <p class="w-1/3"></p>
               <p class="leading-[20px] text-[13px] font-[400] text-primaryText text-center w-1/3">Count</p>
             </div>
-
 
 
             <div class="smallTableInnerDiv bg-[#F2F0FE]">
@@ -224,9 +239,10 @@
               <p class="smallTableBody">999999</p>
               <p class="smallTableBody">5000000 TK</p>
             </div>
-            
 
-            <div class="absolute bottom-3 left-2 right-2 w-[95%] bg-[#4633F0] text-white flex justify-between py-[8px] px-[16px] mt-[8px] rounded-[4px]">
+
+            <div
+                class="absolute bottom-3 left-2 right-2 w-[95%] bg-[#4633F0] text-white flex justify-between py-[8px] px-[16px] mt-[8px] rounded-[4px]">
               <p class="smallTableGreenFooter text-left">Total Amount</p>
               <p class="smallTableGreenFooter text-center">999999</p>
               <p class="smallTableGreenFooter text-center">5000000 TK</p>
@@ -239,213 +255,219 @@
         <div class="mt-[32px] bg-white p-[16px] rounded-[8px]">
           <div class="flex justify-between ">
             <div class="flex gap-x-4 items-center">
-              <img src="../assets/svg/startBus.svg" class="w-8 h-8 xl:w-10 xl:h-10" alt="">
-              <p class="leading-[24px] text-[16px] xl:leading-[36px] xl:text-[28px] font-[500] text-primaryText">Top 20 Bus Operators</p>
+              <img alt="" class="w-8 h-8 xl:w-10 xl:h-10" src="../assets/svg/startBus.svg">
+              <p class="leading-[24px] text-[16px] xl:leading-[36px] xl:text-[28px] font-[500] text-primaryText">Top 20
+                Bus Operators</p>
             </div>
 
             <div class="flex gap-x-4 items-center">
               <div class="flex flex-col gap-y-[10px] relative">
-                <label for="from" class="leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[500] text-primaryText">From</label>
-                <input type="text" class="border border-corporateBorder py-[4px] xl:py-[6px] rounded-[4px] focus:outline-none px-2 placeholder:text-[#676769] w-[270px]" placeholder="Select Date">
-                <img src="../assets/svg/count2.svg" class="h-3 w-3 xl:h-5 xl:w-5 absolute right-3 bottom-3" alt="">
+                <label class="leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[500] text-primaryText"
+                       for="from">From</label>
+                <input class="border border-corporateBorder py-[4px] xl:py-[6px] rounded-[4px] focus:outline-none px-2 placeholder:text-[#676769] w-[270px]"
+                       placeholder="Select Date"
+                       type="text">
+                <img alt="" class="h-3 w-3 xl:h-5 xl:w-5 absolute right-3 bottom-3" src="../assets/svg/count2.svg">
               </div>
 
               <div class="flex flex-col gap-y-[10px] relative">
-                <label for="to" class="leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[500] text-primaryText">To</label>
-                <input type="text" class="border border-corporateBorder py-[4px] xl:py-[6px] rounded-[4px] focus:outline-none px-2 placeholder:text-[#676769] w-[270px]" placeholder="Select Date">
-                <img src="../assets/svg/count2.svg" class="h-5 w-5 absolute right-3 bottom-3" alt="">
+                <label class="leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[500] text-primaryText"
+                       for="to">To</label>
+                <input class="border border-corporateBorder py-[4px] xl:py-[6px] rounded-[4px] focus:outline-none px-2 placeholder:text-[#676769] w-[270px]"
+                       placeholder="Select Date"
+                       type="text">
+                <img alt="" class="h-5 w-5 absolute right-3 bottom-3" src="../assets/svg/count2.svg">
               </div>
-
 
 
             </div>
           </div>
-<!-- cellspacing="0" cellpadding="0"  -->
+          <!-- cellspacing="0" cellpadding="0"  -->
           <div class="mt-[24px]">
-                <table class="min-w-full">
-          <thead class="">
-            <tr>
-              <th scope="col" class="DashBoardTableHead">
-                
-              </th>
-              <th scope="col" class="DashBoardTableHead">
-                OPERATOR NAME
-              </th>
-              <th scope="col" class="DashBoardTableHead">
-                OWN counter sale
-              </th>
-              
-              <th scope="col" class="DashBoardTableHead">
-                Tp Counter sale
-              </th>
-              <th scope="col" class="DashBoardTableHead">
-                Jatri online sale
-              </th>
-              <th scope="col" class="DashBoardTableHead">
-                top Route
-              </th>
-              <th scope="col" class="DashBoardTableHead">
-                Bus type
-              </th>
-              <th scope="col" class="DashBoardTableHead">
-                Total Amount
-              </th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr class="border-b border-[#EDEDED]">
-              <td class="DashBoardTableTd">01</td>
-              <td class="DashBoardTableTd">
-                Tisha Group and Tubaline
-              </td>
-              <td class="DashBoardTableTd">
-                990485
-              </td>
-              <td class="DashBoardTableTd">
-                990485
-              </td>
-              <td class="DashBoardTableTd">
-                990485
-              </td>
-              <td class="DashBoardTableTd">
-                Mohakhali (Dhaka) - Tongi - <br> Baria (Vadughar)
-              </td>
-              <td class="DashBoardTableTd">
-                45 Seater - Non AC <br> (Business)
-              </td>
-              <td class="DashBoardTableTd">
-                1,00,00,000 TK
-              </td>
+            <table class="min-w-full">
+              <thead class="">
+              <tr>
+                <th class="DashBoardTableHead" scope="col">
 
-            </tr>
-            <tr class="border-b border-[#EDEDED]">
-              <td class="DashBoardTableTd">02</td>
-              <td class="DashBoardTableTd">
-                Tisha Group and Tubaline
-              </td>
-              <td class="DashBoardTableTd">
-                990485
-              </td>
-              <td class="DashBoardTableTd">
-                990485
-              </td>
-              <td class="DashBoardTableTd">
-                990485
-              </td>
-              <td class="DashBoardTableTd">
-                Mohakhali (Dhaka) - Tongi - <br> Baria (Vadughar)
-              </td>
-              <td class="DashBoardTableTd">
-                45 Seater - Non AC <br> (Business)
-              </td>
-              <td class="DashBoardTableTd">
-                1,00,00,000 TK
-              </td>
+                </th>
+                <th class="DashBoardTableHead" scope="col">
+                  OPERATOR NAME
+                </th>
+                <th class="DashBoardTableHead" scope="col">
+                  OWN counter sale
+                </th>
 
-            </tr>
-            <tr class="border-b border-[#EDEDED]">
-              <td class="DashBoardTableTd">03</td>
-              <td class="DashBoardTableTd">
-                Tisha Group and Tubaline
-              </td>
-              <td class="DashBoardTableTd">
-                990485
-              </td>
-              <td class="DashBoardTableTd">
-                990485
-              </td>
-              <td class="DashBoardTableTd">
-                990485
-              </td>
-              <td class="DashBoardTableTd">
-                Mohakhali (Dhaka) - Tongi - <br> Baria (Vadughar)
-              </td>
-              <td class="DashBoardTableTd">
-                45 Seater - Non AC <br> (Business)
-              </td>
-              <td class="DashBoardTableTd">
-                1,00,00,000 TK
-              </td>
+                <th class="DashBoardTableHead" scope="col">
+                  Tp Counter sale
+                </th>
+                <th class="DashBoardTableHead" scope="col">
+                  Jatri online sale
+                </th>
+                <th class="DashBoardTableHead" scope="col">
+                  top Route
+                </th>
+                <th class="DashBoardTableHead" scope="col">
+                  Bus type
+                </th>
+                <th class="DashBoardTableHead" scope="col">
+                  Total Amount
+                </th>
+              </tr>
+              </thead>
+              <tbody>
+              <tr class="border-b border-[#EDEDED]">
+                <td class="DashBoardTableTd">01</td>
+                <td class="DashBoardTableTd">
+                  Tisha Group and Tubaline
+                </td>
+                <td class="DashBoardTableTd">
+                  990485
+                </td>
+                <td class="DashBoardTableTd">
+                  990485
+                </td>
+                <td class="DashBoardTableTd">
+                  990485
+                </td>
+                <td class="DashBoardTableTd">
+                  Mohakhali (Dhaka) - Tongi - <br> Baria (Vadughar)
+                </td>
+                <td class="DashBoardTableTd">
+                  45 Seater - Non AC <br> (Business)
+                </td>
+                <td class="DashBoardTableTd">
+                  1,00,00,000 TK
+                </td>
 
-            </tr>
-            <tr class="border-b border-[#EDEDED]">
-              <td class="DashBoardTableTd">04</td>
-              <td class="DashBoardTableTd">
-                Tisha Group and Tubaline
-              </td>
-              <td class="DashBoardTableTd">
-                990485
-              </td>
-              <td class="DashBoardTableTd">
-                990485
-              </td>
-              <td class="DashBoardTableTd">
-                990485
-              </td>
-              <td class="DashBoardTableTd">
-                Mohakhali (Dhaka) - Tongi - <br> Baria (Vadughar)
-              </td>
-              <td class="DashBoardTableTd">
-                45 Seater - Non AC <br> (Business)
-              </td>
-              <td class="DashBoardTableTd">
-                1,00,00,000 TK
-              </td>
+              </tr>
+              <tr class="border-b border-[#EDEDED]">
+                <td class="DashBoardTableTd">02</td>
+                <td class="DashBoardTableTd">
+                  Tisha Group and Tubaline
+                </td>
+                <td class="DashBoardTableTd">
+                  990485
+                </td>
+                <td class="DashBoardTableTd">
+                  990485
+                </td>
+                <td class="DashBoardTableTd">
+                  990485
+                </td>
+                <td class="DashBoardTableTd">
+                  Mohakhali (Dhaka) - Tongi - <br> Baria (Vadughar)
+                </td>
+                <td class="DashBoardTableTd">
+                  45 Seater - Non AC <br> (Business)
+                </td>
+                <td class="DashBoardTableTd">
+                  1,00,00,000 TK
+                </td>
 
-            </tr>
-            <tr class="border-b border-[#EDEDED]">
-              <td class="DashBoardTableTd">05</td>
-              <td class="DashBoardTableTd">
-                Tisha Group and Tubaline
-              </td>
-              <td class="DashBoardTableTd">
-                990485
-              </td>
-              <td class="DashBoardTableTd">
-                990485
-              </td>
-              <td class="DashBoardTableTd">
-                990485
-              </td>
-              <td class="DashBoardTableTd">
-                Mohakhali (Dhaka) - Tongi - <br> Baria (Vadughar)
-              </td>
-              <td class="DashBoardTableTd">
-                45 Seater - Non AC <br> (Business)
-              </td>
-              <td class="DashBoardTableTd">
-                1,00,00,000 TK
-              </td>
+              </tr>
+              <tr class="border-b border-[#EDEDED]">
+                <td class="DashBoardTableTd">03</td>
+                <td class="DashBoardTableTd">
+                  Tisha Group and Tubaline
+                </td>
+                <td class="DashBoardTableTd">
+                  990485
+                </td>
+                <td class="DashBoardTableTd">
+                  990485
+                </td>
+                <td class="DashBoardTableTd">
+                  990485
+                </td>
+                <td class="DashBoardTableTd">
+                  Mohakhali (Dhaka) - Tongi - <br> Baria (Vadughar)
+                </td>
+                <td class="DashBoardTableTd">
+                  45 Seater - Non AC <br> (Business)
+                </td>
+                <td class="DashBoardTableTd">
+                  1,00,00,000 TK
+                </td>
 
-            </tr>
-            <tr>
-              <td class="DashBoardTableTd">06</td>
-              <td class="DashBoardTableTd">
-                Tisha Group and Tubaline
-              </td>
-              <td class="DashBoardTableTd">
-                990485
-              </td>
-              <td class="DashBoardTableTd">
-                990485
-              </td>
-              <td class="DashBoardTableTd">
-                990485
-              </td>
-              <td class="DashBoardTableTd">
-                Mohakhali (Dhaka) - Tongi - <br> Baria (Vadughar)
-              </td>
-              <td class="DashBoardTableTd">
-                45 Seater - Non AC <br> (Business)
-              </td>
-              <td class="DashBoardTableTd">
-                1,00,00,000 TK
-              </td>
+              </tr>
+              <tr class="border-b border-[#EDEDED]">
+                <td class="DashBoardTableTd">04</td>
+                <td class="DashBoardTableTd">
+                  Tisha Group and Tubaline
+                </td>
+                <td class="DashBoardTableTd">
+                  990485
+                </td>
+                <td class="DashBoardTableTd">
+                  990485
+                </td>
+                <td class="DashBoardTableTd">
+                  990485
+                </td>
+                <td class="DashBoardTableTd">
+                  Mohakhali (Dhaka) - Tongi - <br> Baria (Vadughar)
+                </td>
+                <td class="DashBoardTableTd">
+                  45 Seater - Non AC <br> (Business)
+                </td>
+                <td class="DashBoardTableTd">
+                  1,00,00,000 TK
+                </td>
 
-            </tr>
-          </tbody>
-        </table>
-              </div>
+              </tr>
+              <tr class="border-b border-[#EDEDED]">
+                <td class="DashBoardTableTd">05</td>
+                <td class="DashBoardTableTd">
+                  Tisha Group and Tubaline
+                </td>
+                <td class="DashBoardTableTd">
+                  990485
+                </td>
+                <td class="DashBoardTableTd">
+                  990485
+                </td>
+                <td class="DashBoardTableTd">
+                  990485
+                </td>
+                <td class="DashBoardTableTd">
+                  Mohakhali (Dhaka) - Tongi - <br> Baria (Vadughar)
+                </td>
+                <td class="DashBoardTableTd">
+                  45 Seater - Non AC <br> (Business)
+                </td>
+                <td class="DashBoardTableTd">
+                  1,00,00,000 TK
+                </td>
+
+              </tr>
+              <tr>
+                <td class="DashBoardTableTd">06</td>
+                <td class="DashBoardTableTd">
+                  Tisha Group and Tubaline
+                </td>
+                <td class="DashBoardTableTd">
+                  990485
+                </td>
+                <td class="DashBoardTableTd">
+                  990485
+                </td>
+                <td class="DashBoardTableTd">
+                  990485
+                </td>
+                <td class="DashBoardTableTd">
+                  Mohakhali (Dhaka) - Tongi - <br> Baria (Vadughar)
+                </td>
+                <td class="DashBoardTableTd">
+                  45 Seater - Non AC <br> (Business)
+                </td>
+                <td class="DashBoardTableTd">
+                  1,00,00,000 TK
+                </td>
+
+              </tr>
+              </tbody>
+            </table>
+          </div>
         </div>
 
       </div>

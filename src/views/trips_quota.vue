@@ -121,7 +121,7 @@
                 Preview</p>
             </div>
             <div class="flex justify-between items-center">
-              <p class="text-[#1E88E5] leading-[20px] xl:leading-[24px] text-[14px] xl:text-[16px] font-[500] mt-2">
+              <p class="text-corporateSecondaryBlue leading-[20px] xl:leading-[24px] text-[14px] xl:text-[16px] font-[500] mt-2">
                 ASSIGN QOUTA</p>
               <p class="flex gap-x-[10px]">
                 <img alt="" src="../assets/svg/back_arrow.svg">
@@ -134,7 +134,8 @@
         </div>
         <div class="bg-white rounded-[8px] mt-[12px] xl:mt-[16px]">
           <div class="p-4">
-            <p class="text-[#1E88E5] leading-[20px] xl:leading-[24px] text-[14px] xl:text-[16px] font-[500]">ASSIGN
+            <p class="text-corporateSecondaryBlue leading-[20px] xl:leading-[24px] text-[14px] xl:text-[16px] font-[500]">
+              ASSIGN
               QOUTA</p>
             <p class="text-primaryText leading-[20px] xl:leading-[24px] text-[14px] xl:text-[16px] font-[500] mt-3 xl:mt-4">
               Jatri</p>
@@ -149,7 +150,7 @@
                     LIST</p>
                   <hr class="border-t border-corporateBorder">
                   <div class="flex flex-col divide-y divide-dashed">
-                    <a class="p-[8px] xl:p-[10px] text-[#1E88E5] leading-[20px] xl:leading-[24px] text-[14px] xl:text-[16px]"
+                    <a class="p-[8px] xl:p-[10px] text-corporateSecondaryBlue leading-[20px] xl:leading-[24px] text-[14px] xl:text-[16px]"
                        href="#">
                       Counter 1</a>
                     <a class="counterDesign" href="#">Counter 2</a>

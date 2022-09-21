@@ -55,7 +55,7 @@ body {
 }
 
 .companyManageButton {
-    @apply flex justify-center items-center gap-x-[10px] leading-[16px] text-[12px] font-[500] rounded-full w-[90px] h-[26px] xl:w-[111px] xl:h-[36px] bg-[#1E88E5] text-white
+    @apply flex justify-center items-center gap-x-[10px] leading-[16px] text-[12px] font-[500] rounded-full w-[90px] h-[26px] xl:w-[111px] xl:h-[36px] bg-corporateSecondaryBlue text-white
 }
 
 .companyTableStatus {

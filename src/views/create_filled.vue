@@ -82,10 +82,10 @@
           <!--          border-b-->
           <div class=" border-b border-[#DBDBDB]">
             <div class="p-[16px]">
-              <p class="text-[#1E88E5] lading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]">COMPANY INFORMATION</p>
+              <p class="text-corporateSecondaryBlue lading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]">COMPANY INFORMATION</p>
               <p class="text-primaryText lading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600] mt-[16px]">Company logo</p>
 
-              <div class="w-[480px] h-[100px] border border-dashed border-[#1E88E5] mt-[10px] rounded-[4px] flex justify-center items-center">
+              <div class="w-[480px] h-[100px] border border-dashed border-corporateSecondaryBlue mt-[10px] rounded-[4px] flex justify-center items-center">
                 <div class="flex justify-between w-full items-center pl-[10px] pr-[20px]">
                   <div class="flex">
                     <img src="../assets/logo/main_logo.svg" class="w-[138px] h-[67px]" alt="">
@@ -334,7 +334,7 @@
           <!--          2nd section start-->
           <div class="border-b border-[#DBDBDB]">
             <div class="p-[16px]">
-              <p class="text-[#1E88E5] leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]">TRIP PERMISSION</p>
+              <p class="text-corporateSecondaryBlue leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]">TRIP PERMISSION</p>
               <div class="mt-[16px] flex gap-x-[16px] items-center">
                 <div class="w-1/4">
                   <p class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]">Default trip order</p>
@@ -355,7 +355,7 @@
           <!--          3rd section start-->
           <div class="border-b border-[#DBDBDB]">
             <div class="p-[16px]">
-              <p class="text-[#1E88E5] leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]">USER TYPE</p>
+              <p class="text-corporateSecondaryBlue leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]">USER TYPE</p>
               <div class="mt-[21px] flex gap-x-[16px] items-center">
                 <button class="createFilledActiveTypeButton">Owner</button>
                 <button class="createFilledActiveTypeButton">Company admin</button>
@@ -365,7 +365,7 @@
               </div>
               <div class="mt-[24px] flex gap-x-[16px] items-center">
                 <input type="text" class="focus:outline-none w-1/4 mt-[10px] w-full border border-primaryText rounded-[4px] pl-2 py-2 placeholder:text-primaryText placeholder:leading-[20px] placeholder:text-[14px]" placeholder="Audit department">
-                <button class="flex justify-center items-center bg-[#1E88E5] mt-1 text-white leading-[20px] text-[14px] font-[400] border border-corporateBorder rounded-full px-[20px] py-[8px] xl:px-[24px] xl:py-[12px]">Add role</button>
+                <button class="flex justify-center items-center bg-corporateSecondaryBlue mt-1 text-white leading-[20px] text-[14px] font-[400] border border-corporateBorder rounded-full px-[20px] py-[8px] xl:px-[24px] xl:py-[12px]">Add role</button>
               </div>
 
             </div>
@@ -373,7 +373,7 @@
           <!--          4th section start-->
           <div class="border-b border-[#DBDBDB]">
             <div class="p-[16px]">
-              <p class="text-[#1E88E5] leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]">MULTIPLE OWNER 1</p>
+              <p class="text-corporateSecondaryBlue leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]">MULTIPLE OWNER 1</p>
               <div class="flex gap-x-[16px] items-center border-b border-dashed border-corporateBorder py-[16px]">
                 <div class="w-1/4">
                   <p class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]">Multiple owner name</p>
@@ -391,7 +391,7 @@
                 </div>
               </div>
 
-              <div class="w-full border border-dashed border-[#1E88E5] flex justify-center items-center bg-[#EFF7FD] rounded-[4px]">
+              <div class="w-full border border-dashed border-corporateSecondaryBlue flex justify-center items-center bg-[#EFF7FD] rounded-[4px]">
                 <div class="flex justify-center items-center gap-x-[11px] py-[12px]">
                   <img src="../assets/svg/createPlus.svg" class="w-[10px] h-[10px]" alt="">
                   <p class="text-primaryText font-[600] leading-[20px] text-[14px]">Add another company owner</p>
@@ -402,7 +402,7 @@
           <!--          5th section start-->
           <div class="border-b border-[#DBDBDB]">
             <div class="p-[16px]">
-              <p class="text-[#1E88E5] leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]">SMS SERVICES</p>
+              <p class="text-corporateSecondaryBlue leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]">SMS SERVICES</p>
               <div class="grid grid-cols-4 gap-x-[16px] items-center">
                 <div class="mt-[16px]">
                   <p class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]">Required phone</p>

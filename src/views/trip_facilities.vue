@@ -121,7 +121,7 @@
                 Preview</p>
             </div>
             <div class="flex justify-between items-center">
-              <p class="text-[#1E88E5] leading-[20px] xl:leading-[24px] text-[14px] xl:text-[16px] font-[500] mt-2">
+              <p class="text-corporateSecondaryBlue leading-[20px] xl:leading-[24px] text-[14px] xl:text-[16px] font-[500] mt-2">
                 TRIP FACILITES & POLICIES</p>
               <p class="flex gap-x-[10px]">
                 <img alt="" src="../assets/svg/back_arrow.svg">
@@ -134,7 +134,8 @@
         </div>
         <div class="bg-white rounded-[8px] mt-[12px] xl:mt-[16px]">
           <div class="p-4">
-            <p class="text-[#1E88E5] leading-[20px] xl:leading-[24px] text-[14px] xl:text-[16px] font-[500]">TRIP
+            <p class="text-corporateSecondaryBlue leading-[20px] xl:leading-[24px] text-[14px] xl:text-[16px] font-[500]">
+              TRIP
               FACILITES & POLICIES</p>
 
             <div class="flex gap-x-[18px] justify-start items-center">
@@ -203,7 +204,7 @@
 
           <hr class="border-t border-corporateBorder">
           <div class="p-4">
-            <p class="text-[#1E88E5] leading-[20px] xl:leading-[24px] text-[14px] xl:text-[16px] font-[500]">
+            <p class="text-corporateSecondaryBlue leading-[20px] xl:leading-[24px] text-[14px] xl:text-[16px] font-[500]">
               POLICIES</p>
 
             <p class="text-primaryText leading-[20px] xl:leading-[24px] text-[14px] xl:text-[16px] font-[600] mt-3 xl:mt-4">
