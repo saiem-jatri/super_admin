@@ -1,4 +1,4 @@
-import { createRouter, createWebHistory } from 'vue-router'
+import {createRouter, createWebHistory} from 'vue-router'
 import Login from '@/views/login/index.vue'
 import ForgetPassword from '@/views/forgetPassword.vue'
 import Dashboard from '@/views/dashboard.vue'
@@ -220,32 +220,32 @@ const router = createRouter({
             name: 'TripsBoarding',
             component: TripsBoarding
         },
-  //    Trips started
-    {
-      path: '/trips',
-      name: 'Trips',
-      component: Trips
-    },
-    {
-      path: '/tripsModal',
-      name: 'TripsModal',
-      component: TripsModal
-    },
-    {
-      path: '/tripsInformation',
-      name: 'TripsInformation',
-      component: TripsInformation
-    },
-    {
-      path: '/tripsBoarding',
-      name: 'TripsBoarding',
-      component: TripsBoarding
-    },
-    {
-      path: '/anotherTripsBoarding',
-      name: 'AnotherTripsBoarding',
-      component: AnotherTripsBoarding
-    },
+        //    Trips started
+        {
+            path: '/trips',
+            name: 'Trips',
+            component: Trips
+        },
+        {
+            path: '/tripsModal',
+            name: 'TripsModal',
+            component: TripsModal
+        },
+        {
+            path: '/tripsInformation',
+            name: 'TripsInformation',
+            component: TripsInformation
+        },
+        {
+            path: '/tripsBoarding',
+            name: 'TripsBoarding',
+            component: TripsBoarding
+        },
+        {
+            path: '/anotherTripsBoarding',
+            name: 'AnotherTripsBoarding',
+            component: AnotherTripsBoarding
+        },
 
         {
             path: '/tripsAdd',
@@ -340,6 +340,37 @@ const router = createRouter({
             path: '/migrateTrip',
             name: 'MigrateTrip',
             component: MigrateTrip,
+        },
+        {
+            path: '/tripsAddNext',
+            name: 'TripsAddNext',
+            component: TripsAddNext
+        },
+        {
+            path: '/manageUserRestriction',
+            name: 'ManageUserRestriction',
+            component: ManageUserRestriction,
+        },
+        {
+            path: '/manageUserRestrictionFilled',
+            name: 'ManageUserRestrictionFilled',
+            component: ManageUserRestrictionFilled,
+        },
+        {
+            path: '/assignQuotaFilled',
+            name: 'AssignQuotaFilled',
+            component: AssignQuotaFilled,
+        },
+
+        {
+            path: '/agent',
+            name: 'Agent',
+            component: Agent,
+        },
+        {
+            path: '/addAgent',
+            name: 'AddAgent',
+            component: AddAgent,
         },
 
     ]
