@@ -1,4 +1,4 @@
-import {createRouter, createWebHistory} from 'vue-router'
+import { createRouter, createWebHistory } from 'vue-router'
 import Login from '@/views/login/index.vue'
 import ForgetPassword from '@/views/forgetPassword.vue'
 import Dashboard from '@/views/dashboard.vue'
@@ -30,9 +30,17 @@ import CreateCounter from '@/views/counter_create.vue'
 import THirdPartyCounter from '@/views/thirdparty_counter.vue'
 import Trips from '@/views/trips.vue'
 import TripsInformation from '@/views/tripInformation.vue'
-import TripsBoarding from "@/views/trips-boarding.vue";
-import TripsAdd from "@/views/tripsAdd.vue";
+import TripsBoarding from "@/views/trips-boarding.vue"
+import AnotherTripsBoarding from "@/views/another-trips-boarding.vue"
+import TripsAdd from "@/views/tripsAdd.vue"
+import TripsAddNext from "@/views/tripsAddNext.vue"
 import TripsPermission from '@/views/trip_permission.vue'
+import ManageUserRestriction from '@/views/manage-user-restriction.vue'
+import ManageUserRestrictionFilled from '@/views/manage-user-restriction-filled.vue'
+import AssignQuotaFilled from '@/views/assign-quota-filled.vue'
+import TripsModal from '@/views/trips-modal.vue'
+import Agent from '@/views/agent.vue'
+import AddAgent from '@/views/add-agent.vue'
 import TripsAgent from '@/views/trips_agent.vue'
 import TripsQuota from '@/views/trips_quota.vue'
 import TripFacilities from '@/views/trip_facilities.vue'
@@ -212,6 +220,32 @@ const router = createRouter({
             name: 'TripsBoarding',
             component: TripsBoarding
         },
+  //    Trips started
+    {
+      path: '/trips',
+      name: 'Trips',
+      component: Trips
+    },
+    {
+      path: '/tripsModal',
+      name: 'TripsModal',
+      component: TripsModal
+    },
+    {
+      path: '/tripsInformation',
+      name: 'TripsInformation',
+      component: TripsInformation
+    },
+    {
+      path: '/tripsBoarding',
+      name: 'TripsBoarding',
+      component: TripsBoarding
+    },
+    {
+      path: '/anotherTripsBoarding',
+      name: 'AnotherTripsBoarding',
+      component: AnotherTripsBoarding
+    },
 
         {
             path: '/tripsAdd',

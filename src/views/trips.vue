@@ -67,6 +67,7 @@
       <!-- top nav bar end -->
       <!-- body start-->
       <div class="px-[30px] py-[24px]">
+
         <!--        card-->
         <div class="bg-white rounded-[4px]">
           <div class="p-4 flex justify-between items-center">
@@ -480,9 +481,10 @@ select::-ms-expand {
 export default {
   data() {
     return {
-      checked: false
+      checked: true,
     }
   }
 }
+
 
 </script>
