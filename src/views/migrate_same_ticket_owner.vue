@@ -371,7 +371,11 @@
                       class="w-full py-[8px] mb-2 mt-[10px] placeholder:text-primaryText border border-corporateBorder rounded-[4px] relative p-5 focus:outline-none cursor-pointer"
                       name="">
 
-                                  <option value="">abc</option>
+                                  <option
+                                      class="flex justify-between border-b border-dashed border-corporateBorder py-2"
+                                      value="">F3 <span
+                                      class=" px-4 py-1 rounded-[10px]"
+                                      style="background-color: #1E88E5">8WXOX3MVGF8UT</span> </option>
                                   <option value="">abc</option>
                                   <option value="">abc</option>
                                   <option value="">abc</option>
