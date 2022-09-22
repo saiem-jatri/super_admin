@@ -13,10 +13,10 @@
             <a class="menu">Counter</a>
             <a class="menu">Trips</a>
             <a class="menu">User</a>
-            <a class="bg-corporate w-full text-white p-1 rounded-sm block cursor-pointer">Agent</a>
+            <a class="menu">Agent</a>
             <a class="menu">Migrate Trips</a>
             <a class="menu">Migrate Tickets</a>
-            <a class="menu">Trip Expense Configaration</a>
+            <a class="bg-corporate w-full text-white p-1 rounded-sm block cursor-pointer">Trip Expense Configaration</a>
             <a class="dropDownMenu flex justify-center items-center">Reports <span><img src="../assets/svg/down_arrow.svg" alt="" class="w-[12px] h-[7px]"></span></a>
             <a class="dropDownMenu flex justify-center items-center">Invoice <span><img src="../assets/svg/down_arrow.svg" alt="" class="w-[12px] h-[7px]"></span></a>
             <a class="menu">Offer & Promotion</a>
