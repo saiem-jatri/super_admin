@@ -64,22 +64,8 @@
                 </div>
 
                 <div>
-                <div class="p-4 bg-corporateBg rounded my-4 flex items-center gap-x-4">
-                  <div class="">
-                    <img src="../assets/svg/hamburger.svg" alt="">
-                  </div>
-                  <div class="w-1/4 xl:w-1/5">
-                    <p class="text-primaryText leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[600]">Field name</p>
-                    <input type="text" class="focus:outline-none mt-[10px] w-full border border-[#DBDBDB] rounded-[4px] pl-2 py-2 placeholder:text-[#676769] placeholder:leading-[16px] placeholder:text-[12px] xl:placeholder:leading-[20px] xl:placeholder:text-[14px]" placeholder="Oil">
-                  </div>
-                  <div class="w-1/4 xl:w-1/5">
-                    <p class="text-primaryText leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[600]"> Maximum value (TK)</p>
-                    <input type="number" class="focus:outline-none mt-[10px] w-full border border-[#DBDBDB] rounded-[4px] pl-2 py-2 placeholder:text-[#676769] placeholder:leading-[16px] placeholder:text-[12px] xl:placeholder:leading-[20px] xl:placeholder:text-[14px]" placeholder="5000">
-                  </div>
-                </div>
-
-                <div class="p-4 bg-corporateBg rounded my-4 flex justify-between items-center">
-                  <div class="flex items-center gap-x-4 w-[43%]">
+                  <div class="p-4 bg-corporateBg rounded my-4 flex justify-between items-center">
+                  <div class="flex items-center gap-x-4 w-1/2">
                     <div>
                       <img src="../assets/svg/hamburger.svg" alt="">
                     </div>
@@ -90,6 +76,25 @@
                     <div class="w-1/2">
                     <p class="text-primaryText leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[600]"> Maximum value (TK)</p>
                     <input type="number" class="focus:outline-none mt-[10px] w-full border border-[#DBDBDB] rounded-[4px] pl-2 py-2 placeholder:text-[#676769] placeholder:leading-[16px] placeholder:text-[12px] xl:placeholder:leading-[20px] xl:placeholder:text-[14px]" placeholder="5000">
+                    </div>
+                  </div>
+                  <div class="hidden">
+                    <img src="../assets/svg/close-cirlce.svg" alt="">
+                  </div>
+                </div>
+
+                <div class="p-4 bg-corporateBg rounded my-4 flex justify-between items-center">
+                  <div class="flex items-center gap-x-4 w-1/2">
+                    <div>
+                      <img src="../assets/svg/hamburger.svg" alt="">
+                    </div>
+                    <div class="w-1/2">
+                    <p class="text-primaryText leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[600]">Field name</p>
+                    <input type="text" class="focus:outline-none mt-[10px] w-full border border-[#DBDBDB] rounded-[4px] pl-2 py-2 placeholder:text-[#676769] placeholder:leading-[16px] placeholder:text-[12px] xl:placeholder:leading-[20px] xl:placeholder:text-[14px]" placeholder="Enter field name">
+                    </div>
+                    <div class="w-1/2">
+                    <p class="text-primaryText leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[600]"> Maximum value (TK)</p>
+                    <input type="number" class="focus:outline-none mt-[10px] w-full border border-[#DBDBDB] rounded-[4px] pl-2 py-2 placeholder:text-[#676769] placeholder:leading-[16px] placeholder:text-[12px] xl:placeholder:leading-[20px] xl:placeholder:text-[14px]" placeholder="Enter value">
                     </div>
                   </div>
                   <div>
