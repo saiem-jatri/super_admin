@@ -355,17 +355,27 @@
                   <div class="flex gap-x-[70px] xl:gap-x-[80px] mt-[20px] xl:mt-[24px]">
                     <div class="flex gap-x-[20px] xl:gap-x-[26px]">
                       <button class="migrateSeatAsh tooltip bg-white">
-                        <span class="tooltiptext ">
+                        <span class="tooltiptext relative">
                           <div class="w-[286px] border border-corporateBorder rounded-[4px] text-primaryText bg-white">
                             <p class="border-b border-corporateBorder py-[8px]">Selected seat: [B1]</p>
                             <div class="mt-[10px] flex gap-x-[10px] items-center px-2">
                               <label class="w-[30%] bg-white" for="#">Migrate for:</label>
                               <div class="w-[70%]">
-                                <Dropdown v-model="selectedCity"
-                                          :options="cities"
-                                          class="w-full py-[4px] mb-2 mt-[10px] placeholder:text-primaryText"
-                                          optionLabel="name"
-                                          placeholder="Owner"/>
+<!--                                <Dropdown v-model="selectedCity"-->
+                                <!--                                          :options="cities"-->
+                                <!--                                          class="w-full py-[4px] mb-2 mt-[10px] placeholder:text-primaryText absolute"-->
+                                <!--                                          optionLabel="name"-->
+                                <!--                                          placeholder="Owner"/>-->
+ <img alt="" class="absolute bottom-7 -right-36 z-50" src="../assets/svg/tooltip_arrow.svg">
+              <select id=""
+                      class="w-full py-[8px] mb-2 mt-[10px] placeholder:text-primaryText border border-corporateBorder rounded-[4px] relative p-5 focus:outline-none cursor-pointer"
+                      name="">
+
+                                  <option value="">abc</option>
+                                  <option value="">abc</option>
+                                  <option value="">abc</option>
+                                  <option value="">abc</option>
+                                </select>
                              </div>
                             </div>
                           </div>
@@ -485,7 +495,7 @@
                     <button class="py-2 px-10 bg-[#48A43F] text-white rounded-full mr-2"
                             type="button"><i class="fas fa-times"></i> No
                     </button>
-                    <button class="py-2 px-102 bg-corporate text-white rounded-full mr-2" type="button"><i
+                    <button class="py-2 px-10 bg-corporate text-white rounded-full mr-2" type="button"><i
                         class="fas fa-plus"></i>Yes
                     </button>
                   </div>
