@@ -56,6 +56,7 @@ import Agent from '@/views/agent.vue'
 import AddAgent from '@/views/add-agent.vue'
 import AddAgentNext from '@/views/add-agent-next.vue'
 import AddAgentSave from '@/views/add-agent-save.vue'
+import TripExpenseConfiguration from '@/views/tripExpenseConfiguration.vue'
 
 const router = createRouter({
     history: createWebHistory(import.meta.env.BASE_URL),
@@ -384,7 +385,14 @@ const router = createRouter({
         path: '/addAgentSave',
         name: 'AddAgentSave',
         component: AddAgentSave,
-    }
+      },
+
+    //Trip Expense Configaration
+    {
+        path: '/tripExpenseConfiguration',
+        name: 'TripExpenseConfiguration',
+        component: TripExpenseConfiguration
+    },
 
     ]
 
