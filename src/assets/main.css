@@ -97,6 +97,10 @@ body {
     @apply flex justify-center items-center text-white leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[600] bg-corporate rounded-full px-[20px] py-[11px] xl:px-[24px] xl:py-[13px]
 }
 
+.createBtnDisable {
+    @apply flex justify-center items-center text-white leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[600] bg-corporate bg-opacity-30 rounded-full px-[20px] py-[11px] xl:px-[24px] xl:py-[13px]
+}
+
 .seatButton {
     @apply w-[25px] xl:w-[30px] h-[20px] xl:h-[24px] text-center text-white bg-corporate rounded-[4px] leading-[16px] xl:leading-[20px] text-[12px] xl:text-[14px]
 }
@@ -140,9 +144,11 @@ body {
 .quotaSeat {
     @apply w-[35px] xl:w-[50px] h-[25px] xl:h-[36px] text-center text-primaryText border border-corporateBorder rounded-[2px] leading-[16px] xl:leading-[20px] text-[12px] xl:text-[14px]
 }
+
 .quotaSeatwithBg {
     @apply w-[35px] xl:w-[50px] h-[25px] xl:h-[36px] text-center text-white bg-[#F04935] border border-corporateBorder rounded-[2px] leading-[16px] xl:leading-[20px] text-[12px] xl:text-[14px]
 }
+
 .quotaSeatLocked {
     @apply w-[35px] xl:w-[50px] h-[25px] xl:h-[36px] text-center text-primaryText border border-[#EDEDED] bg-[#EDEDED] rounded-[2px] leading-[16px] xl:leading-[20px] text-[12px] xl:text-[14px]
 }

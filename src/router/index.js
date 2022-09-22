@@ -57,6 +57,7 @@ import UserCreateAgent from '@/views/user_create_agent.vue'
 import UserCreateCustomercare from '@/views/user_create_customercare.vue'
 import MigrateTrip from '@/views/migrate_trip.vue'
 import MigrateSelect from '@/views/migrate_select_seat.vue'
+import MigrateSameTicketOwner from '@/views/migrate_same_ticket_owner.vue'
 
 const router = createRouter({
     history: createWebHistory(import.meta.env.BASE_URL),
@@ -353,6 +354,11 @@ const router = createRouter({
             path: '/migrateSelect',
             name: 'MigrateSelect',
             component: MigrateSelect,
+        },
+        {
+            path: '/migrateSame',
+            name: 'MigrateSameTicketOwner',
+            component: MigrateSameTicketOwner,
         },
         {
             path: '/tripsAddNext',

@@ -75,7 +75,7 @@
       <!-- body start-->
       <div class="px-[30px] py-[24px]">
         <!--        card-->
-        <div class="mt-[16px] bg-white pb-4">
+        <div class="mt-[16px] bg-white pb-4 rounded-[10px]">
           <div class="flex justify-between items-center divide-x border-b">
             <div class="p-4 w-1/2">
               <p class="leading-[20px] xl:leading-[24px] text-[14px] xl:text-[16px] font-[600] text-corporateSecondaryBlue">
@@ -240,7 +240,69 @@
                     </div>
                     <div class="flex gap-x-[20px] xl:gap-x-[26px]">
                       <button class="migrateSeatAsh">A3</button>
-                      <button class="migrateSeatAsh">A4</button>
+                      <button class="migrateSeatPrimaryOrange border border-corporate tooltip bg-white">
+
+                        <span class="tooltiptext ">
+                          <div class="w-[286px] rounded-[4px] text-primaryText bg-white">
+                            <div class="border border-corporateBorder">
+                              <p class="border-b border-corporateBorder py-[8px]">[F3]</p>
+                            <div class="flex items-center">
+                              <div class="w-[30%] border-r border-corporateBorder">
+                                <p class="w-full h-[34px] text-center flex justify-center items-center">
+                                  Name
+                                </p>
+                              </div>
+                              <div class="w-[70%]">
+                                <p class="w-full h-[34px] text-center flex justify-center items-center">
+                                  Abdul Karim
+                                </p>
+                             </div>
+                            </div>
+                            <div class="flex items-center bg-[#F5F7F7]">
+                              <div class="w-[30%] border-r border-corporateBorder">
+                                <p class="w-full h-[34px] text-center flex justify-center items-center">
+                                  Mobile
+                                </p>
+                              </div>
+                              <div class="w-[70%]">
+                                <p class="w-full h-[34px] text-center flex justify-center items-center">
+                                  99
+                                </p>
+                             </div>
+                            </div>
+                            <div class="flex items-center">
+                              <div class="w-[30%] border-r border-corporateBorder">
+                                <p class="w-full h-[34px] text-center flex justify-center items-center">
+                                  From - to
+                                </p>
+                              </div>
+                              <div class="w-[70%]">
+                                <p class="w-full h-[34px] text-center flex justify-center items-center">
+                                  Abdul Karim
+                                </p>
+                             </div>
+                            </div>
+                             <div class="flex items-center bg-[#F5F7F7]">
+                              <div class="w-[30%] border-r border-corporateBorder">
+                                <p class="w-full h-[34px] text-center flex justify-center items-center">
+                                  Issued on
+                                </p>
+                              </div>
+                              <div class="w-[70%]">
+                                <p class="w-full h-[34px] text-center flex justify-center items-center">
+                                  99
+                                </p>
+                             </div>
+                            </div>
+                            </div>
+                            <div class="pt-[10px] pb-2 border border-corporateBorder">
+                            <a class="py-2 px-8 bg-[#E0293B] text-white rounded-full mr-2" type="button"><i
+                                class="fas fa-times"></i> Cancel</a>
+                              </div>
+                          </div>
+                        </span>
+                        F3
+                      </button>
                     </div>
                   </div>
                   <div class="flex gap-x-[70px] xl:gap-x-[80px] mt-[20px] xl:mt-[24px]">
@@ -396,7 +458,7 @@
             </div>
             <!--                modal-->
             <div class="flex items-center justify-center">
-              <button class="createBtn mt-5" @click="toggleModal()">Confirm migration</button>
+              <button class="createBtnDisable mt-5" @click="toggleModal()">Confirm migration</button>
             </div>
             <div id="modal" class="fixed z-10 overflow-y-auto top-0 w-full left-0 hidden">
               <div
@@ -413,21 +475,18 @@
                   <div
                       class="w-full px-[24px] py-[8px] bg-corporate flex justify-between items-center transition transform ">
                     <p class="leading-[24px] xl:leading-[28px] text-[18px] xl:text-[20px] font-[500] text-white">
-                      Migrate Trip</p>
+                      Cancel ticket</p>
                     <img alt="" class="h-5 w-5 cursor-pointer" src="../assets/svg/modal_cross.svg"
                          @click="toggleModal()">
                   </div>
-                  <p class="px-[24px] mt-5 text-center">Are you sure you want to migrate this trip from trip 1 <br> to
-                    trip
-                    2</p>
+                  <p class="px-[24px] mt-5 text-center">Are you sure you want to cancel ticket of seat [A1].</p>
 
                   <div class="px-4 py-3 flex justify-center items-center gap-x-[16px] mt-8">
-                    <button class="py-2 px-8 bg-[#E0293B] text-white rounded-full mr-2"
-                            type="button"
-                            @click="toggleModal()"><i class="fas fa-times"></i> Cancel
+                    <button class="py-2 px-10 bg-[#48A43F] text-white rounded-full mr-2"
+                            type="button"><i class="fas fa-times"></i> No
                     </button>
-                    <button class="py-2 px-6 bg-corporate text-white rounded-full mr-2" type="button"><i
-                        class="fas fa-plus"></i>Migrate trip
+                    <button class="py-2 px-102 bg-corporate text-white rounded-full mr-2" type="button"><i
+                        class="fas fa-plus"></i>Yes
                     </button>
                   </div>
                 </div>
@@ -436,6 +495,11 @@
 
 
           </div>
+        </div>
+
+        <div class="mt-4 xl:mt-5 bg-[#FDF0F1] p-[18px] flex gap-x-2 rounded-[10px]">
+          <img alt="" src="../assets/svg/warning.svg">
+          <p>Seat [F3] is already booked in trip 2. You have migrate the seat manually or cancel the tickets.</p>
         </div>
       </div>
     </div>
@@ -491,11 +555,23 @@ select::-ms-expand {
 
 <script>
 export default {
+  data() {
+    return {
+      selectedCity: null,
+      cities: [
+        {name: 'New York', code: 'NY'},
+        {name: 'Rome', code: 'RM'},
+        // {name: 'London', code: 'LDN'},
+        // {name: 'Istanbul', code: 'IST'},
+        // {name: 'Paris', code: 'PRS'}
+      ]
+    }
+  },
   methods: {
     toggleModal() {
       document.getElementById('modal').classList.toggle('hidden')
     }
   }
-
 }
+
 </script>
