@@ -51,14 +51,19 @@
         <div class="px-[30px] py-[24px]">
   <!--        card-->
           <div class="bg-white rounded">
-                <div class="p-4">
-                  <div class="flex justify-start items-center gap-x-4 w-full">
+            <div class="p-4">
+                  <div class="flex justify-between items-center gap-x-4 w-full">
                   <div class="w-1/4 xl:w-1/5">
                     <p class="text-primaryText leading-[20px] text-[14px] xl:leading-[24px] xl:text-[16px] font-[600]">Bus operator</p>
                     <Dropdown class="w-full py-1 mt-[10px] placeholder:text-primaryText placeholder:leading-[16px] placeholder:text-[12px] xl:placeholder:leading-[20px] xl:placeholder:text-[14px]" v-model="selectedCity" :options="cities" optionLabel="name" placeholder="Dash Travels" />
                   </div>
+                  <div class="flex items-end self-end gap-[10px]">
+                    <img src="../assets/svg/refresh.svg" alt="Refresh Img">
+                    <p class="text-corporateError leading-[16px] text-[12px] font-[700]">Reset</p>
+                  </div>
                 </div>
 
+                <div>
                 <div class="p-4 bg-corporateBg rounded my-4 flex items-center gap-x-4">
                   <div class="">
                     <img src="../assets/svg/hamburger.svg" alt="">
@@ -71,6 +76,26 @@
                     <p class="text-primaryText leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[600]"> Maximum value (TK)</p>
                     <input type="number" class="focus:outline-none mt-[10px] w-full border border-[#DBDBDB] rounded-[4px] pl-2 py-2 placeholder:text-[#676769] placeholder:leading-[16px] placeholder:text-[12px] xl:placeholder:leading-[20px] xl:placeholder:text-[14px]" placeholder="5000">
                   </div>
+                </div>
+
+                <div class="p-4 bg-corporateBg rounded my-4 flex justify-between items-center">
+                  <div class="flex items-center gap-x-4 w-[43%]">
+                    <div>
+                      <img src="../assets/svg/hamburger.svg" alt="">
+                    </div>
+                    <div class="w-1/2">
+                    <p class="text-primaryText leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[600]">Field name</p>
+                    <input type="text" class="focus:outline-none mt-[10px] w-full border border-[#DBDBDB] rounded-[4px] pl-2 py-2 placeholder:text-[#676769] placeholder:leading-[16px] placeholder:text-[12px] xl:placeholder:leading-[20px] xl:placeholder:text-[14px]" placeholder="Oil">
+                    </div>
+                    <div class="w-1/2">
+                    <p class="text-primaryText leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[600]"> Maximum value (TK)</p>
+                    <input type="number" class="focus:outline-none mt-[10px] w-full border border-[#DBDBDB] rounded-[4px] pl-2 py-2 placeholder:text-[#676769] placeholder:leading-[16px] placeholder:text-[12px] xl:placeholder:leading-[20px] xl:placeholder:text-[14px]" placeholder="5000">
+                    </div>
+                  </div>
+                  <div>
+                    <img src="../assets/svg/close-cirlce.svg" alt="">
+                  </div>
+                </div>
                 </div>
                 
                 <button class="w-full border border-dashed border-[#B6B6B6] flex justify-center items-center bg-corporateBg rounded-[4px]"> 
