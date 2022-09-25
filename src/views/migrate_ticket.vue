@@ -45,14 +45,7 @@
       <div class="bg-white h-[72px] sticky top-0 border-b border-[#DBDBDB] z-10">
         <div class="flex justify-between items-center">
           <div class="pl-8 flex flex-col gap-y-2">
-            <p class="text-[#151414] leading-[28px] text-[20px] font-[600]">User</p>
-            <div class="flex justify-center items-center gap-x-[6px]">
-              <p class="text-secondaryText leading-[12px] text-[8px] xl:leading-[16px] xl:text-[12px] font-[400]">
-                User</p>
-              <img alt="" class="w-1 h-2" src="../assets/svg/bgBack.svg">
-              <p class="text-secondaryText leading-[12px] text-[8px] xl:leading-[16px] xl:text-[12px] font-[400]">Jatri
-                Admin</p>
-            </div>
+            <p class="text-[#151414] leading-[28px] text-[20px] font-[600]">Migrate Ticket</p>
           </div>
           <div
               class="w-[230px] xl:w-[270px] h-[40px] border border-[#DBDBDB] flex justify-center items-center leading-[20px] rounded-[4px] pl-14 xl:pl-[9px] overflow-hidden">
@@ -178,7 +171,7 @@
           </div>
 
           <div class="p-2">
-            <div class="flex justify-between items-center border-b pb-4">
+            <div class="flex justify-between items-center">
               <div class="w-1/2 border-r border-dashed border-corporateBorder">
                 <p class="leading-[20px] xl:leading-[24px] text-[14px] xl:text-[16px] font-[600] text-corporateSecondaryBlue">
                   SEATS</p>
@@ -268,10 +261,9 @@
                       <button class="migrateSeatAsh">A1</button>
                       <button class="migrateSeatAsh">A2</button>
                     </div>
-                    <div class="flex gap-x-[20px] xl:gap-x-[26px] relative">
+                    <div class="flex gap-x-[20px] xl:gap-x-[26px]">
                       <button class="migrateSeatAsh">A3</button>
                       <button class="migrateSeatAsh">A4</button>
-                      <p class="absolute -right-10 top-0 2xl:top-2 leading-[12px] xl:leading-[16px] ">[A3]</p>
                     </div>
                   </div>
 
@@ -279,163 +271,15 @@
 
               </div>
 
-              <div class="w-1/2">
-                <div class="mt-9 xl:mt-10 flex flex-col justify-center items-center">
-                  <div class="flex gap-x-[70px] xl:gap-x-[80px]">
-                    <div class="flex gap-x-[20px] xl:gap-x-[26px]">
-                      <button class="migrateSeatPrimaryOrange">A1</button>
-                      <button class="migrateSeatPrimaryOrange">A2</button>
-                    </div>
-                    <div class="flex gap-x-[20px] xl:gap-x-[26px]">
-                      <button class="migrateSeatPrimaryOrange">A3</button>
-                      <button class="migrateSeatPrimaryOrange">A4</button>
-                    </div>
-                  </div>
-                  <div class="flex gap-x-[70px] xl:gap-x-[80px] mt-[20px] xl:mt-[24px]">
-                    <div class="flex gap-x-[20px] xl:gap-x-[26px]">
-                      <button class="migrateSeatAsh tooltip bg-white">
-                        <span class="tooltiptext ">
-                          <div class="w-[286px] border border-corporateBorder rounded-[4px] text-primaryText bg-white">
-                            <p class="border-b border-corporateBorder py-[8px]">Selected seat: [B1]</p>
-                            <div class="mt-[10px] flex gap-x-[10px] items-center px-2">
-                              <label class="w-[30%] bg-white" for="#">Migrate for:</label>
-                              <div class="w-[70%]">
-                                <Dropdown v-model="selectedCity"
-                                          :options="cities"
-                                          class="w-full py-[4px] mb-2 mt-[10px] placeholder:text-primaryText"
-                                          optionLabel="name"
-                                          placeholder="Owner"/>
-                             </div>
-                            </div>
-                          </div>
-                        </span>
-                        A4
-                      </button>
-                      <button class="migrateSeat">A2</button>
-                    </div>
-                    <div class="flex gap-x-[20px] xl:gap-x-[26px]">
-                      <button class="migrateSeatAsh">A3</button>
-                      <button class="migrateSeatAsh">A4</button>
-                    </div>
-                  </div>
-                  <div class="flex gap-x-[70px] xl:gap-x-[80px] mt-[20px] xl:mt-[24px]">
-                    <div class="flex gap-x-[20px] xl:gap-x-[26px]">
-                      <button class="migrateSeatAsh">A1</button>
-                      <button class="migrateSeatAsh">A2</button>
-                    </div>
-                    <div class="flex gap-x-[20px] xl:gap-x-[26px]">
-                      <button class="migrateSeatAsh">A3</button>
-                      <button class="migrateSeatAsh">A4</button>
-                    </div>
-                  </div>
-                  <div class="flex gap-x-[70px] xl:gap-x-[80px] mt-[20px] xl:mt-[24px]">
-                    <div class="flex gap-x-[20px] xl:gap-x-[26px]">
-                      <button class="migrateSeatPrimaryOrange">A1</button>
-                      <button class="migrateSeatPrimaryOrange">A2</button>
-                    </div>
-                    <div class="flex gap-x-[20px] xl:gap-x-[26px]">
-                      <button class="migrateSeatPrimaryOrange">A3</button>
-                      <button class="migrateSeatPrimaryOrange">A4</button>
-                    </div>
-                  </div>
-                  <div class="flex gap-x-[70px] xl:gap-x-[80px] mt-[20px] xl:mt-[24px]">
-                    <div class="flex gap-x-[20px] xl:gap-x-[26px]">
-                      <button class="migrateSeatPrimaryOrange">A1</button>
-                      <button class="migrateSeatPrimaryOrange">A2</button>
-                    </div>
-                    <div class="flex gap-x-[20px] xl:gap-x-[26px]">
-                      <button class="migrateSeatPrimaryOrange">A3</button>
-                      <button class="migrateSeatPrimaryOrange">A4</button>
-                    </div>
-                  </div>
-                  <div class="flex gap-x-[70px] xl:gap-x-[80px] mt-[20px] xl:mt-[24px]">
-                    <div class="flex gap-x-[20px] xl:gap-x-[26px]">
-                      <button class="migrateSeatAsh">A1</button>
-                      <button class="migrateSeatAsh">A2</button>
-                    </div>
-                    <div class="flex gap-x-[20px] xl:gap-x-[26px]">
-                      <button class="migrateSeatAsh">A3</button>
-                      <button class="migrateSeatAsh">A4</button>
-                    </div>
-                  </div>
-                  <div class="flex gap-x-[70px] xl:gap-x-[80px] mt-[20px] xl:mt-[24px]">
-                    <div class="flex gap-x-[20px] xl:gap-x-[26px]">
-                      <button class="migrateSeatAsh">A1</button>
-                      <button class="migrateSeatAsh">A2</button>
-                    </div>
-                    <div class="flex gap-x-[20px] xl:gap-x-[26px]">
-                      <button class="migrateSeat">A3</button>
-                      <button class="migrateSeatAsh">A4</button>
-                    </div>
-                  </div>
-                  <div class="flex gap-x-[70px] xl:gap-x-[80px] mt-[20px] xl:mt-[24px]">
-                    <div class="flex gap-x-[20px] xl:gap-x-[26px]">
-                      <button class="migrateSeatDarkAsh">A1</button>
-                      <button class="migrateSeatDarkAsh">A2</button>
-                    </div>
-                    <div class="flex gap-x-[20px] xl:gap-x-[26px]">
-                      <button class="migrateSeatDarkAsh">A3</button>
-                      <button class="migrateSeatDarkAsh">A4</button>
-                    </div>
-                  </div>
-                  <div class="flex gap-x-[70px] xl:gap-x-[80px] mt-[20px] xl:mt-[24px]">
-                    <div class="flex gap-x-[20px] xl:gap-x-[26px]">
-                      <button class="migrateSeatAsh">A1</button>
-                      <button class="migrateSeatAsh">A2</button>
-                    </div>
-                    <div class="flex gap-x-[20px] xl:gap-x-[26px]">
-                      <button class="migrateSeatAsh">A3</button>
-                      <button class="migrateSeatAsh">
-                        A4
-                      </button>
-                    </div>
-                  </div>
-
+              <div class="w-1/2 flex justify-center items-center h-full">
+                <div class="flex flex-col justify-center items-center">
+                  <img alt="" class="w-5 h-5" src="../assets/svg/appear.svg">
+                  <p class="leading-[20px] xl:leading-[24px] text-[14px] xl:text-[16px] text-corporateSecondaryBlack mt-[10px]">
+                    Seats will be available after selecting route and trip.</p>
                 </div>
 
               </div>
             </div>
-            <!--                modal-->
-            <div class="flex items-center justify-center">
-              <button class="createBtn mt-5" @click="toggleModal()">Confirm migration</button>
-            </div>
-            <div id="modal" class="fixed z-10 overflow-y-auto top-0 w-full left-0 hidden">
-              <div
-                  class="flex items-center justify-center min-height-100vh pt-4 px-4 pb-20 text-center sm:block sm:p-0">
-                <div class="fixed inset-0 transition-opacity">
-                  <div class="absolute inset-0 bg-gray-900 opacity-75"/>
-                </div>
-                <span class="hidden sm:inline-block sm:align-middle sm:h-screen">&#8203;</span>
-                <div
-                    aria-labelledby="modal-headline"
-                    aria-modal="true"
-                    class="inline-block align-center bg-white rounded-lg text-left overflow-hidden shadow-xl transform transition-all ease-in-out delay-700 sm:my-8 sm:align-middle sm:max-w-lg sm:w-full"
-                    role="dialog">
-                  <div
-                      class="w-full px-[24px] py-[8px] bg-corporate flex justify-between items-center transition transform ">
-                    <p class="leading-[24px] xl:leading-[28px] text-[18px] xl:text-[20px] font-[500] text-white">
-                      Migrate Trip</p>
-                    <img alt="" class="h-5 w-5 cursor-pointer" src="../assets/svg/modal_cross.svg"
-                         @click="toggleModal()">
-                  </div>
-                  <p class="px-[24px] mt-5 text-center">Are you sure you want to migrate this trip from trip 1 <br> to
-                    trip
-                    2</p>
-
-                  <div class="px-4 py-3 flex justify-center items-center gap-x-[16px] mt-8">
-                    <button class="py-2 px-8 bg-[#E0293B] text-white rounded-full mr-2"
-                            type="button"
-                            @click="toggleModal()"><i class="fas fa-times"></i> Cancel
-                    </button>
-                    <button class="py-2 px-6 bg-corporate text-white rounded-full mr-2" type="button"><i
-                        class="fas fa-plus"></i>Migrate trip
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-
           </div>
         </div>
       </div>
@@ -463,40 +307,5 @@ select::-ms-expand {
 .p-dropdown-panel .p-dropdown-items .p-dropdown-item:not(:last-child), .p-dropdown-panel .p-dropdown-items .p-dropdown-item:not(:last-child):hover {
   border-bottom: 1px dotted #DBDBDB;
 }
-
-
-/*tooltip*/
-.tooltip {
-  position: relative;
-  display: inline-block;
-}
-
-.tooltip .tooltiptext {
-  visibility: hidden;
-  width: 120px;
-  background-color: white;
-  color: #fff;
-  text-align: center;
-  border-radius: 6px;
-  padding: 5px 0;
-
-  /* Position the tooltip */
-  position: absolute;
-  z-index: 10;
-}
-
-.tooltip:hover .tooltiptext {
-  visibility: visible;
-}
 </style>
 
-<script>
-export default {
-  methods: {
-    toggleModal() {
-      document.getElementById('modal').classList.toggle('hidden')
-    }
-  }
-
-}
-</script>

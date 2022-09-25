@@ -61,6 +61,8 @@ import TripExpenseConfigurationFilled from '@/views/TripExpenseConfigurationFill
 import TripExpenseConfigurationFinal from '@/views/TripExpenseConfigurationFinal.vue'
 import MigrateSelect from '@/views/migrate_select_seat.vue'
 import MigrateSameTicketOwner from '@/views/migrate_same_ticket_owner.vue'
+import MigrateTicket from '@/views/migrate_ticket.vue'
+import MigrateTicketSelect from '@/views/migrate_tikcet_select_seat.vue'
 
 const router = createRouter({
     history: createWebHistory(import.meta.env.BASE_URL),
@@ -363,6 +365,18 @@ const router = createRouter({
             name: 'MigrateSameTicketOwner',
             component: MigrateSameTicketOwner,
         },
+        // migrate ticket
+        {
+            path: '/migrateTicket',
+            name: 'MigrateTicket',
+            component: MigrateTicket,
+        },
+        {
+            path: '/migrateTicketSelect',
+            name: 'MigrateTicketSelect',
+            component: MigrateTicketSelect,
+        },
+
         {
             path: '/tripsAddNext',
             name: 'TripsAddNext',
@@ -396,32 +410,32 @@ const router = createRouter({
             component: AddAgent,
         },
         {
-          path: '/addAgentNext',
-          name: 'AddAgentNext',
-          component: AddAgentNext,
-      },
-      {
-        path: '/addAgentSave',
-        name: 'AddAgentSave',
-        component: AddAgentSave,
-      },
+            path: '/addAgentNext',
+            name: 'AddAgentNext',
+            component: AddAgentNext,
+        },
+        {
+            path: '/addAgentSave',
+            name: 'AddAgentSave',
+            component: AddAgentSave,
+        },
 
-    //Trip Expense Configaration
-    {
-        path: '/tripExpenseConfiguration',
-        name: 'TripExpenseConfiguration',
-        component: TripExpenseConfiguration
-    },
-    {
-        path: '/tripExpenseConfigurationFilled',
-        name: 'TripExpenseConfigurationFilled',
-        component: TripExpenseConfigurationFilled
-    },
-    {
-        path: '/tripExpenseConfigurationFinal',
-        name: 'TripExpenseConfigurationFinal',
-        component: TripExpenseConfigurationFinal
-    },
+        //Trip Expense Configaration
+        {
+            path: '/tripExpenseConfiguration',
+            name: 'TripExpenseConfiguration',
+            component: TripExpenseConfiguration
+        },
+        {
+            path: '/tripExpenseConfigurationFilled',
+            name: 'TripExpenseConfigurationFilled',
+            component: TripExpenseConfigurationFilled
+        },
+        {
+            path: '/tripExpenseConfigurationFinal',
+            name: 'TripExpenseConfigurationFinal',
+            component: TripExpenseConfigurationFinal
+        },
 
     ]
 
