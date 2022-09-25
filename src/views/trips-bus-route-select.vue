@@ -45,13 +45,15 @@
                 <p class="text-primaryText leading-[12px] text-[10px] xl:leading-[16px] xl:text-[12px] font-[500]">Back</p>
               </button>
               <div class="flex flex-col gap-y-[4px]">
-                <p class="lg:leading-[16px] xl:leading-[28px] lg:text-[14px] xl:text-[20px] font-[600] text-primaryText">Create Trip</p>
+                <p class="lg:leading-[16px] xl:leading-[28px] lg:text-[14px] xl:text-[20px] font-[600] text-primaryText">Edit Trip</p>
                 <div class="flex justify-center items-center gap-x-[6px] mr-2">
                   <p class="text-secondaryText leading-[12px] text-[8px] xl:leading-[16px] xl:text-[12px] font-[400]">Trips</p>
                   <img src="../assets/svg/bgBack.svg" alt="" class="w-1 h-2">
                   <p class="text-secondaryText leading-[12px] text-[8px] xl:leading-[16px] xl:text-[12px] font-[400]">Desh Travels</p>
                   <img src="../assets/svg/bgBack.svg" alt="" class="w-1 h-2">
-                  <p class="text-secondaryText leading-[12px] text-[8px] xl:leading-[16px] xl:text-[12px] font-[400]">Add trip</p>
+                  <p class="text-secondaryText leading-[12px] text-[8px] xl:leading-[16px] xl:text-[12px] font-[400]">Trip heading</p>
+                  <img src="../assets/svg/bgBack.svg" alt="" class="w-1 h-2">
+                  <p class="text-secondaryText leading-[12px] text-[8px] xl:leading-[16px] xl:text-[12px] font-[400]">Edit</p>
                 </div>
               </div>
             </div>
@@ -78,11 +80,11 @@
           <div class="bg-white rounded-[8px]">
             <div class="p-4">
               <div class="flex items-center gap-x-[6px] mr-2">
-                <p class="text-primaryText leading-[12px] text-[8px] xl:leading-[16px] xl:text-[12px] font-[600]">Trip Information</p>
+                <p class="text-secondaryText leading-[12px] text-[8px] xl:leading-[16px] xl:text-[12px] font-[400]">Trip Information</p>
                 <img src="../assets/svg/bgBack.svg" alt="" class="w-1 h-2">
                 <p class="text-secondaryText leading-[12px] text-[8px] xl:leading-[16px] xl:text-[12px] font-[400]">Boarding & Dropping</p>
                 <img src="../assets/svg/bgBack.svg" alt="" class="w-1 h-2">
-                <p class="text-secondaryText leading-[12px] text-[8px] xl:leading-[16px] xl:text-[12px] font-[400]">Seat & Fare</p>
+                <p class="text-primaryText leading-[12px] text-[8px] xl:leading-[16px] xl:text-[12px] font-[600]">Seat & Fare</p>
                 <img src="../assets/svg/bgBack.svg" alt="" class="w-1 h-2">
                 <p class="text-secondaryText leading-[12px] text-[8px] xl:leading-[16px] xl:text-[12px] font-[400]">Permissions & Commissions</p>
                 <img src="../assets/svg/bgBack.svg" alt="" class="w-1 h-2">
@@ -121,159 +123,130 @@
                         <p class="leading-[16px] xl:leading-[20px] text-[12px] xl:text-[14px] font-[400]">Economy</p>
                         <input type="text" class="w-[120px] border border-corporateBorder rounded-[4px] px-2 py-[6px] focus:outline-none mt-2" placeholder="Enter Fare">
                       </div>
-                      <div>
-                        <p class="leading-[16px] xl:leading-[20px] text-[12px] xl:text-[14px] font-[400]">Business</p>
-                        <input type="text" class="w-[120px] border border-corporateBorder rounded-[4px] px-2 py-[6px] focus:outline-none mt-2" placeholder="Enter Fare">
-                      </div>
                       </div>
                       <div class="flex gap-x-[8px] xl:gap-x-[19px] mt-4">
                         <div class="form-group mb-0 mt-4">
-                          <input type="checkbox" id="read">
-                          <label for="read" class="text-primaryText leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px] font-[400]"> Jatri</label>
+                          <input type="checkbox" id="read1">
+                          <label for="read1" class="text-primaryText leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px] font-[400]"> Jatri</label>
                         </div>
                         <div class="form-group mb-0 mt-4">
-                          <input type="checkbox" id="read">
-                          <label for="read" class="text-primaryText leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px] font-[400]"> Counter</label>
+                          <input type="checkbox" id="read2">
+                          <label for="read2" class="text-primaryText leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px] font-[400]"> Counter</label>
                         </div>
                         <div class="form-group mb-0 mt-4">
-                          <input type="checkbox" id="read">
-                          <label for="read" class="text-primaryText leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px] font-[400]"> Agent</label>
+                          <input type="checkbox" id="read3">
+                          <label for="read3" class="text-primaryText leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px] font-[400]"> Agent</label>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>    
                 <div class="flex justify-between gap-x-[20px] xl:gap-x-[27px]">
-                  <div class="w-full">
+                    <div class="w-full">
                     <div class="flex justify-between items-center mt-1">
-                      <label for="#" class="leading-[16px] xl:leading-[24px] text-[12px] xl:text-[16px] min-w-[123px]">Dhaka - Bogura:</label>
-                      <div class="flex gap-x-4 justify-start">
-                        <div class="xl:ml-4">
+                      <label for="#" class="leading-[16px] xl:leading-[24px] text-[12px] xl:text-[16px] min-w-[123px]">Dhaka - Tangail:</label>
+                      <div class="xl:ml-4">
                         <input type="text" class="w-[120px] border border-corporateBorder rounded-[4px] px-2 py-[6px] focus:outline-none mt-1" placeholder="Enter Fare">
-                        </div>
-                        <div>
-                        <input type="text" class="w-[120px] border border-corporateBorder rounded-[4px] px-2 py-[6px] focus:outline-none mt-1" placeholder="Enter Fare">
-                        </div>
                       </div>
                       <div class="flex gap-x-[8px] xl:gap-x-[19px]">
                         <div class="form-group mb-0">
-                          <input type="checkbox" id="read">
-                          <label for="read" class="text-primaryText leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px] font-[400]"> Jatri</label>
+                          <input type="checkbox" id="read4">
+                          <label for="read4" class="text-primaryText leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px] font-[400]"> Jatri</label>
                         </div>
                         <div class="form-group mb-0">
-                          <input type="checkbox" id="read">
-                          <label for="read" class="text-primaryText leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px] font-[400]"> Counter</label>
+                          <input type="checkbox" id="read5">
+                          <label for="read5" class="text-primaryText leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px] font-[400]"> Counter</label>
                         </div>
                         <div class="form-group mb-0">
-                          <input type="checkbox" id="read">
-                          <label for="read" class="text-primaryText leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px] font-[400]"> Agent</label>
+                          <input type="checkbox" id="read6">
+                          <label for="read6" class="text-primaryText leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px] font-[400]"> Agent</label>
                         </div>
                       </div>
                     </div>
                   </div>
-  
                 </div>
+
                 <div class="flex justify-between gap-x-[20px] xl:gap-x-[27px]">
                     <div class="w-full">
                     <div class="flex justify-between items-center mt-1">
                       <label for="#" class="leading-[16px] xl:leading-[24px] text-[12px] xl:text-[16px] min-w-[123px]">Dhaka - Tangail:</label>
-                      <div class="flex gap-x-4 justify-start">
-                        <div class="xl:ml-4">
+                      <div class="xl:ml-4">
                         <input type="text" class="w-[120px] border border-corporateBorder rounded-[4px] px-2 py-[6px] focus:outline-none mt-1" placeholder="Enter Fare">
-                        </div>
-                        <div>
-                        <input type="text" class="w-[120px] border border-corporateBorder rounded-[4px] px-2 py-[6px] focus:outline-none mt-1" placeholder="Enter Fare">
-                        </div>
                       </div>
                       <div class="flex gap-x-[8px] xl:gap-x-[19px]">
                         <div class="form-group mb-0">
-                          <input type="checkbox" id="read">
+                          <input type="checkbox7" id="read">
                           <label for="read" class="text-primaryText leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px] font-[400]"> Jatri</label>
                         </div>
                         <div class="form-group mb-0">
-                          <input type="checkbox" id="read">
+                          <input type="checkbox8" id="read">
                           <label for="read" class="text-primaryText leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px] font-[400]"> Counter</label>
                         </div>
                         <div class="form-group mb-0">
-                          <input type="checkbox" id="read">
+                          <input type="checkbox9" id="read">
                           <label for="read" class="text-primaryText leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px] font-[400]"> Agent</label>
                         </div>
                       </div>
                     </div>
                   </div>
-  
                 </div>
+
                 <div class="flex justify-between gap-x-[20px] xl:gap-x-[27px]">
                     <div class="w-full">
                     <div class="flex justify-between items-center mt-1">
                       <label for="#" class="leading-[16px] xl:leading-[24px] text-[12px] xl:text-[16px] min-w-[123px]">Dhaka - Tangail:</label>
-                      <div class="flex gap-x-4 justify-start">
-                        <div class="xl:ml-4">
+                      <div class="xl:ml-4">
                         <input type="text" class="w-[120px] border border-corporateBorder rounded-[4px] px-2 py-[6px] focus:outline-none mt-1" placeholder="Enter Fare">
-                        </div>
-                        <div>
-                        <input type="text" class="w-[120px] border border-corporateBorder rounded-[4px] px-2 py-[6px] focus:outline-none mt-1" placeholder="Enter Fare">
-                        </div>
                       </div>
                       <div class="flex gap-x-[8px] xl:gap-x-[19px]">
-                        <div class="form-group mb-0 mb-0">
-                          <input type="checkbox" id="read">
-                          <label for="read" class="text-primaryText leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px] font-[400]"> Jatri</label>
+                        <div class="form-group mb-0">
+                          <input type="checkbox" id="read10">
+                          <label for="read10" class="text-primaryText leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px] font-[400]"> Jatri</label>
                         </div>
-                        <div class="form-group mb-0 mb-0">
-                          <input type="checkbox" id="read">
-                          <label for="read" class="text-primaryText leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px] font-[400]"> Counter</label>
+                        <div class="form-group mb-0">
+                          <input type="checkbox" id="read11">
+                          <label for="read11" class="text-primaryText leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px] font-[400]"> Counter</label>
                         </div>
-                        <div class="form-group mb-0 mb-0">
-                          <input type="checkbox" id="read">
-                          <label for="read" class="text-primaryText leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px] font-[400]"> Agent</label>
+                        <div class="form-group mb-0">
+                          <input type="checkbox" id="read12">
+                          <label for="read12" class="text-primaryText leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px] font-[400]"> Agent</label>
                         </div>
                       </div>
                     </div>
                   </div>
-  
                 </div>
+
                 <div class="flex justify-between gap-x-[20px] xl:gap-x-[27px]">
                     <div class="w-full">
                     <div class="flex justify-between items-center mt-1">
                       <label for="#" class="leading-[16px] xl:leading-[24px] text-[12px] xl:text-[16px] min-w-[123px]">Dhaka - Tangail:</label>
-                      <div class="flex gap-x-4 justify-start">
-                        <div class="xl:ml-4">
+                      <div class="xl:ml-4">
                         <input type="text" class="w-[120px] border border-corporateBorder rounded-[4px] px-2 py-[6px] focus:outline-none mt-1" placeholder="Enter Fare">
-                        </div>
-                        <div>
-                        <input type="text" class="w-[120px] border border-corporateBorder rounded-[4px] px-2 py-[6px] focus:outline-none mt-1" placeholder="Enter Fare">
-                        </div>
                       </div>
                       <div class="flex gap-x-[8px] xl:gap-x-[19px]">
                         <div class="form-group mb-0">
-                          <input type="checkbox" id="read">
-                          <label for="read" class="text-primaryText leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px] font-[400]"> Jatri</label>
+                          <input type="checkbox" id="read13">
+                          <label for="read13" class="text-primaryText leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px] font-[400]"> Jatri</label>
                         </div>
                         <div class="form-group mb-0">
-                          <input type="checkbox" id="read">
-                          <label for="read" class="text-primaryText leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px] font-[400]"> Counter</label>
+                          <input type="checkbox" id="read14">
+                          <label for="read14" class="text-primaryText leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px] font-[400]"> Counter</label>
                         </div>
                         <div class="form-group mb-0">
-                          <input type="checkbox" id="read">
-                          <label for="read" class="text-primaryText leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px] font-[400]"> Agent</label>
+                          <input type="checkbox" id="read15">
+                          <label for="read15" class="text-primaryText leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px] font-[400]"> Agent</label>
                         </div>
                       </div>
                     </div>
                   </div>
-  
                 </div>
+
                 <div class="flex justify-between gap-x-[20px] xl:gap-x-[27px]">
                     <div class="w-full">
                     <div class="flex justify-between items-center mt-1">
                       <label for="#" class="leading-[16px] xl:leading-[24px] text-[12px] xl:text-[16px] min-w-[123px]">Dhaka - Tangail:</label>
-                      <div class="flex gap-x-4 justify-start">
-                        <div class="xl:ml-4">
+                      <div class="xl:ml-4">
                         <input type="text" class="w-[120px] border border-corporateBorder rounded-[4px] px-2 py-[6px] focus:outline-none mt-1" placeholder="Enter Fare">
-                        </div>
-                        <div>
-                        <input type="text" class="w-[120px] border border-corporateBorder rounded-[4px] px-2 py-[6px] focus:outline-none mt-1" placeholder="Enter Fare">
-                        </div>
                       </div>
                       <div class="flex gap-x-[8px] xl:gap-x-[19px]">
                         <div class="form-group mb-0">
@@ -291,16 +264,17 @@
                       </div>
                     </div>
                   </div>
-  
                 </div>
+
               </div>
             </div>
             <hr class="mt-[12px] xl:mt-[16px] border-t border-corporateBorder">
             <div class="p-4">
               <div class="w-[70%] xl:w-[60%]">
                 <div class="flex justify-between">
-                  <div>
-                    <p class="leading-[20px] xl:leading-[24px] text-[14px] xl:text-[16px] text-primaryText font-[600]">Bus model</p>
+                  <div>  
+                   <p class="text-[#1E88E5] leading-[20px] xl:leading-[24px] text-[14px] xl:text-[16px] font-[500]">BUS INFORMATION & SEAT LAYOUT FARE</p>
+                    <p class="leading-[20px] xl:leading-[24px] text-[14px] xl:text-[16px] text-primaryText font-[600] mt-3 xl:mt-4">Bus model</p>
                     <select name="model" id="model" class="px-3 py-2 border border-corporateBorder rounded-[4px] focus:outline-none mt-[10px]">
                       <option value="Desh Travels, Hino 1J - 36 Seat">Desh Travels, Hino 1J - 36 Seat</option>
                     </select>
@@ -312,25 +286,25 @@
   
                   <div>
                     <div class="flex gap-x-[15px] xl:gap-x-[20px]">
-                      <button class="seatButton blueSeatButton">A1</button>
-                      <button class="seatButton emptySeat"></button>
+                        <button class="seatButton">A1</button>
+                      <button class="seatButton">A2</button>
                       <button class="seatButton hidden">A1</button>
-                      <button class="seatButton blueSeatButton">A3</button>
-                      <button class="seatButton blueSeatButton">A4</button>
+                      <button class="seatButton">A3</button>
+                      <button class="seatButton">A4</button>
                     </div>
                     <div class="flex gap-x-[15px] xl:gap-x-[20px] mt-[20px] xl:mt-[24px]">
-                      <button class="seatButton blueSeatButton">B1</button>
-                      <button class="seatButton emptySeat"></button>
-                      <button class="seatButton hidden">A1</button>
-                      <button class="seatButton blueSeatButton">B2</button>
-                      <button class="seatButton blueSeatButton">B3</button>
+                        <button class="seatButton">B1</button>
+                      <button class="seatButton">B2</button>
+                      <button class="seatButton hidden">B1</button>
+                      <button class="seatButton">B3</button>
+                      <button class="seatButton">B4</button>
                     </div>
                     <div class="flex gap-x-[15px] xl:gap-x-[20px] mt-[20px] xl:mt-[24px]">
-                      <button class="seatButton blueSeatButton">C1</button>
-                      <button class="seatButton emptySeat"></button>
-                      <button class="seatButton hidden">A1</button>
+                        <button class="seatButton">C1</button>
                       <button class="seatButton">C2</button>
+                      <button class="seatButton hidden">C1</button>
                       <button class="seatButton">C3</button>
+                      <button class="seatButton">C4</button>
                     </div>
                     <div class="flex gap-x-[15px] xl:gap-x-[20px] mt-[20px] xl:mt-[24px]">
                       <button class="seatButton">D1</button>
@@ -375,140 +349,6 @@
                       <button class="seatButton">I4</button>
                     </div>
                   </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="bg-white rounded-[8px]">
-            <div class="p-4">
-              <div class="flex items-center gap-x-[6px] mr-2">
-                <p class="text-primaryText leading-[12px] text-[8px] xl:leading-[16px] xl:text-[12px] font-[600]">Trip
-                  Information</p>
-                <img alt="" class="w-1 h-2" src="../assets/svg/bgBack.svg">
-                <p class="text-secondaryText leading-[12px] text-[8px] xl:leading-[16px] xl:text-[12px] font-[400]">
-                  Boarding & Dropping</p>
-                <img alt="" class="w-1 h-2" src="../assets/svg/bgBack.svg">
-                <p class="text-secondaryText leading-[12px] text-[8px] xl:leading-[16px] xl:text-[12px] font-[400]">Seat &
-                  Fare</p>
-                <img alt="" class="w-1 h-2" src="../assets/svg/bgBack.svg">
-                <p class="text-secondaryText leading-[12px] text-[8px] xl:leading-[16px] xl:text-[12px] font-[400]">
-                  Permissions & Commissions</p>
-                <img alt="" class="w-1 h-2" src="../assets/svg/bgBack.svg">
-                <p class="text-secondaryText leading-[12px] text-[8px] xl:leading-[16px] xl:text-[12px] font-[400]">Assign
-                  Counterman & Agent</p>
-                <img alt="" class="w-1 h-2" src="../assets/svg/bgBack.svg">
-                <p class="text-secondaryText leading-[12px] text-[8px] xl:leading-[16px] xl:text-[12px] font-[400]">Assign
-                  Qouta</p>
-                <img alt="" class="w-1 h-2" src="../assets/svg/bgBack.svg">
-                <p class="text-secondaryText leading-[12px] text-[8px] xl:leading-[16px] xl:text-[12px] font-[400]">Trip
-                  Facilities & Policies</p>
-                <img alt="" class="w-1 h-2" src="../assets/svg/bgBack.svg">
-                <p class="text-secondaryText leading-[12px] text-[8px] xl:leading-[16px] xl:text-[12px] font-[400]">
-                  Preview</p>
-              </div>
-              <p class="text-corporateSecondaryBlue leading-[20px] xl:leading-[24px] text-[14px] xl:text-[16px] font-[500] mt-2">
-                TRIP INFORMATION</p>
-            </div>
-          </div>
-          <div class="bg-white rounded-[8px] mt-[12px] xl:mt-[16px]">
-            <div class="p-4">
-              <p class="text-corporateSecondaryBlue leading-[20px] xl:leading-[24px] text-[14px] xl:text-[16px] font-[500] mb-4">
-                TRIP INFORMATION</p>
-              <div class="flex justify-center items-center gap-x-[10px] xl:gap-x-[16px]">
-                <div class="w-1/4">
-                  <ash-dropdown name="Desh Travels" title="Bus operator"></ash-dropdown>
-                </div>
-                <div class="w-1/4">
-                  <p class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]">Bus
-                    model</p>
-                  <Dropdown v-model="selectedCity" :opti6ns="cities" class="w-full py-[4px] mt-[10px]" optionLabel="name"
-                            placeholder="Select bus"/>
-                </div>
-                <div class="w-1/4">
-                  <p class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]">Bus
-                    reg. no</p>
-                  <input class="createNormalInput" placeholder="Enter bus reg. no" type="text">
-                </div>
-                <div class="w-1/4">
-                  <p class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]">
-                    Coach/Trip number</p>
-                  <input class="createNormalInput" placeholder="Enter coach/trip number" type="text">
-                </div>
-              </div>
-              <div class="flex justify-start items-center gap-x-[10px] xl:gap-x-[16px] mt-[12px] xl:mt-[16px]">
-                <div class="w-1/4">
-                  <p class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]">
-                    Route</p>
-                  <Dropdown v-model="selectedCity" :opti6ns="cities" class="w-full py-[4px] mt-[10px]" optionLabel="name"
-                            placeholder="Select route"/>
-                </div>
-                <div class="w-1/4">
-                  <p class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]">Trip
-                    heading</p>
-                  <input class="createNormalInput" placeholder="Enter trip heading" type="text">
-                </div>
-  
-                <div class="w-1/4">
-                  <p class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]">
-                    Trip auto renewal in</p>
-                  <div
-                      class="w-full mt-[10px] h-[40px] border border-[#DBDBDB] flex justify-between items-center leading-[20px] rounded-[4px] overflow-hidden divide-x">
-                    <div class="flex justify-between items-center">
-                      <div class="flex justify-between items-center w-[115px] xl:w-[180px]">
-                        <select
-                            aria-label="Default select example"
-                            class="form-select appearance-none w-full block px-3 pl-[22px] py-1.5 text-base bg-white rounded focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none">
-                          <option selected>3</option>
-                          <option value="1">One</option>
-                          <option value="2">Two</option>
-                          <option value="3">Three</option>
-                        </select>
-                        <img alt="" class="w-[12px] h-5 ml-4" src="../assets/svg/down_arrow.svg">
-                      </div>
-                    </div>
-                    <p class="p-4 text-[#676769] leading-[20px] text-[14px] font-[400]">Days</p>
-                  </div>
-                </div>
-                <div class="w-1/4"></div>
-              </div>
-            </div>
-            <hr class="mt-[12px] xl:mt-[16px] border-t border-corporateBorder">
-            <div class="p-4">
-              <p class="text-corporateSecondaryBlue leading-[20px] xl:leading-[24px] text-[14px] xl:text-[16px] font-[500]">
-                DATE & TIME</p>
-              <div class="flex justify-center items-center gap-x-[10px] xl:gap-x-[16px] mt-[12px] xl:mt-[16px]">
-                <div class="w-1/4">
-                  <p class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]">
-                    Departure date</p>
-                  <div
-                      class="w-full h-[40px] border border-[#DBDBDB] flex justify-between items-center mt-[10px] leading-[20px] rounded-[4px] px-[20px] xl:px-[8px] overflow-hidden">
-                    <input class="outline-none pl-2 placeholder:text-[#4D4D4F] placeholder:text-[14px] placeholder:leading-[20px]"
-                           placeholder="Select date"
-                           type="text">
-                    <img alt="" class="h-5 w-5" src="../assets/svg/count2.svg">
-                  </div>
-                </div>
-                <div class="w-1/4">
-                  <p class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]">
-                    Departure time</p>
-                  <input class="createNormalInput" placeholder="Enter departure time" type="text">
-                </div>
-                <div class="w-1/4">
-                  <p class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]">
-                    Arrival date</p>
-                  <div
-                      class="w-full h-[40px] border border-[#DBDBDB] flex justify-between items-center mt-[10px] leading-[20px] rounded-[4px] px-[20px] xl:px-[8px] overflow-hidden">
-                    <input class="outline-none pl-2 placeholder:text-[#4D4D4F] placeholder:text-[14px] placeholder:leading-[20px]"
-                           placeholder="Select arrival date"
-                           type="text">
-                    <img alt="" class="h-5 w-5" src="../assets/svg/count2.svg">
-                  </div>
-                </div>
-                <div class="w-1/4">
-                  <p class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]">
-                    Arrival time</p>
-                  <input class="createNormalInput" placeholder="Enter arrival time" type="text">
                 </div>
               </div>
             </div>

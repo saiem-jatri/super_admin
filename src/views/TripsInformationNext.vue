@@ -477,23 +477,3 @@
       }
   }
   </script>
-  
-  <!-- <script>
-    export default {
-      data() {
-        return {
-          checked: true,
-          displayModal: false
-        }
-      },
-    
-      methods: {
-          openModal() {
-              this.displayModal = true;
-          },
-          closeModal() {
-              this.displayModal = false;
-          }
-      }
-    }
-  </script> -->
