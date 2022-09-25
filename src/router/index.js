@@ -30,6 +30,7 @@ import CreateCounter from '@/views/counter_create.vue'
 import THirdPartyCounter from '@/views/thirdparty_counter.vue'
 import Trips from '@/views/trips.vue'
 import TripsInformation from '@/views/tripInformation.vue'
+import TripsInformationNext from '@/views/TripsInformationNext.vue'
 import TripsBoarding from "@/views/trips-boarding.vue"
 import AnotherTripsBoarding from "@/views/another-trips-boarding.vue"
 import TripsAdd from "@/views/tripsAdd.vue"
@@ -242,6 +243,11 @@ const router = createRouter({
             path: '/tripsInformation',
             name: 'TripsInformation',
             component: TripsInformation
+        },
+        {
+            path: '/tripsInformationNext',
+            name: 'TripsInformationNext',
+            component: TripsInformationNext
         },
         {
             path: '/tripsBoarding',
