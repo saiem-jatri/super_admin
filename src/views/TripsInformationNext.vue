@@ -329,9 +329,16 @@
               <p class="text-primaryText ">By clicking “Cancel trip”, it will cancel the trip and the tickets in the trip. This action could not be undone.</p>
             </div>
             <div>
-              <button class="border border-corporateBorder items-center text-corporateError rounded-full px-6 py-3 leading-[12px] text-[10px] xl:leading-[16px] xl:text-[12px]">
+              <button @click="openModal" class="border border-corporateBorder items-center text-corporateError rounded-full px-6 py-3 leading-[12px] text-[10px] xl:leading-[16px] xl:text-[12px]">
               Cancel trip
               </button>
+              <Dialog header="Cancel Trip" v-model:visible="displayModal" :breakpoints="{'960px': '75vw', '640px': '90vw'}" :style="{width: '360px'}" :modal="true">
+                <p class="text-[14px] leading-5 text-[#4D4D4F] text-center">By confirming, the trip will be cancelled and all its ticket. You will not be able to perform any action in this trip further. Are you sure you want to cancel the trip?</p>
+               <div class="mt-[30px] flex gap-x-8 justify-end items-center">
+                  <button @click="closeModal" icon="pi pi-times" class="p-button-text text-[12px] leading-4 font-[500] text-[#1E88E5]"> No, thanks</button>
+                  <button @click="closeModal" icon="pi pi-check" autofocus class="bg-[#F04935] px-6 py-3 text-white text-[12px] leading-4 font-[500] rounded-[100px]">Cancel trip</button>
+              </div>
+            </Dialog>
             </div>
           </div>
         </div>
@@ -450,6 +457,7 @@
     data() {
       return {
         selectedCity: null,
+        displayModal: false,
         cities: [
           {name: 'Own', code: 'NY'},
           {name: 'Third Party', code: 'RM'},
@@ -458,8 +466,34 @@
           // {name: 'Paris', code: 'PRS'}
         ]
       }
-    }
-  
+    },
+    methods: {
+          openModal() {
+              this.displayModal = true;
+          },
+          closeModal() {
+              this.displayModal = false;
+          }
+      }
   }
   </script>
   
+  <!-- <script>
+    export default {
+      data() {
+        return {
+          checked: true,
+          displayModal: false
+        }
+      },
+    
+      methods: {
+          openModal() {
+              this.displayModal = true;
+          },
+          closeModal() {
+              this.displayModal = false;
+          }
+      }
+    }
+  </script> -->
