@@ -384,7 +384,6 @@ export default {
     return {
       checked: true,
       displayModal: false
-
     }
   },
 
@@ -397,8 +396,4 @@ export default {
       },
   }
 }
-
-
-
-
 </script>
