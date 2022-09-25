@@ -166,7 +166,7 @@
   
                 <div class="w-1/4">
                   <p class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]">
-                    Future trip validate</p>
+                    Trip auto renewal in</p>
                   <div
                       class="w-full mt-[10px] h-[40px] border border-[#DBDBDB] flex justify-between items-center leading-[20px] rounded-[4px] overflow-hidden divide-x">
                     <div class="flex justify-between items-center">
@@ -184,8 +184,8 @@
                     </div>
                     <p class="p-4 text-[#676769] leading-[20px] text-[14px] font-[400]">Days</p>
                   </div>
-  
                 </div>
+                <div class="w-1/4"></div>
               </div>
             </div>
             <hr class="mt-[12px] xl:mt-[16px] border-t border-corporateBorder">
@@ -312,12 +312,32 @@
         </div>
 
 
-          <div class="flex justify-center items-center mt-5">
-            <button
-                class="bg-corporate bg-opacity-30 flex gap-x-3 justify-center items-center text-white rounded-full px-5 py-3 mr-4 leading-[12px] text-[10px] xl:leading-[16px] xl:text-[12px]">
+          <div class="flex justify-center items-center my-5">
+            <button class="bg-[#48A43F] flex gap-x-3 justify-center items-center text-white rounded-full px-5 py-3 leading-[12px] text-[10px] xl:leading-[16px] xl:text-[12px]" data-v-0d08c475="">
+                    <span data-v-0d08c475=""><img src="/src/assets/svg/save.svg" alt="" data-v-0d08c475=""></span> Save changes
+                </button>
+            <button class="bg-corporate flex gap-x-3 justify-center items-center text-white rounded-full px-5 py-3 ml-6 leading-[12px] text-[10px] xl:leading-[16px] xl:text-[12px]">
               Next step<span><img alt="" class="h-[9.33px] w-[9.33px]" src="../assets/svg/right-white-arrow.svg"></span>
             </button>
           </div>
+
+
+          <div class="bg-white rounded-[8px]">
+          <div class="p-4 flex justify-between items-center">
+            <div>
+              <p class="text-primaryText leading-[28px] text-[20px] xl:leading-[32px] xl:text-[24px] font-[600] mb-[8px]">Cancel trip</p>
+              <p class="text-primaryText ">By clicking “Cancel trip”, it will cancel the trip and the tickets in the trip. This action could not be undone.</p>
+            </div>
+            <div>
+              <button class="border border-corporateBorder items-center text-corporateError rounded-full px-6 py-3 leading-[12px] text-[10px] xl:leading-[16px] xl:text-[12px]">
+              Cancel trip
+              </button>
+            </div>
+          </div>
+        </div>
+
+
+
         </div>
       </div>
     </div>
