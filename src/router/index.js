@@ -30,9 +30,12 @@ import CreateCounter from '@/views/counter_create.vue'
 import THirdPartyCounter from '@/views/thirdparty_counter.vue'
 import Trips from '@/views/trips.vue'
 import TripsInformation from '@/views/tripInformation.vue'
+import TripsInformationNext from '@/views/TripsInformationNext.vue'
 import TripsBoarding from "@/views/trips-boarding.vue"
 import AnotherTripsBoarding from "@/views/another-trips-boarding.vue"
+import AnotherTripsBoardingNext from "@/views/another-trips-boarding-next.vue"
 import TripsAdd from "@/views/tripsAdd.vue"
+import TripsBusRouteSelect from "@/views/trips-bus-route-select.vue"
 import TripsAddNext from "@/views/tripsAddNext.vue"
 import TripsPermission from '@/views/trip_permission.vue'
 import ManageUserRestriction from '@/views/manage-user-restriction.vue'
@@ -249,6 +252,11 @@ const router = createRouter({
             component: TripsInformation
         },
         {
+            path: '/tripsInformationNext',
+            name: 'TripsInformationNext',
+            component: TripsInformationNext
+        },
+        {
             path: '/tripsBoarding',
             name: 'TripsBoarding',
             component: TripsBoarding
@@ -257,6 +265,11 @@ const router = createRouter({
             path: '/anotherTripsBoarding',
             name: 'AnotherTripsBoarding',
             component: AnotherTripsBoarding
+        },
+        {
+            path: '/anotherTripsBoardingNext',
+            name: 'AnotherTripsBoardingNext',
+            component: AnotherTripsBoardingNext
         },
 
         {
@@ -294,6 +307,11 @@ const router = createRouter({
             path: '/tripsAdd',
             name: 'TripsAdd',
             component: TripsAdd
+        },
+        {
+            path: '/tripsBusRouteSelect',
+            name: 'TripsBusRouteSelect',
+            component: TripsBusRouteSelect
         },
         {
             path: '/tripsPermission',
