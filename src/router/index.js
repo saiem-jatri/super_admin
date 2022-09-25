@@ -33,6 +33,7 @@ import TripsInformation from '@/views/tripInformation.vue'
 import TripsInformationNext from '@/views/TripsInformationNext.vue'
 import TripsBoarding from "@/views/trips-boarding.vue"
 import AnotherTripsBoarding from "@/views/another-trips-boarding.vue"
+import AnotherTripsBoardingNext from "@/views/another-trips-boarding-next.vue"
 import TripsAdd from "@/views/tripsAdd.vue"
 import TripsAddNext from "@/views/tripsAddNext.vue"
 import TripsPermission from '@/views/trip_permission.vue'
@@ -258,6 +259,11 @@ const router = createRouter({
             path: '/anotherTripsBoarding',
             name: 'AnotherTripsBoarding',
             component: AnotherTripsBoarding
+        },
+        {
+            path: '/anotherTripsBoardingNext',
+            name: 'AnotherTripsBoardingNext',
+            component: AnotherTripsBoardingNext
         },
 
         {
