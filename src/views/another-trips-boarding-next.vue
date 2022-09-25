@@ -370,14 +370,14 @@
 
 
           <div class="flex justify-center items-center my-5">
-            <button @click="openModal" class="bg-[#48A43F] flex gap-x-3 justify-center items-center text-white rounded-full px-5 py-3 leading-[12px] text-[10px] xl:leading-[16px] xl:text-[12px]" data-v-0d08c475="">
+            <button @click="openModal1" class="bg-[#48A43F] flex gap-x-3 justify-center items-center text-white rounded-full px-5 py-3 leading-[12px] text-[10px] xl:leading-[16px] xl:text-[12px]" data-v-0d08c475="">
                     <span data-v-0d08c475=""><img src="/src/assets/svg/save.svg" alt="" data-v-0d08c475=""></span> Save changes
             </button>
-            <Dialog header="Update in Main Trip" v-model:visible="displayModal" :breakpoints="{'960px': '75vw', '640px': '90vw'}" :style="{width: '360px'}" :modal="true">
+            <Dialog header="Update in Main Trip" v-model:visible="displayModal1" :breakpoints="{'960px': '75vw', '640px': '90vw'}" :style="{width: '360px'}" :modal="true">
                 <p class="text-[14px] leading-5 text-[#4D4D4F] text-center">By confirming, the changes will be updated in main trip. Are you sure you want to update changes to the main trip?</p>
                <div class="mt-[30px] flex gap-x-8 justify-end items-center">
-                  <button @click="closeModal" icon="pi pi-times" class="p-button-text text-[12px] leading-4 font-[500] text-[#1E88E5]"> No, thanks</button>
-                  <button @click="closeModal" icon="pi pi-check" autofocus class="bg-[#F04935] px-6 py-3 text-white text-[12px] leading-4 font-[500] rounded-[100px]">Update main trip</button>
+                  <button @click="closeModal1" icon="pi pi-times" class="p-button-text text-[12px] leading-4 font-[500] text-[#1E88E5]"> No, thanks</button>
+                  <button @click="closeModal1" icon="pi pi-check" autofocus class="bg-[#F04935] px-6 py-3 text-white text-[12px] leading-4 font-[500] rounded-[100px]">Update main trip</button>
               </div>
             </Dialog>
 
@@ -394,9 +394,16 @@
               <p class="text-primaryText ">By clicking “Cancel trip”, it will cancel the trip and the tickets in the trip. This action could not be undone.</p>
             </div>
             <div>
-              <button class="border border-corporateBorder items-center text-corporateError rounded-full px-6 py-3 leading-[12px] text-[10px] xl:leading-[16px] xl:text-[12px]">
+              <button @click="openModal2" class="border border-corporateBorder items-center text-corporateError rounded-full px-6 py-3 leading-[12px] text-[10px] xl:leading-[16px] xl:text-[12px]">
               Cancel trip
-              </button>
+              </button>  
+              <Dialog header="Cancel Trip" v-model:visible="displayModal2" :breakpoints="{'960px': '75vw', '640px': '90vw'}" :style="{width: '360px'}" :modal="true">
+                <p class="text-[14px] leading-5 text-[#4D4D4F] text-center">By confirming, the trip will be cancelled and all its ticket. You will not be able to perform any action in this trip further. Are you sure you want to cancel the trip?</p>
+               <div class="mt-[30px] flex gap-x-8 justify-end items-center">
+                  <button @click="closeModal2" icon="pi pi-times" class="p-button-text text-[12px] leading-4 font-[500] text-[#1E88E5]"> No, thanks</button>
+                  <button @click="closeModal2" icon="pi pi-check" autofocus class="bg-[#F04935] px-6 py-3 text-white text-[12px] leading-4 font-[500] rounded-[100px]">Cancel trip</button>
+              </div>
+            </Dialog>
             </div>
           </div>
         </div>
@@ -505,17 +512,24 @@
       data() {
         return {
           checked: true,
-          displayModal: false
+          displayModal1: false,
+          displayModal2: false,
         }
       },
     
       methods: {
-          openModal() {
-              this.displayModal = true;
+          openModal1() {
+              this.displayModal1 = true;
           },
-          closeModal() {
-              this.displayModal = false;
+          closeModal1() {
+              this.displayModal1 = false;
           },
+          openModal2() {
+              this.displayModal2 = true;
+          },
+          closeModal2() {
+              this.displayModal2 = false;
+          }
       }
     }
   </script>
