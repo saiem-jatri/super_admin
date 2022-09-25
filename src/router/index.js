@@ -39,10 +39,6 @@ import ManageUserRestriction from '@/views/manage-user-restriction.vue'
 import ManageUserRestrictionFilled from '@/views/manage-user-restriction-filled.vue'
 import TripsQuotaFilled from '@/views/trips-quota-filled.vue'
 import TripsModal from '@/views/trips-modal.vue'
-import Agent from '@/views/agent.vue'
-import AddAgent from '@/views/add-agent.vue'
-import AddAgentNext from '@/views/add-agent-next.vue'
-import AddAgentSave from '@/views/add-agent-save.vue'
 import TripsAgent from '@/views/trips_agent.vue'
 import TripsQuota from '@/views/trips_quota.vue'
 import TripFacilities from '@/views/trip_facilities.vue'
@@ -56,6 +52,13 @@ import UserCreateCounterman from '@/views/user_create_counterman.vue'
 import UserCreateAgent from '@/views/user_create_agent.vue'
 import UserCreateCustomercare from '@/views/user_create_customercare.vue'
 import MigrateTrip from '@/views/migrate_trip.vue'
+import Agent from '@/views/agent.vue'
+import AddAgent from '@/views/add-agent.vue'
+import AddAgentNext from '@/views/add-agent-next.vue'
+import AddAgentSave from '@/views/add-agent-save.vue'
+import TripExpenseConfiguration from '@/views/tripExpenseConfiguration.vue'
+import TripExpenseConfigurationFilled from '@/views/TripExpenseConfigurationFilled.vue'
+import TripExpenseConfigurationFinal from '@/views/TripExpenseConfigurationFinal.vue'
 import MigrateSelect from '@/views/migrate_select_seat.vue'
 import MigrateSameTicketOwner from '@/views/migrate_same_ticket_owner.vue'
 
@@ -393,15 +396,32 @@ const router = createRouter({
             component: AddAgent,
         },
         {
-            path: '/addAgentNext',
-            name: 'AddAgentNext',
-            component: AddAgentNext,
-        },
-        {
-            path: '/addAgentSave',
-            name: 'AddAgentSave',
-            component: AddAgentSave,
-        }
+          path: '/addAgentNext',
+          name: 'AddAgentNext',
+          component: AddAgentNext,
+      },
+      {
+        path: '/addAgentSave',
+        name: 'AddAgentSave',
+        component: AddAgentSave,
+      },
+
+    //Trip Expense Configaration
+    {
+        path: '/tripExpenseConfiguration',
+        name: 'TripExpenseConfiguration',
+        component: TripExpenseConfiguration
+    },
+    {
+        path: '/tripExpenseConfigurationFilled',
+        name: 'TripExpenseConfigurationFilled',
+        component: TripExpenseConfigurationFilled
+    },
+    {
+        path: '/tripExpenseConfigurationFinal',
+        name: 'TripExpenseConfigurationFinal',
+        component: TripExpenseConfigurationFinal
+    },
 
     ]
 

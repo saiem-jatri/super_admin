@@ -327,7 +327,7 @@
               <button class="w-full border border-dashed border-corporateSecondaryBlue flex justify-center items-center bg-[#EFF7FD] rounded-[4px]">
                 <div class="flex justify-center items-center gap-x-[11px] py-[12px]"><img alt="" class="w-[10px] h-[10px]" src="/src/assets/svg/createPlus.svg">
                     <p class="text-primaryText font-[600] leading-[20px] text-[14px]">Add another agent</p></div>
-                </button>
+              </button>
             </div>
             <hr class="border-t border-corporateBorder">
             <div class="px-[16px] py-[20px] w-full flex justify-between items-center">
