@@ -59,6 +59,8 @@ import AddAgentSave from '@/views/add-agent-save.vue'
 import TripExpenseConfiguration from '@/views/tripExpenseConfiguration.vue'
 import TripExpenseConfigurationFilled from '@/views/TripExpenseConfigurationFilled.vue'
 import TripExpenseConfigurationFinal from '@/views/TripExpenseConfigurationFinal.vue'
+import MigrateSelect from '@/views/migrate_select_seat.vue'
+import MigrateSameTicketOwner from '@/views/migrate_same_ticket_owner.vue'
 
 const router = createRouter({
     history: createWebHistory(import.meta.env.BASE_URL),
@@ -352,6 +354,16 @@ const router = createRouter({
             component: MigrateTrip,
         },
         {
+            path: '/migrateSelect',
+            name: 'MigrateSelect',
+            component: MigrateSelect,
+        },
+        {
+            path: '/migrateSame',
+            name: 'MigrateSameTicketOwner',
+            component: MigrateSameTicketOwner,
+        },
+        {
             path: '/tripsAddNext',
             name: 'TripsAddNext',
             component: TripsAddNext
@@ -366,7 +378,12 @@ const router = createRouter({
             name: 'ManageUserRestrictionFilled',
             component: ManageUserRestrictionFilled,
         },
-        
+        {
+            path: '/tripsQuotaFilled',
+            name: 'TripsQuotaFilled',
+            component: TripsQuotaFilled,
+        },
+
         //Agent Start
         {
             path: '/agent',
