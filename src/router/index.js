@@ -63,6 +63,9 @@ import MigrateSelect from '@/views/migrate_select_seat.vue'
 import MigrateSameTicketOwner from '@/views/migrate_same_ticket_owner.vue'
 import MigrateTicket from '@/views/migrate_ticket.vue'
 import MigrateTicketSelect from '@/views/migrate_tikcet_select_seat.vue'
+import Invoice from '@/views/invoice.vue'
+import InvoiceCurrentbill from '@/views/invoice_currentbill.vue'
+import InvoiceGeneratebill from '@/views/invoice_generatebill.vue'
 
 const router = createRouter({
     history: createWebHistory(import.meta.env.BASE_URL),
@@ -419,7 +422,22 @@ const router = createRouter({
             name: 'AddAgentSave',
             component: AddAgentSave,
         },
-
+        //invoice started
+        {
+            path: '/invoice',
+            name: 'Invoice',
+            component: Invoice,
+        },
+        {
+            path: '/invoiceCurrentbill',
+            name: 'InvoiceCurrentbill',
+            component: InvoiceCurrentbill,
+        },
+        {
+            path: '/invoiceGeneratebill',
+            name: 'InvoiceGeneratebill',
+            component: InvoiceGeneratebill,
+        },
         //Trip Expense Configaration
         {
             path: '/tripExpenseConfiguration',

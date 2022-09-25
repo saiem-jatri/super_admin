@@ -42,7 +42,7 @@ body {
 }
 
 .companyTableHead {
-    @apply bg-[#4D4D4F] text-white text-center leading-[12px] xl:leading-[14px] text-[9px] xl:leading-[16px] xl:text-[11px] font-[500] border-r border-[#DBDBDB]
+    @apply bg-[#4D4D4F] text-white text-center leading-[12px] xl:leading-[14px] text-[9px] xl:leading-[16px] xl:text-[11px] font-[500] border-r border-[#DBDBDB] uppercase
 }
 
 .companyEditButton {
