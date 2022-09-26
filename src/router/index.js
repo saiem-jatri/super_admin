@@ -36,6 +36,7 @@ import AnotherTripsBoarding from "@/views/another-trips-boarding.vue"
 import AnotherTripsBoardingNext from "@/views/another-trips-boarding-next.vue"
 import TripsAdd from "@/views/tripsAdd.vue"
 import TripsBusRouteSelect from "@/views/trips-bus-route-select.vue"
+import TripsBusRouteSelectNext from "@/views/trips-bus-route-select-next.vue"
 import TripsAddNext from "@/views/tripsAddNext.vue"
 import TripsPermission from '@/views/trip_permission.vue'
 import ManageUserRestriction from '@/views/manage-user-restriction.vue'
@@ -302,6 +303,11 @@ const router = createRouter({
             path: '/tripsBusRouteSelect',
             name: 'TripsBusRouteSelect',
             component: TripsBusRouteSelect
+        },
+        {
+            path: '/tripsBusRouteSelectNext',
+            name: 'TripsBusRouteSelectNext',
+            component: TripsBusRouteSelectNext
         },
         {
             path: '/tripsPermission',

@@ -285,7 +285,7 @@
                   </div>
   
                   <div>
-                    <button class="w-full border border-dashed border-[#B6B6B6] hidden justify-center items-center bg-corporateBg rounded-[4px] mt-4 mb-[18px]">
+                    <button class="w-full border border-dashed border-[#B6B6B6] flex justify-center items-center bg-corporateBg rounded-[4px] mt-4 mb-[18px]">
                      <div class="flex justify-center items-center gap-x-[11px] py-[12px]">
                      <img src="../assets/svg/createPlus.svg" class="w-[10px] h-[10px]" alt="">
                      <p class="text-primaryText font-[600] leading-[20px] text-[14px]">Add seats</p>
@@ -349,7 +349,8 @@
 
                       <div class="flex items-center gap-x-[22px] mt-[20px] xl:mt-[24px] relative z-[100000]" :class=" seatSelectStatus ? 'transform scale-[1.2]' : 'transform scale-100'">
                        <div class="flex gap-x-[15px] xl:gap-x-[20px]" :class="seatSelectStatus ? 'z-[100000]': '' ">
-                        <button class="relative" :class=" seatSelectStatus ? 'noSeatButton' : 'seatButton'">{{seatSelectStatus ? '+' : 'H1'}}
+                        <button class="relative" :class=" seatSelectStatus ? 'noSeatButton' : 'lockSeatButton'">
+                          <img class="m-auto" src="../assets/svg/lock.svg" alt="Lock">
                           <img src="../assets/svg/bg_close.svg" alt="Close" class="absolute top-[-6px] right-[-6px] opacity-0" :class=" seatSelectStatus ? 'opacity-100 hidden' : 'seatButton'">
                         </button>
                         <button class="relative" :class=" seatSelectStatus ? 'whiteSeatButton' : 'seatButton'">H2
@@ -399,7 +400,7 @@
                     </button>
                     </div>
 
-                    <button class="w-full border border-dashed border-[#B6B6B6] hidden justify-center items-center bg-corporateBg rounded-[4px] mt-[18px]">
+                    <button class="w-full border border-dashed border-[#B6B6B6] flex justify-center items-center bg-corporateBg rounded-[4px] mt-[18px]">
                       <div class="flex justify-center items-center gap-x-[11px] py-[12px]">
                         <img src="../assets/svg/createPlus.svg" class="w-[10px] h-[10px]" alt="">
                         <p class="text-primaryText font-[600] leading-[20px] text-[14px]">Add seats</p>
