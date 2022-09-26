@@ -102,7 +102,15 @@ body {
 }
 
 .seatButton {
-    @apply w-[25px] xl:w-[30px] h-[20px] xl:h-[24px] text-center text-white bg-corporate rounded-[4px] leading-[16px] xl:leading-[20px] text-[12px] xl:text-[14px]
+    @apply w-[25px] xl:w-[30px] h-[20px] xl:h-[24px] text-center text-white bg-corporate rounded-sm leading-[16px] xl:leading-[20px] text-[12px] xl:text-[14px]
+}
+
+.whiteSeatButton { 
+    @apply w-[40px] xl:w-[45px] h-[25px] xl:h-[30px] text-center text-corporate bg-white rounded-sm leading-[16px] xl:leading-[20px] text-[12px] xl:text-[14px]
+}
+
+.noSeatButton { 
+    @apply w-[40px] xl:w-[45px] h-[25px] xl:h-[30px] text-center text-[#676769] bg-[#EDEDED] rounded-sm leading-[16px] xl:leading-[20px] text-[12px] xl:text-[14px]
 }
 
 .migrateSeat {
