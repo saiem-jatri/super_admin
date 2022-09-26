@@ -365,7 +365,7 @@
                           <img src="../assets/svg/bg_close.svg" alt="Close" class="absolute top-[-6px] right-[-6px] opacity-0" :class=" seatSelectStatus ? 'opacity-100' : 'seatButton'">
                         </button>
                       </div>
-                      <button @click="extraSeat" :class="seatSelectStatus ? 'hidden' : ''">
+                      <button @click="extraSeat" :class="seatSelectStatus ? 'hidden' : 'absolute right-[-40px]'">
                         <img src="../assets/svg/close-cirlce.svg" alt="Close">
                       </button>
                     </div>
@@ -388,7 +388,7 @@
                           <img src="../assets/svg/bg_close.svg" alt="Close" class="absolute top-[-6px] right-[-6px] opacity-0" :class=" seatSelectStatus ? 'opacity-100' : 'seatButton'">
                         </button>
                       </div>
-                      <button @click="extraSeat" :class="seatSelectStatus ? 'hidden' : ''">
+                      <button @click="extraSeat" :class="seatSelectStatus ? 'hidden' : 'absolute right-[-40px]'">
                         <img src="../assets/svg/close-cirlce.svg" alt="Close">
                       </button>
                     </div>
