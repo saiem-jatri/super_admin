@@ -350,7 +350,7 @@
                       <div class="flex items-center gap-x-[22px] mt-[20px] xl:mt-[24px] relative z-[100000]" :class=" seatSelectStatus ? 'transform scale-[1.2]' : 'transform scale-100'">
                        <div class="flex gap-x-[15px] xl:gap-x-[20px]" :class="seatSelectStatus ? 'z-[100000]': '' ">
                         <button class="relative" :class=" seatSelectStatus ? 'noSeatButton' : 'seatButton'">{{seatSelectStatus ? '+' : 'H1'}}
-                          <img src="../assets/svg/bg_close.svg" alt="Close" class="absolute top-[-6px] right-[-6px] opacity-0 hidden" :class=" seatSelectStatus ? 'opacity-100' : 'seatButton'">
+                          <img src="../assets/svg/bg_close.svg" alt="Close" class="absolute top-[-6px] right-[-6px] opacity-0" :class=" seatSelectStatus ? 'opacity-100 hidden' : 'seatButton'">
                         </button>
                         <button class="relative" :class=" seatSelectStatus ? 'whiteSeatButton' : 'seatButton'">H2
                           <img src="../assets/svg/bg_close.svg" alt="Close" class="absolute top-[-6px] right-[-6px] opacity-0" :class=" seatSelectStatus ? 'opacity-100' : 'seatButton'">
