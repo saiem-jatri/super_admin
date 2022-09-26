@@ -6,11 +6,11 @@ body {
 }
 
 .menu {
-    @apply py-[8px] w-full text-black leading-[20px] text-[14px] font-[500] border-b border-[#DBDBDB] block cursor-pointer
+    @apply py-[8px] w-full text-black leading-[20px] text-[14px] font-[500] border-b border-[#DBDBDB] block cursor-pointer last:border-b-0
 }
 
 .dropDownMenu {
-    @apply py-[8px] w-full text-black leading-[20px] text-[14px] font-[500] border-b border-[#DBDBDB] cursor-pointer flex justify-between
+    @apply py-[8px] w-full text-black leading-[20px] text-[14px] font-[500]  cursor-pointer flex justify-between
 }
 
 .menuSection {

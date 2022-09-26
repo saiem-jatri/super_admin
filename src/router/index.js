@@ -69,6 +69,12 @@ import MigrateTicketSelect from '@/views/migrate_tikcet_select_seat.vue'
 import Invoice from '@/views/invoice.vue'
 import InvoiceCurrentbill from '@/views/invoice_currentbill.vue'
 import InvoiceGeneratebill from '@/views/invoice_generatebill.vue'
+import Offer from '@/views/offer.vue'
+import OfferAndPromotion from '@/views/offer_promotion.vue'
+import OfferAdd from '@/views/offer_addNew.vue'
+import OfferNew from '@/views/new_offer.vue'
+import OfferAddFilled from '@/views/offer_addNew_filled.vue'
+import OfferAndPromotionTable from '@/views/offer_promotion_table.vue'
 
 const router = createRouter({
     history: createWebHistory(import.meta.env.BASE_URL),
@@ -219,22 +225,6 @@ const router = createRouter({
             component: THirdPartyCounter
         },
 
-        //    Trips started
-        {
-            path: '/trips',
-            name: 'Trips',
-            component: Trips
-        },
-        {
-            path: '/tripsInformation',
-            name: 'TripsInformation',
-            component: TripsInformation
-        },
-        {
-            path: '/tripsBoarding',
-            name: 'TripsBoarding',
-            component: TripsBoarding
-        },
         //    Trips started
         {
             path: '/trips',
@@ -455,6 +445,37 @@ const router = createRouter({
             path: '/invoiceGeneratebill',
             name: 'InvoiceGeneratebill',
             component: InvoiceGeneratebill,
+        },
+        //offer and promotion started
+        {
+            path: '/offer',
+            name: 'Offer',
+            component: Offer,
+        },
+        {
+            path: '/offerAndPromotion',
+            name: 'OfferAndPromotion',
+            component: OfferAndPromotion,
+        },
+        {
+            path: '/offerAdd',
+            name: 'OfferAdd',
+            component: OfferAdd,
+        },
+        {
+            path: '/offerNew',
+            name: 'OfferNew',
+            component: OfferNew,
+        },
+        {
+            path: '/offerNewFilled',
+            name: 'OfferAddFilled',
+            component: OfferAddFilled,
+        },
+        {
+            path: '/offerAndPromotionTable',
+            name: 'OfferAndPromotionTable',
+            component: OfferAndPromotionTable,
         },
         //Trip Expense Configaration
         {
