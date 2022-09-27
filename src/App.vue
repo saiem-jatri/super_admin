@@ -10,7 +10,7 @@ import TopBarNav from './components/TopBarNav.vue';
     <!-- side nav bar end -->
     
     <div class="h-screen w-full overflow-y-auto bg-[#F7F7F7]"> 
-      <TopBarNav></TopBarNav>
+      <!-- <TopBarNav></TopBarNav> -->
       <RouterView/>
     </div>
 

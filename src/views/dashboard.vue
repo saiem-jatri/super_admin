@@ -1,5 +1,25 @@
 <template>
- 
+ <!-- Top nav bar start-->
+ <div class="bg-white h-[72px] sticky top-0 border-b border-[#DBDBDB] z-10">
+        <div class="flex justify-between items-center">
+          <p class="p-6 text-[#151414] leading-[28px] text-[20px] font-[600]">DashBoard</p>
+          <div
+              class="w-[230px] xl:w-[270px] h-[40px] border border-[#DBDBDB] flex justify-center items-center leading-[20px] rounded-[4px] pl-14 xl:pl-[9px] overflow-hidden">
+            <img alt="" class="h-5 w-5" src="../assets/svg/search.svg">
+            <input class="outline-none pl-2 placeholder:text-[#4D4D4F] placeholder:text-[14px] placeholder:leading-[20px]"
+                   placeholder="PNR or mobile number"
+                   type="text">
+          </div>
+          <div class="flex gap-x-2 p-4 justify-center items-center mr-6 ">
+            <img alt="" class="h-[30px] xl:h-[40px] w-[30px] xl:w-[40px] rounded-full"
+                 src="../assets/person/person1.png">
+            <p class="text-[#151414] leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[500]">Mostafa
+              Mamun Emon</p>
+            <img alt="" class="w-[12px] h-[6px]" src="../assets/person/downArrow.svg">
+          </div>
+        </div>
+      </div>
+      <!-- top nav bar end -->
       <!-- body start-->
       <div class="p-[30px]">
         <p class="xl:leading-[36px] xl:text-[28px] leading-[30px] text-[24px] font-[500]">Sales Summary </p>

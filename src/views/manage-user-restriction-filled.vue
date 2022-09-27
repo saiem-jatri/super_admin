@@ -1,38 +1,4 @@
 <template>
-    <div class="flex bg-corporateBg">
-      <!-- Side Nav bar -->
-      <div class="h-screen w-[280px] bg-white border-r border-[#DBDBDB]">
-        <div class="flex flex-col justify-between">
-          <div class="px-[10px] flex justify-center items-center py-[30px]">
-            <img src="@/assets/imgs/Logo.png" alt="" class="w-[66px] h-[32px]">
-          </div>
-          <div class="px-[10px] overflow-y-auto h-[calc(100vh-150px)]">
-            <a class="menu">Dashboard</a>
-            <a class="menu">Bus Company</a>
-            <a class="menu">Routes</a>
-            <a class="menu">Counter</a>
-            <a class="bg-corporate w-full text-white p-1 rounded-sm block cursor-pointer">Trips</a>
-            <a class="menu">User</a>
-            <a class="menu">Agent</a>
-            <a class="menu">Migrate Trips</a>
-            <a class="menu">Migrate Tickets</a>
-            <a class="menu">Trip Expense Configaration</a>
-            <a class="dropDownMenu flex justify-center items-center">Reports <span><img src="../assets/svg/down_arrow.svg" alt="" class="w-[12px] h-[7px]"></span></a>
-            <a class="dropDownMenu flex justify-center items-center">Invoice <span><img src="../assets/svg/down_arrow.svg" alt="" class="w-[12px] h-[7px]"></span></a>
-            <a class="menu">Offer & Promotion</a>
-            <a class="dropDownMenu flex justify-center items-center">Action in Bulk <span><img src="../assets/svg/down_arrow.svg" alt="" class="w-[12px] h-[7px]"></span></a>
-            <p class="menuSection ">CONFIGARATION</p>
-            <a class="menu">Bus</a>
-            <a class="menu">Stopage</a>
-            <a class="menu">Challan Configaration</a>
-            <a class=" py-[8px] w-full text-black leading-[20px] text-[14px] font-[500] block cursor-pointer">Fees</a>
-          </div>
-          <button class="p-4 flex justify-center items-center gap-x-4 border-t border-[#DBDBDB]">  <img src="../assets/svg/logout.svg" class="h-[16px] w-[16px]" alt=""> Logout </button>
-        </div>
-  
-      </div>
-      <!-- side nav bar end -->
-      <div class="h-screen w-full overflow-y-auto bg-[#F7F7F7]">
         <!-- Top nav bar start-->
       <div class="bg-white h-[72px] sticky top-0 border-b border-[#DBDBDB] z-10 px-[32px]">
         <div class="flex justify-between">
@@ -298,11 +264,8 @@
                 </button>
              </div>
             </div>
-
          </div>
         </div>
-      </div>
-    </div>
   </template>
   
   
