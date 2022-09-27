@@ -20,7 +20,7 @@
             Reports <span><img alt="" class="w-[12px] h-[7px]" src="../assets/svg/down_arrow.svg"></span>
           </router-link> -->
 
-          <ul class="border-b border-corporateBorder pb-1">
+          <ul class="border-b border-corporateBorder">
             <dropdown-menu height="min-h-[138px]" title="Reports">
                 <router-link to="" :class="$route.path === '' ? 'activeMenu' : 'menu border-b border-dashed p-[10px]' ">Operator Wise Sales</router-link>
                 <router-link to="" :class="$route.path === '' ? 'activeMenu' : 'menu border-b border-dashed p-[10px]' ">Counter Wise Sales</router-link>
@@ -39,7 +39,7 @@
             Invoice <span><img alt="" class="w-[12px] h-[7px]" src="../assets/svg/down_arrow.svg"></span>
           </router-link> -->
 
-          <ul class="border-b border-corporateBorder pb-1">
+          <ul class="border-b border-corporateBorder">
             <dropdown-menu height="min-h-[138px]" title="Invoice">
                 <router-link to="" :class="$route.path === '' ? 'activeMenu' : 'menu border-b border-dashed p-[10px]' ">Preodic Due Bill</router-link>
                 <router-link to="/invoiceCurrentbill" :class="$route.path === '/invoiceCurrentbill' ? 'activeMenu px-2' : 'menu border-b border-dashed p-[10px]' ">Current Due</router-link>
@@ -54,7 +54,7 @@
             Action in Bulk <span><img alt="" class="w-[12px] h-[7px]" src="../assets/svg/down_arrow.svg"></span>
           </router-link> -->
 
-          <ul class="border-b border-corporateBorder pb-1">
+          <ul class="border-b border-corporateBorder">
             <dropdown-menu height="min-h-[138px]" title="Action in Bulk">
                 <router-link to="" :class="$route.path === '' ? 'activeMenu' : 'menu border-b border-dashed p-[10px]' ">Fare Update</router-link>
                 <router-link to="" :class="$route.path === '' ? 'activeMenu' : 'menu border-b border-dashed p-[10px]' ">Update Stoppage Time</router-link>

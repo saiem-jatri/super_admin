@@ -1,14 +1,14 @@
 <template>
   <div class="font-semibold text-sm list-none block">
     <div
-        class="flex items-center justify-between p-[8px] w-full text-black leading-[20px] text-[14px] font-[500] cursor-pointer"
+        class="flex items-center justify-between p-2 w-full text-black leading-[20px] text-[14px] font-[500] cursor-pointer"
         @click="toggleShow">
       {{ title }}
       <img alt=""
            class="w-[12px] h-[7px]"
            src="../assets/svg/down_arrow.svg">
     </div>
-    <ul :class="this.class" class="overflow-hidden dropdown-menu font-normal">
+    <ul :class="this.open" class="overflow-hidden dropdown-menu font-normal">
       <slot></slot>
     </ul>
   </div>
@@ -17,6 +17,7 @@
 <style scoped>
 .dropdown-menu {
   transition: 300ms;
+  padding-left: 8px;
 }
 
 svg.rotate-90 {
@@ -37,7 +38,7 @@ export default {
     }
   },
   computed: {
-    class() {
+    open() {
       return this.showMenu ? this.height : "h-0";
     }
   }

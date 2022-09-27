@@ -5,15 +5,15 @@ body {
     @apply font-inter
 }
 
-.menu:not(first-child) {
-    @apply p-[8px] w-full text-black leading-[20px] text-[14px] font-[500] border-b border-[#DBDBDB] block cursor-pointer last:border-b-0
+.menu {
+    @apply p-2 w-full text-black leading-[20px] text-[14px] font-[500] border-b border-[#DBDBDB] block cursor-pointer last:border-b-0
 }
 .activeMenu {
     @apply bg-corporate w-full text-white p-1 px-2 rounded block cursor-pointer text-[14px]
 }
 
 .dropDownMenu {
-    @apply py-[8px] w-full text-black leading-[20px] text-[14px] font-[500]  cursor-pointer flex justify-between
+    @apply py-2 w-full text-black leading-[20px] text-[14px] font-[500] cursor-pointer flex justify-between
 }
 
 .menuSection {
@@ -46,6 +46,10 @@ body {
 
 .companyTableHead {
     @apply bg-[#4D4D4F] text-white text-center leading-[12px] xl:leading-[14px] text-[9px] xl:leading-[16px] xl:text-[11px] font-[500] border-r border-[#DBDBDB] uppercase
+}
+
+.topBarAddButton {
+    @apply bg-corporate flex gap-x-3 justify-center items-center text-white rounded-full px-4 py-2 mr-4 leading-[12px] text-[10px] xl:leading-[16px] xl:text-[12px]
 }
 
 .companyEditButton {

@@ -8,7 +8,10 @@
             <input type="text" class="outline-none pl-2 placeholder:text-[#4D4D4F] placeholder:text-[14px] placeholder:leading-[20px]" placeholder="PNR or mobile number">
           </div>
           <div class="flex gap-x-2 p-4 justify-center items-center mr-6 ">
-            <button class="bg-corporate flex gap-x-3 justify-center items-center text-white rounded-full px-4 py-2 mr-4 leading-[12px] text-[10px] xl:leading-[16px] xl:text-[12px]"><span><img src="../assets/svg/plus.svg" class="h-[9.33px] w-[9.33px]" alt=""></span>Add Company</button>
+            <router-link to="/create" class="topBarAddButton">
+              <span><img src="../assets/svg/plus.svg" class="h-[9.33px] w-[9.33px]" alt=""></span>Add Company
+            </router-link>
+            
             <img src="../assets/person/person1.png" alt="" class="h-[30px] xl:h-[40px] w-[30px] xl:w-[40px] rounded-full">
             <p class="text-[#151414] leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[500]">Mostafa Mamun Emon</p>
             <img src="../assets/person/downArrow.svg" alt="" class="w-[12px] h-[6px]">
