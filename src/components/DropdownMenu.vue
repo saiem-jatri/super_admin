@@ -1,7 +1,7 @@
 <template>
   <div class="font-semibold text-sm list-none block">
     <div
-        class="flex items-center justify-between py-[8px] w-full text-black leading-[20px] text-[14px] font-[500] cursor-pointer"
+        class="flex items-center justify-between p-[8px] w-full text-black leading-[20px] text-[14px] font-[500] cursor-pointer"
         @click="toggleShow">
       {{ title }}
       <img alt=""

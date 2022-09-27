@@ -5,7 +5,7 @@
           <img alt="" class="w-[66px] h-[32px]" src="@/assets/imgs/Logo.png">
         </div>
         <div class="px-[10px] overflow-y-auto h-[calc(100vh-150px)]">
-          <router-link to="/dashboard" :class="$route.path === '/dashboard' ? 'activeMenu' : 'menu' ">Dashboard</router-link>
+          <router-link to="/dashboard" :class="$route.path === '/dashboard' ? 'activeMenu' : 'menu mt-0' ">Dashboard</router-link>
           <router-link to="/company" :class="$route.path === '/company' ? 'activeMenu' : 'menu' ">Bus Company</router-link>
           <router-link to="/routes" :class="$route.path === '/routes' ? 'activeMenu' : 'menu' ">Routes</router-link>
           <router-link to="/counter" :class="$route.path === '/counter' ? 'activeMenu' : 'menu' ">Counter</router-link>
@@ -21,7 +21,7 @@
           </router-link> -->
 
           <ul class="border-b border-corporateBorder pb-1">
-            <dropdown-menu height="min-h-[145px]" title="Reports">
+            <dropdown-menu height="min-h-[138px]" title="Reports">
                 <router-link to="" :class="$route.path === '' ? 'activeMenu' : 'menu border-b border-dashed p-[10px]' ">Operator Wise Sales</router-link>
                 <router-link to="" :class="$route.path === '' ? 'activeMenu' : 'menu border-b border-dashed p-[10px]' ">Counter Wise Sales</router-link>
                 <router-link to="" :class="$route.path === '' ? 'activeMenu' : 'menu border-b border-dashed p-[10px]' ">User Wise Sales</router-link>
@@ -40,7 +40,7 @@
           </router-link> -->
 
           <ul class="border-b border-corporateBorder pb-1">
-            <dropdown-menu height="min-h-[145px]" title="Invoice">
+            <dropdown-menu height="min-h-[138px]" title="Invoice">
                 <router-link to="" :class="$route.path === '' ? 'activeMenu' : 'menu border-b border-dashed p-[10px]' ">Preodic Due Bill</router-link>
                 <router-link to="/invoiceCurrentbill" :class="$route.path === '/invoiceCurrentbill' ? 'activeMenu px-2' : 'menu border-b border-dashed p-[10px]' ">Current Due</router-link>
                 <router-link to="/invoiceGeneratebill" :class="$route.path === '/invoiceGeneratebill' ? 'activeMenu px-2' : 'menu border-b border-dashed p-[10px]' ">Generate Bill</router-link>
@@ -55,7 +55,7 @@
           </router-link> -->
 
           <ul class="border-b border-corporateBorder pb-1">
-            <dropdown-menu height="min-h-[145px]" title="Action in Bulk">
+            <dropdown-menu height="min-h-[138px]" title="Action in Bulk">
                 <router-link to="" :class="$route.path === '' ? 'activeMenu' : 'menu border-b border-dashed p-[10px]' ">Fare Update</router-link>
                 <router-link to="" :class="$route.path === '' ? 'activeMenu' : 'menu border-b border-dashed p-[10px]' ">Update Stoppage Time</router-link>
                 <router-link to="" :class="$route.path === '' ? 'activeMenu' : 'menu border-b border-dashed p-[10px]' ">Trip Actions</router-link>
@@ -65,7 +65,7 @@
             </dropdown-menu>
           </ul>
 
-          <p class="menuSection ">CONFIGARATION</p>
+          <p class="menuSection">CONFIGARATION</p>
           <router-link to="" :class="$route.path === '' ? 'activeMenu' : 'menu' ">Bus</router-link>
           <router-link to="" :class="$route.path === '' ? 'activeMenu' : 'menu' ">Stopage</router-link>
           <router-link to="" :class="$route.path === '' ? 'activeMenu' : 'menu' ">Challan Configaration</router-link>
