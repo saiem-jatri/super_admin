@@ -1,274 +1,274 @@
 <template>
-      <!-- Top nav bar start-->
-      <div class="bg-white h-[72px] sticky top-0 border-b border-[#DBDBDB] z-10 px-[32px]">
-        <div class="flex justify-between">
-          <div class="flex justify-center items-center gap-x-[32px]">
+  <!-- Top nav bar start-->
+  <div class="bg-white h-[72px] sticky top-0 border-b border-[#DBDBDB] z-10 px-[32px]">
+    <div class="flex justify-between">
+      <div class="flex justify-center items-center gap-x-[32px]">
 
-            <button class="flex justify-center items-center gap-x-[10px]">
-              <img alt="" class="w-[12px] h-[12px]" src="../assets/svg/Back.svg">
-              <p class="text-primaryText leading-[12px] text-[10px] xl:leading-[16px] xl:text-[12px] font-[500]">
-                Back</p>
-            </button>
-            <div class="flex flex-col gap-y-[4px]">
-              <p class="lg:leading-[16px] xl:leading-[28px] lg:text-[14px] xl:text-[20px] font-[600] text-primaryText">
-                Add Offer</p>
-              <div class="flex justify-center items-center gap-x-[6px]">
-                <p class="text-secondaryText leading-[12px] text-[8px] xl:leading-[16px] xl:text-[12px] font-[400]">
-                  Company</p>
-                <img alt="" class="w-1 h-2" src="../assets/svg/bgBack.svg">
-                <p class="text-secondaryText leading-[12px] text-[8px] xl:leading-[16px] xl:text-[12px] font-[400]">
-                  Offers & Promotion</p>
-                <img alt="" class="w-1 h-2" src="../assets/svg/bgBack.svg">
-                <p class="text-secondaryText leading-[12px] text-[8px] xl:leading-[16px] xl:text-[12px] font-[400]">
-                  Offers</p>
-                <img alt="" class="w-1 h-2" src="../assets/svg/bgBack.svg">
-                <p class="text-secondaryText leading-[12px] text-[8px] xl:leading-[16px] xl:text-[12px] font-[400]">
-                  Add offer</p>
-              </div>
-            </div>
+        <button class="flex justify-center items-center gap-x-[10px]">
+          <img alt="" class="w-[12px] h-[12px]" src="../assets/svg/Back.svg">
+          <p class="text-primaryText leading-[12px] text-[10px] xl:leading-[16px] xl:text-[12px] font-[500]">
+            Back</p>
+        </button>
+        <div class="flex flex-col gap-y-[4px]">
+          <p class="lg:leading-[16px] xl:leading-[28px] lg:text-[14px] xl:text-[20px] font-[600] text-primaryText">
+            Add Offer</p>
+          <div class="flex justify-center items-center gap-x-[6px]">
+            <p class="text-secondaryText leading-[12px] text-[8px] xl:leading-[16px] xl:text-[12px] font-[400]">
+              Company</p>
+            <img alt="" class="w-1 h-2" src="../assets/svg/bgBack.svg">
+            <p class="text-secondaryText leading-[12px] text-[8px] xl:leading-[16px] xl:text-[12px] font-[400]">
+              Offers & Promotion</p>
+            <img alt="" class="w-1 h-2" src="../assets/svg/bgBack.svg">
+            <p class="text-secondaryText leading-[12px] text-[8px] xl:leading-[16px] xl:text-[12px] font-[400]">
+              Offers</p>
+            <img alt="" class="w-1 h-2" src="../assets/svg/bgBack.svg">
+            <p class="text-secondaryText leading-[12px] text-[8px] xl:leading-[16px] xl:text-[12px] font-[400]">
+              Add offer</p>
           </div>
-          <div class="flex gap-x-[24px] p-4 w-1/2 justify-end items-center pr-2 ">
-            <!--            <input type="text" class="w-[270px] h-[40px] border border-[#DBDBDB] placeholder:text-[#4D4D4F] placeholder:text-[14px] leading-[20px] rounded-[4px] pl-8 focus:outline-none" placeholder="PNR or mobile number">-->
-            <!--            <img src="../assets/svg/search.svg" class="h-5 w-5 absolute left-[242px]" alt="">-->
+        </div>
+      </div>
+      <div class="flex gap-x-[24px] p-4 w-1/2 justify-end items-center pr-2 ">
+        <!--            <input type="text" class="w-[270px] h-[40px] border border-[#DBDBDB] placeholder:text-[#4D4D4F] placeholder:text-[14px] leading-[20px] rounded-[4px] pl-8 focus:outline-none" placeholder="PNR or mobile number">-->
+        <!--            <img src="../assets/svg/search.svg" class="h-5 w-5 absolute left-[242px]" alt="">-->
+        <div
+            class="w-[200px] h-[30px] xl:w-[270px] xl:h-[40px] border border-[#DBDBDB] flex justify-center items-center leading-[20px] rounded-[4px] pl-[9px] overflow-hidden">
+          <img alt="" class="h-2 w-2 xl:h-5 xl:w-5" src="../assets/svg/search.svg">
+          <input
+              class="outline-none pl-32 xl:pl-2 placeholder:text-[#4D4D4F] placeholder:text-[8px] placeholder:leading-[16px] xl:placeholder:text-[14px] xl:placeholder:leading-[20px]"
+              placeholder="PNR or mobile number"
+              type="text">
+        </div>
+        <div class="flex justify-center items-center gap-x-1">
+          <img alt="" class="h-[30px]  w-[30px] xl:h-[40px] xl:w-[40px] rounded-full"
+               src="../assets/person/person1.png">
+          <p class="text-[#151414] leading-[16px] text-[10px] xl:leading-[24px] xl:text-[16px] font-[500]">Mostafa
+            Mamun Emon</p>
+          <img alt="" class="w-[12px] h-[6px]" src="../assets/person/downArrow.svg">
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- top nav bar end -->
+  <!-- body start-->
+  <div class="px-[30px] py-[24px]">
+
+    <!--        card-->
+    <div class="mt-[16px] bg-white rounded-[10px]">
+      <div class="p-4">
+        <div class="flex justify-center items-center gap-x-[10px] xl:gap-x-[16px]">
+          <div class="w-1/4">
+            <p class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]">
+              Bus operator</p>
+            <Dropdown v-model="selectedCity" :opti6ns="cities" class="w-full py-[4px] mt-[10px]" optionLabel="name"
+                      placeholder="Desh Travels"/>
+          </div>
+          <div class="w-1/4">
+            <p class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]">
+              Discount amount</p>
+            <input class="createNormalInput" placeholder="Enter amount" type="text">
+          </div>
+          <div class="w-1/4">
+            <p class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]">Jatri
+              discount</p>
+            <input class="createNormalInput" placeholder="Enter amount" type="text">
+          </div>
+          <div class="w-1/4">
+            <p class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]">
+              Operator discount</p>
+            <input class="createNormalInput" placeholder="Enter amount" type="text">
+          </div>
+        </div>
+        <div class="flex justify-center items-center gap-x-[10px] xl:gap-x-[16px] mt-[12px] xl:mt-[16px]">
+          <div class="w-1/4 relative">
             <div
-                class="w-[200px] h-[30px] xl:w-[270px] xl:h-[40px] border border-[#DBDBDB] flex justify-center items-center leading-[20px] rounded-[4px] pl-[9px] overflow-hidden">
-              <img alt="" class="h-2 w-2 xl:h-5 xl:w-5" src="../assets/svg/search.svg">
+                class="absolute bottom-2 left-36 z-50 h-[28px] w-[30px] bg-[#1E88E5] text-white flex justify-center items-center">
+              <p>+2</p>
+            </div>
+            <p class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]">
+              Route</p>
+            <Dropdown v-model="selectedCity" :opti6ns="cities" class="w-full py-[4px] mt-[10px]" optionLabel="name"
+                      placeholder="Dhaka - Rangpur"/>
+          </div>
+          <div class="w-1/4">
+            <p class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]">
+              Start date</p>
+            <div
+                class="w-full h-[40px] border border-[#DBDBDB] flex justify-between items-center mt-[10px] leading-[20px] rounded-[4px] px-[20px] xl:px-[8px] overflow-hidden">
               <input
-                  class="outline-none pl-32 xl:pl-2 placeholder:text-[#4D4D4F] placeholder:text-[8px] placeholder:leading-[16px] xl:placeholder:text-[14px] xl:placeholder:leading-[20px]"
-                  placeholder="PNR or mobile number"
+                  class="outline-none pl-2 placeholder:text-[#4D4D4F] placeholder:text-[14px] placeholder:leading-[20px]"
+                  placeholder="Select date"
                   type="text">
+              <img alt="" class="h-5 w-5" src="../assets/svg/count2.svg">
             </div>
-            <div class="flex justify-center items-center gap-x-1">
-              <img alt="" class="h-[30px]  w-[30px] xl:h-[40px] xl:w-[40px] rounded-full"
-                   src="../assets/person/person1.png">
-              <p class="text-[#151414] leading-[16px] text-[10px] xl:leading-[24px] xl:text-[16px] font-[500]">Mostafa
-                Mamun Emon</p>
-              <img alt="" class="w-[12px] h-[6px]" src="../assets/person/downArrow.svg">
+          </div>
+          <div class="w-1/4">
+            <p class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]">
+              Expiration date</p>
+            <div
+                class="w-full h-[40px] border border-[#DBDBDB] flex justify-between items-center mt-[10px] leading-[20px] rounded-[4px] px-[20px] xl:px-[8px] overflow-hidden">
+              <input
+                  class="outline-none pl-2 placeholder:text-[#4D4D4F] placeholder:text-[14px] placeholder:leading-[20px]"
+                  placeholder="Select date"
+                  type="text">
+              <img alt="" class="h-5 w-5" src="../assets/svg/count2.svg">
+            </div>
+          </div>
+          <div class="w-1/4">
+            <p class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]">
+              Service type</p>
+            <Dropdown v-model="selectedCity" :opti6ns="cities" class="w-full py-[4px] mt-[10px]" optionLabel="name"
+                      placeholder="Select service type"/>
+          </div>
+        </div>
+        <div class="flex justify-start items-center gap-x-[10px] xl:gap-x-[16px] mt-[12px] xl:mt-[16px]">
+          <div class="w-1/4">
+            <p class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]">Usage
+              limit for all</p>
+            <input class="createNormalInput" placeholder="Enter amount" type="text">
+          </div>
+          <div class="w-1/4">
+            <p class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]">
+              Only first time usage</p>
+            <Dropdown v-model="selectedCity" :opti6ns="cities" class="w-full py-[4px] mt-[10px]" optionLabel="name"
+                      placeholder="Yes"/>
+          </div>
+          <div class="w-1/4">
+            <p class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]">Usage
+              limit per user</p>
+            <input class="createNormalInput" placeholder="Enter amount" type="text">
+          </div>
+        </div>
+      </div>
+      <!--          offer access-->
+      <div class="p-4">
+        <div class="rounded-[4px] border border-corporateBorder px-4 py-4">
+          <p class="leading-[20px] xl:leading-[24px] text-[14px] xl:text-[16px] text-primaryText font-[600]">Offer
+            access</p>
+          <div class="flex justify-start gap-x-[43px]">
+            <div class="form-group mt-3 flex">
+              <input id="fare" type="checkbox">
+              <label
+                  class="text-primaryText leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px] font-[400]"
+                  for="fare">Jatri Web</label>
+            </div>
+            <div class="form-group mt-3 flex">
+              <input id="fare" type="checkbox">
+              <label
+                  class="text-primaryText leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px] font-[400]"
+                  for="fare">Jatri App</label>
+            </div>
+            <div class="form-group mt-3 flex">
+              <input id="fare" type="checkbox">
+              <label
+                  class="text-primaryText leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px] font-[400]"
+                  for="fare">Jatri CS</label>
+            </div>
+            <div class="form-group mt-3 flex">
+              <input id="fare" type="checkbox">
+              <label
+                  class="text-primaryText leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px] font-[400]"
+                  for="fare">Jatri API</label>
+            </div>
+            <div class="form-group mt-3 flex">
+              <input id="fare" type="checkbox">
+              <label
+                  class="text-primaryText leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px] font-[400]"
+                  for="fare">Counter</label>
+            </div>
+            <div class="form-group mt-3 flex">
+              <input id="fare" type="checkbox">
+              <label
+                  class="text-primaryText leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px] font-[400]"
+                  for="fare">Third party counter</label>
             </div>
           </div>
         </div>
       </div>
-      <!-- top nav bar end -->
-      <!-- body start-->
-      <div class="px-[30px] py-[24px]">
 
-        <!--        card-->
-        <div class="mt-[16px] bg-white rounded-[10px]">
-          <div class="p-4">
-            <div class="flex justify-center items-center gap-x-[10px] xl:gap-x-[16px]">
-              <div class="w-1/4">
-                <p class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]">
-                  Bus operator</p>
-                <Dropdown v-model="selectedCity" :opti6ns="cities" class="w-full py-[4px] mt-[10px]" optionLabel="name"
-                          placeholder="Desh Travels"/>
-              </div>
-              <div class="w-1/4">
-                <p class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]">
-                  Discount amount</p>
-                <input class="createNormalInput" placeholder="Enter amount" type="text">
-              </div>
-              <div class="w-1/4">
-                <p class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]">Jatri
-                  discount</p>
-                <input class="createNormalInput" placeholder="Enter amount" type="text">
-              </div>
-              <div class="w-1/4">
-                <p class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]">
-                  Operator discount</p>
-                <input class="createNormalInput" placeholder="Enter amount" type="text">
-              </div>
-            </div>
-            <div class="flex justify-center items-center gap-x-[10px] xl:gap-x-[16px] mt-[12px] xl:mt-[16px]">
-              <div class="w-1/4 relative">
-                <div
-                    class="absolute bottom-2 left-36 z-50 h-[28px] w-[30px] bg-[#1E88E5] text-white flex justify-center items-center">
-                  <p>+2</p>
-                </div>
-                <p class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]">
-                  Route</p>
-                <Dropdown v-model="selectedCity" :opti6ns="cities" class="w-full py-[4px] mt-[10px]" optionLabel="name"
-                          placeholder="Dhaka - Rangpur"/>
-              </div>
-              <div class="w-1/4">
-                <p class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]">
-                  Start date</p>
-                <div
-                    class="w-full h-[40px] border border-[#DBDBDB] flex justify-between items-center mt-[10px] leading-[20px] rounded-[4px] px-[20px] xl:px-[8px] overflow-hidden">
-                  <input
-                      class="outline-none pl-2 placeholder:text-[#4D4D4F] placeholder:text-[14px] placeholder:leading-[20px]"
-                      placeholder="Select date"
-                      type="text">
-                  <img alt="" class="h-5 w-5" src="../assets/svg/count2.svg">
-                </div>
-              </div>
-              <div class="w-1/4">
-                <p class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]">
-                  Expiration date</p>
-                <div
-                    class="w-full h-[40px] border border-[#DBDBDB] flex justify-between items-center mt-[10px] leading-[20px] rounded-[4px] px-[20px] xl:px-[8px] overflow-hidden">
-                  <input
-                      class="outline-none pl-2 placeholder:text-[#4D4D4F] placeholder:text-[14px] placeholder:leading-[20px]"
-                      placeholder="Select date"
-                      type="text">
-                  <img alt="" class="h-5 w-5" src="../assets/svg/count2.svg">
-                </div>
-              </div>
-              <div class="w-1/4">
-                <p class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]">
-                  Service type</p>
-                <Dropdown v-model="selectedCity" :opti6ns="cities" class="w-full py-[4px] mt-[10px]" optionLabel="name"
-                          placeholder="Select service type"/>
-              </div>
-            </div>
-            <div class="flex justify-start items-center gap-x-[10px] xl:gap-x-[16px] mt-[12px] xl:mt-[16px]">
-              <div class="w-1/4">
-                <p class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]">Usage
-                  limit for all</p>
-                <input class="createNormalInput" placeholder="Enter amount" type="text">
-              </div>
-              <div class="w-1/4">
-                <p class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]">
-                  Only first time usage</p>
-                <Dropdown v-model="selectedCity" :opti6ns="cities" class="w-full py-[4px] mt-[10px]" optionLabel="name"
-                          placeholder="Yes"/>
-              </div>
-              <div class="w-1/4">
-                <p class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]">Usage
-                  limit per user</p>
-                <input class="createNormalInput" placeholder="Enter amount" type="text">
-              </div>
-            </div>
-          </div>
-          <!--          offer access-->
-          <div class="p-4">
-            <div class="rounded-[4px] border border-corporateBorder px-4 py-4">
-              <p class="leading-[20px] xl:leading-[24px] text-[14px] xl:text-[16px] text-primaryText font-[600]">Offer
-                access</p>
-              <div class="flex justify-start gap-x-[43px]">
-                <div class="form-group mt-3 flex">
-                  <input id="fare" type="checkbox">
-                  <label
-                      class="text-primaryText leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px] font-[400]"
-                      for="fare">Jatri Web</label>
-                </div>
-                <div class="form-group mt-3 flex">
-                  <input id="fare" type="checkbox">
-                  <label
-                      class="text-primaryText leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px] font-[400]"
-                      for="fare">Jatri App</label>
-                </div>
-                <div class="form-group mt-3 flex">
-                  <input id="fare" type="checkbox">
-                  <label
-                      class="text-primaryText leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px] font-[400]"
-                      for="fare">Jatri CS</label>
-                </div>
-                <div class="form-group mt-3 flex">
-                  <input id="fare" type="checkbox">
-                  <label
-                      class="text-primaryText leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px] font-[400]"
-                      for="fare">Jatri API</label>
-                </div>
-                <div class="form-group mt-3 flex">
-                  <input id="fare" type="checkbox">
-                  <label
-                      class="text-primaryText leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px] font-[400]"
-                      for="fare">Counter</label>
-                </div>
-                <div class="form-group mt-3 flex">
-                  <input id="fare" type="checkbox">
-                  <label
-                      class="text-primaryText leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px] font-[400]"
-                      for="fare">Third party counter</label>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="p-4">
-            <div class="w-full">
-              <p class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]">Offer
-                title</p>
-              <input class="createNormalInput" placeholder="Enter offer title" type="text">
-            </div>
-          </div>
-          <div class="p-4">
-            <div class="w-full">
-              <p class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]">
-                Description</p>
-              <textarea id=""
-                        class="w-full mt-[10px] border border-corporateBorder rounded-[4px] p-[8px] focus:outline-none placeholder:text-[#676769] placeholder:leading-[20px] placeholder:text-[14px]"
-                        cols="10" name=""
-                        placeholder="Enter offer description"
-                        rows="5"></textarea>
-            </div>
-          </div>
-          <div class="p-4">
-            <div class="rounded-[4px] px-4">
-              <hr class="border-t border-dashed border-corporateBorder mt-1">
-              <div class="pt-[8px] pb-[8px]">
-                <div class="flex divide-x divide-dashed divide-corporateBorder">
-                  <div class="w-1/2">
-                    <div class="py-[8px] pr-[24px]">
-                      <p class="leading-[20px] xl:leading-[24px] text-[14px] xl:text-[16px] font-[600] text-primaryText">
-                        Banner</p>
-                      <div>
-                        <div
-                            class="w-full h-[40px] bg-[#EFF7FD] border border-dashed border-corporateSecondaryBlue mt-[10px] rounded-[4px] flex justify-center items-center">
-                          <div class="flex justify-between w-full px-4">
-                            <div class="flex gap-x-2">
-                              <p class="leading-[20px] xl:leading-[24px] text-[14px] xl:text-[16px] text-primaryText">
-                                File name</p>
-                              <a class="" href="#"><img alt="" class="w-[13px] h-[13px] "
-                                                        src="../assets/svg/border-cross.svg">
-                              </a>
-                            </div>
-                            <p class="text-[#E0293B] leading-[20px] text-[14px] font-[600] border-b border-[#E0293B]">
-                              Replace file</p>
-                          </div>
+      <div class="p-4">
+        <div class="w-full">
+          <p class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]">Offer
+            title</p>
+          <input class="createNormalInput" placeholder="Enter offer title" type="text">
+        </div>
+      </div>
+      <div class="p-4">
+        <div class="w-full">
+          <p class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]">
+            Description</p>
+          <textarea id=""
+                    class="w-full mt-[10px] border border-corporateBorder rounded-[4px] p-[8px] focus:outline-none placeholder:text-[#676769] placeholder:leading-[20px] placeholder:text-[14px]"
+                    cols="10" name=""
+                    placeholder="Enter offer description"
+                    rows="5"></textarea>
+        </div>
+      </div>
+      <div class="p-4">
+        <div class="rounded-[4px] px-4">
+          <hr class="border-t border-corporateBorder mt-1">
+          <div class="pt-[8px] pb-[8px]">
+            <div class="flex divide-x divide-dashed divide-corporateBorder">
+              <div class="w-1/2">
+                <div class="py-[8px] pr-[24px]">
+                  <p class="leading-[20px] xl:leading-[24px] text-[14px] xl:text-[16px] font-[600] text-primaryText">
+                    Banner</p>
+                  <div>
+                    <div
+                        class="w-full h-[40px] bg-[#EFF7FD] border border-dashed border-corporateSecondaryBlue mt-[10px] rounded-[4px] flex justify-center items-center">
+                      <div class="flex justify-between w-full px-4">
+                        <div class="flex gap-x-2">
+                          <p class="leading-[20px] xl:leading-[24px] text-[14px] xl:text-[16px] text-primaryText">
+                            File name</p>
+                          <a class="" href="#"><img alt="" class="w-[13px] h-[13px] "
+                                                    src="../assets/svg/border-cross.svg">
+                          </a>
                         </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="w-1/2">
-                    <div class="py-2 pl-[16px]">
-                      <p class="leading-[20px] xl:leading-[24px] text-[14px] xl:text-[16px] font-[600] text-primaryText">
-                        File preview</p>
-                      <div class="h-full w-full flex justify-center items-center">
-                        <img alt="" src="../assets/svg/offer.png">
+                        <p class="text-[#E0293B] leading-[20px] text-[14px] font-[600] border-b border-[#E0293B]">
+                          Replace file</p>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
-
-            </div>
-          </div>
-          <hr class="border-t border-corporateBorder">
-          <div class="px-[16px] py-[20px] w-full flex justify-between items-center">
-            <div class="flex gap-x-[16px] items-center">
-              <p class="text-primaryText font-[600] leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] ">
-                Status</p>
-              <div class="flex justify-center items-center">
-                <button
-                    class="bg-[#48A43F] w-[90px] xl:w-[110px] text-white leading-[16px] xl:leading-[20px] text-[12px] xl:text-[14px] flex justify-center items-center font-[400] h-[40px] rounded-l-[4px]">
-                  Active
-                </button>
-                <button
-                    class="bg-[#F7F7F7] w-[90px] xl:w-[110px] text-primaryText leading-[16px] xl:leading-[20px] text-[12px] xl:text-[14px] border border-[#DBDBDB] flex justify-center items-center font-[400] h-[40px] rounded-r-[4px]">
-                  Inactive
-                </button>
+              <div class="w-1/2">
+                <div class="py-2 pl-[16px]">
+                  <p class="leading-[20px] xl:leading-[24px] text-[14px] xl:text-[16px] font-[600] text-primaryText">
+                    File preview</p>
+                  <div class="h-full w-full flex justify-center items-center mt-4">
+                    <img alt="" src="../assets/svg/offer.png">
+                  </div>
+                </div>
               </div>
             </div>
-            <div class="flex gap-x-1 items-center">
-              <button
-                  class="flex justify-center items-center text-white leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[600] bg-corporate bg-opacity-30 rounded-full px-[20px] py-[11px] xl:px-[24px] xl:py-[13px]">
-                Create promo
-              </button>
-            </div>
           </div>
+
         </div>
       </div>
+      <hr class="border-t border-corporateBorder">
+      <div class="px-[16px] py-[20px] w-full flex justify-between items-center">
+        <div class="flex gap-x-[16px] items-center">
+          <p class="text-primaryText font-[600] leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] ">
+            Status</p>
+          <div class="flex justify-center items-center">
+            <button
+                class="bg-[#48A43F] w-[90px] xl:w-[110px] text-white leading-[16px] xl:leading-[20px] text-[12px] xl:text-[14px] flex justify-center items-center font-[400] h-[40px] rounded-l-[4px]">
+              Active
+            </button>
+            <button
+                class="bg-[#F7F7F7] w-[90px] xl:w-[110px] text-primaryText leading-[16px] xl:leading-[20px] text-[12px] xl:text-[14px] border border-[#DBDBDB] flex justify-center items-center font-[400] h-[40px] rounded-r-[4px]">
+              Inactive
+            </button>
+          </div>
+        </div>
+        <div class="flex gap-x-1 items-center">
+          <button
+              class="flex justify-center items-center text-white leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[600] bg-corporate bg-opacity-30 rounded-full px-[20px] py-[11px] xl:px-[24px] xl:py-[13px]">
+            Create promo
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
 </template>
 
 <style>

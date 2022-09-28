@@ -76,6 +76,13 @@ import OfferAdd from '@/views/offer_addNew.vue'
 import OfferNew from '@/views/new_offer.vue'
 import OfferAddFilled from '@/views/offer_addNew_filled.vue'
 import OfferAndPromotionTable from '@/views/offer_promotion_table.vue'
+import ActionFareUpdate from '@/views/actionbulk_fareupdate.vue'
+import UpdateStopageTime from '@/views/actionbulk_updatestopagetime.vue'
+import TripAction from '@/views/actionbulk_tripaction.vue'
+import OfflineAccess from '@/views/actionbulk_offlineaccess.vue'
+import DateRangePermission from '@/views/actionbulk_daterangePermission.vue'
+import QuotaRelease from '@/views/actionbulk_quotaRelease.vue'
+import DateRangePermissionEdit from '@/views/actionbulk_daterangePermissionEdit.vue'
 
 const router = createRouter({
     history: createWebHistory(import.meta.env.BASE_URL),
@@ -498,6 +505,44 @@ const router = createRouter({
             path: '/tripExpenseConfigurationFinal',
             name: 'TripExpenseConfigurationFinal',
             component: TripExpenseConfigurationFinal
+        },
+        //    Action in bulk started
+
+        {
+            path: '/actionFareUpdate',
+            name: 'ActionFareUpdate',
+            component: ActionFareUpdate
+        },
+        {
+            path: '/updateStopageTime',
+            name: 'UpdateStopageTime',
+            component: UpdateStopageTime
+        },
+        {
+            path: '/tripAction',
+            name: 'TripAction',
+            component: TripAction
+        },
+        {
+            path: '/offlineAccess',
+            name: 'OfflineAccess',
+            component: OfflineAccess
+        },
+
+        {
+            path: '/dateRangePermission',
+            name: 'DateRangePermission',
+            component: DateRangePermission
+        },
+        {
+            path: '/dateRangePermissionEdit',
+            name: 'DateRangePermissionEdit',
+            component: DateRangePermissionEdit
+        },
+        {
+            path: '/quotaRelease',
+            name: 'QuotaRelease',
+            component: QuotaRelease
         },
 
     ]
