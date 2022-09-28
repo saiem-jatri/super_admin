@@ -11,6 +11,7 @@ import companyCreateOwner from '@/views/bus_company_create_owner.vue'
 import companyCreateRoute from '@/views/bus_company_create_route.vue'
 import companyCreateCounter from '@/views/bus_company_create_counter.vue'
 import companyManageTrip from '@/views/bus_company_manage_trips.vue'
+import Counterman from '@/views/counterman.vue'
 import companyCreateCounterman from '@/views/bus_company_create_counterman.vue'
 import companyCreateSupervisor from '@/views/bus_company_create_supervisor.vue'
 import companyCreateDriver from '@/views/bus_company_create_driver.vue'
@@ -145,6 +146,11 @@ const router = createRouter({
             path: '/createSupervisor',
             name: 'companyCreateSupervisor',
             component: companyCreateSupervisor
+        },
+        {
+            path: '/counterman',
+            name: 'Counterman',
+            component: Counterman
         },
         {
             path: '/createCounterMan',
