@@ -149,7 +149,7 @@
                 </button>
               </div>
             </div>
-            <router-link to="/viaCityFilled" class="corporateButton">Create routes</router-link>
+            <router-link to="/busCompanyManageViaCityFilled" class="corporateButton">Create routes</router-link>
           </div>
         </div>
       </div>
