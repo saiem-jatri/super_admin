@@ -144,10 +144,7 @@
                 </button>
               </div>
             </div>
-            <button
-                class="flex justify-center items-center text-white leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[600] bg-corporate bg-opacity-30 rounded-full px-[20px] py-[11px] xl:px-[24px] xl:py-[13px]">
-              Create company
-            </button>
+            <router-link to="/viaCity" class="corporateButton">Create routes</router-link>
           </div>
         </div>
       </div>

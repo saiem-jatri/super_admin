@@ -6,6 +6,7 @@ import BusCompany from '@/views/bus_company.vue'
 import CreateCompany from '@/views/create_company.vue'
 import CreateFilled from '@/views/create_filled.vue'
 import CompanyOwner from '@/views/bus_company_owner.vue'
+import TabsRoute from '@/views/tabs-route.vue'
 import CompanyTicket from '@/views/bus_company_Ticket.vue'
 import companyCreateOwner from '@/views/bus_company_create_owner.vue'
 import companyCreateRoute from '@/views/bus_company_create_route.vue'
@@ -116,6 +117,11 @@ const router = createRouter({
             path: '/companyOwner',
             name: 'companyOwner',
             component: CompanyOwner
+        },
+        {
+            path: '/tabsRoute',
+            name: 'TabsRoute',
+            component: TabsRoute
         },
         {
             path: '/companyTicket',

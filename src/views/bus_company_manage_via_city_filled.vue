@@ -167,10 +167,12 @@
                 </button>
               </div>
             </div>
-            <button
-                class="flex justify-center items-center text-white leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[600] bg-corporate rounded-full px-[20px] py-[11px] xl:px-[24px] xl:py-[13px]">
-              Create routes
-            </button>
+            <div class="flex gap-x-2 items-center">
+              <button class="lessOpacityCorporateButton">Create counterman</button>
+              <button class="flex justify-center items-center gap-x-[10px] corporateButton">
+                 <img src="../assets/svg/save_change.svg" alt="">Save changes
+              </button>
+            </div>
           </div>
         </div>
       </div>
