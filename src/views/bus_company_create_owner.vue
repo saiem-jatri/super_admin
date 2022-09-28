@@ -191,7 +191,11 @@
                 <button class="bg-[#F7F7F7] w-[90px] xl:w-[110px] text-primaryText leading-[16px] xl:leading-[20px] text-[12px] xl:text-[14px] border border-[#DBDBDB] flex justify-center items-center font-[400] h-[40px] rounded-r-[4px]">Inactive</button>
               </div>
             </div>
-            <button class="lessOpacityCorporateButton">Create owner</button>
+            <div class="flex gap-x-2 items-center">
+                <button class="lessOpacityCorporateButton">Create owner</button>
+                <button class="flex justify-center items-center gap-x-[10px] corporateButton">
+                  <img src="../assets/svg/save_change.svg" alt="">Save changes</button>
+              </div>
           </div>
         </div>
         </div>
