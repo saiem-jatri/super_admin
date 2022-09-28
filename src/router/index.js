@@ -10,7 +10,8 @@ import BusCompanyTabsRoute from '@/views/bus-company-tabs-route.vue'
 import CompanyTicket from '@/views/bus_company_Ticket.vue'
 import companyCreateOwner from '@/views/bus_company_create_owner.vue'
 import busCompanyCreateRoute from '@/views/bus_company_create_route.vue'
-import companyCreateCounter from '@/views/bus_company_create_counter.vue'
+import BusCompanyTabsCounter from '@/views/bus-company-tabs-counter.vue'
+import BusCompanyCreateCounter from '@/views/bus_company_create_counter.vue'
 import companyManageTrip from '@/views/bus_company_manage_trips.vue'
 import Counterman from '@/views/counterman.vue'
 import companyCreateCounterman from '@/views/bus_company_create_counterman.vue'
@@ -139,9 +140,14 @@ const router = createRouter({
             component: busCompanyCreateRoute
         },
         {
-            path: '/createCounter',
-            name: 'companyCreateCounter',
-            component: companyCreateCounter
+            path: '/busCompanyTabsCounter',
+            name: 'BusCompanyTabsCounter',
+            component: BusCompanyTabsCounter
+        },
+        {
+            path: '/busCompanyCreateCounter',
+            name: 'BusCompanyCreateCounter',
+            component: BusCompanyCreateCounter
         },
         {
             path: '/manageTrip',
