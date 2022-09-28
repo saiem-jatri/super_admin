@@ -53,7 +53,6 @@
       <!-- top nav bar end -->
       <!-- body start-->
       <div class="px-[30px] py-[24px]">
-
         <!--        card-->
         <div class="mt-[16px] bg-white rounded-[10px]">
           <div class="p-4">
