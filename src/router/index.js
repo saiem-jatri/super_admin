@@ -6,19 +6,23 @@ import BusCompany from '@/views/bus_company.vue'
 import CreateCompany from '@/views/create_company.vue'
 import CreateFilled from '@/views/create_filled.vue'
 import CompanyOwner from '@/views/bus_company_owner.vue'
+import BusCompanyTabsRoute from '@/views/bus-company-tabs-route.vue'
 import CompanyTicket from '@/views/bus_company_Ticket.vue'
 import companyCreateOwner from '@/views/bus_company_create_owner.vue'
-import companyCreateRoute from '@/views/bus_company_create_route.vue'
-import companyCreateCounter from '@/views/bus_company_create_counter.vue'
+import busCompanyCreateRoute from '@/views/bus_company_create_route.vue'
+import BusCompanyTabsCounter from '@/views/bus-company-tabs-counter.vue'
+import BusCompanyCreateCounter from '@/views/bus_company_create_counter.vue'
 import companyManageTrip from '@/views/bus_company_manage_trips.vue'
+import Counterman from '@/views/counterman.vue'
 import companyCreateCounterman from '@/views/bus_company_create_counterman.vue'
+import Staffs from '@/views/staffs.vue'
 import companyCreateSupervisor from '@/views/bus_company_create_supervisor.vue'
 import companyCreateDriver from '@/views/bus_company_create_driver.vue'
 import companyCreateHelper from '@/views/bus_company_create_helper.vue'
 import companyManageCreateDriver from '@/views/bus_company_manage_create_driver.vue'
-import viacity from '@/views/bus_company_manage_via_city.vue'
+import busCompanyManageViaCity from '@/views/bus_company_manage_via_city.vue'
+import busCompanyManageViaCityFilled from '@/views/bus_company_manage_via_city_filled.vue'
 import companyManageCompany from '@/views/bus_company_manage_company.vue'
-import viacityFilled from '@/views/bus_company_manage_via_city_filled.vue'
 import companyManageOwner from '@/views/bus_company_manage_owner.vue'
 import Routes from '@/views/routes.vue'
 import RouteCreate from '@/views/route_create.vue'
@@ -123,6 +127,11 @@ const router = createRouter({
             component: CompanyOwner
         },
         {
+            path: '/busCompanyTabsRoute',
+            name: 'BusCompanyTabsRoute',
+            component: BusCompanyTabsRoute
+        },
+        {
             path: '/companyTicket',
             name: 'companyTicket',
             component: CompanyTicket
@@ -133,14 +142,19 @@ const router = createRouter({
             component: companyCreateOwner
         },
         {
-            path: '/createRoute',
-            name: 'createRoute',
-            component: companyCreateRoute
+            path: '/busCompanyCreateRoute',
+            name: 'busCompanyCreateRoute',
+            component: busCompanyCreateRoute
         },
         {
-            path: '/createCounter',
-            name: 'companyCreateCounter',
-            component: companyCreateCounter
+            path: '/busCompanyTabsCounter',
+            name: 'BusCompanyTabsCounter',
+            component: BusCompanyTabsCounter
+        },
+        {
+            path: '/busCompanyCreateCounter',
+            name: 'BusCompanyCreateCounter',
+            component: BusCompanyCreateCounter
         },
         {
             path: '/manageTrip',
@@ -154,9 +168,19 @@ const router = createRouter({
             component: companyCreateSupervisor
         },
         {
+            path: '/counterman',
+            name: 'Counterman',
+            component: Counterman
+        },
+        {
             path: '/createCounterMan',
             name: 'companyCreateCounterman',
             component: companyCreateCounterman
+        },
+        {
+            path: '/staffs',
+            name: 'Staffs',
+            component: Staffs
         },
         {
             path: '/createDriver',
@@ -174,14 +198,14 @@ const router = createRouter({
             component: companyManageCreateDriver
         },
         {
-            path: '/viaCity',
-            name: 'viacity',
-            component: viacity
+            path: '/busCompanyManageViaCity',
+            name: 'busCompanyManageViaCity',
+            component: busCompanyManageViaCity
         },
         {
-            path: '/viaCityFilled',
-            name: 'viacityFilled',
-            component: viacityFilled
+            path: '/busCompanyManageViaCityFilled',
+            name: 'busCompanyManageViaCityFilled',
+            component: busCompanyManageViaCityFilled
         },
         {
             path: '/manageCounter',

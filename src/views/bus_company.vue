@@ -70,8 +70,11 @@
                 </td>
                 <td class="border-r border-[#DBDBDB]">
                   <div class="py-[5px] px-[18px] flex justify-center items-center gap-x-[16px]">
-                      <button class="companyEditButton"><span><img src="../assets/svg/edit.svg" class="w-3 h-3" alt=""></span>Edit</button>
-                    <button class="companyManageButton"><span><img src="../assets/svg/manage.svg" class="w-3 h-3" alt=""></span>Manage</button>
+                    <button class="companyEditButton"><span><img src="../assets/svg/edit.svg" class="w-3 h-3" alt=""></span>Edit</button>
+                    <router-link to="/companyOwner" class="companyManageButton">
+                       <span><img src="../assets/svg/manage.svg" class="w-3 h-3" alt=""></span>Manage
+                    </router-link>
+                    <!-- <button class="companyManageButton"><span><img src="../assets/svg/manage.svg" class="w-3 h-3" alt=""></span>Manage</button> -->
                   </div>
                 </td>
               </tr>

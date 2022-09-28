@@ -534,10 +534,7 @@
                 </button>
               </div>
             </div>
-            <button
-                class="flex justify-center items-center text-white leading-[20px] text-[14px] font-[600] bg-corporate bg-opacity-30 rounded-full px-[24px] py-[13px]">
-              Create company
-            </button>
+            <router-link to="/createFilled" class="lessOpacityCorporateButton">Create company</router-link>
           </div>
         </div>
       </div>

@@ -604,7 +604,7 @@
                 <button class="bg-[#F7F7F7] w-[110px] text-primaryText leading-[20px] text-[14px] border border-[#DBDBDB] flex justify-center items-center font-[400] h-[40px] rounded-r-[4px]">Inactive</button>
               </div>
             </div>
-            <button class="flex justify-center items-center text-white leading-[20px] text-[14px] font-[600] bg-corporate rounded-full px-[24px] py-[13px]">Create company</button>
+            <button class="corporateButton">Create company</button>
           </div>
         </div>
       </div>

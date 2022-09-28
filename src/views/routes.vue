@@ -21,8 +21,7 @@
       <!-- top nav bar end -->
       <!-- body start-->
       <div class="px-[30px] py-[24px]">
-<!--        tab start-->
-<!--        card-->
+      <!--        card-->
         <div class="bg-white">
             <div class="p-4 flex justify-between items-center">
               <div class="flex justify-start items-center gap-x-4 w-full">

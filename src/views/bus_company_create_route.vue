@@ -11,16 +11,14 @@
             </button>
             <div class="flex flex-col gap-y-[4px]">
               <p class="lg:leading-[16px] xl:leading-[28px] lg:text-[14px] xl:text-[20px] font-[600] text-primaryText">
-                Company</p>
+                Create Routes</p>
               <div class="flex justify-center items-center gap-x-[6px]">
-                <p class="text-secondaryText leading-[12px] text-[8px] xl:leading-[16px] xl:text-[12px] font-[400]">Desh
-                  Travels Limited</p>
+                <p class="text-secondaryText leading-[12px] text-[8px] xl:leading-[16px] xl:text-[12px] font-[400]">Company</p>
                 <img alt="" class="w-1 h-2" src="../assets/svg/bgBack.svg">
                 <p class="text-secondaryText leading-[12px] text-[8px] xl:leading-[16px] xl:text-[12px] font-[400]">
-                  Manage</p>
+                  Desh Travels Limited</p>
                 <img alt="" class="w-1 h-2" src="../assets/svg/bgBack.svg">
-                <p class="text-secondaryText leading-[12px] text-[8px] xl:leading-[16px] xl:text-[12px] font-[400]">Desh
-                  Travels Limited</p>
+                <p class="text-secondaryText leading-[12px] text-[8px] xl:leading-[16px] xl:text-[12px] font-[400]">Manage</p>
                 <img alt="" class="w-1 h-2" src="../assets/svg/bgBack.svg">
                 <p class="text-secondaryText leading-[12px] text-[8px] xl:leading-[16px] xl:text-[12px] font-[400]">
                   Route</p>
@@ -53,7 +51,6 @@
       <!-- top nav bar end -->
       <!-- body start-->
       <div class="px-[30px] py-[24px]">
-
         <!--        card-->
         <div class="mt-[16px] bg-white rounded-[10px]">
           <div class="p-4">
@@ -61,11 +58,10 @@
               <div class="w-1/2 pr-[60px] xl:pr-[125px]">
                 <div class="flex justify-between items-center">
                   <label class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] text-primaryText font-[400]"
-                         for="#">Select
-                    origin city:</label>
+                         for="#">Select origin city:</label>
                   <div class="w-[200px] xl:w-[270px]">
                     <Dropdown v-model="selectedCity" :options="cities"
-                              class="w-full p-[1px] mt-[10px] placeholder:text-primaryText" optionLabel="name" placeholder="Owner"/>
+                              class="w-full p-[1px] mt-[10px] placeholder:text-primaryText" optionLabel="name" placeholder="Select origin city"/>
                   </div>
                 </div>
                 <div class="flex justify-between items-center mt-[12px] xl:mt-[16px]">
@@ -74,7 +70,7 @@
                     via city (optional):</label>
                   <div class="w-[200px] xl:w-[270px] mb-2">
                     <Dropdown v-model="selectedCity" :options="cities"
-                              class="w-full p-[1px] mt-[10px] placeholder:text-primaryText" optionLabel="name" placeholder="Owner"/>
+                              class="w-full p-[1px] mt-[10px] placeholder:text-primaryText" optionLabel="name" placeholder="Select via city"/>
                   </div>
                 </div>
                 <button
@@ -91,7 +87,7 @@
                     destination city:</label>
                   <div class="w-[200px] xl:w-[270px] mb-2">
                     <Dropdown v-model="selectedCity" :options="cities"
-                              class="w-full p-[1px] mt-[10px] placeholder:text-primaryText" optionLabel="name" placeholder="Rangpur"/>
+                              class="w-full p-[1px] mt-[10px] placeholder:text-primaryText" optionLabel="name" placeholder="Select destination city"/>
                   </div>
                 </div>
                 <div class="mt-[12px] xl:mt-[16px] bg-[#F7F7F7] rounded-[4px]">
@@ -145,10 +141,7 @@
                 </button>
               </div>
             </div>
-            <button
-                class="flex justify-center items-center text-white leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[600] bg-corporate bg-opacity-30 rounded-full px-[20px] py-[11px] xl:px-[24px] xl:py-[13px]">
-              Create company
-            </button>
+            <router-link to="/busCompanyManageViaCity" class="corporateButton">Create routes</router-link>
           </div>
         </div>
       </div>

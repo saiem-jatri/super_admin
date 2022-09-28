@@ -9,11 +9,9 @@
               <p class="text-primaryText leading-[12px] text-[10px] xl:leading-[16px] xl:text-[12px] font-[500]">Back</p>
             </button>
             <div class="flex flex-col gap-y-[4px]">
-              <p class="lg:leading-[16px] xl:leading-[28px] lg:text-[14px] xl:text-[20px] font-[600] text-primaryText">Create Company</p>
+              <p class="lg:leading-[16px] xl:leading-[28px] lg:text-[14px] xl:text-[20px] font-[600] text-primaryText">Owner</p>
               <div class="flex justify-center items-center gap-x-[6px]">
-                <p class="text-secondaryText leading-[12px] text-[8px] xl:leading-[16px] xl:text-[12px] font-[400]">Bus Company</p>
-                <img src="../assets/svg/bgBack.svg" alt="" class="w-1 h-2">
-                <p class="text-secondaryText leading-[12px] text-[8px] xl:leading-[16px] xl:text-[12px] font-[400]">Add company</p>
+                <p class="text-secondaryText leading-[12px] text-[8px] xl:leading-[16px] xl:text-[12px] font-[400]">Company</p>
                 <img src="../assets/svg/bgBack.svg" alt="" class="w-1 h-2">
                 <p class="text-secondaryText leading-[12px] text-[8px] xl:leading-[16px] xl:text-[12px] font-[400]">Desh Travels Limited</p>
                 <img src="../assets/svg/bgBack.svg" alt="" class="w-1 h-2">
@@ -23,36 +21,31 @@
               </div>
             </div>
           </div>
-          <div class="flex gap-x-[24px] p-4 w-1/2 justify-end items-center pr-2 ">
-            <!--            <input type="text" class="w-[270px] h-[40px] border border-[#DBDBDB] placeholder:text-[#4D4D4F] placeholder:text-[14px] leading-[20px] rounded-[4px] pl-8 focus:outline-none" placeholder="PNR or mobile number">-->
-            <!--            <img src="../assets/svg/search.svg" class="h-5 w-5 absolute left-[242px]" alt="">-->
-            <div class="w-[200px] h-[30px] xl:w-[270px] xl:h-[40px] border border-[#DBDBDB] flex justify-center items-center rounded-[4px] pl-[9px] gap-x-2" >
-              <img src="../assets/svg/search.svg" class="h-2 w-2 xl:h-5 xl:w-5" alt="">
-              <input type="text" class="outline-none placeholder:text-[#4D4D4F] w-[90%] placeholder:text-[8px] placeholder:leading-[16px] xl:placeholder:text-[14px] xl:placeholder:leading-[20px]" placeholder="PNR or mobile number">
-            </div>
-            <div class="flex justify-center items-center gap-x-1">
-              <img src="../assets/person/person1.png" alt="" class="h-[30px]  w-[30px] xl:h-[40px] xl:w-[40px] rounded-full">
-              <p class="text-[#151414] leading-[16px] text-[10px] xl:leading-[24px] xl:text-[16px] font-[500]">Mostafa Mamun Emon</p>
+          <div class="flex gap-x-2 p-4 justify-center items-center mr-6 ">
+              <router-link to="/createOwner" class="topBarAddButton">
+                <span><img src="../assets/svg/plus.svg" class="h-[9.33px] w-[9.33px]" alt=""></span>Add User
+              </router-link>
+              
+              <img src="../assets/person/person1.png" alt="" class="h-[30px] xl:h-[40px] w-[30px] xl:w-[40px] rounded-full">
+              <p class="text-[#151414] leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[500]">Mostafa Mamun Emon</p>
               <img src="../assets/person/downArrow.svg" alt="" class="w-[12px] h-[6px]">
             </div>
-          </div>
         </div>
       </div>
       <!-- top nav bar end -->
       <!-- body start-->
       <div class="px-[30px] py-[24px]">
-<!--        tab start-->
+        <!--        tab start-->
         <div class="border-b border-[#EDEDED]">
           <div class="flex justify-start items-center">
-            <a href="#" class="companyOwnerTabActive">Owner</a>
-            <a href="#" class="companyOwnerTabNonActive">Route</a>
-            <a href="#" class="companyOwnerTabNonActive">Counter</a>
-            <a href="#" class="companyOwnerTabNonActive">Trips</a>
-            <a href="#" class="companyOwnerTabNonActive">Agent</a>
-            <a href="#" class="companyOwnerTabNonActive">Counterman</a>
-            <a href="#" class="companyOwnerTabNonActive">Staffs</a>
-            <a href="#" class="companyOwnerTabNonActive">Ticket</a>
-
+            <router-link to="/companyOwner" :class="$route.path === '/companyOwner' ? 'companyOwnerTabActive' : 'companyOwnerTabNonActive' ">Owner</router-link>
+            <router-link to="/busCompanyTabsRoute" :class="$route.path === '/busCompanyTabsRoute' ? 'companyOwnerTabActive' : 'companyOwnerTabNonActive' ">Routes</router-link>
+            <router-link to="/busCompanyTabsCounter" :class="$route.path === '/busCompanyTabsCounter' ? 'companyOwnerTabActive' : 'companyOwnerTabNonActive' ">Counter</router-link>
+            <router-link to="/trips" :class="$route.path === '/trips' ? 'companyOwnerTabActive' : 'companyOwnerTabNonActive' ">Trips</router-link>
+            <router-link to="/agent" :class="$route.path === '/agent' ? 'companyOwnerTabActive' : 'companyOwnerTabNonActive' ">Agent</router-link>
+            <router-link to="/counterman" :class="$route.path === '/counterman' ? 'companyOwnerTabActive' : 'companyOwnerTabNonActive' ">Counterman</router-link>
+            <router-link to="/staffs" :class="$route.path === '/staffs' ? 'companyOwnerTabActive' : 'companyOwnerTabNonActive' ">Staffs</router-link>
+            <router-link to="/companyTicket" :class="$route.path === '/companyTicket' ? 'companyOwnerTabActive' : 'companyOwnerTabNonActive' ">Ticket</router-link>
           </div>
         </div>
 <!--        card-->
@@ -74,7 +67,7 @@
                   <div class="flex justify-between items-center w-full">
                     <p class="text-primaryText leading-[20px] text-[14px] xl:leading-[24px] xl:text-[16px] font-[600]">Mobile number</p>
                   </div>
-                  <input type="text" class="focus:outline-none mt-[10px] w-full border border-[#DBDBDB] rounded-[4px] pl-2 py-2 placeholder:text-[#676769] placeholder:leading-[16px] placeholder:text-[12px] xl:placeholder:leading-[20px] xl:placeholder:text-[14px]" placeholder="Enter company name">
+                  <input type="text" class="focus:outline-none mt-[10px] w-full border border-[#DBDBDB] rounded-[4px] pl-2 py-2 placeholder:text-[#676769] placeholder:leading-[16px] placeholder:text-[12px] xl:placeholder:leading-[20px] xl:placeholder:text-[14px]" placeholder="Enter mobile number">
                 </div>
               </div>
               <button class="flex gap-x-[9px] justify-center items-center bg-corporate text-white leading-[14px] xl:leading-[16px] text-[11px] xl:text-[12px] font-[500] py-3 pl-[17px] pr-[24px] rounded-full"><span>
