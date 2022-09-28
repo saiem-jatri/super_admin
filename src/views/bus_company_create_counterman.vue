@@ -369,7 +369,7 @@
               </div>
             </div>
               <div class="flex gap-x-2 items-center">
-                <button class="corporateButton">Create counterman</button>
+                <button class="lessOpacityCorporateButton">Create counterman</button>
                 <button class="flex justify-center items-center gap-x-[10px] corporateButton">
                   <img src="../assets/svg/save_change.svg" alt="">Save changes</button>
               </div>

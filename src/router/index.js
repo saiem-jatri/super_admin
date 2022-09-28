@@ -13,6 +13,7 @@ import companyCreateCounter from '@/views/bus_company_create_counter.vue'
 import companyManageTrip from '@/views/bus_company_manage_trips.vue'
 import Counterman from '@/views/counterman.vue'
 import companyCreateCounterman from '@/views/bus_company_create_counterman.vue'
+import Staffs from '@/views/staffs.vue'
 import companyCreateSupervisor from '@/views/bus_company_create_supervisor.vue'
 import companyCreateDriver from '@/views/bus_company_create_driver.vue'
 import companyCreateHelper from '@/views/bus_company_create_helper.vue'
@@ -156,6 +157,11 @@ const router = createRouter({
             path: '/createCounterMan',
             name: 'companyCreateCounterman',
             component: companyCreateCounterman
+        },
+        {
+            path: '/staffs',
+            name: 'Staffs',
+            component: Staffs
         },
         {
             path: '/createDriver',
