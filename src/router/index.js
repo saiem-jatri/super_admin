@@ -33,8 +33,8 @@ import CreateRoutes from '@/views/create-routes.vue'
 import RoutesViaCity from '@/views/routes_via_city.vue'
 import RouteViaCityFilled from '@/views/route_via_city_filled.vue'
 import Counter from '@/views/counter.vue'
-import CreateCounter from '@/views/counter_create.vue'
-import THirdPartyCounter from '@/views/thirdparty_counter.vue'
+import CreateCounter from '@/views/create-counter.vue'
+import ThirdPartyCounter from '@/views/thirdparty_counter.vue'
 import Trips from '@/views/trips.vue'
 import TripPreview from '@/views/trip_preview.vue'
 import TripsInformation from '@/views/tripInformation.vue'
@@ -271,14 +271,14 @@ const router = createRouter({
             component: Counter
         },
         {
-            path: '/counterCreate',
+            path: '/createCounter',
             name: 'CreateCounter',
             component: CreateCounter
         },
         {
             path: '/thirdPartyCounter',
-            name: 'THirdPartyCounter',
-            component: THirdPartyCounter
+            name: 'ThirdPartyCounter',
+            component: ThirdPartyCounter
         },
 
         //    Trips started
