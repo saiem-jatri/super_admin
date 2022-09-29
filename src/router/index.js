@@ -81,6 +81,7 @@ import OfferNew from '@/views/new_offer.vue'
 import OfferAddFilled from '@/views/offer_addNew_filled.vue'
 import OfferAndPromotionTable from '@/views/offer_promotion_table.vue'
 import ActionFareUpdate from '@/views/actionbulk_fareupdate.vue'
+import ActionFareUpdateFileReplace from '@/views/actionbulk_fareupdateFileReplace.vue'
 import UpdateStopageTime from '@/views/actionbulk_updatestopagetime.vue'
 import TripAction from '@/views/actionbulk_tripaction.vue'
 import OfflineAccess from '@/views/actionbulk_offlineaccess.vue'
@@ -536,6 +537,11 @@ const router = createRouter({
             path: '/actionFareUpdate',
             name: 'ActionFareUpdate',
             component: ActionFareUpdate
+        },
+        {
+            path: '/actionFareUpdateFileReplace',
+            name: 'ActionFareUpdateFileReplace',
+            component: ActionFareUpdateFileReplace
         },
         {
             path: '/updateStopageTime',

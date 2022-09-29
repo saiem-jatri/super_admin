@@ -119,6 +119,129 @@
         </button>
       </div>
     </div>
+    <div class="bg-white rounded-[8px] mt-4">
+      <!-- table start -->
+      <table class="min-w-full">
+        <thead>
+        <tr class="bg-[#4D4D4F] h-[36px]">
+          <th class="companyTableHead" scope="col" style="border-radius:4px 0 0 0">
+            SL
+          </th>
+          <th class="companyTableHead" scope="col">
+            Bus operator
+          </th>
+          <th class="companyTableHead" scope="col">
+            Bus operator
+          </th>
+          <th class="companyTableHead" scope="col">
+            trip
+          </th>
+          <th class="companyTableHead" scope="col">
+            qouta seats
+          </th>
+
+        </tr>
+        </thead>
+        <tbody>
+        <tr class="border-b border-[#EDEDED]">
+          <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-[18px] px-2">
+            01
+          </td>
+          <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-[18px] px-2">
+            Desh Travels
+          </td>
+          <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-[18px] px-2 text-start">
+            Dhaka-Tangail-Bogura-Rangpur
+          </td>
+          <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-[18px] px-2 text-start">
+            092, Dhaka - Rangpur
+          </td>
+          <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-[18px] px-2 text-start">
+            7 seats : [B1], [B2], [B3], [B4], [C1],[C2], [C3]
+          </td>
+
+        </tr>
+        <tr class="border-b border-[#EDEDED]">
+          <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-[18px] px-2">
+            01
+          </td>
+          <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-[18px] px-2">
+            Desh Travels
+          </td>
+          <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-[18px] px-2 text-start">
+            Dhaka-Tangail-Bogura-Rangpur
+          </td>
+          <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-[18px] px-2 text-start">
+            092, Dhaka - Rangpur
+          </td>
+          <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-[18px] px-2 text-start">
+            7 seats : [B1], [B2], [B3], [B4], [C1],[C2], [C3]
+          </td>
+
+        </tr>
+        <tr class="border-b border-[#EDEDED]">
+          <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-[18px] px-2">
+            01
+          </td>
+          <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-[18px] px-2">
+            Desh Travels
+          </td>
+          <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-[18px] px-2 text-start">
+            Dhaka-Tangail-Bogura-Rangpur
+          </td>
+          <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-[18px] px-2 text-start">
+            092, Dhaka - Rangpur
+          </td>
+          <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-[18px] px-2 text-start">
+            7 seats : [B1], [B2], [B3], [B4], [C1],[C2], [C3]
+          </td>
+
+        </tr>
+        <tr class="border-b border-[#EDEDED]">
+          <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-[18px] px-2">
+            01
+          </td>
+          <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-[18px] px-2">
+            Desh Travels
+          </td>
+          <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-[18px] px-2 text-start">
+            Dhaka-Tangail-Bogura-Rangpur
+          </td>
+          <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-[18px] px-2 text-start">
+            092, Dhaka - Rangpur
+          </td>
+          <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-[18px] px-2 text-start">
+            7 seats : [B1], [B2], [B3], [B4], [C1],[C2], [C3]
+          </td>
+
+        </tr>
+        <tr class="border-b border-[#EDEDED]">
+          <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-[18px] px-2">
+            01
+          </td>
+          <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-[18px] px-2">
+            Desh Travels
+          </td>
+          <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-[18px] px-2 text-start">
+            Dhaka-Tangail-Bogura-Rangpur
+          </td>
+          <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-[18px] px-2 text-start">
+            092, Dhaka - Rangpur
+          </td>
+          <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-[18px] px-2 text-start">
+            7 seats : [B1], [B2], [B3], [B4], [C1],[C2], [C3]
+          </td>
+
+        </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="mt-[16px] xl:mt-5 flex justify-center items-center">
+      <button
+          class="flex justify-center items-center gap-x-[10px] text-white leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[500] bg-[#E0293B] rounded-full px-[20px] py-[11px] xl:px-[24px] xl:py-[13px]">
+        Release qouta
+      </button>
+    </div>
   </div>
 </template>
 
