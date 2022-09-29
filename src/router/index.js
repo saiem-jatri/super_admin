@@ -67,7 +67,6 @@ import MigrateTrip from '@/views/migrate_trip.vue'
 import Agent from '@/views/agent.vue'
 import AddAgent from '@/views/add-agent.vue'
 import AddAgentNext from '@/views/add-agent-next.vue'
-import AddAgentSave from '@/views/add-agent-save.vue'
 import TripExpenseConfiguration from '@/views/tripExpenseConfiguration.vue'
 import TripExpenseConfigurationFilled from '@/views/TripExpenseConfigurationFilled.vue'
 import TripExpenseConfigurationFinal from '@/views/TripExpenseConfigurationFinal.vue'
@@ -486,11 +485,7 @@ const router = createRouter({
             name: 'AddAgentNext',
             component: AddAgentNext,
         },
-        {
-            path: '/addAgentSave',
-            name: 'AddAgentSave',
-            component: AddAgentSave,
-        },
+
         //invoice started
         {
             path: '/invoice',
