@@ -91,9 +91,9 @@
 
               </div>
               <div class="w-1/4">
-                <p class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]">Stoppage</p>
+                <p class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]">Counter type</p>
                 <div class="flex justify-center items-center mt-[10px] border border-corporateBorder divide-x rounded-[4px]">
-                  <button class="bg-white w-1/2 text-primaryText leading-[16px] xl:leading-[20px] text-[12px] xl:text-[14px] flex justify-center items-center font-[400] h-[40px] rounded-l-[4px]">Own</button>
+                  <button class="bg-corporate w-1/2 text-white leading-[16px] xl:leading-[20px] text-[12px] xl:text-[14px] flex justify-center items-center font-[400] h-[40px] rounded-l-[4px]">Own</button>
                   <button class="bg-white w-1/2 text-primaryText leading-[16px] xl:leading-[20px] text-[12px] xl:text-[14px]  flex justify-center items-center font-[400] h-[40px] rounded-r-[4px]">Third party</button>
                 </div>
               </div>
@@ -108,9 +108,9 @@
                 <button class="bg-[#F7F7F7] w-[90px] xl:w-[110px] text-primaryText leading-[16px] xl:leading-[20px] text-[12px] xl:text-[14px] border border-[#DBDBDB] flex justify-center items-center font-[400] h-[40px] rounded-r-[4px]">Inactive</button>
               </div>
             </div>
-            <div class="flex gap-x-1 items-center">
-              <button class="flex justify-center items-center text-white leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[600] bg-corporate bg-opacity-30 rounded-full px-[20px] py-[11px] xl:px-[24px] xl:py-[13px]">Create counter</button>
-              <button class="flex justify-center items-center gap-x-[10px] text-white leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[600] bg-corporate bg-opacity-30 rounded-full px-[20px] py-[11px] xl:px-[24px] xl:py-[13px]">
+            <div class="flex gap-x-2 items-center">
+              <button class="corporateButton">Create counter</button>
+              <button class="flex justify-center items-center gap-x-[10px] corporateButton">
                 <img src="../assets/svg/save_change.svg" alt=""> Save changes</button>
             </div>
           </div>
