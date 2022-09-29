@@ -2,14 +2,20 @@
       <!-- Top nav bar start-->
       <div class="bg-white h-[72px] sticky top-0 border-b border-[#DBDBDB] z-10">
         <div class="flex justify-between items-center">
-          <div class="pl-8 flex flex-col gap-y-2">
-            <p class="text-[#151414] leading-[28px] text-[20px] font-[600]">User</p>
-            <div class="flex justify-center items-center gap-x-[6px]">
-              <p class="text-secondaryText leading-[12px] text-[8px] xl:leading-[16px] xl:text-[12px] font-[400]">
+          <div class="flex justify-center items-center gap-x-[32px]">
+            <button class="flex justify-center items-center gap-x-[10px]">
+              <img alt="" class="w-[12px] h-[12px]" src="../assets/svg/Back.svg">
+              <p class="text-primaryText leading-[12px] text-[10px] xl:leading-[16px] xl:text-[12px] font-[500]">
+                Back</p>
+            </button>
+            <div class="flex flex-col gap-y-[4px]">
+              <p class="lg:leading-[16px] xl:leading-[28px] lg:text-[14px] xl:text-[20px] font-[600] text-primaryText">
                 User</p>
-              <img alt="" class="w-1 h-2" src="../assets/svg/bgBack.svg">
-              <p class="text-secondaryText leading-[12px] text-[8px] xl:leading-[16px] xl:text-[12px] font-[400]">Jatri
-                Admin</p>
+              <div class="flex justify-center items-center gap-x-[6px]">
+                <p class="text-secondaryText leading-[12px] text-[8px] xl:leading-[16px] xl:text-[12px] font-[400]">User</p>
+                <img alt="" class="w-1 h-2" src="../assets/svg/bgBack.svg">
+                <p class="text-secondaryText leading-[12px] text-[8px] xl:leading-[16px] xl:text-[12px] font-[400]"> Owner</p>
+              </div>
             </div>
           </div>
           <div
@@ -21,10 +27,9 @@
                 type="text">
           </div>
           <div class="flex gap-x-2 p-4 justify-center items-center mr-6 ">
-            <button
-                class="bg-corporate flex gap-x-3 justify-center items-center text-white rounded-full px-4 py-3 mr-4 leading-[12px] text-[10px] xl:leading-[16px] xl:text-[12px]">
-              <span><img alt="" class="h-[9.33px] w-[9.33px]" src="../assets/svg/plus.svg"></span>Add jatri admin
-            </button>
+            <router-link to="/userCreateAdmin" class="topBarAddButton">
+              <span><img src="../assets/svg/plus.svg" class="h-[9.33px] w-[9.33px]" alt=""></span>Add jatri admin
+            </router-link>
             <img alt="" class="h-[30px] xl:h-[40px] w-[30px] xl:w-[40px] rounded-full"
                  src="../assets/person/person1.png">
             <p class="text-[#151414] leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[500]">Admin
@@ -36,16 +41,14 @@
       <!-- top nav bar end -->
       <!-- body start-->
       <div class="px-[30px] py-[24px]">
-        <!--        tab start-->
-        <div class="border-b border-[#EDEDED] gap-x-4">
+       <!--        tab start-->
+       <div class="border-b border-[#EDEDED]">
           <div class="flex justify-start items-center">
-            <a class="companyOwnerTabNonActive" href="#">Owner</a>
-            <a class="companyOwnerTabActive" href="#">Jatri Admin</a>
-            <a class="companyOwnerTabNonActive" href="#">Counterman</a>
-            <a class="companyOwnerTabNonActive" href="#">Agent</a>
-            <a class="block full h-[25px] xl:w-[120px] xl:h-[30px] leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] text-center rounded-t-[8px] text-corporateSecondaryBlack font-[500]"
-               href="#">Customer Care</a>
-
+            <router-link to="/user" :class="$route.path === '/user' ? 'companyOwnerTabActive' : 'companyOwnerTabNonActive' ">Owner</router-link>
+            <router-link to="/userAdmin" :class="$route.path === '/userAdmin' ? 'companyOwnerTabActive' : 'companyOwnerTabNonActive' ">Jatri Admin</router-link>
+            <router-link to="/UserCounterman" :class="$route.path === '/UserCounterman' ? 'companyOwnerTabActive' : 'companyOwnerTabNonActive' ">Counterman</router-link>
+            <router-link to="/UserAgent" :class="$route.path === '/UserAgent' ? 'companyOwnerTabActive' : 'companyOwnerTabNonActive' ">Agent</router-link>
+            <router-link to="/userCustomerCare" :class="$route.path === '/userCustomerCare' ? 'companyOwnerTabActive' : 'companyOwnerTabNonActive' ">Customer Care</router-link>
           </div>
         </div>
         <!--        card-->
@@ -59,7 +62,7 @@
                 </div>
                 <input
                     class="focus:outline-none mt-[10px] w-full border border-[#DBDBDB] rounded-[4px] pl-2 py-2 placeholder:text-[#676769] placeholder:leading-[16px] placeholder:text-[12px] xl:placeholder:leading-[20px] xl:placeholder:text-[14px]"
-                    placeholder="Enter company name"
+                    placeholder="Enter name"
                     type="text">
               </div>
 
@@ -70,7 +73,7 @@
                 </div>
                 <input
                     class="focus:outline-none mt-[10px] w-full border border-[#DBDBDB] rounded-[4px] pl-2 py-2 placeholder:text-[#676769] placeholder:leading-[16px] placeholder:text-[12px] xl:placeholder:leading-[20px] xl:placeholder:text-[14px]"
-                    placeholder="Enter company name"
+                    placeholder="Enter mobile name"
                     type="text">
               </div>
             </div>

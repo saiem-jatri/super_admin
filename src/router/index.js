@@ -56,12 +56,12 @@ import TripsQuota from '@/views/trips_quota.vue'
 import TripFacilities from '@/views/trip_facilities.vue'
 import User from '@/views/user.vue'
 import UserAdmin from '@/views/user_admin.vue'
-import UserCounterman from '@/views/user_counterman.vue'
-import UserAgent from '@/views/user_agent.vue'
-import UserCustomerCare from '@/views/user_customer_care.vue'
 import UserCreateAdmin from '@/views/user_create_admin.vue'
+import UserCounterman from '@/views/user_counterman.vue'
 import UserCreateCounterman from '@/views/user_create_counterman.vue'
+import UserAgent from '@/views/user_agent.vue'
 import UserCreateAgent from '@/views/user_create_agent.vue'
+import UserCustomerCare from '@/views/user_customer_care.vue'
 import UserCreateCustomercare from '@/views/user_create_customercare.vue'
 import MigrateTrip from '@/views/migrate_trip.vue'
 import Agent from '@/views/agent.vue'
@@ -69,7 +69,6 @@ import AddAgent from '@/views/add-agent.vue'
 import AddAgentNext from '@/views/add-agent-next.vue'
 import TripExpenseConfiguration from '@/views/tripExpenseConfiguration.vue'
 import TripExpenseConfigurationFilled from '@/views/TripExpenseConfigurationFilled.vue'
-import TripExpenseConfigurationFinal from '@/views/TripExpenseConfigurationFinal.vue'
 import MigrateSelect from '@/views/migrate_select_seat.vue'
 import MigrateSameTicketOwner from '@/views/migrate_same_ticket_owner.vue'
 import MigrateTicket from '@/views/migrate_ticket.vue'
@@ -543,11 +542,6 @@ const router = createRouter({
             path: '/tripExpenseConfigurationFilled',
             name: 'TripExpenseConfigurationFilled',
             component: TripExpenseConfigurationFilled
-        },
-        {
-            path: '/tripExpenseConfigurationFinal',
-            name: 'TripExpenseConfigurationFinal',
-            component: TripExpenseConfigurationFinal
         },
         //    Action in bulk started
 
