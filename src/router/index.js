@@ -19,8 +19,10 @@ import Counterman from '@/views/counterman.vue'
 import companyCreateCounterman from '@/views/bus_company_create_counterman.vue'
 import Supervisor from '@/views/supervisor.vue'
 import BusCompanyCreateSupervisor from '@/views/bus_company_create_supervisor.vue'
-import companyCreateDriver from '@/views/bus_company_create_driver.vue'
-import companyCreateHelper from '@/views/bus_company_create_helper.vue'
+import BusCompanyDriver from '@/views/bus-company-driver.vue'
+import BusCompanyCreateDriver from '@/views/bus_company_create_driver.vue'
+import BusCompanyHelper from '@/views/bus_company_helper.vue'
+import BusCompanyCreateHelper from '@/views/bus_company_create_helper.vue'
 import companyManageCreateDriver from '@/views/bus_company_manage_create_driver.vue'
 import busCompanyManageViaCity from '@/views/bus_company_manage_via_city.vue'
 import busCompanyManageViaCityFilled from '@/views/bus_company_manage_via_city_filled.vue'
@@ -179,14 +181,24 @@ const router = createRouter({
             component: BusCompanyCreateSupervisor
         },
         {
-            path: '/createDriver',
-            name: 'companyCreateDriver',
-            component: companyCreateDriver
+            path: '/busCompanyDriver',
+            name: 'BusCompanyDriver',
+            component: BusCompanyDriver
         },
         {
-            path: '/createHelper',
-            name: 'companyCreateHelper',
-            component: companyCreateHelper
+            path: '/busCompanyCreateDriver',
+            name: 'BusCompanyCreateDriver',
+            component: BusCompanyCreateDriver
+        },
+        {
+            path: '/busCompanyHelper',
+            name: 'BusCompanyHelper',
+            component: BusCompanyHelper
+        },
+        {
+            path: '/busCompanyCreateHelper',
+            name: 'BusCompanyCreateHelper',
+            component: BusCompanyCreateHelper
         },
         {
             path: '/companyTicket',

@@ -9,7 +9,7 @@
             <p class="text-primaryText leading-[12px] text-[10px] xl:leading-[16px] xl:text-[12px] font-[500]">Back</p>
           </button>
           <div class="flex flex-col gap-y-[4px]">
-            <p class="lg:leading-[16px] xl:leading-[28px] lg:text-[14px] xl:text-[20px] font-[600] text-primaryText">Supervisor</p>
+            <p class="lg:leading-[16px] xl:leading-[28px] lg:text-[14px] xl:text-[20px] font-[600] text-primaryText">Driver</p>
             <div class="flex justify-center items-center gap-x-[6px]">
               <p class="text-secondaryText leading-[12px] text-[8px] xl:leading-[16px] xl:text-[12px] font-[400]">Company</p>
               <img src="../assets/svg/bgBack.svg" alt="" class="w-1 h-2">
@@ -19,13 +19,13 @@
               <img src="../assets/svg/bgBack.svg" alt="" class="w-1 h-2">
               <p class="text-secondaryText leading-[12px] text-[8px] xl:leading-[16px] xl:text-[12px] font-[400]">Staff</p>
               <img src="../assets/svg/bgBack.svg" alt="" class="w-1 h-2">
-              <p class="text-secondaryText leading-[12px] text-[8px] xl:leading-[16px] xl:text-[12px] font-[400]">Supervisor</p>
+              <p class="text-secondaryText leading-[12px] text-[8px] xl:leading-[16px] xl:text-[12px] font-[400]">Driver</p>
             </div>
           </div>
         </div>
         <div class="flex gap-x-2 p-4 justify-center items-center mr-6 ">
-            <router-link to="/busCompanyCreateSupervisor" class="topBarAddButton">
-              <span><img src="../assets/svg/plus.svg" class="h-[9.33px] w-[9.33px]" alt=""></span>Add supervisor
+            <router-link to="/BusCompanyCreateDriver" class="topBarAddButton">
+              <span><img src="../assets/svg/plus.svg" class="h-[9.33px] w-[9.33px]" alt=""></span>Add driver
             </router-link>
             
             <img src="../assets/person/person1.png" alt="" class="h-[30px] xl:h-[40px] w-[30px] xl:w-[40px] rounded-full">
@@ -86,7 +86,7 @@
               SL
             </th>
             <th scope="col" class="companyTableHead">
-                SUPERVISOR NAME
+                DRIVER NAME
             </th>
             <th scope="col" class="companyTableHead">
               MOBILE
@@ -239,10 +239,6 @@
           </tbody>
         </table>
       </div>
-      <div class="flex gap-x-2 items-center justify-center mt-10">
-        <router-link to="/busCompanyDriver" class="corporateButton">Driver</router-link>
-        <router-link to="/busCompanyHelper" class="corporateButton">Helper</router-link>
-        </div>
     </div>
 </template>
 
