@@ -12,11 +12,13 @@ import companyCreateOwner from '@/views/bus_company_create_owner.vue'
 import busCompanyCreateRoute from '@/views/bus_company_create_route.vue'
 import BusCompanyTabsCounter from '@/views/bus-company-tabs-counter.vue'
 import BusCompanyCreateCounter from '@/views/bus_company_create_counter.vue'
+import BusCompanyTabsTrips from '@/views/bus-company-tabs-trips.vue'
+import BusCompanyTabsAgent from '@/views/bus-company-tabs-agent.vue'
 import companyManageTrip from '@/views/bus_company_manage_trips.vue'
 import Counterman from '@/views/counterman.vue'
 import companyCreateCounterman from '@/views/bus_company_create_counterman.vue'
-import Staffs from '@/views/staffs.vue'
-import companyCreateSupervisor from '@/views/bus_company_create_supervisor.vue'
+import Supervisor from '@/views/supervisor.vue'
+import BusCompanyCreateSupervisor from '@/views/bus_company_create_supervisor.vue'
 import companyCreateDriver from '@/views/bus_company_create_driver.vue'
 import companyCreateHelper from '@/views/bus_company_create_helper.vue'
 import companyManageCreateDriver from '@/views/bus_company_manage_create_driver.vue'
@@ -132,11 +134,6 @@ const router = createRouter({
             component: BusCompanyTabsRoute
         },
         {
-            path: '/companyTicket',
-            name: 'companyTicket',
-            component: CompanyTicket
-        },
-        {
             path: '/createOwner',
             name: 'createOwner',
             component: companyCreateOwner
@@ -157,30 +154,29 @@ const router = createRouter({
             component: BusCompanyCreateCounter
         },
         {
+            path: '/busCompanyTabsTrips',
+            name: 'BusCompanyTabsTrips',
+            component: BusCompanyTabsTrips
+        },
+        {
+            path: '/busCompanyTabsAgent',
+            name: 'BusCompanyTabsAgent',
+            component: BusCompanyTabsAgent
+        },
+        {
             path: '/manageTrip',
             name: 'companyManageTrip',
             component: companyManageTrip
-        },
-
+        },  
         {
-            path: '/createSupervisor',
-            name: 'companyCreateSupervisor',
-            component: companyCreateSupervisor
-        },
-        {
-            path: '/counterman',
-            name: 'Counterman',
-            component: Counterman
+            path: '/supervisor',
+            name: 'Supervisor',
+            component: Supervisor
         },
         {
-            path: '/createCounterMan',
-            name: 'companyCreateCounterman',
-            component: companyCreateCounterman
-        },
-        {
-            path: '/staffs',
-            name: 'Staffs',
-            component: Staffs
+            path: '/busCompanyCreateSupervisor',
+            name: 'BusCompanyCreateSupervisor',
+            component: BusCompanyCreateSupervisor
         },
         {
             path: '/createDriver',
@@ -191,6 +187,11 @@ const router = createRouter({
             path: '/createHelper',
             name: 'companyCreateHelper',
             component: companyCreateHelper
+        },
+        {
+            path: '/companyTicket',
+            name: 'companyTicket',
+            component: CompanyTicket
         },
         {
             path: '/createManageDriver',
@@ -216,6 +217,17 @@ const router = createRouter({
             path: '/manageOwner',
             name: 'companyManageOwner',
             component: companyManageOwner
+        },
+        
+        {
+            path: '/counterman',
+            name: 'Counterman',
+            component: Counterman
+        },
+        {
+            path: '/createCounterMan',
+            name: 'companyCreateCounterman',
+            component: companyCreateCounterman
         },
 
         //    routes start

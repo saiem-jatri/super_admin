@@ -9,7 +9,7 @@
             <p class="text-primaryText leading-[12px] text-[10px] xl:leading-[16px] xl:text-[12px] font-[500]">Back</p>
           </button>
           <div class="flex flex-col gap-y-[4px]">
-            <p class="lg:leading-[16px] xl:leading-[28px] lg:text-[14px] xl:text-[20px] font-[600] text-primaryText">Counterman</p>
+            <p class="lg:leading-[16px] xl:leading-[28px] lg:text-[14px] xl:text-[20px] font-[600] text-primaryText">Agent</p>
             <div class="flex justify-center items-center gap-x-[6px]">
               <p class="text-secondaryText leading-[12px] text-[8px] xl:leading-[16px] xl:text-[12px] font-[400]">Company</p>
               <img src="../assets/svg/bgBack.svg" alt="" class="w-1 h-2">
@@ -17,15 +17,11 @@
               <img src="../assets/svg/bgBack.svg" alt="" class="w-1 h-2">
               <p class="text-secondaryText leading-[12px] text-[8px] xl:leading-[16px] xl:text-[12px] font-[400]">Manage</p>
               <img src="../assets/svg/bgBack.svg" alt="" class="w-1 h-2">
-              <p class="text-secondaryText leading-[12px] text-[8px] xl:leading-[16px] xl:text-[12px] font-[400]">Owner</p>
+              <p class="text-secondaryText leading-[12px] text-[8px] xl:leading-[16px] xl:text-[12px] font-[400]">Agent</p>
             </div>
           </div>
         </div>
-        <div class="flex gap-x-2 p-4 justify-center items-center mr-6 ">
-            <router-link to="/createCounterman" class="topBarAddButton">
-              <span><img src="../assets/svg/plus.svg" class="h-[9.33px] w-[9.33px]" alt=""></span>Add counterman
-            </router-link>
-            
+        <div class="flex gap-x-2 p-4 justify-center items-center">  
             <img src="../assets/person/person1.png" alt="" class="h-[30px] xl:h-[40px] w-[30px] xl:w-[40px] rounded-full">
             <p class="text-[#151414] leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[500]">Mostafa Mamun Emon</p>
             <img src="../assets/person/downArrow.svg" alt="" class="w-[12px] h-[6px]">
@@ -53,8 +49,8 @@
           <div class="p-4 flex justify-between items-center">
             <div class="flex justify-start items-center gap-x-4 w-full">
               <div class="w-1/4 xl:w-1/5">
-                <p class="text-primaryText leading-[20px] text-[14px] xl:leading-[24px] xl:text-[16px] font-[600]">Counter</p>
-                <Dropdown class="w-full p-[1px] mt-[10px] placeholder:text-primaryText placeholder:leading-[16px] placeholder:text-[12px] xl:placeholder:leading-[20px] xl:placeholder:text-[14px]" v-model="selectedCity" :options="cities" optionLabel="name" placeholder="Select Counter" />
+                <p class="text-primaryText leading-[20px] text-[14px] xl:leading-[24px] xl:text-[16px] font-[600]">Payment type</p>
+                <Dropdown class="w-full p-[1px] mt-[10px] placeholder:text-primaryText placeholder:leading-[16px] placeholder:text-[12px] xl:placeholder:leading-[20px] xl:placeholder:text-[14px]" v-model="selectedCity" :options="cities" optionLabel="name" placeholder="Select payment type" />
               </div>
               <div class="w-1/4 xl:w-1/5">
                 <div class="flex justify-between items-center w-full">
@@ -84,7 +80,7 @@
               SL
             </th>
             <th scope="col" class="companyTableHead">
-              COUNTERMAN NAME
+              AGENT NAME
             </th>
             <th scope="col" class="companyTableHead">
               MOBILE
@@ -94,13 +90,10 @@
               Email
             </th>
             <th scope="col" class="companyTableHead">
-              COUNTER
+              TYPE
             </th>
             <th scope="col" class="companyTableHead">
               STATUS
-            </th>
-            <th scope="col" class="companyTableHead" style="border-radius: 0 8px 0 0">
-              ACTION
             </th>
           </tr>
           </thead>
@@ -118,16 +111,11 @@
             </td>
 
             <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText">
-              Amtoli
+                Postpaid
             </td>
-            <td class="border-r border-[#DBDBDB]">
+            <td class="border-r border-[#DBDBDB] p-3">
               <div class="flex justify-center items-center">
                 <p class="companyTableStatus">Active</p>
-              </div>
-            </td>
-            <td class="border-r border-[#DBDBDB]">
-              <div class="py-[5px] px-[18px] flex justify-center items-center gap-x-[16px]">
-                <button class="companyEditButton"><span><img src="../assets/svg/edit.svg" class="w-3 h-3" alt=""></span>Edit</button>
               </div>
             </td>
           </tr>
@@ -144,16 +132,11 @@
             </td>
 
             <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText">
-              Amtoli
+            Postpaid
             </td>
-            <td class="border-r border-[#DBDBDB]">
+            <td class="border-r border-[#DBDBDB] p-3">
               <div class="flex justify-center items-center">
                 <p class="companyTableStatus">Active</p>
-              </div>
-            </td>
-            <td class="border-r border-[#DBDBDB]">
-              <div class="py-[5px] px-[18px] flex justify-center items-center gap-x-[16px]">
-                <button class="companyEditButton"><span><img src="../assets/svg/edit.svg" class="w-3 h-3" alt=""></span>Edit</button>
               </div>
             </td>
           </tr>
@@ -170,16 +153,11 @@
             </td>
 
             <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText">
-              Amtoli
+                Prepaid
             </td>
-            <td class="border-r border-[#DBDBDB]">
+            <td class="border-r border-[#DBDBDB] p-3">
               <div class="flex justify-center items-center">
                 <p class="companyTableStatus">Active</p>
-              </div>
-            </td>
-            <td class="border-r border-[#DBDBDB]">
-              <div class="py-[5px] px-[18px] flex justify-center items-center gap-x-[16px]">
-                <button class="companyEditButton"><span><img src="../assets/svg/edit.svg" class="w-3 h-3" alt=""></span>Edit</button>
               </div>
             </td>
           </tr>
@@ -196,16 +174,11 @@
             </td>
 
             <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText">
-              Amtoli
+                Prepaid
             </td>
-            <td class="border-r border-[#DBDBDB]">
+            <td class="border-r border-[#DBDBDB] p-3">
               <div class="flex justify-center items-center">
                 <p class="companyTableStatus">Active</p>
-              </div>
-            </td>
-            <td class="border-r border-[#DBDBDB]">
-              <div class="py-[5px] px-[18px] flex justify-center items-center gap-x-[16px]">
-                <button class="companyEditButton"><span><img src="../assets/svg/edit.svg" class="w-3 h-3" alt=""></span>Edit</button>
               </div>
             </td>
           </tr>
@@ -222,16 +195,11 @@
             </td>
 
             <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText">
-              Amtoli
+                Postpaid
             </td>
-            <td class="border-r border-[#DBDBDB]">
+            <td class="border-r border-[#DBDBDB] p-3">
               <div class="flex justify-center items-center">
                 <p class="companyTableStatus">Active</p>
-              </div>
-            </td>
-            <td class="border-r border-[#DBDBDB]">
-              <div class="py-[5px] px-[18px] flex justify-center items-center gap-x-[16px]">
-                <button class="companyEditButton"><span><img src="../assets/svg/edit.svg" class="w-3 h-3" alt=""></span>Edit</button>
               </div>
             </td>
           </tr>
@@ -248,16 +216,11 @@
             </td>
 
             <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText">
-              Amtoli
+                Prepaid
             </td>
-            <td class="border-r border-[#DBDBDB]">
+            <td class="border-r border-[#DBDBDB] p-3">
               <div class="flex justify-center items-center">
                 <p class="companyTableStatus">Active</p>
-              </div>
-            </td>
-            <td class="border-r border-[#DBDBDB]">
-              <div class="py-[5px] px-[18px] flex justify-center items-center gap-x-[16px]">
-                <button class="companyEditButton"><span><img src="../assets/svg/edit.svg" class="w-3 h-3" alt=""></span>Edit</button>
               </div>
             </td>
           </tr>

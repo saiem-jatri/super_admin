@@ -41,10 +41,10 @@
             <router-link to="/companyOwner" :class="$route.path === '/companyOwner' ? 'companyOwnerTabActive' : 'companyOwnerTabNonActive' ">Owner</router-link>
             <router-link to="/busCompanyTabsRoute" :class="$route.path === '/busCompanyTabsRoute' ? 'companyOwnerTabActive' : 'companyOwnerTabNonActive' ">Routes</router-link>
             <router-link to="/busCompanyTabsCounter" :class="$route.path === '/busCompanyTabsCounter' ? 'companyOwnerTabActive' : 'companyOwnerTabNonActive' ">Counter</router-link>
-            <router-link to="/trips" :class="$route.path === '/trips' ? 'companyOwnerTabActive' : 'companyOwnerTabNonActive' ">Trips</router-link>
-            <router-link to="/agent" :class="$route.path === '/agent' ? 'companyOwnerTabActive' : 'companyOwnerTabNonActive' ">Agent</router-link>
+            <router-link to="/busCompanyTabsTrips" :class="$route.path === '/busCompanyTabsTrips' ? 'companyOwnerTabActive' : 'companyOwnerTabNonActive' ">Trips</router-link>
+            <router-link to="/busCompanyTabsAgent" :class="$route.path === '/busCompanyTabsAgent' ? 'companyOwnerTabActive' : 'companyOwnerTabNonActive' ">Agent</router-link>
             <router-link to="/counterman" :class="$route.path === '/counterman' ? 'companyOwnerTabActive' : 'companyOwnerTabNonActive' ">Counterman</router-link>
-            <router-link to="/staffs" :class="$route.path === '/staffs' ? 'companyOwnerTabActive' : 'companyOwnerTabNonActive' ">Staffs</router-link>
+            <router-link to="/supervisor" :class="$route.path === '/supervisor' ? 'companyOwnerTabActive' : 'companyOwnerTabNonActive' ">Staffs</router-link>
             <router-link to="/companyTicket" :class="$route.path === '/companyTicket' ? 'companyOwnerTabActive' : 'companyOwnerTabNonActive' ">Ticket</router-link>
           </div>
         </div>

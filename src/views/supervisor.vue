@@ -24,7 +24,7 @@
           </div>
         </div>
         <div class="flex gap-x-2 p-4 justify-center items-center mr-6 ">
-            <router-link to="/createSupervisor" class="topBarAddButton">
+            <router-link to="/busCompanyCreateSupervisor" class="topBarAddButton">
               <span><img src="../assets/svg/plus.svg" class="h-[9.33px] w-[9.33px]" alt=""></span>Add supervisor
             </router-link>
             
@@ -39,24 +39,24 @@
     <div class="px-[30px] py-[24px]">
       <!--        tab start-->
       <div class="border-b border-[#EDEDED]">
-        <div class="flex justify-start items-center">
-          <router-link to="/companyOwner" :class="$route.path === '/companyOwner' ? 'companyOwnerTabActive' : 'companyOwnerTabNonActive' ">Owner</router-link>
-          <router-link to="/routes" :class="$route.path === '/routes' ? 'companyOwnerTabActive' : 'companyOwnerTabNonActive' ">Routes</router-link>
-          <router-link to="/counter" :class="$route.path === '/counter' ? 'companyOwnerTabActive' : 'companyOwnerTabNonActive' ">Counter</router-link>
-          <router-link to="/trips" :class="$route.path === '/trips' ? 'companyOwnerTabActive' : 'companyOwnerTabNonActive' ">Trips</router-link>
-          <router-link to="/agent" :class="$route.path === '/agent' ? 'companyOwnerTabActive' : 'companyOwnerTabNonActive' ">Agent</router-link>
-          <router-link to="/counterman" :class="$route.path === '/counterman' ? 'companyOwnerTabActive' : 'companyOwnerTabNonActive' ">Counterman</router-link>
-          <router-link to="/staffs" :class="$route.path === '/staffs' ? 'companyOwnerTabActive' : 'companyOwnerTabNonActive' ">Staffs</router-link>
-          <router-link to="/companyTicket" :class="$route.path === '/companyTicket' ? 'companyOwnerTabActive' : 'companyOwnerTabNonActive' ">Ticket</router-link>
+          <div class="flex justify-start items-center">
+            <router-link to="/companyOwner" :class="$route.path === '/companyOwner' ? 'companyOwnerTabActive' : 'companyOwnerTabNonActive' ">Owner</router-link>
+            <router-link to="/busCompanyTabsRoute" :class="$route.path === '/busCompanyTabsRoute' ? 'companyOwnerTabActive' : 'companyOwnerTabNonActive' ">Routes</router-link>
+            <router-link to="/busCompanyTabsCounter" :class="$route.path === '/busCompanyTabsCounter' ? 'companyOwnerTabActive' : 'companyOwnerTabNonActive' ">Counter</router-link>
+            <router-link to="/busCompanyTabsTrips" :class="$route.path === '/busCompanyTabsTrips' ? 'companyOwnerTabActive' : 'companyOwnerTabNonActive' ">Trips</router-link>
+            <router-link to="/busCompanyTabsAgent" :class="$route.path === '/busCompanyTabsAgent' ? 'companyOwnerTabActive' : 'companyOwnerTabNonActive' ">Agent</router-link>
+            <router-link to="/counterman" :class="$route.path === '/counterman' ? 'companyOwnerTabActive' : 'companyOwnerTabNonActive' ">Counterman</router-link>
+            <router-link to="/supervisor" :class="$route.path === '/supervisor' ? 'companyOwnerTabActive' : 'companyOwnerTabNonActive' ">Staffs</router-link>
+            <router-link to="/companyTicket" :class="$route.path === '/companyTicket' ? 'companyOwnerTabActive' : 'companyOwnerTabNonActive' ">Ticket</router-link>
+          </div>
         </div>
-      </div>
 <!--        card-->
       <div class="mt-[16px] bg-white">
           <div class="p-4 flex justify-between items-center">
             <div class="flex justify-start items-center gap-x-4 w-full">
               <div class="w-1/4 xl:w-1/5">
                 <p class="text-primaryText leading-[20px] text-[14px] xl:leading-[24px] xl:text-[16px] font-[600]">Staff type</p>
-                <Dropdown class="w-full p-[1px] mt-[10px] placeholder:text-primaryText placeholder:leading-[16px] placeholder:text-[12px] xl:placeholder:leading-[20px] xl:placeholder:text-[14px]" v-model="selectedCity" :options="cities" optionLabel="name" placeholder="Select Counter" />
+                <Dropdown class="w-full p-[1px] mt-[10px] placeholder:text-primaryText placeholder:leading-[16px] placeholder:text-[12px] xl:placeholder:leading-[20px] xl:placeholder:text-[14px]" v-model="selectedCity" :options="cities" optionLabel="name" placeholder="Supervisor" />
               </div>
               <div class="w-1/4 xl:w-1/5">
                 <div class="flex justify-between items-center w-full">
