@@ -60,10 +60,7 @@
 
                 <hr class="border-t border-corporateBorder">
                 <div class="px-[16px] py-[20px] w-full flex justify-center items-center">
-                  <button
-                    class="text-white leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[500] bg-corporate bg-opacity-30 rounded-full px-[20px] py-[11px] xl:px-[24px] xl:py-[13px]">
-                    Create expense
-                  </button>
+                  <router-link to="/tripExpenseConfigurationFilled" class="lessOpacityCorporateButton">Create routes</router-link>
                 </div>
           </div>
         </div>

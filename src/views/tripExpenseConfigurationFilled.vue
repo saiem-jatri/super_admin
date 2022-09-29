@@ -78,9 +78,8 @@
 
               <hr class="border-t border-corporateBorder">
               <div class="px-[16px] py-[20px] w-full flex justify-center items-center">
-                <button
-                  class="text-white leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[500] bg-corporate rounded-full px-[20px] py-[11px] xl:px-[24px] xl:py-[13px]">
-                  Create expense
+                <button class="flex justify-center items-center gap-x-[10px] text-white leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[500] bg-corporate rounded-full px-[20px] py-[11px] xl:px-[24px] xl:py-[13px]">
+                    <img alt="" src="/src/assets/svg/save_change.svg">Save changes 
                 </button>
               </div>
         </div>

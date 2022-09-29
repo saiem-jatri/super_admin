@@ -12,27 +12,31 @@ import companyCreateOwner from '@/views/bus_company_create_owner.vue'
 import busCompanyCreateRoute from '@/views/bus_company_create_route.vue'
 import BusCompanyTabsCounter from '@/views/bus-company-tabs-counter.vue'
 import BusCompanyCreateCounter from '@/views/bus_company_create_counter.vue'
+import BusCompanyTabsTrips from '@/views/bus-company-tabs-trips.vue'
+import BusCompanyTabsAgent from '@/views/bus-company-tabs-agent.vue'
 import companyManageTrip from '@/views/bus_company_manage_trips.vue'
 import Counterman from '@/views/counterman.vue'
 import companyCreateCounterman from '@/views/bus_company_create_counterman.vue'
-import Staffs from '@/views/staffs.vue'
-import companyCreateSupervisor from '@/views/bus_company_create_supervisor.vue'
-import companyCreateDriver from '@/views/bus_company_create_driver.vue'
-import companyCreateHelper from '@/views/bus_company_create_helper.vue'
+import Supervisor from '@/views/supervisor.vue'
+import BusCompanyCreateSupervisor from '@/views/bus_company_create_supervisor.vue'
+import BusCompanyDriver from '@/views/bus-company-driver.vue'
+import BusCompanyCreateDriver from '@/views/bus_company_create_driver.vue'
+import BusCompanyHelper from '@/views/bus_company_helper.vue'
+import BusCompanyCreateHelper from '@/views/bus_company_create_helper.vue'
 import companyManageCreateDriver from '@/views/bus_company_manage_create_driver.vue'
 import busCompanyManageViaCity from '@/views/bus_company_manage_via_city.vue'
 import busCompanyManageViaCityFilled from '@/views/bus_company_manage_via_city_filled.vue'
 import companyManageCompany from '@/views/bus_company_manage_company.vue'
 import companyManageOwner from '@/views/bus_company_manage_owner.vue'
 import Routes from '@/views/routes.vue'
-import RouteCreate from '@/views/route_create.vue'
+import CreateRoutes from '@/views/create-routes.vue'
 import RoutesViaCity from '@/views/routes_via_city.vue'
-import TripPreview from '@/views/trip_preview.vue'
 import RouteViaCityFilled from '@/views/route_via_city_filled.vue'
 import Counter from '@/views/counter.vue'
-import CreateCounter from '@/views/counter_create.vue'
-import THirdPartyCounter from '@/views/thirdparty_counter.vue'
+import CreateCounter from '@/views/create-counter.vue'
+import ThirdPartyCounter from '@/views/thirdparty_counter.vue'
 import Trips from '@/views/trips.vue'
+import TripPreview from '@/views/trip_preview.vue'
 import TripsInformation from '@/views/tripInformation.vue'
 import TripsInformationNext from '@/views/TripsInformationNext.vue'
 import TripsBoarding from "@/views/trips-boarding.vue"
@@ -52,21 +56,19 @@ import TripsQuota from '@/views/trips_quota.vue'
 import TripFacilities from '@/views/trip_facilities.vue'
 import User from '@/views/user.vue'
 import UserAdmin from '@/views/user_admin.vue'
-import UserCounterman from '@/views/user_counterman.vue'
-import UserAgent from '@/views/user_agent.vue'
-import UserCustomerCare from '@/views/user_customer_care.vue'
 import UserCreateAdmin from '@/views/user_create_admin.vue'
+import UserCounterman from '@/views/user_counterman.vue'
 import UserCreateCounterman from '@/views/user_create_counterman.vue'
+import UserAgent from '@/views/user_agent.vue'
 import UserCreateAgent from '@/views/user_create_agent.vue'
+import UserCustomerCare from '@/views/user_customer_care.vue'
 import UserCreateCustomercare from '@/views/user_create_customercare.vue'
 import MigrateTrip from '@/views/migrate_trip.vue'
 import Agent from '@/views/agent.vue'
 import AddAgent from '@/views/add-agent.vue'
 import AddAgentNext from '@/views/add-agent-next.vue'
-import AddAgentSave from '@/views/add-agent-save.vue'
 import TripExpenseConfiguration from '@/views/tripExpenseConfiguration.vue'
 import TripExpenseConfigurationFilled from '@/views/TripExpenseConfigurationFilled.vue'
-import TripExpenseConfigurationFinal from '@/views/TripExpenseConfigurationFinal.vue'
 import MigrateSelect from '@/views/migrate_select_seat.vue'
 import MigrateSameTicketOwner from '@/views/migrate_same_ticket_owner.vue'
 import MigrateTicket from '@/views/migrate_ticket.vue'
@@ -133,11 +135,6 @@ const router = createRouter({
             component: BusCompanyTabsRoute
         },
         {
-            path: '/companyTicket',
-            name: 'companyTicket',
-            component: CompanyTicket
-        },
-        {
             path: '/createOwner',
             name: 'createOwner',
             component: companyCreateOwner
@@ -158,40 +155,54 @@ const router = createRouter({
             component: BusCompanyCreateCounter
         },
         {
+            path: '/busCompanyTabsTrips',
+            name: 'BusCompanyTabsTrips',
+            component: BusCompanyTabsTrips
+        },
+        {
+            path: '/busCompanyTabsAgent',
+            name: 'BusCompanyTabsAgent',
+            component: BusCompanyTabsAgent
+        },
+        {
             path: '/manageTrip',
             name: 'companyManageTrip',
             component: companyManageTrip
-        },
-
+        },  
         {
-            path: '/createSupervisor',
-            name: 'companyCreateSupervisor',
-            component: companyCreateSupervisor
-        },
-        {
-            path: '/counterman',
-            name: 'Counterman',
-            component: Counterman
+            path: '/supervisor',
+            name: 'Supervisor',
+            component: Supervisor
         },
         {
-            path: '/createCounterMan',
-            name: 'companyCreateCounterman',
-            component: companyCreateCounterman
+            path: '/busCompanyCreateSupervisor',
+            name: 'BusCompanyCreateSupervisor',
+            component: BusCompanyCreateSupervisor
         },
         {
-            path: '/staffs',
-            name: 'Staffs',
-            component: Staffs
+            path: '/busCompanyDriver',
+            name: 'BusCompanyDriver',
+            component: BusCompanyDriver
         },
         {
-            path: '/createDriver',
-            name: 'companyCreateDriver',
-            component: companyCreateDriver
+            path: '/busCompanyCreateDriver',
+            name: 'BusCompanyCreateDriver',
+            component: BusCompanyCreateDriver
         },
         {
-            path: '/createHelper',
-            name: 'companyCreateHelper',
-            component: companyCreateHelper
+            path: '/busCompanyHelper',
+            name: 'BusCompanyHelper',
+            component: BusCompanyHelper
+        },
+        {
+            path: '/busCompanyCreateHelper',
+            name: 'BusCompanyCreateHelper',
+            component: BusCompanyCreateHelper
+        },
+        {
+            path: '/companyTicket',
+            name: 'companyTicket',
+            component: CompanyTicket
         },
         {
             path: '/createManageDriver',
@@ -218,6 +229,17 @@ const router = createRouter({
             name: 'companyManageOwner',
             component: companyManageOwner
         },
+        
+        {
+            path: '/counterman',
+            name: 'Counterman',
+            component: Counterman
+        },
+        {
+            path: '/createCounterMan',
+            name: 'companyCreateCounterman',
+            component: companyCreateCounterman
+        },
 
         //    routes start
         {
@@ -226,12 +248,12 @@ const router = createRouter({
             component: Routes
         },
         {
-            path: '/routeCreate',
-            name: 'RouteCreate',
-            component: RouteCreate
+            path: '/createRoutes',
+            name: 'CreateRoutes',
+            component: CreateRoutes
         },
         {
-            path: '/routeViaCity',
+            path: '/routesViaCity',
             name: 'RoutesViaCity',
             component: RoutesViaCity
         },
@@ -248,14 +270,14 @@ const router = createRouter({
             component: Counter
         },
         {
-            path: '/counterCreate',
+            path: '/createCounter',
             name: 'CreateCounter',
             component: CreateCounter
         },
         {
             path: '/thirdPartyCounter',
-            name: 'THirdPartyCounter',
-            component: THirdPartyCounter
+            name: 'ThirdPartyCounter',
+            component: ThirdPartyCounter
         },
 
         //    Trips started
@@ -463,11 +485,7 @@ const router = createRouter({
             name: 'AddAgentNext',
             component: AddAgentNext,
         },
-        {
-            path: '/addAgentSave',
-            name: 'AddAgentSave',
-            component: AddAgentSave,
-        },
+
         //invoice started
         {
             path: '/invoice',
@@ -525,11 +543,6 @@ const router = createRouter({
             path: '/tripExpenseConfigurationFilled',
             name: 'TripExpenseConfigurationFilled',
             component: TripExpenseConfigurationFilled
-        },
-        {
-            path: '/tripExpenseConfigurationFinal',
-            name: 'TripExpenseConfigurationFinal',
-            component: TripExpenseConfigurationFinal
         },
         //    Action in bulk started
 

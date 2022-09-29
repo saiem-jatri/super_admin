@@ -3,7 +3,6 @@
       <div class="bg-white h-[72px] sticky top-0 border-b border-[#DBDBDB] z-10 px-[32px]">
         <div class="flex justify-between">
           <div class="flex justify-center items-center gap-x-[32px]">
-
             <button class="flex justify-center items-center gap-x-[10px]">
               <img alt="" class="w-[12px] h-[12px]" src="../assets/svg/Back.svg">
               <p class="text-primaryText leading-[12px] text-[10px] xl:leading-[16px] xl:text-[12px] font-[500]">
@@ -11,22 +10,11 @@
             </button>
             <div class="flex flex-col gap-y-[4px]">
               <p class="lg:leading-[16px] xl:leading-[28px] lg:text-[14px] xl:text-[20px] font-[600] text-primaryText">
-                Create Company</p>
+                User</p>
               <div class="flex justify-center items-center gap-x-[6px]">
-                <p class="text-secondaryText leading-[12px] text-[8px] xl:leading-[16px] xl:text-[12px] font-[400]">Bus
-                  Company</p>
+                <p class="text-secondaryText leading-[12px] text-[8px] xl:leading-[16px] xl:text-[12px] font-[400]">User</p>
                 <img alt="" class="w-1 h-2" src="../assets/svg/bgBack.svg">
-                <p class="text-secondaryText leading-[12px] text-[8px] xl:leading-[16px] xl:text-[12px] font-[400]">Add
-                  company</p>
-                <img alt="" class="w-1 h-2" src="../assets/svg/bgBack.svg">
-                <p class="text-secondaryText leading-[12px] text-[8px] xl:leading-[16px] xl:text-[12px] font-[400]">Desh
-                  Travels Limited</p>
-                <img alt="" class="w-1 h-2" src="../assets/svg/bgBack.svg">
-                <p class="text-secondaryText leading-[12px] text-[8px] xl:leading-[16px] xl:text-[12px] font-[400]">
-                  Manage</p>
-                <img alt="" class="w-1 h-2" src="../assets/svg/bgBack.svg">
-                <p class="text-secondaryText leading-[12px] text-[8px] xl:leading-[16px] xl:text-[12px] font-[400]">
-                  Owner</p>
+                <p class="text-secondaryText leading-[12px] text-[8px] xl:leading-[16px] xl:text-[12px] font-[400]"> Owner</p>
               </div>
             </div>
           </div>
@@ -57,13 +45,11 @@
         <!--        tab start-->
         <div class="border-b border-[#EDEDED]">
           <div class="flex justify-start items-center">
-            <a class="companyOwnerTabActive" href="#">Owner</a>
-            <a class="companyOwnerTabNonActive" href="#">Jatri Admin</a>
-            <a class="companyOwnerTabNonActive" href="#">Counterman</a>
-            <a class="companyOwnerTabNonActive" href="#">Agent</a>
-            <a class="block full h-[25px] xl:w-[120px] xl:h-[30px] leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] text-center rounded-t-[8px] text-corporateSecondaryBlack font-[500]"
-               href="#">Customer Care</a>
-
+            <router-link to="/user" :class="$route.path === '/user' ? 'companyOwnerTabActive' : 'companyOwnerTabNonActive' ">Owner</router-link>
+            <router-link to="/userAdmin" :class="$route.path === '/userAdmin' ? 'companyOwnerTabActive' : 'companyOwnerTabNonActive' ">Jatri Admin</router-link>
+            <router-link to="/UserCounterman" :class="$route.path === '/UserCounterman' ? 'companyOwnerTabActive' : 'companyOwnerTabNonActive' ">Counterman</router-link>
+            <router-link to="/UserAgent" :class="$route.path === '/UserAgent' ? 'companyOwnerTabActive' : 'companyOwnerTabNonActive' ">Agent</router-link>
+            <router-link to="/userCustomerCare" :class="$route.path === '/userCustomerCare' ? 'companyOwnerTabActive' : 'companyOwnerTabNonActive' ">Customer Care</router-link>
           </div>
         </div>
         <!--        card-->
@@ -198,7 +184,7 @@
                 +8801708630439
               </td>
               <td class="leading-[20px] text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText">
-                OWNER
+                COMPANY ADMIN
               </td>
               <td class="border-r border-[#DBDBDB]">
                 <div class="flex justify-center items-center">

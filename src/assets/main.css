@@ -93,11 +93,11 @@ body {
 }
 
 .companyOwnerTabNonActive {
-    @apply block w-[83px] h-[25px] xl:w-[93px] xl:h-[30px] leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] text-center rounded-t-[8px] text-corporateSecondaryBlack font-[500]
+    @apply block h-[25px] xl:h-[30px] px-4 leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] text-center rounded-t-[8px] text-corporateSecondaryBlack font-[500]
 }
 
 .companyOwnerTabActive {
-    @apply block w-[83px] h-[25px] xl:w-[93px] xl:h-[30px] text-center border-b-4 border-corporate leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] rounded-t-[8px] bg-white text-corporate font-[600]
+    @apply block h-[25px] xl:h-[30px] px-4 text-center border-b-4 border-corporate leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] rounded-t-[8px] bg-white text-corporate font-[600]
 }
 
 .viaCityActive {

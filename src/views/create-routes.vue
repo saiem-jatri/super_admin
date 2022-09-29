@@ -104,7 +104,7 @@
                 <button class="viaCityInActive">Inactive</button>
               </div>
             </div>
-            <button class="createBtn">Create routes</button>
+            <router-link to="/routesViaCity" class="lessOpacityCorporateButton">Create routes</router-link>
           </div>
         </div>
       </div>

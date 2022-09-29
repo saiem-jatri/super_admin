@@ -8,7 +8,9 @@
             <input type="text" class="outline-none pl-2 placeholder:text-[#4D4D4F] placeholder:text-[14px] placeholder:leading-[20px]" placeholder="PNR or mobile number">
           </div>
           <div class="flex gap-x-2 p-4 justify-center items-center mr-6 ">
-            <button class="bg-corporate flex gap-x-3 justify-center items-center text-white rounded-full px-4 py-3 mr-4 leading-[12px] text-[10px] xl:leading-[16px] xl:text-[12px]"><span><img src="../assets/svg/plus.svg" class="h-[9.33px] w-[9.33px]" alt=""></span>Add counter</button>
+              <router-link to="/createCounter" class="topBarAddButton flex items-center gap-x-3">
+                <span><img src="../assets/svg/plus.svg" class="h-[9.33px] w-[9.33px]" alt=""></span>Add counter
+              </router-link>
             <img src="../assets/person/person1.png" alt="" class="h-[30px] xl:h-[40px] w-[30px] xl:w-[40px] rounded-full">
             <p class="text-[#151414] leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[500]">Admin Name</p>
             <img src="../assets/person/downArrow.svg" alt="" class="w-[12px] h-[6px]">
@@ -18,21 +20,8 @@
       <!-- top nav bar end -->
       <!-- body start-->
       <div class="px-[30px] py-[24px]">
-        <!--        tab start-->
-        <div class="border-b border-[#EDEDED]">
-          <div class="flex justify-start items-center">
-            <router-link to="/companyOwner" :class="$route.path === '/companyOwner' ? 'companyOwnerTabActive' : 'companyOwnerTabNonActive' ">Owner</router-link>
-            <router-link to="/routes" :class="$route.path === '/routes' ? 'companyOwnerTabActive' : 'companyOwnerTabNonActive' ">Routes</router-link>
-            <router-link to="/counter" :class="$route.path === '/counter' ? 'companyOwnerTabActive' : 'companyOwnerTabNonActive' ">Counter</router-link>
-            <router-link to="/trips" :class="$route.path === '/trips' ? 'companyOwnerTabActive' : 'companyOwnerTabNonActive' ">Trips</router-link>
-            <router-link to="/agent" :class="$route.path === '/agent' ? 'companyOwnerTabActive' : 'companyOwnerTabNonActive' ">Agent</router-link>
-            <router-link to="/counterman" :class="$route.path === '/counterman' ? 'companyOwnerTabActive' : 'companyOwnerTabNonActive' ">Counterman</router-link>
-            <router-link to="/staffs" :class="$route.path === '/staffs' ? 'companyOwnerTabActive' : 'companyOwnerTabNonActive' ">Staffs</router-link>
-            <router-link to="/companyTicket" :class="$route.path === '/companyTicket' ? 'companyOwnerTabActive' : 'companyOwnerTabNonActive' ">Ticket</router-link>
-          </div>
-        </div>
         <!--        card-->
-        <div class="mt-4 bg-white">
+        <div class="bg-white">
           <div class="p-4 flex justify-between items-center">
             <div class="flex justify-start items-center gap-x-4 w-full">
               <div class="w-1/4">
