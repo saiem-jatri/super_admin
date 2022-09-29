@@ -538,11 +538,6 @@ const router = createRouter({
             name: 'TripExpenseConfiguration',
             component: TripExpenseConfiguration
         },
-        {
-            path: '/tripExpenseConfigurationFilled',
-            name: 'TripExpenseConfigurationFilled',
-            component: TripExpenseConfigurationFilled
-        },
         //    Action in bulk started
 
         {
