@@ -141,7 +141,7 @@
                 <button class="viaCityInActive">Inactive</button>
               </div>
             </div>
-            <button class="createBtn">Create routes</button>
+            <router-link to="/routeViaCityFilled" class="corporateButton">Create routes</router-link>
           </div>
         </div>
       </div>

@@ -29,14 +29,14 @@ import busCompanyManageViaCityFilled from '@/views/bus_company_manage_via_city_f
 import companyManageCompany from '@/views/bus_company_manage_company.vue'
 import companyManageOwner from '@/views/bus_company_manage_owner.vue'
 import Routes from '@/views/routes.vue'
-import RouteCreate from '@/views/route_create.vue'
+import CreateRoutes from '@/views/create-routes.vue'
 import RoutesViaCity from '@/views/routes_via_city.vue'
-import TripPreview from '@/views/trip_preview.vue'
 import RouteViaCityFilled from '@/views/route_via_city_filled.vue'
 import Counter from '@/views/counter.vue'
 import CreateCounter from '@/views/counter_create.vue'
 import THirdPartyCounter from '@/views/thirdparty_counter.vue'
 import Trips from '@/views/trips.vue'
+import TripPreview from '@/views/trip_preview.vue'
 import TripsInformation from '@/views/tripInformation.vue'
 import TripsInformationNext from '@/views/TripsInformationNext.vue'
 import TripsBoarding from "@/views/trips-boarding.vue"
@@ -249,12 +249,12 @@ const router = createRouter({
             component: Routes
         },
         {
-            path: '/routeCreate',
-            name: 'RouteCreate',
-            component: RouteCreate
+            path: '/createRoutes',
+            name: 'CreateRoutes',
+            component: CreateRoutes
         },
         {
-            path: '/routeViaCity',
+            path: '/routesViaCity',
             name: 'RoutesViaCity',
             component: RoutesViaCity
         },
