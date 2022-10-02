@@ -62,12 +62,12 @@ import UserAgent from '@/views/user_agent.vue'
 import UserCreateAgent from '@/views/user_create_agent.vue'
 import UserCustomerCare from '@/views/user_customer_care.vue'
 import UserCreateCustomercare from '@/views/user_create_customercare.vue'
-import MigrateTrip from '@/views/migrate_trip.vue'
 import Agent from '@/views/agent.vue'
 import AddAgent from '@/views/add-agent.vue'
 import AddAgentNext from '@/views/add-agent-next.vue'
 import TripExpenseConfiguration from '@/views/tripExpenseConfiguration.vue'
 import TripExpenseConfigurationFilled from '@/views/TripExpenseConfigurationFilled.vue'
+import MigrateTrip from '@/views/migrate_trip.vue'
 import MigrateSelect from '@/views/migrate_select_seat.vue'
 import MigrateSameTicketOwner from '@/views/migrate_same_ticket_owner.vue'
 import MigrateTicket from '@/views/migrate_ticket.vue'
@@ -443,11 +443,6 @@ const router = createRouter({
             path: '/migrateTicketSelect',
             name: 'MigrateTicketSelect',
             component: MigrateTicketSelect,
-        },
-        {
-            path: '/tripsQuotaFilled',
-            name: 'TripsQuotaFilled',
-            component: TripsQuotaFilled,
         },
 
         //Agent Start

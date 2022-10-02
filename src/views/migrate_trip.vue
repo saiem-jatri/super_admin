@@ -240,7 +240,7 @@
         <!-- Buttons just for show routing. Remove after development -->
        <div class="mt-6">
        <p class="mb-4 italic text-red-500">*Buttons just for show routing. Remove after development*</p>
-        <router-link to="/MigrateSelect" class="corporateButton">After Select Seat</router-link>
+        <router-link to="/MigrateSelect" class="corporateButton">Next</router-link>
        </div>
     </div>
 </template>
