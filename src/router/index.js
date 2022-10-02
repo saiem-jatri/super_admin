@@ -36,16 +36,16 @@ import Counter from '@/views/counter.vue'
 import CreateCounter from '@/views/create-counter.vue'
 import ThirdPartyCounter from '@/views/thirdparty_counter.vue'
 import Trips from '@/views/trips.vue'
+import TripsAddNext from "@/views/tripsAddNext.vue"
+import TripsAdd from "@/views/tripsAdd.vue"
 import TripPreview from '@/views/trip_preview.vue'
 import TripsInformation from '@/views/tripInformation.vue'
 import TripsInformationNext from '@/views/TripsInformationNext.vue'
 import TripsBoarding from "@/views/trips-boarding.vue"
 import AnotherTripsBoarding from "@/views/another-trips-boarding.vue"
 import AnotherTripsBoardingNext from "@/views/another-trips-boarding-next.vue"
-import TripsAdd from "@/views/tripsAdd.vue"
 import TripsBusRouteSelect from "@/views/trips-bus-route-select.vue"
 import TripsBusRouteSelectNext from "@/views/trips-bus-route-select-next.vue"
-import TripsAddNext from "@/views/tripsAddNext.vue"
 import TripsPermission from '@/views/trip_permission.vue'
 import ManageUserRestriction from '@/views/manage-user-restriction.vue'
 import ManageUserRestrictionFilled from '@/views/manage-user-restriction-filled.vue'
@@ -290,6 +290,21 @@ const router = createRouter({
             component: TripsAdd
         },
         {
+            path: '/tripsAddNext',
+            name: 'TripsAddNext',
+            component: TripsAddNext
+        },
+        {
+            path: '/manageUserRestriction',
+            name: 'ManageUserRestriction',
+            component: ManageUserRestriction,
+        },
+        {
+            path: '/manageUserRestrictionFilled',
+            name: 'ManageUserRestrictionFilled',
+            component: ManageUserRestrictionFilled,
+        },
+        {
             path: '/tripsInformation',
             name: 'TripsInformation',
             component: TripsInformation
@@ -313,6 +328,17 @@ const router = createRouter({
             path: '/anotherTripsBoardingNext',
             name: 'AnotherTripsBoardingNext',
             component: AnotherTripsBoardingNext
+        },
+        
+        {
+            path: '/tripsBusRouteSelect',
+            name: 'TripsBusRouteSelect',
+            component: TripsBusRouteSelect
+        },
+        {
+            path: '/tripsBusRouteSelectNext',
+            name: 'TripsBusRouteSelectNext',
+            component: TripsBusRouteSelectNext
         },
         {
             path: '/tripsPermission',
@@ -338,27 +364,6 @@ const router = createRouter({
             path: '/tripsFacilities',
             name: 'TripFacilities',
             component: TripFacilities
-        },
-
-        {
-            path: '/tripsAdd',
-            name: 'TripsAdd',
-            component: TripsAdd
-        },
-        {
-            path: '/tripsBusRouteSelect',
-            name: 'TripsBusRouteSelect',
-            component: TripsBusRouteSelect
-        },
-        {
-            path: '/tripsBusRouteSelectNext',
-            name: 'TripsBusRouteSelectNext',
-            component: TripsBusRouteSelectNext
-        },
-        {
-            path: '/tripsPermission',
-            name: 'TripsPermission',
-            component: TripsPermission
         },
         {
             path: '/tripPreview',
@@ -438,22 +443,6 @@ const router = createRouter({
             path: '/migrateTicketSelect',
             name: 'MigrateTicketSelect',
             component: MigrateTicketSelect,
-        },
-
-        {
-            path: '/tripsAddNext',
-            name: 'TripsAddNext',
-            component: TripsAddNext
-        },
-        {
-            path: '/manageUserRestriction',
-            name: 'ManageUserRestriction',
-            component: ManageUserRestriction,
-        },
-        {
-            path: '/manageUserRestrictionFilled',
-            name: 'ManageUserRestrictionFilled',
-            component: ManageUserRestrictionFilled,
         },
         {
             path: '/tripsQuotaFilled',

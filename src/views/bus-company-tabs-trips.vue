@@ -22,7 +22,7 @@
           </div>
         </div>
         <div class="flex gap-x-2 p-4 justify-center items-center mr-6 ">
-            <router-link to="/createOwner" class="topBarAddButton">
+            <router-link to="/tripsAdd" class="topBarAddButton">
               <span><img src="../assets/svg/plus.svg" class="h-[9.33px] w-[9.33px]" alt=""></span>Add Trips
             </router-link>
             

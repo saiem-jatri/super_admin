@@ -8,8 +8,10 @@
         <input type="text" class="outline-none pl-2 placeholder:text-[#4D4D4F] placeholder:text-[14px] placeholder:leading-[20px]" placeholder="PNR or mobile number">
       </div>
       <div class="flex gap-x-2 p-4 justify-center items-center mr-6 ">
-        <button class="bg-corporate flex gap-x-3 justify-center items-center text-white rounded-full px-4 py-3 mr-4 leading-[12px] text-[10px] xl:leading-[16px] xl:text-[12px]"><span><img src="../assets/svg/plus.svg" class="h-[9.33px] w-[9.33px]" alt=""></span>Add trip</button>
-        <img src="../assets/person/person1.png" alt="" class="h-[30px] xl:h-[40px] w-[30px] xl:w-[40px] rounded-full">
+        <router-link to="/tripsAdd" class="topBarAddButton">
+          <span><img src="../assets/svg/plus.svg" class="h-[9.33px] w-[9.33px]" alt=""></span>Add Trips
+        </router-link>
+          <img src="../assets/person/person1.png" alt="" class="h-[30px] xl:h-[40px] w-[30px] xl:w-[40px] rounded-full">
         <p class="text-[#151414] leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[500]">Admin Name</p>
         <img src="../assets/person/downArrow.svg" alt="" class="w-[12px] h-[6px]">
       </div>
@@ -275,9 +277,23 @@
    <div class="mt-[12px] xl:mt-[16px] bg-white rounded-[10px]">
       <div class="flex justify-between items-center px-[16px] py-2">
         <p class="leading-[24px] xl:leading-[28px] text-[18px] xl:text-[20px] font-[500] text-[#1E88E5] py-[16px]">USER TRIP RESTRICTION</p>
-        <button class="corporateButton">Manage restriction</button>
+        <router-link to="/manageUserRestriction" class="corporateButton">Manage restriction</router-link>
       </div>
    </div>
+
+   <div class="mt-[12px] xl:mt-[16px">
+      <div class="flex items-center gap-x-4">
+        <router-link to="/tripsInformation" class="corporateButton">Trips Information</router-link>
+        <router-link to="/tripsBoarding" class="corporateButton">Trips Boarding</router-link>
+        <router-link to="/tripsBusRouteSelect" class="corporateButton !bg-green-700">Trips Bus and Route Select</router-link>
+        <router-link to="/tripsPermission" class="corporateButton">Trips Permission</router-link>
+        <router-link to="/tripsAgent" class="corporateButton">Trips Agent</router-link>
+        <router-link to="/tripsQuota" class="corporateButton">Trips Quota</router-link>
+        <router-link to="/tripsFacilities" class="corporateButton">Trips Facilities</router-link>
+        <router-link to="/tripPreview" class="corporateButton">Trips Preview</router-link>
+      </div>
+   </div>
+
   </div>
 </template>
 
