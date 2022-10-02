@@ -54,6 +54,7 @@ import ManageUserRestriction from '@/views/manage-user-restriction.vue'
 import ManageUserRestrictionFilled from '@/views/manage-user-restriction-filled.vue'
 import TripsQuotaFilled from '@/views/trips-quota-filled.vue'
 import TripsAgent from '@/views/trips_agent.vue'
+import TripsAgentFilled from '@/views/trips_agent-filled.vue'
 import TripsQuota from '@/views/trips_quota.vue'
 import TripFacilities from '@/views/trip_facilities.vue'
 import User from '@/views/user.vue'
@@ -368,6 +369,11 @@ const router = createRouter({
             path: '/tripsAgent',
             name: 'TripsAgent',
             component: TripsAgent
+        },
+        {
+            path: '/tripsAgentFilled',
+            name: 'TripsAgentFilled',
+            component: TripsAgentFilled
         },
         {
             path: '/tripsQuota',
