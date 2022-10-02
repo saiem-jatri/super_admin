@@ -281,7 +281,9 @@
       </div>
    </div>
 
-   <div class="mt-[12px] xl:mt-[16px">
+   <!-- Buttons just for show routing. Remove after development -->
+   <div class="mt-6">
+    <p class="mb-4 italic text-red-500">*Buttons just for show routing. Remove after development*</p>
       <div class="flex items-center gap-x-4">
         <router-link to="/tripsInformation" class="corporateButton">Trips Information</router-link>
         <router-link to="/tripsBoarding" class="corporateButton">Trips Boarding</router-link>
