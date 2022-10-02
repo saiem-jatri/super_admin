@@ -49,6 +49,7 @@ import TripsBusRouteSelectNext from "@/views/trips-bus-route-select-next.vue"
 import TripsBusRouteSelectSeatExtra from "@/views/trips-bus-route-select-extraSeat.vue"
 import TripsBusRouteSelectSeatExtraNext from "@/views/trips-bus-route-select-extraSeat-next.vue"
 import TripsPermission from '@/views/trip_permission.vue'
+import TripsPermissionFilled from '@/views/trip_permission-filled.vue'
 import ManageUserRestriction from '@/views/manage-user-restriction.vue'
 import ManageUserRestrictionFilled from '@/views/manage-user-restriction-filled.vue'
 import TripsQuotaFilled from '@/views/trips-quota-filled.vue'
@@ -357,6 +358,11 @@ const router = createRouter({
             path: '/tripsPermission',
             name: 'TripsPermission',
             component: TripsPermission
+        },
+        {
+            path: '/tripsPermissionFilled',
+            name: 'TripsPermissionFilled',
+            component: TripsPermissionFilled
         },
         {
             path: '/tripsAgent',
