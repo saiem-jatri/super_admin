@@ -68,7 +68,7 @@
 
         <ul class="border-b border-corporateBorder">
           <dropdown-menu height="min-h-[138px]" title="Invoice">
-            <router-link :class="$route.path === '' ? 'activeMenu' : 'menu border-b border-dashed p-[10px]' " to="">
+            <router-link :class="$route.path === '/invoice' ? 'activeMenu' : 'menu border-b border-dashed p-[10px]' " to="/invoice">
               Preodic Due Bill
             </router-link>
             <router-link
@@ -96,30 +96,30 @@
         <ul class="border-b border-corporateBorder">
           <dropdown-menu height="min-h-[138px]" title="Action in Bulk">
             <router-link
-                :class="$route.path === 'actionFareUpdate' ? 'activeMenu' : 'menu border-b border-dashed p-[10px]' "
+                :class="$route.path === '/actionFareUpdate' ? 'activeMenu' : 'menu border-b border-dashed p-[10px]' "
                 to="/actionFareUpdate">
               Fare Update
             </router-link>
             <router-link
-                :class="$route.path === 'updateStopageTime' ? 'activeMenu' : 'menu border-b border-dashed p-[10px]' "
+                :class="$route.path === '/updateStopageTime' ? 'activeMenu' : 'menu border-b border-dashed p-[10px]' "
                 to="/updateStopageTime">
               Update Stoppage Time
             </router-link>
-            <router-link :class="$route.path === 'tripAction' ? 'activeMenu' : 'menu border-b border-dashed p-[10px]' "
+            <router-link :class="$route.path === '/tripAction' ? 'activeMenu' : 'menu border-b border-dashed p-[10px]' "
                          to="/tripAction">Trip
               Actions
             </router-link>
             <router-link
-                :class="$route.path === 'offlineAccess' ? 'activeMenu' : 'menu border-b border-dashed p-[10px]' "
+                :class="$route.path === '/offlineAccess' ? 'activeMenu' : 'menu border-b border-dashed p-[10px]' "
                 to="/offlineAccess">
               Online/Offline Access
             </router-link>
             <router-link
-                :class="$route.path === 'dateRangePermission' ? 'activeMenu' : 'menu border-b border-dashed p-[10px]' "
+                :class="$route.path === '/dateRangePermission' ? 'activeMenu' : 'menu border-b border-dashed p-[10px]' "
                 to="/dateRangePermission">Date
               Range Permission
             </router-link>
-            <router-link :class="$route.path === 'quotaRelease' ? 'activeMenu' : 'menu p-[10px]' " to="/quotaRelease">
+            <router-link :class="$route.path === '/quotaRelease' ? 'activeMenu' : 'menu p-[10px]' " to="/quotaRelease">
               Qouta Release
             </router-link>
           </dropdown-menu>
