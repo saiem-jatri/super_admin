@@ -287,11 +287,11 @@
       <div class="flex items-center gap-x-4">
         <router-link to="/tripsInformation" class="corporateButton">Trips Information</router-link>
         <router-link to="/tripsBoarding" class="corporateButton">Trips Boarding</router-link>
-        <router-link to="/tripsBusRouteSelect" class="corporateButton !bg-green-700">Trips Bus and Route Select</router-link>
+        <router-link to="/tripsBusRouteSelect" class="corporateButton">Trips Bus and Route Select</router-link>
         <router-link to="/tripsPermission" class="corporateButton">Trips Permission</router-link>
         <router-link to="/tripsAgent" class="corporateButton">Trips Agent</router-link>
         <router-link to="/tripsQuota" class="corporateButton">Trips Quota</router-link>
-        <router-link to="/tripsFacilities" class="corporateButton">Trips Facilities</router-link>
+        <router-link to="/tripsFacilities" class="corporateButton !bg-black">Trips Facilities</router-link>
         <router-link to="/tripPreview" class="corporateButton">Trips Preview</router-link>
       </div>
    </div>
