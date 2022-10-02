@@ -3,14 +3,7 @@
       <div class="bg-white h-[72px] sticky top-0 border-b border-[#DBDBDB] z-10">
         <div class="flex justify-between items-center">
           <div class="pl-8 flex flex-col gap-y-2">
-            <p class="text-[#151414] leading-[28px] text-[20px] font-[600]">User</p>
-            <div class="flex justify-center items-center gap-x-[6px]">
-              <p class="text-secondaryText leading-[12px] text-[8px] xl:leading-[16px] xl:text-[12px] font-[400]">
-                User</p>
-              <img alt="" class="w-1 h-2" src="../assets/svg/bgBack.svg">
-              <p class="text-secondaryText leading-[12px] text-[8px] xl:leading-[16px] xl:text-[12px] font-[400]">Jatri
-                Admin</p>
-            </div>
+            <p class="text-[#151414] leading-[28px] text-[20px] font-[600]">Migrate Trips</p>
           </div>
           <div
               class="w-[230px] xl:w-[270px] h-[40px] border border-[#DBDBDB] flex justify-center items-center leading-[20px] rounded-[4px] pl-14 xl:pl-[9px] overflow-hidden">
@@ -244,7 +237,12 @@
             </div>
           </div>
         </div>
-      </div>
+        <!-- Buttons just for show routing. Remove after development -->
+       <div class="mt-6">
+       <p class="mb-4 italic text-red-500">*Buttons just for show routing. Remove after development*</p>
+        <router-link to="/MigrateSelect" class="corporateButton">After Select Seat</router-link>
+       </div>
+    </div>
 </template>
 
 <style scoped>

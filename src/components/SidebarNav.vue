@@ -14,7 +14,7 @@
         <router-link :class="$route.path === '/trips' ? 'activeMenu' : 'menu' " to="/trips">Trips</router-link>
         <router-link :class="$route.path === '/user' ? 'activeMenu' : 'menu' " to="/user">User</router-link>
         <router-link :class="$route.path === '/agent' ? 'activeMenu' : 'menu' " to="/agent">Agent</router-link>
-        <router-link :class="$route.path === '/manageTrip' ? 'activeMenu' : 'menu' " to="/manageTrip">Manage Trips
+        <router-link :class="$route.path === '/migrateTrip' ? 'activeMenu' : 'menu' " to="/migrateTrip">Migrate Trips
         </router-link>
         <router-link :class="$route.path === '/migrateTicket' ? 'activeMenu' : 'menu' " to="/migrateTicket">Migrate
           Tickets
