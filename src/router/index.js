@@ -76,10 +76,11 @@ import Invoice from '@/views/invoice.vue'
 import InvoiceCurrentbill from '@/views/invoice_currentbill.vue'
 import InvoiceGeneratebill from '@/views/invoice_generatebill.vue'
 import Offer from '@/views/offer.vue'
-import OfferAndPromotion from '@/views/offer_promotion.vue'
 import OfferAdd from '@/views/offer_addNew.vue'
-import OfferNew from '@/views/new_offer.vue'
 import OfferAddFilled from '@/views/offer_addNew_filled.vue'
+import Promotion from '@/views/promotion.vue'
+import AddPromo from '@/views/promotion-add-promo.vue'
+import AddPromoFilled from '@/views/promotion-add-promo-filled.vue'
 import OfferAndPromotionTable from '@/views/offer_promotion_table.vue'
 import ActionFareUpdate from '@/views/actionbulk_fareupdate.vue'
 import UpdateStopageTime from '@/views/actionbulk_updatestopagetime.vue'
@@ -485,9 +486,9 @@ const router = createRouter({
             component: Offer,
         },
         {
-            path: '/offerAndPromotion',
-            name: 'OfferAndPromotion',
-            component: OfferAndPromotion,
+            path: '/promotion',
+            name: 'Promotion',
+            component: Promotion,
         },
         {
             path: '/offerAdd',
@@ -495,14 +496,19 @@ const router = createRouter({
             component: OfferAdd,
         },
         {
-            path: '/offerNew',
-            name: 'OfferNew',
-            component: OfferNew,
-        },
-        {
-            path: '/offerNewFilled',
+            path: '/offerAddFilled',
             name: 'OfferAddFilled',
             component: OfferAddFilled,
+        },
+        {
+            path: '/addPromo',
+            name: 'AddPromo',
+            component: AddPromo,
+        },
+        {
+            path: '/addPromoFilled',
+            name: 'AddPromoFilled',
+            component: AddPromoFilled,
         },
         {
             path: '/offerAndPromotionTable',

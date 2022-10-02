@@ -260,12 +260,9 @@
             </button>
           </div>
         </div>
-        <div class="flex gap-x-1 items-center">
-          <button
-              class="flex justify-center items-center text-white leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[600] bg-corporate bg-opacity-30 rounded-full px-[20px] py-[11px] xl:px-[24px] xl:py-[13px]">
-            Create promo
-          </button>
-        </div>
+        <router-link to="/offerAndPromotionTable" class="flex justify-center items-center gap-x-[10px] corporateButton">
+          <img src="../assets/svg/save_change.svg" alt="">Save changes
+        </router-link>
       </div>
     </div>
   </div>
