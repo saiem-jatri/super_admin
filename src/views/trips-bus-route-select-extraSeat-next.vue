@@ -249,13 +249,7 @@
               </div>
 
               <div>
-                <button class="w-full border border-dashed border-[#B6B6B6] flex justify-center items-center bg-corporateBg rounded-[4px]">
-                 <div class="flex justify-center items-center gap-x-[11px] py-[12px]">
-                 <img src="../assets/svg/createPlus.svg" class="w-[10px] h-[10px]" alt="">
-                 <p class="text-primaryText font-[600] leading-[20px] text-[14px]">Add seats</p>
-                 </div>
-                </button>
-                <div class="flex items-center gap-x-[22px] mt-[20px] xl:mt-[24px] relative z-[100000]" :class=" seatSelectStatus ? 'transform scale-[1.2]' : 'transform scale-100'">
+                <div class="flex items-center gap-x-[22px] relative z-[100000]" :class=" seatSelectStatus ? 'transform scale-[1.2]' : 'transform scale-100'">
                    <div class="flex gap-x-[15px] xl:gap-x-[20px]" :class="seatSelectStatus ? 'z-[100000]': '' ">
                     <button class="relative" :class=" seatSelectStatus ? 'whiteSeatButton' : 'seatButton'">EX1
                       <img src="../assets/svg/bg_close.svg" alt="Close" class="absolute top-[-6px] right-[-6px] opacity-0" :class=" seatSelectStatus ? 'opacity-100' : 'seatButton'">
@@ -402,13 +396,6 @@
                   <span data-v-0d08c475=""><img src="../assets/svg/green-save.svg" alt="" data-v-0d08c475=""></span> Save changes
                 </button>
                 </div>
-
-                <button class="w-full border border-dashed border-[#B6B6B6] flex justify-center items-center bg-corporateBg rounded-[4px] mt-[18px]">
-                  <div class="flex justify-center items-center gap-x-[11px] py-[12px]">
-                    <img src="../assets/svg/createPlus.svg" class="w-[10px] h-[10px]" alt="">
-                    <p class="text-primaryText font-[600] leading-[20px] text-[14px]">Add seats</p>
-                  </div>
-                </button>
               </div>
             </div>
           </div>
@@ -502,7 +489,7 @@
         <button class="bg-[#48A43F] flex gap-x-3 justify-center items-center text-white rounded-full px-5 py-3 leading-[12px] text-[10px] xl:leading-[16px] xl:text-[12px]" data-v-0d08c475="">
           <span data-v-0d08c475=""><img src="/src/assets/svg/save.svg" alt="" data-v-0d08c475=""></span> Save changes
         </button>
-        <router-link to="" class="lessNextStepButton flex items-center gap-[10px]">
+        <router-link to="" class="nextStepButton flex items-center gap-[10px]">
            Next step<span><img src="../assets/svg/right-white-arrow.svg" class="h-[9.33px] w-[9.33px]" alt=""></span>
         </router-link>
       </div>
