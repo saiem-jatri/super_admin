@@ -50,7 +50,6 @@ import TripsPermission from '@/views/trip_permission.vue'
 import ManageUserRestriction from '@/views/manage-user-restriction.vue'
 import ManageUserRestrictionFilled from '@/views/manage-user-restriction-filled.vue'
 import TripsQuotaFilled from '@/views/trips-quota-filled.vue'
-import TripsModal from '@/views/trips-modal.vue'
 import TripsAgent from '@/views/trips_agent.vue'
 import TripsQuota from '@/views/trips_quota.vue'
 import TripFacilities from '@/views/trip_facilities.vue'
@@ -83,7 +82,6 @@ import OfferNew from '@/views/new_offer.vue'
 import OfferAddFilled from '@/views/offer_addNew_filled.vue'
 import OfferAndPromotionTable from '@/views/offer_promotion_table.vue'
 import ActionFareUpdate from '@/views/actionbulk_fareupdate.vue'
-import ActionFareUpdateFileReplace from '@/views/actionbulk_fareupdateFileReplace.vue'
 import UpdateStopageTime from '@/views/actionbulk_updatestopagetime.vue'
 import TripAction from '@/views/actionbulk_tripaction.vue'
 import OfflineAccess from '@/views/actionbulk_offlineaccess.vue'
@@ -287,9 +285,9 @@ const router = createRouter({
             component: Trips
         },
         {
-            path: '/tripsModal',
-            name: 'TripsModal',
-            component: TripsModal
+            path: '/tripsAdd',
+            name: 'TripsAdd',
+            component: TripsAdd
         },
         {
             path: '/tripsInformation',
@@ -315,12 +313,6 @@ const router = createRouter({
             path: '/anotherTripsBoardingNext',
             name: 'AnotherTripsBoardingNext',
             component: AnotherTripsBoardingNext
-        },
-
-        {
-            path: '/tripsAdd',
-            name: 'TripsAdd',
-            component: TripsAdd
         },
         {
             path: '/tripsPermission',
@@ -550,11 +542,6 @@ const router = createRouter({
             path: '/actionFareUpdate',
             name: 'ActionFareUpdate',
             component: ActionFareUpdate
-        },
-        {
-            path: '/actionFareUpdateFileReplace',
-            name: 'ActionFareUpdateFileReplace',
-            component: ActionFareUpdateFileReplace
         },
         {
             path: '/updateStopageTime',
