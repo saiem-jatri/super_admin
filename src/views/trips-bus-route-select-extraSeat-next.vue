@@ -249,15 +249,36 @@
               </div>
 
               <div>
-                <div class="flex gap-x-[15px] xl:gap-x-[20px] mt-[20px] xl:mt-[24px]">
-                    <input class="extraSeatButton focus:outline-none focus:bg-red-500 focus:text-white focus:placeholder:text-white" type="text" value="EX1" name="" id="" placeholder="+">
-                    <input class="noSeatButton focus:outline-none focus:bg-red-500 focus:text-white focus:placeholder:text-white" type="text" name="" id="" placeholder="+">
-                    <input class="noSeatButton focus:outline-none focus:bg-red-500 focus:text-white focus:placeholder:text-white" type="text" name="" id="" placeholder="+">
-                    <input class="noSeatButton focus:outline-none focus:bg-red-500 focus:text-white focus:placeholder:text-white" type="text" name="" id="" placeholder="+">
-                    <input class="noSeatButton focus:outline-none focus:bg-red-500 focus:text-white focus:placeholder:text-white" type="text" name="" id="" placeholder="+">
+                <button class="w-full border border-dashed border-[#B6B6B6] flex justify-center items-center bg-corporateBg rounded-[4px]">
+                 <div class="flex justify-center items-center gap-x-[11px] py-[12px]">
+                 <img src="../assets/svg/createPlus.svg" class="w-[10px] h-[10px]" alt="">
+                 <p class="text-primaryText font-[600] leading-[20px] text-[14px]">Add seats</p>
+                 </div>
+                </button>
+                <div class="flex items-center gap-x-[22px] mt-[20px] xl:mt-[24px] relative z-[100000]" :class=" seatSelectStatus ? 'transform scale-[1.2]' : 'transform scale-100'">
+                   <div class="flex gap-x-[15px] xl:gap-x-[20px]" :class="seatSelectStatus ? 'z-[100000]': '' ">
+                    <button class="relative" :class=" seatSelectStatus ? 'whiteSeatButton' : 'seatButton'">EX1
+                      <img src="../assets/svg/bg_close.svg" alt="Close" class="absolute top-[-6px] right-[-6px] opacity-0" :class=" seatSelectStatus ? 'opacity-100' : 'seatButton'">
+                    </button>
+                    <button class="relative" :class=" seatSelectStatus ? 'whiteSeatButton' : 'seatButton'">EX2
+                      <img src="../assets/svg/bg_close.svg" alt="Close" class="absolute top-[-6px] right-[-6px] opacity-0" :class=" seatSelectStatus ? 'opacity-100' : 'seatButton'">
+                    </button>
+                    <button class="relative hidden" :class=" seatSelectStatus ? 'whiteSeatButton' : 'seatButton'">EX
+                      <img src="../assets/svg/bg_close.svg" alt="Close" class="absolute top-[-6px] right-[-6px] opacity-0" :class=" seatSelectStatus ? 'opacity-100' : 'seatButton'">
+                    </button>
+                    <button class="relative" :class=" seatSelectStatus ? 'whiteSeatButton' : 'seatButton'">EX3
+                      <img src="../assets/svg/bg_close.svg" alt="Close" class="absolute top-[-6px] right-[-6px] opacity-0" :class=" seatSelectStatus ? 'opacity-100' : 'seatButton'">
+                    </button>
+                    <button class="relative" :class=" seatSelectStatus ? 'whiteSeatButton' : 'seatButton'">EX4
+                      <img src="../assets/svg/bg_close.svg" alt="Close" class="absolute top-[-6px] right-[-6px] opacity-0" :class=" seatSelectStatus ? 'opacity-100' : 'seatButton'">
+                    </button>
+                  </div>
+                  <button @click="extraSeat" :class="seatSelectStatus ? 'hidden' : 'absolute right-[-40px]'">
+                    <img src="../assets/svg/close-cirlce.svg" alt="Close">
+                  </button>
                 </div>
 
-                <div class="flex justify-center gap-x-[15px] xl:gap-x-[20px] mt-[20px] xl:mt-[24px]">
+                <div class="flex gap-x-[15px] xl:gap-x-[20px] mt-[20px] xl:mt-[24px]">
                     <button class="seatButton">A1</button>
                     <button class="seatButton">A2</button>
                     <button class="seatButton hidden">A1</button>
@@ -265,7 +286,7 @@
                     <button class="seatButton">A4</button>
                 </div>
 
-                <div class="flex justify-center gap-x-[15px] xl:gap-x-[20px] mt-[12px] xl:mt-[16px]">
+                <div class="flex gap-x-[15px] xl:gap-x-[20px] mt-[20px] xl:mt-[24px]">
                     <button class="seatButton">B1</button>
                     <button class="seatButton">B2</button>
                     <button class="seatButton hidden">B1</button>
@@ -273,7 +294,7 @@
                     <button class="seatButton">B4</button>
                 </div>
 
-                <div class="flex justify-center gap-x-[15px] xl:gap-x-[20px] mt-[20px] xl:mt-[24px]">
+                <div class="flex gap-x-[15px] xl:gap-x-[20px] mt-[20px] xl:mt-[24px]">
                     <button class="seatButton">C1</button>
                     <button class="seatButton">C2</button>
                     <button class="seatButton hidden">C1</button>
@@ -281,7 +302,7 @@
                     <button class="seatButton">C4</button>
                 </div>
 
-                <div class="flex justify-center gap-x-[15px] xl:gap-x-[20px] mt-[20px] xl:mt-[24px]">
+                <div class="flex gap-x-[15px] xl:gap-x-[20px] mt-[20px] xl:mt-[24px]">
                     <button class="seatButton">D1</button>
                     <button class="seatButton">D2</button>
                     <button class="seatButton hidden">D1</button>
@@ -289,7 +310,7 @@
                     <button class="seatButton">D4</button>
                 </div>
 
-                <div class="flex justify-center justify-center gap-x-[15px] xl:gap-x-[20px] mt-[20px] xl:mt-[24px]">
+                <div class="flex gap-x-[15px] xl:gap-x-[20px] mt-[20px] xl:mt-[24px]">
                     <button class="seatButton">E1</button>
                     <button class="seatButton">E2</button>
                     <button class="seatButton hidden">E1</button>
@@ -297,7 +318,7 @@
                     <button class="seatButton">E4</button>
                 </div>
 
-                <div class="flex justify-center gap-x-[15px] xl:gap-x-[20px] mt-[20px] xl:mt-[24px]">
+                <div class="flex gap-x-[15px] xl:gap-x-[20px] mt-[20px] xl:mt-[24px]">
                     <button class="seatButton">F1</button>
                     <button class="seatButton">F2</button>
                     <button class="seatButton hidden">F1</button>
@@ -305,7 +326,7 @@
                     <button class="seatButton">F4</button>
                 </div>
 
-                <div class="flex justify-center gap-x-[15px] xl:gap-x-[20px] mt-[20px] xl:mt-[24px]">
+                <div class="flex gap-x-[15px] xl:gap-x-[20px] mt-[20px] xl:mt-[24px]">
                     <button class="seatButton">G1</button>
                     <button class="seatButton">G2</button>
                     <button class="seatButton hidden">G1</button>
@@ -313,67 +334,81 @@
                     <button class="seatButton">G4</button>
                 </div>
 
-                  <div class="flex justify-center items-center gap-x-[22px] mt-[20px] xl:mt-[24px] relative z-[100000]" :class=" seatSelectStatus ? 'transform scale-[1.2]' : 'transform scale-100'">
+                <div class="flex gap-x-[15px] xl:gap-x-[20px] mt-[20px] xl:mt-[24px]">
+                    <button class="seatButton">H1</button>
+                    <button class="seatButton">H2</button>
+                    <button class="seatButton hidden">H1</button>
+                    <button class="seatButton">H3</button>
+                    <button class="seatButton">H4</button>
+                </div>
+
+                <div class="flex gap-x-[15px] xl:gap-x-[20px] mt-[20px] xl:mt-[24px]">
+                    <button class="seatButton">I1</button>
+                    <button class="seatButton">I2</button>
+                    <button class="seatButton hidden">I1</button>
+                    <button class="seatButton">I3</button>
+                    <button class="seatButton">I4</button>
+                </div>
+
+                  <div class="flex items-center gap-x-[22px] mt-[20px] xl:mt-[24px] relative z-[100000]" :class=" seatSelectStatus ? 'transform scale-[1.2]' : 'transform scale-100'">
                    <div class="flex gap-x-[15px] xl:gap-x-[20px]" :class="seatSelectStatus ? 'z-[100000]': '' ">
                     <button class="relative" :class=" seatSelectStatus ? 'noSeatButton' : 'lockSeatButton'">
                       <img class="m-auto" src="../assets/svg/lock.svg" alt="Lock">
                       <img src="../assets/svg/bg_close.svg" alt="Close" class="absolute top-[-6px] right-[-6px] opacity-0" :class=" seatSelectStatus ? 'opacity-100 hidden' : 'seatButton'">
                     </button>
-                    <button class="relative" :class=" seatSelectStatus ? 'whiteSeatButton' : 'seatButton'">H2
+                    <button class="relative" :class=" seatSelectStatus ? 'whiteSeatButton' : 'seatButton'">J2
                       <img src="../assets/svg/bg_close.svg" alt="Close" class="absolute top-[-6px] right-[-6px] opacity-0" :class=" seatSelectStatus ? 'opacity-100' : 'seatButton'">
                     </button>
-                    <button class="relative hidden" :class=" seatSelectStatus ? 'whiteSeatButton' : 'seatButton'">H
+                    <button class="relative hidden" :class=" seatSelectStatus ? 'whiteSeatButton' : 'seatButton'">J
                       <img src="../assets/svg/bg_close.svg" alt="Close" class="absolute top-[-6px] right-[-6px] opacity-0" :class=" seatSelectStatus ? 'opacity-100' : 'seatButton'">
                     </button>
-                    <button class="relative" :class=" seatSelectStatus ? 'whiteSeatButton' : 'seatButton'">H3
+                    <button class="relative" :class=" seatSelectStatus ? 'whiteSeatButton' : 'seatButton'">J3
                       <img src="../assets/svg/bg_close.svg" alt="Close" class="absolute top-[-6px] right-[-6px] opacity-0" :class=" seatSelectStatus ? 'opacity-100' : 'seatButton'">
                     </button>
-                    <button class="relative" :class=" seatSelectStatus ? 'whiteSeatButton' : 'seatButton'">H4
+                    <button class="relative" :class=" seatSelectStatus ? 'whiteSeatButton' : 'seatButton'">J4
                       <img src="../assets/svg/bg_close.svg" alt="Close" class="absolute top-[-6px] right-[-6px] opacity-0" :class=" seatSelectStatus ? 'opacity-100' : 'seatButton'">
                     </button>
                   </div>
-                  <button @click="extraSeat" :class="seatSelectStatus ? 'absolute right-[-40px]' : 'hidden'">
+                  <button @click="extraSeat" :class="seatSelectStatus ? 'hidden' : 'absolute right-[-40px]'">
                     <img src="../assets/svg/close-cirlce.svg" alt="Close">
                   </button>
                 </div>
 
-                <div class="flex justify-center items-center gap-x-[22px] mt-[20px] xl:mt-[24px] relative z-[100000]" :class=" seatSelectStatus ? 'transform scale-[1.2]' : 'transform scale-100'">
+                <div class="flex items-center gap-x-[22px] mt-[20px] xl:mt-[24px] relative z-[100000]" :class=" seatSelectStatus ? 'transform scale-[1.2]' : 'transform scale-100'">
                   <div class="flex gap-x-[15px] xl:gap-x-[20px]" :class="seatSelectStatus ? 'z-[100000]': '' ">
-                    <button class="relative" :class=" seatSelectStatus ? 'whiteSeatButton' : 'seatButton'">I1
+                    <button class="relative" :class=" seatSelectStatus ? 'whiteSeatButton' : 'seatButton'">K1
                       <img src="../assets/svg/bg_close.svg" alt="Close" class="absolute top-[-6px] right-[-6px] opacity-0" :class=" seatSelectStatus ? 'opacity-100' : 'seatButton'">
                     </button>
-                    <button class="relative" :class=" seatSelectStatus ? 'whiteSeatButton' : 'seatButton'">I2
+                    <button class="relative" :class=" seatSelectStatus ? 'whiteSeatButton' : 'seatButton'">K2
                       <img src="../assets/svg/bg_close.svg" alt="Close" class="absolute top-[-6px] right-[-6px] opacity-0" :class=" seatSelectStatus ? 'opacity-100' : 'seatButton'">
                     </button>
-                    <button class="relative hidden" :class=" seatSelectStatus ? 'whiteSeatButton' : 'seatButton'">I
+                    <button class="relative hidden" :class=" seatSelectStatus ? 'whiteSeatButton' : 'seatButton'">K
                       <img src="../assets/svg/bg_close.svg" alt="Close" class="absolute top-[-6px] right-[-6px] opacity-0" :class=" seatSelectStatus ? 'opacity-100' : 'seatButton'">
                     </button>
-                    <button class="relative" :class=" seatSelectStatus ? 'whiteSeatButton' : 'seatButton'">I3
+                    <button class="relative" :class=" seatSelectStatus ? 'whiteSeatButton' : 'seatButton'">K3
                       <img src="../assets/svg/bg_close.svg" alt="Close" class="absolute top-[-6px] right-[-6px] opacity-0" :class=" seatSelectStatus ? 'opacity-100' : 'seatButton'">
                     </button>
-                    <button class="relative" :class=" seatSelectStatus ? 'whiteSeatButton' : 'seatButton'">I4
+                    <button class="relative" :class=" seatSelectStatus ? 'whiteSeatButton' : 'seatButton'">K4
                       <img src="../assets/svg/bg_close.svg" alt="Close" class="absolute top-[-6px] right-[-6px] opacity-0" :class=" seatSelectStatus ? 'opacity-100' : 'seatButton'">
                     </button>
                   </div>
-                  <button @click="extraSeat" :class="seatSelectStatus ? 'absolute right-[-40px]' : 'hidden'">
+                  <button @click="extraSeat" :class="seatSelectStatus ? 'hidden' : 'absolute right-[-40px]'">
                     <img src="../assets/svg/close-cirlce.svg" alt="Close">
                   </button>
-                </div>
-
-                <div class="flex gap-x-[15px] xl:gap-x-[20px] mt-[12px] xl:mt-[16px]">
-                    <input class="extraSeatButton focus:outline-none focus:bg-red-500 focus:text-white focus:placeholder:text-white" type="text" value="J1" name="" id="" placeholder="+">
-                    <input class="noSeatButton focus:outline-none focus:bg-red-500 focus:text-white focus:placeholder:text-white" type="text" name="" id="" placeholder="+">
-                    <input class="noSeatButton focus:outline-none focus:bg-red-500 focus:text-white focus:placeholder:text-white" type="text" name="" id="" placeholder="+">
-                    <input class="noSeatButton focus:outline-none focus:bg-red-500 focus:text-white focus:placeholder:text-white" type="text" name="" id="" placeholder="+">
-                    <input class="noSeatButton focus:outline-none focus:bg-red-500 focus:text-white focus:placeholder:text-white" type="text" name="" id="" placeholder="+">
                 </div>
 
                 <div class="flex justify-center z-[10000] relative">
-                  <button class="text-white bg-[#48A43F] rounded-full px-7 py-3 leading-[12px] text-[10px] xl:leading-[16px] xl:text-[12px] mt-5">
-                    Save Seat
-                  </button>
+                  <button @click="extraSeat" class="bg-white flex gap-x-3 justify-center items-center text-[#48A43F] rounded-full px-5 py-3 leading-[12px] text-[10px] xl:leading-[16px] xl:text-[12px] mt-5" :class="seatSelectStatus ? '' : 'hidden'" data-v-0d08c475="">
+                  <span data-v-0d08c475=""><img src="../assets/svg/green-save.svg" alt="" data-v-0d08c475=""></span> Save changes
+                </button>
                 </div>
 
+                <button class="w-full border border-dashed border-[#B6B6B6] flex justify-center items-center bg-corporateBg rounded-[4px] mt-[18px]">
+                  <div class="flex justify-center items-center gap-x-[11px] py-[12px]">
+                    <img src="../assets/svg/createPlus.svg" class="w-[10px] h-[10px]" alt="">
+                    <p class="text-primaryText font-[600] leading-[20px] text-[14px]">Add seats</p>
+                  </div>
+                </button>
               </div>
             </div>
           </div>
@@ -467,7 +502,7 @@
         <button class="bg-[#48A43F] flex gap-x-3 justify-center items-center text-white rounded-full px-5 py-3 leading-[12px] text-[10px] xl:leading-[16px] xl:text-[12px]" data-v-0d08c475="">
           <span data-v-0d08c475=""><img src="/src/assets/svg/save.svg" alt="" data-v-0d08c475=""></span> Save changes
         </button>
-        <router-link to="/TripsBusRouteSelectSeatExtraNext" class="lessNextStepButton flex items-center gap-[10px]">
+        <router-link to="" class="lessNextStepButton flex items-center gap-[10px]">
            Next step<span><img src="../assets/svg/right-white-arrow.svg" class="h-[9.33px] w-[9.33px]" alt=""></span>
         </router-link>
       </div>
