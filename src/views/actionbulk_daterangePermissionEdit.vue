@@ -214,10 +214,11 @@
       <div class="flex justify-between items-center">
         <p class="text-primaryText leading-[16px] xl:leading-[20px] text-[14px] xl:leading-[24px] xl:text-[16px] font-[400] mb-6">
           *Last updated on 09:23 AM, 18 July 2022</p>
-        <button
-            class="flex justify-center items-center gap-x-[10px] text-white leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[500] bg-[#48A43F] rounded-full px-[20px] py-[11px] xl:px-[24px] xl:py-[13px]">
+        <router-link class="flex justify-center items-center gap-x-[10px] text-white leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[500] bg-[#48A43F] rounded-full px-[20px] py-[11px] xl:px-[24px] xl:py-[13px]"
+                     to="/quotaRelease"
+        >
           <img alt="" src="/src/assets/svg/save_change.svg">Save changes
-        </button>
+        </router-link>
       </div>
     </div>
   </div>

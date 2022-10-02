@@ -90,6 +90,8 @@ import OfflineAccess from '@/views/actionbulk_offlineaccess.vue'
 import DateRangePermission from '@/views/actionbulk_daterangePermission.vue'
 import QuotaRelease from '@/views/actionbulk_quotaRelease.vue'
 import DateRangePermissionEdit from '@/views/actionbulk_daterangePermissionEdit.vue'
+import Bus from '@/views/bus.vue'
+import BusCreate from '@/views/bus_create.vue'
 
 const router = createRouter({
     history: createWebHistory(import.meta.env.BASE_URL),
@@ -168,7 +170,7 @@ const router = createRouter({
             path: '/manageTrip',
             name: 'companyManageTrip',
             component: companyManageTrip
-        },  
+        },
         {
             path: '/supervisor',
             name: 'Supervisor',
@@ -229,7 +231,7 @@ const router = createRouter({
             name: 'companyManageOwner',
             component: companyManageOwner
         },
-        
+
         {
             path: '/counterman',
             name: 'Counterman',
@@ -586,6 +588,18 @@ const router = createRouter({
             path: '/quotaRelease',
             name: 'QuotaRelease',
             component: QuotaRelease
+        },
+
+        //    bus started from here
+        {
+            path: '/bus',
+            name: 'Bus',
+            component: Bus
+        },
+        {
+            path: '/busCreate',
+            name: 'BusCreate',
+            component: BusCreate
         },
 
     ]

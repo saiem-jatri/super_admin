@@ -126,7 +126,9 @@
         </ul>
 
         <p class="menuSection">CONFIGARATION</p>
-        <router-link :class="$route.path === '' ? 'activeMenu' : 'menu' " to="">Bus</router-link>
+        <router-link :class="$route.path === '/bus' ? 'activeMenu' : 'menu border-b border-dashed p-[10px]' " to="/bus">
+          Bus
+        </router-link>
         <router-link :class="$route.path === '' ? 'activeMenu' : 'menu' " to="">Stopage</router-link>
         <router-link :class="$route.path === '' ? 'activeMenu' : 'menu' " to="">Challan Configaration</router-link>
         <router-link :class="$route.path === '' ? 'activeMenu' : 'menu' " to="">Fees</router-link>
