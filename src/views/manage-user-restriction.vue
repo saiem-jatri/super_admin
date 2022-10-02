@@ -259,9 +259,9 @@
             </div>
 
             <div class="flex justify-center items-center mt-[36px]" data-v-0d08c475="">
-                <button class="bg-[#48A43F] bg-opacity-30 flex gap-x-3 justify-center items-center text-white rounded-full px-5 py-3 mr-4 leading-[12px] text-[10px] xl:leading-[16px] xl:text-[12px]" data-v-0d08c475="">
-                    <span data-v-0d08c475=""><img src="/src/assets/svg/save.svg" alt="" data-v-0d08c475=""></span> Save changes
-                </button>
+              <router-link to="/manageUserRestrictionFilled" class="bg-[#48A43F] bg-opacity-30 flex gap-x-3 justify-center items-center text-white rounded-full px-5 py-3 mr-4 leading-[12px] text-[10px] xl:leading-[16px] xl:text-[12px]" data-v-0d08c475="">
+                  <span data-v-0d08c475=""><img src="/src/assets/svg/save.svg" alt="" data-v-0d08c475=""></span> Save changes
+                </router-link>
              </div>
             </div>
          </div>

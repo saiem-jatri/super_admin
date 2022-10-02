@@ -36,22 +36,26 @@ import Counter from '@/views/counter.vue'
 import CreateCounter from '@/views/create-counter.vue'
 import ThirdPartyCounter from '@/views/thirdparty_counter.vue'
 import Trips from '@/views/trips.vue'
+import TripsAddNext from "@/views/tripsAddNext.vue"
+import TripsAdd from "@/views/tripsAdd.vue"
 import TripPreview from '@/views/trip_preview.vue'
 import TripsInformation from '@/views/tripInformation.vue'
 import TripsInformationNext from '@/views/TripsInformationNext.vue'
 import TripsBoarding from "@/views/trips-boarding.vue"
 import AnotherTripsBoarding from "@/views/another-trips-boarding.vue"
 import AnotherTripsBoardingNext from "@/views/another-trips-boarding-next.vue"
-import TripsAdd from "@/views/tripsAdd.vue"
 import TripsBusRouteSelect from "@/views/trips-bus-route-select.vue"
 import TripsBusRouteSelectNext from "@/views/trips-bus-route-select-next.vue"
-import TripsAddNext from "@/views/tripsAddNext.vue"
+import TripsBusRouteSelectSeatExtra from "@/views/trips-bus-route-select-extraSeat.vue"
+import TripsBusRouteSelectSeatExtraNext from "@/views/trips-bus-route-select-extraSeat-next.vue"
 import TripsPermission from '@/views/trip_permission.vue'
+import TripsPermissionFilled from '@/views/trip_permission-filled.vue'
 import ManageUserRestriction from '@/views/manage-user-restriction.vue'
 import ManageUserRestrictionFilled from '@/views/manage-user-restriction-filled.vue'
 import TripsQuotaFilled from '@/views/trips-quota-filled.vue'
-import TripsModal from '@/views/trips-modal.vue'
+import TripsQuotaFilledNext from '@/views/trips-quota-filled-next.vue'
 import TripsAgent from '@/views/trips_agent.vue'
+import TripsAgentFilled from '@/views/trips_agent-filled.vue'
 import TripsQuota from '@/views/trips_quota.vue'
 import TripFacilities from '@/views/trip_facilities.vue'
 import User from '@/views/user.vue'
@@ -63,12 +67,12 @@ import UserAgent from '@/views/user_agent.vue'
 import UserCreateAgent from '@/views/user_create_agent.vue'
 import UserCustomerCare from '@/views/user_customer_care.vue'
 import UserCreateCustomercare from '@/views/user_create_customercare.vue'
-import MigrateTrip from '@/views/migrate_trip.vue'
 import Agent from '@/views/agent.vue'
 import AddAgent from '@/views/add-agent.vue'
 import AddAgentNext from '@/views/add-agent-next.vue'
 import TripExpenseConfiguration from '@/views/tripExpenseConfiguration.vue'
 import TripExpenseConfigurationFilled from '@/views/TripExpenseConfigurationFilled.vue'
+import MigrateTrip from '@/views/migrate_trip.vue'
 import MigrateSelect from '@/views/migrate_select_seat.vue'
 import MigrateSameTicketOwner from '@/views/migrate_same_ticket_owner.vue'
 import MigrateTicket from '@/views/migrate_ticket.vue'
@@ -77,13 +81,13 @@ import Invoice from '@/views/invoice.vue'
 import InvoiceCurrentbill from '@/views/invoice_currentbill.vue'
 import InvoiceGeneratebill from '@/views/invoice_generatebill.vue'
 import Offer from '@/views/offer.vue'
-import OfferAndPromotion from '@/views/offer_promotion.vue'
 import OfferAdd from '@/views/offer_addNew.vue'
-import OfferNew from '@/views/new_offer.vue'
 import OfferAddFilled from '@/views/offer_addNew_filled.vue'
+import Promotion from '@/views/promotion.vue'
+import AddPromo from '@/views/promotion-add-promo.vue'
+import AddPromoFilled from '@/views/promotion-add-promo-filled.vue'
 import OfferAndPromotionTable from '@/views/offer_promotion_table.vue'
 import ActionFareUpdate from '@/views/actionbulk_fareupdate.vue'
-import ActionFareUpdateFileReplace from '@/views/actionbulk_fareupdateFileReplace.vue'
 import UpdateStopageTime from '@/views/actionbulk_updatestopagetime.vue'
 import TripAction from '@/views/actionbulk_tripaction.vue'
 import OfflineAccess from '@/views/actionbulk_offlineaccess.vue'
@@ -289,9 +293,24 @@ const router = createRouter({
             component: Trips
         },
         {
-            path: '/tripsModal',
-            name: 'TripsModal',
-            component: TripsModal
+            path: '/tripsAdd',
+            name: 'TripsAdd',
+            component: TripsAdd
+        },
+        {
+            path: '/tripsAddNext',
+            name: 'TripsAddNext',
+            component: TripsAddNext
+        },
+        {
+            path: '/manageUserRestriction',
+            name: 'ManageUserRestriction',
+            component: ManageUserRestriction,
+        },
+        {
+            path: '/manageUserRestrictionFilled',
+            name: 'ManageUserRestrictionFilled',
+            component: ManageUserRestrictionFilled,
         },
         {
             path: '/tripsInformation',
@@ -318,11 +337,26 @@ const router = createRouter({
             name: 'AnotherTripsBoardingNext',
             component: AnotherTripsBoardingNext
         },
-
+        
         {
-            path: '/tripsAdd',
-            name: 'TripsAdd',
-            component: TripsAdd
+            path: '/tripsBusRouteSelect',
+            name: 'TripsBusRouteSelect',
+            component: TripsBusRouteSelect
+        },
+        {
+            path: '/tripsBusRouteSelectNext',
+            name: 'TripsBusRouteSelectNext',
+            component: TripsBusRouteSelectNext
+        },
+        {
+            path: '/tripsBusRouteSelectSeatExtra',
+            name: 'TripsBusRouteSelectSeatExtra',
+            component: TripsBusRouteSelectSeatExtra
+        },
+        {
+            path: '/tripsBusRouteSelectSeatExtraNext',
+            name: 'TripsBusRouteSelectSeatExtraNext',
+            component: TripsBusRouteSelectSeatExtraNext
         },
         {
             path: '/tripsPermission',
@@ -330,9 +364,19 @@ const router = createRouter({
             component: TripsPermission
         },
         {
+            path: '/tripsPermissionFilled',
+            name: 'TripsPermissionFilled',
+            component: TripsPermissionFilled
+        },
+        {
             path: '/tripsAgent',
             name: 'TripsAgent',
             component: TripsAgent
+        },
+        {
+            path: '/tripsAgentFilled',
+            name: 'TripsAgentFilled',
+            component: TripsAgentFilled
         },
         {
             path: '/tripsQuota',
@@ -345,30 +389,14 @@ const router = createRouter({
             component: TripsQuotaFilled,
         },
         {
+            path: '/tripsQuotaFilledNext',
+            name: 'TripsQuotaFilledNext',
+            component: TripsQuotaFilledNext,
+        },
+        {
             path: '/tripsFacilities',
             name: 'TripFacilities',
             component: TripFacilities
-        },
-
-        {
-            path: '/tripsAdd',
-            name: 'TripsAdd',
-            component: TripsAdd
-        },
-        {
-            path: '/tripsBusRouteSelect',
-            name: 'TripsBusRouteSelect',
-            component: TripsBusRouteSelect
-        },
-        {
-            path: '/tripsBusRouteSelectNext',
-            name: 'TripsBusRouteSelectNext',
-            component: TripsBusRouteSelectNext
-        },
-        {
-            path: '/tripsPermission',
-            name: 'TripsPermission',
-            component: TripsPermission
         },
         {
             path: '/tripPreview',
@@ -450,27 +478,6 @@ const router = createRouter({
             component: MigrateTicketSelect,
         },
 
-        {
-            path: '/tripsAddNext',
-            name: 'TripsAddNext',
-            component: TripsAddNext
-        },
-        {
-            path: '/manageUserRestriction',
-            name: 'ManageUserRestriction',
-            component: ManageUserRestriction,
-        },
-        {
-            path: '/manageUserRestrictionFilled',
-            name: 'ManageUserRestrictionFilled',
-            component: ManageUserRestrictionFilled,
-        },
-        {
-            path: '/tripsQuotaFilled',
-            name: 'TripsQuotaFilled',
-            component: TripsQuotaFilled,
-        },
-
         //Agent Start
         {
             path: '/agent',
@@ -511,9 +518,9 @@ const router = createRouter({
             component: Offer,
         },
         {
-            path: '/offerAndPromotion',
-            name: 'OfferAndPromotion',
-            component: OfferAndPromotion,
+            path: '/promotion',
+            name: 'Promotion',
+            component: Promotion,
         },
         {
             path: '/offerAdd',
@@ -521,14 +528,19 @@ const router = createRouter({
             component: OfferAdd,
         },
         {
-            path: '/offerNew',
-            name: 'OfferNew',
-            component: OfferNew,
-        },
-        {
-            path: '/offerNewFilled',
+            path: '/offerAddFilled',
             name: 'OfferAddFilled',
             component: OfferAddFilled,
+        },
+        {
+            path: '/addPromo',
+            name: 'AddPromo',
+            component: AddPromo,
+        },
+        {
+            path: '/addPromoFilled',
+            name: 'AddPromoFilled',
+            component: AddPromoFilled,
         },
         {
             path: '/offerAndPromotionTable',
@@ -552,11 +564,6 @@ const router = createRouter({
             path: '/actionFareUpdate',
             name: 'ActionFareUpdate',
             component: ActionFareUpdate
-        },
-        {
-            path: '/actionFareUpdateFileReplace',
-            name: 'ActionFareUpdateFileReplace',
-            component: ActionFareUpdateFileReplace
         },
         {
             path: '/updateStopageTime',

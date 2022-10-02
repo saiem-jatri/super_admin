@@ -22,10 +22,9 @@
                 type="text">
           </div>
           <div class="flex gap-x-2 p-4 justify-center items-center mr-6 ">
-            <button
-                class="bg-corporate flex gap-x-3 justify-center items-center text-white rounded-full px-6 py-3 mr-4 leading-[12px] text-[10px] xl:leading-[16px] xl:text-[12px]">
-              <span><img alt="" class="h-[9.33px] w-[9.33px]" src="../assets/svg/plus.svg"></span>Add new offer
-            </button>
+            <router-link to="/offerAdd" class="topBarAddButton">
+              <span><img src="../assets/svg/plus.svg" class="h-[9.33px] w-[9.33px]" alt=""></span>Add new offer
+            </router-link>
             <img alt="" class="h-[30px] xl:h-[40px] w-[30px] xl:w-[40px] rounded-full"
                  src="../assets/person/person1.png">
             <p class="text-[#151414] leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[500]">Mostafa
@@ -40,8 +39,8 @@
         <!--        tab start-->
         <div class="border-b border-[#EDEDED]">
           <div class="flex justify-start items-center">
-            <a class="companyOwnerTabActive" href="#">Offers</a>
-            <a class="companyOwnerTabNonActive" href="#">Promotion</a>
+            <router-link to="/offer" :class="$route.path === '/offer' ? 'companyOwnerTabActive' : 'companyOwnerTabNonActive' ">Offers</router-link>
+            <router-link to="/promotion" :class="$route.path === '/promotion' ? 'companyOwnerTabActive' : 'companyOwnerTabNonActive' ">Promotion</router-link>
           </div>
         </div>
         <!--        card-->

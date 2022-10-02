@@ -138,13 +138,14 @@
                 <input class="createNormalInput" placeholder="Enter boarding time" type="text">
               </div>
             </div>
-            <button
-                class="w-full border border-dashed border-corporateSecondaryBlue flex justify-center items-center bg-[#EFF7FD] rounded-[4px] mt-4">
-              <div class="flex justify-center items-center gap-x-[11px] py-[12px]">
-                <img alt="" class="w-[10px] h-[10px]" src="../assets/svg/createPlus.svg">
-                <p class="text-primaryText font-[600] leading-[20px] text-[14px]">Add another boarding point</p>
-              </div>
-            </button>
+
+            <router-link to="/anotherTripsBoarding" class="w-full border border-dashed border-corporateSecondaryBlue flex justify-center items-center bg-[#EFF7FD] rounded-[4px] mt-4">
+                <div class="flex justify-center items-center gap-x-[11px] py-[12px]">
+                  <img alt="" class="w-[10px] h-[10px]" src="../assets/svg/createPlus.svg">
+                  <p class="text-primaryText font-[600] leading-[20px] text-[14px]">Add another boarding point</p>
+                </div>
+             </router-link>  
+
           </div>
           <hr class="mt-[12px] xl:mt-[16px] border-t border-corporateBorder">
           <div class="p-4">
@@ -190,20 +191,18 @@
                 <input class="createNormalInput" placeholder="Enter boarding time" type="text">
               </div>
             </div>
-            <button
-                class="w-full border border-dashed border-corporateSecondaryBlue flex justify-center items-center bg-[#EFF7FD] rounded-[4px] mt-4">
-              <div class="flex justify-center items-center gap-x-[11px] py-[12px]">
-                <img alt="" class="w-[10px] h-[10px]" src="../assets/svg/createPlus.svg">
-                <p class="text-primaryText font-[600] leading-[20px] text-[14px]">Add another dropping point</p>
-              </div>
-            </button>
+            <router-link to="/anotherTripsBoarding" class="w-full border border-dashed border-corporateSecondaryBlue flex justify-center items-center bg-[#EFF7FD] rounded-[4px] mt-4">
+                <div class="flex justify-center items-center gap-x-[11px] py-[12px]">
+                  <img alt="" class="w-[10px] h-[10px]" src="../assets/svg/createPlus.svg">
+                  <p class="text-primaryText font-[600] leading-[20px] text-[14px]">Add another boarding point</p>
+                </div>
+             </router-link>
           </div>
         </div>
         <div class="flex justify-center items-center mt-5">
-          <button
-              class="bg-corporate bg-opacity-30 flex gap-x-3 justify-center items-center text-white rounded-full px-5 py-3 mr-4 leading-[12px] text-[10px] xl:leading-[16px] xl:text-[12px]">
-            Next step<span><img alt="" class="h-[9.33px] w-[9.33px]" src="../assets/svg/right-white-arrow.svg"></span>
-          </button>
+          <router-link to="/anotherTripsBoardingNext" class="lessNextStepButton flex items-center gap-[10px]">
+            Next step<span><img src="../assets/svg/right-white-arrow.svg" class="h-[9.33px] w-[9.33px]" alt=""></span>
+        </router-link>
         </div>
       </div>
 </template>

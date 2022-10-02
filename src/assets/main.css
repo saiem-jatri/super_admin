@@ -53,13 +53,18 @@ body {
 }
 
 .corporateButton {
-    @apply text-white leading-[20px] text-[14px] font-[600] bg-corporate rounded-full px-[24px] py-[13px]
+    @apply text-white leading-[20px] text-[14px] font-[600] bg-corporate rounded-full px-[24px] py-[13px] font-[400]
 }
 
 .lessOpacityCorporateButton {
     @apply text-white leading-[20px] text-[14px] font-[600] bg-corporate bg-opacity-30 rounded-full px-[24px] py-[13px]
 }
-
+.nextStepButton {
+    @apply text-white leading-[16px] text-[12px] font-[400] bg-corporate rounded-full px-[24px] py-[13px]
+}
+.lessNextStepButton {
+    @apply bg-opacity-30 text-white leading-[16px] text-[12px] font-[400] bg-corporate rounded-full px-[24px] py-[13px]
+}
 .companyEditButton {
     @apply flex justify-center items-center gap-x-[10px] border border-[#8D8D8F] leading-[16px] text-[12px] font-[500] text-primaryText rounded-full w-[80px] h-[26px] xl:w-[90px] xl:h-[36px]
 }
@@ -126,6 +131,9 @@ body {
 
 .noSeatButton { 
     @apply w-[40px] xl:w-[45px] h-[25px] xl:h-[30px] text-center text-[#676769] bg-[#EDEDED] rounded-sm leading-[16px] xl:leading-[20px] text-[12px] xl:text-[14px]
+}
+.extraSeatButton { 
+    @apply w-[40px] xl:w-[45px] h-[25px] xl:h-[30px] text-center text-white bg-corporate  rounded-sm leading-[16px] xl:leading-[20px] text-[12px] xl:text-[14px]
 }
 
 .lockSeatButton {
