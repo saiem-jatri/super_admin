@@ -463,7 +463,7 @@
             <button class="bg-[#48A43F] flex gap-x-3 justify-center items-center text-white rounded-full px-5 py-3 leading-[12px] text-[10px] xl:leading-[16px] xl:text-[12px]" data-v-0d08c475="">
               <span data-v-0d08c475=""><img src="/src/assets/svg/save.svg" alt="" data-v-0d08c475=""></span> Save changes
             </button>
-            <router-link to="" class="lessNextStepButton flex items-center gap-[10px]">
+            <router-link to="./tripsBusRouteSelectSeatExtra" class="lessNextStepButton flex items-center gap-[10px]">
                Next step<span><img src="../assets/svg/right-white-arrow.svg" class="h-[9.33px] w-[9.33px]" alt=""></span>
             </router-link>
           </div>

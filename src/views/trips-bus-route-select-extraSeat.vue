@@ -249,7 +249,15 @@
               </div>
 
               <div>
-                <div class="flex gap-x-[15px] xl:gap-x-[20px]">
+                <div class="flex gap-x-[15px] xl:gap-x-[20px] mt-[20px] xl:mt-[24px]">
+                    <input class="extraSeatButton focus:outline-none focus:bg-red-500 focus:text-white focus:placeholder:text-white" type="text" value="EX1" name="" id="" placeholder="+">
+                    <input class="noSeatButton focus:outline-none focus:bg-red-500 focus:text-white focus:placeholder:text-white" type="text" name="" id="" placeholder="+">
+                    <input class="noSeatButton focus:outline-none focus:bg-red-500 focus:text-white focus:placeholder:text-white" type="text" name="" id="" placeholder="+">
+                    <input class="noSeatButton focus:outline-none focus:bg-red-500 focus:text-white focus:placeholder:text-white" type="text" name="" id="" placeholder="+">
+                    <input class="noSeatButton focus:outline-none focus:bg-red-500 focus:text-white focus:placeholder:text-white" type="text" name="" id="" placeholder="+">
+                </div>
+
+                <div class="flex justify-center gap-x-[15px] xl:gap-x-[20px] mt-[20px] xl:mt-[24px]">
                     <button class="seatButton">A1</button>
                     <button class="seatButton">A2</button>
                     <button class="seatButton hidden">A1</button>
@@ -257,7 +265,7 @@
                     <button class="seatButton">A4</button>
                 </div>
 
-                <div class="flex gap-x-[15px] xl:gap-x-[20px] mt-[20px] xl:mt-[24px]">
+                <div class="flex justify-center gap-x-[15px] xl:gap-x-[20px] mt-[12px] xl:mt-[16px]">
                     <button class="seatButton">B1</button>
                     <button class="seatButton">B2</button>
                     <button class="seatButton hidden">B1</button>
@@ -265,7 +273,7 @@
                     <button class="seatButton">B4</button>
                 </div>
 
-                <div class="flex gap-x-[15px] xl:gap-x-[20px] mt-[20px] xl:mt-[24px]">
+                <div class="flex justify-center gap-x-[15px] xl:gap-x-[20px] mt-[20px] xl:mt-[24px]">
                     <button class="seatButton">C1</button>
                     <button class="seatButton">C2</button>
                     <button class="seatButton hidden">C1</button>
@@ -273,7 +281,7 @@
                     <button class="seatButton">C4</button>
                 </div>
 
-                <div class="flex gap-x-[15px] xl:gap-x-[20px] mt-[20px] xl:mt-[24px]">
+                <div class="flex justify-center gap-x-[15px] xl:gap-x-[20px] mt-[20px] xl:mt-[24px]">
                     <button class="seatButton">D1</button>
                     <button class="seatButton">D2</button>
                     <button class="seatButton hidden">D1</button>
@@ -281,7 +289,7 @@
                     <button class="seatButton">D4</button>
                 </div>
 
-                <div class="flex gap-x-[15px] xl:gap-x-[20px] mt-[20px] xl:mt-[24px]">
+                <div class="flex justify-center justify-center gap-x-[15px] xl:gap-x-[20px] mt-[20px] xl:mt-[24px]">
                     <button class="seatButton">E1</button>
                     <button class="seatButton">E2</button>
                     <button class="seatButton hidden">E1</button>
@@ -289,7 +297,7 @@
                     <button class="seatButton">E4</button>
                 </div>
 
-                <div class="flex gap-x-[15px] xl:gap-x-[20px] mt-[20px] xl:mt-[24px]">
+                <div class="flex justify-center gap-x-[15px] xl:gap-x-[20px] mt-[20px] xl:mt-[24px]">
                     <button class="seatButton">F1</button>
                     <button class="seatButton">F2</button>
                     <button class="seatButton hidden">F1</button>
@@ -297,7 +305,7 @@
                     <button class="seatButton">F4</button>
                 </div>
 
-                <div class="flex gap-x-[15px] xl:gap-x-[20px] mt-[20px] xl:mt-[24px]">
+                <div class="flex justify-center gap-x-[15px] xl:gap-x-[20px] mt-[20px] xl:mt-[24px]">
                     <button class="seatButton">G1</button>
                     <button class="seatButton">G2</button>
                     <button class="seatButton hidden">G1</button>
@@ -305,7 +313,7 @@
                     <button class="seatButton">G4</button>
                 </div>
 
-                  <div class="flex items-center gap-x-[22px] mt-[20px] xl:mt-[24px] relative z-[100000]" :class=" seatSelectStatus ? 'transform scale-[1.2]' : 'transform scale-100'">
+                  <div class="flex justify-center items-center gap-x-[22px] mt-[20px] xl:mt-[24px] relative z-[100000]" :class=" seatSelectStatus ? 'transform scale-[1.2]' : 'transform scale-100'">
                    <div class="flex gap-x-[15px] xl:gap-x-[20px]" :class="seatSelectStatus ? 'z-[100000]': '' ">
                     <button class="relative" :class=" seatSelectStatus ? 'noSeatButton' : 'lockSeatButton'">
                       <img class="m-auto" src="../assets/svg/lock.svg" alt="Lock">
@@ -329,7 +337,7 @@
                   </button>
                 </div>
 
-                <div class="flex items-center gap-x-[22px] mt-[20px] xl:mt-[24px] relative z-[100000]" :class=" seatSelectStatus ? 'transform scale-[1.2]' : 'transform scale-100'">
+                <div class="flex justify-center items-center gap-x-[22px] mt-[20px] xl:mt-[24px] relative z-[100000]" :class=" seatSelectStatus ? 'transform scale-[1.2]' : 'transform scale-100'">
                   <div class="flex gap-x-[15px] xl:gap-x-[20px]" :class="seatSelectStatus ? 'z-[100000]': '' ">
                     <button class="relative" :class=" seatSelectStatus ? 'whiteSeatButton' : 'seatButton'">I1
                       <img src="../assets/svg/bg_close.svg" alt="Close" class="absolute top-[-6px] right-[-6px] opacity-0" :class=" seatSelectStatus ? 'opacity-100' : 'seatButton'">
@@ -352,20 +360,18 @@
                   </button>
                 </div>
 
-                <div class="flex gap-x-[15px] xl:gap-x-[20px] mt-[20px] xl:mt-[24px]">
-                    <button class="relative noSeatButton" data-v-05381787="">
-                        + <img src="/src/assets/svg/bg_close.svg" alt="Close" class="absolute top-[-6px] right-[-6px] opacity-0 opacity-100 hidden" data-v-05381787="">
-                    </button>
-                    <button class="seatButton">G2</button>
-                    <button class="seatButton hidden">G1</button>
-                    <button class="seatButton">G3</button>
-                    <button class="seatButton">G4</button>
+                <div class="flex gap-x-[15px] xl:gap-x-[20px] mt-[12px] xl:mt-[16px]">
+                    <input class="extraSeatButton focus:outline-none focus:bg-red-500 focus:text-white focus:placeholder:text-white" type="text" value="J1" name="" id="" placeholder="+">
+                    <input class="noSeatButton focus:outline-none focus:bg-red-500 focus:text-white focus:placeholder:text-white" type="text" name="" id="" placeholder="+">
+                    <input class="noSeatButton focus:outline-none focus:bg-red-500 focus:text-white focus:placeholder:text-white" type="text" name="" id="" placeholder="+">
+                    <input class="noSeatButton focus:outline-none focus:bg-red-500 focus:text-white focus:placeholder:text-white" type="text" name="" id="" placeholder="+">
+                    <input class="noSeatButton focus:outline-none focus:bg-red-500 focus:text-white focus:placeholder:text-white" type="text" name="" id="" placeholder="+">
                 </div>
 
                 <div class="flex justify-center z-[10000] relative">
-                  <button @click="extraSeat" class="bg-white flex gap-x-3 justify-center items-center text-[#48A43F] rounded-full px-5 py-3 leading-[12px] text-[10px] xl:leading-[16px] xl:text-[12px] mt-5" :class="seatSelectStatus ? '' : 'hidden'" data-v-0d08c475="">
-                  <span data-v-0d08c475=""><img src="../assets/svg/green-save.svg" alt="" data-v-0d08c475=""></span> Save changes
-                </button>
+                  <button class="text-white bg-[#48A43F] rounded-full px-7 py-3 leading-[12px] text-[10px] xl:leading-[16px] xl:text-[12px] mt-5">
+                    Save Seat
+                  </button>
                 </div>
 
               </div>
