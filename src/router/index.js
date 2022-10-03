@@ -39,6 +39,7 @@ import Trips from '@/views/trips.vue'
 import TripsAddNext from "@/views/tripsAddNext.vue"
 import TripsAdd from "@/views/tripsAdd.vue"
 import TripPreview from '@/views/trip_preview.vue'
+import TripPreviewNext from '@/views/trips-preview-next.vue'
 import TripsInformation from '@/views/tripInformation.vue'
 import TripsInformationNext from '@/views/TripsInformationNext.vue'
 import TripsBoarding from "@/views/trips-boarding.vue"
@@ -58,6 +59,7 @@ import TripsAgent from '@/views/trips_agent.vue'
 import TripsAgentFilled from '@/views/trips_agent-filled.vue'
 import TripsQuota from '@/views/trips_quota.vue'
 import TripFacilities from '@/views/trip_facilities.vue'
+import TripFacilitiesNext from '@/views/trip-facilities-next.vue'
 import User from '@/views/user.vue'
 import UserAdmin from '@/views/user_admin.vue'
 import UserCreateAdmin from '@/views/user_create_admin.vue'
@@ -399,9 +401,19 @@ const router = createRouter({
             component: TripFacilities
         },
         {
+            path: '/tripsFacilitiesNext',
+            name: 'TripFacilitiesNext',
+            component: TripFacilitiesNext
+        },
+        {
             path: '/tripPreview',
             name: 'TripPreview',
             component: TripPreview,
+        },
+        {
+            path: '/tripPreviewNext',
+            name: 'TripPreviewNext',
+            component: TripPreviewNext,
         },
         //user Start
         {
