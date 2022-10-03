@@ -40,13 +40,16 @@
               Wise Sales
             </router-link>
             <router-link :class="$route.path === '' ? 'activeMenu' : 'menu border-b border-dashed p-[10px]' " to="">
+              Route Wise Sales
+            </router-link>
+            <router-link :class="$route.path === '' ? 'activeMenu' : 'menu border-b border-dashed p-[10px]' " to="">
               Sub-Route Wise Sales
             </router-link>
-            <router-link :class="$route.path === '' ? 'activeMenu' : 'menu border-b border-dashed p-[10px]' " to="">Bus
-              Wise Sales
+            <router-link :class="$route.path === '' ? 'activeMenu' : 'menu border-b border-dashed p-[10px]' " to="">
+              Bus Wise Sales
             </router-link>
-            <router-link :class="$route.path === '' ? 'activeMenu' : 'menu border-b border-dashed p-[10px]' " to="">Trip
-              Wise Sales
+            <router-link :class="$route.path === '' ? 'activeMenu' : 'menu border-b border-dashed p-[10px]' " to="">
+              Trip Wise Sales
             </router-link>
             <router-link :class="$route.path === '' ? 'activeMenu' : 'menu border-b border-dashed p-[10px]' " to="">
               Cancel Trip Report
@@ -57,7 +60,11 @@
             <router-link :class="$route.path === '' ? 'activeMenu' : 'menu border-b border-dashed p-[10px]' " to="">
               Reserve Ticket Report
             </router-link>
-            <router-link :class="$route.path === '' ? 'activeMenu' : 'menu p-[10px]' " to="">Discount Report
+            <router-link :class="$route.path === '' ? 'activeMenu' : 'menu p-[10px]' " to="">
+              Discount Report
+            </router-link>
+            <router-link :class="$route.path === '' ? 'activeMenu' : 'menu p-[10px]' " to="">
+              Trip Migration Report
             </router-link>
           </dropdown-menu>
         </ul>
