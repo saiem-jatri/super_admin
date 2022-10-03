@@ -84,6 +84,7 @@ import UserWiseSales from '@/views/user-wise-sales.vue'
 import UserWiseSalesDetails from '@/views/user-wise-sales-details.vue'
 import CounterWiseSales from '@/views/counter-wise-sales.vue'
 import CounterWiseSalesDetails from '@/views/counter-wise-sales-details.vue'
+import RouteWiseSales from '@/views/route-wise-sales.vue'
 import Invoice from '@/views/invoice.vue'
 import InvoiceCurrentbill from '@/views/invoice_currentbill.vue'
 import InvoiceGeneratebill from '@/views/invoice_generatebill.vue'
@@ -538,7 +539,11 @@ const router = createRouter({
             name: 'CounterWiseSalesDetails',
             component: CounterWiseSalesDetails,
         },
-
+        {
+            path: '/routeWiseSales',
+            name: 'RouteWiseSales',
+            component: RouteWiseSales,
+        },
         //invoice started
         {
             path: '/invoice',
