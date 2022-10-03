@@ -195,5 +195,8 @@ body {
     @apply bg-white border border-corporateBorder rounded px-4 py-3 text-sm xl:text-base leading-[22px] xl:leading-6 font-[600]
 }
 .paginationNextButton {
-    @apply bg-corporate text-white rounded px-3 py-3 text-sm xl:text-base leading-[22px] xl:leading-6
+    @apply bg-corporate text-white rounded px-3 py-3 text-sm xl:text-base leading-[22px] xl:leading-6 flex items-center gap-x-3
+}
+.tableDetailsButton {
+    @apply bg-corporateSecondaryBlue text-white text-xs px-[15px] py-1 rounded
 }

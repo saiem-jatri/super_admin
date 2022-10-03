@@ -36,7 +36,7 @@
             <router-link :class="$route.path === '' ? 'activeMenu' : 'menu border-b border-dashed p-[10px]' " to="">
               Counter Wise Sales
             </router-link>
-            <router-link :class="$route.path === '' ? 'activeMenu' : 'menu border-b border-dashed p-[10px]' " to="">User
+            <router-link :class="$route.path === '/userWiseSales' ? 'activeMenu' : 'menu border-b border-dashed p-[10px]' " to="/userWiseSales">User
               Wise Sales
             </router-link>
             <router-link :class="$route.path === '' ? 'activeMenu' : 'menu border-b border-dashed p-[10px]' " to="">
