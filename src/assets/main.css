@@ -187,3 +187,13 @@ body {
 .quotaSeatLocked {
     @apply w-[35px] xl:w-[50px] h-[25px] xl:h-[36px] text-center text-primaryText border border-[#EDEDED] bg-[#EDEDED] rounded-[2px] leading-[16px] xl:leading-[20px] text-[12px] xl:text-[14px]
 }
+
+.paginationButton {
+    @apply px-4 py-3 text-sm xl:text-base leading-[22px] xl:leading-6
+}
+.activePaginationButton {
+    @apply bg-white border border-corporateBorder rounded px-4 py-3 text-sm xl:text-base leading-[22px] xl:leading-6 font-[600]
+}
+.paginationNextButton {
+    @apply bg-corporate text-white rounded px-3 py-3 text-sm xl:text-base leading-[22px] xl:leading-6
+}

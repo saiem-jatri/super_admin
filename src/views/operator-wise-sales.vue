@@ -148,106 +148,302 @@
               <!-- table start -->
               <table class="min-w-full">
                 <thead>
-                <tr class="bg-[#4D4D4F] h-[36px]">
-                  <th class="companyTableHead" scope="col" style="border-radius: 6px 0 0 0">
-                    no. of tickets (T)
-                  </th>
-                  <th class="companyTableHead" scope="col">
-                    commission (C)
-                  </th>
-    
-                  <th class="companyTableHead" scope="col">
-                    total amount (T×C)
-                  </th>
-                  <th class="companyTableHead" scope="col" style="border-radius: 0 6px 0 0">
-                    due bill
-                  </th>
-                </tr>
+                    <tr class="bg-[#4D4D4F] h-[36px]">
+                    <th class="companyTableHead" scope="col" style="border-radius: 6px 0 0 0">
+                        Company name
+                    </th>
+                    <th class="companyTableHead" scope="col">
+                        Trip no
+                    </th>
+                    <th class="companyTableHead" scope="col">
+                        Sold ticket
+                    </th>
+                    <th class="companyTableHead" scope="col">
+                        Sold ticket amount
+                    </th>
+                    <th class="companyTableHead" scope="col">
+                        CANCELLED Ticket
+                    </th>
+                    <th class="companyTableHead" scope="col">
+                        Cancelled amount
+                    </th>
+                    <th class="companyTableHead" scope="col">
+                        Company discount
+                    </th>
+                    <th class="companyTableHead" scope="col">
+                        Third-party commission
+                    </th>
+                    <th class="companyTableHead" scope="col">
+                        Third-party discount
+                    </th>
+                    <th class="companyTableHead" scope="col">
+                        Jatri commission
+                    </th>
+                    <th class="companyTableHead" scope="col">
+                        Total commission
+                    </th>
+                    <th class="companyTableHead" scope="col" style="border-radius: 0 6px 0 0">
+                        TOTAL AMOUNT
+                    </th>
+                    </tr>
                 </thead>
                 <tbody>
                 <tr class="border-b border-[#EDEDED]">
                   <td class="text-primaryText border-r border-[#DBDBDB] text-center leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] py-3">
-                    01
+                    Mimzal Paribahan
                   </td>
     
                   <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
-                    5 %
+                    lI6dFWyA
                   </td>
                   <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
-                    Arambag
+                    9
+                  </td>
+                  <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
+                    99999 TK
+                  </td>
+                  <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
+                    9999
+                  </td>
+                  <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
+                    99999 TK
+                  </td>
+                  <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
+                    99999 TK
+                  </td>
+                  <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
+                    99999 TK
+                  </td>
+                  <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
+                    99999 TK
+                  </td>
+                  <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
+                    99999 TK
+                  </td>
+                  <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
+                    99999 TK
                   </td>
                   <td class="leading-[20px] text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
-                    5000 TK
+                    99999 TK
                   </td>
                 </tr>
+
                 <tr class="border-b border-[#EDEDED]">
                   <td class="text-primaryText border-r border-[#DBDBDB] text-center leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] py-3">
-                    01
+                    Mimzal Paribahan
                   </td>
     
                   <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
-                    5 %
+                    lI6dFWyA
                   </td>
                   <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
-                    Arambag
+                    9
+                  </td>
+                  <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
+                    99999 TK
+                  </td>
+                  <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
+                    9999
+                  </td>
+                  <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
+                    99999 TK
+                  </td>
+                  <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
+                    99999 TK
+                  </td>
+                  <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
+                    99999 TK
+                  </td>
+                  <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
+                    99999 TK
+                  </td>
+                  <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
+                    99999 TK
+                  </td>
+                  <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
+                    99999 TK
                   </td>
                   <td class="leading-[20px] text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
-                    5000 TK
+                    99999 TK
                   </td>
                 </tr>
+
                 <tr class="border-b border-[#EDEDED]">
                   <td class="text-primaryText border-r border-[#DBDBDB] text-center leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] py-3">
-                    01
+                    Mimzal Paribahan
                   </td>
     
                   <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
-                    5 %
+                    lI6dFWyA
                   </td>
                   <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
-                    Arambag
+                    9
+                  </td>
+                  <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
+                    99999 TK
+                  </td>
+                  <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
+                    9999
+                  </td>
+                  <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
+                    99999 TK
+                  </td>
+                  <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
+                    99999 TK
+                  </td>
+                  <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
+                    99999 TK
+                  </td>
+                  <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
+                    99999 TK
+                  </td>
+                  <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
+                    99999 TK
+                  </td>
+                  <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
+                    99999 TK
                   </td>
                   <td class="leading-[20px] text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
-                    5000 TK
+                    99999 TK
                   </td>
                 </tr>
+
                 <tr class="border-b border-[#EDEDED]">
                   <td class="text-primaryText border-r border-[#DBDBDB] text-center leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] py-3">
-                    01
+                    Mimzal Paribahan
                   </td>
     
                   <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
-                    5 %
+                    lI6dFWyA
                   </td>
                   <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
-                    Arambag
+                    9
+                  </td>
+                  <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
+                    99999 TK
+                  </td>
+                  <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
+                    9999
+                  </td>
+                  <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
+                    99999 TK
+                  </td>
+                  <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
+                    99999 TK
+                  </td>
+                  <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
+                    99999 TK
+                  </td>
+                  <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
+                    99999 TK
+                  </td>
+                  <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
+                    99999 TK
+                  </td>
+                  <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
+                    99999 TK
                   </td>
                   <td class="leading-[20px] text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
-                    5000 TK
+                    99999 TK
                   </td>
                 </tr>
+
                 <tr class="border-b border-[#EDEDED]">
                   <td class="text-primaryText border-r border-[#DBDBDB] text-center leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] py-3">
-                    01
+                    Mimzal Paribahan
                   </td>
     
                   <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
-                    5 %
+                    lI6dFWyA
                   </td>
                   <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
-                    Arambag
+                    9
+                  </td>
+                  <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
+                    99999 TK
+                  </td>
+                  <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
+                    9999
+                  </td>
+                  <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
+                    99999 TK
+                  </td>
+                  <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
+                    99999 TK
+                  </td>
+                  <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
+                    99999 TK
+                  </td>
+                  <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
+                    99999 TK
+                  </td>
+                  <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
+                    99999 TK
+                  </td>
+                  <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
+                    99999 TK
                   </td>
                   <td class="leading-[20px] text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
-                    5000 TK
+                    99999 TK
                   </td>
                 </tr>
+
+                <tr class="border-b border-[#EDEDED]">
+                  <td class="text-primaryText border-r border-[#DBDBDB] text-center leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] py-3">
+                    Mimzal Paribahan
+                  </td>
     
-    
+                  <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
+                    lI6dFWyA
+                  </td>
+                  <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
+                    9
+                  </td>
+                  <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
+                    99999 TK
+                  </td>
+                  <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
+                    9999
+                  </td>
+                  <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
+                    99999 TK
+                  </td>
+                  <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
+                    99999 TK
+                  </td>
+                  <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
+                    99999 TK
+                  </td>
+                  <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
+                    99999 TK
+                  </td>
+                  <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
+                    99999 TK
+                  </td>
+                  <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
+                    99999 TK
+                  </td>
+                  <td class="leading-[20px] text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
+                    99999 TK
+                  </td>
+                </tr>     
                 </tbody>
               </table>
-    
+            </div>
+
+            <div class="flex items-center gap-x-[128px] mt-[30px]">
+                <p class="text-[#4D4D4F] text-[12px] xl:text-sm leading-4 xl:leading-5">Showing result 1 to 50 of 500 (10 Pages)</p>
+                <div class="flex items-center gap-x-6">
+                    <button type="button"><img src="../assets/svg/pagination-back.svg" alt=""></button>
+                    <button type="button" class="activePaginationButton">01</button>
+                    <button type="button" class="paginationButton">02</button>
+                    <button type="button" class="paginationButton">03</button>
+                    <div type="button" class="paginationButton">...</div>
+                    <button type="button" class="paginationButton">10</button>
+                    <button type="button" class="paginationNextButton flex items-center gap-x-3">Next <img src="../assets/svg/pagination-next.svg" alt=""></button>
+                </div>
             </div>
           </div>
-       
     </template>
     
     <style>

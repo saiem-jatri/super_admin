@@ -30,7 +30,7 @@
 
         <ul class="border-b border-corporateBorder">
           <dropdown-menu height="min-h-[138px]" title="Reports">
-            <router-link :class="$route.path === '' ? 'activeMenu' : 'menu border-b border-dashed p-[10px]' " to="">
+            <router-link :class="$route.path === '/OperatorWiseSales' ? 'activeMenu' : 'menu border-b border-dashed p-[10px]' " to="/OperatorWiseSales">
               Operator Wise Sales
             </router-link>
             <router-link :class="$route.path === '' ? 'activeMenu' : 'menu border-b border-dashed p-[10px]' " to="">
