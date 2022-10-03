@@ -9,10 +9,10 @@
                   <p class="text-secondaryText leading-[12px] text-[8px] xl:leading-[16px] xl:text-[12px] font-[400]">Report</p>
                   <img alt="" class="w-1 h-2" src="../assets/svg/bgBack.svg">
                   <p class="text-secondaryText leading-[12px] text-[8px] xl:leading-[16px] xl:text-[12px] font-[400]">
-                    User Wise Sales</p>
+                    Counter wise sales</p>
                     <img alt="" class="w-1 h-2" src="../assets/svg/bgBack.svg">
                   <p class="text-secondaryText leading-[12px] text-[8px] xl:leading-[16px] xl:text-[12px] font-[400]">
-                    User name</p>
+                    Counter name</p>
                     <img alt="" class="w-1 h-2" src="../assets/svg/bgBack.svg">
                   <p class="text-secondaryText leading-[12px] text-[8px] xl:leading-[16px] xl:text-[12px] font-[400]">
                     Details</p>
@@ -40,7 +40,7 @@
           <!-- body start-->
           <div class="px-[30px] py-[24px]">
             <div class="flex justify-between items-center gap-x-6">
-              <p class="text-sm text-primaryText font-semibold">User name: Fahim Ahmed</p>
+              <p class="text-sm text-primaryText font-semibold">Counter name: Gabtoli Counter</p>
               <div class="flex items-center gap-x-6">
                 <button
                   class="flex gap-x-[9px] justify-center items-center border border-[#8D8D8F] bg-transparent text-corporate leading-[14px] xl:leading-[16px] text-[11px] xl:text-[12px] font-[500] py-3 pl-[17px] pr-[24px] rounded-full"><span>

@@ -82,6 +82,8 @@ import MigrateTicketSelect from '@/views/migrate_tikcet_select_seat.vue'
 import OperatorWiseSales from '@/views/operator-wise-sales.vue'
 import UserWiseSales from '@/views/user-wise-sales.vue'
 import UserWiseSalesDetails from '@/views/user-wise-sales-details.vue'
+import CounterWiseSales from '@/views/counter-wise-sales.vue'
+import CounterWiseSalesDetails from '@/views/counter-wise-sales-details.vue'
 import Invoice from '@/views/invoice.vue'
 import InvoiceCurrentbill from '@/views/invoice_currentbill.vue'
 import InvoiceGeneratebill from '@/views/invoice_generatebill.vue'
@@ -525,6 +527,16 @@ const router = createRouter({
             path: '/userWiseSalesDetails',
             name: 'UserWiseSalesDetails',
             component: UserWiseSalesDetails,
+        },
+        {
+            path: '/counterWiseSales',
+            name: 'CounterWiseSales',
+            component: CounterWiseSales,
+        },
+        {
+            path: '/counterWiseSalesDetails',
+            name: 'CounterWiseSalesDetails',
+            component: CounterWiseSalesDetails,
         },
 
         //invoice started
