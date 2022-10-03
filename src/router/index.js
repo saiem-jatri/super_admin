@@ -79,6 +79,7 @@ import MigrateSelect from '@/views/migrate_select_seat.vue'
 import MigrateSameTicketOwner from '@/views/migrate_same_ticket_owner.vue'
 import MigrateTicket from '@/views/migrate_ticket.vue'
 import MigrateTicketSelect from '@/views/migrate_tikcet_select_seat.vue'
+import OperatorWiseSales from '@/views/operator-wise-sales.vue'
 import Invoice from '@/views/invoice.vue'
 import InvoiceCurrentbill from '@/views/invoice_currentbill.vue'
 import InvoiceGeneratebill from '@/views/invoice_generatebill.vue'
@@ -505,6 +506,13 @@ const router = createRouter({
             path: '/addAgentNext',
             name: 'AddAgentNext',
             component: AddAgentNext,
+        },
+
+        //Reports Start
+        {
+            path: '/operatorWiseSales',
+            name: 'OperatorWiseSales',
+            component: OperatorWiseSales,
         },
 
         //invoice started
