@@ -39,6 +39,7 @@ import Trips from '@/views/trips.vue'
 import TripsAddNext from "@/views/tripsAddNext.vue"
 import TripsAdd from "@/views/tripsAdd.vue"
 import TripPreview from '@/views/trip_preview.vue'
+import TripPreviewNext from '@/views/trips-preview-next.vue'
 import TripsInformation from '@/views/tripInformation.vue'
 import TripsInformationNext from '@/views/TripsInformationNext.vue'
 import TripsBoarding from "@/views/trips-boarding.vue"
@@ -58,6 +59,7 @@ import TripsAgent from '@/views/trips_agent.vue'
 import TripsAgentFilled from '@/views/trips_agent-filled.vue'
 import TripsQuota from '@/views/trips_quota.vue'
 import TripFacilities from '@/views/trip_facilities.vue'
+import TripFacilitiesNext from '@/views/trip-facilities-next.vue'
 import User from '@/views/user.vue'
 import UserAdmin from '@/views/user_admin.vue'
 import UserCreateAdmin from '@/views/user_create_admin.vue'
@@ -77,6 +79,12 @@ import MigrateSelect from '@/views/migrate_select_seat.vue'
 import MigrateSameTicketOwner from '@/views/migrate_same_ticket_owner.vue'
 import MigrateTicket from '@/views/migrate_ticket.vue'
 import MigrateTicketSelect from '@/views/migrate_tikcet_select_seat.vue'
+import OperatorWiseSales from '@/views/operator-wise-sales.vue'
+import UserWiseSales from '@/views/user-wise-sales.vue'
+import UserWiseSalesDetails from '@/views/user-wise-sales-details.vue'
+import CounterWiseSales from '@/views/counter-wise-sales.vue'
+import CounterWiseSalesDetails from '@/views/counter-wise-sales-details.vue'
+import RouteWiseSales from '@/views/route-wise-sales.vue'
 import Invoice from '@/views/invoice.vue'
 import InvoiceCurrentbill from '@/views/invoice_currentbill.vue'
 import InvoiceGeneratebill from '@/views/invoice_generatebill.vue'
@@ -404,9 +412,19 @@ const router = createRouter({
             component: TripFacilities
         },
         {
+            path: '/tripsFacilitiesNext',
+            name: 'TripFacilitiesNext',
+            component: TripFacilitiesNext
+        },
+        {
             path: '/tripPreview',
             name: 'TripPreview',
             component: TripPreview,
+        },
+        {
+            path: '/tripPreviewNext',
+            name: 'TripPreviewNext',
+            component: TripPreviewNext,
         },
         //user Start
         {
@@ -500,6 +518,37 @@ const router = createRouter({
             component: AddAgentNext,
         },
 
+        //Reports Start
+        {
+            path: '/operatorWiseSales',
+            name: 'OperatorWiseSales',
+            component: OperatorWiseSales,
+        },
+        {
+            path: '/userWiseSales',
+            name: 'UserWiseSales',
+            component: UserWiseSales,
+        },
+        {
+            path: '/userWiseSalesDetails',
+            name: 'UserWiseSalesDetails',
+            component: UserWiseSalesDetails,
+        },
+        {
+            path: '/counterWiseSales',
+            name: 'CounterWiseSales',
+            component: CounterWiseSales,
+        },
+        {
+            path: '/counterWiseSalesDetails',
+            name: 'CounterWiseSalesDetails',
+            component: CounterWiseSalesDetails,
+        },
+        {
+            path: '/routeWiseSales',
+            name: 'RouteWiseSales',
+            component: RouteWiseSales,
+        },
         //invoice started
         {
             path: '/invoice',

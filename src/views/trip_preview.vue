@@ -303,7 +303,7 @@
           <hr class="mt-[12px] xl:mt-[4px] border-t border-corporateBorder">
           <div class="p-4">
             <p class="text-corporateSecondaryBlue leading-[20px] xl:leading-[24px] text-[14px] xl:text-[16px] font-[500]">
-              BOARDING INFORMATION</p>
+              DROPPING INFORMATION</p>
             <div class="flex justify-center items-center gap-x-[10px] xl:gap-x-[16px] mt-[12px] xl:mt-[16px]">
               <div class="w-1/4">
                 <p class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]">
@@ -1119,12 +1119,32 @@
           </div>
         </div>
 
-        <div class="flex justify-center items-center mt-5">
-          <button
-              class="bg-corporate flex justify-center items-center text-white rounded-full px-6 py-3 mr-4 leading-[12px] text-[10px] xl:leading-[16px] xl:text-[12px]">
-            Create trip
-          </button>
+        <div class="bg-white mt-4 rounded-[8px]">
+          <div class="p-4">
+            <p class="text-corporateSecondaryBlue leading-[20px] xl:leading-[24px] text-[14px] xl:text-[16px] font-[500]" data-v-2f5150cb=""> PUBLISH TRIP</p>
+            <div class="flex gap-x-4">
+              <div class="mt-4 w w-1/4">
+                <p class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]">From date</p>
+                <div class="w-full h-[40px] border border-[#DBDBDB] flex justify-between items-center mt-[10px] leading-[20px] rounded-[4px] px-[20px] xl:px-[8px] overflow-hidden" >
+                  <div class="text-[14px] leading-5 text-primaryText" data-v-2f5150cb=""> 19 July 2022 </div>
+                  <img src="../assets/svg/count2.svg" class="h-5 w-5" alt="">
+                </div>
+              </div>
+              <div class="mt-4 w-1/4">
+                <p class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]">From date</p>
+                <div class="w-full h-[40px] border border-[#DBDBDB] flex justify-between items-center mt-[10px] leading-[20px] rounded-[4px] px-[20px] xl:px-[8px] overflow-hidden" >
+                  <div class="text-[14px] leading-5 text-primaryText" data-v-2f5150cb=""> 19 July 2022 </div>
+                  <img src="../assets/svg/count2.svg" class="h-5 w-5" alt="">
+                </div>
+              </div>
+          </div>
+          </div>
         </div>
+
+        <div class="flex justify-center items-center mt-5">
+          <router-link to="/tripPreviewNext" class="corporateButton">Create routes</router-link>
+        </div>
+
       </div>
 </template>
 

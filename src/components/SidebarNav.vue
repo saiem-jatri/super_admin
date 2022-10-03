@@ -30,23 +30,26 @@
 
         <ul class="border-b border-corporateBorder">
           <dropdown-menu height="min-h-[138px]" title="Reports">
-            <router-link :class="$route.path === '' ? 'activeMenu' : 'menu border-b border-dashed p-[10px]' " to="">
+            <router-link :class="$route.path === '/OperatorWiseSales' ? 'activeMenu' : 'menu border-b border-dashed p-[10px]' " to="/OperatorWiseSales">
               Operator Wise Sales
             </router-link>
-            <router-link :class="$route.path === '' ? 'activeMenu' : 'menu border-b border-dashed p-[10px]' " to="">
+            <router-link :class="$route.path === '/counterWiseSales' ? 'activeMenu' : 'menu border-b border-dashed p-[10px]' " to="/counterWiseSales">
               Counter Wise Sales
             </router-link>
-            <router-link :class="$route.path === '' ? 'activeMenu' : 'menu border-b border-dashed p-[10px]' " to="">User
+            <router-link :class="$route.path === '/userWiseSales' ? 'activeMenu' : 'menu border-b border-dashed p-[10px]' " to="/userWiseSales">User
               Wise Sales
+            </router-link>
+            <router-link :class="$route.path === '/routeWiseSales' ? 'activeMenu' : 'menu border-b border-dashed p-[10px]' " to="/routeWiseSales">
+              Route Wise Sales
             </router-link>
             <router-link :class="$route.path === '' ? 'activeMenu' : 'menu border-b border-dashed p-[10px]' " to="">
               Sub-Route Wise Sales
             </router-link>
-            <router-link :class="$route.path === '' ? 'activeMenu' : 'menu border-b border-dashed p-[10px]' " to="">Bus
-              Wise Sales
+            <router-link :class="$route.path === '' ? 'activeMenu' : 'menu border-b border-dashed p-[10px]' " to="">
+              Bus Wise Sales
             </router-link>
-            <router-link :class="$route.path === '' ? 'activeMenu' : 'menu border-b border-dashed p-[10px]' " to="">Trip
-              Wise Sales
+            <router-link :class="$route.path === '' ? 'activeMenu' : 'menu border-b border-dashed p-[10px]' " to="">
+              Trip Wise Sales
             </router-link>
             <router-link :class="$route.path === '' ? 'activeMenu' : 'menu border-b border-dashed p-[10px]' " to="">
               Cancel Trip Report
@@ -57,7 +60,11 @@
             <router-link :class="$route.path === '' ? 'activeMenu' : 'menu border-b border-dashed p-[10px]' " to="">
               Reserve Ticket Report
             </router-link>
-            <router-link :class="$route.path === '' ? 'activeMenu' : 'menu p-[10px]' " to="">Discount Report
+            <router-link :class="$route.path === '' ? 'activeMenu' : 'menu p-[10px]' " to="">
+              Discount Report
+            </router-link>
+            <router-link :class="$route.path === '' ? 'activeMenu' : 'menu p-[10px]' " to="">
+              Trip Migration Report
             </router-link>
           </dropdown-menu>
         </ul>

@@ -291,7 +291,7 @@
         <router-link to="/tripsPermission" class="corporateButton">Trips Permission</router-link>
         <router-link to="/tripsAgent" class="corporateButton">Trips Agent</router-link>
         <router-link to="/tripsQuota" class="corporateButton">Trips Quota</router-link>
-        <router-link to="/tripsFacilities" class="corporateButton !bg-black">Trips Facilities</router-link>
+        <router-link to="/tripsFacilities" class="corporateButton">Trips Facilities</router-link>
         <router-link to="/tripPreview" class="corporateButton">Trips Preview</router-link>
       </div>
    </div>
