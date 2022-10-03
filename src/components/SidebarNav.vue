@@ -68,7 +68,8 @@
 
         <ul class="border-b border-corporateBorder">
           <dropdown-menu height="min-h-[138px]" title="Invoice">
-            <router-link :class="$route.path === '/invoice' ? 'activeMenu' : 'menu border-b border-dashed p-[10px]' " to="/invoice">
+            <router-link :class="$route.path === '/invoice' ? 'activeMenu' : 'menu border-b border-dashed p-[10px]' "
+                         to="/invoice">
               Preodic Due Bill
             </router-link>
             <router-link
@@ -126,7 +127,8 @@
         </ul>
 
         <p class="menuSection">CONFIGARATION</p>
-        <router-link :class="$route.path === '/bus' ? 'activeMenu' : 'menu border-b border-dashed p-[10px]' " to="/bus">
+        <router-link :class="$route.path === '/bus' ? 'activeMenu' : 'menu border-b border-dashed p-[10px]' "
+                     to="/bus">
           Bus
         </router-link>
         <router-link :class="$route.path === '' ? 'activeMenu' : 'menu' " to="">Stopage</router-link>

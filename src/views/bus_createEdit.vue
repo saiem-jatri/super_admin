@@ -18,6 +18,9 @@
             <img alt="" class="w-1 h-2" src="../assets/svg/bgBack.svg">
             <p class="text-secondaryText leading-[12px] text-[8px] xl:leading-[16px] xl:text-[12px] font-[400]">
               Add bus</p>
+            <img alt="" class="w-1 h-2" src="../assets/svg/bgBack.svg">
+            <p class="text-secondaryText leading-[12px] text-[8px] xl:leading-[16px] xl:text-[12px] font-[400]">
+              Edit</p>
           </div>
         </div>
       </div>
@@ -230,8 +233,14 @@
               </div>
               <div class="w-[45%]">
                 <div class="py-2 pl-[16px]">
-                  <p class="leading-[20px] xl:leading-[24px] text-[14px] xl:text-[16px] font-[600] text-primaryText">
-                    Seat layout preview</p>
+                  <div class="flex justify-between">
+                    <p class="leading-[20px] xl:leading-[24px] text-[14px] xl:text-[16px] font-[600] text-primaryText">
+                      Seat layout preview</p>
+                    <button class="flex gap-x-[9px] items-center">
+                      <img alt="" class="w-[13px]" src="../assets/svg/reset.svg">
+                      <p class="text-corporateError leading-[14px] xl:leading-[16px] text-[12px]">Reset</p>
+                    </button>
+                  </div>
                   <div class="flex gap-x-[30px] 2xl:gap-x-[50px] items-center mt-4">
                     <p class="w-[20%] leading-[14px] xl:leading-[16px] text-[12px] text-[#676769] font-[400]">Ex 2</p>
                     <div class="flex gap-x-[20px] xl:gap-x-[26px] justify-start w-[80%]">
@@ -616,10 +625,8 @@
       </div>
       <hr class="border-t border-corporateBorder">
       <div class="px-[16px] py-[20px] w-full flex justify-center items-center">
-        <router-link
-            class="flex justify-center items-center text-white leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[600] bg-corporate bg-opacity-30 rounded-full px-[20px] py-[11px] xl:px-[24px] xl:py-[13px]"
-            to="/busCreateEdit">
-          Preview bus
+        <router-link class="flex justify-center items-center gap-x-[10px] corporateButton" to="/mixedbusCreate">
+          <img alt="" src="../assets/svg/save_change.svg">Save changes
         </router-link>
       </div>
     </div>

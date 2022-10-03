@@ -96,6 +96,11 @@ import QuotaRelease from '@/views/actionbulk_quotaRelease.vue'
 import DateRangePermissionEdit from '@/views/actionbulk_daterangePermissionEdit.vue'
 import Bus from '@/views/bus.vue'
 import BusCreate from '@/views/bus_create.vue'
+import BusCreateEdit from '@/views/bus_createEdit.vue'
+import MixedbusCreate from '@/views/mixed_bus_create.vue'
+import MixedbusCreateActive from '@/views/mixed_bus_create_active.vue'
+import MixedbusCreateFilled from '@/views/mixed_bus_create_filled.vue'
+import DoubleDackerbusCreate from '@/views/doubleDacker_bus_create.vue'
 
 const router = createRouter({
     history: createWebHistory(import.meta.env.BASE_URL),
@@ -337,7 +342,7 @@ const router = createRouter({
             name: 'AnotherTripsBoardingNext',
             component: AnotherTripsBoardingNext
         },
-        
+
         {
             path: '/tripsBusRouteSelect',
             name: 'TripsBusRouteSelect',
@@ -608,7 +613,32 @@ const router = createRouter({
             name: 'BusCreate',
             component: BusCreate
         },
-
+        {
+            path: '/busCreateEdit',
+            name: 'BusCreateEdit',
+            component: BusCreateEdit
+        },
+        {
+            path: '/mixedbusCreate',
+            name: 'MixedbusCreate',
+            component: MixedbusCreate
+        },
+        {
+            path: '/mixedbusCreateActive',
+            name: 'MixedbusCreateActive',
+            component: MixedbusCreateActive
+        },
+        {
+            path: '/mixedbusCreateFilled',
+            name: 'MixedbusCreateFilled',
+            component: MixedbusCreateFilled
+        },
+        {
+            path: '/doubleDackerbusCreate',
+            name: 'DoubleDackerbusCreate',
+            component: DoubleDackerbusCreate
+        },
+    
     ]
 
 })
