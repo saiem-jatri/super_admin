@@ -60,7 +60,7 @@
             <router-link :class="$route.path === '/reserveTicket' ? 'activeMenu' : 'menu border-b border-dashed p-[10px]' " to="/reserveTicket">
               Reserve Ticket Report
             </router-link>
-            <router-link :class="$route.path === '' ? 'activeMenu' : 'menu p-[10px]' " to="">
+            <router-link :class="$route.path === '/discountReport' ? 'activeMenu' : 'menu p-[10px]' " to="/discountReport">
               Discount Report
             </router-link>
             <router-link :class="$route.path === '' ? 'activeMenu' : 'menu p-[10px]' " to="">
