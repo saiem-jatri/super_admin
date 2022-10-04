@@ -51,7 +51,7 @@
             <router-link :class="$route.path === '/tripWiseSales' ? 'activeMenu' : 'menu border-b border-dashed p-[10px]' " to="/tripWiseSales">
               Trip Wise Sales
             </router-link>
-            <router-link :class="$route.path === '' ? 'activeMenu' : 'menu border-b border-dashed p-[10px]' " to="">
+            <router-link :class="$route.path === '/CancelTripReport' ? 'activeMenu' : 'menu border-b border-dashed p-[10px]' " to="/CancelTripReport">
               Cancel Trip Report
             </router-link>
             <router-link :class="$route.path === '' ? 'activeMenu' : 'menu border-b border-dashed p-[10px]' " to="">
