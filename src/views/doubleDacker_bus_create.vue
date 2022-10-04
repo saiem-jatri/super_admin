@@ -89,7 +89,7 @@
         <hr class="px-4 border-t border-[#DBDBDB] mt-4">
         <!--          offer access-->
 
-        <div class="px-4 py-4 mt-4">
+        <div class="mt-4">
           <p class="leading-[20px] xl:leading-[24px] text-[14px] xl:text-[16px] text-primaryText font-[600]">Bus
             facilities</p>
           <div class="flex justify-start gap-x-[19px]">
@@ -183,7 +183,7 @@
           </div>
         </div>
       </div>
-      <div class="p-4">
+      <div class="">
         <div class="rounded-[4px] px-4">
           <hr class="border-t border-corporateBorder mt-1">
           <div class="pt-[8px] pb-[8px]">
