@@ -203,3 +203,6 @@ body {
 .tableDetailsGreyButton {
     @apply bg-[#EDEDED] text-primaryText text-[10px] leading-4 font-[600] px-2 py-1 rounded flex items-center gap-x-[10px]
 }
+.blueStatusButton {
+    @apply bg-[#EFF7FD] text-primaryText text-[11px] leading-4 font-[600] px-2 py-1 rounded
+}

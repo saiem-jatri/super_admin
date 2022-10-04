@@ -46,6 +46,16 @@
                         class="w-full py-[4px] mt-[10px] placeholder:text-primaryText placeholder:leading-[16px] placeholder:text-[12px] xl:placeholder:leading-[20px] xl:placeholder:text-[14px]"
                         optionLabel="name" placeholder="Selectr bus operator"/>
                   </div>
+                  
+                  <div class="w-1/4">
+                    <p class="text-primaryText leading-[20px] text-[14px] xl:leading-[24px] xl:text-[16px] font-[600]">
+                        Ticket booking type</p>
+                    <Dropdown
+                        v-model="selectedCity"
+                        :options="cities"
+                        class="w-full py-[4px] mt-[10px] placeholder:text-primaryText placeholder:leading-[16px] placeholder:text-[12px] xl:placeholder:leading-[20px] xl:placeholder:text-[14px]"
+                        optionLabel="name" placeholder="Select ticket booking type"/>
+                  </div>
                   <div class="w-1/4">
                     <p class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]">From date</p>
                     <div class="w-full h-[40px] border border-[#DBDBDB] flex justify-between items-center mt-[10px] leading-[20px] rounded-[4px] px-[20px] xl:px-[4px] 2xl:px-[8px] overflow-hidden">
@@ -60,6 +70,19 @@
                         <img alt="" class="h-5 w-5" src="../assets/svg/count2.svg">
                     </div>
                  </div>
+                </div>
+              </div>
+
+              <div class="px-4 pb-4 flex justify-between items-center gap-x-4">
+                <div class="w-1/4">
+                    <p class="text-primaryText leading-[20px] text-[14px] xl:leading-[24px] xl:text-[16px] font-[600]">
+                        Counter</p>
+                    <Dropdown
+                        v-model="selectedCity"
+                        :options="cities"
+                        class="w-full py-[4px] mt-[10px] placeholder:text-primaryText placeholder:leading-[16px] placeholder:text-[12px] xl:placeholder:leading-[20px] xl:placeholder:text-[14px]"
+                        optionLabel="name" placeholder="Select counter"/>
+                  </div>
                   <div class="w-1/4">
                     <p class="text-primaryText leading-[20px] text-[14px] xl:leading-[24px] xl:text-[16px] font-[600]">
                         Route</p>
@@ -69,11 +92,7 @@
                         class="w-full py-[4px] mt-[10px] placeholder:text-primaryText placeholder:leading-[16px] placeholder:text-[12px] xl:placeholder:leading-[20px] xl:placeholder:text-[14px]"
                         optionLabel="name" placeholder="Select route"/>
                   </div>
-                </div>
-              </div>
-
-              <div class="px-4 pb-4 flex justify-between items-center gap-x-4">
-                  <div class="w-[24%]">
+                  <div class="w-1/4">
                     <p class="text-primaryText leading-[20px] text-[14px] xl:leading-[24px] xl:text-[16px] font-[600]">
                         Trips</p>
                     <Dropdown
@@ -102,7 +121,7 @@
                   </span>Export
               </button>
             </div>
-            <div class="bg-white rounded-[8px] mt-4">
+            <div class="bg-white rounded-[8px] mt-4 overflow-x-scroll">
               <!-- table start -->
               <table class="min-w-full">
                 <thead>
@@ -111,28 +130,37 @@
                         bus operator
                     </th>
                     <th class="companyTableHead" scope="col">
-                        trip/ coach no
+                        trip no
                     </th>
                     <th class="companyTableHead" scope="col">
-                        trip code
+                        counter
                     </th>
                     <th class="companyTableHead" scope="col">
-                        cancelled by
+                        pnr
                     </th>
                     <th class="companyTableHead" scope="col">
-                        cancelled on
+                        issue date
                     </th>
                     <th class="companyTableHead" scope="col">
-                        Cancelled seats
+                        Journey date
                     </th>
                     <th class="companyTableHead" scope="col">
-                        jatri seats
+                        passenger name & MOBILE
                     </th>
                     <th class="companyTableHead" scope="col">
-                        Cancelled amount
+                        Seat number
                     </th>
                     <th class="companyTableHead" scope="col">
-                        cancel reason
+                        cancel TICEKT AMOUNT
+                    </th>
+                    <th class="companyTableHead" scope="col">
+                        TICKET STATUS
+                    </th>
+                    <th class="companyTableHead" scope="col">
+                        cANCELled by
+                    </th>
+                    <th class="companyTableHead" scope="col">
+                        cANCELled on
                     </th>
                   </tr>
                 </thead>
@@ -145,177 +173,243 @@
                         lI6dFWyA
                     </td>
                     <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
-                        093
+                        Counter name
                     </td>
-                    <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
-                        Fahim (Arambag)
+                    <td class="grid place-content-center leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
+                        <button class="tableDetailsGreyButton">
+                            <span class="underline">8WXOX3MVGF8UT</span><span><img src="/src/assets/svg/btn-arrow-right.svg" alt=""></span>
+                        </button>
                     </td>
                     <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
                         <div>19 July 2022 </div> <div>09:45 AM</div>
                     </td>
                     <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
-                        A1, A2, A3, A4
+                        <div>19 July 2022 </div> <div>09:45 AM</div>
                     </td>
                     <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
-                        A1, A2
+                        <div>Fahim Ahmed </div> <div>+8801708630439</div>
                     </td>
                     <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
-                        2000 TK
+                        <div>A1, A2, A3, A4</div> <div>B5, B6, B7, B8, B9 </div>
                     </td>
                     <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
-                        Cancellation reason goes here. If line breaks.
+                        8291 TK
+                    </td>
+                    <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3 px-[10px]">
+                        <div class="blueStatusButton">Paid Canceled</div>
+                    </td>
+                    <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
+                       <div>Alamin 01708630439</div> <div>(Counter name)</div>
+                    </td>
+                    <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
+                        <div>19 July 2022 </div> <div>09:45 AM</div>
                     </td>
                     </tr>
 
                     <tr class="border-b border-[#EDEDED]">
-                  <td class="text-primaryText border-r border-[#DBDBDB] text-center leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] py-3">
-                    Desh Travels
-                  </td>
-                  <td class="text-primaryText border-r border-[#DBDBDB] text-center leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] py-3">
-                    lI6dFWyA
-                  </td>
-                  <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
-                    093
-                  </td>
-                  <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
-                    Fahim (Arambag)
-                  </td>
-                  <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
-                    <div>19 July 2022 </div> <div>09:45 AM</div>
-                  </td>
-                  <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
-                    A1, A2, A3, A4
-                  </td>
-                  <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
-                    A1, A2
-                  </td>
-                  <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
-                    2000 TK
-                  </td>
-                  <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
-                    Cancellation reason goes here. If line breaks.
-                  </td>
-                </tr>
+                    <td class="text-primaryText border-r border-[#DBDBDB] text-center leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] py-3">
+                        Desh Travels
+                    </td>
+                    <td class="text-primaryText border-r border-[#DBDBDB] text-center leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] py-3">
+                        lI6dFWyA
+                    </td>
+                    <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
+                        Counter name
+                    </td>
+                    <td class="grid place-content-center leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
+                        <button class="tableDetailsGreyButton">
+                            <span class="underline">8WXOX3MVGF8UT</span><span><img src="/src/assets/svg/btn-arrow-right.svg" alt=""></span>
+                        </button>
+                    </td>
+                    <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
+                        <div>19 July 2022 </div> <div>09:45 AM</div>
+                    </td>
+                    <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
+                        <div>19 July 2022 </div> <div>09:45 AM</div>
+                    </td>
+                    <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
+                        <div>Fahim Ahmed </div> <div>+8801708630439</div>
+                    </td>
+                    <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
+                        <div>A1, A2, A3, A4</div> <div>B5, B6, B7, B8, B9 </div>
+                    </td>
+                    <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
+                        8291 TK
+                    </td>
+                    <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3 px-[10px]">
+                        <div class="blueStatusButton">Paid Canceled</div>
+                    </td>
+                    <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
+                       <div>Alamin 01708630439</div> <div>(Counter name)</div>
+                    </td>
+                    <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
+                        <div>19 July 2022 </div> <div>09:45 AM</div>
+                    </td>
+                    </tr>
 
-                <tr class="border-b border-[#EDEDED]">
-                  <td class="text-primaryText border-r border-[#DBDBDB] text-center leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] py-3">
-                    Desh Travels
-                  </td>
-                  <td class="text-primaryText border-r border-[#DBDBDB] text-center leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] py-3">
-                    lI6dFWyA
-                  </td>
-                  <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
-                    093
-                  </td>
-                  <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
-                    Fahim (Arambag)
-                  </td>
-                  <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
-                    <div>19 July 2022 </div> <div>09:45 AM</div>
-                  </td>
-                  <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
-                    A1, A2, A3, A4
-                  </td>
-                  <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
-                    A1, A2
-                  </td>
-                  <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
-                    2000 TK
-                  </td>
-                  <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
-                    Cancellation reason goes here. If line breaks.
-                  </td>
-                </tr>
+                    <tr class="border-b border-[#EDEDED]">
+                    <td class="text-primaryText border-r border-[#DBDBDB] text-center leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] py-3">
+                        Desh Travels
+                    </td>
+                    <td class="text-primaryText border-r border-[#DBDBDB] text-center leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] py-3">
+                        lI6dFWyA
+                    </td>
+                    <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
+                        Counter name
+                    </td>
+                    <td class="grid place-content-center leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
+                        <button class="tableDetailsGreyButton">
+                            <span class="underline">8WXOX3MVGF8UT</span><span><img src="/src/assets/svg/btn-arrow-right.svg" alt=""></span>
+                        </button>
+                    </td>
+                    <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
+                        <div>19 July 2022 </div> <div>09:45 AM</div>
+                    </td>
+                    <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
+                        <div>19 July 2022 </div> <div>09:45 AM</div>
+                    </td>
+                    <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
+                        <div>Fahim Ahmed </div> <div>+8801708630439</div>
+                    </td>
+                    <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
+                        <div>A1, A2, A3, A4</div> <div>B5, B6, B7, B8, B9 </div>
+                    </td>
+                    <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
+                        8291 TK
+                    </td>
+                    <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3 px-[10px]">
+                        <div class="blueStatusButton">Paid Canceled</div>
+                    </td>
+                    <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
+                       <div>Alamin 01708630439</div> <div>(Counter name)</div>
+                    </td>
+                    <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
+                        <div>19 July 2022 </div> <div>09:45 AM</div>
+                    </td>
+                    </tr>
 
-                <tr class="border-b border-[#EDEDED]">
-                  <td class="text-primaryText border-r border-[#DBDBDB] text-center leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] py-3">
-                    Desh Travels
-                  </td>
-                  <td class="text-primaryText border-r border-[#DBDBDB] text-center leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] py-3">
-                    lI6dFWyA
-                  </td>
-                  <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
-                    093
-                  </td>
-                  <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
-                    Fahim (Arambag)
-                  </td>
-                  <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
-                    <div>19 July 2022 </div> <div>09:45 AM</div>
-                  </td>
-                  <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
-                    A1, A2, A3, A4
-                  </td>
-                  <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
-                    A1, A2
-                  </td>
-                  <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
-                    2000 TK
-                  </td>
-                  <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
-                    Cancellation reason goes here. If line breaks.
-                  </td>
-                </tr>
+                    <tr class="border-b border-[#EDEDED]">
+                    <td class="text-primaryText border-r border-[#DBDBDB] text-center leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] py-3">
+                        Desh Travels
+                    </td>
+                    <td class="text-primaryText border-r border-[#DBDBDB] text-center leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] py-3">
+                        lI6dFWyA
+                    </td>
+                    <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
+                        Counter name
+                    </td>
+                    <td class="grid place-content-center leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
+                        <button class="tableDetailsGreyButton">
+                            <span class="underline">8WXOX3MVGF8UT</span><span><img src="/src/assets/svg/btn-arrow-right.svg" alt=""></span>
+                        </button>
+                    </td>
+                    <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
+                        <div>19 July 2022 </div> <div>09:45 AM</div>
+                    </td>
+                    <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
+                        <div>19 July 2022 </div> <div>09:45 AM</div>
+                    </td>
+                    <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
+                        <div>Fahim Ahmed </div> <div>+8801708630439</div>
+                    </td>
+                    <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
+                        <div>A1, A2, A3, A4</div> <div>B5, B6, B7, B8, B9 </div>
+                    </td>
+                    <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
+                        8291 TK
+                    </td>
+                    <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3 px-[10px]">
+                        <div class="blueStatusButton">Paid Canceled</div>
+                    </td>
+                    <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
+                       <div>Alamin 01708630439</div> <div>(Counter name)</div>
+                    </td>
+                    <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
+                        <div>19 July 2022 </div> <div>09:45 AM</div>
+                    </td>
+                    </tr>
 
-                <tr class="border-b border-[#EDEDED]">
-                  <td class="text-primaryText border-r border-[#DBDBDB] text-center leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] py-3">
-                    Desh Travels
-                  </td>
-                  <td class="text-primaryText border-r border-[#DBDBDB] text-center leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] py-3">
-                    lI6dFWyA
-                  </td>
-                  <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
-                    093
-                  </td>
-                  <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
-                    Fahim (Arambag)
-                  </td>
-                  <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
-                    <div>19 July 2022 </div> <div>09:45 AM</div>
-                  </td>
-                  <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
-                    A1, A2, A3, A4
-                  </td>
-                  <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
-                    A1, A2
-                  </td>
-                  <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
-                    2000 TK
-                  </td>
-                  <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
-                    Cancellation reason goes here. If line breaks.
-                  </td>
-                </tr>
+                    <tr class="border-b border-[#EDEDED]">
+                    <td class="text-primaryText border-r border-[#DBDBDB] text-center leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] py-3">
+                        Desh Travels
+                    </td>
+                    <td class="text-primaryText border-r border-[#DBDBDB] text-center leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] py-3">
+                        lI6dFWyA
+                    </td>
+                    <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
+                        Counter name
+                    </td>
+                    <td class="grid place-content-center leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
+                        <button class="tableDetailsGreyButton">
+                            <span class="underline">8WXOX3MVGF8UT</span><span><img src="/src/assets/svg/btn-arrow-right.svg" alt=""></span>
+                        </button>
+                    </td>
+                    <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
+                        <div>19 July 2022 </div> <div>09:45 AM</div>
+                    </td>
+                    <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
+                        <div>19 July 2022 </div> <div>09:45 AM</div>
+                    </td>
+                    <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
+                        <div>Fahim Ahmed </div> <div>+8801708630439</div>
+                    </td>
+                    <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
+                        <div>A1, A2, A3, A4</div> <div>B5, B6, B7, B8, B9 </div>
+                    </td>
+                    <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
+                        8291 TK
+                    </td>
+                    <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3 px-[10px]">
+                        <div class="blueStatusButton">Paid Canceled</div>
+                    </td>
+                    <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
+                       <div>Alamin 01708630439</div> <div>(Counter name)</div>
+                    </td>
+                    <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
+                        <div>19 July 2022 </div> <div>09:45 AM</div>
+                    </td>
+                    </tr>
 
-                <tr class="border-b border-[#EDEDED]">
-                  <td class="text-primaryText border-r border-[#DBDBDB] text-center leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] py-3">
-                    Desh Travels
-                  </td>
-                  <td class="text-primaryText border-r border-[#DBDBDB] text-center leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] py-3">
-                    lI6dFWyA
-                  </td>
-                  <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
-                    093
-                  </td>
-                  <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
-                    Fahim (Arambag)
-                  </td>
-                  <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
-                    <div>19 July 2022 </div> <div>09:45 AM</div>
-                  </td>
-                  <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
-                    A1, A2, A3, A4
-                  </td>
-                  <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
-                    A1, A2
-                  </td>
-                  <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
-                    2000 TK
-                  </td>
-                  <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
-                    Cancellation reason goes here. If line breaks.
-                  </td>
-                </tr>
+                    <tr class="border-b border-[#EDEDED]">
+                    <td class="text-primaryText border-r border-[#DBDBDB] text-center leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] py-3">
+                        Desh Travels
+                    </td>
+                    <td class="text-primaryText border-r border-[#DBDBDB] text-center leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] py-3">
+                        lI6dFWyA
+                    </td>
+                    <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
+                        Counter name
+                    </td>
+                    <td class="grid place-content-center leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
+                        <button class="tableDetailsGreyButton">
+                            <span class="underline">8WXOX3MVGF8UT</span><span><img src="/src/assets/svg/btn-arrow-right.svg" alt=""></span>
+                        </button>
+                    </td>
+                    <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
+                        <div>19 July 2022 </div> <div>09:45 AM</div>
+                    </td>
+                    <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
+                        <div>19 July 2022 </div> <div>09:45 AM</div>
+                    </td>
+                    <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
+                        <div>Fahim Ahmed </div> <div>+8801708630439</div>
+                    </td>
+                    <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
+                        <div>A1, A2, A3, A4</div> <div>B5, B6, B7, B8, B9 </div>
+                    </td>
+                    <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
+                        8291 TK
+                    </td>
+                    <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3 px-[10px]">
+                        <div class="blueStatusButton">Paid Canceled</div>
+                    </td>
+                    <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
+                       <div>Alamin 01708630439</div> <div>(Counter name)</div>
+                    </td>
+                    <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
+                        <div>19 July 2022 </div> <div>09:45 AM</div>
+                    </td>
+                    </tr>
                 </tbody>
               </table>
             </div>
