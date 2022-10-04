@@ -57,7 +57,7 @@
             <router-link :class="$route.path === '/cancelTicketReport' ? 'activeMenu' : 'menu border-b border-dashed p-[10px]' " to="/cancelTicketReport">
               Cancel Ticket Report
             </router-link>
-            <router-link :class="$route.path === '' ? 'activeMenu' : 'menu border-b border-dashed p-[10px]' " to="">
+            <router-link :class="$route.path === '/reserveTicket' ? 'activeMenu' : 'menu border-b border-dashed p-[10px]' " to="/reserveTicket">
               Reserve Ticket Report
             </router-link>
             <router-link :class="$route.path === '' ? 'activeMenu' : 'menu p-[10px]' " to="">
