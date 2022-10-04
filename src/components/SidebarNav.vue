@@ -30,7 +30,7 @@
 
         <ul class="border-b border-corporateBorder">
           <dropdown-menu height="min-h-[138px]" title="Reports">
-            <router-link :class="$route.path === '/OperatorWiseSales' ? 'activeMenu' : 'menu border-b border-dashed p-[10px]' " to="/OperatorWiseSales">
+            <router-link :class="$route.path === '/operatorWiseSales' ? 'activeMenu' : 'menu border-b border-dashed p-[10px]' " to="/operatorWiseSales">
               Operator Wise Sales
             </router-link>
             <router-link :class="$route.path === '/counterWiseSales' ? 'activeMenu' : 'menu border-b border-dashed p-[10px]' " to="/counterWiseSales">
@@ -51,10 +51,10 @@
             <router-link :class="$route.path === '/tripWiseSales' ? 'activeMenu' : 'menu border-b border-dashed p-[10px]' " to="/tripWiseSales">
               Trip Wise Sales
             </router-link>
-            <router-link :class="$route.path === '/CancelTripReport' ? 'activeMenu' : 'menu border-b border-dashed p-[10px]' " to="/CancelTripReport">
+            <router-link :class="$route.path === '/cancelTripReport' ? 'activeMenu' : 'menu border-b border-dashed p-[10px]' " to="/cancelTripReport">
               Cancel Trip Report
             </router-link>
-            <router-link :class="$route.path === '' ? 'activeMenu' : 'menu border-b border-dashed p-[10px]' " to="">
+            <router-link :class="$route.path === '/cancelTicketReport' ? 'activeMenu' : 'menu border-b border-dashed p-[10px]' " to="/cancelTicketReport">
               Cancel Ticket Report
             </router-link>
             <router-link :class="$route.path === '' ? 'activeMenu' : 'menu border-b border-dashed p-[10px]' " to="">

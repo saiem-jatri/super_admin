@@ -88,6 +88,7 @@ import RouteWiseSales from '@/views/route-wise-sales.vue'
 import BusWiseSales from '@/views/bus-wise-sales.vue'
 import TripWiseSales from '@/views/trip-wise-sales.vue'
 import CancelTripReport from '@/views/cancel-trip-report.vue'
+import CancelTicketReport from '@/views/cancel-ticket-report.vue'
 import Invoice from '@/views/invoice.vue'
 import InvoiceCurrentbill from '@/views/invoice_currentbill.vue'
 import InvoiceGeneratebill from '@/views/invoice_generatebill.vue'
@@ -566,6 +567,11 @@ const router = createRouter({
             path: '/cancelTripReport',
             name: 'CancelTripReport',
             component: CancelTripReport,
+        },
+        {
+            path: '/cancelTicketReport',
+            name: 'CancelTicketReport',
+            component: CancelTicketReport,
         },
         //invoice started
         {
