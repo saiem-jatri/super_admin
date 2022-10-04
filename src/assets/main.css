@@ -203,3 +203,18 @@ body {
 .tableDetailsGreyButton {
     @apply bg-[#EDEDED] text-primaryText text-[10px] leading-4 font-[600] px-2 py-1 rounded flex items-center gap-x-[10px]
 }
+.blueStatusButton {
+    @apply bg-[#EFF7FD] text-primaryText text-[11px] leading-4 font-[600] px-2 py-1 rounded
+}
+.violetStatusButton {
+    @apply bg-[#F2F0FE] text-[#4633F0] text-[11px] leading-4 font-[600] px-2 py-1 rounded
+}
+.greenStatusButton {
+    @apply bg-[#E4F4E2] text-primaryText text-[11px] leading-4 font-[600] px-2 py-1 rounded
+}
+.skyStatusButton {
+    @apply bg-[#DFEEFB] text-primaryText text-[11px] leading-4 font-[600] px-2 py-1 rounded
+}
+.orangeStatusButton {
+    @apply bg-[#FBE0E3] text-primaryText text-[11px] leading-4 font-[600] px-2 py-1 rounded
+}

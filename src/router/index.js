@@ -85,6 +85,12 @@ import UserWiseSalesDetails from '@/views/user-wise-sales-details.vue'
 import CounterWiseSales from '@/views/counter-wise-sales.vue'
 import CounterWiseSalesDetails from '@/views/counter-wise-sales-details.vue'
 import RouteWiseSales from '@/views/route-wise-sales.vue'
+import BusWiseSales from '@/views/bus-wise-sales.vue'
+import TripWiseSales from '@/views/trip-wise-sales.vue'
+import CancelTripReport from '@/views/cancel-trip-report.vue'
+import CancelTicketReport from '@/views/cancel-ticket-report.vue'
+import ReserveTicket from '@/views/reserve-ticket.vue'
+import DiscountReport from '@/views/discount-report.vue'
 import Invoice from '@/views/invoice.vue'
 import InvoiceCurrentbill from '@/views/invoice_currentbill.vue'
 import InvoiceGeneratebill from '@/views/invoice_generatebill.vue'
@@ -549,6 +555,37 @@ const router = createRouter({
             name: 'RouteWiseSales',
             component: RouteWiseSales,
         },
+        {
+            path: '/busWiseSales',
+            name: 'BusWiseSales',
+            component: BusWiseSales,
+        },
+        {
+            path: '/tripWiseSales',
+            name: 'TripWiseSales',
+            component: TripWiseSales,
+        },
+        {
+            path: '/cancelTripReport',
+            name: 'CancelTripReport',
+            component: CancelTripReport,
+        },
+        {
+            path: '/cancelTicketReport',
+            name: 'CancelTicketReport',
+            component: CancelTicketReport,
+        },
+        {
+            path: '/reserveTicket',
+            name: 'ReserveTicket',
+            component: ReserveTicket,
+        },
+        {
+            path: '/discountReport',
+            name: 'DiscountReport',
+            component: DiscountReport,
+        },
+
         //invoice started
         {
             path: '/invoice',
