@@ -237,7 +237,7 @@
                         8291 TK
                     </td>
                     <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3 px-[10px]">
-                        <div class="blueStatusButton">Paid Canceled</div>
+                        <div class="violetStatusButton">Paid Canceled</div>
                     </td>
                     <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
                        <div>Alamin 01708630439</div> <div>(Counter name)</div>

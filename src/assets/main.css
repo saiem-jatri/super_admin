@@ -206,3 +206,6 @@ body {
 .blueStatusButton {
     @apply bg-[#EFF7FD] text-primaryText text-[11px] leading-4 font-[600] px-2 py-1 rounded
 }
+.violetStatusButton {
+    @apply bg-[#F2F0FE] text-[#4633F0] text-[11px] leading-4 font-[600] px-2 py-1 rounded
+}
