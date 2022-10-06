@@ -69,6 +69,9 @@
             <router-link :class="$route.path === '/totalLogHistory' ? 'activeMenu' : 'menu p-[10px]' " to="/totalLogHistory">
               Total Log History
             </router-link>
+            <router-link :class="$route.path === '/jatriSalesReport' ? 'activeMenu' : 'menu p-[10px]' " to="/jatriSalesReport">
+              Jatri Sales Report
+            </router-link>
           </dropdown-menu>
         </ul>
 
