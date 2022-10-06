@@ -75,6 +75,12 @@
             <router-link :class="$route.path === '/busTypeWiseSales' ? 'activeMenu' : 'menu p-[10px]' " to="/busTypeWiseSales">
               Bus Type Wise Sales
             </router-link>
+            <router-link :class="$route.path === '' ? 'activeMenu' : 'menu p-[10px]' " to="">
+              Insurrance Sales
+            </router-link>
+            <router-link :class="$route.path === '/userLogSessionReport' ? 'activeMenu' : 'menu p-[10px]' " to="/userLogSessionReport">
+              User Log Session Report
+            </router-link>
           </dropdown-menu>
         </ul>
 

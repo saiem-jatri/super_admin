@@ -96,6 +96,7 @@ import TripMigrationReport from '@/views/trip-migration-report.vue'
 import TotalLogHistory from '@/views/total-log-history.vue'
 import JatriSalesReport from '@/views/jatri-sales-report.vue'
 import BusTypeWiseSales from '@/views/bus-type-wise-sales.vue'
+import UserLogSessionReport from '@/views/user-log-session-report.vue'
 import Invoice from '@/views/invoice.vue'
 import InvoiceCurrentbill from '@/views/invoice_currentbill.vue'
 import InvoiceGeneratebill from '@/views/invoice_generatebill.vue'
@@ -614,6 +615,11 @@ const router = createRouter({
             path: '/busTypeWiseSales',
             name: 'BusTypeWiseSales',
             component: BusTypeWiseSales,
+        },
+        {
+            path: '/userLogSessionReport',
+            name: 'UserLogSessionReport',
+            component: UserLogSessionReport,
         },
 
         //invoice started
