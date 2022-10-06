@@ -66,6 +66,9 @@
             <router-link :class="$route.path === '/TripMigrationReport' ? 'activeMenu' : 'menu p-[10px]' " to="/TripMigrationReport">
               Trip Migration Report
             </router-link>
+            <router-link :class="$route.path === '/totalLogHistory' ? 'activeMenu' : 'menu p-[10px]' " to="/totalLogHistory">
+              Total Log History
+            </router-link>
           </dropdown-menu>
         </ul>
 
