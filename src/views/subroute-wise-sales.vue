@@ -4,12 +4,12 @@
             <div class="flex justify-between items-center">
               <div class="pl-6 flex flex-col gap-y-[4px]">
                 <p class="lg:leading-[16px] xl:leading-[28px] lg:text-[14px] xl:text-[20px] font-[600] text-primaryText">
-                  Route Wise Sales</p>
+                    Sub-route Wise Sales</p>
                 <div class="flex justify-center items-center gap-x-[6px] mr-4">
                   <p class="text-secondaryText leading-[12px] text-[8px] xl:leading-[16px] xl:text-[12px] font-[400]">Report</p>
                   <img alt="" class="w-1 h-2" src="../assets/svg/bgBack.svg">
                   <p class="text-secondaryText leading-[12px] text-[8px] xl:leading-[16px] xl:text-[12px] font-[400]">
-                    Route wise sales</p>
+                    Sub-route Wise Sales</p>
                 </div>
               </div>
               <div

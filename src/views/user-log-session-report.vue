@@ -4,12 +4,12 @@
             <div class="flex justify-between items-center">
               <div class="pl-6 flex flex-col gap-y-[4px]">
                 <p class="lg:leading-[16px] xl:leading-[28px] lg:text-[14px] xl:text-[20px] font-[600] text-primaryText">
-                  Route Wise Sales</p>
-                <div class="flex justify-center items-center gap-x-[6px] mr-4">
+                    User Log Session Report</p>
+                <div class="flex items-center gap-x-[6px] mr-4">
                   <p class="text-secondaryText leading-[12px] text-[8px] xl:leading-[16px] xl:text-[12px] font-[400]">Report</p>
                   <img alt="" class="w-1 h-2" src="../assets/svg/bgBack.svg">
                   <p class="text-secondaryText leading-[12px] text-[8px] xl:leading-[16px] xl:text-[12px] font-[400]">
-                    Route wise sales</p>
+                    User Log Session Report</p>
                 </div>
               </div>
               <div
@@ -48,14 +48,37 @@
                   </div>
                   <div class="w-1/4">
                     <p class="text-primaryText leading-[20px] text-[14px] xl:leading-[24px] xl:text-[16px] font-[600]">
-                        Ticket booking type</p>
+                        User type</p>
                     <Dropdown
                         v-model="selectedCity"
                         :options="cities"
                         class="w-full py-[4px] mt-[10px] placeholder:text-primaryText placeholder:leading-[16px] placeholder:text-[12px] xl:placeholder:leading-[20px] xl:placeholder:text-[14px]"
-                        optionLabel="name" placeholder="Select ticket booking type"/>
+                        optionLabel="name" placeholder="Select user type"/>
+                  </div>
+    
+                  <div class="w-1/4">
+                    <p class="text-primaryText leading-[20px] text-[14px] xl:leading-[24px] xl:text-[16px] font-[600]">
+                        Counter type</p>
+                    <Dropdown
+                        v-model="selectedCity"
+                        :options="cities"
+                        class="w-full py-[4px] mt-[10px] placeholder:text-primaryText placeholder:leading-[16px] placeholder:text-[12px] xl:placeholder:leading-[20px] xl:placeholder:text-[14px]"
+                        optionLabel="name" placeholder="Select counter type"/>
                   </div>
                   <div class="w-1/4">
+                  <p class="text-primaryText leading-[20px] text-[14px] xl:leading-[24px] xl:text-[16px] font-[600]">
+                    Counter</p>
+                  <Dropdown
+                      v-model="selectedCity"
+                      :options="cities"
+                      class="w-full py-[4px] mt-[10px] placeholder:text-primaryText placeholder:leading-[16px] placeholder:text-[12px] xl:placeholder:leading-[20px] xl:placeholder:text-[14px]"
+                      optionLabel="name" placeholder="Select counter"/>
+                  </div>
+                </div>
+              </div>
+
+              <div class="px-4 pb-4 flex justify-between items-center gap-x-4">
+                <div class="w-1/4">
                     <p class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]">From date</p>
                     <div class="w-full h-[40px] border border-[#DBDBDB] flex justify-between items-center mt-[10px] leading-[20px] rounded-[4px] px-[20px] xl:px-[4px] 2xl:px-[8px] overflow-hidden">
                         <input class="outline-none pl-2 placeholder:text-[#4D4D4F] placeholder:text-[14px] placeholder:leading-[20px]" placeholder="Select date" type="text">
@@ -69,50 +92,32 @@
                         <img alt="" class="h-5 w-5" src="../assets/svg/count2.svg">
                     </div>
                  </div>
+                 <div class="w-1/4">
+                    <p class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]">Trip/coach no</p>
+                    <input type="text" class="createNormalInput" placeholder="Enter trip/coach no">
                 </div>
+                <div class="w-1/4">
+                    <p class="text-primaryText leading-[20px] text-[14px] xl:leading-[24px] xl:text-[16px] font-[600]">
+                        From</p>
+                    <Dropdown
+                        v-model="selectedCity"
+                        :options="cities"
+                        class="w-full py-[4px] mt-[10px] placeholder:text-primaryText placeholder:leading-[16px] placeholder:text-[12px] xl:placeholder:leading-[20px] xl:placeholder:text-[14px]"
+                        optionLabel="name" placeholder="Select location"/>
+                  </div>
               </div>
 
               <div class="px-4 pb-4 flex justify-between items-center gap-x-4">
-                <div class="w-1/4">
+                <div class="w-[24%]">
                     <p class="text-primaryText leading-[20px] text-[14px] xl:leading-[24px] xl:text-[16px] font-[600]">
-                      Route</p>
+                        To</p>
                     <Dropdown
                         v-model="selectedCity"
                         :options="cities"
                         class="w-full py-[4px] mt-[10px] placeholder:text-primaryText placeholder:leading-[16px] placeholder:text-[12px] xl:placeholder:leading-[20px] xl:placeholder:text-[14px]"
-                        optionLabel="name" placeholder="Select route"/>
+                        optionLabel="name" placeholder="Select location"/>
                   </div>
-                  <div class="w-1/4">
-                  <p class="text-primaryText leading-[20px] text-[14px] xl:leading-[24px] xl:text-[16px] font-[600]">
-                    Route direction</p>
-                  <Dropdown
-                      v-model="selectedCity"
-                      :options="cities"
-                      class="w-full py-[4px] mt-[10px] placeholder:text-primaryText placeholder:leading-[16px] placeholder:text-[12px] xl:placeholder:leading-[20px] xl:placeholder:text-[14px]"
-                      optionLabel="name" placeholder="Select route direction"/>
-                  </div>
-                  <div class="w-1/4">
-                    <p class="text-primaryText leading-[20px] text-[14px] xl:leading-[24px] xl:text-[16px] font-[600]">
-                      User type</p>
-                    <Dropdown
-                        v-model="selectedCity"
-                        :options="cities"
-                        class="w-full py-[4px] mt-[10px] placeholder:text-primaryText placeholder:leading-[16px] placeholder:text-[12px] xl:placeholder:leading-[20px] xl:placeholder:text-[14px]"
-                        optionLabel="name" placeholder="Select user type"/>
-                  </div>
-                <div class="w-1/4">
-                    <p class="text-primaryText leading-[20px] text-[14px] xl:leading-[24px] xl:text-[16px] font-[600]">
-                      Ticket status</p>
-                    <Dropdown
-                        v-model="selectedCity"
-                        :options="cities"
-                        class="w-full py-[4px] mt-[10px] placeholder:text-primaryText placeholder:leading-[16px] placeholder:text-[12px] xl:placeholder:leading-[20px] xl:placeholder:text-[14px]"
-                        optionLabel="name" placeholder="Select ticket status"/>
-                  </div>
-              </div>
-
-              <div class="px-4 pt-1 pb-5 flex justify-center items-center gap-x-4">
-                <div>
+                <div class="mt-5">
                   <button
                       class="flex gap-x-[9px] justify-center items-center bg-corporate text-white leading-[14px] xl:leading-[16px] text-[11px] xl:text-[12px] font-[500] py-3 pl-[17px] pr-[24px] rounded-full"><span>
                     <img alt="" class="w-[13px] xl:h-[13px]" src="../assets/svg/white_search.svg">
@@ -141,59 +146,59 @@
                 <thead>
                   <tr class="bg-[#4D4D4F] h-[36px]">
                     <th class="companyTableHead" scope="col" style="border-radius: 6px 0 0 0">
-                      Issue DATE
+                        COUNTER 
                     </th>
                     <th class="companyTableHead" scope="col">
-                      journey DATE
+                        TRIP/COACH No
                     </th>
                     <th class="companyTableHead" scope="col">
-                      trip no
+                        SOLD TICKET
                     </th>
                     <th class="companyTableHead" scope="col">
-                      sold tickets
+                        Actual price
                     </th>
                     <th class="companyTableHead" scope="col">
                         CANCELLED TICKET
                     </th>
                     <th class="companyTableHead" scope="col">
-                      operator <br>discount
+                        CANCELLED PRICE
                     </th>
                     <th class="companyTableHead" scope="col">
-                      jatri discount
+                        operator DISCOUNT
                     </th>
                     <th class="companyTableHead" scope="col">
-                      JATRI <br>COMMISSION
+                        JATRI COMMISSION
                     </th>
                     <th class="companyTableHead" scope="col">
-                      TP COMMISSION
+                        TP COMMISSION
                     </th>
                     <th class="companyTableHead" scope="col">
-                      TOTAL AMOUNT
+                        TOTAL AMOUNT
                     </th>
                     <th class="companyTableHead" scope="col">
-                      ticket status
+                       Action
                     </th>
                   </tr>
                 </thead>
                 <tbody>
                 <tr class="border-b border-[#EDEDED]">
                   <td class="text-primaryText border-r border-[#DBDBDB] text-center leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] py-3">
-                   <div> 19 July 2022</div> <div>09:45 AM</div>
+                    Arambag
                   </td>
                   <td class="text-primaryText border-r border-[#DBDBDB] text-center leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] py-3">
-                    <div> 19 July 2022</div> <div>09:45 AM</div>
-                  </td>
-                  <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
                     lI6dFWyA
                   </td>
                   <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
-                    222
+                    <div>Web- 22</div> <div>POS- 33</div>
+                  </td>
+                  <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
+                    2000 TK
                   </td>
                   <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
                     22
                   </td>
                   <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
-                    20 TK
+                    2000 TK
                   </td>
                   <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
                     20 TK
@@ -207,29 +212,29 @@
                   <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
                     2000 TK
                   </td>
-                  <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3 px-[10px]">
-                    <div class="greenStatusButton">Sold</div>
+                  <td class="leading-[20px] text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
+                    <router-link to="/counterWiseSalesDetails" class="tableDetailsButton">Details</router-link>
                   </td>
                 </tr>
 
                 <tr class="border-b border-[#EDEDED]">
                   <td class="text-primaryText border-r border-[#DBDBDB] text-center leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] py-3">
-                   <div> 19 July 2022</div> <div>09:45 AM</div>
+                    Arambag
                   </td>
                   <td class="text-primaryText border-r border-[#DBDBDB] text-center leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] py-3">
-                    <div> 19 July 2022</div> <div>09:45 AM</div>
-                  </td>
-                  <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
                     lI6dFWyA
                   </td>
                   <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
-                    222
+                    <div>Web- 22</div> <div>POS- 33</div>
+                  </td>
+                  <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
+                    2000 TK
                   </td>
                   <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
                     22
                   </td>
                   <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
-                    20 TK
+                    2000 TK
                   </td>
                   <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
                     20 TK
@@ -243,29 +248,29 @@
                   <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
                     2000 TK
                   </td>
-                  <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3 px-[10px]">
-                    <div class="greenStatusButton">Sold</div>
+                  <td class="leading-[20px] text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
+                    <router-link to="/counterWiseSalesDetails" class="tableDetailsButton">Details</router-link>
                   </td>
                 </tr>
                 
                 <tr class="border-b border-[#EDEDED]">
                   <td class="text-primaryText border-r border-[#DBDBDB] text-center leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] py-3">
-                   <div> 19 July 2022</div> <div>09:45 AM</div>
+                    Arambag
                   </td>
                   <td class="text-primaryText border-r border-[#DBDBDB] text-center leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] py-3">
-                    <div> 19 July 2022</div> <div>09:45 AM</div>
-                  </td>
-                  <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
                     lI6dFWyA
                   </td>
                   <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
-                    222
+                    <div>Web- 22</div> <div>POS- 33</div>
+                  </td>
+                  <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
+                    2000 TK
                   </td>
                   <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
                     22
                   </td>
                   <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
-                    20 TK
+                    2000 TK
                   </td>
                   <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
                     20 TK
@@ -279,29 +284,29 @@
                   <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
                     2000 TK
                   </td>
-                  <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3 px-[10px]">
-                    <div class="skyStatusButton">Reserved</div>
+                  <td class="leading-[20px] text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
+                    <router-link to="/counterWiseSalesDetails" class="tableDetailsButton">Details</router-link>
                   </td>
                 </tr>
 
                 <tr class="border-b border-[#EDEDED]">
                   <td class="text-primaryText border-r border-[#DBDBDB] text-center leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] py-3">
-                   <div> 19 July 2022</div> <div>09:45 AM</div>
+                    Arambag
                   </td>
                   <td class="text-primaryText border-r border-[#DBDBDB] text-center leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] py-3">
-                    <div> 19 July 2022</div> <div>09:45 AM</div>
-                  </td>
-                  <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
                     lI6dFWyA
                   </td>
                   <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
-                    222
+                    <div>Web- 22</div> <div>POS- 33</div>
+                  </td>
+                  <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
+                    2000 TK
                   </td>
                   <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
                     22
                   </td>
                   <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
-                    20 TK
+                    2000 TK
                   </td>
                   <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
                     20 TK
@@ -315,29 +320,29 @@
                   <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
                     2000 TK
                   </td>
-                  <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3 px-[10px]">
-                    <div class="orangeStatusButton">Cancelled</div>
+                  <td class="leading-[20px] text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
+                    <router-link to="/counterWiseSalesDetails" class="tableDetailsButton">Details</router-link>
                   </td>
                 </tr>
 
                 <tr class="border-b border-[#EDEDED]">
                   <td class="text-primaryText border-r border-[#DBDBDB] text-center leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] py-3">
-                   <div> 19 July 2022</div> <div>09:45 AM</div>
+                    Arambag
                   </td>
                   <td class="text-primaryText border-r border-[#DBDBDB] text-center leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] py-3">
-                    <div> 19 July 2022</div> <div>09:45 AM</div>
-                  </td>
-                  <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
                     lI6dFWyA
                   </td>
                   <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
-                    222
+                    <div>Web- 22</div> <div>POS- 33</div>
+                  </td>
+                  <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
+                    2000 TK
                   </td>
                   <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
                     22
                   </td>
                   <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
-                    20 TK
+                    2000 TK
                   </td>
                   <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
                     20 TK
@@ -351,44 +356,8 @@
                   <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
                     2000 TK
                   </td>
-                  <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3 px-[10px]">
-                    <div class="greenStatusButton">Sold</div>
-                  </td>
-                </tr>
-
-                <tr class="border-b border-[#EDEDED]">
-                  <td class="text-primaryText border-r border-[#DBDBDB] text-center leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] py-3">
-                   <div> 19 July 2022</div> <div>09:45 AM</div>
-                  </td>
-                  <td class="text-primaryText border-r border-[#DBDBDB] text-center leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] py-3">
-                    <div> 19 July 2022</div> <div>09:45 AM</div>
-                  </td>
-                  <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
-                    lI6dFWyA
-                  </td>
-                  <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
-                    222
-                  </td>
-                  <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
-                    22
-                  </td>
-                  <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
-                    20 TK
-                  </td>
-                  <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
-                    20 TK
-                  </td>
-                  <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
-                    20 TK
-                  </td>
-                  <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
-                    20 TK
-                  </td>
-                  <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
-                    2000 TK
-                  </td>
-                  <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3 px-[10px]">
-                    <div class="greenStatusButton">Sold</div>
+                  <td class="leading-[20px] text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
+                    <router-link to="/counterWiseSalesDetails" class="tableDetailsButton">Details</router-link>
                   </td>
                 </tr>
                 </tbody>

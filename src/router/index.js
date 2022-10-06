@@ -85,12 +85,18 @@ import UserWiseSalesDetails from '@/views/user-wise-sales-details.vue'
 import CounterWiseSales from '@/views/counter-wise-sales.vue'
 import CounterWiseSalesDetails from '@/views/counter-wise-sales-details.vue'
 import RouteWiseSales from '@/views/route-wise-sales.vue'
+import SubRouteWiseSales from '@/views/subroute-wise-sales.vue'
 import BusWiseSales from '@/views/bus-wise-sales.vue'
 import TripWiseSales from '@/views/trip-wise-sales.vue'
 import CancelTripReport from '@/views/cancel-trip-report.vue'
 import CancelTicketReport from '@/views/cancel-ticket-report.vue'
 import ReserveTicket from '@/views/reserve-ticket.vue'
 import DiscountReport from '@/views/discount-report.vue'
+import TripMigrationReport from '@/views/trip-migration-report.vue'
+import TotalLogHistory from '@/views/total-log-history.vue'
+import JatriSalesReport from '@/views/jatri-sales-report.vue'
+import BusTypeWiseSales from '@/views/bus-type-wise-sales.vue'
+import UserLogSessionReport from '@/views/user-log-session-report.vue'
 import Invoice from '@/views/invoice.vue'
 import InvoiceCurrentbill from '@/views/invoice_currentbill.vue'
 import InvoiceGeneratebill from '@/views/invoice_generatebill.vue'
@@ -561,6 +567,11 @@ const router = createRouter({
             component: RouteWiseSales,
         },
         {
+            path: '/subRouteWiseSales',
+            name: 'SubRouteWiseSales',
+            component: SubRouteWiseSales,
+        },
+        {
             path: '/busWiseSales',
             name: 'BusWiseSales',
             component: BusWiseSales,
@@ -589,6 +600,31 @@ const router = createRouter({
             path: '/discountReport',
             name: 'DiscountReport',
             component: DiscountReport,
+        },
+        {
+            path: '/tripMigrationReport',
+            name: 'TripMigrationReport',
+            component: TripMigrationReport,
+        },
+        {
+            path: '/totalLogHistory',
+            name: 'TotalLogHistory',
+            component: TotalLogHistory,
+        },
+        {
+            path: '/jatriSalesReport',
+            name: 'JatriSalesReport',
+            component: JatriSalesReport,
+        },
+        {
+            path: '/busTypeWiseSales',
+            name: 'BusTypeWiseSales',
+            component: BusTypeWiseSales,
+        },
+        {
+            path: '/userLogSessionReport',
+            name: 'UserLogSessionReport',
+            component: UserLogSessionReport,
         },
 
         //invoice started

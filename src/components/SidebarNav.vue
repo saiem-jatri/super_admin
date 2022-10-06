@@ -42,7 +42,7 @@
             <router-link :class="$route.path === '/routeWiseSales' ? 'activeMenu' : 'menu border-b border-dashed p-[10px]' " to="/routeWiseSales">
               Route Wise Sales
             </router-link>
-            <router-link :class="$route.path === '' ? 'activeMenu' : 'menu border-b border-dashed p-[10px]' " to="">
+            <router-link :class="$route.path === '/subrouteWiseSales' ? 'activeMenu' : 'menu border-b border-dashed p-[10px]' " to="/subrouteWiseSales">
               Sub-Route Wise Sales
             </router-link>
             <router-link :class="$route.path === '/busWiseSales' ? 'activeMenu' : 'menu border-b border-dashed p-[10px]' " to="/busWiseSales">
@@ -63,8 +63,23 @@
             <router-link :class="$route.path === '/discountReport' ? 'activeMenu' : 'menu p-[10px]' " to="/discountReport">
               Discount Report
             </router-link>
-            <router-link :class="$route.path === '' ? 'activeMenu' : 'menu p-[10px]' " to="">
+            <router-link :class="$route.path === '/TripMigrationReport' ? 'activeMenu' : 'menu p-[10px]' " to="/TripMigrationReport">
               Trip Migration Report
+            </router-link>
+            <router-link :class="$route.path === '/totalLogHistory' ? 'activeMenu' : 'menu p-[10px]' " to="/totalLogHistory">
+              Total Log History
+            </router-link>
+            <router-link :class="$route.path === '/jatriSalesReport' ? 'activeMenu' : 'menu p-[10px]' " to="/jatriSalesReport">
+              Jatri Sales Report
+            </router-link>
+            <router-link :class="$route.path === '/busTypeWiseSales' ? 'activeMenu' : 'menu p-[10px]' " to="/busTypeWiseSales">
+              Bus Type Wise Sales
+            </router-link>
+            <router-link :class="$route.path === '' ? 'activeMenu' : 'menu p-[10px]' " to="">
+              Insurrance Sales
+            </router-link>
+            <router-link :class="$route.path === '/userLogSessionReport' ? 'activeMenu' : 'menu p-[10px]' " to="/userLogSessionReport">
+              User Log Session Report
             </router-link>
           </dropdown-menu>
         </ul>
