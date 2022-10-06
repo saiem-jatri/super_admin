@@ -72,6 +72,9 @@
             <router-link :class="$route.path === '/jatriSalesReport' ? 'activeMenu' : 'menu p-[10px]' " to="/jatriSalesReport">
               Jatri Sales Report
             </router-link>
+            <router-link :class="$route.path === '/busTypeWiseSales' ? 'activeMenu' : 'menu p-[10px]' " to="/busTypeWiseSales">
+              Bus Type Wise Sales
+            </router-link>
           </dropdown-menu>
         </ul>
 

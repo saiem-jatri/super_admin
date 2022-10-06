@@ -4,12 +4,12 @@
             <div class="flex justify-between items-center">
               <div class="pl-6 flex flex-col gap-y-[4px]">
                 <p class="lg:leading-[16px] xl:leading-[28px] lg:text-[14px] xl:text-[20px] font-[600] text-primaryText">
-                    Jatri Sales Report</p>
-                <div class="flex justify-center items-center gap-x-[6px] mr-4">
+                    Bus Type Wise Sales Report</p>
+                <div class="flex items-center gap-x-[6px] mr-4">
                   <p class="text-secondaryText leading-[12px] text-[8px] xl:leading-[16px] xl:text-[12px] font-[400]">Report</p>
                   <img alt="" class="w-1 h-2" src="../assets/svg/bgBack.svg">
                   <p class="text-secondaryText leading-[12px] text-[8px] xl:leading-[16px] xl:text-[12px] font-[400]">
-                    Jatri Sales Report</p>
+                    Bus Type Wise Sales Report</p>
                 </div>
               </div>
               <div
@@ -38,12 +38,12 @@
               <div class="p-4 flex justify-between items-center">
                 <div class="flex justify-start items-center gap-x-4 w-full">
                   <div class="w-1/4">
-                    <p class="text-primaryText leading-[20px] text-[14px] xl:leading-[24px] xl:text-[16px] font-[600]">Sales channel</p>
+                    <p class="text-primaryText leading-[20px] text-[14px] xl:leading-[24px] xl:text-[16px] font-[600]">Bus operator</p>
                     <Dropdown
                         v-model="selectedCity"
                         :options="cities"
                         class="w-full py-[4px] mt-[10px] placeholder:text-primaryText placeholder:leading-[16px] placeholder:text-[12px] xl:placeholder:leading-[20px] xl:placeholder:text-[14px]"
-                        optionLabel="name" placeholder="Select sales channel"/>
+                        optionLabel="name" placeholder="Select bus operator"/>
                   </div>
                   <div class="w-1/4">
                     <p class="text-primaryText leading-[20px] text-[14px] xl:leading-[24px] xl:text-[16px] font-[600]">
@@ -55,6 +55,23 @@
                         optionLabel="name" placeholder="Select ticket booking type"/>
                   </div>
                   <div class="w-1/4">
+                    <p class="text-primaryText leading-[20px] text-[14px] xl:leading-[24px] xl:text-[16px] font-[600]">
+                      Route</p>
+                    <Dropdown
+                        v-model="selectedCity"
+                        :options="cities"
+                        class="w-full py-[4px] mt-[10px] placeholder:text-primaryText placeholder:leading-[16px] placeholder:text-[12px] xl:placeholder:leading-[20px] xl:placeholder:text-[14px]"
+                        optionLabel="name" placeholder="Select route"/>
+                  </div>
+                 <div class="w-1/4">
+                    <p class="text-primaryText leading-[20px] text-[14px] xl:leading-[24px] xl:text-[16px] font-[600]"> Ticket status</p>
+                    <div id="pv_id_70" class="p-dropdown p-component p-inputwrapper w-full py-[4px] mt-[10px] placeholder:text-primaryText placeholder:leading-[16px] placeholder:text-[12px] xl:placeholder:leading-[20px] xl:placeholder:text-[14px]"><span class="p-dropdown-label p-inputtext p-placeholder" tabindex="0" role="combobox" aria-label="Select ticket status" aria-haspopup="listbox" aria-expanded="false" aria-controls="pv_id_70_list" aria-disabled="false">Select ticket status</span><!----><div class="p-dropdown-trigger"><span class="p-dropdown-trigger-icon pi pi-chevron-down" aria-hidden="true"></span></div><!--teleport start--><!--teleport end--></div>
+                </div>
+                </div>
+              </div>
+
+              <div class="px-4 pb-4 flex justify-between items-center gap-x-4">
+                <div class="w-1/4">
                     <p class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]">From date</p>
                     <div class="w-full h-[40px] border border-[#DBDBDB] flex justify-between items-center mt-[10px] leading-[20px] rounded-[4px] px-[20px] xl:px-[4px] 2xl:px-[8px] overflow-hidden">
                         <input class="outline-none pl-2 placeholder:text-[#4D4D4F] placeholder:text-[14px] placeholder:leading-[20px]" placeholder="Select date" type="text">
@@ -68,26 +85,12 @@
                         <img alt="" class="h-5 w-5" src="../assets/svg/count2.svg">
                     </div>
                  </div>
-                </div>
-              </div>
-
-              <div class="px-4 pb-4 flex justify-between items-center gap-x-4">
-                <div class="w-1/4">
-                    <p class="text-primaryText leading-[20px] text-[14px] xl:leading-[24px] xl:text-[16px] font-[600]">
-                      Route</p>
-                    <Dropdown
-                        v-model="selectedCity"
-                        :options="cities"
-                        class="w-full py-[4px] mt-[10px] placeholder:text-primaryText placeholder:leading-[16px] placeholder:text-[12px] xl:placeholder:leading-[20px] xl:placeholder:text-[14px]"
-                        optionLabel="name" placeholder="Select route"/>
-                  </div>
-                  <div class="w-1/4">
-                    <p class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]">Trip/coach no</p>
-                    <input type="text" class="createNormalInput" placeholder="Enter trip/coach no">
-                </div>
-                <div class="w-1/4">
-                    <p class="text-primaryText leading-[20px] text-[14px] xl:leading-[24px] xl:text-[16px] font-[600]"> Ticket status</p>
-                    <div id="pv_id_70" class="p-dropdown p-component p-inputwrapper w-full py-[4px] mt-[10px] placeholder:text-primaryText placeholder:leading-[16px] placeholder:text-[12px] xl:placeholder:leading-[20px] xl:placeholder:text-[14px]"><span class="p-dropdown-label p-inputtext p-placeholder" tabindex="0" role="combobox" aria-label="Select ticket status" aria-haspopup="listbox" aria-expanded="false" aria-controls="pv_id_70_list" aria-disabled="false">Select ticket status</span><!----><div class="p-dropdown-trigger"><span class="p-dropdown-trigger-icon pi pi-chevron-down" aria-hidden="true"></span></div><!--teleport start--><!--teleport end--></div>
+                 <div class="w-1/4">
+                    <p class="text-primaryText leading-[20px] text-[14px] xl:leading-[24px] xl:text-[16px] font-[600]"> Bus direction</p>
+                    <div id="pv_id_68" class="p-dropdown p-component p-inputwrapper w-full py-[4px] mt-[10px] placeholder:text-primaryText placeholder:leading-[16px] placeholder:text-[12px] xl:placeholder:leading-[20px] xl:placeholder:text-[14px]">
+                        <span class="p-dropdown-label p-inputtext p-placeholder" tabindex="0" role="combobox" aria-label="Select bus direction" aria-haspopup="listbox" aria-expanded="false" aria-controls="pv_id_68_list" aria-disabled="false">Select bus direction</span>
+                        <div class="p-dropdown-trigger"><span class="p-dropdown-trigger-icon pi pi-chevron-down" aria-hidden="true"></span></div>
+                    </div>
                 </div>
                 <div class="w-1/4">
                     <p class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]">Bus type</p>
@@ -133,37 +136,34 @@
                 <thead>
                   <tr class="bg-[#4D4D4F] h-[36px]">
                     <th class="companyTableHead" scope="col" style="border-radius: 6px 0 0 0">
-                        Bus company
+                        bus operator
                     </th>
                     <th class="companyTableHead" scope="col">
-                        trip no.
+                        issue Date
                     </th>
                     <th class="companyTableHead" scope="col">
-                        Journey date
+                        journey Date
                     </th>
                     <th class="companyTableHead" scope="col">
                         Route
                     </th>
                     <th class="companyTableHead" scope="col">
-                        Passenger <br>information
+                        ticket status
                     </th>
                     <th class="companyTableHead" scope="col">
-                        seat
+                        Bus type
                     </th>
                     <th class="companyTableHead" scope="col">
-                        Payment <br>type
+                        Direction
                     </th>
                     <th class="companyTableHead" scope="col">
-                        ticket price
+                        no of seat <br>sold
                     </th>
                     <th class="companyTableHead" scope="col">
-                        Jatri <br>commission
+                        Canceled <br>seats
                     </th>
                     <th class="companyTableHead" scope="col">
-                        Payable/<br>operator
-                    </th>
-                    <th class="companyTableHead" scope="col">
-                      ticket status
+                        total amount
                     </th>
                   </tr>
                 </thead>
@@ -173,216 +173,202 @@
                     Desh Travels
                   </td>
                   <td class="text-primaryText border-r border-[#DBDBDB] text-center leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] py-3">
-                    lI6dFWyA
+                    19 July 2022
                   </td>
                   <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
-                    <div>09:45 AM</div> <div>19 July 2022</div>
+                    19 July 2022
                   </td>
                   <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
-                    Dhaka - Chittagong
+                    Dhaka - Rangpur
                   </td>
-                  <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
-                  <div>Fahim Ahmed</div> <div>01708630439</div>
-                  </td>
-                  <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
-                    A1, A2, A3, <br>A4, B1, B2
-                  </td>
-                  <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
-                    Cash
-                  </td>
-                  <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
-                    100 TK
-                  </td>
-                  <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
-                    100 TK
-                  </td>
-                  <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
-                    100 TK
-                  </td>
-                  <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3 px-[10px]">
+                  <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText px-[13px] py-3">
                     <div class="greenStatusButton">Sold</div>
+                  </td>
+                  <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
+                    AC
+                  </td>
+                  <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
+                    Up
+                  </td>
+                  <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
+                    22
+                  </td>
+                  <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
+                    3
+                  </td>
+                  <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
+                    30000 TK
                   </td>
                 </tr>
 
                 <tr class="border-b border-[#EDEDED]">
-                    <td class="text-primaryText border-r border-[#DBDBDB] text-center leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] py-3">
+                  <td class="text-primaryText border-r border-[#DBDBDB] text-center leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] py-3">
                     Desh Travels
                   </td>
                   <td class="text-primaryText border-r border-[#DBDBDB] text-center leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] py-3">
-                    lI6dFWyA
+                    19 July 2022
                   </td>
                   <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
-                    <div>09:45 AM</div> <div>19 July 2022</div>
+                    19 July 2022
                   </td>
                   <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
-                    Dhaka - Chittagong
+                    Dhaka - Rangpur
+                  </td>
+                  <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText px-[13px] py-3">
+                    <div class="skyStatusButton">Cancelled</div>
                   </td>
                   <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
-                  <div>Fahim Ahmed</div> <div>01708630439</div>
+                    AC
                   </td>
                   <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
-                    A1, A2, A3, <br>A4, B1, B2
+                    Up
                   </td>
                   <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
-                    Cash
+                    22
                   </td>
                   <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
-                    100 TK
+                    3
                   </td>
                   <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
-                    100 TK
-                  </td>
-                  <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
-                    100 TK
-                  </td>
-                  <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3 px-[10px]">
-                    <div class="greenStatusButton">Sold</div>
-                  </td>
-                </tr>
-                
-                <tr class="border-b border-[#EDEDED]">
-                    <td class="text-primaryText border-r border-[#DBDBDB] text-center leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] py-3">
-                    Desh Travels
-                  </td>
-                  <td class="text-primaryText border-r border-[#DBDBDB] text-center leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] py-3">
-                    lI6dFWyA
-                  </td>
-                  <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
-                    <div>09:45 AM</div> <div>19 July 2022</div>
-                  </td>
-                  <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
-                    Dhaka - Chittagong
-                  </td>
-                  <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
-                  <div>Fahim Ahmed</div> <div>01708630439</div>
-                  </td>
-                  <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
-                    A1, A2, A3, <br>A4, B1, B2
-                  </td>
-                  <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
-                    Cash
-                  </td>
-                  <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
-                    100 TK
-                  </td>
-                  <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
-                    100 TK
-                  </td>
-                  <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
-                    100 TK
-                  </td>
-                  <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3 px-[10px]">
-                    <div class="skyStatusButton">Reserved</div>
+                    30000 TK
                   </td>
                 </tr>
 
                 <tr class="border-b border-[#EDEDED]">
-                    <td class="text-primaryText border-r border-[#DBDBDB] text-center leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] py-3">
+                  <td class="text-primaryText border-r border-[#DBDBDB] text-center leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] py-3">
                     Desh Travels
                   </td>
                   <td class="text-primaryText border-r border-[#DBDBDB] text-center leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] py-3">
-                    lI6dFWyA
+                    19 July 2022
                   </td>
                   <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
-                    <div>09:45 AM</div> <div>19 July 2022</div>
+                    19 July 2022
                   </td>
                   <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
-                    Dhaka - Chittagong
+                    Dhaka - Rangpur
+                  </td>
+                  <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText px-[13px] py-3">
+                    <div class="orangeStatusButton">Reserved</div>
                   </td>
                   <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
-                  <div>Fahim Ahmed</div> <div>01708630439</div>
+                    AC
                   </td>
                   <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
-                    A1, A2, A3, <br>A4, B1, B2
+                    Up
                   </td>
                   <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
-                    Cash
+                    22
                   </td>
                   <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
-                    100 TK
+                    3
                   </td>
                   <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
-                    100 TK
-                  </td>
-                  <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
-                    100 TK
-                  </td>
-                  <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3 px-[10px]">
-                    <div class="orangeStatusButton">Cancelled</div>
+                    30000 TK
                   </td>
                 </tr>
 
                 <tr class="border-b border-[#EDEDED]">
-                    <td class="text-primaryText border-r border-[#DBDBDB] text-center leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] py-3">
+                  <td class="text-primaryText border-r border-[#DBDBDB] text-center leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] py-3">
                     Desh Travels
                   </td>
                   <td class="text-primaryText border-r border-[#DBDBDB] text-center leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] py-3">
-                    lI6dFWyA
+                    19 July 2022
                   </td>
                   <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
-                    <div>09:45 AM</div> <div>19 July 2022</div>
+                    19 July 2022
                   </td>
                   <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
-                    Dhaka - Chittagong
+                    Dhaka - Rangpur
                   </td>
-                  <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
-                  <div>Fahim Ahmed</div> <div>01708630439</div>
-                  </td>
-                  <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
-                    A1, A2, A3, <br>A4, B1, B2
-                  </td>
-                  <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
-                    Cash
-                  </td>
-                  <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
-                    100 TK
-                  </td>
-                  <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
-                    100 TK
-                  </td>
-                  <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
-                    100 TK
-                  </td>
-                  <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3 px-[10px]">
+                  <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText px-[13px] py-3">
                     <div class="greenStatusButton">Sold</div>
+                  </td>
+                  <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
+                    AC
+                  </td>
+                  <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
+                    Up
+                  </td>
+                  <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
+                    22
+                  </td>
+                  <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
+                    3
+                  </td>
+                  <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
+                    30000 TK
                   </td>
                 </tr>
 
+
                 <tr class="border-b border-[#EDEDED]">
-                    <td class="text-primaryText border-r border-[#DBDBDB] text-center leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] py-3">
+                  <td class="text-primaryText border-r border-[#DBDBDB] text-center leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] py-3">
                     Desh Travels
                   </td>
                   <td class="text-primaryText border-r border-[#DBDBDB] text-center leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] py-3">
-                    lI6dFWyA
+                    19 July 2022
                   </td>
                   <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
-                    <div>09:45 AM</div> <div>19 July 2022</div>
+                    19 July 2022
                   </td>
                   <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
-                    Dhaka - Chittagong
+                    Dhaka - Rangpur
                   </td>
-                  <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
-                  <div>Fahim Ahmed</div> <div>01708630439</div>
-                  </td>
-                  <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
-                    A1, A2, A3, <br>A4, B1, B2
-                  </td>
-                  <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
-                    Cash
-                  </td>
-                  <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
-                    100 TK
-                  </td>
-                  <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
-                    100 TK
-                  </td>
-                  <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
-                    100 TK
-                  </td>
-                  <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3 px-[10px]">
+                  <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText px-[13px] py-3">
                     <div class="greenStatusButton">Sold</div>
                   </td>
+                  <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
+                    AC
+                  </td>
+                  <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
+                    Up
+                  </td>
+                  <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
+                    22
+                  </td>
+                  <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
+                    3
+                  </td>
+                  <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
+                    30000 TK
+                  </td>
                 </tr>
+
+
+                <tr class="border-b border-[#EDEDED]">
+                  <td class="text-primaryText border-r border-[#DBDBDB] text-center leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] py-3">
+                    Desh Travels
+                  </td>
+                  <td class="text-primaryText border-r border-[#DBDBDB] text-center leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] py-3">
+                    19 July 2022
+                  </td>
+                  <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
+                    19 July 2022
+                  </td>
+                  <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
+                    Dhaka - Rangpur
+                  </td>
+                  <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText px-[13px] py-3">
+                    <div class="greenStatusButton">Sold</div>
+                  </td>
+                  <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
+                    AC
+                  </td>
+                  <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
+                    Up
+                  </td>
+                  <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
+                    22
+                  </td>
+                  <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
+                    3
+                  </td>
+                  <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
+                    30000 TK
+                  </td>
+                </tr>
+
+
                 </tbody>
               </table>
             </div>
