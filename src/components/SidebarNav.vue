@@ -42,7 +42,7 @@
             <router-link :class="$route.path === '/routeWiseSales' ? 'activeMenu' : 'menu border-b border-dashed p-[10px]' " to="/routeWiseSales">
               Route Wise Sales
             </router-link>
-            <router-link :class="$route.path === '' ? 'activeMenu' : 'menu border-b border-dashed p-[10px]' " to="">
+            <router-link :class="$route.path === '/subrouteWiseSales' ? 'activeMenu' : 'menu border-b border-dashed p-[10px]' " to="/subrouteWiseSales">
               Sub-Route Wise Sales
             </router-link>
             <router-link :class="$route.path === '/busWiseSales' ? 'activeMenu' : 'menu border-b border-dashed p-[10px]' " to="/busWiseSales">

@@ -85,6 +85,7 @@ import UserWiseSalesDetails from '@/views/user-wise-sales-details.vue'
 import CounterWiseSales from '@/views/counter-wise-sales.vue'
 import CounterWiseSalesDetails from '@/views/counter-wise-sales-details.vue'
 import RouteWiseSales from '@/views/route-wise-sales.vue'
+import SubRouteWiseSales from '@/views/subroute-wise-sales.vue'
 import BusWiseSales from '@/views/bus-wise-sales.vue'
 import TripWiseSales from '@/views/trip-wise-sales.vue'
 import CancelTripReport from '@/views/cancel-trip-report.vue'
@@ -557,6 +558,11 @@ const router = createRouter({
             path: '/routeWiseSales',
             name: 'RouteWiseSales',
             component: RouteWiseSales,
+        },
+        {
+            path: '/subRouteWiseSales',
+            name: 'SubRouteWiseSales',
+            component: SubRouteWiseSales,
         },
         {
             path: '/busWiseSales',
