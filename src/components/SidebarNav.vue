@@ -63,7 +63,7 @@
             <router-link :class="$route.path === '/discountReport' ? 'activeMenu' : 'menu p-[10px]' " to="/discountReport">
               Discount Report
             </router-link>
-            <router-link :class="$route.path === '' ? 'activeMenu' : 'menu p-[10px]' " to="">
+            <router-link :class="$route.path === '/tripMigrationReport' ? 'activeMenu' : 'menu p-[10px]' " to="/tripMigrationReport">
               Trip Migration Report
             </router-link>
           </dropdown-menu>
