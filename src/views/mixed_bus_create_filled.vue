@@ -49,7 +49,7 @@
       <p class="leading-[28px] xl:leading-[32px] text-[20px] xl:text-[24px] text-primaryText font-[600]">Preview bus</p>
       <button
           class="border border-[#8D8D8F] leading-[16px] text-[12px] font-[600] text-corporate rounded-full w-[80px] h-[26px] xl:w-[90px] xl:h-[36px]">
-        Edit
+        Edit bus
       </button>
     </div>
     <!--        card-->

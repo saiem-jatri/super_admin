@@ -263,8 +263,14 @@
               </div>
               <div class="w-[45%]">
                 <div class="py-2 pl-[16px]">
-                  <p class="leading-[20px] xl:leading-[24px] text-[14px] xl:text-[16px] font-[600] text-primaryText">
-                    Seat layout preview</p>
+                  <div class="flex justify-between">
+                    <p class="leading-[20px] xl:leading-[24px] text-[14px] xl:text-[16px] font-[600] text-primaryText">
+                      Seat layout preview</p>
+                    <button class="flex gap-x-[9px] items-center">
+                      <img alt="" class="w-[13px]" src="../assets/svg/reset.svg">
+                      <p class="text-corporateError leading-[14px] xl:leading-[16px] text-[12px]">Reset</p>
+                    </button>
+                  </div>
                   <hr class="border-t border-[#DBDBDB] mt-3">
                   <div
                       class="mt-4 py-[2px] flex justify-center items-center bg-[#EFF7FD] text-[#1E88E5] leading-[16px] xl:leading-[20px] text-[12px] xl:text-[14px] text-[#676769] font-[600] rounded-[4px]">
@@ -1036,8 +1042,8 @@
       <hr class="border-t border-corporateBorder">
       <div class="px-[16px] py-[20px] w-full flex justify-center items-center">
         <router-link
-            class="flex justify-center items-center text-white leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[600] bg-corporate bg-opacity-30 rounded-full px-[20px] py-[11px] xl:px-[24px] xl:py-[13px]"
-            to="/doubleDackerbusCreateActive">
+            class="flex justify-center items-center text-white leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[600] bg-corporate rounded-full px-[20px] py-[11px] xl:px-[24px] xl:py-[13px]"
+            to="/doubleDackerCreateFilled">
           Preview bus
         </router-link>
       </div>

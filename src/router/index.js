@@ -115,6 +115,11 @@ import MixedbusCreate from '@/views/mixed_bus_create.vue'
 import MixedbusCreateActive from '@/views/mixed_bus_create_active.vue'
 import MixedbusCreateFilled from '@/views/mixed_bus_create_filled.vue'
 import DoubleDackerbusCreate from '@/views/doubleDacker_bus_create.vue'
+import DoubleDackerbusCreateActive from '@/views/doubleDacker_bus_create_active.vue'
+import DoubleDackerCreateFilled from '@/views/doubleDacker_create_filled.vue'
+import SleeperCoachBUsCreate from '@/views/sleeperCoach_bus_create.vue'
+import SleeperCoachBUsCreateActive from '@/views/sleeperCoach_bus_create_active.vue'
+import SleeperCoachCreateFilled from '@/views/sleeperCoach_create_filled.vue'
 
 const router = createRouter({
     history: createWebHistory(import.meta.env.BASE_URL),
@@ -724,7 +729,31 @@ const router = createRouter({
             name: 'DoubleDackerbusCreate',
             component: DoubleDackerbusCreate
         },
-    
+        {
+            path: '/doubleDackerbusCreateActive',
+            name: 'DoubleDackerbusCreateActive',
+            component: DoubleDackerbusCreateActive
+        },
+        {
+            path: '/doubleDackerCreateFilled',
+            name: 'DoubleDackerCreateFilled',
+            component: DoubleDackerCreateFilled
+        },
+        {
+            path: '/sleeperCoachBUsCreate',
+            name: 'SleeperCoachBUsCreate',
+            component: SleeperCoachBUsCreate
+        },
+        {
+            path: '/sleeperCoachBUsCreateActive',
+            name: 'SleeperCoachBUsCreateActive',
+            component: SleeperCoachBUsCreateActive
+        },
+        {
+            path: '/sleeperCoachCreateFilled',
+            name: 'SleeperCoachCreateFilled',
+            component: SleeperCoachCreateFilled
+        },
     ]
 
 })
