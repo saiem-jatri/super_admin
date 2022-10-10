@@ -177,7 +177,7 @@
                      to="/bus">
           Bus
         </router-link>
-        <router-link :class="$route.path === '' ? 'activeMenu' : 'menu' " to="">Stopage</router-link>
+        <router-link :class="$route.path === '/stoppageCity' ? 'activeMenu' : 'menu' " to="/stoppageCity">Stoppage</router-link>
         <router-link :class="$route.path === '' ? 'activeMenu' : 'menu' " to="">Challan Configaration</router-link>
         <router-link :class="$route.path === '' ? 'activeMenu' : 'menu' " to="">Fees</router-link>
       </div>
