@@ -9,7 +9,7 @@
                   <p class="text-secondaryText leading-[12px] text-[8px] xl:leading-[16px] xl:text-[12px] font-[400]">Report</p>
                   <img alt="" class="w-1 h-2" src="../assets/svg/bgBack.svg">
                   <p class="text-secondaryText leading-[12px] text-[8px] xl:leading-[16px] xl:text-[12px] font-[400]">
-                    City Wise Sales Report</p>
+                    City wise sales report</p>
                 </div>
               </div>
               <div
@@ -93,7 +93,7 @@
                  <div class="w-1/4">
                     <p class="text-primaryText leading-[20px] text-[14px] xl:leading-[24px] xl:text-[16px] font-[600]"> Ticket status</p>
                     <div id="pv_id_68" class="p-dropdown p-component p-inputwrapper w-full py-[4px] mt-[10px] placeholder:text-primaryText placeholder:leading-[16px] placeholder:text-[12px] xl:placeholder:leading-[20px] xl:placeholder:text-[14px]">
-                        <span class="p-dropdown-label p-inputtext p-placeholder" tabindex="0" role="combobox" aria-label="Select status" aria-haspopup="listbox" aria-expanded="false" aria-controls="pv_id_68_list" aria-disabled="false">Select bus direction</span>
+                        <span class="p-dropdown-label p-inputtext p-placeholder" tabindex="0" role="combobox" aria-label="Select status" aria-haspopup="listbox" aria-expanded="false" aria-controls="pv_id_68_list" aria-disabled="false">Select status</span>
                         <div class="p-dropdown-trigger"><span class="p-dropdown-trigger-icon pi pi-chevron-down" aria-hidden="true"></span></div>
                     </div>
                 </div>
@@ -211,7 +211,7 @@
                     AC
                   </td>
                   <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText px-[13px] py-3">
-                    <div class="greenStatusButton">Sold</div>
+                    <div class="orangeStatusButton">Cancelled</div>
                   </td>
                   <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
                     4
@@ -235,10 +235,10 @@
                     Rangpur
                   </td>
                   <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
-                    AC
+                    Non AC
                   </td>
                   <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText px-[13px] py-3">
-                    <div class="greenStatusButton">Sold</div>
+                    <div class="blueStatusButton">Reserved</div>
                   </td>
                   <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
                     4
