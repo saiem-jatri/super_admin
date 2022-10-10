@@ -98,6 +98,7 @@ import JatriSalesReport from '@/views/jatri-sales-report.vue'
 import BusTypeWiseSales from '@/views/bus-type-wise-sales.vue'
 import UserLogSessionReport from '@/views/user-log-session-report.vue'
 import GoodsLuggdeReport from '@/views/goods-luggde-report.vue'
+import CityWiseSalesReport from '@/views/city-wise-sales-report.vue'
 import Invoice from '@/views/invoice.vue'
 import InvoiceCurrentbill from '@/views/invoice_currentbill.vue'
 import InvoiceGeneratebill from '@/views/invoice_generatebill.vue'
@@ -632,7 +633,12 @@ const router = createRouter({
             name: 'GoodsLuggdeReport',
             component: GoodsLuggdeReport,
         },
-
+        {
+            path: '/cityWiseSalesReport',
+            name: 'CityWiseSalesReport',
+            component: CityWiseSalesReport,
+        },
+        
         //invoice started
         {
             path: '/invoice',

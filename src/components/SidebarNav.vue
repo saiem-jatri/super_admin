@@ -90,7 +90,7 @@
             <router-link :class="$route.path === '/goodsLuggdeReport' ? 'activeMenu' : 'menu p-[10px]' " to="/goodsLuggdeReport">
               Goods & Luggde Report
             </router-link>
-            <router-link :class="$route.path === '' ? 'activeMenu' : 'menu p-[10px]' " to="">
+            <router-link :class="$route.path === '/CityWiseSalesReport' ? 'activeMenu' : 'menu p-[10px]' " to="/CityWiseSalesReport">
               City Wise Sales
             </router-link>
             <router-link :class="$route.path === '' ? 'activeMenu' : 'menu p-[10px]' " to="">
