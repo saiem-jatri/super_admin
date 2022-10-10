@@ -100,6 +100,7 @@ import UserLogSessionReport from '@/views/user-log-session-report.vue'
 import GoodsLuggdeReport from '@/views/goods-luggde-report.vue'
 import CityWiseSalesReport from '@/views/city-wise-sales-report.vue'
 import BusDirectionWiseReport from '@/views/bus-direction-wise-sales-report.vue'
+import ChallanReport from '@/views/challan-report.vue'
 import Invoice from '@/views/invoice.vue'
 import InvoiceCurrentbill from '@/views/invoice_currentbill.vue'
 import InvoiceGeneratebill from '@/views/invoice_generatebill.vue'
@@ -647,6 +648,11 @@ const router = createRouter({
             path: '/busDirectionWiseReport',
             name: 'BusDirectionWiseReport',
             component: BusDirectionWiseReport,
+        },
+        {
+            path: '/challanReport',
+            name: 'ChallanReport',
+            component: ChallanReport,
         },
         
         //invoice started

@@ -96,8 +96,8 @@
             <router-link :class="$route.path === '/busDirectionWiseReport' ? 'activeMenu' : 'menu p-[10px]' " to="/busDirectionWiseReport">
               Bus Direction Wise Report
             </router-link>
-            <router-link :class="$route.path === '' ? 'activeMenu' : 'menu p-[10px]' " to="">
-              Callan Report
+            <router-link :class="$route.path === '/challanReport' ? 'activeMenu' : 'menu p-[10px]' " to="/challanReport">
+              Challan Report
             </router-link>
             <router-link :class="$route.path === '' ? 'activeMenu' : 'menu p-[10px]' " to="">
               Refferel Discount Report
