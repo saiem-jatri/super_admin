@@ -126,7 +126,7 @@
           </tr>
 
           <tr class="border-b border-[#EDEDED]">
-            <td class="text-primaryText border-r border-[#DBDBDB] text-center leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px]">Operator name</td>
+            <td class="text-primaryText border-r border-[#DBDBDB] text-center leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px]">City name</td>
             <td class="border-r border-[#DBDBDB]">
               <div class="flex justify-center items-center">
                 <p class="companyTableStatusInactive">Inactive</p>
@@ -140,7 +140,7 @@
           </tr>
 
           <tr class="border-b border-[#EDEDED]">
-            <td class="text-primaryText border-r border-[#DBDBDB] text-center leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px]">Operator name</td>
+            <td class="text-primaryText border-r border-[#DBDBDB] text-center leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px]">City name</td>
             <td class="border-r border-[#DBDBDB]">
               <div class="flex justify-center items-center">
                 <p class="companyTableStatus">Active</p>
@@ -154,7 +154,7 @@
           </tr>
 
           <tr class="border-b border-[#EDEDED]">
-            <td class="text-primaryText border-r border-[#DBDBDB] text-center leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px]">Operator name</td>
+            <td class="text-primaryText border-r border-[#DBDBDB] text-center leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px]">City name</td>
             <td class="border-r border-[#DBDBDB]">
               <div class="flex justify-center items-center">
                 <p class="companyTableStatus">Active</p>
@@ -168,7 +168,7 @@
           </tr>
 
           <tr class="border-b border-[#EDEDED]">
-            <td class="text-primaryText border-r border-[#DBDBDB] text-center leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px]">Operator name</td>
+            <td class="text-primaryText border-r border-[#DBDBDB] text-center leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px]">City name</td>
             <td class="border-r border-[#DBDBDB]">
               <div class="flex justify-center items-center">
                 <p class="companyTableStatus">Active</p>
@@ -182,7 +182,7 @@
           </tr>
 
           <tr class="border-b border-[#EDEDED]">
-            <td class="text-primaryText border-r border-[#DBDBDB] text-center leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px]">Operator name</td>
+            <td class="text-primaryText border-r border-[#DBDBDB] text-center leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px]">City name</td>
             <td class="border-r border-[#DBDBDB]">
               <div class="flex justify-center items-center">
                 <p class="companyTableStatus">Active</p>
