@@ -4,12 +4,12 @@
             <div class="flex justify-between items-center">
               <div class="pl-6 flex flex-col gap-y-[4px]">
                 <p class="lg:leading-[16px] xl:leading-[28px] lg:text-[14px] xl:text-[20px] font-[600] text-primaryText">
-                    User Log Session Report</p>
+                    Goods & Luggde Report </p>
                 <div class="flex items-center gap-x-[6px] mr-4">
                   <p class="text-secondaryText leading-[12px] text-[8px] xl:leading-[16px] xl:text-[12px] font-[400]">Report</p>
                   <img alt="" class="w-1 h-2" src="../assets/svg/bgBack.svg">
                   <p class="text-secondaryText leading-[12px] text-[8px] xl:leading-[16px] xl:text-[12px] font-[400]">
-                    User Log Session Report</p>
+                    Goods & Luggde Report </p>
                 </div>
               </div>
               <div
@@ -38,58 +38,68 @@
               <div class="p-4 flex justify-between items-center">
                 <div class="flex justify-start items-center gap-x-4 w-full">
                   <div class="w-1/4">
-                    <p class="text-primaryText leading-[20px] text-[14px] xl:leading-[24px] xl:text-[16px] font-[600]">Bus
-                      operator</p>
+                    <p class="text-primaryText leading-[20px] text-[14px] xl:leading-[24px] xl:text-[16px] font-[600]">Bus operator</p>
                     <Dropdown
                         v-model="selectedCity"
                         :options="cities"
                         class="w-full py-[4px] mt-[10px] placeholder:text-primaryText placeholder:leading-[16px] placeholder:text-[12px] xl:placeholder:leading-[20px] xl:placeholder:text-[14px]"
-                        optionLabel="name" placeholder="Selectr bus operator"/>
+                        optionLabel="name" placeholder="Select bus operator"/>
                   </div>
                   <div class="w-1/4">
-                    <p class="text-primaryText leading-[20px] text-[14px] xl:leading-[24px] xl:text-[16px] font-[600]">
-                        User type</p>
+                    <p class="text-primaryText leading-[20px] text-[14px] xl:leading-[24px] xl:text-[16px] font-[600]">Ticket booking type</p>
                     <Dropdown
                         v-model="selectedCity"
                         :options="cities"
                         class="w-full py-[4px] mt-[10px] placeholder:text-primaryText placeholder:leading-[16px] placeholder:text-[12px] xl:placeholder:leading-[20px] xl:placeholder:text-[14px]"
-                        optionLabel="name" placeholder="Select user type"/>
-                  </div>
-    
-                  <div class="w-1/4">
-                    <p class="text-primaryText leading-[20px] text-[14px] xl:leading-[24px] xl:text-[16px] font-[600]">
-                        Counter type</p>
-                    <Dropdown
-                        v-model="selectedCity"
-                        :options="cities"
-                        class="w-full py-[4px] mt-[10px] placeholder:text-primaryText placeholder:leading-[16px] placeholder:text-[12px] xl:placeholder:leading-[20px] xl:placeholder:text-[14px]"
-                        optionLabel="name" placeholder="Select counter type"/>
+                        optionLabel="name" placeholder="Select ticket booking type"/>
                   </div>
                   <div class="w-1/4">
-                    <p class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]">User name</p>
-                    <input type="text" class="createNormalInput" placeholder="Enter user name">
-                </div>
-                </div>
-              </div>
-
-              <div class="px-4 pb-4 flex items-end gap-x-4">
-                <div class="w-1/4">
-                    <p class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]">User mobile number</p>
-                    <input type="text" class="createNormalInput" placeholder="Enter mobile number">
-                </div>
-                 <div class="w-1/4">
-                    <p class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]">Date</p>
+                    <p class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]">From date</p>
                     <div class="w-full h-[40px] border border-[#DBDBDB] flex justify-between items-center mt-[10px] leading-[20px] rounded-[4px] px-[20px] xl:px-[4px] 2xl:px-[8px] overflow-hidden">
                         <input class="outline-none pl-2 placeholder:text-[#4D4D4F] placeholder:text-[14px] placeholder:leading-[20px]" placeholder="Select date" type="text">
                         <img alt="" class="h-5 w-5" src="../assets/svg/count2.svg">
                     </div>
                  </div>
-                 <div class="w-2/4 flex justify-end">
-                  <button class="flex gap-x-[9px] justify-center items-center bg-corporate text-white leading-[14px] xl:leading-[16px] text-[11px] xl:text-[12px] font-[500] py-3 pl-[17px] pr-[24px] rounded-full"><span>
-                    <img alt="" class="w-[13px] xl:h-[13px]" src="../assets/svg/white_search.svg">
-                  </span>Search
-                  </button>
+                 <div class="w-1/4">
+                    <p class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]">To date</p>
+                    <div class="w-full h-[40px] border border-[#DBDBDB] flex justify-between items-center mt-[10px] leading-[20px] rounded-[4px] px-[20px] xl:px-[4px] 2xl:px-[8px] overflow-hidden">
+                        <input class="outline-none pl-2 placeholder:text-[#4D4D4F] placeholder:text-[14px] placeholder:leading-[20px]" placeholder="Select date" type="text">
+                        <img alt="" class="h-5 w-5" src="../assets/svg/count2.svg">
+                    </div>
+                 </div>
                 </div>
+              </div>
+
+              <div class="px-4 pb-4 flex items-end gap-x-4">
+                 <div class="w-1/4">
+                    <p class="text-primaryText leading-[20px] text-[14px] xl:leading-[24px] xl:text-[16px] font-[600]">
+                        Trip/Coach no</p>
+                      <input type="text" class="createNormalInput" placeholder="Enter trip/coach no">
+                  </div>
+                  <div class="w-1/4">
+                  <p class="text-primaryText leading-[20px] text-[14px] xl:leading-[24px] xl:text-[16px] font-[600]">
+                    Route direction</p>
+                  <Dropdown
+                      v-model="selectedCity"
+                      :options="cities"
+                      class="w-full py-[4px] mt-[10px] placeholder:text-primaryText placeholder:leading-[16px] placeholder:text-[12px] xl:placeholder:leading-[20px] xl:placeholder:text-[14px]"
+                      optionLabel="name" placeholder="Select route direction"/>
+                  </div>
+                <div class="w-1/4">
+                    <p class="text-primaryText leading-[20px] text-[14px] xl:leading-[24px] xl:text-[16px] font-[600]">
+                        Ticket type</p>
+                    <Dropdown
+                        v-model="selectedCity"
+                        :options="cities"
+                        class="w-full py-[4px] mt-[10px] placeholder:text-primaryText placeholder:leading-[16px] placeholder:text-[12px] xl:placeholder:leading-[20px] xl:placeholder:text-[14px]"
+                        optionLabel="name" placeholder="Select ticket type"/>
+                  </div>
+                  <div class="w-1/4 flex justify-end">
+                    <button class="flex gap-x-[9px] justify-center items-center bg-corporate text-white leading-[14px] xl:leading-[16px] text-[11px] xl:text-[12px] font-[500] py-3 pl-[17px] pr-[24px] rounded-full"><span>
+                        <img alt="" class="w-[13px] xl:h-[13px]" src="../assets/svg/white_search.svg">
+                    </span>Search
+                    </button>
+                 </div>
               </div>
 
             </div>
@@ -111,191 +121,254 @@
                 <thead>
                   <tr class="bg-[#4D4D4F] h-[36px]">
                     <th class="companyTableHead" scope="col" style="border-radius: 6px 0 0 0">
-                      bus operator 
+                        pnr
                     </th>
                     <th class="companyTableHead" scope="col">
-                      user type
+                        issue date & <br>time
                     </th>
                     <th class="companyTableHead" scope="col">
-                      counter
+                        journey date
                     </th>
                     <th class="companyTableHead" scope="col">
-                      user information
+                        trip No.
                     </th>
                     <th class="companyTableHead" scope="col">
-                      login time
+                        route
                     </th>
                     <th class="companyTableHead" scope="col">
-                      log out time
+                        Passenger <br>information
                     </th>
                     <th class="companyTableHead" scope="col">
-                      loged in session
+                        seats
                     </th>
                     <th class="companyTableHead" scope="col">
-                      log out type
+                        goods <br>weight
+                    </th>
+                    <th class="companyTableHead" scope="col">
+                        goods fare
+                    </th>
+                    <th class="companyTableHead" scope="col">
+                        appox. <br>value
+                    </th>
+                    <th class="companyTableHead" scope="col">
+                        description
                     </th>
                   </tr>
                 </thead>
                 <tbody>
                 <tr class="border-b border-[#EDEDED]">
-                  <td class="text-primaryText border-r border-[#DBDBDB] text-center leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] py-3">
-                    Desh Travels
+                  <td class="webkit-text-center text-primaryText border-r border-[#DBDBDB] text-center leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] py-3">
+                    <button class="tableDetailsGreyButton"><span class="underline">8WXOX3MVGF8UT</span><span><img src="/src/assets/svg/btn-arrow-right.svg" alt=""></span></button>
                   </td>
                   <td class="text-primaryText border-r border-[#DBDBDB] text-center leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] py-3">
-                  Third-Party
+                    <div>19 July 2022</div> <div>09:45 AM</div>
                   </td>
                   <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
-                    Arambag
+                    <div>19 July 2022</div> <div>09:45 AM</div>
                   </td>
                   <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
-                    <div>Alamin</div> <div>01708630439</div>
+                    lI6dFWyA
                   </td>
                   <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
-                    <div>18 July 2022</div> <div>05:34 PM</div>
+                    Dhaka - Rangpur
                   </td>
                   <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
-                    <div>18 July 2022</div> <div>05:34 PM</div>
+                    <div>Fahim Ahmed</div> <div>+8801708630439</div>
                   </td>
                   <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
-                    3 hours
+                    A1, A2
                   </td>
                   <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
-                    Auto log out
+                    5 KG
+                  </td>
+                  <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
+                    -
+                  </td>
+                  <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
+                    2000 TK
+                  </td>
+                  <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
+                    Goods description
                   </td>
                 </tr>
 
                 <tr class="border-b border-[#EDEDED]">
-                  <td class="text-primaryText border-r border-[#DBDBDB] text-center leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] py-3">
-                    Desh Travels
+                  <td class="webkit-text-center text-primaryText border-r border-[#DBDBDB] text-center leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] py-3">
+                    <button class="tableDetailsGreyButton"><span class="underline">8WXOX3MVGF8UT</span><span><img src="/src/assets/svg/btn-arrow-right.svg" alt=""></span></button>
                   </td>
                   <td class="text-primaryText border-r border-[#DBDBDB] text-center leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] py-3">
-                    Own
+                    <div>19 July 2022</div> <div>09:45 AM</div>
                   </td>
                   <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
-                    Arambag
+                    <div>19 July 2022</div> <div>09:45 AM</div>
                   </td>
                   <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
-                    <div>Alamin</div> <div>01708630439</div>
+                    lI6dFWyA
                   </td>
                   <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
-                    <div>18 July 2022</div> <div>05:34 PM</div>
+                    Dhaka - Rangpur
                   </td>
                   <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
-                    <div>18 July 2022</div> <div>05:34 PM</div>
+                    <div>Fahim Ahmed</div> <div>+8801708630439</div>
                   </td>
                   <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
-                    59 mins
+                    A1, A2
                   </td>
                   <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
-                    Auto log out
+                    5 KG
+                  </td>
+                  <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
+                    500 TK
+                  </td>
+                  <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
+                    2000 TK
+                  </td>
+                  <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
+                    Goods description
                   </td>
                 </tr>
 
                 <tr class="border-b border-[#EDEDED]">
-                  <td class="text-primaryText border-r border-[#DBDBDB] text-center leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] py-3">
-                    Desh Travels
+                  <td class="webkit-text-center text-primaryText border-r border-[#DBDBDB] text-center leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] py-3">
+                    <button class="tableDetailsGreyButton"><span class="underline">8WXOX3MVGF8UT</span><span><img src="/src/assets/svg/btn-arrow-right.svg" alt=""></span></button>
                   </td>
                   <td class="text-primaryText border-r border-[#DBDBDB] text-center leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] py-3">
-                  Third-Party
+                    <div>19 July 2022</div> <div>09:45 AM</div>
                   </td>
                   <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
-                    Arambag
+                    <div>19 July 2022</div> <div>09:45 AM</div>
                   </td>
                   <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
-                    <div>Alamin</div> <div>01708630439</div>
+                    lI6dFWyA
                   </td>
                   <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
-                    <div>18 July 2022</div> <div>05:34 PM</div>
+                    Dhaka - Rangpur
                   </td>
                   <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
-                    <div>18 July 2022</div> <div>05:34 PM</div>
+                    <div>Fahim Ahmed</div> <div>+8801708630439</div>
                   </td>
                   <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
-                    3 hours
+                    A1, A2
                   </td>
                   <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
-                    Auto log out
+                    5 KG
+                  </td>
+                  <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
+                    500 TK
+                  </td>
+                  <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
+                    2000 TK
+                  </td>
+                  <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
+                    Goods description
                   </td>
                 </tr>
 
                 <tr class="border-b border-[#EDEDED]">
-                  <td class="text-primaryText border-r border-[#DBDBDB] text-center leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] py-3">
-                    Desh Travels
+                  <td class="webkit-text-center text-primaryText border-r border-[#DBDBDB] text-center leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] py-3">
+                    <button class="tableDetailsGreyButton"><span class="underline">8WXOX3MVGF8UT</span><span><img src="/src/assets/svg/btn-arrow-right.svg" alt=""></span></button>
                   </td>
                   <td class="text-primaryText border-r border-[#DBDBDB] text-center leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] py-3">
-                  Third-Party
+                    <div>19 July 2022</div> <div>09:45 AM</div>
                   </td>
                   <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
-                    Arambag
+                    <div>19 July 2022</div> <div>09:45 AM</div>
                   </td>
                   <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
-                    <div>Alamin</div> <div>01708630439</div>
+                    lI6dFWyA
                   </td>
                   <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
-                    <div>18 July 2022</div> <div>05:34 PM</div>
+                    Dhaka - Rangpur
                   </td>
                   <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
-                    <div>18 July 2022</div> <div>05:34 PM</div>
+                    <div>Fahim Ahmed</div> <div>+8801708630439</div>
                   </td>
                   <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
-                    3 hours
+                    A1, A2
                   </td>
                   <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
-                    Auto log out
+                    5 KG
+                  </td>
+                  <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
+                    500 TK
+                  </td>
+                  <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
+                    2000 TK
+                  </td>
+                  <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
+                    Goods description
                   </td>
                 </tr>
 
                 <tr class="border-b border-[#EDEDED]">
-                  <td class="text-primaryText border-r border-[#DBDBDB] text-center leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] py-3">
-                    Desh Travels
+                  <td class="webkit-text-center text-primaryText border-r border-[#DBDBDB] text-center leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] py-3">
+                    <button class="tableDetailsGreyButton"><span class="underline">8WXOX3MVGF8UT</span><span><img src="/src/assets/svg/btn-arrow-right.svg" alt=""></span></button>
                   </td>
                   <td class="text-primaryText border-r border-[#DBDBDB] text-center leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] py-3">
-                  Third-Party
+                    <div>19 July 2022</div> <div>09:45 AM</div>
                   </td>
                   <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
-                    Arambag
+                    <div>19 July 2022</div> <div>09:45 AM</div>
                   </td>
                   <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
-                    <div>Alamin</div> <div>01708630439</div>
+                    lI6dFWyA
                   </td>
                   <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
-                    <div>18 July 2022</div> <div>05:34 PM</div>
+                    Dhaka - Rangpur
                   </td>
                   <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
-                    <div>18 July 2022</div> <div>05:34 PM</div>
+                    <div>Fahim Ahmed</div> <div>+8801708630439</div>
                   </td>
                   <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
-                    3 hours
+                    A1, A2
                   </td>
                   <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
-                    Auto log out
+                    5 KG
+                  </td>
+                  <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
+                    500 TK
+                  </td>
+                  <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
+                    2000 TK
+                  </td>
+                  <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
+                    Goods description
                   </td>
                 </tr>
 
                 <tr class="border-b border-[#EDEDED]">
-                  <td class="text-primaryText border-r border-[#DBDBDB] text-center leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] py-3">
-                    Desh Travels
+                  <td class="webkit-text-center text-primaryText border-r border-[#DBDBDB] text-center leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] py-3">
+                    <button class="tableDetailsGreyButton"><span class="underline">8WXOX3MVGF8UT</span><span><img src="/src/assets/svg/btn-arrow-right.svg" alt=""></span></button>
                   </td>
                   <td class="text-primaryText border-r border-[#DBDBDB] text-center leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] py-3">
-                  Third-Party
+                    <div>19 July 2022</div> <div>09:45 AM</div>
                   </td>
                   <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
-                    Arambag
+                    <div>19 July 2022</div> <div>09:45 AM</div>
                   </td>
                   <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
-                    <div>Alamin</div> <div>01708630439</div>
+                    lI6dFWyA
                   </td>
                   <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
-                    <div>18 July 2022</div> <div>05:34 PM</div>
+                    Dhaka - Rangpur
                   </td>
                   <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
-                    <div>18 July 2022</div> <div>05:34 PM</div>
+                    <div>Fahim Ahmed</div> <div>+8801708630439</div>
                   </td>
                   <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
-                    3 hours
+                    A1, A2
                   </td>
                   <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
-                    Auto log out
+                    5 KG
+                  </td>
+                  <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
+                    500 TK
+                  </td>
+                  <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
+                    2000 TK
+                  </td>
+                  <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
+                    Goods description
                   </td>
                 </tr>
                 </tbody>

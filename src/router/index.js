@@ -97,6 +97,7 @@ import TotalLogHistory from '@/views/total-log-history.vue'
 import JatriSalesReport from '@/views/jatri-sales-report.vue'
 import BusTypeWiseSales from '@/views/bus-type-wise-sales.vue'
 import UserLogSessionReport from '@/views/user-log-session-report.vue'
+import GoodsLuggdeReport from '@/views/goods-luggde-report.vue'
 import Invoice from '@/views/invoice.vue'
 import InvoiceCurrentbill from '@/views/invoice_currentbill.vue'
 import InvoiceGeneratebill from '@/views/invoice_generatebill.vue'
@@ -625,6 +626,11 @@ const router = createRouter({
             path: '/userLogSessionReport',
             name: 'UserLogSessionReport',
             component: UserLogSessionReport,
+        },
+        {
+            path: '/goodsLuggdeReport',
+            name: 'GoodsLuggdeReport',
+            component: GoodsLuggdeReport,
         },
 
         //invoice started
