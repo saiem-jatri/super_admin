@@ -56,11 +56,11 @@ body {
 }
 
 .corporateButton {
-    @apply text-white leading-[20px] text-[14px] font-[600] bg-corporate rounded-full px-[24px] py-[13px] font-[400]
+    @apply text-white leading-[20px] text-[14px] font-[400] bg-corporate rounded-full px-[24px] py-[13px]
 }
 
 .lessOpacityCorporateButton {
-    @apply text-white leading-[20px] text-[14px] font-[600] bg-corporate bg-opacity-30 rounded-full px-[24px] py-[13px]
+    @apply text-white leading-[20px] text-[14px] font-[400] bg-corporate bg-opacity-30 rounded-full px-[24px] py-[13px]
 }
 .nextStepButton {
     @apply text-white leading-[16px] text-[12px] font-[400] bg-corporate rounded-full px-[24px] py-[13px]

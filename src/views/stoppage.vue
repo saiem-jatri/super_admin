@@ -4,12 +4,12 @@
             <div class="flex justify-between items-center">
               <div class="pl-6 flex flex-col gap-y-[4px]">
                 <p class="lg:leading-[16px] xl:leading-[28px] lg:text-[14px] xl:text-[20px] font-[600] text-primaryText">
-                    City</p>
+                    Stoppage</p>
                 <div class="flex justify-center items-center gap-x-[6px] mr-4">
                   <p class="text-secondaryText leading-[12px] text-[8px] xl:leading-[16px] xl:text-[12px] font-[400]">Stoppage</p>
                   <img alt="" class="w-1 h-2" src="../assets/svg/bgBack.svg">
                   <p class="text-secondaryText leading-[12px] text-[8px] xl:leading-[16px] xl:text-[12px] font-[400]">
-                    City</p>
+                    stoppage</p>
                 </div>
               </div>
               <div
@@ -42,13 +42,13 @@
 
         <div class="mt-[16px] bg-white rounded-[10px]">
           <div class="p-4 w-1/3">
-            <p class="text-corporateSecondaryBlue mb-3">CITY BULK UPLOAD</p>
+            <p class="text-corporateSecondaryBlue mb-3">STOPPAGE  BULK UPLOAD</p>
             <div>
               <input id="chooseFile" class="hidden" name="" type="file">
               <label class="w-full py-8 bg-[#EFF7FD] h-[40px] cursor-pointer border border-dashed border-corporateSecondaryBlue mt-[10px] rounded-[4px] flex justify-center items-center" for="chooseFile">
                 <div class="flex items-center gap-x-[8px]">
                   <img alt="" class="w-[18px] h-[15px]" src="/src/assets/svg/file.svg">
-                  <p class="text-corporateSecondaryBlue leading-[20px] text-[14px] font-[400]">Upload cities</p>
+                  <p class="text-corporateSecondaryBlue leading-[20px] text-[14px] font-[400]">Upload stoppages</p>
                   <p class="text-corporateSecondaryBlue leading-[20px] text-[14px] border-b border-corporateSecondaryBlue font-semibold"> Browse file</p>
                 </div>
               </label>
@@ -59,14 +59,21 @@
 <!--Card-->
       <div class="mt-[16px] bg-white rounded-[10px]">
           <div class="p-4">
-            <p class="text-corporateSecondaryBlue mb-3">ADD SINGLE CITY</p>
+            <p class="text-corporateSecondaryBlue mb-3">ADD SINGLE STOPPAGE</p>
             <div class="flex justify-start items-center gap-x-4 w-full">
+            <div class="w-1/5">
+            <p class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]">
+                City</p>
+            <Dropdown v-model="selectedCity" :opti6ns="cities" class="w-full py-[4px] mt-[10px]" optionLabel="name"
+                      placeholder="Select city"/>
+          </div>
               <div class="w-1/5">
                 <div class="flex justify-between items-center w-full">
-                  <p class="text-primaryText leading-[20px] text-[14px] xl:leading-[24px] xl:text-[16px] font-[600]">City</p>
+                  <p class="text-primaryText leading-[20px] text-[14px] xl:leading-[24px] xl:text-[16px] font-[600]">Stoppage</p>
                 </div>
-                <input type="text" class="focus:outline-none mt-[10px] w-full border border-[#DBDBDB] rounded-[4px] pl-2 py-2 placeholder:text-[#676769] placeholder:leading-[16px] placeholder:text-[12px] xl:placeholder:leading-[20px] xl:placeholder:text-[14px]" placeholder="Enter city name">
+                <input type="text" class="focus:outline-none mt-[10px] w-full border border-[#DBDBDB] rounded-[4px] pl-2 py-2 placeholder:text-[#676769] placeholder:leading-[16px] placeholder:text-[12px] xl:placeholder:leading-[20px] xl:placeholder:text-[14px]" placeholder="Enter stoppage">
               </div>
+
             </div>
           </div>
           <hr class="border-t border-corporateBorder">
@@ -86,7 +93,7 @@
             </div>
           </div>
           <router-link to="/stoppageCityNext" class="flex justify-center items-center gap-x-[10px] lessOpacityCorporateButton">
-            <img src="../assets/svg/save_change.svg" alt="">Save city
+            <img src="../assets/svg/save_change.svg" alt="">Save stoppage
           </router-link>
         </div>
        </div>
@@ -100,7 +107,10 @@
               City
             </th>
             <th scope="col" class="companyTableHead">
-              Status 
+                Stoppage 
+            </th>
+            <th scope="col" class="companyTableHead">
+                Status 
             </th>
             <th scope="col" class="companyTableHead">
               action
@@ -109,7 +119,12 @@
           </thead>
           <tbody>
           <tr class="border-b border-[#EDEDED]">
-            <td class="text-primaryText border-r border-[#DBDBDB] text-center leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px]">Operator name</td>
+            <td class="text-primaryText border-r border-[#DBDBDB] text-center leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px]">
+                City name
+            </td>
+            <td class="text-primaryText border-r border-[#DBDBDB] text-center leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px]">
+                Stoppage name
+            </td>
             <td class="border-r border-[#DBDBDB]">
               <div class="flex justify-center items-center">
                 <p class="companyTableStatus">Active</p>
@@ -123,7 +138,12 @@
           </tr>
 
           <tr class="border-b border-[#EDEDED]">
-            <td class="text-primaryText border-r border-[#DBDBDB] text-center leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px]">Operator name</td>
+            <td class="text-primaryText border-r border-[#DBDBDB] text-center leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px]">
+                City name
+            </td>
+            <td class="text-primaryText border-r border-[#DBDBDB] text-center leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px]">
+                Stoppage name
+            </td>
             <td class="border-r border-[#DBDBDB]">
               <div class="flex justify-center items-center">
                 <p class="companyTableStatusInactive">Inactive</p>
@@ -137,7 +157,12 @@
           </tr>
 
           <tr class="border-b border-[#EDEDED]">
-            <td class="text-primaryText border-r border-[#DBDBDB] text-center leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px]">Operator name</td>
+            <td class="text-primaryText border-r border-[#DBDBDB] text-center leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px]">
+                City name
+            </td>
+            <td class="text-primaryText border-r border-[#DBDBDB] text-center leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px]">
+                Stoppage name
+            </td>
             <td class="border-r border-[#DBDBDB]">
               <div class="flex justify-center items-center">
                 <p class="companyTableStatus">Active</p>
@@ -151,7 +176,12 @@
           </tr>
 
           <tr class="border-b border-[#EDEDED]">
-            <td class="text-primaryText border-r border-[#DBDBDB] text-center leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px]">Operator name</td>
+            <td class="text-primaryText border-r border-[#DBDBDB] text-center leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px]">
+                City name
+            </td>
+            <td class="text-primaryText border-r border-[#DBDBDB] text-center leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px]">
+                Stoppage name
+            </td>
             <td class="border-r border-[#DBDBDB]">
               <div class="flex justify-center items-center">
                 <p class="companyTableStatus">Active</p>
@@ -165,7 +195,12 @@
           </tr>
 
           <tr class="border-b border-[#EDEDED]">
-            <td class="text-primaryText border-r border-[#DBDBDB] text-center leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px]">Operator name</td>
+            <td class="text-primaryText border-r border-[#DBDBDB] text-center leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px]">
+                City name
+            </td>
+            <td class="text-primaryText border-r border-[#DBDBDB] text-center leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px]">
+                Stoppage name
+            </td>
             <td class="border-r border-[#DBDBDB]">
               <div class="flex justify-center items-center">
                 <p class="companyTableStatus">Active</p>
@@ -179,7 +214,12 @@
           </tr>
 
           <tr class="border-b border-[#EDEDED]">
-            <td class="text-primaryText border-r border-[#DBDBDB] text-center leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px]">Operator name</td>
+            <td class="text-primaryText border-r border-[#DBDBDB] text-center leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px]">
+                City name
+            </td>
+            <td class="text-primaryText border-r border-[#DBDBDB] text-center leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px]">
+                Stoppage name
+            </td>
             <td class="border-r border-[#DBDBDB]">
               <div class="flex justify-center items-center">
                 <p class="companyTableStatus">Active</p>
