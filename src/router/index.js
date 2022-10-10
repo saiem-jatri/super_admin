@@ -129,6 +129,7 @@ import SleeperCoachBUsCreate from '@/views/sleeperCoach_bus_create.vue'
 import SleeperCoachBUsCreateActive from '@/views/sleeperCoach_bus_create_active.vue'
 import SleeperCoachCreateFilled from '@/views/sleeperCoach_create_filled.vue'
 import StoppageCity from '@/views/stoppage-city.vue'
+import StoppageCityNext from '@/views/stoppage-city-next.vue'
 
 const router = createRouter({
     history: createWebHistory(import.meta.env.BASE_URL),
@@ -807,6 +808,11 @@ const router = createRouter({
             path: '/stoppageCity',
             name: 'StoppageCity',
             component: StoppageCity
+        },
+        {
+            path: '/stoppageCityNext',
+            name: 'StoppageCityNext',
+            component: StoppageCityNext
         },
     ]
 

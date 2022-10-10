@@ -43,16 +43,19 @@
         <div class="mt-[16px] bg-white rounded-[10px]">
           <div class="p-4 w-1/3">
             <p class="text-corporateSecondaryBlue mb-3">CITY BULK UPLOAD</p>
-            <div>
-              <input id="chooseFile" class="hidden" name="" type="file">
-              <label class="w-full py-8 bg-[#EFF7FD] h-[40px] cursor-pointer border border-dashed border-corporateSecondaryBlue mt-[10px] rounded-[4px] flex justify-center items-center" for="chooseFile">
-                <div class="flex items-center gap-x-[8px]">
-                  <img alt="" class="w-[18px] h-[15px]" src="/src/assets/svg/file.svg">
-                  <p class="text-corporateSecondaryBlue leading-[20px] text-[14px] font-[400]">Upload cities</p>
-                  <p class="text-corporateSecondaryBlue leading-[20px] text-[14px] border-b border-corporateSecondaryBlue font-semibold"> Browse file</p>
+          <div>
+            <div class="w-full py-8 h-[40px] bg-[#EFF7FD] border border-dashed border-corporateSecondaryBlue mt-[10px] rounded-[4px] flex justify-center items-center">
+              <div class="flex justify-between w-full px-4">
+                <div class="flex items-center gap-x-2">
+                  <p class="leading-[20px] xl:leading-[24px] text-[14px] xl:text-[16px] text-primaryText"> File name</p>
+                  <a class="" href="#"><img alt="" class="w-[20px] h-[20px]" src="/src/assets/svg/border-cross.svg"></a>
                 </div>
-              </label>
+                <p class="text-[#E0293B] leading-[20px] text-[14px] font-[600] border-b border-[#E0293B]"> Replace file</p>
+              </div>
+            </div>
+            <p class="text-sm mt-2">*Last updated 20 mins ago</p>
           </div>
+
           </div>
       </div>
 
@@ -85,7 +88,7 @@
               </button>
             </div>
           </div>
-          <router-link to="/stoppageCityNext" class="flex justify-center items-center gap-x-[10px] lessOpacityCorporateButton">
+          <router-link to="" class="flex justify-center items-center gap-x-[10px] corporateButton">
             <img src="../assets/svg/save_change.svg" alt="">Save city
           </router-link>
         </div>
@@ -109,7 +112,7 @@
           </thead>
           <tbody>
           <tr class="border-b border-[#EDEDED]">
-            <td class="text-primaryText border-r border-[#DBDBDB] text-center leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px]">Operator name</td>
+            <td class="text-primaryText border-r border-[#DBDBDB] text-center leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px]">Dhaka</td>
             <td class="border-r border-[#DBDBDB]">
               <div class="flex justify-center items-center">
                 <p class="companyTableStatus">Active</p>
