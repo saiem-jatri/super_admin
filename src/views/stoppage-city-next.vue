@@ -36,7 +36,7 @@
       <div class="border-b border-[#EDEDED]">
           <div class="flex justify-start items-center">
             <router-link to="/stoppageCity" :class="$route.path === '/stoppageCity' ? 'companyOwnerTabActive w-[160px]' : 'companyOwnerTabNonActive w-[160px]' ">City</router-link>
-            <router-link to="" :class="$route.path === '' ? 'companyOwnerTabActive w-[160px]' : 'companyOwnerTabNonActive w-[160px]' ">Stoppage</router-link>
+            <router-link to="/stoppage" :class="$route.path === '/stoppage' ? 'companyOwnerTabActive w-[160px]' : 'companyOwnerTabNonActive w-[160px]' ">Stoppage</router-link>
           </div>
         </div>
 
