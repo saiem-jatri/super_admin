@@ -102,7 +102,7 @@
             <router-link :class="$route.path === '' ? 'activeMenu' : 'menu p-[10px]' " to="">
               Refferel Discount Report
             </router-link>
-            <router-link :class="$route.path === '' ? 'activeMenu' : 'menu p-[10px]' " to="">
+            <router-link :class="$route.path === '/tripWiseExpenseReport' ? 'activeMenu' : 'menu p-[10px]' " to="/tripWiseExpenseReport">
               Trip Wise Eepense
             </router-link>
           </dropdown-menu>
@@ -173,10 +173,7 @@
         </ul>
 
         <p class="menuSection">CONFIGARATION</p>
-        <router-link :class="$route.path === '/bus' ? 'activeMenu' : 'menu border-b border-dashed p-[10px]' "
-                     to="/bus">
-          Bus
-        </router-link>
+        <router-link :class="$route.path === '/bus' ? 'activeMenu' : 'menu border-b border-dashed p-[10px]' " to="/bus">Bus </router-link>
         <router-link :class="$route.path === '/stoppageCity' ? 'activeMenu' : 'menu' " to="/stoppageCity">Stoppage</router-link>
         <router-link :class="$route.path === '' ? 'activeMenu' : 'menu' " to="">Challan Configaration</router-link>
         <router-link :class="$route.path === '' ? 'activeMenu' : 'menu' " to="">Fees</router-link>
