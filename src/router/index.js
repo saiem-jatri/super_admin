@@ -97,6 +97,7 @@ import TotalLogHistory from '@/views/total-log-history.vue'
 import JatriSalesReport from '@/views/jatri-sales-report.vue'
 import BusTypeWiseSales from '@/views/bus-type-wise-sales.vue'
 import UserLogSessionReport from '@/views/user-log-session-report.vue'
+import QuotaSalesReport from '@/views/quota-sales-report.vue'
 import GoodsLuggdeReport from '@/views/goods-luggde-report.vue'
 import CityWiseSalesReport from '@/views/city-wise-sales-report.vue'
 import BusDirectionWiseReport from '@/views/bus-direction-wise-sales-report.vue'
@@ -634,6 +635,11 @@ const router = createRouter({
             path: '/userLogSessionReport',
             name: 'UserLogSessionReport',
             component: UserLogSessionReport,
+        },
+        {
+            path: '/quotaSalesReport',
+            name: 'QuotaSalesReport',
+            component: QuotaSalesReport,
         },
         {
             path: '/goodsLuggdeReport',
