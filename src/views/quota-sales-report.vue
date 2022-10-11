@@ -150,12 +150,67 @@
                   </tr>
                 </thead>
                 <tbody>
-                    <tr class="border-b border-[#EDEDED]">
-                        <td class="text-primaryText border-r border-[#DBDBDB] bg-[#EFF7FD] text-center leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] py-3">
+                    <tr class="border-b border-l border-[#EDEDED]">
+                        <td rowspan="18" class="text-primaryText border-r border-[#DBDBDB] bg-[#EFF7FD] text-center leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] py-3">
+                            Desh Travels
+                        </td>
+                        <td rowspan="2" class="text-primaryText border-r border-[#DBDBDB] text-center leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] py-3">
+                            lI6dFWyA
+                        </td>
+                        <td rowspan="3" class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
+                          19 July 2022
+                        </td>
+                        <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
+                          Arambag
+                        </td>
+                        <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
+                            <div>18 July 2022</div> <div>05:34 PM</div>
+                        </td>
+                        <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
+                            <div>18 July 2022</div> <div>05:34 PM</div>
+                        </td>
+                        <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
+                            3 hours
+                        </td>
+                        <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
+                            Auto log out
+                        </td>
+                        <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
+                            Auto log out
+                        </td>
+                        <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
+                            Auto log out
+                        </td>
+                    </tr>
+                    <tr class="border-b border-l border-[#EDEDED]">
+                        <td class="text-primaryText border-r border-[#DBDBDB] text-center leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] py-3">
                             Desh Travels
                         </td>
                         <td class="text-primaryText border-r border-[#DBDBDB] text-center leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] py-3">
-                        Third-Party
+                            lI6dFWyA
+                        </td>
+                        <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
+                            Arambag
+                        </td>
+                        <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
+                            <div>Alamin</div> <div>01708630439</div>
+                        </td>
+                        <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
+                            <div>18 July 2022</div> <div>05:34 PM</div>
+                        </td>
+                        <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
+                            <div>18 July 2022</div> <div>05:34 PM</div>
+                        </td>
+                        <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
+                            3 hours
+                        </td>
+                    </tr>
+                    <tr class="border-b border-l border-[#EDEDED]">
+                        <td rowspan="2" class="text-primaryText border-r border-[#DBDBDB] text-center leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] py-3">
+                          lI6dFWyA	
+                        </td>
+                        <td class="text-primaryText border-r border-[#DBDBDB] text-center leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] py-3">
+                            lI6dFWyA
                         </td>
                         <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
                             Arambag
@@ -176,6 +231,159 @@
                             Auto log out
                         </td>
                     </tr>
+                    <tr class="border-b border-l border-[#EDEDED]">
+                        <td rowspan="3" class="text-primaryText border-r border-[#DBDBDB] text-center leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] py-3">
+                            Desh Travels
+                        </td>
+                        <td class="text-primaryText border-r border-[#DBDBDB] text-center leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] py-3">
+                            lI6dFWyA
+                        </td>
+                        <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
+                            Arambag
+                        </td>
+                        <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
+                            <div>Alamin</div> <div>01708630439</div>
+                        </td>
+                        <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
+                            <div>18 July 2022</div> <div>05:34 PM</div>
+                        </td>
+                        <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
+                            <div>18 July 2022</div> <div>05:34 PM</div>
+                        </td>
+                        <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
+                            3 hours
+                        </td>
+                        <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
+                            Auto log out
+                        </td>
+                    </tr> 
+                    
+                    <tr class="border-b border-l border-[#EDEDED]">
+                        <td rowspan="3" class="text-primaryText border-r border-[#DBDBDB] text-center leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] py-3">
+                            Desh Travels
+                        </td>
+                        <td class="text-primaryText border-r border-[#DBDBDB] text-center leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] py-3">
+                            lI6dFWyA
+                        </td>
+                        <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
+                            Arambag
+                        </td>
+                        <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
+                            <div>Alamin</div> <div>01708630439</div>
+                        </td>
+                        <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
+                            <div>18 July 2022</div> <div>05:34 PM</div>
+                        </td>
+                        <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
+                            <div>18 July 2022</div> <div>05:34 PM</div>
+                        </td>
+                        <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
+                            3 hours
+                        </td>
+                        <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
+                            Auto log out
+                        </td>
+                    </tr>
+
+                    <tr class="border-b border-l border-[#EDEDED]">
+                        <td class="text-primaryText border-r border-[#DBDBDB] text-center leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] py-3">
+                            Desh Travels
+                        </td>
+                        <td class="text-primaryText border-r border-[#DBDBDB] text-center leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] py-3">
+                            lI6dFWyA
+                        </td>
+                        <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
+                            Arambag
+                        </td>
+                        <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
+                            <div>Alamin</div> <div>01708630439</div>
+                        </td>
+                        <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
+                            <div>18 July 2022</div> <div>05:34 PM</div>
+                        </td>
+                        <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
+                            <div>18 July 2022</div> <div>05:34 PM</div>
+                        </td>
+                        <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
+                            3 hours
+                        </td>
+                    </tr>
+
+                    
+                    <tr class="border-b border-l border-[#EDEDED]">
+                        <td class="text-primaryText border-r border-[#DBDBDB] text-center leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] py-3">
+                            Desh Travels
+                        </td>
+                        <td class="text-primaryText border-r border-[#DBDBDB] text-center leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] py-3">
+                            lI6dFWyA
+                        </td>
+                        <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
+                            Arambag
+                        </td>
+                        <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
+                            <div>Alamin</div> <div>01708630439</div>
+                        </td>
+                        <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
+                            <div>18 July 2022</div> <div>05:34 PM</div>
+                        </td>
+                        <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
+                            <div>18 July 2022</div> <div>05:34 PM</div>
+                        </td>
+                        <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
+                            3 hours
+                        </td>
+                    </tr>
+
+                    
+                    <tr class="border-b border-l border-[#EDEDED]">
+                        <td class="text-primaryText border-r border-[#DBDBDB] text-center leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] py-3">
+                            Desh Travels
+                        </td>
+                        <td class="text-primaryText border-r border-[#DBDBDB] text-center leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] py-3">
+                            lI6dFWyA
+                        </td>
+                        <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
+                            Arambag
+                        </td>
+                        <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
+                            <div>Alamin</div> <div>01708630439</div>
+                        </td>
+                        <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
+                            <div>18 July 2022</div> <div>05:34 PM</div>
+                        </td>
+                        <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
+                            <div>18 July 2022</div> <div>05:34 PM</div>
+                        </td>
+                        <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
+                            3 hours
+                        </td>
+                    </tr>
+
+                    
+                    <tr class="border-b border-l border-[#EDEDED]">
+                        <td class="text-primaryText border-r border-[#DBDBDB] text-center leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] py-3">
+                            Desh Travels
+                        </td>
+                        <td class="text-primaryText border-r border-[#DBDBDB] text-center leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] py-3">
+                            lI6dFWyA
+                        </td>
+                        <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
+                            Arambag
+                        </td>
+                        <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
+                            <div>Alamin</div> <div>01708630439</div>
+                        </td>
+                        <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
+                            <div>18 July 2022</div> <div>05:34 PM</div>
+                        </td>
+                        <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
+                            <div>18 July 2022</div> <div>05:34 PM</div>
+                        </td>
+                        <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
+                            3 hours
+                        </td>
+                    </tr>
+
                 </tbody>
               </table>
             </div>
