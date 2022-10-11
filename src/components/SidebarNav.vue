@@ -30,55 +30,81 @@
 
         <ul class="border-b border-corporateBorder">
           <dropdown-menu height="min-h-[138px]" title="Reports">
-            <router-link :class="$route.path === '/operatorWiseSales' ? 'activeMenu' : 'menu border-b border-dashed p-[10px]' " to="/operatorWiseSales">
+            <router-link
+                :class="$route.path === '/operatorWiseSales' ? 'activeMenu' : 'menu border-b border-dashed p-[10px]' "
+                to="/operatorWiseSales">
               Operator Wise Sales
             </router-link>
-            <router-link :class="$route.path === '/counterWiseSales' ? 'activeMenu' : 'menu border-b border-dashed p-[10px]' " to="/counterWiseSales">
+            <router-link
+                :class="$route.path === '/counterWiseSales' ? 'activeMenu' : 'menu border-b border-dashed p-[10px]' "
+                to="/counterWiseSales">
               Counter Wise Sales
             </router-link>
-            <router-link :class="$route.path === '/userWiseSales' ? 'activeMenu' : 'menu border-b border-dashed p-[10px]' " to="/userWiseSales">User
+            <router-link
+                :class="$route.path === '/userWiseSales' ? 'activeMenu' : 'menu border-b border-dashed p-[10px]' "
+                to="/userWiseSales">User
               Wise Sales
             </router-link>
-            <router-link :class="$route.path === '/routeWiseSales' ? 'activeMenu' : 'menu border-b border-dashed p-[10px]' " to="/routeWiseSales">
+            <router-link
+                :class="$route.path === '/routeWiseSales' ? 'activeMenu' : 'menu border-b border-dashed p-[10px]' "
+                to="/routeWiseSales">
               Route Wise Sales
             </router-link>
-            <router-link :class="$route.path === '/subrouteWiseSales' ? 'activeMenu' : 'menu border-b border-dashed p-[10px]' " to="/subrouteWiseSales">
+            <router-link
+                :class="$route.path === '/subrouteWiseSales' ? 'activeMenu' : 'menu border-b border-dashed p-[10px]' "
+                to="/subrouteWiseSales">
               Sub-Route Wise Sales
             </router-link>
-            <router-link :class="$route.path === '/busWiseSales' ? 'activeMenu' : 'menu border-b border-dashed p-[10px]' " to="/busWiseSales">
+            <router-link
+                :class="$route.path === '/busWiseSales' ? 'activeMenu' : 'menu border-b border-dashed p-[10px]' "
+                to="/busWiseSales">
               Bus Wise Sales
             </router-link>
-            <router-link :class="$route.path === '/tripWiseSales' ? 'activeMenu' : 'menu border-b border-dashed p-[10px]' " to="/tripWiseSales">
+            <router-link
+                :class="$route.path === '/tripWiseSales' ? 'activeMenu' : 'menu border-b border-dashed p-[10px]' "
+                to="/tripWiseSales">
               Trip Wise Sales
             </router-link>
-            <router-link :class="$route.path === '/cancelTripReport' ? 'activeMenu' : 'menu border-b border-dashed p-[10px]' " to="/cancelTripReport">
+            <router-link
+                :class="$route.path === '/cancelTripReport' ? 'activeMenu' : 'menu border-b border-dashed p-[10px]' "
+                to="/cancelTripReport">
               Cancel Trip Report
             </router-link>
-            <router-link :class="$route.path === '/cancelTicketReport' ? 'activeMenu' : 'menu border-b border-dashed p-[10px]' " to="/cancelTicketReport">
+            <router-link
+                :class="$route.path === '/cancelTicketReport' ? 'activeMenu' : 'menu border-b border-dashed p-[10px]' "
+                to="/cancelTicketReport">
               Cancel Ticket Report
             </router-link>
-            <router-link :class="$route.path === '/reserveTicket' ? 'activeMenu' : 'menu border-b border-dashed p-[10px]' " to="/reserveTicket">
+            <router-link
+                :class="$route.path === '/reserveTicket' ? 'activeMenu' : 'menu border-b border-dashed p-[10px]' "
+                to="/reserveTicket">
               Reserve Ticket Report
             </router-link>
-            <router-link :class="$route.path === '/discountReport' ? 'activeMenu' : 'menu p-[10px]' " to="/discountReport">
+            <router-link :class="$route.path === '/discountReport' ? 'activeMenu' : 'menu p-[10px]' "
+                         to="/discountReport">
               Discount Report
             </router-link>
-            <router-link :class="$route.path === '/TripMigrationReport' ? 'activeMenu' : 'menu p-[10px]' " to="/TripMigrationReport">
+            <router-link :class="$route.path === '/TripMigrationReport' ? 'activeMenu' : 'menu p-[10px]' "
+                         to="/TripMigrationReport">
               Trip Migration Report
             </router-link>
-            <router-link :class="$route.path === '/totalLogHistory' ? 'activeMenu' : 'menu p-[10px]' " to="/totalLogHistory">
+            <router-link :class="$route.path === '/totalLogHistory' ? 'activeMenu' : 'menu p-[10px]' "
+                         to="/totalLogHistory">
               Total Log History
             </router-link>
-            <router-link :class="$route.path === '/jatriSalesReport' ? 'activeMenu' : 'menu p-[10px]' " to="/jatriSalesReport">
+            <router-link :class="$route.path === '/jatriSalesReport' ? 'activeMenu' : 'menu p-[10px]' "
+                         to="/jatriSalesReport">
               Jatri Sales Report
             </router-link>
-            <router-link :class="$route.path === '/busTypeWiseSales' ? 'activeMenu' : 'menu p-[10px]' " to="/busTypeWiseSales">
+            <router-link :class="$route.path === '/busTypeWiseSales' ? 'activeMenu' : 'menu p-[10px]' "
+                         to="/busTypeWiseSales">
               Bus Type Wise Sales
             </router-link>
             <router-link :class="$route.path === '' ? 'activeMenu' : 'menu p-[10px]' " to="">
               Insurrance Sales
             </router-link>
-            <router-link :class="$route.path === '/userLogSessionReport' ? 'activeMenu' : 'menu p-[10px]' " to="/userLogSessionReport">
+            <router-link :class="$route.path === '/userLogSessionReport' ? 'activeMenu' : 'menu p-[10px]' "
+                         to="/userLogSessionReport">
               User Log Session Report
             </router-link>
             <router-link :class="$route.path === '' ? 'activeMenu' : 'menu p-[10px]' " to="">
@@ -87,16 +113,20 @@
             <router-link :class="$route.path === '' ? 'activeMenu' : 'menu p-[10px]' " to="">
               Quota Sales Report
             </router-link>
-            <router-link :class="$route.path === '/goodsLuggdeReport' ? 'activeMenu' : 'menu p-[10px]' " to="/goodsLuggdeReport">
+            <router-link :class="$route.path === '/goodsLuggdeReport' ? 'activeMenu' : 'menu p-[10px]' "
+                         to="/goodsLuggdeReport">
               Goods & Luggde Report
             </router-link>
-            <router-link :class="$route.path === '/cityWiseSalesReport' ? 'activeMenu' : 'menu p-[10px]' " to="/cityWiseSalesReport">
+            <router-link :class="$route.path === '/cityWiseSalesReport' ? 'activeMenu' : 'menu p-[10px]' "
+                         to="/cityWiseSalesReport">
               City Wise Sales
             </router-link>
-            <router-link :class="$route.path === '/busDirectionWiseReport' ? 'activeMenu' : 'menu p-[10px]' " to="/busDirectionWiseReport">
+            <router-link :class="$route.path === '/busDirectionWiseReport' ? 'activeMenu' : 'menu p-[10px]' "
+                         to="/busDirectionWiseReport">
               Bus Direction Wise Report
             </router-link>
-            <router-link :class="$route.path === '/challanReport' ? 'activeMenu' : 'menu p-[10px]' " to="/challanReport">
+            <router-link :class="$route.path === '/challanReport' ? 'activeMenu' : 'menu p-[10px]' "
+                         to="/challanReport">
               Challan Report
             </router-link>
             <router-link :class="$route.path === '' ? 'activeMenu' : 'menu p-[10px]' " to="">
@@ -177,9 +207,11 @@
                      to="/bus">
           Bus
         </router-link>
-        <router-link :class="$route.path === '/stoppageCity' ? 'activeMenu' : 'menu' " to="/stoppageCity">Stoppage</router-link>
-        <router-link :class="$route.path === '' ? 'activeMenu' : 'menu' " to="">Challan Configaration</router-link>
-        <router-link :class="$route.path === '' ? 'activeMenu' : 'menu' " to="">Fees</router-link>
+        <router-link :class="$route.path === '/stoppageCity' ? 'activeMenu' : 'menu' " to="/stoppageCity">Stoppage
+        </router-link>
+        <router-link :class="$route.path === '/challan' ? 'activeMenu' : 'menu' " to="/challan">Challan Configaration
+        </router-link>
+        <router-link :class="$route.path === '/fees' ? 'activeMenu' : 'menu' " to="/fees">Fees</router-link>
       </div>
       <button class="p-4 flex justify-center items-center gap-x-4 border-t border-[#DBDBDB]">
         <img alt="" class="h-[16px] w-[16px]" src="../assets/svg/logout.svg"> Logout

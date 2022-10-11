@@ -135,6 +135,10 @@ import StoppageCity from '@/views/stoppage-city.vue'
 import StoppageCityNext from '@/views/stoppage-city-next.vue'
 import Stoppage from '@/views/stoppage.vue'
 import StoppageNext from '@/views/stoppage-next.vue'
+import Challan from '@/views/challan.vue'
+import Fees from '@/views/fees.vue'
+import OperatorCharge from '@/views/operator-charge.vue'
+import SystemUsageBill from '@/views/syatem-usage-bill.vue'
 
 const router = createRouter({
     history: createWebHistory(import.meta.env.BASE_URL),
@@ -660,7 +664,7 @@ const router = createRouter({
             name: 'TripWiseExpenseReport',
             component: TripWiseExpenseReport,
         },
-        
+
         //invoice started
         {
             path: '/invoice',
@@ -843,6 +847,26 @@ const router = createRouter({
             path: '/stoppageNext',
             name: 'StoppageNext',
             component: StoppageNext
+        },
+        {
+            path: '/challan',
+            name: 'Challan',
+            component: Challan
+        },
+        {
+            path: '/fees',
+            name: 'Fees',
+            component: Fees
+        },
+        {
+            path: '/operator',
+            name: 'OperatorCharge',
+            component: OperatorCharge
+        },
+        {
+            path: '/systemUsageBill',
+            name: 'SystemUsageBill',
+            component: SystemUsageBill
         },
     ]
 

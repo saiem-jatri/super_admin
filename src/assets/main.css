@@ -8,9 +8,11 @@ body {
 .webkit-text-center {
     text-align: -webkit-center;
 }
+
 .menu {
     @apply p-2 w-full text-black leading-[20px] text-[14px] font-[500] border-b border-[#DBDBDB] block cursor-pointer last:border-b-0
 }
+
 .activeMenu {
     @apply bg-corporate w-full text-white p-1 px-2 rounded block cursor-pointer text-[14px]
 }
@@ -59,15 +61,22 @@ body {
     @apply text-white leading-[20px] text-[14px] font-[400] bg-corporate rounded-full px-[24px] py-[13px]
 }
 
+.corporateSaveChangeOpacityButton {
+    @apply text-white leading-[20px] text-[14px] font-[400] bg-[#48A43F] rounded-full px-[24px] py-[13px] bg-opacity-30
+}
+
 .lessOpacityCorporateButton {
     @apply text-white leading-[20px] text-[14px] font-[400] bg-corporate bg-opacity-30 rounded-full px-[24px] py-[13px]
 }
+
 .nextStepButton {
     @apply text-white leading-[16px] text-[12px] font-[400] bg-corporate rounded-full px-[24px] py-[13px]
 }
+
 .lessNextStepButton {
     @apply bg-opacity-30 text-white leading-[16px] text-[12px] font-[400] bg-corporate rounded-full px-[24px] py-[13px]
 }
+
 .companyEditButton {
     @apply flex justify-center items-center gap-x-[10px] border border-[#8D8D8F] leading-[16px] text-[12px] font-[500] text-primaryText rounded-full w-[80px] h-[26px] xl:w-[90px] xl:h-[36px]
 }
@@ -128,14 +137,15 @@ body {
     @apply w-[25px] xl:w-[30px] h-[20px] xl:h-[24px] text-center text-white bg-corporate rounded-sm leading-[16px] xl:leading-[20px] text-[12px] xl:text-[14px]
 }
 
-.whiteSeatButton { 
+.whiteSeatButton {
     @apply w-[40px] xl:w-[45px] h-[25px] xl:h-[30px] text-center text-corporate bg-white rounded-sm leading-[16px] xl:leading-[20px] text-[12px] xl:text-[14px]
 }
 
-.noSeatButton { 
+.noSeatButton {
     @apply w-[40px] xl:w-[45px] h-[25px] xl:h-[30px] text-center text-[#676769] bg-[#EDEDED] rounded-sm leading-[16px] xl:leading-[20px] text-[12px] xl:text-[14px]
 }
-.extraSeatButton { 
+
+.extraSeatButton {
     @apply w-[40px] xl:w-[45px] h-[25px] xl:h-[30px] text-center text-white bg-corporate  rounded-sm leading-[16px] xl:leading-[20px] text-[12px] xl:text-[14px]
 }
 
@@ -194,30 +204,39 @@ body {
 .paginationButton {
     @apply px-4 py-3 text-sm xl:text-base leading-[22px] xl:leading-6
 }
+
 .activePaginationButton {
     @apply bg-white border border-corporateBorder rounded px-4 py-3 text-sm xl:text-base leading-[22px] xl:leading-6 font-[600]
 }
+
 .paginationNextButton {
     @apply bg-corporate text-white rounded px-3 py-3 text-sm xl:text-base leading-[22px] xl:leading-6 flex items-center gap-x-3
 }
+
 .tableDetailsButton {
     @apply bg-corporateSecondaryBlue text-white text-xs leading-4 px-[15px] py-1 rounded
 }
+
 .tableDetailsGreyButton {
     @apply bg-[#EDEDED] text-primaryText text-[10px] leading-4 font-[600] px-2 py-1 rounded flex items-center gap-x-[10px]
 }
+
 .blueStatusButton {
     @apply bg-[#EFF7FD] text-primaryText text-[11px] leading-4 font-[600] px-2 py-1 rounded
 }
+
 .violetStatusButton {
     @apply bg-[#F2F0FE] text-[#4633F0] text-[11px] leading-4 font-[600] px-2 py-1 rounded
 }
+
 .greenStatusButton {
     @apply bg-[#E4F4E2] text-primaryText text-[11px] leading-4 font-[600] px-2 py-1 rounded
 }
+
 .skyStatusButton {
     @apply bg-[#DFEEFB] text-primaryText text-[11px] leading-4 font-[600] px-2 py-1 rounded
 }
+
 .orangeStatusButton {
     @apply bg-[#FBE0E3] text-primaryText text-[11px] leading-4 font-[600] px-2 py-1 rounded
 }
