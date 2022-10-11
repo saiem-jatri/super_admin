@@ -142,7 +142,7 @@
                       <div
                           aria-labelledby="modal-headline"
                           aria-modal="true"
-                          class="inline-block align-center bg-white rounded-lg text-left overflow-hidden shadow-xl transform transition-all ease-in-out delay-700 sm:my-8 sm:align-middle w-[648px]"
+                          class="inline-block min-w-[648px] align-center bg-white rounded-lg text-left overflow-hidden shadow-xl transform transition-all ease-in-out delay-700 sm:my-8 sm:align-middle"
                           role="dialog">
                         <div
                             class="w-full px-6 py-4 bg-corporate flex justify-between items-center transition transform ">
@@ -211,7 +211,7 @@
                       <div
                           aria-labelledby="modal-headline"
                           aria-modal="true"
-                          class="inline-block align-center bg-white rounded-lg text-left overflow-hidden shadow-xl transform transition-all ease-in-out delay-700 sm:my-8 sm:align-middle w-[648px]"
+                          class="inline-block min-w-[648px] align-center bg-white rounded-lg text-left overflow-hidden shadow-xl transform transition-all ease-in-out delay-700 sm:my-8 sm:align-middle"
                           role="dialog">
                         <div
                             class="w-full px-6 py-4 bg-corporate flex justify-between items-center transition transform ">
@@ -280,7 +280,7 @@
                       <div
                           aria-labelledby="modal-headline"
                           aria-modal="true"
-                          class="inline-block align-center bg-white rounded-lg text-left overflow-hidden shadow-xl transform transition-all ease-in-out delay-700 sm:my-8 sm:align-middle w-[648px]"
+                          class="inline-block min-w-[648px] align-center bg-white rounded-lg text-left overflow-hidden shadow-xl transform transition-all ease-in-out delay-700 sm:my-8 sm:align-middle"
                           role="dialog">
                         <div
                             class="w-full px-6 py-4 bg-corporate flex justify-between items-center transition transform ">
@@ -349,7 +349,7 @@
                       <div
                           aria-labelledby="modal-headline"
                           aria-modal="true"
-                          class="inline-block align-center bg-white rounded-lg text-left overflow-hidden shadow-xl transform transition-all ease-in-out delay-700 sm:my-8 sm:align-middle w-[648px]"
+                          class="inline-block min-w-[648px] align-center bg-white rounded-lg text-left overflow-hidden shadow-xl transform transition-all ease-in-out delay-700 sm:my-8 sm:align-middle"
                           role="dialog">
                         <div
                             class="w-full px-6 py-4 bg-corporate flex justify-between items-center transition transform ">
@@ -418,7 +418,7 @@
                       <div
                           aria-labelledby="modal-headline"
                           aria-modal="true"
-                          class="inline-block align-center bg-white rounded-lg text-left overflow-hidden shadow-xl transform transition-all ease-in-out delay-700 sm:my-8 sm:align-middle w-[648px]"
+                          class="inline-block min-w-[648px] align-center bg-white rounded-lg text-left overflow-hidden shadow-xl transform transition-all ease-in-out delay-700 sm:my-8 sm:align-middle"
                           role="dialog">
                         <div
                             class="w-full px-6 py-4 bg-corporate flex justify-between items-center transition transform ">
@@ -487,7 +487,7 @@
                       <div
                           aria-labelledby="modal-headline"
                           aria-modal="true"
-                          class="inline-block align-center bg-white rounded-lg text-left overflow-hidden shadow-xl transform transition-all ease-in-out delay-700 sm:my-8 sm:align-middle w-[648px]"
+                          class="inline-block min-w-[648px] align-center bg-white rounded-lg text-left overflow-hidden shadow-xl transform transition-all ease-in-out delay-700 sm:my-8 sm:align-middle"
                           role="dialog">
                         <div
                             class="w-full px-6 py-4 bg-corporate flex justify-between items-center transition transform ">
