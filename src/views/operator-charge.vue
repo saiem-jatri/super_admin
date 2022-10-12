@@ -62,7 +62,7 @@
             <Dropdown
                 v-model="selectedCity"
                 :options="cities"
-                class="w-full p-[1px] mt-[10px] placeholder:text-primaryText placeholder:leading-[16px] placeholder:text-[12px] xl:placeholder:leading-[20px] xl:placeholder:text-[14px]"
+                class="w-full p-[4px] mt-[10px] placeholder:text-primaryText placeholder:leading-[16px] placeholder:text-[12px] xl:placeholder:leading-[20px] xl:placeholder:text-[14px]"
                 optionLabel="name" placeholder="Dash Travels"/>
           </div>
           <div class="w-1/4">
@@ -71,13 +71,23 @@
             <Dropdown
                 v-model="selectedCity"
                 :options="cities"
-                class="w-full p-[1px] mt-[10px] placeholder:text-primaryText placeholder:leading-[16px] placeholder:text-[12px] xl:placeholder:leading-[20px] xl:placeholder:text-[14px]"
+                class="w-full p-[4px] mt-[10px] placeholder:text-primaryText placeholder:leading-[16px] placeholder:text-[12px] xl:placeholder:leading-[20px] xl:placeholder:text-[14px]"
                 optionLabel="name" placeholder="Fixed"/>
           </div>
           <div class="w-1/4">
             <div class="flex justify-between items-center w-full">
               <p class="text-primaryText leading-[20px] text-[14px] xl:leading-[24px] xl:text-[16px] font-[600]">
                 Amount</p>
+            </div>
+            <input
+                class="focus:outline-none mt-[10px] w-full border border-[#DBDBDB] rounded-[4px] pl-2 py-2 placeholder:text-[#676769] placeholder:leading-[16px] placeholder:text-[12px] xl:placeholder:leading-[20px] xl:placeholder:text-[14px]"
+                placeholder="50"
+                type="text">
+          </div>
+          <div class="w-1/4">
+            <div class="flex justify-between items-center w-full">
+              <p class="text-primaryText leading-[20px] text-[14px] xl:leading-[24px] xl:text-[16px] font-[600]">
+                Up to (tk)</p>
             </div>
             <input
                 class="focus:outline-none mt-[10px] w-full border border-[#DBDBDB] rounded-[4px] pl-2 py-2 placeholder:text-[#676769] placeholder:leading-[16px] placeholder:text-[12px] xl:placeholder:leading-[20px] xl:placeholder:text-[14px]"
@@ -107,7 +117,7 @@
               <Dropdown
                   v-model="selectedCity"
                   :options="cities"
-                  class="w-full p-[1px] mt-[10px] placeholder:text-primaryText placeholder:leading-[16px] placeholder:text-[12px] xl:placeholder:leading-[20px] xl:placeholder:text-[14px]"
+                  class="w-full p-[4px] mt-[10px] placeholder:text-primaryText placeholder:leading-[16px] placeholder:text-[12px] xl:placeholder:leading-[20px] xl:placeholder:text-[14px]"
                   optionLabel="name" placeholder="Dash Travels"/>
             </div>
             <div class="w-1/4">
@@ -116,7 +126,7 @@
               <Dropdown
                   v-model="selectedCity"
                   :options="cities"
-                  class="w-full p-[1px] mt-[10px] placeholder:text-primaryText placeholder:leading-[16px] placeholder:text-[12px] xl:placeholder:leading-[20px] xl:placeholder:text-[14px]"
+                  class="w-full p-[4px] mt-[10px] placeholder:text-primaryText placeholder:leading-[16px] placeholder:text-[12px] xl:placeholder:leading-[20px] xl:placeholder:text-[14px]"
                   optionLabel="name" placeholder="Fixed"/>
             </div>
           </div>

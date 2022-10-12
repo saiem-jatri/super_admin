@@ -62,7 +62,7 @@
             <Dropdown
                 v-model="selectedCity"
                 :options="cities"
-                class="w-full p-[1px] mt-[10px] placeholder:text-primaryText placeholder:leading-[16px] placeholder:text-[12px] xl:placeholder:leading-[20px] xl:placeholder:text-[14px]"
+                class="w-full p-[4px] mt-[10px] placeholder:text-primaryText placeholder:leading-[16px] placeholder:text-[12px] xl:placeholder:leading-[20px] xl:placeholder:text-[14px]"
                 optionLabel="name" placeholder="Dash Travels"/>
           </div>
           <div class="w-1/4">
@@ -71,7 +71,7 @@
             <Dropdown
                 v-model="selectedCity"
                 :options="cities"
-                class="w-full p-[1px] mt-[10px] placeholder:text-primaryText placeholder:leading-[16px] placeholder:text-[12px] xl:placeholder:leading-[20px] xl:placeholder:text-[14px]"
+                class="w-full p-[4px] mt-[10px] placeholder:text-primaryText placeholder:leading-[16px] placeholder:text-[12px] xl:placeholder:leading-[20px] xl:placeholder:text-[14px]"
                 optionLabel="name" placeholder="Per seat"/>
           </div>
           <div class="w-1/4">
@@ -107,7 +107,7 @@
               <Dropdown
                   v-model="selectedCity"
                   :options="cities"
-                  class="w-full p-[1px] mt-[10px] placeholder:text-primaryText placeholder:leading-[16px] placeholder:text-[12px] xl:placeholder:leading-[20px] xl:placeholder:text-[14px]"
+                  class="w-full p-[4px] mt-[10px] placeholder:text-primaryText placeholder:leading-[16px] placeholder:text-[12px] xl:placeholder:leading-[20px] xl:placeholder:text-[14px]"
                   optionLabel="name" placeholder="Dash Travels"/>
             </div>
             <div class="w-1/4">
@@ -116,7 +116,7 @@
               <Dropdown
                   v-model="selectedCity"
                   :options="cities"
-                  class="w-full p-[1px] mt-[10px] placeholder:text-primaryText placeholder:leading-[16px] placeholder:text-[12px] xl:placeholder:leading-[20px] xl:placeholder:text-[14px]"
+                  class="w-full p-[4px] mt-[10px] placeholder:text-primaryText placeholder:leading-[16px] placeholder:text-[12px] xl:placeholder:leading-[20px] xl:placeholder:text-[14px]"
                   optionLabel="name" placeholder="Fixed"/>
             </div>
           </div>
