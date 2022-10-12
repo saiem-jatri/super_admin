@@ -21,7 +21,7 @@
       </div>
       <!-- top nav bar end -->
       <!-- body start-->
-      <div class="pt-6 pb-[30px] px-[30px]">
+      <div class="py-6 px-[30px]">
         <p class="xl:leading-[36px] xl:text-[28px] leading-[30px] text-[24px] font-[600]">Sales Summary </p>
 
         <div class="flex justify-between gap-x-[30px] mt-[16px]">

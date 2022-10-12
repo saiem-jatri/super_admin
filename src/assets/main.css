@@ -102,7 +102,7 @@ body {
 }
 
 .createNormalInput {
-    @apply focus:outline-none w-1/4 mt-[10px] w-full border border-[#DBDBDB] rounded-[4px] pl-2 py-[8px] placeholder:text-[#676769] placeholder:leading-[16px] placeholder:text-[10px] xl:placeholder:leading-[20px] xl:placeholder:text-[14px]
+    @apply focus:outline-none w-1/4 mt-[10px] w-full border border-[#DBDBDB] rounded-[4px] pl-2 py-[8px] placeholder:text-[#676769] placeholder:leading-[16px] placeholder:text-[14px] xl:placeholder:leading-[20px] xl:placeholder:text-[14px]
 }
 
 .createNormalInputActive {
