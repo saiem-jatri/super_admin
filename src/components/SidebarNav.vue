@@ -24,10 +24,6 @@
           Configaration
         </router-link>
 
-        <!-- <router-link to="" :class="$route.path === '' ? 'bg-corporate w-full text-white p-1 rounded-sm block cursor-pointer' : 'menu dropDownMenu flex justify-center items-center'">
-          Reports <span><img alt="" class="w-[12px] h-[7px]" src="../assets/svg/down_arrow.svg"></span>
-        </router-link> -->
-
         <ul class="border-b border-corporateBorder">
           <dropdown-menu height="min-h-[138px]" title="Reports">
             <router-link
@@ -138,10 +134,6 @@
           </dropdown-menu>
         </ul>
 
-        <!-- <router-link to="" :class="$route.path === '' ? 'bg-corporate w-full text-white p-1 rounded-sm block cursor-pointer' : 'menu dropDownMenu flex justify-center items-center'">
-          Invoice <span><img alt="" class="w-[12px] h-[7px]" src="../assets/svg/down_arrow.svg"></span>
-        </router-link> -->
-
         <ul class="border-b border-corporateBorder">
           <dropdown-menu height="min-h-[138px]" title="Invoice">
             <router-link :class="$route.path === '/invoice' ? 'activeMenu' : 'menu border-b border-dashed p-[10px]' "
@@ -165,10 +157,6 @@
 
         <router-link :class="$route.path === '/offer' ? 'activeMenu' : 'menu' " to="/offer">Offer & Promotion
         </router-link>
-
-        <!-- <router-link to="" :class="$route.path === '' ? 'bg-corporate w-full text-white p-1 rounded-sm block cursor-pointer' : 'menu dropDownMenu flex justify-center items-center'">
-          Action in Bulk <span><img alt="" class="w-[12px] h-[7px]" src="../assets/svg/down_arrow.svg"></span>
-        </router-link> -->
 
         <ul class="border-b border-corporateBorder">
           <dropdown-menu height="min-h-[138px]" title="Action in Bulk">

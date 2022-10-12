@@ -31,8 +31,6 @@
             </div>
           </div>
           <div class="flex gap-x-[24px] p-4 w-1/2 justify-end items-center pr-2 ">
-            <!--            <input type="text" class="w-[270px] h-[40px] border border-[#DBDBDB] placeholder:text-[#4D4D4F] placeholder:text-[14px] leading-[20px] rounded-[4px] pl-8 focus:outline-none" placeholder="PNR or mobile number">-->
-            <!--            <img src="../assets/svg/search.svg" class="h-5 w-5 absolute left-[242px]" alt="">-->
             <div
                 class="w-[200px] h-[30px] xl:w-[270px] xl:h-[40px] border border-[#DBDBDB] flex justify-center items-center leading-[20px] rounded-[4px] pl-[9px] overflow-hidden">
               <img alt="" class="h-2 w-2 xl:h-5 xl:w-5" src="../assets/svg/search.svg">
@@ -92,7 +90,7 @@
                       Different display name</p>
                     <img alt="" class="w-[9px] h-[24px]" src="../assets/svg/smallStar.svg">
                   </div>
-                  <input class="createNormalInput" placeholder="Enter company name" type="text">
+                  <input class="createNormalInput" placeholder="Enter different company name" type="text">
                 </div>
 
                 <div class="w-1/4">
@@ -101,7 +99,7 @@
                       Company mobile number</p>
                     <img alt="" class="w-[9px] h-[24px]" src="../assets/svg/smallStar.svg">
                   </div>
-                  <input class="createNormalInput" placeholder="Enter company name" type="text">
+                  <input class="createNormalInput" placeholder="Enter company mobile name" type="text">
                 </div>
 
                 <div class="w-1/4">
@@ -110,7 +108,7 @@
                       Contact person</p>
                     <img alt="" class="w-[9px] h-[24px]" src="../assets/svg/smallStar.svg">
                   </div>
-                  <input class="createNormalInput" placeholder="Enter company name" type="text">
+                  <input class="createNormalInput" placeholder="Enter contact person" type="text">
                 </div>
               </div>
               <!--          2nd grid-->
@@ -119,28 +117,28 @@
                   <p class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]">
                     Print type</p>
                   <Dropdown v-model="selectedCity" :options="cities" class="w-full py-[4px] mt-[10px]"
-                            optionLabel="name" placeholder="Select a City"/>
+                            optionLabel="name" placeholder="Select print type"/>
                 </div>
 
                 <div class="w-1/4 relative">
                   <p class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]">
-                    Print type</p>
+                    Max seat per ticekt</p>
                   <Dropdown v-model="selectedCity" :options="cities" class="w-full py-[4px] mt-[10px]"
-                            optionLabel="name" placeholder="Select a City"/>
+                            optionLabel="name" placeholder="Enter max seat per ticket"/>
                 </div>
 
                 <div class="w-1/4 relative">
                   <p class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]">
-                    Print type</p>
+                    Fare type</p>
                   <Dropdown v-model="selectedCity" :options="cities" class="w-full py-[4px] mt-[10px]"
-                            optionLabel="name" placeholder="Select a City"/>
+                            optionLabel="name" placeholder="Select fare type"/>
                 </div>
 
                 <div class="w-1/4 relative">
                   <p class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]">
-                    Print type</p>
+                    Allow pass</p>
                   <Dropdown v-model="selectedCity" :options="cities" class="w-full py-[4px] mt-[10px]"
-                            optionLabel="name" placeholder="Select a City"/>
+                            optionLabel="name" placeholder="Select option"/>
                 </div>
               </div>
               <!--          3rd grid-->
@@ -149,28 +147,28 @@
                   <p class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]">
                     Allow coach details</p>
                   <Dropdown v-model="selectedCity" :opti6ns="cities" class="w-full py-[4px] mt-[10px]"
-                            optionLabel="name" placeholder="Select a City"/>
+                            optionLabel="name" placeholder="Select option"/>
                 </div>
 
                 <div class="w-1/4 relative">
                   <p class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]">
                     Allow farewise report</p>
                   <Dropdown v-model="selectedCity" :options="cities" class="w-full py-[4px] mt-[10px]"
-                            optionLabel="name" placeholder="Select a City"/>
+                            optionLabel="name" placeholder="Select option"/>
                 </div>
 
                 <div class="w-1/4 relative">
                   <p class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]">
                     Allow coachwise trip</p>
                   <Dropdown v-model="selectedCity" :options="cities" class="w-full py-[4px] mt-[10px]"
-                            optionLabel="name" placeholder="Select a City"/>
+                            optionLabel="name" placeholder="Select option"/>
                 </div>
 
                 <div class="w-1/4 relative">
                   <p class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]">
                     Allow refund</p>
                   <Dropdown v-model="selectedCity" :options="cities" class="w-full py-[4px] mt-[10px]"
-                            optionLabel="name" placeholder="Select a City"/>
+                            optionLabel="name" placeholder="Select option"/>
                 </div>
               </div>
               <!--          4th grid-->
@@ -179,28 +177,28 @@
                   <p class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]">
                     Allow due</p>
                   <Dropdown v-model="selectedCity" :options="cities" class="w-full py-[4px] mt-[10px]"
-                            optionLabel="name" placeholder="Select a City"/>
+                            optionLabel="name" placeholder="Select option"/>
                 </div>
 
                 <div class="w-1/4 relative">
                   <p class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]">
                     Allow referral</p>
                   <Dropdown v-model="selectedCity" :options="cities" class="w-full py-[4px] mt-[10px]"
-                            optionLabel="name" placeholder="Select a City"/>
+                            optionLabel="name" placeholder="Select option"/>
                 </div>
 
                 <div class="w-1/4 relative">
                   <p class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]">
                     Reservation status</p>
                   <Dropdown v-model="selectedCity" :options="cities" class="w-full py-[4px] mt-[10px]"
-                            optionLabel="name" placeholder="Select a City"/>
+                            optionLabel="name" placeholder="Select option"/>
                 </div>
 
                 <div class="w-1/4 relative">
                   <p class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]">
                     Allow discount</p>
                   <Dropdown v-model="selectedCity" :options="cities" class="w-full py-[4px] mt-[10px]"
-                            optionLabel="name" placeholder="Select a City"/>
+                            optionLabel="name" placeholder="Select option"/>
                 </div>
               </div>
               <!--          5th grid-->
@@ -209,7 +207,7 @@
                   <p class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]">
                     Allow net pay edit</p>
                   <Dropdown v-model="selectedCity" :options="cities" class="w-full py-[4px] mt-[10px]"
-                            optionLabel="name" placeholder="Select a City"/>
+                            optionLabel="name" placeholder="Select option"/>
                 </div>
                 <div class="w-1/4">
                   <div class="flex justify-between items-center w-full">
@@ -217,7 +215,7 @@
                       Allowable goods weight</p>
                   </div>
                   <input class="focus:outline-none mt-[10px] w-full border border-[#DBDBDB] rounded-[4px] pl-2 py-2 placeholder:text-[#676769] placeholder:leading-[20px] placeholder:text-[14px]"
-                         placeholder="Enter company name"
+                         placeholder="Enter allowable goods weight"
                          type="text">
                 </div>
 
@@ -227,7 +225,7 @@
                       Overweight goods charge per KG</p>
                   </div>
                   <input class="focus:outline-none mt-[10px] w-full border border-[#DBDBDB] rounded-[4px] pl-2 py-2 placeholder:text-[#676769] placeholder:leading-[20px] placeholder:text-[14px]"
-                         placeholder="Enter company name"
+                         placeholder="Enter overweight goods charge per kg"
                          type="text">
                 </div>
 
@@ -236,7 +234,7 @@
                   <p class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]">
                     Allow qouta</p>
                   <Dropdown v-model="selectedCity" :options="cities" class="w-full py-[4px] mt-[10px]"
-                            optionLabel="name" placeholder="Select a City"/>
+                            optionLabel="name" placeholder="Select option"/>
                 </div>
               </div>
               <!--          6th grid-->
@@ -245,14 +243,14 @@
                   <p class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]">
                     Allow digital ticketing</p>
                   <Dropdown v-model="selectedCity" :options="cities" class="w-full py-[4px] mt-[10px]"
-                            optionLabel="name" placeholder="Select a City"/>
+                            optionLabel="name" placeholder="Select option"/>
                 </div>
 
                 <div class="w-1/4 relative">
                   <p class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]">
                     Multiple owner (if any)</p>
                   <Dropdown v-model="selectedCity" :options="cities" class="w-full py-[4px] mt-[10px]"
-                            optionLabel="name" placeholder="Select a City"/>
+                            optionLabel="name" placeholder="Select option"/>
                 </div>
 
                 <div class="w-1/4">
@@ -261,7 +259,7 @@
                       Complain number</p>
                   </div>
                   <input class="focus:outline-none mt-[10px] w-full border border-[#DBDBDB] rounded-[4px] pl-2 py-2 placeholder:text-[#676769] placeholder:leading-[20px] placeholder:text-[14px]"
-                         placeholder="Enter company name"
+                         placeholder="Enter complain number"
                          type="text">
                 </div>
 
@@ -272,42 +270,41 @@
                       Facebook link</p>
                   </div>
                   <input class="focus:outline-none mt-[10px] w-full border border-[#DBDBDB] rounded-[4px] pl-2 py-2 placeholder:text-[#676769] placeholder:leading-[20px] placeholder:text-[14px]"
-                         placeholder="Enter company name"
+                         placeholder="Enter facebook link"
                          type="text">
                 </div>
               </div>
               <!--          7th grid-->
               <div class="flex gap-x-[16px] justify-center items-center mt-[16px]">
-                <div class="w-1/5 xl:w-1/4">
+                <div class="w-1/4">
                   <p class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]">
                     Auto renewal trips</p>
                   <div
                       class="w-full mt-[10px] h-[40px] border border-[#DBDBDB] flex justify-between items-center leading-[20px] rounded-[4px] overflow-hidden divide-x">
                     <div class="flex justify-between items-center">
-                      <div class="flex justify-between items-center w-[115px] md:w-[180px] 2xl:w-[250px]">
+                      <div class="flex justify-between items-center w-[115px] md:w-[130px] 2xl:w-[250px]">
                         <select
                             aria-label="Default select example"
-                            class="form-select appearance-none w-full block px-3 pl-[22px] py-1.5 text-base bg-white rounded focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none">
+                            class="form-select appearance-none w-full block px-2 py-1.5 text-base bg-white rounded focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none">
                           <option selected>3</option>
                           <option value="1">One</option>
                           <option value="2">Two</option>
                           <option value="3">Three</option>
                         </select>
-                        <img alt="" class="w-[12px] h-5 ml-10" src="../assets/svg/down_arrow.svg">
+                        <img alt="" class="w-[12px] h-5 ml-10 mr-1" src="../assets/svg/down_arrow.svg">
                       </div>
                     </div>
                     <p class="p-4 text-[#676769] leading-[20px] text-[14px] font-[400]">Days</p>
                   </div>
-
                 </div>
 
                 <div class="w-1/4">
                   <p class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]">
                     Trail start date</p>
                   <div
-                      class="w-full h-[40px] border border-[#DBDBDB] flex justify-between items-center mt-[10px] leading-[20px] rounded-[4px] px-[20px] xl:px-[8px] overflow-hidden">
-                    <input class="outline-none pl-2 placeholder:text-[#4D4D4F] placeholder:text-[14px] placeholder:leading-[20px]"
-                           placeholder="Select trail end date"
+                      class="w-full h-[40px] border border-[#DBDBDB] flex justify-between items-center mt-[10px] leading-[20px] rounded-[4px] px-2 overflow-hidden">
+                    <input class="outline-none placeholder:text-[#4D4D4F] placeholder:text-[14px] placeholder:leading-[20px]"
+                           placeholder="Select trail start date"
                            type="text">
                     <img alt="" class="h-5 w-5" src="../assets/svg/count2.svg">
                   </div>
@@ -317,8 +314,8 @@
                   <p class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]">
                     Trail end date</p>
                   <div
-                      class="w-full h-[40px] border border-[#DBDBDB] flex justify-between items-center mt-[10px] leading-[20px] rounded-[4px] px-[20px] xl:px-[8px] overflow-hidden">
-                    <input class="outline-none pl-2 placeholder:text-[#4D4D4F] placeholder:text-[14px] placeholder:leading-[20px]"
+                      class="w-full h-[40px] border border-[#DBDBDB] flex justify-between items-center mt-[10px] leading-[20px] rounded-[4px] px-2 overflow-hidden">
+                    <input class="outline-none placeholder:text-[#4D4D4F] placeholder:text-[14px] placeholder:leading-[20px]"
                            placeholder="Select trail end date"
                            type="text">
                     <img alt="" class="h-5 w-5" src="../assets/svg/count2.svg">
@@ -332,21 +329,19 @@
                   <div class="py-[2px] border border-[#DBDBDB] mt-[10px] rounded-[4px] leading-[20px]">
                     <div class="w-full h-[35px] flex justify-between items-center overflow-hidden divide-x">
                       <input
-                          class="p-4 text-[#676769] leading-[20px] text-[14px] font-[400] w-2/5 placeholder:text-primaryText focus:outline-none"
+                          class="px-2 py-4 text-[#676769] leading-[20px] text-[14px] font-[400] w-2/5 placeholder:text-primaryText focus:outline-none"
                           placeholder="Days">
                       <div class="p-2 w-3/5 ">
                         <div class="flex justify-between xl:gap-x-2 items-center bg-[#F7F7F7] xl:px-2">
-                          <select aria-label="Default select example"
-                                  class="form-selectpy-1 text-base bg-[#F7F7F7] rounded focus:outline-none xl:w-full">
-                            <option class="leading-[16px] xl:leading-[20px] text-[10px] xl:text-[14px] font-[500]"
-                                    selected>
+                          <select class="py-1 text-base bg-[#F7F7F7] rounded focus:outline-none xl:w-full leading-[16px] xl:leading-[20px] text-[10px] xl:text-[14px] font-[500]">
+                            <option selected>
                               Percentage %
                             </option>
                             <option value="1">One</option>
                             <option value="2">Two</option>
                             <option value="3">Three</option>
                           </select>
-                          <img alt="" class="w-[12px] h-5" src="../assets/svg/down_arrow.svg">
+                          <img alt="" class="w-[10px] xl:w-[12px] h-5" src="../assets/svg/down_arrow.svg">
                         </div>
                       </div>
 
@@ -358,18 +353,23 @@
               </div>
               <!--          8th grid-->
               <div class="flex gap-x-[16px]  items-center mt-[16px]">
-                <div class="w-1/4 relative">
+                <div class="w-[24.2%] relative">
                   <p class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]">
                     Challan type</p>
                   <Dropdown v-model="selectedCity" :opti6ns="cities" class="w-full py-[4px] mt-[10px]"
-                            optionLabel="name" placeholder="Select a City"/>
+                            optionLabel="name" placeholder="Select challan type"/>
                 </div>
 
-                <div class="w-1/4 relative">
+                <div class="w-[24.2%]">
                   <p class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]">
                     Ticket holding time</p>
-                  <Dropdown v-model="selectedCity" :options="cities" class="w-full py-[4px] mt-[10px]"
-                            optionLabel="name" placeholder="Select a City"/>
+                  <div
+                      class="w-full mt-[10px] h-[40px] border border-[#DBDBDB] flex justify-between items-center leading-[20px] rounded-[4px] overflow-hidden divide-x">
+                    <div class="flex justify-between items-center">
+                        <input class="focus:outline-none w-full rounded-[4px] pl-2 py-2 placeholder:text-[#676769] placeholder:leading-[20px] placeholder:text-[14px]" type="text" placeholder="Enter holding time">
+                    </div>
+                    <p class="p-4 text-[#676769] leading-[20px] text-[14px] font-[400]">min</p>
+                  </div>
                 </div>
 
               </div>
@@ -380,27 +380,29 @@
           <div class="border-b border-[#DBDBDB]">
             <div class="p-[16px]">
               <p class="text-corporateSecondaryBlue leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]">
-                Default trip order</p>
+                TRIP PERMISSION</p>
               <div class="mt-[16px] flex gap-x-[16px] items-center">
                 <div class="w-1/2 xl:w-1/4">
-                  <p class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[500]">
-                    Multiple owner (if any)</p>
-                  <!--              <div class="flex justify-center items-center mt-[10px]">-->
-                  <!--                  <button class="w-1/2 bg-corporate bg-opacity-30 text-white leading-[20px] text-[14px] flex justify-center items-center font-[400] h-[40px] rounded-l-[4px]">Ascending</button>-->
-                  <!--                <button class="w-1/2 bg-white text-[#676769] leading-[20px] text-[14px] border border-[#DBDBDB] flex justify-center items-center font-[400] h-[40px] rounded-r-[4px]">Descending</button>-->
-                  <!--              </div>-->
-                  <!--              dummy-->
+                  <p class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]">
+                    Default trip order</p>
                   <div class="mt-[10px]">
-                    <SelectButton v-model="selectedCity" :options="cities" optionLabel="name">
-
-                    </SelectButton>
+                    <div class="flex justify-center items-center mt-[10px]">
+                      <button
+                          class="w-1/2 bg-corporate text-white leading-[20px] text-[14px] flex justify-center items-center font-[400] h-[40px] rounded-l-[4px]">
+                          Ascending 
+                      </button>
+                      <button
+                          class="w-1/2 bg-white text-[#676769] leading-[20px] text-[14px] border border-[#DBDBDB] flex justify-center items-center font-[400] h-[40px] rounded-r-[4px]">
+                          Descending
+                      </button>
+                    </div>
                   </div>
                 </div>
                 <div class="w-1/4">
-                  <p class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[500]">
-                    Multiple owner (if any)</p>
+                  <p class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]">
+                    Time to show in trip list</p>
                   <Dropdown v-model="selectedCity" :options="cities" class="w-full py-[4px] mt-[10px]"
-                            optionLabel="name" placeholder="Select a City"/>
+                            optionLabel="name" placeholder="Select option"/>
                 </div>
 
               </div>
@@ -475,20 +477,20 @@
                   <p class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]">
                     Required phone</p>
                   <Dropdown v-model="selectedCity" :opti6ns="cities" class="w-full py-[4px] mt-[10px]"
-                            optionLabel="name" placeholder="Select a City"/>
+                            optionLabel="name" placeholder="Select option"/>
                 </div>
 
                 <div class="w-1/4">
                   <p class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]">
                     Allow SMS</p>
                   <Dropdown v-model="selectedCity" :options="cities" class="w-full py-[4px] mt-[10px]"
-                            optionLabel="name" placeholder="Select a City"/>
+                            optionLabel="name" placeholder="Select option"/>
                 </div>
               </div>
             </div>
           </div>
           <!--          6th section start-->
-          <div class="border-b-2 border-[#DBDBDB]">
+          <div class="border-b border-[#DBDBDB]">
             <div class="p-[16px]">
               <div class="border-b border-dashed border-corporateBorder py-[16px]">
                 <p class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]">Terms
@@ -509,7 +511,7 @@
               </div>
 
 
-              <p class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]">
+              <p class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600] pt-[16px]">
                 Cancellation policy</p>
               <textarea id="" class="w-full mt-[18px] border border-corporateBorder rounded-[4px] p-[8px] focus:outline-none placeholder:text-[#676769] placeholder:leading-[20px] placeholder:text-[14px]" cols="30" name=""
                         placeholder="Enter cancellation policy"

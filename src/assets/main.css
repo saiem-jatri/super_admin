@@ -26,15 +26,15 @@ body {
 }
 
 .smallTableHead {
-    @apply leading-[16px] text-[10px] xl:leading-[20px] xl:text-[12px] font-[400] text-primaryText text-left w-1/3
+    @apply leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-primaryText text-left w-1/3
 }
 
 .smallTableInnerDiv {
-    @apply w-full flex justify-between py-[8px] pl-[8px] pr-[16px] mt-[12px] rounded-[4px]
+    @apply w-full flex justify-between py-[8px] pl-[8px] pr-[16px] mt-[8px] rounded-[4px]
 }
 
 .smallTableBody {
-    @apply leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px] font-[500] text-primaryText text-center w-1/3
+    @apply leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[500] text-primaryText text-center w-1/3
 }
 
 .smallTableGreenFooter {
@@ -42,7 +42,7 @@ body {
 }
 
 .DashBoardTableHead {
-    @apply leading-[12px] text-[9px] xl:leading-[16px] xl:text-[11px] font-[500] text-corporateAsh text-center py-2
+    @apply leading-[12px] text-[9px] xl:leading-[16px] xl:text-[11px] font-[500] text-corporateAsh text-center py-2 uppercase
 }
 
 .DashBoardTableTd {
@@ -102,7 +102,7 @@ body {
 }
 
 .createNormalInput {
-    @apply focus:outline-none w-1/4 mt-[10px] w-full border border-[#DBDBDB] rounded-[4px] pl-2 py-[8px] placeholder:text-[#676769] placeholder:leading-[16px] placeholder:text-[10px] xl:placeholder:leading-[20px] xl:placeholder:text-[14px]
+    @apply focus:outline-none w-1/4 mt-[10px] w-full border border-[#DBDBDB] rounded-[4px] pl-2 py-[8px] placeholder:text-[#676769] placeholder:leading-[16px] placeholder:text-[14px] xl:placeholder:leading-[20px] xl:placeholder:text-[14px]
 }
 
 .createNormalInputActive {

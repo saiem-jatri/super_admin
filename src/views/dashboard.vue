@@ -21,23 +21,23 @@
       </div>
       <!-- top nav bar end -->
       <!-- body start-->
-      <div class="p-[30px]">
-        <p class="xl:leading-[36px] xl:text-[28px] leading-[30px] text-[24px] font-[500]">Sales Summary </p>
+      <div class="py-6 px-[30px]">
+        <p class="xl:leading-[36px] xl:text-[28px] leading-[30px] text-[24px] font-[600]">Sales Summary </p>
 
         <div class="flex justify-between gap-x-[30px] mt-[16px]">
           <!-- 1st small table -->
           <div class="w-1/3 bg-white rounded-[6px] p-[16px]">
             <div class="flex w-full justify-between">
-              <p class="text-primaryText leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px] font-[600]">Today’s
+              <p class="text-primaryText leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px] font-[600] mb-1">Today’s
                 Total Sales Count</p>
               <img alt="" class="w-[12px] h-[12px] xl:w-[16.67px] xl:h-[16.67px]" src="../assets/svg/count.svg">
             </div>
 
             <div class="smallTableInnerDiv bg-[#F1F9F1]">
               <p class="w-1/3"></p>
-              <p class="leading-[16px] text-[10px] xl:leading-[20px] xl:text-[13px] font-[400] text-primaryText text-center w-1/3">
+              <p class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-primaryText text-center w-1/3">
                 Count</p>
-              <p class="leading-[16px] text-[10px] xl:leading-[20px] xl:text-[13px] font-[400] text-primaryText text-center w-1/3">
+              <p class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-primaryText text-center w-1/3">
                 Amount</p>
             </div>
 
@@ -83,7 +83,7 @@
               <p class="smallTableBody">5000000 TK</p>
             </div>
 
-            <div class="bg-[#48A43F] text-white w-full flex justify-between py-[8px] px-[16px] mt-[8px] rounded-[4px]">
+            <div class="bg-[#48A43F] text-white w-full flex justify-between p-2 mt-[8px] rounded-[4px]">
               <p class="smallTableGreenFooter text-left">Total</p>
               <p class="smallTableGreenFooter text-center">999999</p>
               <p class="smallTableGreenFooter text-center">5000000 TK</p>
@@ -92,14 +92,14 @@
           <!-- 2nd small table -->
           <div class="w-1/3 bg-white rounded-[6px] p-[16px]">
             <div class="flex w-full justify-between">
-              <p class="text-primaryText leading-[20px] text-[14px] font-[600]">Last Week Total Sales Count</p>
+              <p class="text-primaryText leading-[20px] text-[14px] font-[600] mb-1">Last Week Total Sales Count</p>
               <img alt="" class="w-[16.67px] h-[16.67px]" src="../assets/svg/count2.svg">
             </div>
 
             <div class="smallTableInnerDiv bg-[#EFF7FD]">
               <p class="w-1/3"></p>
-              <p class="leading-[20px] text-[13px] font-[400] text-primaryText text-center w-1/3">Count</p>
-              <p class="leading-[20px] text-[13px] font-[400] text-primaryText text-center w-1/3">Amount</p>
+              <p class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-primaryText text-center w-1/3">Count</p>
+              <p class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-primaryText text-center w-1/3">Amount</p>
             </div>
 
             <div class="smallTableInnerDiv bg-[#EFF7FD]">
@@ -145,7 +145,7 @@
             </div>
 
             <div
-                class="bg-corporateSecondaryBlue text-white w-full flex justify-between py-[8px] px-[16px] mt-[8px] rounded-[4px]">
+                class="bg-corporateSecondaryBlue text-white w-full flex justify-between p-2 mt-[8px] rounded-[4px]">
               <p class="smallTableGreenFooter text-left">Total Amount</p>
               <p class="smallTableGreenFooter text-center">999999</p>
               <p class="smallTableGreenFooter text-center">5000000 TK</p>
@@ -156,14 +156,14 @@
 
           <div class="w-1/3 bg-white rounded-[6px] p-[16px] relative">
             <div class="flex w-full justify-between">
-              <p class="text-primaryText leading-[20px] text-[14px] font-[600]">Online Sales Breakdown</p>
+              <p class="text-primaryText leading-[20px] text-[14px] font-[600] mb-1">Online Sales Breakdown</p>
               <img alt="" class="w-[16.67px] h-[16.67p bg-[#F2F0FE]x]" src="../assets/svg/count3.svg">
             </div>
 
             <div class="smallTableInnerDiv bg-[#F2F0FE]">
               <p class="w-1/3"></p>
               <p class="w-1/3"></p>
-              <p class="leading-[20px] text-[13px] font-[400] text-primaryText text-center w-1/3">Count</p>
+              <p class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-primaryText text-center w-1/3">Count</p>
             </div>
 
 
@@ -199,7 +199,7 @@
 
 
             <div
-                class="absolute bottom-3 left-2 right-2 w-[95%] bg-[#4633F0] text-white flex justify-between py-[8px] px-[16px] mt-[8px] rounded-[4px]">
+                class="absolute bottom-3 left-2 right-2 w-[95%] bg-[#4633F0] text-white flex justify-between p-2 mt-[8px] rounded-[4px]">
               <p class="smallTableGreenFooter text-left">Total Amount</p>
               <p class="smallTableGreenFooter text-center">999999</p>
               <p class="smallTableGreenFooter text-center">5000000 TK</p>
