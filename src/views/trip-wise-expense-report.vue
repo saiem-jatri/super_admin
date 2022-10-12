@@ -109,294 +109,207 @@
                   </span>Export
               </button>
             </div>
-            <div class="bg-white rounded-[8px] mt-4 overflow-x-scroll">
-              <!-- table start -->
-              <table class="min-w-full">
-                <col>
-                <colgroup span="5"></colgroup>
-                <colgroup span="5"></colgroup>
-                <tr class="bg-[#4D4D4F] h-[36px] border-b border-[#FFFFFF]">
-                    <th class="companyTableHead" style="border-radius: 6px 0 0 0" colspan="5" scope="colgroup">OLD</th>
-                    <th class="companyTableHead" style="border-radius: 0 0 0 0" colspan="5" scope="colgroup">NEW</th>
-                    <th class="companyTableHead" style="border-radius: 0 6px 0 0" colspan="5" scope="colgroup">other information</th>
-                </tr>
-                <tr>
-                    <th class="companyTableHead py-[6px]" scope="col">trip</th>
-                    <th class="companyTableHead py-[6px]" scope="col">pnr</th>
-                    <th class="companyTableHead py-[6px]" scope="col">seat</th>
-                    <th class="companyTableHead py-[6px]" scope="col">fare</th>
-                    <th class="companyTableHead py-[6px]" scope="col">journey date</th>
-                    <th class="companyTableHead py-[6px]" scope="col">trip</th>
-                    <th class="companyTableHead py-[6px]" scope="col">pnr</th>
-                    <th class="companyTableHead py-[6px]" scope="col">seat</th>
-                    <th class="companyTableHead py-[6px]" scope="col">fare</th>
-                    <th class="companyTableHead py-[6px]" scope="col">journey date</th>
+            <div class="bg-white rounded-[8px] mt-4">
+                <table class="min-w-full">
+                    <thead>
+                        <tr>
+                            <th class="companyTableHead py-[6px]" rowspan="2">counter</th>
+                            <th class="companyTableHead pt-1" colspan="3">income</th>
+                            <th class="companyTableHead pt-1" colspan="3">expense</th>
+                            <th class="companyTableHead py-[6px]" rowspan="2">last updated by</th>
+                            <th class="companyTableHead py-[6px]" rowspan="2">last updated On</th>
+                        </tr>
+                        <tr>
+                            <th class="companyTableHead py-1 border-t border-white">ac</th>
+                            <th class="companyTableHead py-1 border-t border-white">non ac</th>
+                            <th class="companyTableHead py-1 border-t border-white">goods</th>
+                            <th class="companyTableHead py-1 border-t border-white">trip expense</th>
+                            <th class="companyTableHead py-1 border-t border-white">commission</th>
+                            <th class="companyTableHead py-1 border-t border-white">discount</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="border-b border-[#EDEDED]">
+                            <td class="text-primaryText border-r border-[#DBDBDB] text-center leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] py-3">
+                                Arambag
+                            </td>
+                            <td class="text-primaryText border-r border-[#DBDBDB] webkit-text-center leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] py-3">
+                                3500 TK
+                            </td>
+                            <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
+                                3500 TK
+                            </td>
+                            <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
+                                3500 TK
+                            </td>
+                            <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
+                                3500 TK
+                            </td>
+                            <td class="text-primaryText border-r border-[#DBDBDB] text-center leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] py-3">
+                                3500 TK
+                            </td>
+                            <td class="text-primaryText border-r border-[#DBDBDB] webkit-text-center leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] py-3">
+                                3500 TK
+                            </td>
+                            <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
+                                Labiba Counterman 
+                            </td>
+                            <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
+                                <div>19 July 2022 </div> <div>09:45 AM</div>
+                            </td>
+                        </tr>
 
-                    <th class="companyTableHead py-[6px]" scope="col">passenger name & mobile</th>
-                    <th class="companyTableHead py-[6px]" scope="col">issued counter</th>
-                    <th class="companyTableHead py-[6px]" scope="col">discount</th>
-                    <th class="companyTableHead py-[6px]" scope="col">migrated by</th>
-                    <th class="companyTableHead py-[6px]" scope="col">migrated on</th>
-                </tr>
+                        <tr class="border-b border-[#EDEDED]">
+                            <td class="text-primaryText border-r border-[#DBDBDB] text-center leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] py-3">
+                                Arambag
+                            </td>
+                            <td class="text-primaryText border-r border-[#DBDBDB] webkit-text-center leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] py-3">
+                                3500 TK
+                            </td>
+                            <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
+                                3500 TK
+                            </td>
+                            <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
+                                3500 TK
+                            </td>
+                            <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
+                                3500 TK
+                            </td>
+                            <td class="text-primaryText border-r border-[#DBDBDB] text-center leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] py-3">
+                                3500 TK
+                            </td>
+                            <td class="text-primaryText border-r border-[#DBDBDB] webkit-text-center leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] py-3">
+                                3500 TK
+                            </td>
+                            <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
+                                Labiba Counterman 
+                            </td>
+                            <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
+                                <div>19 July 2022 </div> <div>09:45 AM</div>
+                            </td>
+                        </tr>
 
-                <tr class="border-b border-[#EDEDED]">
-                    <td class="text-primaryText border-r border-[#DBDBDB] text-center leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] py-3">
-                        HYD39J39
-                    </td>
-                    <td class="text-primaryText border-r border-[#DBDBDB] webkit-text-center leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] py-3">
-                        <button class="tableDetailsGreyButton">
-                            <span class="underline">8WXOX3MVGF8UT</span><span><img src="/src/assets/svg/btn-arrow-right.svg" alt=""></span>
-                        </button>
-                    </td>
-                    <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
-                        B1, B2, B3, <br>B4, B5, B6
-                    </td>
-                    <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
-                        3500 TK
-                    </td>
-                    <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
-                        <div>19 July 2022 </div> <div>09:45 AM</div>
-                    </td>
-                    <td class="text-primaryText border-r border-[#DBDBDB] text-center leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] py-3">
-                        HYD39J39
-                    </td>
-                    <td class="text-primaryText border-r border-[#DBDBDB] webkit-text-center leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] py-3">
-                        <button class="tableDetailsGreyButton">
-                            <span class="underline">8WXOX3MVGF8UT</span><span><img src="/src/assets/svg/btn-arrow-right.svg" alt=""></span>
-                        </button>
-                    </td>
-                    <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
-                        B1, B2, B3, <br>B4, B5, B6
-                    </td>
-                    <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
-                        3500 TK
-                    </td>
-                    <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
-                        <div>19 July 2022 </div> <div>09:45 AM</div>
-                    </td>
-                    <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
-                        <div>Fahim Ahmed</div> <div>+8801708630439 </div>
-                    </td>
-                    <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
-                        Mohakhali counter
-                    </td>
-                    <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
-                        3500 TK
-                    </td>
-                    <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
-                        Labiba Counterman
-                    </td>
-                    <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
-                        <div>19 July 2022 </div> <div>09:45 AM</div>
-                    </td>
-                </tr>
+                        <tr class="border-b border-[#EDEDED]">
+                            <td class="text-primaryText border-r border-[#DBDBDB] text-center leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] py-3">
+                                Arambag
+                            </td>
+                            <td class="text-primaryText border-r border-[#DBDBDB] webkit-text-center leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] py-3">
+                                3500 TK
+                            </td>
+                            <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
+                                3500 TK
+                            </td>
+                            <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
+                                3500 TK
+                            </td>
+                            <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
+                                3500 TK
+                            </td>
+                            <td class="text-primaryText border-r border-[#DBDBDB] text-center leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] py-3">
+                                3500 TK
+                            </td>
+                            <td class="text-primaryText border-r border-[#DBDBDB] webkit-text-center leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] py-3">
+                                3500 TK
+                            </td>
+                            <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
+                                Labiba Counterman 
+                            </td>
+                            <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
+                                <div>19 July 2022 </div> <div>09:45 AM</div>
+                            </td>
+                        </tr>
 
-                <tr class="border-b border-[#EDEDED]">
-                    <td class="text-primaryText border-r border-[#DBDBDB] text-center leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] py-3">
-                        HYD39J39
-                    </td>
-                    <td class="text-primaryText border-r border-[#DBDBDB] webkit-text-center leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] py-3">
-                        <button class="tableDetailsGreyButton">
-                            <span class="underline">8WXOX3MVGF8UT</span><span><img src="/src/assets/svg/btn-arrow-right.svg" alt=""></span>
-                        </button>
-                    </td>
-                    <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
-                        B1, B2, B3, <br>B4, B5, B6
-                    </td>
-                    <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
-                        3500 TK
-                    </td>
-                    <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
-                        <div>19 July 2022 </div> <div>09:45 AM</div>
-                    </td>
-                    <td class="text-primaryText border-r border-[#DBDBDB] text-center leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] py-3">
-                        HYD39J39
-                    </td>
-                    <td class="text-primaryText border-r border-[#DBDBDB] webkit-text-center leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] py-3">
-                        <button class="tableDetailsGreyButton">
-                            <span class="underline">8WXOX3MVGF8UT</span><span><img src="/src/assets/svg/btn-arrow-right.svg" alt=""></span>
-                        </button>
-                    </td>
-                    <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
-                        B1, B2, B3, <br>B4, B5, B6
-                    </td>
-                    <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
-                        3500 TK
-                    </td>
-                    <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
-                        <div>19 July 2022 </div> <div>09:45 AM</div>
-                    </td>
-                    <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
-                        <div>Fahim Ahmed</div> <div>+8801708630439 </div>
-                    </td>
-                    <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
-                        Mohakhali counter
-                    </td>
-                    <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
-                        3500 TK
-                    </td>
-                    <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
-                        Labiba Counterman
-                    </td>
-                    <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
-                        <div>19 July 2022 </div> <div>09:45 AM</div>
-                    </td>
-                </tr>
-                <tr class="border-b border-[#EDEDED]">
-                    <td class="text-primaryText border-r border-[#DBDBDB] text-center leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] py-3">
-                        HYD39J39
-                    </td>
-                    <td class="text-primaryText border-r border-[#DBDBDB] webkit-text-center leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] py-3">
-                        <button class="tableDetailsGreyButton">
-                            <span class="underline">8WXOX3MVGF8UT</span><span><img src="/src/assets/svg/btn-arrow-right.svg" alt=""></span>
-                        </button>
-                    </td>
-                    <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
-                        B1, B2, B3, <br>B4, B5, B6
-                    </td>
-                    <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
-                        3500 TK
-                    </td>
-                    <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
-                        <div>19 July 2022 </div> <div>09:45 AM</div>
-                    </td>
-                    <td class="text-primaryText border-r border-[#DBDBDB] text-center leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] py-3">
-                        HYD39J39
-                    </td>
-                    <td class="text-primaryText border-r border-[#DBDBDB] webkit-text-center leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] py-3">
-                        <button class="tableDetailsGreyButton">
-                            <span class="underline">8WXOX3MVGF8UT</span><span><img src="/src/assets/svg/btn-arrow-right.svg" alt=""></span>
-                        </button>
-                    </td>
-                    <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
-                        B1, B2, B3, <br>B4, B5, B6
-                    </td>
-                    <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
-                        3500 TK
-                    </td>
-                    <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
-                        <div>19 July 2022 </div> <div>09:45 AM</div>
-                    </td>
-                    <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
-                        <div>Fahim Ahmed</div> <div>+8801708630439 </div>
-                    </td>
-                    <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
-                        Mohakhali counter
-                    </td>
-                    <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
-                        3500 TK
-                    </td>
-                    <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
-                        Labiba Counterman
-                    </td>
-                    <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
-                        <div>19 July 2022 </div> <div>09:45 AM</div>
-                    </td>
-                </tr>
-                <tr class="border-b border-[#EDEDED]">
-                    <td class="text-primaryText border-r border-[#DBDBDB] text-center leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] py-3">
-                        HYD39J39
-                    </td>
-                    <td class="text-primaryText border-r border-[#DBDBDB] webkit-text-center leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] py-3">
-                        <button class="tableDetailsGreyButton">
-                            <span class="underline">8WXOX3MVGF8UT</span><span><img src="/src/assets/svg/btn-arrow-right.svg" alt=""></span>
-                        </button>
-                    </td>
-                    <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
-                        B1, B2, B3, <br>B4, B5, B6
-                    </td>
-                    <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
-                        3500 TK
-                    </td>
-                    <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
-                        <div>19 July 2022 </div> <div>09:45 AM</div>
-                    </td>
-                    <td class="text-primaryText border-r border-[#DBDBDB] text-center leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] py-3">
-                        HYD39J39
-                    </td>
-                    <td class="text-primaryText border-r border-[#DBDBDB] webkit-text-center leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] py-3">
-                        <button class="tableDetailsGreyButton">
-                            <span class="underline">8WXOX3MVGF8UT</span><span><img src="/src/assets/svg/btn-arrow-right.svg" alt=""></span>
-                        </button>
-                    </td>
-                    <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
-                        B1, B2, B3, <br>B4, B5, B6
-                    </td>
-                    <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
-                        3500 TK
-                    </td>
-                    <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
-                        <div>19 July 2022 </div> <div>09:45 AM</div>
-                    </td>
-                    <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
-                        <div>Fahim Ahmed</div> <div>+8801708630439 </div>
-                    </td>
-                    <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
-                        Mohakhali counter
-                    </td>
-                    <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
-                        3500 TK
-                    </td>
-                    <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
-                        Labiba Counterman
-                    </td>
-                    <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
-                        <div>19 July 2022 </div> <div>09:45 AM</div>
-                    </td>
-                </tr>
-                <tr class="border-b border-[#EDEDED]">
-                    <td class="text-primaryText border-r border-[#DBDBDB] text-center leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] py-3">
-                        HYD39J39
-                    </td>
-                    <td class="text-primaryText border-r border-[#DBDBDB] webkit-text-center leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] py-3">
-                        <button class="tableDetailsGreyButton">
-                            <span class="underline">8WXOX3MVGF8UT</span><span><img src="/src/assets/svg/btn-arrow-right.svg" alt=""></span>
-                        </button>
-                    </td>
-                    <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
-                        B1, B2, B3, <br>B4, B5, B6
-                    </td>
-                    <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
-                        3500 TK
-                    </td>
-                    <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
-                        <div>19 July 2022 </div> <div>09:45 AM</div>
-                    </td>
-                    <td class="text-primaryText border-r border-[#DBDBDB] text-center leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] py-3">
-                        HYD39J39
-                    </td>
-                    <td class="text-primaryText border-r border-[#DBDBDB] webkit-text-center leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] py-3">
-                        <button class="tableDetailsGreyButton">
-                            <span class="underline">8WXOX3MVGF8UT</span><span><img src="/src/assets/svg/btn-arrow-right.svg" alt=""></span>
-                        </button>
-                    </td>
-                    <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
-                        B1, B2, B3, <br>B4, B5, B6
-                    </td>
-                    <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
-                        3500 TK
-                    </td>
-                    <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
-                        <div>19 July 2022 </div> <div>09:45 AM</div>
-                    </td>
-                    <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
-                        <div>Fahim Ahmed</div> <div>+8801708630439 </div>
-                    </td>
-                    <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
-                        Mohakhali counter
-                    </td>
-                    <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
-                        3500 TK
-                    </td>
-                    <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
-                        Labiba Counterman
-                    </td>
-                    <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
-                        <div>19 July 2022 </div> <div>09:45 AM</div>
-                    </td>
-                </tr>
-                
-              </table>
+                        <tr class="border-b border-[#EDEDED]">
+                            <td class="text-primaryText border-r border-[#DBDBDB] text-center leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] py-3">
+                                Arambag
+                            </td>
+                            <td class="text-primaryText border-r border-[#DBDBDB] webkit-text-center leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] py-3">
+                                3500 TK
+                            </td>
+                            <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
+                                3500 TK
+                            </td>
+                            <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
+                                3500 TK
+                            </td>
+                            <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
+                                3500 TK
+                            </td>
+                            <td class="text-primaryText border-r border-[#DBDBDB] text-center leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] py-3">
+                                3500 TK
+                            </td>
+                            <td class="text-primaryText border-r border-[#DBDBDB] webkit-text-center leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] py-3">
+                                3500 TK
+                            </td>
+                            <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
+                                Labiba Counterman 
+                            </td>
+                            <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
+                                <div>19 July 2022 </div> <div>09:45 AM</div>
+                            </td>
+                        </tr>
+
+                        <tr class="border-b border-[#EDEDED]">
+                            <td class="text-primaryText border-r border-[#DBDBDB] text-center leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] py-3">
+                                Arambag
+                            </td>
+                            <td class="text-primaryText border-r border-[#DBDBDB] webkit-text-center leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] py-3">
+                                3500 TK
+                            </td>
+                            <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
+                                3500 TK
+                            </td>
+                            <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
+                                3500 TK
+                            </td>
+                            <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
+                                3500 TK
+                            </td>
+                            <td class="text-primaryText border-r border-[#DBDBDB] text-center leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] py-3">
+                                3500 TK
+                            </td>
+                            <td class="text-primaryText border-r border-[#DBDBDB] webkit-text-center leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] py-3">
+                                3500 TK
+                            </td>
+                            <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
+                                Labiba Counterman 
+                            </td>
+                            <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
+                                <div>19 July 2022 </div> <div>09:45 AM</div>
+                            </td>
+                        </tr>
+
+                        <tr class="border-b border-[#EDEDED]">
+                            <td class="text-primaryText border-r border-[#DBDBDB] text-center leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] py-3">
+                                Arambag
+                            </td>
+                            <td class="text-primaryText border-r border-[#DBDBDB] webkit-text-center leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] py-3">
+                                3500 TK
+                            </td>
+                            <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
+                                3500 TK
+                            </td>
+                            <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
+                                3500 TK
+                            </td>
+                            <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
+                                3500 TK
+                            </td>
+                            <td class="text-primaryText border-r border-[#DBDBDB] text-center leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] py-3">
+                                3500 TK
+                            </td>
+                            <td class="text-primaryText border-r border-[#DBDBDB] webkit-text-center leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] py-3">
+                                3500 TK
+                            </td>
+                            <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
+                                Labiba Counterman 
+                            </td>
+                            <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
+                                <div>19 July 2022 </div> <div>09:45 AM</div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
 
             <div class="flex items-center gap-x-[128px] mt-[30px]">

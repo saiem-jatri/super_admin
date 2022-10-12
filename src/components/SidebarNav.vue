@@ -110,7 +110,7 @@
             <router-link :class="$route.path === '' ? 'activeMenu' : 'menu p-[10px]' " to="">
               Periodic Sales Report
             </router-link>
-            <router-link :class="$route.path === '' ? 'activeMenu' : 'menu p-[10px]' " to="">
+            <router-link :class="$route.path === '/quotaSalesReport' ? 'activeMenu' : 'menu p-[10px]' " to="/quotaSalesReport">
               Quota Sales Report
             </router-link>
             <router-link :class="$route.path === '/goodsLuggdeReport' ? 'activeMenu' : 'menu p-[10px]' "
@@ -132,7 +132,7 @@
             <router-link :class="$route.path === '' ? 'activeMenu' : 'menu p-[10px]' " to="">
               Refferel Discount Report
             </router-link>
-            <router-link :class="$route.path === '' ? 'activeMenu' : 'menu p-[10px]' " to="">
+            <router-link :class="$route.path === '/tripWiseExpenseReport' ? 'activeMenu' : 'menu p-[10px]' " to="/tripWiseExpenseReport">
               Trip Wise Eepense
             </router-link>
           </dropdown-menu>

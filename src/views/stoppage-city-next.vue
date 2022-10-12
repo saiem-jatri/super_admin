@@ -35,8 +35,8 @@
       <!--        tab start-->
       <div class="border-b border-[#EDEDED]">
           <div class="flex justify-start items-center">
-            <router-link to="/stoppageCity" :class="$route.path === '/stoppageCity' ? 'companyOwnerTabActive w-[160px]' : 'companyOwnerTabNonActive w-[160px]' ">City</router-link>
-            <router-link to="/stoppage" :class="$route.path === '/stoppage' ? 'companyOwnerTabActive w-[160px]' : 'companyOwnerTabNonActive w-[160px]' ">Stoppage</router-link>
+            <router-link to="/stoppageCity" :class="$route.path === '/stoppageCity' ? 'companyOwnerTabActive' : 'companyOwnerTabNonActive' ">City</router-link>
+            <router-link to="/stoppage" :class="$route.path === '/stoppage' ? 'companyOwnerTabActive' : 'companyOwnerTabNonActive' ">Stoppage</router-link>
           </div>
         </div>
 
@@ -112,7 +112,7 @@
           </thead>
           <tbody>
           <tr class="border-b border-[#EDEDED]">
-            <td class="text-primaryText border-r border-[#DBDBDB] text-center leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px]">Dhaka</td>
+            <td class="text-primaryText border-r border-[#DBDBDB] text-center leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px]">City name</td>
             <td class="border-r border-[#DBDBDB]">
               <div class="flex justify-center items-center">
                 <p class="companyTableStatus">Active</p>
@@ -120,7 +120,42 @@
             </td>
             <td class="border-r border-[#DBDBDB]">
               <div class="py-[5px] px-[18px] flex justify-center items-center gap-x-[16px]">
-                <button class="companyEditButton"><span><img src="../assets/svg/edit.svg" class="w-3 h-3" alt=""></span>Edit</button>
+                  <button class="companyEditButton" @click="toggleModal()"><span><img src="../assets/svg/edit.svg" class="w-3 h-3" alt=""></span>Edit</button>
+                  <div id="modal" class="fixed z-10 overflow-y-auto top-0 w-full left-0 hidden">
+                    <div class="flex items-center justify-center min-height-100vh pt-4 px-4 pb-20 text-center sm:block sm:p-0">
+                      <div class="fixed inset-0 transition-opacity">
+                        <div class="absolute inset-0 bg-gray-900 opacity-75"/>
+                      </div>
+                      <span class="hidden sm:inline-block sm:align-middle sm:h-screen">&#8203;</span>
+                      <div
+                          aria-labelledby="modal-headline"
+                          aria-modal="true"
+                          class="inline-block min-w-[478px] align-center bg-white rounded-lg text-left overflow-hidden shadow-xl transform transition-all ease-in-out delay-700 sm:my-8 sm:align-middle"
+                          role="dialog">
+                        <div
+                            class="w-full px-6 py-4 bg-corporate flex justify-between items-center transition transform ">
+                          <p class="leading-[20px] xl:leading-6 text-[14px] xl:text-[16px] font-[500] text-white">
+                            EDIT CITY</p>
+                          <img alt="" class="cursor-pointer" src="../assets/svg/white-close.svg"
+                              @click="toggleModal()">
+                        </div>
+                        <div class="px-6 pt-6 pb-5">
+                          <p class="font-[600]">City</p>
+                          <input type="text" class="focus:outline-none mt-[10px] w-full border border-[#DBDBDB] rounded-[4px] pl-2 py-2 placeholder:text-[#676769] placeholder:leading-[16px] placeholder:text-[12px] xl:placeholder:leading-[20px] xl:placeholder:text-[14px]" placeholder="Enter city name" value="Dhaka" data-v-0520cb3c="">
+                          <div class="flex justify-center mt-5">
+                            <button @click="toggleModal()" class="bg-[#48A43F] opacity-30 flex gap-x-3 justify-center items-center text-white rounded-full px-5 py-3 leading-[12px] text-[10px] xl:leading-[16px] xl:text-[12px]" data-v-0d08c475="" data-v-4f6e2808="">
+                              <span data-v-0d08c475="" data-v-4f6e2808="">
+                                <img src="/src/assets/svg/save.svg" alt="" data-v-0d08c475="" data-v-4f6e2808="">
+                              </span> 
+                              Save changes 
+                            </button>
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+                 </div>
+
               </div>
             </td>
           </tr>
@@ -134,7 +169,42 @@
             </td>
             <td class="border-r border-[#DBDBDB]">
               <div class="py-[5px] px-[18px] flex justify-center items-center gap-x-[16px]">
-                <button class="companyEditButton"><span><img src="../assets/svg/edit.svg" class="w-3 h-3" alt=""></span>Edit</button>
+                  <button class="companyEditButton" @click="toggleModal()"><span><img src="../assets/svg/edit.svg" class="w-3 h-3" alt=""></span>Edit</button>
+                  <div id="modal" class="fixed z-10 overflow-y-auto top-0 w-full left-0 hidden">
+                    <div class="flex items-center justify-center min-height-100vh pt-4 px-4 pb-20 text-center sm:block sm:p-0">
+                      <div class="fixed inset-0 transition-opacity">
+                        <div class="absolute inset-0 bg-gray-900 opacity-75"/>
+                      </div>
+                      <span class="hidden sm:inline-block sm:align-middle sm:h-screen">&#8203;</span>
+                      <div
+                          aria-labelledby="modal-headline"
+                          aria-modal="true"
+                          class="inline-block min-w-[478px] align-center bg-white rounded-lg text-left overflow-hidden shadow-xl transform transition-all ease-in-out delay-700 sm:my-8 sm:align-middle"
+                          role="dialog">
+                        <div
+                            class="w-full px-6 py-4 bg-corporate flex justify-between items-center transition transform ">
+                          <p class="leading-[20px] xl:leading-6 text-[14px] xl:text-[16px] font-[500] text-white">
+                            EDIT CITY</p>
+                          <img alt="" class="cursor-pointer" src="../assets/svg/white-close.svg"
+                              @click="toggleModal()">
+                        </div>
+                        <div class="px-6 pt-6 pb-5">
+                          <p class="font-[600]">City</p>
+                          <input type="text" class="focus:outline-none mt-[10px] w-full border border-[#DBDBDB] rounded-[4px] pl-2 py-2 placeholder:text-[#676769] placeholder:leading-[16px] placeholder:text-[12px] xl:placeholder:leading-[20px] xl:placeholder:text-[14px]" placeholder="Enter city name" value="Dhaka" data-v-0520cb3c="">
+                          <div class="flex justify-center mt-5">
+                            <button @click="toggleModal()" class="bg-[#48A43F] opacity-30 flex gap-x-3 justify-center items-center text-white rounded-full px-5 py-3 leading-[12px] text-[10px] xl:leading-[16px] xl:text-[12px]" data-v-0d08c475="" data-v-4f6e2808="">
+                              <span data-v-0d08c475="" data-v-4f6e2808="">
+                                <img src="/src/assets/svg/save.svg" alt="" data-v-0d08c475="" data-v-4f6e2808="">
+                              </span> 
+                              Save changes 
+                            </button>
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+                 </div>
+
               </div>
             </td>
           </tr>
@@ -148,7 +218,42 @@
             </td>
             <td class="border-r border-[#DBDBDB]">
               <div class="py-[5px] px-[18px] flex justify-center items-center gap-x-[16px]">
-                <button class="companyEditButton"><span><img src="../assets/svg/edit.svg" class="w-3 h-3" alt=""></span>Edit</button>
+                  <button class="companyEditButton" @click="toggleModal()"><span><img src="../assets/svg/edit.svg" class="w-3 h-3" alt=""></span>Edit</button>
+                  <div id="modal" class="fixed z-10 overflow-y-auto top-0 w-full left-0 hidden">
+                    <div class="flex items-center justify-center min-height-100vh pt-4 px-4 pb-20 text-center sm:block sm:p-0">
+                      <div class="fixed inset-0 transition-opacity">
+                        <div class="absolute inset-0 bg-gray-900 opacity-75"/>
+                      </div>
+                      <span class="hidden sm:inline-block sm:align-middle sm:h-screen">&#8203;</span>
+                      <div
+                          aria-labelledby="modal-headline"
+                          aria-modal="true"
+                          class="inline-block min-w-[478px] align-center bg-white rounded-lg text-left overflow-hidden shadow-xl transform transition-all ease-in-out delay-700 sm:my-8 sm:align-middle"
+                          role="dialog">
+                        <div
+                            class="w-full px-6 py-4 bg-corporate flex justify-between items-center transition transform ">
+                          <p class="leading-[20px] xl:leading-6 text-[14px] xl:text-[16px] font-[500] text-white">
+                            EDIT CITY</p>
+                          <img alt="" class="cursor-pointer" src="../assets/svg/white-close.svg"
+                              @click="toggleModal()">
+                        </div>
+                        <div class="px-6 pt-6 pb-5">
+                          <p class="font-[600]">City</p>
+                          <input type="text" class="focus:outline-none mt-[10px] w-full border border-[#DBDBDB] rounded-[4px] pl-2 py-2 placeholder:text-[#676769] placeholder:leading-[16px] placeholder:text-[12px] xl:placeholder:leading-[20px] xl:placeholder:text-[14px]" placeholder="Enter city name" value="Dhaka" data-v-0520cb3c="">
+                          <div class="flex justify-center mt-5">
+                            <button @click="toggleModal()" class="bg-[#48A43F] opacity-30 flex gap-x-3 justify-center items-center text-white rounded-full px-5 py-3 leading-[12px] text-[10px] xl:leading-[16px] xl:text-[12px]" data-v-0d08c475="" data-v-4f6e2808="">
+                              <span data-v-0d08c475="" data-v-4f6e2808="">
+                                <img src="/src/assets/svg/save.svg" alt="" data-v-0d08c475="" data-v-4f6e2808="">
+                              </span> 
+                              Save changes 
+                            </button>
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+                 </div>
+
               </div>
             </td>
           </tr>
@@ -162,7 +267,42 @@
             </td>
             <td class="border-r border-[#DBDBDB]">
               <div class="py-[5px] px-[18px] flex justify-center items-center gap-x-[16px]">
-                <button class="companyEditButton"><span><img src="../assets/svg/edit.svg" class="w-3 h-3" alt=""></span>Edit</button>
+                  <button class="companyEditButton" @click="toggleModal()"><span><img src="../assets/svg/edit.svg" class="w-3 h-3" alt=""></span>Edit</button>
+                  <div id="modal" class="fixed z-10 overflow-y-auto top-0 w-full left-0 hidden">
+                    <div class="flex items-center justify-center min-height-100vh pt-4 px-4 pb-20 text-center sm:block sm:p-0">
+                      <div class="fixed inset-0 transition-opacity">
+                        <div class="absolute inset-0 bg-gray-900 opacity-75"/>
+                      </div>
+                      <span class="hidden sm:inline-block sm:align-middle sm:h-screen">&#8203;</span>
+                      <div
+                          aria-labelledby="modal-headline"
+                          aria-modal="true"
+                          class="inline-block min-w-[478px] align-center bg-white rounded-lg text-left overflow-hidden shadow-xl transform transition-all ease-in-out delay-700 sm:my-8 sm:align-middle"
+                          role="dialog">
+                        <div
+                            class="w-full px-6 py-4 bg-corporate flex justify-between items-center transition transform ">
+                          <p class="leading-[20px] xl:leading-6 text-[14px] xl:text-[16px] font-[500] text-white">
+                            EDIT CITY</p>
+                          <img alt="" class="cursor-pointer" src="../assets/svg/white-close.svg"
+                              @click="toggleModal()">
+                        </div>
+                        <div class="px-6 pt-6 pb-5">
+                          <p class="font-[600]">City</p>
+                          <input type="text" class="focus:outline-none mt-[10px] w-full border border-[#DBDBDB] rounded-[4px] pl-2 py-2 placeholder:text-[#676769] placeholder:leading-[16px] placeholder:text-[12px] xl:placeholder:leading-[20px] xl:placeholder:text-[14px]" placeholder="Enter city name" value="Dhaka" data-v-0520cb3c="">
+                          <div class="flex justify-center mt-5">
+                            <button @click="toggleModal()" class="bg-[#48A43F] opacity-30 flex gap-x-3 justify-center items-center text-white rounded-full px-5 py-3 leading-[12px] text-[10px] xl:leading-[16px] xl:text-[12px]" data-v-0d08c475="" data-v-4f6e2808="">
+                              <span data-v-0d08c475="" data-v-4f6e2808="">
+                                <img src="/src/assets/svg/save.svg" alt="" data-v-0d08c475="" data-v-4f6e2808="">
+                              </span> 
+                              Save changes 
+                            </button>
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+                 </div>
+
               </div>
             </td>
           </tr>
@@ -176,7 +316,42 @@
             </td>
             <td class="border-r border-[#DBDBDB]">
               <div class="py-[5px] px-[18px] flex justify-center items-center gap-x-[16px]">
-                <button class="companyEditButton"><span><img src="../assets/svg/edit.svg" class="w-3 h-3" alt=""></span>Edit</button>
+                  <button class="companyEditButton" @click="toggleModal()"><span><img src="../assets/svg/edit.svg" class="w-3 h-3" alt=""></span>Edit</button>
+                  <div id="modal" class="fixed z-10 overflow-y-auto top-0 w-full left-0 hidden">
+                    <div class="flex items-center justify-center min-height-100vh pt-4 px-4 pb-20 text-center sm:block sm:p-0">
+                      <div class="fixed inset-0 transition-opacity">
+                        <div class="absolute inset-0 bg-gray-900 opacity-75"/>
+                      </div>
+                      <span class="hidden sm:inline-block sm:align-middle sm:h-screen">&#8203;</span>
+                      <div
+                          aria-labelledby="modal-headline"
+                          aria-modal="true"
+                          class="inline-block min-w-[478px] align-center bg-white rounded-lg text-left overflow-hidden shadow-xl transform transition-all ease-in-out delay-700 sm:my-8 sm:align-middle"
+                          role="dialog">
+                        <div
+                            class="w-full px-6 py-4 bg-corporate flex justify-between items-center transition transform ">
+                          <p class="leading-[20px] xl:leading-6 text-[14px] xl:text-[16px] font-[500] text-white">
+                            EDIT CITY</p>
+                          <img alt="" class="cursor-pointer" src="../assets/svg/white-close.svg"
+                              @click="toggleModal()">
+                        </div>
+                        <div class="px-6 pt-6 pb-5">
+                          <p class="font-[600]">City</p>
+                          <input type="text" class="focus:outline-none mt-[10px] w-full border border-[#DBDBDB] rounded-[4px] pl-2 py-2 placeholder:text-[#676769] placeholder:leading-[16px] placeholder:text-[12px] xl:placeholder:leading-[20px] xl:placeholder:text-[14px]" placeholder="Enter city name" value="Dhaka" data-v-0520cb3c="">
+                          <div class="flex justify-center mt-5">
+                            <button @click="toggleModal()" class="bg-[#48A43F] opacity-30 flex gap-x-3 justify-center items-center text-white rounded-full px-5 py-3 leading-[12px] text-[10px] xl:leading-[16px] xl:text-[12px]" data-v-0d08c475="" data-v-4f6e2808="">
+                              <span data-v-0d08c475="" data-v-4f6e2808="">
+                                <img src="/src/assets/svg/save.svg" alt="" data-v-0d08c475="" data-v-4f6e2808="">
+                              </span> 
+                              Save changes 
+                            </button>
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+                 </div>
+
               </div>
             </td>
           </tr>
@@ -190,7 +365,42 @@
             </td>
             <td class="border-r border-[#DBDBDB]">
               <div class="py-[5px] px-[18px] flex justify-center items-center gap-x-[16px]">
-                <button class="companyEditButton"><span><img src="../assets/svg/edit.svg" class="w-3 h-3" alt=""></span>Edit</button>
+                  <button class="companyEditButton" @click="toggleModal()"><span><img src="../assets/svg/edit.svg" class="w-3 h-3" alt=""></span>Edit</button>
+                  <div id="modal" class="fixed z-10 overflow-y-auto top-0 w-full left-0 hidden">
+                    <div class="flex items-center justify-center min-height-100vh pt-4 px-4 pb-20 text-center sm:block sm:p-0">
+                      <div class="fixed inset-0 transition-opacity">
+                        <div class="absolute inset-0 bg-gray-900 opacity-75"/>
+                      </div>
+                      <span class="hidden sm:inline-block sm:align-middle sm:h-screen">&#8203;</span>
+                      <div
+                          aria-labelledby="modal-headline"
+                          aria-modal="true"
+                          class="inline-block min-w-[478px] align-center bg-white rounded-lg text-left overflow-hidden shadow-xl transform transition-all ease-in-out delay-700 sm:my-8 sm:align-middle"
+                          role="dialog">
+                        <div
+                            class="w-full px-6 py-4 bg-corporate flex justify-between items-center transition transform ">
+                          <p class="leading-[20px] xl:leading-6 text-[14px] xl:text-[16px] font-[500] text-white">
+                            EDIT CITY</p>
+                          <img alt="" class="cursor-pointer" src="../assets/svg/white-close.svg"
+                              @click="toggleModal()">
+                        </div>
+                        <div class="px-6 pt-6 pb-5">
+                          <p class="font-[600]">City</p>
+                          <input type="text" class="focus:outline-none mt-[10px] w-full border border-[#DBDBDB] rounded-[4px] pl-2 py-2 placeholder:text-[#676769] placeholder:leading-[16px] placeholder:text-[12px] xl:placeholder:leading-[20px] xl:placeholder:text-[14px]" placeholder="Enter city name" value="Dhaka" data-v-0520cb3c="">
+                          <div class="flex justify-center mt-5">
+                            <button @click="toggleModal()" class="bg-[#48A43F] opacity-30 flex gap-x-3 justify-center items-center text-white rounded-full px-5 py-3 leading-[12px] text-[10px] xl:leading-[16px] xl:text-[12px]" data-v-0d08c475="" data-v-4f6e2808="">
+                              <span data-v-0d08c475="" data-v-4f6e2808="">
+                                <img src="/src/assets/svg/save.svg" alt="" data-v-0d08c475="" data-v-4f6e2808="">
+                              </span> 
+                              Save changes 
+                            </button>
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+                 </div>
+
               </div>
             </td>
           </tr>
@@ -219,4 +429,39 @@ padding: 5px 10px !important;
 .p-dropdown-panel .p-dropdown-items .p-dropdown-item:not(:last-child), .p-dropdown-panel .p-dropdown-items .p-dropdown-item:not(:last-child):hover{
 border-bottom: 1px dotted #DBDBDB;
 }
+
+/*tooltip*/
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: white;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 10;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
 </style>
+
+<script>
+export default {
+  methods: {
+    toggleModal() {
+      document.getElementById('modal').classList.toggle('hidden')
+    }
+  }
+
+}
+</script>
