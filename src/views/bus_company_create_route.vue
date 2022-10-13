@@ -29,10 +29,7 @@
             </div>
           </div>
           <div class="flex gap-x-[24px] p-4 w-1/2 justify-end items-center pr-2 ">
-            <!--            <input type="text" class="w-[270px] h-[40px] border border-[#DBDBDB] placeholder:text-[#4D4D4F] placeholder:text-[14px] leading-[20px] rounded-[4px] pl-8 focus:outline-none" placeholder="PNR or mobile number">-->
-            <!--            <img src="../assets/svg/search.svg" class="h-5 w-5 absolute left-[242px]" alt="">-->
-            <div
-                class="w-[200px] h-[30px] xl:w-[270px] xl:h-[40px] border border-[#DBDBDB] flex justify-center items-center leading-[20px] rounded-[4px] pl-[9px] overflow-hidden">
+            <div class="w-[200px] h-[30px] xl:w-[270px] xl:h-[40px] border border-[#DBDBDB] flex justify-center items-center leading-[20px] rounded-[4px] pl-[9px] overflow-hidden">
               <img alt="" class="h-2 w-2 xl:h-5 xl:w-5" src="../assets/svg/search.svg">
               <input class="outline-none pl-32 xl:pl-2 placeholder:text-[#4D4D4F] placeholder:text-[8px] placeholder:leading-[16px] xl:placeholder:text-[14px] xl:placeholder:leading-[20px]"
                      placeholder="PNR or mobile number"
@@ -52,7 +49,7 @@
       <!-- body start-->
       <div class="px-[30px] py-[24px]">
         <!--        card-->
-        <div class="mt-[16px] bg-white rounded-[10px]">
+        <div class="bg-white rounded-[10px]">
           <div class="p-4">
             <div class="flex justify-between  divide-x divide-corporateBorder">
               <div class="w-1/2 pr-[60px] xl:pr-[125px]">
@@ -61,7 +58,7 @@
                          for="#">Select origin city:</label>
                   <div class="w-[200px] xl:w-[270px]">
                     <Dropdown v-model="selectedCity" :options="cities"
-                              class="w-full p-[1px] mt-[10px] placeholder:text-primaryText" optionLabel="name" placeholder="Select origin city"/>
+                              class="w-full p-[1px] placeholder:text-primaryText" optionLabel="name" placeholder="Select origin city"/>
                   </div>
                 </div>
                 <div class="flex justify-between items-center mt-[12px] xl:mt-[16px]">
@@ -70,11 +67,11 @@
                     via city (optional):</label>
                   <div class="w-[200px] xl:w-[270px] mb-2">
                     <Dropdown v-model="selectedCity" :options="cities"
-                              class="w-full p-[1px] mt-[10px] placeholder:text-primaryText" optionLabel="name" placeholder="Select via city"/>
+                              class="w-full p-[1px] placeholder:text-primaryText" optionLabel="name" placeholder="Select via city"/>
                   </div>
                 </div>
                 <button
-                    class="w-full border border-dashed border-corporateSecondaryBlue flex justify-center items-center bg-[#EFF7FD] rounded-[4px] mt-[12px] xl:mt-[16px]">
+                    class="w-full border border-dashed border-corporateSecondaryBlue flex justify-center items-center bg-[#EFF7FD] rounded-[4px] mt-2">
                   <div class="flex justify-center items-center gap-x-[11px] py-[8px]">
                     <img alt="" class="w-[10px] h-[10px]" src="../assets/svg/createPlus.svg">
                     <p class="text-primaryText font-[600] leading-[16px] xl:leading-[20px] text-[12px] xl:text-[14px]">
@@ -90,7 +87,7 @@
                               class="w-full p-[1px] mt-[10px] placeholder:text-primaryText" optionLabel="name" placeholder="Select destination city"/>
                   </div>
                 </div>
-                <div class="mt-[12px] xl:mt-[16px] bg-[#F7F7F7] rounded-[4px]">
+                <div class="mt-[8px] xl:mt-[8px] bg-[#F7F7F7] rounded-[4px]">
                   <div class="py-[2px] xl:py-[6px] pl-[12px] xl:pl-[16px] flex gap-x-[10px] items-center">
                     <p class="text-primaryText leading-[20px] xl:leading-[24px] text-[14px] xl:text-[16px] font-[400] ">
                       Route direction:</p>
@@ -98,12 +95,12 @@
                       <div class="form-group mt-2">
                         <input id="read" type="checkbox">
                         <label class="text-primaryText leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px] font-[400]"
-                               for="read">up</label>
+                               for="read">Up</label>
                       </div>
                       <div class="form-group mt-2">
                         <input id="down" type="checkbox">
                         <label class="text-primaryText leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px] font-[400]"
-                               for="down">down</label>
+                               for="down">Down</label>
                       </div>
                     </div>
                   </div>
@@ -125,7 +122,7 @@
               </div>
             </div>
           </div>
-          <hr class="mt-[12px] xl:mt-[16px] border-t border-corporateBorder">
+          <hr class="border-t border-corporateBorder">
           <div class="px-[16px] py-[20px] w-full flex justify-between items-center">
             <div class="flex gap-x-[16px] items-center">
               <p class="text-primaryText font-[600] leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] ">
@@ -173,7 +170,7 @@ select::-ms-expand {
 
 .form-group {
   display: block;
-  /*margin-bottom: 15px;*/
+  margin-bottom: 8px;
 }
 
 .form-group input {
@@ -201,7 +198,7 @@ select::-ms-expand {
   position: relative;
   vertical-align: middle;
   cursor: pointer;
-  margin-right: 5px;
+  margin-right: 11px;
   border-radius: 4px;
 }
 

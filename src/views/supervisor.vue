@@ -23,7 +23,7 @@
             </div>
           </div>
         </div>
-        <div class="flex gap-x-2 p-4 justify-center items-center mr-6 ">
+        <div class="flex gap-x-2 p-4 justify-center items-center">
             <router-link to="/busCompanyCreateSupervisor" class="topBarAddButton">
               <span><img src="../assets/svg/plus.svg" class="h-[9.33px] w-[9.33px]" alt=""></span>Add supervisor
             </router-link>
@@ -51,12 +51,12 @@
           </div>
         </div>
 <!--        card-->
-      <div class="mt-[16px] bg-white">
-          <div class="p-4 flex justify-between items-center">
+      <div class="mt-[16px] bg-white rounded">
+          <div class="p-4 flex justify-between items-end">
             <div class="flex justify-start items-center gap-x-4 w-full">
               <div class="w-1/4 xl:w-1/5">
                 <p class="text-primaryText leading-[20px] text-[14px] xl:leading-[24px] xl:text-[16px] font-[600]">Staff type</p>
-                <Dropdown class="w-full p-[1px] mt-[10px] placeholder:text-primaryText placeholder:leading-[16px] placeholder:text-[12px] xl:placeholder:leading-[20px] xl:placeholder:text-[14px]" v-model="selectedCity" :options="cities" optionLabel="name" placeholder="Supervisor" />
+                <Dropdown class="w-full p-[1px] mt-[10px] placeholder:text-primaryText placeholder:leading-[16px] placeholder:text-[12px] xl:placeholder:leading-[20px] xl:placeholder:text-[14px]" v-model="selectedCity" :options="cities" optionLabel="name" placeholder="Select staff" />
               </div>
               <div class="w-1/4 xl:w-1/5">
                 <div class="flex justify-between items-center w-full">
@@ -239,7 +239,9 @@
           </tbody>
         </table>
       </div>
-      <div class="flex gap-x-2 items-center justify-center mt-10">
+
+      <p class="mt-8 mb-4 italic text-red-500 text-center">*Buttons just for show routing. Remove after development*</p>
+      <div class="flex gap-x-2 items-center justify-center">
         <router-link to="/busCompanyDriver" class="corporateButton">Driver</router-link>
         <router-link to="/busCompanyHelper" class="corporateButton">Helper</router-link>
         </div>

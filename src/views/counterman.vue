@@ -21,7 +21,7 @@
             </div>
           </div>
         </div>
-        <div class="flex gap-x-2 p-4 justify-center items-center mr-6 ">
+        <div class="flex gap-x-2 p-4 justify-center items-center">
             <router-link to="/createCounterman" class="topBarAddButton">
               <span><img src="../assets/svg/plus.svg" class="h-[9.33px] w-[9.33px]" alt=""></span>Add counterman
             </router-link>
@@ -49,8 +49,8 @@
           </div>
         </div>
 <!--        card-->
-      <div class="mt-[16px] bg-white">
-          <div class="p-4 flex justify-between items-center">
+      <div class="mt-[16px] bg-white rounded">
+          <div class="p-4 flex justify-between items-end">
             <div class="flex justify-start items-center gap-x-4 w-full">
               <div class="w-1/4 xl:w-1/5">
                 <p class="text-primaryText leading-[20px] text-[14px] xl:leading-[24px] xl:text-[16px] font-[600]">Counter</p>
