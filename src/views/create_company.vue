@@ -426,7 +426,7 @@
                        placeholder="Enter role name"
                        type="text">
                 <button
-                    class="flex justify-center items-center bg-corporateSecondaryBlue mt-1 bg-opacity-30 text-white leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px] font-[400] border border-corporateBorder rounded-full px-[24px] py-[12px]">
+                    class="flex justify-center items-center bg-corporateSecondaryBlue mt-1 bg-opacity-30 text-white leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px] font-[400] border border-corporateBorder rounded-full px-[24px] py-[10px]">
                   Add role
                 </button>
               </div>
