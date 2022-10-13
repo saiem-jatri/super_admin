@@ -135,7 +135,7 @@
                 <input
                     class="p-4 text-[#676769] leading-[20px] text-[14px] font-[400] w-2/5 placeholder:text-primaryText focus:outline-none"
                     placeholder="30">
-                <div class="p-2 w-3/5 ">
+                <div class="p-2 w-3/5">
                   <div class="flex justify-between xl:gap-x-2 items-center bg-[#F7F7F7] xl:px-2">
                     <select
                         class="py-1 bg-[#F7F7F7] rounded focus:outline-none xl:w-full leading-[16px] xl:leading-[20px] text-[10px] xl:text-[14px] font-[500]">
