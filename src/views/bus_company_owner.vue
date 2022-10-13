@@ -21,7 +21,7 @@
               </div>
             </div>
           </div>
-          <div class="flex gap-x-2 p-4 justify-center items-center mr-6 ">
+          <div class="flex gap-x-2 p-4 justify-center items-center">
               <router-link to="/createOwner" class="topBarAddButton">
                 <span><img src="../assets/svg/plus.svg" class="h-[9.33px] w-[9.33px]" alt=""></span>Add User
               </router-link>
@@ -39,7 +39,7 @@
         <div class="border-b border-[#EDEDED]">
           <div class="flex justify-start items-center">
             <router-link to="/companyOwner" :class="$route.path === '/companyOwner' ? 'companyOwnerTabActive' : 'companyOwnerTabNonActive' ">Owner</router-link>
-            <router-link to="/busCompanyTabsRoute" :class="$route.path === '/busCompanyTabsRoute' ? 'companyOwnerTabActive' : 'companyOwnerTabNonActive' ">Routes</router-link>
+            <router-link to="/busCompanyTabsRoute" :class="$route.path === '/busCompanyTabsRoute' ? 'companyOwnerTabActive' : 'companyOwnerTabNonActive' ">Route</router-link>
             <router-link to="/busCompanyTabsCounter" :class="$route.path === '/busCompanyTabsCounter' ? 'companyOwnerTabActive' : 'companyOwnerTabNonActive' ">Counter</router-link>
             <router-link to="/busCompanyTabsTrips" :class="$route.path === '/busCompanyTabsTrips' ? 'companyOwnerTabActive' : 'companyOwnerTabNonActive' ">Trips</router-link>
             <router-link to="/busCompanyTabsAgent" :class="$route.path === '/busCompanyTabsAgent' ? 'companyOwnerTabActive' : 'companyOwnerTabNonActive' ">Agent</router-link>
@@ -49,18 +49,18 @@
           </div>
         </div>
 <!--        card-->
-        <div class="mt-[16px] bg-white">
-            <div class="p-4 flex justify-between items-center">
+        <div class="bg-white rounded mt-4">
+            <div class="p-4 flex justify-between items-end">
               <div class="flex justify-start items-center gap-x-4 w-full">
                 <div class="w-1/4 xl:w-1/5">
                   <p class="text-primaryText leading-[20px] text-[14px] xl:leading-[24px] xl:text-[16px] font-[600]">User type</p>
-                  <Dropdown class="w-full p-[1px] mt-[10px] placeholder:text-primaryText placeholder:leading-[16px] placeholder:text-[12px] xl:placeholder:leading-[20px] xl:placeholder:text-[14px]" v-model="selectedCity" :options="cities" optionLabel="name" placeholder="Owner" />
+                  <Dropdown class="w-full p-[1px] mt-[10px] placeholder:text-primaryText placeholder:leading-[16px] placeholder:text-[12px] xl:placeholder:leading-[20px] xl:placeholder:text-[14px]" v-model="selectedCity" :options="cities" optionLabel="name" placeholder="Select user type" />
                 </div>
                 <div class="w-1/4 xl:w-1/5">
                   <div class="flex justify-between items-center w-full">
                     <p class="text-primaryText leading-[20px] text-[14px] xl:leading-[24px] xl:text-[16px] font-[600]">Name</p>
                   </div>
-                  <input type="text" class="focus:outline-none mt-[10px] w-full border border-[#DBDBDB] rounded-[4px] pl-2 py-2 placeholder:text-[#676769] placeholder:leading-[16px] placeholder:text-[12px] xl:placeholder:leading-[20px] xl:placeholder:text-[14px]" placeholder="Enter company name">
+                  <input type="text" class="focus:outline-none mt-[10px] w-full border border-[#DBDBDB] rounded-[4px] pl-2 py-2 placeholder:text-[#676769] placeholder:leading-[16px] placeholder:text-[12px] xl:placeholder:leading-[20px] xl:placeholder:text-[14px]" placeholder="Enter name">
                 </div>
 
                 <div class="w-1/4 xl:w-1/5">
@@ -144,7 +144,7 @@
               </td>
 
               <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText">
-                OWNER
+                COMPANY ADMIN
               </td>
               <td class="border-r border-[#DBDBDB]">
                 <div class="flex justify-center items-center">
@@ -170,7 +170,7 @@
               </td>
 
               <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText">
-                OWNER
+                COMPANY ADMIN
               </td>
               <td class="border-r border-[#DBDBDB]">
                 <div class="flex justify-center items-center">

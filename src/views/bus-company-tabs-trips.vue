@@ -21,7 +21,7 @@
             </div>
           </div>
         </div>
-        <div class="flex gap-x-2 p-4 justify-center items-center mr-6 ">
+        <div class="flex gap-x-2 p-4 justify-center items-center">
             <router-link to="/tripsAdd" class="topBarAddButton">
               <span><img src="../assets/svg/plus.svg" class="h-[9.33px] w-[9.33px]" alt=""></span>Add Trips
             </router-link>
@@ -39,7 +39,7 @@
       <div class="border-b border-[#EDEDED]">
           <div class="flex justify-start items-center">
             <router-link to="/companyOwner" :class="$route.path === '/companyOwner' ? 'companyOwnerTabActive' : 'companyOwnerTabNonActive' ">Owner</router-link>
-            <router-link to="/busCompanyTabsRoute" :class="$route.path === '/busCompanyTabsRoute' ? 'companyOwnerTabActive' : 'companyOwnerTabNonActive' ">Routes</router-link>
+            <router-link to="/busCompanyTabsRoute" :class="$route.path === '/busCompanyTabsRoute' ? 'companyOwnerTabActive' : 'companyOwnerTabNonActive' ">Route</router-link>
             <router-link to="/busCompanyTabsCounter" :class="$route.path === '/busCompanyTabsCounter' ? 'companyOwnerTabActive' : 'companyOwnerTabNonActive' ">Counter</router-link>
             <router-link to="/busCompanyTabsTrips" :class="$route.path === '/busCompanyTabsTrips' ? 'companyOwnerTabActive' : 'companyOwnerTabNonActive' ">Trips</router-link>
             <router-link to="/busCompanyTabsAgent" :class="$route.path === '/busCompanyTabsAgent' ? 'companyOwnerTabActive' : 'companyOwnerTabNonActive' ">Agent</router-link>
@@ -49,7 +49,7 @@
           </div>
         </div>
         <!--        card-->
-        <div class="bg-white rounded-[4px]">
+        <div class="bg-white rounded-[4px] mt-4">
           <div class="p-4 flex justify-between items-center">
             <div class="flex justify-start items-center gap-x-4 w-full">
               <div class="w-1/4">
@@ -72,16 +72,14 @@
             </div>
           </div>
           <div class="flex justify-between items-center px-4 pt-1 pb-4">
-            <div class="flex justify-start items-center gap-x-4 w-1/2 ">
-              <div class="w-1/2">
+              <div class="w-[24.2%]">
                 <p class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]">Trip date</p>
                 <div class="w-full h-[40px] border border-[#DBDBDB] flex justify-between items-center mt-[10px] leading-[20px] rounded-[4px] px-[20px] xl:px-[8px] overflow-hidden" >
                   <input type="text" class="outline-none pl-2 placeholder:text-[#4D4D4F] placeholder:text-[14px] placeholder:leading-[20px]" placeholder="Select date">
                   <img src="../assets/svg/count2.svg" class="h-5 w-5" alt="">
                 </div>
-              </div>
-
             </div>
+
             <div class="mt-8">
               <button class="flex gap-x-[9px] justify-center items-center bg-corporate text-white leading-[14px] xl:leading-[16px] text-[11px] xl:text-[12px] font-[500] py-3 pl-[17px] pr-[24px] rounded-full"><span>
                 <img src="../assets/svg/white_search.svg" class="w-[13px] xl:h-[13px]" alt="">
@@ -123,8 +121,8 @@
                 Dhaka - Tangail - Bogura - Rangpur
               </td>
               <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText">
-                09:45 AM <br>
-                18 July 2022
+                <div> 09:45 AM</div>
+                <div>18 July 2022</div>
               </td>
 
               <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText">
@@ -132,7 +130,7 @@
               </td>
               <td class="border-r border-[#DBDBDB]">
                 <div class="flex justify-center items-center">
-              <button @click="openModal" class="flex justify-center items-center bg-[#E0293B] w-[140px] h-[35px] rounded-[8px] gap-x-[8px] leading-[16px] xl:leading-[20px] text-[12px] xl:text-[14px] text-white"> <InputSwitch v-model="checked" /> Inactive</button>
+              <button @click="openModal" class="flex justify-center items-center bg-[#E0293B] w-[140px] h-[35px] rounded gap-x-[8px] leading-[16px] xl:leading-[20px] text-[12px] xl:text-[14px] text-white"> <InputSwitch v-model="checked" /> Inactive</button>
 
               <Dialog header="Active trip?" v-model:visible="displayModal" :breakpoints="{'960px': '75vw', '640px': '90vw'}" :style="{width: '360px'}" :modal="true">
                 <p class="text-[14px] leading-5">By confirming, trip status will be <strong>ACTIVE.</strong> Are you sure you want to switch the status from inactive to <strong>ACTIVE?</strong></p>
@@ -159,8 +157,8 @@
                 Dhaka - Tangail - Bogura - Rangpur
               </td>
               <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText">
-                09:45 AM <br>
-                18 July 2022
+                <div> 09:45 AM</div>
+                <div>18 July 2022</div>
               </td>
 
               <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText">
@@ -168,7 +166,7 @@
               </td>
               <td class="border-r border-[#DBDBDB]">
                 <div class="flex justify-center items-center">
-                  <button class="flex justify-center items-center bg-[#48A43F] w-[140px] h-[35px] rounded-[8px] gap-x-[8px] leading-[16px] xl:leading-[20px] text-[12px] xl:text-[14px] text-white"> <InputSwitch v-model="checked" class="mr-2" /> Active</button>
+                  <button class="flex justify-center items-center bg-[#48A43F] w-[140px] h-[35px] rounded gap-x-[8px] leading-[16px] xl:leading-[20px] text-[12px] xl:text-[14px] text-white"> <InputSwitch v-model="checked" class="mr-2" /> Active</button>
 
                 </div>
               </td>
@@ -187,8 +185,8 @@
                 Dhaka - Tangail - Bogura - Rangpur
               </td>
               <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText">
-                09:45 AM <br>
-                18 July 2022
+                <div> 09:45 AM</div>
+                <div>18 July 2022</div>
               </td>
 
               <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText">
@@ -196,7 +194,7 @@
               </td>
               <td class="border-r border-[#DBDBDB]">
                 <div class="flex justify-center items-center">
-                  <button class="flex justify-center items-center bg-[#48A43F] w-[140px] h-[35px] rounded-[8px] gap-x-[8px] leading-[16px] xl:leading-[20px] text-[12px] xl:text-[14px] text-white"> <InputSwitch v-model="checked" class="mr-2" /> Active</button>
+                  <button class="flex justify-center items-center bg-[#48A43F] w-[140px] h-[35px] rounded gap-x-[8px] leading-[16px] xl:leading-[20px] text-[12px] xl:text-[14px] text-white"> <InputSwitch v-model="checked" class="mr-2" /> Active</button>
 
                 </div>
               </td>
@@ -215,16 +213,16 @@
                 Dhaka - Tangail - Bogura - Rangpur
               </td>
               <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText">
-                09:45 AM <br>
-                18 July 2022
+                <div> 09:45 AM</div>
+                <div>18 July 2022</div>
               </td>
 
               <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText">
-                Up
+               Down
               </td>
               <td class="border-r border-[#DBDBDB]">
                 <div class="flex justify-center items-center">
-                  <button class="flex justify-center items-center bg-[#48A43F] w-[140px] h-[35px] rounded-[8px] gap-x-[8px] leading-[16px] xl:leading-[20px] text-[12px] xl:text-[14px] text-white"> <InputSwitch v-model="checked" class="mr-2" /> Active</button>
+                  <button class="flex justify-center items-center bg-[#48A43F] w-[140px] h-[35px] rounded gap-x-[8px] leading-[16px] xl:leading-[20px] text-[12px] xl:text-[14px] text-white"> <InputSwitch v-model="checked" class="mr-2" /> Active</button>
 
                 </div>
               </td>
@@ -243,8 +241,8 @@
                 Dhaka - Tangail - Bogura - Rangpur
               </td>
               <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText">
-                09:45 AM <br>
-                18 July 2022
+                <div> 09:45 AM</div>
+                <div>18 July 2022</div>
               </td>
 
               <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText">
@@ -252,7 +250,7 @@
               </td>
               <td class="border-r border-[#DBDBDB]">
                 <div class="flex justify-center items-center">
-                  <button class="flex justify-center items-center bg-[#48A43F] w-[140px] h-[35px] rounded-[8px] gap-x-[8px] leading-[16px] xl:leading-[20px] text-[12px] xl:text-[14px] text-white"> <InputSwitch v-model="checked" class="mr-2" /> Active</button>
+                  <button class="flex justify-center items-center bg-[#48A43F] w-[140px] h-[35px] rounded gap-x-[8px] leading-[16px] xl:leading-[20px] text-[12px] xl:text-[14px] text-white"> <InputSwitch v-model="checked" class="mr-2" /> Active</button>
 
                 </div>
               </td>
@@ -271,8 +269,8 @@
                 Dhaka - Tangail - Bogura - Rangpur
               </td>
               <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText">
-                09:45 AM <br>
-                18 July 2022
+                <div> 09:45 AM</div>
+                <div>18 July 2022</div>
               </td>
 
               <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText">
@@ -280,7 +278,7 @@
               </td>
               <td class="border-r border-[#DBDBDB]">
                 <div class="flex justify-center items-center">
-                  <button class="flex justify-center items-center bg-[#48A43F] w-[140px] h-[35px] rounded-[8px] gap-x-[8px] leading-[16px] xl:leading-[20px] text-[12px] xl:text-[14px] text-white"> <InputSwitch v-model="checked" class="mr-2" /> Active</button>
+                  <button class="flex justify-center items-center bg-[#48A43F] w-[140px] h-[35px] rounded gap-x-[8px] leading-[16px] xl:leading-[20px] text-[12px] xl:text-[14px] text-white"> <InputSwitch v-model="checked" class="mr-2" /> Active</button>
 
                 </div>
               </td>
@@ -332,12 +330,24 @@ select::-ms-expand {
 }
 .p-inputswitch .p-inputswitch-slider:before {
   background: #ffffff;
-  width: 1rem;
-  height: 15px;
-  left: 2px;
-  margin-top: -8px;
+  width: 10px !important;
+  height: 10px !important;
+  left: 0;
+  margin-top: -5px !important;
   border-radius: 50%;
   transition-duration: 0.2s;
+}
+.p-inputswitch .p-inputswitch-slider,
+.p-inputswitch.p-inputswitch-checked .p-inputswitch-slider,
+.p-inputswitch:not(.p-disabled):hover .p-inputswitch-slider {
+    background: #fff !important;
+}
+.p-inputswitch .p-inputswitch-slider:before,
+.p-inputswitch:not(.p-disabled):hover .p-inputswitch-slider:hover:before {
+    background: #C8C8C8 !important;
+}
+.p-inputswitch.p-inputswitch-checked .p-inputswitch-slider:before {
+    background: #48A43F !important;
 }
 
 .p-dialog .p-dialog-header {

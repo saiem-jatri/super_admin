@@ -9,11 +9,9 @@
               <p class="text-primaryText leading-[12px] text-[10px] xl:leading-[16px] xl:text-[12px] font-[500]">Back</p>
             </button>
             <div class="flex flex-col gap-y-[4px]">
-              <p class="lg:leading-[16px] xl:leading-[28px] lg:text-[14px] xl:text-[20px] font-[600] text-primaryText">Create Company</p>
+              <p class="lg:leading-[16px] xl:leading-[28px] lg:text-[14px] xl:text-[20px] font-[600] text-primaryText">Create User</p>
               <div class="flex justify-center items-center gap-x-[6px]">
-                <p class="text-secondaryText leading-[12px] text-[8px] xl:leading-[16px] xl:text-[12px] font-[400]">Bus Company</p>
-                <img src="../assets/svg/bgBack.svg" alt="" class="w-1 h-2">
-                <p class="text-secondaryText leading-[12px] text-[8px] xl:leading-[16px] xl:text-[12px] font-[400]">Add company</p>
+                <p class="text-secondaryText leading-[12px] text-[8px] xl:leading-[16px] xl:text-[12px] font-[400]">Company</p>
                 <img src="../assets/svg/bgBack.svg" alt="" class="w-1 h-2">
                 <p class="text-secondaryText leading-[12px] text-[8px] xl:leading-[16px] xl:text-[12px] font-[400]">Desh Travels Limited</p>
                 <img src="../assets/svg/bgBack.svg" alt="" class="w-1 h-2">
@@ -45,7 +43,7 @@
       <div class="px-[30px] py-[24px]">
 
         <!--        card-->
-        <div class="mt-[16px] bg-white rounded-[10px]">
+        <div class="bg-white rounded-[10px]">
             <div class="p-4 flex items-center gap-x-4 w-full">
               <div class="w-1/4">
                 <div class="flex justify-between items-center w-full">
@@ -55,31 +53,30 @@
               </div>
               <div class="w-1/4">
                 <div class="flex justify-between items-center w-full">
-                  <p class="text-primaryText leading-[18px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]">Mobile Number</p>
+                  <p class="text-primaryText leading-[18px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]">Mobile number</p>
                 </div>
-                <input type="text" class="focus:outline-none mt-[10px] w-full border border-[#DBDBDB] rounded-[4px] pl-2 py-2 placeholder:text-[#676769] placeholder:leading-[16px] placeholder:text-[10px] xl:placeholder:leading-[20px] xl:placeholder:text-[14px]" placeholder="Enter owner name">
+                <input type="text" class="focus:outline-none mt-[10px] w-full border border-[#DBDBDB] rounded-[4px] pl-2 py-2 placeholder:text-[#676769] placeholder:leading-[16px] placeholder:text-[10px] xl:placeholder:leading-[20px] xl:placeholder:text-[14px]" placeholder="Enter mobile name">
               </div>
 
               <div class="w-1/4">
                 <div class="flex justify-between items-center w-full">
                   <p class="text-primaryText leading-[18px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]">Email Address</p>
                 </div>
-                <input type="text" class="focus:outline-none mt-[10px] w-full border border-[#DBDBDB] rounded-[4px] pl-2 py-2 placeholder:text-[#676769] placeholder:leading-[16px] placeholder:text-[10px] xl:placeholder:leading-[20px] xl:placeholder:text-[14px]" placeholder="Enter owner name">
+                <input type="text" class="focus:outline-none mt-[10px] w-full border border-[#DBDBDB] rounded-[4px] pl-2 py-2 placeholder:text-[#676769] placeholder:leading-[16px] placeholder:text-[10px] xl:placeholder:leading-[20px] xl:placeholder:text-[14px]" placeholder="Enter email address">
               </div>
               <div class="w-1/4">
                 <div class="flex justify-between items-center w-full">
                   <p class="text-primaryText leading-[18px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]">Password</p>
                 </div>
-                <input type="text" class="focus:outline-none mt-[10px] w-full border border-[#DBDBDB] rounded-[4px] pl-2 py-2 placeholder:text-[#676769] placeholder:leading-[16px] placeholder:text-[10px] xl:placeholder:leading-[20px] xl:placeholder:text-[14px]" placeholder="Enter owner name">
+                <input type="text" class="focus:outline-none mt-[10px] w-full border border-[#DBDBDB] rounded-[4px] pl-2 py-2 placeholder:text-[#676769] placeholder:leading-[16px] placeholder:text-[10px] xl:placeholder:leading-[20px] xl:placeholder:text-[14px]" placeholder="Enter password">
               </div>
             </div>
-        <div class="p-4">
-          <div class="mt-4 rounded-[4px] border border-corporateBorder pt-3 px-4">
+          <div class="rounded-[4px] border border-corporateBorder px-4 mx-4">
             <div class="flex justify-between w-full">
-              <div class="flex gap-x-4 justify-start items-center">
+              <div class="flex gap-x-4 justify-start items-center py-3">
                 <p class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]">User type:</p>
                 <div class="w-[270px]">
-                  <Dropdown class="w-full py-[4px] mb-2 mt-[10px] placeholder:text-primaryText" v-model="selectedCity" :options="cities" optionLabel="name" placeholder="Owner" />
+                  <Dropdown class="w-full py-[4px] placeholder:text-primaryText" v-model="selectedCity" :options="cities" optionLabel="name" placeholder="Select owner" />
                 </div>
               </div>
               <div class="form-group  mt-5">
@@ -87,15 +84,15 @@
                 <label for="html" class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]">Give All Permission</label>
               </div>
             </div>
-            <hr class="border-t border-corporateBorder mt-[10px]">
+            <hr class="border-t border-corporateBorder">
             <div class="flex divide-x divide-corporateBorder">
               <div class="w-1/2">
-                <div class="py-[18px] pl-[16px] pr-[46px]">
+                <div class="pb-1 pr-[46px]">
                   <div class="flex justify-between items-center">
                     <p class="w-[60%] leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px]">Dashboard:</p>
                     <div class="w-[40%] flex justify-between items-center mt-4">
                       <div class="form-group">
-                        <input type="checkbox" id="read">
+                        <input type="checkbox" checked id="read">
                         <label for="read" class="text-primaryText leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px] font-[400]">Read</label>
                       </div>
                       <div class="form-group">
@@ -104,7 +101,7 @@
                       </div>
                     </div>
                   </div>
-                  <hr class="border-t border-dashed border-corporateBorder mt-[15px]">
+                  <hr class="border-t border-dashed border-corporateBorder">
 
                   <div class="flex justify-between items-center">
                     <p class="w-[60%] leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px]">Owners:</p>
@@ -119,7 +116,7 @@
                       </div>
                     </div>
                   </div>
-                  <hr class="border-t border-dashed border-corporateBorder mt-[15px]">
+                  <hr class="border-t border-dashed border-corporateBorder">
 
                   <div class="flex justify-between items-center">
                     <p class="w-[60%] leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px]">Trips:</p>
@@ -138,7 +135,7 @@
                 </div>
               </div>
               <div class="w-1/2">
-                <div class="py-[18px] pl-[16px] pr-[46px]">
+                <div class="pb-1 pl-4 pr-[46px]">
                   <div class="flex justify-between items-center">
                     <p class="w-[60%] leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px]">Report:</p>
                     <div class="w-[40%] flex justify-between items-center mt-4">
@@ -152,7 +149,7 @@
                       </div>
                     </div>
                   </div>
-                  <hr class="border-t border-dashed border-corporateBorder mt-[15px]">
+                  <hr class="border-t border-dashed border-corporateBorder">
 
                   <div class="flex justify-between items-center">
                     <p class="w-[60%] leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px]">Company Setup:</p>
@@ -167,17 +164,18 @@
                       </div>
                     </div>
                   </div>
-                  <hr class="border-t border-dashed border-corporateBorder mt-[15px]">
+                  <hr class="border-t border-dashed border-corporateBorder">
 
                   <div class="flex justify-between items-center">
                     <p class="w-[60%] leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px]">Agent Balance:</p>
                     <div class="w-[40%] flex justify-between items-center mt-4">
                       <div class="form-group">
-                        <input type="checkbox" id="read">
+                        <input type="checkbox" checked id="read">
                         <label for="read" class="text-primaryText leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px] font-[400]">Recharge</label>
                       </div>
                     </div>
                   </div>
+
                 </div>
               </div>
             </div>
@@ -197,7 +195,7 @@
                   <img src="../assets/svg/save_change.svg" alt="">Save changes</button>
               </div>
           </div>
-        </div>
+        
         </div>
       </div>
 </template>
