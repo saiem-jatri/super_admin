@@ -5,10 +5,18 @@ body {
     @apply font-inter
 }
 
+.p-dropdown {
+    border-radius: 4px;
+}
+.p-dropdown:not(.p-disabled).p-focus,
+.p-dropdown:not(.p-disabled):hover {
+  box-shadow: none !important;
+  outline: none !important;
+  border-color: #ced4da !important;
+}
 .webkit-text-center {
     text-align: -webkit-center;
 }
-
 .menu {
     @apply p-2 w-full text-black leading-[20px] text-[14px] font-[500] border-b border-[#DBDBDB] block cursor-pointer last:border-b-0
 }

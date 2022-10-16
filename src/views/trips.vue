@@ -21,10 +21,9 @@
     </div>
   </div>
   <!-- top nav bar end -->
+
   <!-- body start-->
   <div class="px-[30px] py-[24px]">
-
-
     <!--        card-->
     <div class="bg-white rounded-[4px]">
       <div class="p-4 flex justify-between items-center">
@@ -39,23 +38,21 @@
                 optionLabel="name" placeholder="Desh Traveles"/>
           </div>
           <div class="w-1/4">
-            <p class="text-primaryText leading-[20px] text-[14px] xl:leading-[24px] xl:text-[16px] font-[600]">Counter
-              type</p>
+            <p class="text-primaryText leading-[20px] text-[14px] xl:leading-[24px] xl:text-[16px] font-[600]">From</p>
             <Dropdown
                 v-model="selectedCity"
                 :options="cities"
                 class="w-full py-[4px] mt-[10px] placeholder:text-primaryText placeholder:leading-[16px] placeholder:text-[12px] xl:placeholder:leading-[20px] xl:placeholder:text-[14px]"
-                optionLabel="name" placeholder="Select counter type"/>
+                optionLabel="name" placeholder="Select location"/>
           </div>
 
           <div class="w-1/4">
-            <p class="text-primaryText leading-[20px] text-[14px] xl:leading-[24px] xl:text-[16px] font-[600]">
-              Counter</p>
+            <p class="text-primaryText leading-[20px] text-[14px] xl:leading-[24px] xl:text-[16px] font-[600]">To</p>
             <Dropdown
                 v-model="selectedCity"
                 :options="cities"
                 class="w-full py-[4px] mt-[10px] placeholder:text-primaryText placeholder:leading-[16px] placeholder:text-[12px] xl:placeholder:leading-[20px] xl:placeholder:text-[14px]"
-                optionLabel="name" placeholder="Select counter"/>
+                optionLabel="name" placeholder="Select location"/>
           </div>
 
           <div class="w-1/4">
@@ -65,24 +62,23 @@
           </div>
         </div>
       </div>
-      <div class="flex justify-between items-center px-4 pt-1 pb-4">
-        <div class="flex justify-start items-center gap-x-4 w-1/2 ">
+      <div class="flex justify-between items-center px-4 pb-4">
+        <div class="flex justify-start items-center gap-x-4 w-1/2 pr-2">
           <div class="w-1/2">
             <p class="text-primaryText leading-[20px] text-[14px] xl:leading-[24px] xl:text-[16px] font-[600]">
-              Counter</p>
+              Direction</p>
             <Dropdown
                 v-model="selectedCity"
                 :options="cities"
                 class="w-full py-[4px] mt-[10px] placeholder:text-primaryText placeholder:leading-[16px] placeholder:text-[12px] xl:placeholder:leading-[20px] xl:placeholder:text-[14px]"
-                optionLabel="name" placeholder="Select counter"/>
+                optionLabel="name" placeholder="Select direction"/>
           </div>
           <div class="w-1/2">
-            <p class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]">Trip
-              date</p>
+            <p class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]">Trip date</p>
             <div
                 class="w-full h-[40px] border border-[#DBDBDB] flex justify-between items-center mt-[10px] leading-[20px] rounded-[4px] px-[20px] xl:px-[8px] overflow-hidden">
               <input
-                  class="outline-none pl-2 placeholder:text-[#4D4D4F] placeholder:text-[14px] placeholder:leading-[20px]"
+                  class="outline-none placeholder:text-[#4D4D4F] placeholder:text-[14px] placeholder:leading-[20px]"
                   placeholder="Select date"
                   type="text">
               <img alt="" class="h-5 w-5" src="../assets/svg/count2.svg">
@@ -245,7 +241,7 @@
           </td>
 
           <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText">
-            Up
+            Down
           </td>
           <td class="border-r border-[#DBDBDB]">
             <div class="flex justify-center items-center">
@@ -287,7 +283,7 @@
           </td>
 
           <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText">
-            Up
+            Down
           </td>
           <td class="border-r border-[#DBDBDB]">
             <div class="flex justify-center items-center">
@@ -329,7 +325,7 @@
           </td>
 
           <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText">
-            Up
+            Down
           </td>
           <td class="border-r border-[#DBDBDB]">
             <div class="flex justify-center items-center">
@@ -405,8 +401,7 @@
     </div>
     <div class="mt-[12px] xl:mt-[16px] bg-white rounded-[10px]">
       <div class="flex justify-between items-center px-[16px] py-2">
-        <p class="leading-[24px] xl:leading-[28px] text-[18px] xl:text-[20px] font-[600] text-[#1E88E5] py-[16px]">USER
-          TRIP RESTRICTION</p>
+        <p class="leading-[24px] xl:leading-[28px] text-[18px] xl:text-[20px] font-[600] text-[#1E88E5] py-4">USER TRIP RESTRICTION</p>
         <router-link class="corporateButton" to="/manageUserRestriction">Manage restriction</router-link>
       </div>
     </div>
@@ -425,7 +420,6 @@
         <router-link class="corporateButton" to="/tripPreview">Trips Preview</router-link>
       </div>
     </div>
-
   </div>
 </template>
 
@@ -494,6 +488,7 @@ select::-ms-expand {
   color: #495057;
   padding: 0 1.5rem 1rem 1.5rem;
 }
+
 </style>
 
 <script>
