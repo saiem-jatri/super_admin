@@ -54,7 +54,7 @@
               <div class="flex justify-start items-center gap-x-4 w-full">
                 <div class="w-1/4 xl:w-1/5">
                   <p class="text-primaryText leading-[20px] text-[14px] xl:leading-[24px] xl:text-[16px] font-[600]">User type</p>
-                  <Dropdown class="w-full p-[1px] mt-[10px] placeholder:text-primaryText placeholder:leading-[16px] placeholder:text-[12px] xl:placeholder:leading-[20px] xl:placeholder:text-[14px]" v-model="selectedCity" :options="cities" optionLabel="name" placeholder="Select user type" />
+                  <Dropdown class="w-full py-1 mt-[10px] placeholder:text-primaryText placeholder:leading-[16px] placeholder:text-[12px] xl:placeholder:leading-[20px] xl:placeholder:text-[14px]" v-model="selectedCity" :options="cities" optionLabel="name" placeholder="Select user type" />
                 </div>
                 <div class="w-1/4 xl:w-1/5">
                   <div class="flex justify-between items-center w-full">
