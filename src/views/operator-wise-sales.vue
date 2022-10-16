@@ -434,13 +434,14 @@
             <div class="flex items-center gap-x-[128px] mt-[30px]">
                 <p class="text-[#4D4D4F] text-[12px] xl:text-sm leading-4 xl:leading-5">Showing result 1 to 50 of 500 (10 Pages)</p>
                 <div class="flex items-center gap-x-6">
-                    <button type="button"><img src="../assets/svg/pagination-back.svg" alt=""></button>
+                    <button type="button" class="paginationNextButton"><img class="transform rotate-180" src="../assets/svg/pagination-next.svg" alt=""></button>
                     <button type="button" class="activePaginationButton">01</button>
                     <button type="button" class="paginationButton">02</button>
                     <button type="button" class="paginationButton">03</button>
                     <div type="button" class="paginationButton">...</div>
                     <button type="button" class="paginationButton">10</button>
                     <button type="button" class="paginationNextButton">Next <img src="../assets/svg/pagination-next.svg" alt=""></button>
+                    <button type="button"><img class="transform rotate-180" src="../assets/svg/pagination-back.svg" alt=""></button>
                 </div>
             </div>
           </div>

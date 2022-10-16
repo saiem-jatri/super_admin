@@ -74,7 +74,7 @@
           <div class="flex justify-between items-center px-4 pt-1 pb-4">
               <div class="w-[24.2%]">
                 <p class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]">Trip date</p>
-                <div class="w-full h-[40px] border border-[#DBDBDB] flex justify-between items-center mt-[10px] leading-[20px] rounded-[4px] px-[20px] xl:px-[8px] overflow-hidden" >
+                <div class="w-full h-[40px] border border-[#DBDBDB] flex justify-between items-center mt-[10px] leading-[20px] rounded-[4px] px-[8px] overflow-hidden" >
                   <input type="text" class="outline-none pl-2 placeholder:text-[#4D4D4F] placeholder:text-[14px] placeholder:leading-[20px]" placeholder="Select date">
                   <img src="../assets/svg/count2.svg" class="h-5 w-5" alt="">
                 </div>
