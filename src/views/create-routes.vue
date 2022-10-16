@@ -62,7 +62,7 @@
                           class="w-full p-[1px] placeholder:text-primaryText" optionLabel="name" placeholder="Select origin city"/>
               </div>
             </div>
-            <div class="flex justify-between items-center mt-[12px] xl:mt-[16px]">
+            <div class="flex justify-between items-center mt-1 xl:mt-2">
               <label class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] text-primaryText font-[400]"
                      for="#">Add
                 via city (optional):</label>
@@ -107,19 +107,16 @@
               </div>
             </div>
           </div>
-          <div class="w-1/2">
-            <div class=" pl-4">
+          <div class="w-1/2 pl-4">
               <p class="leading-[24px] xl:leading-[28px] text-[18px] xl:text-[20px] text-primaryText font-[600]">
                 Possible best routes</p>
               <hr class="mt-[6px] xl:mt-[8px] border-t border-[#EDEDED]">
-              <div class="h-[200px] w-full flex justify-center items-center">
-                <div class="flex flex-col gap-y-[10px] justify-center items-center">
-                  <img alt="" class="h-5 w-5" src="../assets/svg/exclamatory.svg">
-                  <p class="text-corporateSecondaryBlack leading-[20px] xl:leading-[24px] text-[14px] xl:text-[16px] text-center">
-                    Best possible routes will appeared <br>once you select via city.</p>
-                </div>
-              </div>
-            </div>
+              <div class="flex flex-col justify-center items-center gap-y-2 h-full pb-10">
+                <img alt="" class="h-5 w-5" src="../assets/svg/exclamatory.svg">
+                <p class="text-corporateSecondaryBlack leading-[20px] xl:leading-[24px] text-[14px] xl:text-[16px] text-center">
+                  Best possible routes will appeared <br>once you select via city.
+                </p>
+              </div>  
           </div>
         </div>
       </div>
@@ -139,7 +136,7 @@
             </button>
           </div>
         </div>
-        <router-link to="/busCompanyManageViaCity" class="corporateButton">Create routes</router-link>
+        <router-link to="/routesViaCity" class="corporateButton">Create routes</router-link>
       </div>
     </div>
   </div>

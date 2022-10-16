@@ -52,19 +52,18 @@
           <div class="w-1/2 pr-[60px] xl:pr-[125px]">
             <div class="flex justify-between items-center">
               <label class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] text-primaryText font-[400]"
-                     for="#">Select
-                operator:</label>
+                     for="#">Select operator:</label>
               <div class="w-[200px] xl:w-[270px]">
                 <Dropdown v-model="selectedCity" :options="cities"
                           class="w-full py-[4px] mt-[10px] placeholder:text-primaryText" optionLabel="name"
                           placeholder="Dhaka"/>
               </div>
             </div>
-            <div class="flex justify-between items-center">
+            <div class="flex justify-between items-center my-2">
               <label class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] text-primaryText font-[400]"
                      for="#">Select
                 origin city:</label>
-              <div class="w-[200px] xl:w-[270px] mb-2">
+              <div class="w-[200px] xl:w-[270px]">
                 <Dropdown v-model="selectedCity" :options="cities"
                           class="w-full py-[4px] mt-[10px] placeholder:text-primaryText" optionLabel="name"
                           placeholder="Owner"/>
@@ -74,14 +73,14 @@
               <label class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] text-primaryText font-[400]"
                      for="#">Add
                 via city (optional):</label>
-              <div class="w-[200px] xl:w-[270px] mb-2">
+              <div class="w-[200px] xl:w-[270px]">
                 <Dropdown v-model="selectedCity" :options="cities"
                           class="w-full py-[4px] mt-[10px] placeholder:text-primaryText" optionLabel="name"
                           placeholder="Select via city"/>
               </div>
             </div>
             <button
-                class="w-full border border-dashed border-corporateSecondaryBlue flex justify-center items-center bg-[#EFF7FD] rounded-[4px] mt-[6px] xl:mt-[10px]">
+                class="w-full border border-dashed border-corporateSecondaryBlue flex justify-center items-center bg-[#EFF7FD] rounded-[4px] mt-2 xl:mt-4">
               <div class="flex justify-center items-center gap-x-[11px] py-[8px]">
                 <img alt="" class="w-[10px] h-[10px]" src="../assets/svg/createPlus.svg">
                 <p class="text-primaryText font-[600] leading-[16px] xl:leading-[20px] text-[12px] xl:text-[14px]">
@@ -98,7 +97,7 @@
                           placeholder="Select via city"/>
               </div>
             </div>
-            <div class="mt-[12px] xl:mt-[16px] bg-[#F7F7F7] rounded-[4px]">
+            <div class="mt-2 xl:mt-3 bg-[#F7F7F7] rounded-[4px]">
               <div class="py-[2px] xl:py-[6px] pl-[12px] xl:pl-[16px] flex gap-x-[10px] items-center">
                 <p class="text-primaryText leading-[20px] xl:leading-[24px] text-[14px] xl:text-[16px] font-[400] ">
                   Route direction:</p>
@@ -137,7 +136,7 @@
           </div>
         </div>
       </div>
-      <hr class="mt-[12px] xl:mt-[16px] border-t border-corporateBorder">
+      <hr class="border-t border-corporateBorder">
       <div class="px-[16px] py-[20px] w-full flex justify-between items-center">
         <div class="flex gap-x-[16px] items-center">
           <p class="text-primaryText font-[600] leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] ">

@@ -106,20 +106,17 @@
                   </div>
                 </div>
               </div>
-              <div class="w-1/2">
-                <div class=" pl-4">
-                  <p class="leading-[24px] xl:leading-[28px] text-[18px] xl:text-[20px] text-primaryText font-[600]">
-                    Possible best routes</p>
-                  <hr class="mt-[6px] xl:mt-[8px] border-t border-[#EDEDED]">
-                  <div class="h-[200px] w-full flex justify-center items-center">
-                    <div class="flex flex-col gap-y-[10px] justify-center items-center">
-                      <img alt="" class="h-5 w-5" src="../assets/svg/exclamatory.svg">
-                      <p class="text-corporateSecondaryBlack leading-[20px] xl:leading-[24px] text-[14px] xl:text-[16px] text-center">
-                        Best possible routes will appeared <br>once you select via city.</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
+              <div class="w-1/2 pl-4">
+                <p class="leading-[24px] xl:leading-[28px] text-[18px] xl:text-[20px] text-primaryText font-[600]">
+                  Possible best routes</p>
+                <hr class="mt-[6px] xl:mt-[8px] border-t border-[#EDEDED]">
+                <div class="flex flex-col justify-center items-center gap-y-2 pb-10 h-full">
+                  <img alt="" class="h-5 w-5" src="../assets/svg/exclamatory.svg">
+                  <p class="text-corporateSecondaryBlack leading-[20px] xl:leading-[24px] text-[14px] xl:text-[16px] text-center">
+                    Best possible routes will appeared <br>once you select via city.
+                  </p>
+                </div>  
+          </div>
             </div>
           </div>
           <hr class="border-t border-corporateBorder">
