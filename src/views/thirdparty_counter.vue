@@ -20,10 +20,7 @@
           </div>
         </div>
       </div>
-      <div class="flex gap-x-[24px] p-4 w-1/2 justify-end items-center pr-2 ">
-        <!--            <input type="text" class="w-[270px] h-[40px] border border-[#DBDBDB] placeholder:text-[#4D4D4F] placeholder:text-[14px] leading-[20px] rounded-[4px] pl-8 focus:outline-none" placeholder="PNR or mobile number">-->
-        <!--            <img src="../assets/svg/search.svg" class="h-5 w-5 absolute left-[242px]" alt="">-->
-        <div
+      <div class="flex gap-x-[24px] p-4 w-1/2 justify-end items-center pr-2 "> <div
             class="w-[200px] h-[30px] xl:w-[270px] xl:h-[40px] border border-[#DBDBDB] flex justify-center items-center leading-[20px] rounded-[4px] pl-[9px] overflow-hidden">
           <img alt="" class="h-2 w-2 xl:h-5 xl:w-5" src="../assets/svg/search.svg">
           <input
@@ -81,7 +78,7 @@
           <div class="w-1/4">
             <p class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]">
               Mobile</p>
-            <input class="createNormalInput" placeholder="Enter counter mobile" type="text">
+            <input class="createNormalInput" placeholder="Enter mobile number" type="text">
           </div>
           <div class="w-1/4">
             <p class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]">
@@ -116,49 +113,33 @@
           <div class="w-1/4">
             <p class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]">Counter
               type</p>
-            <div class="flex justify-center items-center mt-[10px]">
-              <button
-                  class=" w-1/2 bg-white text-[#676769] leading-[20px] text-[14px] border border-[#DBDBDB] flex justify-center items-center font-[400] h-[40px] rounded-l-[4px]">
-                Own
-              </button>
-              <button
-                  class=" w-1/2 bg-corporate text-white leading-[20px] text-[14px] flex justify-center items-center font-[400] h-[40px] rounded-r-[4px]">
-                Third party
-              </button>
+              <div class="flex justify-center items-center mt-[10px]">
+              <router-link class="w-1/2 bg-white text-[#676769] leading-[20px] text-[14px] border border-[#DBDBDB] flex justify-center items-center font-[400] h-[40px] rounded-l-[4px]" to="/createCounter">Own</router-link>
+              <router-link class="w-1/2 bg-corporate text-white leading-[20px] text-[14px] flex justify-center items-center font-[400] h-[40px] rounded-r-[4px]" to="/thirdPartyCounter">Third party</router-link>
             </div>
           </div>
           <div class="w-1/4">
-            <p class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]">Third
-              party counter commission</p>
-            <div class="py-[2px] border border-[#DBDBDB] mt-[10px] rounded-[4px] leading-[20px]">
-              <div class="w-full h-[35px] flex justify-between items-center overflow-hidden divide-x">
-                <input
-                    class="p-4 text-[#676769] leading-[20px] text-[14px] font-[400] w-2/5 placeholder:text-primaryText focus:outline-none"
-                    placeholder="30">
-                <div class="p-2 w-3/5">
-                  <div class="flex justify-between xl:gap-x-2 items-center bg-[#F7F7F7] xl:px-2">
-                    <select
-                        class="py-1 bg-[#F7F7F7] rounded focus:outline-none xl:w-full leading-[16px] xl:leading-[20px] text-[10px] xl:text-[14px] font-[500]">
-                      <option class="" selected>
-                        Percentage %
-                      </option>
-                      <option value="1">One</option>
-                      <option value="2">Two</option>
-                      <option value="3">Three</option>
-                    </select>
-                    <img alt="" class="w-[10px] xl:w-[12px] h-5" src="../assets/svg/down_arrow.svg">
+                <p class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]">Third party counter commission</p>
+                <div class="py-[2px] border border-[#DBDBDB] mt-[10px] rounded-[4px] leading-[20px]">
+                  <div class="w-full h-[35px] flex justify-between items-center overflow-hidden divide-x">
+                    <input class="px-2 py-4 text-[#676769] leading-[20px] text-[14px] font-[400] w-2/5 placeholder:text-primaryText focus:outline-none" placeholder="Days">
+                    <div class="p-2 w-3/5">
+                      <div class="flex justify-between xl:gap-x-2 items-center bg-[#F7F7F7] xl:px-2">
+                        <select class="py-1 text-base bg-[#F7F7F7] rounded focus:outline-none xl:w-full leading-[16px] xl:leading-[20px] text-[10px] xl:text-[14px] font-[500]">
+                          <option selected=""> Percentage % </option><option value="1">One</option><option value="2">Two</option>
+                          <option value="3">Three</option>
+                        </select>
+                        <img alt="" class="w-[10px] xl:w-[12px] h-5" src="/src/assets/svg/down_arrow.svg">
+                      </div>
+                    </div>
                   </div>
                 </div>
-
               </div>
-            </div>
-
-          </div>
           <div class="w-1/4">
             <p class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]">Payment
               Type</p>
             <Dropdown v-model="selectedCity" :opti6ns="cities" class="w-full py-[4px] mt-[10px]" optionLabel="name"
-                      placeholder="Prepaid"/>
+                      placeholder="Select payment type"/>
           </div>
           <div class="w-1/4">
             <p class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]">Prepaid
@@ -167,7 +148,7 @@
           </div>
         </div>
       </div>
-      <hr class="mt-[12px] xl:mt-[16px] border-t border-corporateBorder">
+      <hr class="border-t border-corporateBorder">
       <div class="px-[16px] py-[20px] w-full flex justify-between items-center">
         <div class="flex gap-x-[16px] items-center w-1/4">
           <p class="text-primaryText font-[600] leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] ">Status</p>
