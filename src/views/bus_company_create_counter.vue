@@ -89,7 +89,7 @@
               </div>
             </div>
           </div>
-          <hr class="mt-[12px] xl:mt-[16px] border-t border-corporateBorder">
+          <hr class="border-t border-corporateBorder">
           <div class="px-[16px] py-[20px] w-full flex justify-between items-center">
             <div class="flex gap-x-[16px] items-center">
               <p class="text-primaryText font-[600] leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] ">Status</p>

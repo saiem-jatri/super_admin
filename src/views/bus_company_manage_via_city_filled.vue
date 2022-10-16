@@ -109,12 +109,12 @@
                     <p class="text-primaryText leading-[20px] xl:leading-[24px] text-[14px] xl:text-[16px] font-[400] ">
                       Route direction:</p>
                     <div class="flex justify-evenly items-center w-[50%]">
-                      <div class="form-group mt-2">
+                      <div class="form-group my-2">
                         <input id="read" type="checkbox" checked>
                         <label class="text-primaryText leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px] font-[400]"
                                for="read">Up</label>
                       </div>
-                      <div class="form-group mt-2">
+                      <div class="form-group my-2">
                         <input id="down" type="checkbox">
                         <label class="text-primaryText leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px] font-[400]"
                                for="down">Down</label>
@@ -160,7 +160,7 @@
               </div>
             </div>
           </div>
-          <hr class="mt-[12px] xl:mt-[16px] border-t border-corporateBorder">
+          <hr class="border-t border-corporateBorder">
           <div class="px-[16px] py-[20px] w-full flex justify-between items-center">
             <div class="flex gap-x-[16px] items-center">
               <p class="text-primaryText font-[600] leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] ">

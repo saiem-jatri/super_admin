@@ -56,7 +56,7 @@
           </div>
         </div>
         <!--        card-->
-        <div class="mt-4 bg-white rounded-[10px]">
+        <div class="bg-white rounded-[10px]">
           <div class="p-4">
             <p class="text-primaryText leading-[20px] text-[14px] font-[600]">Ticket format</p>
             <div class="flex gap-x-[96px] items-center mt-[18px] xl:mt-[24px]">

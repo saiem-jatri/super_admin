@@ -45,7 +45,7 @@
       <div class="px-[30px] py-[24px]">
 
         <!--        card-->
-        <div class="mt-[16px] bg-white rounded-[10px]">
+        <div class="bg-white rounded-[10px]">
           <div class="p-4">
             <div class="flex justify-center items-center gap-x-[10px] xl:gap-x-[16px]">
               <div class="w-1/4">
@@ -58,21 +58,21 @@
               </div>
               <div class="w-1/4">
                 <p class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]">Email address</p>
-                <Dropdown class="w-full py-[4px] mt-[10px]" v-model="selectedCity" :opti6ns="cities" optionLabel="name" placeholder="Enter email address" />
+                <input type="text" class="createNormalInput" placeholder="Enter email number">
               </div>
               <div class="w-1/4">
                 <p class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]">NID number</p>
-                <Dropdown class="w-full py-[4px] mt-[10px]" v-model="selectedCity" :opti6ns="cities" optionLabel="name" placeholder="Enter NID number" />
+                <input type="text" class="createNormalInput" placeholder="Enter NID number">
               </div>
             </div>
             <div class="flex justify-start items-center gap-x-[10px] xl:gap-x-[16px] mt-[12px] xl:mt-[16px]">
-              <div class="w-1/2">
+              <div class="w-1/2 pr-2">
                 <p class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]">Address</p>
                 <input type="text" class="createNormalInput" placeholder="Enter address">
               </div>
             </div>
           </div>
-          <hr class="mt-[12px] xl:mt-[16px] border-t border-corporateBorder">
+          <hr class="border-t border-corporateBorder">
           <div class="px-[16px] py-[20px] w-full flex justify-between items-center">
             <div class="flex gap-x-[16px] items-center">
               <p class="text-primaryText font-[600] leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] ">Status</p>
