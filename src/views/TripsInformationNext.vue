@@ -28,8 +28,6 @@
         </div>
       </div>
       <div class="flex gap-x-[24px] p-4 w-1/2 justify-end items-center pr-2 ">
-        <!--            <input type="text" class="w-[270px] h-[40px] border border-[#DBDBDB] placeholder:text-[#4D4D4F] placeholder:text-[14px] leading-[20px] rounded-[4px] pl-8 focus:outline-none" placeholder="PNR or mobile number">-->
-        <!--            <img src="../assets/svg/search.svg" class="h-5 w-5 absolute left-[242px]" alt="">-->
         <div
             class="w-[200px] h-[30px] xl:w-[270px] xl:h-[40px] border border-[#DBDBDB] flex justify-center items-center leading-[20px] rounded-[4px] pl-[9px] overflow-hidden">
           <img alt="" class="h-2 w-2 xl:h-5 xl:w-5" src="../assets/svg/search.svg">
@@ -53,7 +51,7 @@
   <div class="px-[30px] py-[24px]">
 
     <!--        card-->
-    <div class="bg-white rounded-[8px]">
+    <div class="bg-white rounded-[6px]">
       <div class="p-4">
         <div class="flex items-center gap-x-[6px] mr-2">
           <p class="text-primaryText leading-[12px] text-[8px] xl:leading-[16px] xl:text-[12px] font-[600]">Trip
@@ -80,13 +78,13 @@
           <p class="text-secondaryText leading-[12px] text-[8px] xl:leading-[16px] xl:text-[12px] font-[400]">
             Preview</p>
         </div>
-        <p class="text-corporateSecondaryBlue leading-[20px] xl:leading-[24px] text-[14px] xl:text-[16px] font-[500] mt-2">
+        <p class="text-corporateSecondaryBlue leading-[20px] xl:leading-[24px] text-[14px] xl:text-[16px] font-[600] mt-2">
           TRIP INFORMATION</p>
       </div>
     </div>
-    <div class="bg-white rounded-[8px] mt-[12px] xl:mt-[16px]">
+    <div class="bg-white rounded-[10px] mt-[12px] xl:mt-[16px]">
       <div class="p-4">
-        <p class="text-corporateSecondaryBlue leading-[20px] xl:leading-[24px] text-[14px] xl:text-[16px] font-[500] mb-4">
+        <p class="text-corporateSecondaryBlue leading-[20px] xl:leading-[24px] text-[14px] xl:text-[16px] font-[600] mb-4">
           DETAILS</p>
         <div class="flex justify-center items-center gap-x-[10px] xl:gap-x-[16px]">
           <div class="w-1/4">
@@ -146,9 +144,9 @@
           <div class="w-1/4"></div>
         </div>
       </div>
-      <hr class="mt-[12px] xl:mt-[16px] border-t border-corporateBorder">
+      <hr class="border-t border-corporateBorder">
       <div class="p-4">
-        <p class="text-corporateSecondaryBlue leading-[20px] xl:leading-[24px] text-[14px] xl:text-[16px] font-[500]">
+        <p class="text-corporateSecondaryBlue leading-[20px] xl:leading-[24px] text-[14px] xl:text-[16px] font-[600]">
           DATE & TIME</p>
         <div class="flex justify-center items-center gap-x-[10px] xl:gap-x-[16px] mt-[12px] xl:mt-[16px]">
           <div class="w-1/4">
@@ -189,7 +187,7 @@
       </div>
     </div>
 
-    <div class="bg-white rounded-[8px] mt-4">
+    <div class="bg-white rounded-[10px] mt-4">
       <div class="p-4">
         <p class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600] mb-[17px]">
           Update for an period</p>
@@ -216,7 +214,7 @@
           <tr class=" border-l border-r border-corporateBorder">
             <td class="border-r border-[#EDEDED] text-4 text-center leading-6 p-[16px] bg-[#F7F7F7]">18 July 2022</td>
             <td class="text-4 text-center leading-6 p-[16px] bg-[#F7F7F7]">
-              <div class="form-group mb-0"><input id="read1" type="checkbox"><label
+              <div class="form-group mb-0"><input id="read1" type="checkbox" checked><label
                   class="text-primaryText leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px] font-[400]"
                   for="read1"></label>
               </div>
@@ -225,7 +223,7 @@
           <tr class="border-l border-r border-corporateBorder">
             <td class="border-r border-[#EDEDED] text-4 text-center leading-6 p-[16px]">18 July 2022</td>
             <td class="text-4 text-center leading-6 p-[16px]">
-              <div class="form-group mb-0"><input id="read2" type="checkbox"><label
+              <div class="form-group mb-0"><input id="read2" type="checkbox" checked><label
                   class="text-primaryText leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px] font-[400]"
                   for="read2"></label>
               </div>
@@ -234,7 +232,7 @@
           <tr class="bg-corporateBg border-l border-r border-corporateBorder">
             <td class="border-r border-[#EDEDED] text-4 text-center leading-6 p-[16px] bg-[#F7F7F7]">18 July 2022</td>
             <td class="text-4 text-center leading-6 p-[16px] bg-[#F7F7F7]">
-              <div class="form-group mb-0"><input id="read3" type="checkbox"><label
+              <div class="form-group mb-0"><input id="read3" type="checkbox" checked><label
                   class="text-primaryText leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px] font-[400]"
                   for="read3"></label>
               </div>
@@ -304,7 +302,7 @@
         </div>
         <div>
           <button
-              class="border border-corporateBorder items-center text-corporateError rounded-full px-6 py-3 leading-[12px] text-[10px] xl:leading-[16px] xl:text-[12px]"
+              class="border border-corporateBorder items-center text-corporateError font-semibold rounded-full px-6 py-3 leading-[12px] text-[10px] xl:leading-[16px] xl:text-[12px]"
               @click="openModal">
             Cancel trip
           </button>
@@ -317,11 +315,8 @@
               <button class="p-button-text text-[12px] leading-4 font-[500] text-[#1E88E5]" icon="pi pi-times"
                       @click="closeModal"> No, thanks
               </button>
-              <button autofocus
-                      class="bg-[#F04935] px-6 py-3 text-white text-[12px] leading-4 font-[500] rounded-[100px]"
-                      icon="pi pi-check"
-                      @click="closeModal">Cancel
-                trip
+              <button autofocus class="bg-[#F04935] px-6 py-3 text-white text-[12px] leading-4 font-[500] rounded-[100px]" icon="pi pi-check" @click="closeModal">
+                Cancel trip
               </button>
             </div>
           </Dialog>
@@ -416,7 +411,7 @@ select::-ms-expand {
   content: '';
   display: block;
   position: absolute;
-  top: 2px;
+  top: 1px;
   left: 7px;
   width: 7px;
   height: 13px;

@@ -25,8 +25,6 @@
             </div>
           </div>
           <div class="flex gap-x-[24px] p-4 w-1/2 justify-end items-center pr-2 ">
-            <!--            <input type="text" class="w-[270px] h-[40px] border border-[#DBDBDB] placeholder:text-[#4D4D4F] placeholder:text-[14px] leading-[20px] rounded-[4px] pl-8 focus:outline-none" placeholder="PNR or mobile number">-->
-            <!--            <img src="../assets/svg/search.svg" class="h-5 w-5 absolute left-[242px]" alt="">-->
             <div
                 class="w-[200px] h-[30px] xl:w-[270px] xl:h-[40px] border border-[#DBDBDB] flex justify-center items-center leading-[20px] rounded-[4px] pl-[9px] overflow-hidden">
               <img alt="" class="h-2 w-2 xl:h-5 xl:w-5" src="../assets/svg/search.svg">
@@ -45,11 +43,12 @@
         </div>
       </div>
       <!-- top nav bar end -->
+      
       <!-- body start-->
       <div class="px-[30px] py-[24px]">
 
         <!--        card-->
-        <div class="bg-white rounded-[8px]">
+        <div class="bg-white rounded-[6px]">
           <div class="p-4">
             <div class="flex items-center gap-x-[6px] mr-2">
               <p class="text-primaryText leading-[12px] text-[8px] xl:leading-[16px] xl:text-[12px] font-[600]">Trip
@@ -77,20 +76,20 @@
                 Preview</p>
             </div>
             <div class="flex justify-between items-center">
-              <p class="text-corporateSecondaryBlue leading-[20px] xl:leading-[24px] text-[14px] xl:text-[16px] font-[500] mt-2">
+              <p class="text-corporateSecondaryBlue leading-[20px] xl:leading-[24px] text-[14px] xl:text-[16px] font-[600] mt-2">
                 PERMISSIONS & COMMISSIONS</p>
               <p class="flex gap-x-[10px]">
                 <img alt="" src="../assets/svg/back_arrow.svg">
-                <a class="leading-[12px] xl:leading-[16px] text-[10px] xl:text-[12px] text-primaryText border-b-2 border-primaryText block text-primaryText font-[600]"
+                <a class="leading-[12px] xl:leading-[16px] text-[10px] xl:text-[12px] border-b-2 border-primaryText block text-primaryText font-[600]"
                    href="#">Prev
                   .step</a>
               </p>
             </div>
           </div>
         </div>
-        <div class="bg-white rounded-[8px] mt-[12px] xl:mt-[16px]">
+        <div class="bg-white rounded-[10px] mt-[12px] xl:mt-[16px]">
           <div class="p-4">
-            <p class="text-corporateSecondaryBlue leading-[20px] xl:leading-[24px] text-[14px] xl:text-[16px] font-[500] mb-4">
+            <p class="text-corporateSecondaryBlue leading-[20px] xl:leading-[24px] text-[14px] xl:text-[16px] font-[600] mb-4">
               TRIP PERMISSION</p>
             <div class="flex justify-center items-center gap-x-[10px] xl:gap-x-[16px]">
               <div class="w-1/4">
@@ -148,9 +147,9 @@
               </div>
             </div>
           </div>
-          <hr class="mt-[12px] xl:mt-[16px] border-t border-corporateBorder">
+          <hr class="border-t border-corporateBorder">
           <div class="p-4">
-            <p class="text-corporateSecondaryBlue leading-[20px] xl:leading-[24px] text-[14px] xl:text-[16px] font-[500] mb-4">
+            <p class="text-corporateSecondaryBlue leading-[20px] xl:leading-[24px] text-[14px] xl:text-[16px] font-[600] mb-4">
               ROUTE PERMISSION</p>
             <div class="flex justify-center items-center gap-x-[10px] xl:gap-x-[16px]">
               <div class="w-1/4">
@@ -199,77 +198,52 @@
               </div>
             </div>
           </div>
-          <hr class="mt-[12px] xl:mt-[16px] border-t border-corporateBorder">
+          <hr class="border-t border-corporateBorder">
           <div class="p-4">
-            <p class="text-corporateSecondaryBlue leading-[20px] xl:leading-[24px] text-[14px] xl:text-[16px] font-[500] mb-4">
+            <p class="text-corporateSecondaryBlue leading-[20px] xl:leading-[24px] text-[14px] xl:text-[16px] font-[600] mb-4">
               COMMISSION</p>
             <div class="flex justify-start items-center gap-x-[10px] xl:gap-x-[16px]">
               <div class="w-1/4">
-                <p class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]">
-                  Ticket commission (Third party)</p>
+                <p class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]"> Ticket commission (Third party)</p>
                 <div class="py-[2px] border border-[#DBDBDB] mt-[10px] rounded-[4px] leading-[20px]">
                   <div class="w-full h-[35px] flex justify-between items-center overflow-hidden divide-x">
-                    <input
-                        class="p-4 text-[#676769] leading-[20px] text-[14px] font-[400] w-2/5 placeholder:text-primaryText focus:outline-none"
-                        placeholder="Enter ammount">
-                    <div class="p-2 w-3/5 ">
+                    <input class="px-2 py-4 text-[#676769] leading-[20px] text-[14px] font-[400] w-2/5 placeholder:text-primaryText focus:outline-none" placeholder="Enter ammount">
+                    <div class="p-2 w-3/5">
                       <div class="flex justify-between xl:gap-x-2 items-center bg-[#F7F7F7] xl:px-2">
-                        <select aria-label="Default select example"
-                                class="form-selectpy-1 text-base bg-[#F7F7F7] rounded focus:outline-none xl:w-full">
-                          <option class="leading-[16px] xl:leading-[20px] text-[10px] xl:text-[14px] font-[500]"
-                                  selected>
-                            Percentage %
-                          </option>
-                          <option value="1">One</option>
-                          <option value="2">Two</option>
+                        <select class="py-1 text-base bg-[#F7F7F7] rounded focus:outline-none xl:w-full leading-[16px] xl:leading-[20px] text-[10px] xl:text-[14px] font-[500]">
+                          <option selected=""> Percentage % </option><option value="1">One</option><option value="2">Two</option>
                           <option value="3">Three</option>
                         </select>
-                        <img alt="" class="w-[12px] h-5" src="../assets/svg/down_arrow.svg">
+                        <img alt="" class="w-[10px] xl:w-[12px] h-5" src="/src/assets/svg/down_arrow.svg">
                       </div>
                     </div>
-
                   </div>
                 </div>
-
-
               </div>
 
               <div class="w-1/4">
-                <p class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]">Jatri
-                  commission</p>
+                <p class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]"> Jatri commission</p>
                 <div class="py-[2px] border border-[#DBDBDB] mt-[10px] rounded-[4px] leading-[20px]">
                   <div class="w-full h-[35px] flex justify-between items-center overflow-hidden divide-x">
-                    <input
-                        class="p-4 text-[#676769] leading-[20px] text-[14px] font-[400] w-2/5 placeholder:text-primaryText focus:outline-none"
-                        placeholder="Enter ammount">
-                    <div class="p-2 w-3/5 ">
+                    <input class="px-2 py-4 text-[#676769] leading-[20px] text-[14px] font-[400] w-2/5 placeholder:text-primaryText focus:outline-none" placeholder="Enter ammount">
+                    <div class="p-2 w-3/5">
                       <div class="flex justify-between xl:gap-x-2 items-center bg-[#F7F7F7] xl:px-2">
-                        <select aria-label="Default select example"
-                                class="form-selectpy-1 text-base bg-[#F7F7F7] rounded focus:outline-none xl:w-full">
-                          <option class="leading-[16px] xl:leading-[20px] text-[10px] xl:text-[14px] font-[500]"
-                                  selected>
-                            Percentage %
-                          </option>
-                          <option value="1">One</option>
-                          <option value="2">Two</option>
+                        <select class="py-1 text-base bg-[#F7F7F7] rounded focus:outline-none xl:w-full leading-[16px] xl:leading-[20px] text-[10px] xl:text-[14px] font-[500]">
+                          <option selected=""> Percentage % </option><option value="1">One</option><option value="2">Two</option>
                           <option value="3">Three</option>
                         </select>
-                        <img alt="" class="w-[12px] h-5" src="../assets/svg/down_arrow.svg">
+                        <img alt="" class="w-[10px] xl:w-[12px] h-5" src="/src/assets/svg/down_arrow.svg">
                       </div>
                     </div>
-
                   </div>
                 </div>
-
-
               </div>
             </div>
-
           </div>
 
-          <hr class="mt-[12px] xl:mt-[16px] border-t border-corporateBorder">
+          <hr class="border-t border-corporateBorder">
           <div class="p-4">
-            <p class="text-corporateSecondaryBlue leading-[20px] xl:leading-[24px] text-[14px] xl:text-[16px] font-[500] mb-4">
+            <p class="text-corporateSecondaryBlue leading-[20px] xl:leading-[24px] text-[14px] xl:text-[16px] font-[600] mb-4">
               PUBLISH FOR JATRI</p>
             <div class="flex justify-start items-center gap-x-[10px] xl:gap-x-[16px]">
               <div class="w-1/4">
@@ -297,14 +271,13 @@
                 </div>
               </div>
             </div>
-
           </div>
         </div>
+
         <div class="flex justify-center items-center mt-5">
-          
-       <router-link to="/tripsPermissionFilled" class="lessNextStepButton flex items-center gap-[10px]">
+          <router-link to="/tripsPermissionFilled" class="lessNextStepButton flex items-center gap-[10px]">
             Next step<span><img src="../assets/svg/right-white-arrow.svg" class="h-[9.33px] w-[9.33px]" alt=""></span>
-        </router-link>
+          </router-link>
         </div>
       </div>
 </template>

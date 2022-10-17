@@ -44,7 +44,7 @@
           <div class="bg-white rounded-[8px]">
             <div class="p-4">
               <div class="flex items-center gap-x-[6px] mr-2">
-                <p class="text-primaryText leading-[12px] text-[8px] xl:leading-[16px] xl:text-[12px] font-[6400]">Trip Information</p>
+                <p class="text-primaryText leading-[12px] text-[8px] xl:leading-[16px] xl:text-[12px] font-[400]">Trip Information</p>
                 <img src="../assets/svg/bgBack.svg" alt="" class="w-1 h-2">
                 <p class="text-secondaryText leading-[12px] text-[8px] xl:leading-[16px] xl:text-[12px] font-[600]">Boarding & Dropping</p>
                 <img src="../assets/svg/bgBack.svg" alt="" class="w-1 h-2">
@@ -61,7 +61,7 @@
                 <p class="text-secondaryText leading-[12px] text-[8px] xl:leading-[16px] xl:text-[12px] font-[400]">Preview</p>
               </div>
              <div class="flex justify-between items-center">
-               <p class="text-[#1E88E5] leading-[20px] xl:leading-[24px] text-[14px] xl:text-[16px] font-[500] mt-2">BOARDING & DROPPING</p>
+               <p class="text-[#1E88E5] leading-[20px] xl:leading-[24px] text-[14px] xl:text-[16px] font-semibold mt-2">BOARDING & DROPPING</p>
                <p class="flex gap-x-[10px]">
                  <img src="../assets/svg/back_arrow.svg" alt="">
                  <a href="#" class="leading-[12px] xl:leading-[16px] text-[10px] xl:text-[12px] text-primaryText border-b-2 border-primaryText block font-[600]">Prev .step</a>
@@ -71,7 +71,7 @@
           </div>
           <div class="bg-white rounded-[8px] mt-[12px] xl:mt-[16px]">
             <div class="p-4">
-              <p class="text-[#1E88E5] leading-[20px] xl:leading-[24px] text-[14px] xl:text-[16px] font-[500]">BOARDING POINT INFORMATION</p>
+              <p class="text-[#1E88E5] leading-[20px] xl:leading-[24px] text-[14px] xl:text-[16px] font-semibold">BOARDING POINT INFORMATION</p>
               
               <div>
                 <div class="flex justify-between items-center">
@@ -92,12 +92,12 @@
                 </div>
                 <div class="w-1/4">
                   <p class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]">Counter</p>
-                  <Dropdown class="w-full py-[4px] mt-[10px]" v-model="selectedCity" :opti6ns="cities" optionLabel="name" placeholder="Select stoppage" />
+                  <Dropdown class="w-full py-[4px] mt-[10px]" v-model="selectedCity" :opti6ns="cities" optionLabel="name" placeholder="Select counter" />
                 </div>
                 <div class="w-1/4">
                   <p class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]">Boarding date</p>
                   <div class="w-full h-[40px] border border-[#DBDBDB] flex justify-between items-center mt-[10px] leading-[20px] rounded-[4px] xl:px-[8px] overflow-hidden" >
-                    <input type="text" class="outline-none pl-2 placeholder:text-[#4D4D4F] placeholder:text-[14px] placeholder:leading-[20px]" placeholder="Select boarding date">
+                    <input type="text" class="outline-none placeholder:text-[#4D4D4F] placeholder:text-[14px] placeholder:leading-[20px]" placeholder="Select boarding date">
                     <img src="../assets/svg/count2.svg" class="h-5 w-5 mr-5 2xl:mr-0" alt="">
                   </div>
                 </div>
@@ -111,17 +111,15 @@
               <hr class="mt-[16px] border-t border-dashed border-corporateBorder">
               <div>
                 <div class="flex justify-between items-center">
-                <div>
+                <div class="flex items-center gap-x-[13px]">
                   <p class="leading-[12px] xl:leading-[16px] text-[10px] xl:text-[12px] text-primaryText">BOARDING POINT 2</p>
+                  <button>
+                    <img src="../assets/svg/close.svg" alt="Close">
+                  </button>
                 </div>
-                <div class="flex items-center gap-x-[26px]">
-                  <div class="form-group mt-4">
-                    <input type="checkbox" id="read2">
-                    <label for="read2" class="text-primaryText leading-[20px] text-[14px] xl:leading-[24px] xl:text-[16px] font-[400]">Make available for Jatri</label>
-                  </div>
-                  <div>
-                    <img src="../assets/svg/close-cirlce.svg" alt="Close">
-                  </div>
+                <div class="form-group mt-4">
+                  <input type="checkbox" id="read">
+                  <label for="read" class="text-primaryText leading-[20px] text-[14px] xl:leading-[24px] xl:text-[16px] font-[400]">Make available for Jatri</label>
                 </div>
               </div>
               <div class="flex justify-center items-center gap-x-[10px] xl:gap-x-[16px]">
@@ -135,12 +133,12 @@
                 </div>
                 <div class="w-1/4">
                   <p class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]">Counter</p>
-                  <Dropdown class="w-full py-[4px] mt-[10px]" v-model="selectedCity" :opti6ns="cities" optionLabel="name" placeholder="Select stoppage" />
+                  <Dropdown class="w-full py-[4px] mt-[10px]" v-model="selectedCity" :opti6ns="cities" optionLabel="name" placeholder="Select counter" />
                 </div>
                 <div class="w-1/4">
                   <p class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]">Boarding date</p>
                   <div class="w-full h-[40px] border border-[#DBDBDB] flex justify-between items-center mt-[10px] leading-[20px] rounded-[4px] xl:px-[8px] overflow-hidden" >
-                    <input type="text" class="outline-none pl-2 placeholder:text-[#4D4D4F] placeholder:text-[14px] placeholder:leading-[20px]" placeholder="Select boarding date">
+                    <input type="text" class="outline-none placeholder:text-[#4D4D4F] placeholder:text-[14px] placeholder:leading-[20px]" placeholder="Select boarding date">
                     <img src="../assets/svg/count2.svg" class="h-5 w-5 mr-5 2xl:mr-0" alt="">
                   </div>
                 </div>
@@ -151,7 +149,7 @@
                </div>
               </div>
 
-              <button class="w-full border border-dashed border-[#B6B6B6] flex justify-center items-center bg-corporateBg rounded-[4px] mt-4">
+              <button class="w-full border border-dashed border-corporateSecondaryBlue flex justify-center items-center bg-[#EFF7FD] rounded-[4px] mt-4">
                 <div class="flex justify-center items-center gap-x-[11px] py-[12px]">
                   <img src="../assets/svg/createPlus.svg" class="w-[10px] h-[10px]" alt="">
                   <p class="text-primaryText font-[600] leading-[20px] text-[14px]">Add another boarding point</p>
@@ -161,7 +159,7 @@
             
             <hr class="border-t border-corporateBorder">
             <div class="p-4">
-              <p class="text-[#1E88E5] leading-[20px] xl:leading-[24px] text-[14px] xl:text-[16px] font-[500]">DROPPING POINT INFORMATION</p>
+              <p class="text-[#1E88E5] leading-[20px] xl:leading-[24px] text-[14px] xl:text-[16px] font-semibold">DROPPING POINT INFORMATION</p>
   
               <div>
                 <div class="flex justify-between items-center">
@@ -182,7 +180,7 @@
                 </div>
                 <div class="w-1/4">
                   <p class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]">Counter</p>
-                  <Dropdown class="w-full py-[4px] mt-[10px]" v-model="selectedCity" :opti6ns="cities" optionLabel="name" placeholder="Select stoppage" />
+                  <Dropdown class="w-full py-[4px] mt-[10px]" v-model="selectedCity" :opti6ns="cities" optionLabel="name" placeholder="Select counter" />
                 </div>
                 <div class="w-1/4">
                   <p class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]">Dropping date</p>
@@ -201,17 +199,15 @@
               <hr class="mt-[16px] border-t border-dashed border-corporateBorder">
               <div>
                 <div class="flex justify-between items-center">
-                <div>
-                  <p class="leading-[12px] xl:leading-[16px] text-[10px] xl:text-[12px] text-primaryText">DROPPING POINT 2</p>
+                <div class="flex items-center gap-x-[13px]">
+                  <p class="leading-[12px] xl:leading-[16px] text-[10px] xl:text-[12px] text-primaryText">BOARDING POINT 2</p>
+                  <button>
+                    <img src="../assets/svg/close.svg" alt="Close">
+                  </button>
                 </div>
-                <div class="flex items-center gap-x-[26px]">
-                  <div class="form-group mt-4">
-                    <input type="checkbox" id="read4">
-                    <label for="read4" class="text-primaryText leading-[20px] text-[14px] xl:leading-[24px] xl:text-[16px] font-[400]">Make available for Jatri</label>
-                  </div>
-                  <div>
-                    <img src="../assets/svg/close-cirlce.svg" alt="Close">
-                  </div>
+                <div class="form-group mt-4">
+                  <input type="checkbox" id="read">
+                  <label for="read" class="text-primaryText leading-[20px] text-[14px] xl:leading-[24px] xl:text-[16px] font-[400]">Make available for Jatri</label>
                 </div>
               </div>
               <div class="flex justify-center items-center gap-x-[10px] xl:gap-x-[16px]">
@@ -225,7 +221,7 @@
                 </div>
                 <div class="w-1/4">
                   <p class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]">Counter</p>
-                  <Dropdown class="w-full py-[4px] mt-[10px]" v-model="selectedCity" :opti6ns="cities" optionLabel="name" placeholder="Select stoppage" />
+                  <Dropdown class="w-full py-[4px] mt-[10px]" v-model="selectedCity" :opti6ns="cities" optionLabel="name" placeholder="Select counter" />
                 </div>
                 <div class="w-1/4">
                   <p class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]">Dropping date</p>
@@ -241,7 +237,7 @@
                </div>
               </div>
 
-              <button class="w-full border border-dashed border-[#B6B6B6] flex justify-center items-center bg-corporateBg rounded-[4px] mt-4">
+              <button class="w-full border border-dashed border-corporateSecondaryBlue flex justify-center items-center bg-[#EFF7FD] rounded-[4px] mt-4">
                 <div class="flex justify-center items-center gap-x-[11px] py-[12px]">
                   <img src="../assets/svg/createPlus.svg" class="w-[10px] h-[10px]" alt="">
                   <p class="text-primaryText font-[600] leading-[20px] text-[14px]">Add another dropping point</p>
@@ -256,79 +252,89 @@
               Update for an period</p>
 
             <!-- table start -->
-            <table class="min-w-full">
-              <thead>
-              <tr class="border border-corporateBorder">
-                <th class="border-r border-[#EDEDED] text-4 leading-6 font-[400] p-[10px] uppercase w-1/2" scope="col"
-                    style="border-radius:8px 0 0 0;"> DATE
-                </th>
-                <th class="text-4 leading-6 font-[400] p-[10px] uppercase flex items-center justify-center gap-x-5" scope="col"
-                    style="border-radius:0 8px 0 0;"> <span>Check for all</span> <span><div class="form-group mb-0"><input id="readAll" type="checkbox"><label class="text-primaryText leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px] font-[400]"
-                                                                                       for="readAll"></label>
+        <table class="min-w-full">
+          <thead>
+          <tr class="border border-corporateBorder">
+            <th class="border-r border-[#EDEDED] text-4 leading-6 font-[400] p-[10px] uppercase w-1/2" scope="col"
+                style="border-radius:8px 0 0 0;"> DATE
+            </th>
+            <th class="text-4 leading-6 font-[400] p-[10px] uppercase flex items-center justify-center gap-x-5"
+                scope="col"
+                style="border-radius:0 8px 0 0;"><span>Check for all</span> <span><div class="form-group mb-0"><input
+                id="readAll" type="checkbox"><label
+                class="text-primaryText leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px] font-[400]"
+                for="readAll"></label>
                   </div></span>
-                </th>
-              </tr>
-              </thead>
+            </th>
+          </tr>
+          </thead>
 
-              <tbody>
-              <tr class="bg-corporateBg border-l border-r border-corporateBorder">
-                <td class="border-r border-[#EDEDED] text-4 text-center leading-6 p-[16px]">18 July 2022</td>
-                <td class="text-4 text-center leading-6 p-[16px]">
-                  <div class="form-group mb-0"><input id="read1" type="checkbox"><label class="text-primaryText leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px] font-[400]"
-                                                                                       for="read1"></label>
-                  </div>
-                </td>
-              </tr>
-              <tr class="border-l border-r border-corporateBorder">
-                <td class="border-r border-[#EDEDED] text-4 text-center leading-6 p-[16px]">18 July 2022</td>
-                <td class="text-4 text-center leading-6 p-[16px]">
-                  <div class="form-group mb-0"><input id="read2" type="checkbox"><label class="text-primaryText leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px] font-[400]"
-                                                                                       for="read2"></label>
-                  </div>
-                </td>
-              </tr>
-              <tr class="bg-corporateBg border-l border-r border-corporateBorder">
-                <td class="border-r border-[#EDEDED] text-4 text-center leading-6 p-[16px]">18 July 2022</td>
-                <td class="text-4 text-center leading-6 p-[16px]">
-                  <div class="form-group mb-0"><input id="read3" type="checkbox"><label class="text-primaryText leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px] font-[400]"
-                                                                                       for="read3"></label>
-                  </div>
-                </td>
-              </tr>
-              <tr class="border-l border-r border-corporateBorder">
-                <td class="border-r border-[#EDEDED] text-4 text-center leading-6 p-[16px]">18 July 2022</td>
-                <td class="text-4 text-center leading-6 p-[16px]">
-                  <div class="form-group mb-0"><input id="read4" type="checkbox"><label class="text-primaryText leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px] font-[400]"
-                                                                                       for="read4"></label>
-                  </div>
-                </td>
-              </tr>
-              <tr class="bg-corporateBg border-l border-r border-corporateBorder">
-                <td class="border-r border-[#EDEDED] text-4 text-center leading-6 p-[16px]">18 July 2022</td>
-                <td class="text-4 text-center leading-6 p-[16px]">
-                  <div class="form-group mb-0"><input id="read5" type="checkbox"><label class="text-primaryText leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px] font-[400]"
-                                                                                       for="read5"></label>
-                  </div>
-                </td>
-              </tr>
-              <tr class="border-l border-r border-corporateBorder">
-                <td class="border-r border-[#EDEDED] text-4 text-center leading-6 p-[16px]">18 July 2022</td>
-                <td class="text-4 text-center leading-6 p-[16px]">
-                  <div class="form-group mb-0"><input id="read6" type="checkbox"><label class="text-primaryText leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px] font-[400]"
-                                                                                       for="read6"></label>
-                  </div>
-                </td>
-              </tr>
-              <tr class="bg-corporateBg border-l border-r border-b border-corporateBorder">
-                <td class="border-r border-[#EDEDED] text-4 text-center leading-6 p-[16px]">18 July 2022</td>
-                <td class="text-4 text-center leading-6 p-[16px]">
-                  <div class="form-group mb-0"><input id="read6" type="checkbox"><label class="text-primaryText leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px] font-[400]"
-                                                                                       for="read6"></label>
-                  </div>
-                </td>
-              </tr>
-              </tbody>
-            </table>
+          <tbody>
+          <tr class=" border-l border-r border-corporateBorder">
+            <td class="border-r border-[#EDEDED] text-4 text-center leading-6 p-[16px] bg-[#F7F7F7]">18 July 2022</td>
+            <td class="text-4 text-center leading-6 p-[16px] bg-[#F7F7F7]">
+              <div class="form-group mb-0"><input id="read1" type="checkbox" checked><label
+                  class="text-primaryText leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px] font-[400]"
+                  for="read1"></label>
+              </div>
+            </td>
+          </tr>
+          <tr class="border-l border-r border-corporateBorder">
+            <td class="border-r border-[#EDEDED] text-4 text-center leading-6 p-[16px]">18 July 2022</td>
+            <td class="text-4 text-center leading-6 p-[16px]">
+              <div class="form-group mb-0"><input id="read2" type="checkbox" checked><label
+                  class="text-primaryText leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px] font-[400]"
+                  for="read2"></label>
+              </div>
+            </td>
+          </tr>
+          <tr class="bg-corporateBg border-l border-r border-corporateBorder">
+            <td class="border-r border-[#EDEDED] text-4 text-center leading-6 p-[16px] bg-[#F7F7F7]">18 July 2022</td>
+            <td class="text-4 text-center leading-6 p-[16px] bg-[#F7F7F7]">
+              <div class="form-group mb-0"><input id="read3" type="checkbox" checked><label
+                  class="text-primaryText leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px] font-[400]"
+                  for="read3"></label>
+              </div>
+            </td>
+          </tr>
+          <tr class="border-l border-r border-corporateBorder">
+            <td class="border-r border-[#EDEDED] text-4 text-center leading-6 p-[16px]">18 July 2022</td>
+            <td class="text-4 text-center leading-6 p-[16px]">
+              <div class="form-group mb-0"><input id="read4" type="checkbox"><label
+                  class="text-primaryText leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px] font-[400]"
+                  for="read4"></label>
+              </div>
+            </td>
+          </tr>
+          <tr class="bg-corporateBg border-l border-r border-corporateBorder">
+            <td class="border-r border-[#EDEDED] text-4 text-center leading-6 p-[16px] bg-[#F7F7F7]">18 July 2022</td>
+            <td class="text-4 text-center leading-6 p-[16px] bg-[#F7F7F7]">
+              <div class="form-group mb-0"><input id="read5" type="checkbox"><label
+                  class="text-primaryText leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px] font-[400]"
+                  for="read5"></label>
+              </div>
+            </td>
+          </tr>
+          <tr class="border-l border-r border-corporateBorder">
+            <td class="border-r border-[#EDEDED] text-4 text-center leading-6 p-[16px]">18 July 2022</td>
+            <td class="text-4 text-center leading-6 p-[16px]">
+              <div class="form-group mb-0"><input id="read6" type="checkbox"><label
+                  class="text-primaryText leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px] font-[400]"
+                  for="read6"></label>
+              </div>
+            </td>
+          </tr>
+          <tr class="bg-corporateBg border-l border-r border-b border-corporateBorder">
+            <td class="border-r border-[#EDEDED] text-4 text-center leading-6 p-[16px] bg-[#F7F7F7]">18 July 2022</td>
+            <td class="text-4 text-center leading-6 p-[16px] bg-[#F7F7F7]">
+              <div class="form-group mb-0"><input id="read6" type="checkbox"><label
+                  class="text-primaryText leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px] font-[400]"
+                  for="read6"></label>
+              </div>
+            </td>
+          </tr>
+          </tbody>
+        </table>
           </div>
         </div>
 
@@ -351,14 +357,14 @@
           </div>
 
 
-          <div class="bg-white rounded-[8px]">
+          <div class="bg-white rounded-[10px]">
           <div class="p-4 flex justify-between items-center">
             <div>
-              <p class="text-primaryText leading-[28px] text-[20px] xl:leading-[32px] xl:text-[24px] font-[600] mb-[8px]">Cancel trip</p>
+              <p class="text-primaryText leading-[28px] text-[20px] xl:leading-[32px] xl:text-[24px] font-semibold mb-[10px]">Cancel trip</p>
               <p class="text-primaryText ">By clicking “Cancel trip”, it will cancel the trip and the tickets in the trip. This action could not be undone.</p>
             </div>
             <div>
-              <button @click="openModal2" class="border border-corporateBorder items-center text-corporateError rounded-full px-6 py-3 leading-[12px] text-[10px] xl:leading-[16px] xl:text-[12px]">
+              <button @click="openModal2" class="border border-corporateBorder items-center text-corporateError rounded-full px-6 py-3 leading-[12px] text-[10px] xl:leading-[16px] xl:text-[12px] font-semibold">
               Cancel trip
               </button>  
               <Dialog header="Cancel Trip" v-model:visible="displayModal2" :breakpoints="{'960px': '75vw', '640px': '90vw'}" :style="{width: '360px'}" :modal="true">
@@ -456,7 +462,7 @@
     content: '';
     display: block;
     position: absolute;
-    top: 2px;
+    top: 1px;
     left: 7px;
     width: 6px;
     height: 14px;

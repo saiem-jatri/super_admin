@@ -53,10 +53,10 @@
     <div class="bg-white rounded-[8px]">
       <div class="p-4">
         <div class="flex items-center gap-x-[6px] mr-2">
-          <p class="text-primaryText leading-[12px] text-[8px] xl:leading-[16px] xl:text-[12px] font-[600]">Trip
+          <p class="text-primaryText leading-[12px] text-[8px] xl:leading-[16px] xl:text-[12px] font-[400]">Trip
             Information</p>
           <img alt="" class="w-1 h-2" src="../assets/svg/bgBack.svg">
-          <p class="text-secondaryText leading-[12px] text-[8px] xl:leading-[16px] xl:text-[12px] font-[400]">
+          <p class="text-secondaryText leading-[12px] text-[8px] xl:leading-[16px] xl:text-[12px] font-[600]">
             Boarding & Dropping</p>
           <img alt="" class="w-1 h-2" src="../assets/svg/bgBack.svg">
           <p class="text-secondaryText leading-[12px] text-[8px] xl:leading-[16px] xl:text-[12px] font-[400]">Seat &
@@ -78,11 +78,11 @@
             Preview</p>
         </div>
         <div class="flex justify-between items-center">
-          <p class="text-corporateSecondaryBlue leading-[20px] xl:leading-[24px] text-[14px] xl:text-[16px] font-[500] mt-2">
+          <p class="text-corporateSecondaryBlue leading-[20px] xl:leading-[24px] text-[14px] xl:text-[16px] font-semibold mt-2">
             BOARDING & DROPPING</p>
           <p class="flex gap-x-[10px]">
             <img alt="" src="../assets/svg/back_arrow.svg">
-            <a class="leading-[12px] xl:leading-[16px] text-[10px] xl:text-[12px] text-primaryText border-b-2 border-primaryText block text-primaryText font-[600]"
+            <a class="leading-[12px] xl:leading-[16px] text-[10px] xl:text-[12px] border-b-2 border-primaryText block text-primaryText font-[600]"
                href="#">Prev
               .step</a>
           </p>
@@ -91,8 +91,8 @@
     </div>
     <div class="bg-white rounded-[8px] mt-[12px] xl:mt-[16px]">
       <div class="p-4">
-        <p class="text-corporateSecondaryBlue leading-[20px] xl:leading-[24px] text-[14px] xl:text-[16px] font-[500]">
-          TRIP INFORMATION</p>
+        <p class="text-corporateSecondaryBlue leading-[20px] xl:leading-[24px] text-[14px] xl:text-[16px] font-semibold">
+          BOARDING INFORMATION</p>
         <div class="flex justify-between items-center">
           <p class="leading-[12px] xl:leading-[16px] text-[10px] xl:text-[12px] text-primaryText">BOARDING POINT
             1</p>
@@ -118,9 +118,9 @@
           </div>
           <div class="w-1/4">
             <p class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]">
-              Stoppage</p>
+              Counter</p>
             <Dropdown v-model="selectedCity" :opti6ns="cities" class="w-full py-[4px] mt-[10px]" optionLabel="name"
-                      placeholder="Select stoppage"/>
+                      placeholder="Select counter"/>
           </div>
           <div class="w-1/4">
             <p class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]">
@@ -128,7 +128,7 @@
             <div
                 class="w-full h-[40px] border border-[#DBDBDB] flex justify-between items-center mt-[10px] leading-[20px] rounded-[4px] xl:px-[8px] overflow-hidden">
               <input
-                  class="outline-none pl-2 placeholder:text-[#4D4D4F] placeholder:text-[14px] placeholder:leading-[20px]"
+                  class="outline-none placeholder:text-[#4D4D4F] placeholder:text-[14px] placeholder:leading-[20px]"
                   placeholder="Select boarding date"
                   type="text">
               <img alt="" class="h-5 w-5 mr-5 2xl:mr-0" src="../assets/svg/count2.svg">
@@ -151,10 +151,10 @@
         </router-link>
 
       </div>
-      <hr class="mt-[12px] xl:mt-[16px] border-t border-corporateBorder">
+      <hr class="border-t border-corporateBorder">
       <div class="p-4">
-        <p class="text-corporateSecondaryBlue leading-[20px] xl:leading-[24px] text-[14px] xl:text-[16px] font-[500]">
-          TRIP INFORMATION</p>
+        <p class="text-corporateSecondaryBlue leading-[20px] xl:leading-[24px] text-[14px] xl:text-[16px] font-semibold">
+          DROPPING INFORMATION</p>
 
         <p class="leading-[12px] xl:leading-[16px] text-[10px] xl:text-[12px] text-primaryText mt-3 xl:mt-4">
           DROPPING POINT 1</p>
@@ -174,9 +174,9 @@
           </div>
           <div class="w-1/4">
             <p class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]">
-              Stoppage</p>
+              Counter</p>
             <Dropdown v-model="selectedCity" :opti6ns="cities" class="w-full py-[4px] mt-[10px]" optionLabel="name"
-                      placeholder="Select stoppage"/>
+                      placeholder="Select counter"/>
           </div>
           <div class="w-1/4">
             <p class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]">
@@ -184,7 +184,7 @@
             <div
                 class="w-full h-[40px] border border-[#DBDBDB] flex justify-between items-center mt-[10px] leading-[20px] rounded-[4px] xl:px-[8px] overflow-hidden">
               <input
-                  class="outline-none pl-2 placeholder:text-[#4D4D4F] placeholder:text-[14px] placeholder:leading-[20px]"
+                  class="outline-none placeholder:text-[#4D4D4F] placeholder:text-[14px] placeholder:leading-[20px]"
                   placeholder="Select boarding date"
                   type="text">
               <img alt="" class="h-5 w-5 mr-5 2xl:mr-0" src="../assets/svg/count2.svg">
@@ -201,7 +201,7 @@
             to="/anotherTripsBoarding">
           <div class="flex justify-center items-center gap-x-[11px] py-[12px]">
             <img alt="" class="w-[10px] h-[10px]" src="../assets/svg/createPlus.svg">
-            <p class="text-primaryText font-[600] leading-[20px] text-[14px]">Add another boarding point</p>
+            <p class="text-primaryText font-[600] leading-[20px] text-[14px]">Add another dropping point</p>
           </div>
         </router-link>
       </div>

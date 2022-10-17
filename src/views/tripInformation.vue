@@ -25,8 +25,6 @@
         </div>
       </div>
       <div class="flex gap-x-[24px] p-4 w-1/2 justify-end items-center pr-2 ">
-        <!--            <input type="text" class="w-[270px] h-[40px] border border-[#DBDBDB] placeholder:text-[#4D4D4F] placeholder:text-[14px] leading-[20px] rounded-[4px] pl-8 focus:outline-none" placeholder="PNR or mobile number">-->
-        <!--            <img src="../assets/svg/search.svg" class="h-5 w-5 absolute left-[242px]" alt="">-->
         <div
             class="w-[200px] h-[30px] xl:w-[270px] xl:h-[40px] border border-[#DBDBDB] flex justify-center items-center leading-[20px] rounded-[4px] pl-[9px] overflow-hidden">
           <img alt="" class="h-2 w-2 xl:h-5 xl:w-5" src="../assets/svg/search.svg">
@@ -46,11 +44,11 @@
     </div>
   </div>
   <!-- top nav bar end -->
+
   <!-- body start-->
   <div class="px-[30px] py-[24px]">
-
     <!--        card-->
-    <div class="bg-white rounded-[8px]">
+    <div class="bg-white rounded-[6px]">
       <div class="p-4">
         <div class="flex items-center gap-x-[6px] mr-2">
           <p class="text-primaryText leading-[12px] text-[8px] xl:leading-[16px] xl:text-[12px] font-[600]">Trip
@@ -81,7 +79,7 @@
           TRIP INFORMATION</p>
       </div>
     </div>
-    <div class="bg-white rounded-[8px] mt-[12px] xl:mt-[16px]">
+    <div class="bg-white rounded-[10px] mt-[12px] xl:mt-[16px]">
       <div class="p-4">
         <p class="text-corporateSecondaryBlue leading-[20px] xl:leading-[24px] text-[14px] xl:text-[16px] font-[600] mb-4">
           TRIP INFORMATION</p>
@@ -121,7 +119,7 @@
 
           <div class="w-[24.2%]">
             <p class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]">
-              Future trip validate</p>
+              Trip auto renewal in</p>
             <div
                 class="w-full mt-[10px] h-[40px] border border-[#DBDBDB] flex justify-between items-center leading-[20px] rounded-[4px] overflow-hidden divide-x">
               <div class="flex justify-between items-center">
@@ -143,7 +141,7 @@
           </div>
         </div>
       </div>
-      <hr class="mt-[12px] xl:mt-[16px] border-t border-corporateBorder">
+      <hr class="border-t border-corporateBorder">
       <div class="p-4">
         <p class="text-corporateSecondaryBlue leading-[20px] xl:leading-[24px] text-[14px] xl:text-[16px] font-[600]">
           DATE & TIME</p>
@@ -154,7 +152,7 @@
             <div
                 class="w-full h-[40px] border border-[#DBDBDB] flex justify-between items-center mt-[10px] leading-[20px] rounded-[4px] px-[20px] xl:px-[8px] overflow-hidden">
               <input
-                  class="outline-none pl-2 placeholder:text-[#4D4D4F] placeholder:text-[14px] placeholder:leading-[20px]"
+                  class="outline-none placeholder:text-[#4D4D4F] placeholder:text-[14px] placeholder:leading-[20px]"
                   placeholder="Select date"
                   type="text">
               <img alt="" class="h-5 w-5" src="../assets/svg/count2.svg">
@@ -171,7 +169,7 @@
             <div
                 class="w-full h-[40px] border border-[#DBDBDB] flex justify-between items-center mt-[10px] leading-[20px] rounded-[4px] px-[20px] xl:px-[8px] overflow-hidden">
               <input
-                  class="outline-none pl-2 placeholder:text-[#4D4D4F] placeholder:text-[14px] placeholder:leading-[20px]"
+                  class="outline-none placeholder:text-[#4D4D4F] placeholder:text-[14px] placeholder:leading-[20px]"
                   placeholder="Select arrival date"
                   type="text">
               <img alt="" class="h-5 w-5" src="../assets/svg/count2.svg">
