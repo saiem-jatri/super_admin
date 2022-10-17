@@ -9,6 +9,7 @@ module.exports = {
             colors: {
                 corporate: '#F04935',
                 primaryText: '#151414',
+                secondaryText: "#4D4D4F",
                 corporateBg: '#F7F7F7',
                 corporateBorder: '#DBDBDB',
                 corporateAsh: '#8D8D8F',

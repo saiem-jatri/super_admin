@@ -401,7 +401,7 @@
     </div>
     <div class="mt-[12px] xl:mt-[16px] bg-white rounded-[10px]">
       <div class="flex justify-between items-center px-[16px] py-2">
-        <p class="leading-[24px] xl:leading-[28px] text-[18px] xl:text-[20px] font-[600] text-[#1E88E5] py-4">USER TRIP RESTRICTION</p>
+        <p class="leading-[24px] xl:leading-[28px] text-[18px] xl:text-[20px] font-[500] text-[#1E88E5] py-4">USER TRIP RESTRICTION</p>
         <router-link class="corporateButton" to="/manageUserRestriction">Manage restriction</router-link>
       </div>
     </div>

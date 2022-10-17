@@ -35,18 +35,18 @@
           <div class="bg-white rounded">
               <div class="p-4 flex justify-between items-center gap-x-[30px]">
                 <div class="flex justify-start items-center gap-x-4 w-full">
-                  <div class="w-1/4 xl:w-3/5">
+                  <div class="w-1/4 xl:w-3/5 relative">
                     <p class="text-primaryText leading-[20px] text-[14px] xl:leading-[24px] xl:text-[16px] font-[600]">Trip</p>
-                    <Dropdown class="w-full py-[4px] mt-[10px] placeholder:text-primaryText placeholder:leading-[16px] placeholder:text-[12px] xl:placeholder:leading-[20px] xl:placeholder:text-[14px]" v-model="selectedCity" :options="cities" optionLabel="name" placeholder="Select trip" />
+                    <Dropdown class="w-full py-[4px] mt-[10px] placeholder:text-primaryText placeholder:leading-[16px] placeholder:text-[12px] xl:placeholder:leading-[20px] xl:placeholder:text-[14px]" v-model="selectedCity" :options="cities" optionLabel="name" placeholder="Select trip" />       
                   </div>
                   <div class="w-1/4 xl:w-1/5">
                     <p class="text-primaryText leading-[20px] text-[14px] xl:leading-[24px] xl:text-[16px] font-[600]">From</p>
-                    <div class="w-full h-[40px] border border-[#DBDBDB] flex justify-between items-center mt-[10px] leading-[20px] rounded-[4px] px-[20px] xl:px-[8px] overflow-hidden"><input type="text" class="outline-none pl-2 placeholder:text-[#4D4D4F] placeholder:text-[14px] placeholder:leading-[20px]" placeholder="Select location"><img src="/src/assets/svg/count2.svg" class="h-5 w-5" alt=""></div>
+                    <div class="w-full h-[40px] border border-[#DBDBDB] flex justify-between items-center mt-[10px] leading-[20px] rounded-[4px] pr-[10px] overflow-hidden"><input type="text" class="outline-none pl-2 placeholder:text-[#4D4D4F] placeholder:text-[14px] placeholder:leading-[20px]" placeholder="Select location"><img src="/src/assets/svg/count2.svg" class="h-5 w-5" alt=""></div>
                  </div>
   
                   <div class="w-1/4 xl:w-1/5">
                     <p class="text-primaryText leading-[20px] text-[14px] xl:leading-[24px] xl:text-[16px] font-[600]">To</p>
-                    <div class="w-full h-[40px] border border-[#DBDBDB] flex justify-between items-center mt-[10px] leading-[20px] rounded-[4px] px-[20px] xl:px-[8px] overflow-hidden"><input type="text" class="outline-none pl-2 placeholder:text-[#4D4D4F] placeholder:text-[14px] placeholder:leading-[20px]" placeholder="Select location"><img src="/src/assets/svg/count2.svg" class="h-5 w-5" alt=""></div>
+                    <div class="w-full h-[40px] border border-[#DBDBDB] flex justify-between items-center mt-[10px] leading-[20px] rounded-[4px] pr-[10px] overflow-hidden"><input type="text" class="outline-none pl-2 placeholder:text-[#4D4D4F] placeholder:text-[14px] placeholder:leading-[20px]" placeholder="Select location"><img src="/src/assets/svg/count2.svg" class="h-5 w-5" alt=""></div>
                 </div>
                 </div>
                 <button class="flex gap-x-[9px] justify-center items-center bg-corporate text-white leading-[14px] xl:leading-[16px] text-[11px] xl:text-[12px] font-[500] py-3 pl-[17px] pr-[24px] rounded-full mt-6"><span>
@@ -60,31 +60,33 @@
                 <div class="flex justify-between items-center">
                   <p class="text-[#151414] leading-[20px] xl:leading-[24px] text-[14px] xl:text-[16px] font-[600]">OWN COUNTERMAN</p>
                   <p class="flex justify-center items-center gap-x-[5px]">
-                    <span class="form-group flex mb-0"><input type="checkbox" id="read11"><label for="read11" class="text-primaryText leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px] font-[400]"></label></span> 
+                    <span class="form-group flex mb-0">
+                      <input type="checkbox" id="read11"><label for="read11" class="text-primaryText leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px] font-[400]"></label>
+                    </span> 
                     <span class="text-[12px] xl:text-[16px] leading-5 xl:leading-6 mt-[2px]">Mark all</span>
                   </p>
                 </div>
 
             <div class="flex items-center gap-x-[10px] xl:gap-x-[16px] mt-[12px] xl:mt-[16px]">
               <div class="w-1/4">
-                <p class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px]">Counter 1</p>
+                <p class="text-secondaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px]">Counter 1</p>
               </div>
               <div class="w-1/4">
                 <p class="flex justify-center items-center gap-x-[5px]">
                     <span class="form-group flex mb-0"><input type="checkbox" id="read11"><label for="read11" class="text-primaryText leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px] font-[400]"></label></span> 
-                    <span class="text-[12px] xl:text-[16px] leading-5 xl:leading-6 mt-[2px]">Fahim Ahmed</span>
+                    <span class="text-[12px] xl:text-[16px] leading-5 xl:leading-6 mt-[2px] text-secondaryText">Fahim Ahmed</span>
                 </p>
               </div>
               <div class="w-1/4">
                 <p class="flex justify-center items-center gap-x-[5px]">
                     <span class="form-group flex mb-0"><input type="checkbox" id="read11"><label for="read11" class="text-primaryText leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px] font-[400]"></label></span> 
-                    <span class="text-[12px] xl:text-[16px] leading-5 xl:leading-6 mt-[2px]">ASSIGN AGENT</span>
+                    <span class="text-[12px] xl:text-[16px] leading-5 xl:leading-6 mt-[2px] text-secondaryText">ASSIGN AGENT</span>
                 </p>
               </div>
               <div class="w-1/4">
                 <p class="flex justify-center items-center gap-x-[5px]">
                     <span class="form-group flex mb-0"><input type="checkbox" id="read11"><label for="read11" class="text-primaryText leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px] font-[400]"></label></span> 
-                    <span class="text-[12px] xl:text-[16px] leading-5 xl:leading-6 mt-[2px]">Fahim Ahmed</span>
+                    <span class="text-[12px] xl:text-[16px] leading-5 xl:leading-6 mt-[2px] text-secondaryText">Fahim Ahmed</span>
                 </p>
               </div>
             </div>
@@ -96,19 +98,19 @@
               <div class="w-1/4">
                 <p class="flex justify-center items-center gap-x-[5px]">
                     <span class="form-group flex mb-0"><input type="checkbox" id="read11"><label for="read11" class="text-primaryText leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px] font-[400]"></label></span> 
-                    <span class="text-[12px] xl:text-[16px] leading-5 xl:leading-6 mt-[2px]">Fahim Ahmed</span>
+                    <span class="text-[12px] xl:text-[16px] leading-5 xl:leading-6 mt-[2px] text-secondaryText">Fahim Ahmed</span>
                 </p>
               </div>
               <div class="w-1/4">
                 <p class="flex justify-center items-center gap-x-[5px]">
                     <span class="form-group flex mb-0"><input type="checkbox" id="read11"><label for="read11" class="text-primaryText leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px] font-[400]"></label></span> 
-                    <span class="text-[12px] xl:text-[16px] leading-5 xl:leading-6 mt-[2px]">ASSIGN AGENT</span>
+                    <span class="text-[12px] xl:text-[16px] leading-5 xl:leading-6 mt-[2px] text-secondaryText">ASSIGN AGENT</span>
                 </p>
               </div>
               <div class="w-1/4">
                 <p class="flex justify-center items-center gap-x-[5px]">
                     <span class="form-group flex mb-0"><input type="checkbox" id="read11"><label for="read11" class="text-primaryText leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px] font-[400]"></label></span> 
-                    <span class="text-[12px] xl:text-[16px] leading-5 xl:leading-6 mt-[2px]">Fahim Ahmed</span>
+                    <span class="text-[12px] xl:text-[16px] leading-5 xl:leading-6 mt-[2px] text-secondaryText">Fahim Ahmed</span>
                 </p>
               </div>
             </div>
@@ -121,19 +123,19 @@
               <div class="w-1/4">
                 <p class="flex justify-center items-center gap-x-[5px]">
                     <span class="form-group flex mb-0"><input type="checkbox" id="read11"><label for="read11" class="text-primaryText leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px] font-[400]"></label></span> 
-                    <span class="text-[12px] xl:text-[16px] leading-5 xl:leading-6 mt-[2px]">Fahim Ahmed</span>
+                    <span class="text-[12px] xl:text-[16px] leading-5 xl:leading-6 mt-[2px] text-secondaryText">Fahim Ahmed</span>
                 </p>
               </div>
               <div class="w-1/4">
                 <p class="flex justify-center items-center gap-x-[5px]">
                     <span class="form-group flex mb-0"><input type="checkbox" id="read11"><label for="read11" class="text-primaryText leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px] font-[400]"></label></span> 
-                    <span class="text-[12px] xl:text-[16px] leading-5 xl:leading-6 mt-[2px]">ASSIGN AGENT</span>
+                    <span class="text-[12px] xl:text-[16px] leading-5 xl:leading-6 mt-[2px] text-secondaryText">ASSIGN AGENT</span>
                 </p>
               </div>
               <div class="w-1/4">
                 <p class="flex justify-center items-center gap-x-[5px]">
                     <span class="form-group flex mb-0"><input type="checkbox" id="read11"><label for="read11" class="text-primaryText leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px] font-[400]"></label></span> 
-                    <span class="text-[12px] xl:text-[16px] leading-5 xl:leading-6 mt-[2px]">Fahim Ahmed</span>
+                    <span class="text-[12px] xl:text-[16px] leading-5 xl:leading-6 mt-[2px] text-secondaryText">Fahim Ahmed</span>
                 </p>
               </div>
             </div>
@@ -151,25 +153,25 @@
               <div class="w-1/4">
                 <p class="flex items-center gap-x-[5px]">
                     <span class="form-group flex mb-0"><input type="checkbox" id="read11"><label for="read11" class="text-primaryText leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px] font-[400]"></label></span> 
-                    <span class="text-[12px] xl:text-[16px] leading-5 xl:leading-6 mt-[2px]">Fahim Ahmed</span>
+                    <span class="text-[12px] xl:text-[16px] leading-5 xl:leading-6 mt-[2px] text-secondaryText">Fahim Ahmed</span>
                 </p>
               </div>
               <div class="w-1/4">
                 <p class="flex justify-center items-center gap-x-[5px]">
                     <span class="form-group flex mb-0"><input type="checkbox" id="read11"><label for="read11" class="text-primaryText leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px] font-[400]"></label></span> 
-                    <span class="text-[12px] xl:text-[16px] leading-5 xl:leading-6 mt-[2px]">Fahim Ahmed</span>
+                    <span class="text-[12px] xl:text-[16px] leading-5 xl:leading-6 mt-[2px] text-secondaryText">Fahim Ahmed</span>
                 </p>
               </div>
               <div class="w-1/4">
                 <p class="flex justify-center items-center gap-x-[5px]">
                     <span class="form-group flex mb-0"><input type="checkbox" id="read11"><label for="read11" class="text-primaryText leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px] font-[400]"></label></span> 
-                    <span class="text-[12px] xl:text-[16px] leading-5 xl:leading-6 mt-[2px]">ASSIGN AGENT</span>
+                    <span class="text-[12px] xl:text-[16px] leading-5 xl:leading-6 mt-[2px] text-secondaryText">ASSIGN AGENT</span>
                 </p>
               </div>
               <div class="w-1/4">
                 <p class="flex justify-center items-center gap-x-[5px]">
                     <span class="form-group flex mb-0"><input type="checkbox" id="read11"><label for="read11" class="text-primaryText leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px] font-[400]"></label></span> 
-                    <span class="text-[12px] xl:text-[16px] leading-5 xl:leading-6 mt-[2px]">Fahim Ahmed</span>
+                    <span class="text-[12px] xl:text-[16px] leading-5 xl:leading-6 mt-[2px] text-secondaryText">Fahim Ahmed</span>
                 </p>
               </div>
             </div>
@@ -179,25 +181,25 @@
               <div class="w-1/4">
                 <p class="flex items-center gap-x-[5px]">
                     <span class="form-group flex mb-0"><input type="checkbox" id="read11"><label for="read11" class="text-primaryText leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px] font-[400]"></label></span> 
-                    <span class="text-[12px] xl:text-[16px] leading-5 xl:leading-6 mt-[2px]">Fahim Ahmed</span>
+                    <span class="text-[12px] xl:text-[16px] leading-5 xl:leading-6 mt-[2px] text-secondaryText">Fahim Ahmed</span>
                 </p>
               </div>
               <div class="w-1/4">
                 <p class="flex justify-center items-center gap-x-[5px]">
                     <span class="form-group flex mb-0"><input type="checkbox" id="read11"><label for="read11" class="text-primaryText leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px] font-[400]"></label></span> 
-                    <span class="text-[12px] xl:text-[16px] leading-5 xl:leading-6 mt-[2px]">Fahim Ahmed</span>
+                    <span class="text-[12px] xl:text-[16px] leading-5 xl:leading-6 mt-[2px] text-secondaryText">Fahim Ahmed</span>
                 </p>
               </div>
               <div class="w-1/4">
                 <p class="flex justify-center items-center gap-x-[5px]">
                     <span class="form-group flex mb-0"><input type="checkbox" id="read11"><label for="read11" class="text-primaryText leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px] font-[400]"></label></span> 
-                    <span class="text-[12px] xl:text-[16px] leading-5 xl:leading-6 mt-[2px]">ASSIGN AGENT</span>
+                    <span class="text-[12px] xl:text-[16px] leading-5 xl:leading-6 mt-[2px] text-secondaryText">ASSIGN AGENT</span>
                 </p>
               </div>
               <div class="w-1/4">
                 <p class="flex justify-center items-center gap-x-[5px]">
                     <span class="form-group flex mb-0"><input type="checkbox" id="read11"><label for="read11" class="text-primaryText leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px] font-[400]"></label></span> 
-                    <span class="text-[12px] xl:text-[16px] leading-5 xl:leading-6 mt-[2px]">Fahim Ahmed</span>
+                    <span class="text-[12px] xl:text-[16px] leading-5 xl:leading-6 mt-[2px] text-secondaryText">Fahim Ahmed</span>
                 </p>
               </div>
             </div>
@@ -207,27 +209,28 @@
               <div class="w-1/4">
                 <p class="flex items-center gap-x-[5px]">
                     <span class="form-group flex mb-0"><input type="checkbox" id="read11"><label for="read11" class="text-primaryText leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px] font-[400]"></label></span> 
-                    <span class="text-[12px] xl:text-[16px] leading-5 xl:leading-6 mt-[2px]">Fahim Ahmed</span>
+                    <span class="text-[12px] xl:text-[16px] leading-5 xl:leading-6 mt-[2px] text-secondaryText">Fahim Ahmed</span>
                 </p>
               </div>
               <div class="w-1/4">
                 <p class="flex justify-center items-center gap-x-[5px]">
                     <span class="form-group flex mb-0"><input type="checkbox" id="read11"><label for="read11" class="text-primaryText leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px] font-[400]"></label></span> 
-                    <span class="text-[12px] xl:text-[16px] leading-5 xl:leading-6 mt-[2px]">Fahim Ahmed</span>
+                    <span class="text-[12px] xl:text-[16px] leading-5 xl:leading-6 mt-[2px] text-secondaryText">Fahim Ahmed</span>
                 </p>
               </div>
               <div class="w-1/4">
                 <p class="flex justify-center items-center gap-x-[5px]">
                     <span class="form-group flex mb-0"><input type="checkbox" id="read11"><label for="read11" class="text-primaryText leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px] font-[400]"></label></span> 
-                    <span class="text-[12px] xl:text-[16px] leading-5 xl:leading-6 mt-[2px]">ASSIGN AGENT</span>
+                    <span class="text-[12px] xl:text-[16px] leading-5 xl:leading-6 mt-[2px] text-secondaryText">ASSIGN AGENT</span>
                 </p>
               </div>
               <div class="w-1/4">
                 <p class="flex justify-center items-center gap-x-[5px]">
                     <span class="form-group flex mb-0"><input type="checkbox" id="read11"><label for="read11" class="text-primaryText leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px] font-[400]"></label></span> 
-                    <span class="text-[12px] xl:text-[16px] leading-5 xl:leading-6 mt-[2px]">Fahim Ahmed</span>
+                    <span class="text-[12px] xl:text-[16px] leading-5 xl:leading-6 mt-[2px] text-secondaryText">Fahim Ahmed</span>
                 </p>
               </div>
+
             </div>
 
             <hr class="my-[20px] border-t border-dashed border-[#DBDBDB]">
@@ -235,25 +238,25 @@
               <div class="w-1/4">
                 <p class="flex items-center gap-x-[5px]">
                     <span class="form-group flex mb-0"><input type="checkbox" id="read11"><label for="read11" class="text-primaryText leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px] font-[400]"></label></span> 
-                    <span class="text-[12px] xl:text-[16px] leading-5 xl:leading-6 mt-[2px]">Fahim Ahmed</span>
+                    <span class="text-[12px] xl:text-[16px] leading-5 xl:leading-6 mt-[2px] text-secondaryText">Fahim Ahmed</span>
                 </p>
               </div>
               <div class="w-1/4">
                 <p class="flex justify-center items-center gap-x-[5px]">
                     <span class="form-group flex mb-0"><input type="checkbox" id="read11"><label for="read11" class="text-primaryText leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px] font-[400]"></label></span> 
-                    <span class="text-[12px] xl:text-[16px] leading-5 xl:leading-6 mt-[2px]">Fahim Ahmed</span>
+                    <span class="text-[12px] xl:text-[16px] leading-5 xl:leading-6 mt-[2px] text-secondaryText">Fahim Ahmed</span>
                 </p>
               </div>
               <div class="w-1/4">
                 <p class="flex justify-center items-center gap-x-[5px]">
                     <span class="form-group flex mb-0"><input type="checkbox" id="read11"><label for="read11" class="text-primaryText leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px] font-[400]"></label></span> 
-                    <span class="text-[12px] xl:text-[16px] leading-5 xl:leading-6 mt-[2px]">ASSIGN AGENT</span>
+                    <span class="text-[12px] xl:text-[16px] leading-5 xl:leading-6 mt-[2px] text-secondaryText">ASSIGN AGENT</span>
                 </p>
               </div>
               <div class="w-1/4">
                 <p class="flex justify-center items-center gap-x-[5px]">
                     <span class="form-group flex mb-0"><input type="checkbox" id="read11"><label for="read11" class="text-primaryText leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px] font-[400]"></label></span> 
-                    <span class="text-[12px] xl:text-[16px] leading-5 xl:leading-6 mt-[2px]">Fahim Ahmed</span>
+                    <span class="text-[12px] xl:text-[16px] leading-5 xl:leading-6 mt-[2px] text-secondaryText">Fahim Ahmed</span>
                 </p>
               </div>
             </div>
