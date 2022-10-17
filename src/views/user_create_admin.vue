@@ -50,8 +50,9 @@
       <div class="px-[30px] py-[24px]">
 
         <!--        card-->
-        <div class="mt-[16px] bg-white rounded-[10px]">
-          <div class="p-4 flex items-center gap-x-4 w-full">
+        <div class="bg-white rounded-[10px]">
+
+          <div class="flex items-center gap-x-4 w-full p-4">
             <div class="w-1/4">
               <div class="flex justify-between items-center w-full">
                 <p class="text-primaryText leading-[18px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]">Owner
@@ -94,7 +95,8 @@
                   type="text">
             </div>
           </div>
-          <div class="p-4 flex items-center gap-x-4 w-full">
+            
+          <div class="flex items-center gap-x-4 w-full px-4 pb-4">
             <div class="w-1/4">
               <div class="flex justify-between items-center w-full">
                 <p class="text-primaryText leading-[18px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]">
@@ -126,76 +128,230 @@
                   placeholder="Enter address"
                   type="text">
             </div>
-          </div>
-          <div class="p-4">
-            <div class="mt-4 rounded-[4px] border border-corporateBorder pt-3 px-4">
+            </div>
+
+            <div class="px-4 pb-4">
+              <div class="rounded-[4px] border border-corporateBorder pt-3 px-4">
               <div class="flex justify-between w-full">
                 <p class="leading-[24px] xl:leading-[28px] text-[18px] xl:text-[20px] font-[600] text-primaryText flex justify-center items-center">
                   Permissions</p>
-                <div class="form-group  mt-5">
+                <div class="form-group mt-2 mb-2">
                   <input id="html" type="checkbox">
-                  <label class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[14px] font-[400]"
-                         for="html">Give
-                    All Permission</label>
+                  <label class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[14px] font-[600]"
+                         for="html">Give All Permission</label>
                 </div>
               </div>
               <hr class="border-t border-corporateBorder mt-[10px]">
               <div class="flex divide-x divide-corporateBorder">
                 <div class="w-1/2">
-                  <div class="py-[18px] pl-[16px] pr-[46px]">
+                  <div class="py-[18px] pr-[46px]">
                     <div class="flex justify-between items-center">
                       <p class="w-[60%] leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px]">Dashboard:</p>
-                      <div class="w-[40%] flex justify-between items-center mt-4">
-                        <div class="form-group">
-                          <input id="read" type="checkbox">
-                          <label
-                              class="text-primaryText leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px] font-[400]"
-                              for="read">Read</label>
-                        </div>
-                        <div class="form-group">
-                          <input id="write" type="checkbox">
-                          <label
-                              class="text-primaryText leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px] font-[400]"
-                              for="write">Write</label>
-                        </div>
+                      <div class="w-[40%]">
+                         <div class="flex justify-between items-center">
+                            <div class="form-group">
+                              <input id="read" type="checkbox">
+                              <label
+                                  class="text-primaryText leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px] font-[400]"
+                                  for="read">Read</label>
+                            </div>
+                            <div class="form-group">
+                              <input id="write" type="checkbox">
+                              <label
+                                  class="text-primaryText leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px] font-[400]"
+                                  for="write">Write</label>
+                            </div>
+                         </div>
+                         <div class="flex justify-between items-center">
+                            <div class="form-group">
+                              <input id="read" type="checkbox">
+                              <label
+                                  class="text-primaryText leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px] font-[400]"
+                                  for="read">Read</label>
+                            </div>
+                            <div class="form-group">
+                              <input id="write" type="checkbox">
+                              <label
+                                  class="text-primaryText leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px] font-[400]"
+                                  for="write">Write</label>
+                            </div>
+                         </div>
+                         <div class="flex justify-between items-center">
+                            <div class="form-group mb-1">
+                              <input id="read" type="checkbox">
+                              <label
+                                  class="text-primaryText leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px] font-[400]"
+                                  for="read">Read</label>
+                            </div>
+                            <div class="form-group mb-1">
+                              <input id="write" type="checkbox">
+                              <label
+                                  class="text-primaryText leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px] font-[400]"
+                                  for="write">Write</label>
+                            </div>
+                         </div>
                       </div>
                     </div>
                     <hr class="border-t border-dashed border-corporateBorder mt-[15px]">
 
-                    <div class="flex justify-between items-center">
+                    <div class="flex justify-between items-center pt-4">
                       <p class="w-[60%] leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px]">Admin:</p>
-                      <div class="w-[40%] flex justify-between items-center mt-4">
-                        <div class="form-group">
-                          <input id="read" type="checkbox">
-                          <label
-                              class="text-primaryText leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px] font-[400]"
-                              for="read">Read</label>
-                        </div>
-                        <div class="form-group">
-                          <input id="write" type="checkbox">
-                          <label
-                              class="text-primaryText leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px] font-[400]"
-                              for="write">Write</label>
-                        </div>
+                      <div class="w-[40%]">
+                         <div class="flex justify-between items-center">
+                            <div class="form-group">
+                              <input id="read" type="checkbox">
+                              <label
+                                  class="text-primaryText leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px] font-[400]"
+                                  for="read">Read</label>
+                            </div>
+                            <div class="form-group">
+                              <input id="write" type="checkbox">
+                              <label
+                                  class="text-primaryText leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px] font-[400]"
+                                  for="write">Write</label>
+                            </div>
+                         </div>
+                         <div class="flex justify-between items-center">
+                            <div class="form-group">
+                              <input id="read" type="checkbox">
+                              <label
+                                  class="text-primaryText leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px] font-[400]"
+                                  for="read">Read</label>
+                            </div>
+                            <div class="form-group">
+                              <input id="write" type="checkbox">
+                              <label
+                                  class="text-primaryText leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px] font-[400]"
+                                  for="write">Write</label>
+                            </div>
+                         </div>
+                         <div class="flex justify-between items-center">
+                            <div class="form-group mb-1">
+                              <input id="read" type="checkbox">
+                              <label
+                                  class="text-primaryText leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px] font-[400]"
+                                  for="read">Read</label>
+                            </div>
+                            <div class="form-group mb-1">
+                              <input id="write" type="checkbox">
+                              <label
+                                  class="text-primaryText leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px] font-[400]"
+                                  for="write">Write</label>
+                            </div>
+                         </div>
                       </div>
                     </div>
                     <hr class="border-t border-dashed border-corporateBorder mt-[15px]">
 
-                    <div class="flex justify-between items-center">
+                    <div class="flex justify-between items-center pt-4">
                       <p class="w-[60%] leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px]">Trip copy:</p>
-                      <div class="w-[40%] flex justify-between items-center mt-4">
-                        <div class="form-group">
-                          <input id="read" type="checkbox">
-                          <label
-                              class="text-primaryText leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px] font-[400]"
-                              for="read">Read</label>
-                        </div>
-                        <div class="form-group">
-                          <input id="write" type="checkbox">
-                          <label
-                              class="text-primaryText leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px] font-[400]"
-                              for="write">Write</label>
-                        </div>
+                      <div class="w-[40%]">
+                         <div class="flex justify-between items-center">
+                            <div class="form-group">
+                              <input id="read" type="checkbox">
+                              <label
+                                  class="text-primaryText leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px] font-[400]"
+                                  for="read">Read</label>
+                            </div>
+                            <div class="form-group">
+                              <input id="write" type="checkbox">
+                              <label
+                                  class="text-primaryText leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px] font-[400]"
+                                  for="write">Write</label>
+                            </div>
+                         </div>
+                         <div class="flex justify-between items-center">
+                            <div class="form-group">
+                              <input id="read" type="checkbox">
+                              <label
+                                  class="text-primaryText leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px] font-[400]"
+                                  for="read">Read</label>
+                            </div>
+                            <div class="form-group">
+                              <input id="write" type="checkbox">
+                              <label
+                                  class="text-primaryText leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px] font-[400]"
+                                  for="write">Write</label>
+                            </div>
+                         </div>
+                         <div class="flex justify-between items-center">
+                            <div class="form-group mb-1">
+                              <input id="read" type="checkbox">
+                              <label
+                                  class="text-primaryText leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px] font-[400]"
+                                  for="read">Read</label>
+                            </div>
+                            <div class="form-group mb-1">
+                              <input id="write" type="checkbox">
+                              <label
+                                  class="text-primaryText leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px] font-[400]"
+                                  for="write">Write</label>
+                            </div>
+                         </div>
+                      </div>
+                    </div>
+                    <hr class="border-t border-dashed border-corporateBorder mt-[15px]">
+
+                    <div class="flex justify-between items-center pt-4">
+                      <p class="w-[60%] leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px]">Manage fees:</p>
+                      <div class="w-[40%]">
+                         <div class="flex justify-between items-center">
+                            <div class="form-group">
+                              <input id="read" type="checkbox">
+                              <label
+                                  class="text-primaryText leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px] font-[400]"
+                                  for="read">Read</label>
+                            </div>
+                            <div class="form-group">
+                              <input id="write" type="checkbox">
+                              <label
+                                  class="text-primaryText leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px] font-[400]"
+                                  for="write">Write</label>
+                            </div>
+                         </div>
+                         <div class="flex justify-between items-center">
+                            <div class="form-group">
+                              <input id="read" type="checkbox">
+                              <label
+                                  class="text-primaryText leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px] font-[400]"
+                                  for="read">Read</label>
+                            </div>
+                            <div class="form-group">
+                              <input id="write" type="checkbox">
+                              <label
+                                  class="text-primaryText leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px] font-[400]"
+                                  for="write">Write</label>
+                            </div>
+                         </div>
+                         <div class="flex justify-between items-center">
+                            <div class="form-group mb-1">
+                              <input id="read" type="checkbox">
+                              <label
+                                  class="text-primaryText leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px] font-[400]"
+                                  for="read">Read</label>
+                            </div>
+                            <div class="form-group mb-1">
+                              <input id="write" type="checkbox">
+                              <label
+                                  class="text-primaryText leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px] font-[400]"
+                                  for="write">Write</label>
+                            </div>
+                         </div>
+                      </div>
+                    </div>
+                    <hr class="border-t border-dashed border-corporateBorder mt-[15px]">
+
+                    <div class="flex justify-between items-center pt-4">
+                      <p class="w-[60%] leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px]">Create offer & promotion</p>
+                      <div class="w-[40%]">
+                         <div class="flex justify-between items-center">
+                            <div class="form-group mb-0">
+                              <input id="read" checked type="checkbox">
+                              <label
+                                  class="text-primaryText leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px] font-[400]"
+                                  for="read">Yes</label>
+                            </div>
+                         </div>
                       </div>
                     </div>
 
@@ -205,58 +361,187 @@
                   <div class="py-[18px] pl-[16px] pr-[46px]">
                     <div class="flex justify-between items-center">
                       <p class="w-[60%] leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px]">Report:</p>
-                      <div class="w-[40%] flex justify-between items-center mt-4">
-                        <div class="form-group">
-                          <input id="read" type="checkbox">
-                          <label
-                              class="text-primaryText leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px] font-[400]"
-                              for="read">Read</label>
-                        </div>
-                        <div class="form-group">
-                          <input id="write" type="checkbox">
-                          <label
-                              class="text-primaryText leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px] font-[400]"
-                              for="write">Write</label>
-                        </div>
+                      <div class="w-[40%]">
+                         <div class="flex justify-between items-center">
+                            <div class="form-group">
+                              <input id="read" type="checkbox">
+                              <label
+                                  class="text-primaryText leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px] font-[400]"
+                                  for="read">Read</label>
+                            </div>
+                            <div class="form-group">
+                              <input id="write" type="checkbox">
+                              <label
+                                  class="text-primaryText leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px] font-[400]"
+                                  for="write">Write</label>
+                            </div>
+                         </div>
+                         <div class="flex justify-between items-center">
+                            <div class="form-group">
+                              <input id="read" type="checkbox">
+                              <label
+                                  class="text-primaryText leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px] font-[400]"
+                                  for="read">Read</label>
+                            </div>
+                            <div class="form-group">
+                              <input id="write" type="checkbox">
+                              <label
+                                  class="text-primaryText leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px] font-[400]"
+                                  for="write">Write</label>
+                            </div>
+                         </div>
+                         <div class="flex justify-between items-center">
+                            <div class="form-group mb-1">
+                              <input id="read" type="checkbox">
+                              <label
+                                  class="text-primaryText leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px] font-[400]"
+                                  for="read">Read</label>
+                            </div>
+                            <div class="form-group mb-1">
+                              <input id="write" type="checkbox">
+                              <label
+                                  class="text-primaryText leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px] font-[400]"
+                                  for="write">Write</label>
+                            </div>
+                         </div>
                       </div>
                     </div>
                     <hr class="border-t border-dashed border-corporateBorder mt-[15px]">
 
-                    <div class="flex justify-between items-center">
+                    <div class="flex justify-between items-center pt-4">
                       <p class="w-[60%] leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px]">Company Deploy:</p>
-                      <div class="w-[40%] flex justify-between items-center mt-4">
-                        <div class="form-group">
-                          <input id="read" type="checkbox">
-                          <label
-                              class="text-primaryText leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px] font-[400]"
-                              for="read">Read</label>
-                        </div>
-                        <div class="form-group">
-                          <input id="write" type="checkbox">
-                          <label
-                              class="text-primaryText leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px] font-[400]"
-                              for="write">Write</label>
-                        </div>
+                      <div class="w-[40%]">
+                         <div class="flex justify-between items-center">
+                            <div class="form-group">
+                              <input id="read" type="checkbox">
+                              <label
+                                  class="text-primaryText leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px] font-[400]"
+                                  for="read">Read</label>
+                            </div>
+                            <div class="form-group">
+                              <input id="write" type="checkbox">
+                              <label
+                                  class="text-primaryText leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px] font-[400]"
+                                  for="write">Write</label>
+                            </div>
+                         </div>
+                         <div class="flex justify-between items-center">
+                            <div class="form-group">
+                              <input id="read" type="checkbox">
+                              <label
+                                  class="text-primaryText leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px] font-[400]"
+                                  for="read">Read</label>
+                            </div>
+                            <div class="form-group">
+                              <input id="write" type="checkbox">
+                              <label
+                                  class="text-primaryText leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px] font-[400]"
+                                  for="write">Write</label>
+                            </div>
+                         </div>
+                         <div class="flex justify-between items-center">
+                            <div class="form-group mb-1">
+                              <input id="read" type="checkbox">
+                              <label
+                                  class="text-primaryText leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px] font-[400]"
+                                  for="read">Read</label>
+                            </div>
+                            <div class="form-group mb-1">
+                              <input id="write" type="checkbox">
+                              <label
+                                  class="text-primaryText leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px] font-[400]"
+                                  for="write">Write</label>
+                            </div>
+                         </div>
                       </div>
                     </div>
                     <hr class="border-t border-dashed border-corporateBorder mt-[15px]">
 
-                    <div class="flex justify-between items-center">
+                    <div class="flex justify-between items-center pt-4">
                       <p class="w-[60%] leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px]">Seat plan edit:</p>
-                      <div class="w-[40%] flex justify-between items-center mt-4">
-                        <div class="form-group">
-                          <input id="read" type="checkbox">
-                          <label
-                              class="text-primaryText leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px] font-[400]"
-                              for="read">Yes</label>
-                        </div>
+                      <div class="w-[40%]">
+                         <div class="flex justify-between items-center">
+                            <div class="form-group">
+                              <input id="read" type="checkbox">
+                              <label
+                                  class="text-primaryText leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px] font-[400]"
+                                  for="read">Read</label>
+                            </div>
+                            <div class="form-group">
+                              <input id="write" type="checkbox">
+                              <label
+                                  class="text-primaryText leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px] font-[400]"
+                                  for="write">Write</label>
+                            </div>
+                         </div>
+                         <div class="flex justify-between items-center">
+                            <div class="form-group">
+                              <input id="read" type="checkbox">
+                              <label
+                                  class="text-primaryText leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px] font-[400]"
+                                  for="read">Read</label>
+                            </div>
+                            <div class="form-group">
+                              <input id="write" type="checkbox">
+                              <label
+                                  class="text-primaryText leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px] font-[400]"
+                                  for="write">Write</label>
+                            </div>
+                         </div>
+                         <div class="flex justify-between items-center">
+                            <div class="form-group mb-1">
+                              <input id="read" type="checkbox">
+                              <label
+                                  class="text-primaryText leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px] font-[400]"
+                                  for="read">Read</label>
+                            </div>
+                            <div class="form-group mb-1">
+                              <input id="write" type="checkbox">
+                              <label
+                                  class="text-primaryText leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px] font-[400]"
+                                  for="write">Write</label>
+                            </div>
+                         </div>
+                      </div>
+                    </div>
+                    <hr class="border-t border-dashed border-corporateBorder mt-[15px]">
+
+                    <div class="flex justify-between items-center pt-4">
+                      <p class="w-[60%] leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px]">Seat plan edit:</p>
+                      <div class="w-[40%]">
+                         <div class="flex justify-between items-center">
+                            <div class="form-group mb-0">
+                              <input id="read" checked type="checkbox">
+                              <label
+                                  class="text-primaryText leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px] font-[400]"
+                                  for="read">Yes</label>
+                            </div>
+                         </div>
+                      </div>
+                    </div>
+
+                    <hr class="border-t border-dashed border-corporateBorder mt-[15px]">
+
+                    <div class="flex justify-between items-center pt-4">
+                      <p class="w-[60%] leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px]">Invoice:</p>
+                      <div class="w-[40%]">
+                         <div class="flex justify-between items-center">
+                            <div class="form-group mb-0">
+                              <input id="read" checked type="checkbox">
+                              <label
+                                  class="text-primaryText leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px] font-[400]"
+                                  for="read">Yes</label>
+                            </div>
+                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
+               </div>
             </div>
-            <hr class="mt-[16px] border-t border-corporateBorder">
+
+            <hr class="border-t border-corporateBorder">
             <div class="px-[16px] py-[20px] w-full flex justify-between items-center">
               <div class="flex gap-x-[16px] items-center">
                 <p class="text-primaryText font-[600] leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] ">
@@ -281,7 +566,6 @@
             </div>
             </div>
           </div>
-        </div>
       </div>
 </template>
 
