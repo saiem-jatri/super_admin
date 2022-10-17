@@ -129,7 +129,7 @@
             </div>
             <div class="flex justify-start items-center gap-x-[10px] xl:gap-x-[16px] mt-3 xl:mt-4">
 
-              <div class="w-1/4">
+              <div class="w-[24.2%]">
                 <p class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]">
                   Reserve</p>
                 <div class="flex justify-center items-center w-full mt-[10px]">
@@ -137,7 +137,7 @@
                   <button class="tripPermissionBtnright">No</button>
                 </div>
               </div>
-              <div class="w-1/4">
+              <div class="w-[24.2%]">
                 <p class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]">
                   Cancel</p>
                 <div class="flex justify-center items-center w-full mt-[10px]">
@@ -188,7 +188,7 @@
             </div>
             <div class="flex justify-start items-center gap-x-[10px] xl:gap-x-[16px] mt-3 xl:mt-4">
 
-              <div class="w-1/4">
+              <div class="w-[24.2%]">
                 <p class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]">Eid
                   trip</p>
                 <div class="flex justify-center items-center w-full mt-[10px]">
