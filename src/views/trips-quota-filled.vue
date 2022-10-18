@@ -25,9 +25,7 @@
               </div>
             </div>
             <div class="flex gap-x-[24px] p-4 w-1/2 justify-end items-center pr-2 ">
-              <!--            <input type="text" class="w-[270px] h-[40px] border border-[#DBDBDB] placeholder:text-[#4D4D4F] placeholder:text-[14px] leading-[20px] rounded-[4px] pl-8 focus:outline-none" placeholder="PNR or mobile number">-->
-              <!--            <img src="../assets/svg/search.svg" class="h-5 w-5 absolute left-[242px]" alt="">-->
-              <div
+             <div
                   class="w-[200px] h-[30px] xl:w-[270px] xl:h-[40px] border border-[#DBDBDB] flex justify-center items-center leading-[20px] rounded-[4px] pl-[9px] overflow-hidden">
                 <img alt="" class="h-2 w-2 xl:h-5 xl:w-5" src="../assets/svg/search.svg">
                 <input
@@ -46,11 +44,12 @@
           </div>
         </div>
         <!-- top nav bar end -->
+
         <!-- body start-->
         <div class="px-[30px] py-[24px]">
   
           <!--        card-->
-          <div class="bg-white rounded-[8px]">
+          <div class="bg-white rounded-[6px]">
             <div class="p-4">
               <div class="flex items-center gap-x-[6px] mr-2">
                 <p class="text-secondaryText leading-[12px] text-[8px] xl:leading-[16px] xl:text-[12px] font-[400]">Trip
@@ -78,20 +77,20 @@
                   Preview</p>
               </div>
               <div class="flex justify-between items-center">
-                <p class="text-corporateSecondaryBlue leading-[20px] xl:leading-[24px] text-[14px] xl:text-[16px] font-[500] mt-2">
+                <p class="text-corporateSecondaryBlue leading-[20px] xl:leading-[24px] text-[14px] xl:text-[16px] font-[600] mt-2">
                   ASSIGN QOUTA</p>
                 <p class="flex gap-x-[10px]">
                   <img alt="" src="../assets/svg/back_arrow.svg">
-                  <a class="leading-[12px] xl:leading-[16px] text-[10px] xl:text-[12px] text-primaryText border-b-2 border-primaryText block text-primaryText font-[600]"
+                  <a class="leading-[12px] xl:leading-[16px] text-[10px] xl:text-[12px] border-b-2 border-primaryText block text-primaryText font-[600]"
                      href="#">Prev
                     .step</a>
                 </p>
               </div>
             </div>
           </div>
-          <div class="bg-white rounded-[8px] mt-[12px] xl:mt-[16px]">
+          <div class="bg-white rounded-[10px] mt-[12px] xl:mt-[16px]">
             <div class="p-4">
-              <p class="text-corporateSecondaryBlue leading-[20px] xl:leading-[24px] text-[14px] xl:text-[16px] font-[500]">
+              <p class="text-corporateSecondaryBlue leading-[20px] xl:leading-[24px] text-[14px] xl:text-[16px] font-[600]">
                 ASSIGN
                 QOUTA</p>
               <p class="text-primaryText leading-[20px] xl:leading-[24px] text-[14px] xl:text-[16px] font-[600] mt-3 xl:mt-4">
@@ -100,10 +99,10 @@
                 <button class="tripPermissionBtnleftWithbg">Yes</button>
                 <button class="tripPermissionBtnright">No</button>
               </div>
-              <div class="mt-3">
-                <div class="border border-[#DBDBDB] rounded-[10px] flex">
+              <div class="mt-5">
+                <div class="border border-[#DBDBDB] rounded-[6px] flex">
                   <div class="w-[20%] border-r border-corporateBorder">
-                    <p class="p-[9px] leading-[12px] xl:leading-[16px] text-[10px] xl:text-[12px] font-[500]">COUNTER
+                    <p class="p-[9px] leading-[12px] xl:leading-[16px] text-[10px] xl:text-[12px] font-[500] text-[#676769]">COUNTER
                       LIST</p>
                     <hr class="border-t border-corporateBorder">
                     <div class="flex flex-col divide-y divide-dashed">
@@ -117,22 +116,22 @@
                       <a class="counterDesign" href="#">Counter 6</a>
                       <a class="counterDesign" href="#">Counter 7</a>
                       <a class="counterDesign" href="#">Counter 8</a>
+                      <hr class="border-t border-corporateBorder">
                     </div>
                   </div>
                   <div class="w-[45%] p-[20px]  border-r border-corporateBorder">
                     <p class="leading-[20px] xl:leading-[24px] text-[14px] xl:text-[16px] font-[600]">SELECTED
                       SEATS</p>
   
-                      <div class="flex gap-x-[26px] mt-2 xl:mt-3">
+                      <div class="flex gap-x-[23px] mt-3 xl:mt-5">
                         <button class="quotaSeatwithBg">C1</button>
                         <button class="quotaSeatwithBg">C2</button>
-                        <button class="hidden">C3</button>
                         <button class="quotaSeatwithBg">C3</button>
                         <button class="quotaSeatwithBg">C4</button>
                       </div>
                   </div>
                   <div class="w-[35%]">
-                    <p class="px-[16px] py-[9px] leading-[12px] xl:leading-[16px] text-[10px] xl:text-[12px] font-[500]">
+                    <p class="px-[16px] py-[9px] leading-[12px] xl:leading-[16px] text-[10px] xl:text-[12px] font-[500] text-[#676769]">
                       RELEASE TIME</p>
                     <div class="flex justify-between items-center px-[16px] py-[9px] ">
                       <label class="leading-[16px] xl:leading-[24px] text-[12px] xl:text-[16px] min-w-[123px]" for="#">Counter
@@ -146,64 +145,64 @@
                     <div class="p-[24px]">
                       <div class="flex gap-x-[26px] justify-around">
                         <button class="quotaSeatLocked"><img class="m-auto" src="../assets/svg/lock.svg" alt=""></button>
-                        <button class="hidden">A3</button>
                         <button class="quotaSeatLocked"><img class="m-auto" src="../assets/svg/lock.svg" alt=""></button>
+                        <button class="quotaSeat cursor-default border-none">&nbsp</button>
                         <button class="quotaSeatLocked"><img class="m-auto" src="../assets/svg/lock.svg" alt=""></button>
                         <button class="quotaSeatLocked"><img class="m-auto" src="../assets/svg/lock.svg" alt=""></button>
                       </div>
                       <div class="flex gap-x-[26px] justify-around mt-2 xl:mt-3">
-                        <button class="quotaSeatLocked">B1</button>
-                        <button class="quotaSeatLocked">B2</button>
-                        <button class="hidden">B3</button>
+                        <button class="quotaSeatLocked"><img class="m-auto" src="../assets/svg/lock.svg" alt=""></button>
+                        <button class="quotaSeatLocked"><img class="m-auto" src="../assets/svg/lock.svg" alt=""></button>
+                        <button class="quotaSeat cursor-default border-none">&nbsp</button>
                         <button class="quotaSeat">B3</button>
                         <button class="quotaSeat">B4</button>
                       </div>
                       <div class="flex gap-x-[26px] justify-around mt-2 xl:mt-3">
                         <button class="quotaSeatwithBg">C1</button>
                         <button class="quotaSeatwithBg">C2</button>
-                        <button class="hidden">C3</button>
+                        <button class="quotaSeat cursor-default border-none">&nbsp</button>
                         <button class="quotaSeatwithBg">C3</button>
                         <button class="quotaSeatwithBg">C4</button>
                       </div>
                       <div class="flex gap-x-[26px] justify-around mt-2 xl:mt-3">
                         <button class="quotaSeat">D1</button>
                         <button class="quotaSeat">D2</button>
-                        <button class="hidden">D3</button>
+                        <button class="quotaSeat cursor-default border-none">&nbsp</button>
                         <button class="quotaSeat">D3</button>
                         <button class="quotaSeat">D4</button>
                       </div>
                       <div class="flex gap-x-[26px] justify-around mt-2 xl:mt-3">
                         <button class="quotaSeat">E1</button>
                         <button class="quotaSeat">E2</button>
-                        <button class="hidden">E3</button>
+                        <button class="quotaSeat cursor-default border-none">&nbsp</button>
                         <button class="quotaSeat">E3</button>
                         <button class="quotaSeat">E4</button>
                       </div>
                       <div class="flex gap-x-[26px] justify-around mt-2 xl:mt-3">
                         <button class="quotaSeat">F1</button>
                         <button class="quotaSeat">F2</button>
-                        <button class="hidden">F3</button>
+                        <button class="quotaSeat cursor-default border-none">&nbsp</button>
                         <button class="quotaSeat">F3</button>
                         <button class="quotaSeat">F4</button>
                       </div>
                       <div class="flex gap-x-[26px] justify-around mt-2 xl:mt-3">
                         <button class="quotaSeat">G1</button>
                         <button class="quotaSeat">G2</button>
-                        <button class="hidden">G3</button>
+                        <button class="quotaSeat cursor-default border-none">&nbsp</button>
                         <button class="quotaSeat">G3</button>
                         <button class="quotaSeat">G4</button>
                       </div>
                       <div class="flex gap-x-[26px] justify-around mt-2 xl:mt-3">
                         <button class="quotaSeat">H1</button>
                         <button class="quotaSeat">H2</button>
-                        <button class="hidden">H3</button>
+                        <button class="quotaSeat cursor-default border-none">&nbsp</button>
                         <button class="quotaSeat">H3</button>
                         <button class="quotaSeat">H4</button>
                       </div>
                       <div class="flex gap-x-[26px] justify-around mt-2 xl:mt-3">
                         <button class="quotaSeat">I1</button>
                         <button class="quotaSeat">I2</button>
-                        <button class="hidden">I3</button>
+                        <button class="quotaSeat cursor-default border-none">&nbsp</button>
                         <button class="quotaSeat">I3</button>
                         <button class="quotaSeat">I4</button>
                       </div>
@@ -214,52 +213,50 @@
               </div>
             </div>
 
-            <div class="p-4">
-            <p class="text-corporateSecondaryBlue leading-[20px] xl:leading-[24px] text-[14px] xl:text-[16px] font-[500]">
+            <div class="px-4 pb-4">
+            <p class="text-corporateSecondaryBlue leading-[20px] xl:leading-[24px] text-[14px] xl:text-[16px] font-[600]">
                 ASSIGNED QOUTA SEAT PREVIEW</p>
-
-            <div class="bg-white rounded-[8px] mt-4">
-              <!-- table start -->
-              <table class="min-w-full rounded">
+            <!-- table start -->
+            <div class="rounded-[6px] border border-[#EDEDED] mt-4 overflow-hidden">
+              <table class="min-w-full">
                 <thead>
-                <tr>
-                  <th class="border border-[#EDEDED]" scope="col" style="border-radius:8px 0 0 0;"></th>
-                  <th class="border border-[#EDEDED] text-4 leading-5 text-[#676769] text-left font-[400] p-[10px]"
-                      scope="col">
-                    Selected seats
-                  </th>
-                  <th class="border border-[#EDEDED] text-4 leading-5 text-[#676769] text-left font-[400] p-[10px]"
-                      scope="col"
-                      style="border-radius:0 8px 0 0;"> Release time
-                  </th>
-                </tr>
+                  <tr>
+                    <th class="border border-t-0 first:border-l-0 last:border-r-0 border-[#EDEDED]" scope="col"></th>
+                    <th class="border border-t-0 first:border-l-0 last:border-r-0 border-[#EDEDED] text-4 leading-5 text-[#676769] text-left font-[400] p-[10px]"
+                        scope="col">
+                      Selected seats
+                    </th>
+                    <th class="border border-t-0 first:border-l-0 last:border-r-0 border-[#EDEDED] text-4 leading-5 text-[#676769] text-left font-[400] p-[10px]"
+                        scope="col"> Release time
+                    </th>
+                  </tr>
                 </thead>
+
                 <tbody>
-                <tr>
-                  <td class="border border-[#EDEDED] text-4 leading-5 text-left p-[10px]">Jatri</td>
-                  <td class="border border-[#EDEDED] text-4 leading-5 text-left p-[10px]">[C1], [C2], [C3], [C4]</td>
-                  <td class="border border-[#EDEDED] text-4 leading-5 text-left p-[10px]">08:30 PM</td>
-                </tr>
-                <tr>
-                  <td class="border border-[#EDEDED] text-4 leading-5 text-left p-[10px]">Counter 1</td>
-                  <td class="border border-[#EDEDED] text-4 leading-5 text-left p-[10px]">[A1], [A2], [A3], [A4]</td>
-                  <td class="border border-[#EDEDED] text-4 leading-5 text-left p-[10px]">08:30 PM</td>
-                </tr>
-                <tr>
-                  <td class="border border-[#EDEDED] text-4 leading-5 text-left p-[10px]">Counter 2</td>
-                  <td class="border border-[#EDEDED] text-4 leading-5 text-left p-[10px]">[B1], [B2]</td>
-                  <td class="border border-[#EDEDED] text-4 leading-5 text-left p-[10px]">08:30 PM</td>
-                </tr>
+                  <tr>
+                    <td class="border border-b-0 first:border-l-0 last:border-r-0 border-[#EDEDED] text-4 leading-5 text-left p-[10px]">Jatri</td>
+                    <td class="border border-b-0 first:border-l-0 last:border-r-0 border-[#EDEDED] text-4 leading-5 text-left p-[10px]">[C1], [C2], [C3], [C4]</td>
+                    <td class="border border-b-0 first:border-l-0 last:border-r-0 border-[#EDEDED] text-4 leading-5 text-left p-[10px]">08:30 PM</td>
+                  </tr>
+                  <tr>
+                    <td class="border border-b-0 first:border-l-0 last:border-r-0 border-[#EDEDED] text-4 leading-5 text-left p-[10px]">Counter 1</td>
+                    <td class="border border-b-0 first:border-l-0 last:border-r-0 border-[#EDEDED] text-4 leading-5 text-left p-[10px]">[A1], [A2], [A3], [A4]</td>
+                    <td class="border border-b-0 first:border-l-0 last:border-r-0 border-[#EDEDED] text-4 leading-5 text-left p-[10px]">08:30 PM</td>
+                  </tr>
+                  <tr>
+                    <td class="border border-b-0 first:border-l-0 last:border-r-0 border-[#EDEDED] text-4 leading-5 text-left p-[10px]">Counter 2</td>
+                    <td class="border border-b-0 first:border-l-0 last:border-r-0 border-[#EDEDED] text-4 leading-5 text-left p-[10px]">[B1], [B2]</td>
+                    <td class="border border-b-0 first:border-l-0 last:border-r-0 border-[#EDEDED] text-4 leading-5 text-left p-[10px]">08:30 PM</td>
+                  </tr>
                 </tbody>
               </table>
             </div>
           </div>
-            
           </div>
           <div class="flex justify-center items-center mt-5">
             <router-link to="/tripsQuotaFilledNext" class="lessNextStepButton flex items-center gap-[10px]">
-            Next step<span><img src="../assets/svg/right-white-arrow.svg" class="h-[9.33px] w-[9.33px]" alt=""></span>
-        </router-link>
+              Next step<span><img src="../assets/svg/right-white-arrow.svg" class="h-[9.33px] w-[9.33px]" alt=""></span>
+            </router-link>
           </div>
         </div>
   </template>

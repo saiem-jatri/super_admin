@@ -25,8 +25,6 @@
             </div>
           </div>
           <div class="flex gap-x-[24px] p-4 w-1/2 justify-end items-center pr-2 ">
-            <!--            <input type="text" class="w-[270px] h-[40px] border border-[#DBDBDB] placeholder:text-[#4D4D4F] placeholder:text-[14px] leading-[20px] rounded-[4px] pl-8 focus:outline-none" placeholder="PNR or mobile number">-->
-            <!--            <img src="../assets/svg/search.svg" class="h-5 w-5 absolute left-[242px]" alt="">-->
             <div
                 class="w-[200px] h-[30px] xl:w-[270px] xl:h-[40px] border border-[#DBDBDB] flex justify-center items-center leading-[20px] rounded-[4px] pl-[9px] overflow-hidden">
               <img alt="" class="h-2 w-2 xl:h-5 xl:w-5" src="../assets/svg/search.svg">
@@ -46,11 +44,12 @@
         </div>
       </div>
       <!-- top nav bar end -->
+
       <!-- body start-->
       <div class="px-[30px] py-[24px]">
 
         <!--        card-->
-        <div class="bg-white rounded-[8px]">
+        <div class="bg-white rounded-[6px]">
           <div class="p-4">
             <div class="flex items-center gap-x-[6px] mr-2">
               <p class="text-secondaryText leading-[12px] text-[8px] xl:leading-[16px] xl:text-[12px] font-[400]">Trip
@@ -78,23 +77,20 @@
                 Preview</p>
             </div>
             <div class="flex justify-between items-center">
-              <p class="text-corporateSecondaryBlue leading-[20px] xl:leading-[24px] text-[14px] xl:text-[16px] font-[500] mt-2">
+              <p class="text-corporateSecondaryBlue leading-[20px] xl:leading-[24px] text-[14px] xl:text-[16px] font-[600] mt-2">
                 TRIP FACILITES & POLICIES</p>
               <p class="flex gap-x-[10px]">
                 <img alt="" src="../assets/svg/back_arrow.svg">
-                <a class="leading-[12px] xl:leading-[16px] text-[10px] xl:text-[12px] text-primaryText border-b-2 border-primaryText block text-primaryText font-[600]"
+                <a class="leading-[12px] xl:leading-[16px] text-[10px] xl:text-[12px] border-b-2 border-primaryText block text-primaryText font-[600]"
                    href="#">Prev
                   .step</a>
               </p>
             </div>
           </div>
         </div>
-        <div class="bg-white rounded-[8px] mt-[12px] xl:mt-[16px]">
+        <div class="bg-white rounded-[10px] mt-[12px] xl:mt-[16px]">
           <div class="p-4">
-            <p class="text-corporateSecondaryBlue leading-[20px] xl:leading-[24px] text-[14px] xl:text-[16px] font-[500]">
-              TRIP
-              FACILITES & POLICIES</p>
-
+            <p class="text-corporateSecondaryBlue leading-[20px] xl:leading-[24px] text-[14px] xl:text-[16px] font-[600]">TRIP FACILITES</p>
             <div class="flex gap-x-[18px] justify-start items-center">
               <div class="form-group w-[238px] mt-3 xl:mt-[18px]">
                 <input id="html" type="checkbox">
@@ -120,7 +116,7 @@
               </div>
             </div>
 
-            <hr class="mt-[14px] xl:mt-[18px] border-t border-dashed border-corporateBorder">
+            <hr class="mt-1 border-t border-dashed border-corporateBorder">
             <div class="flex gap-x-[18px] justify-start items-center">
               <div class="form-group w-[238px] mt-3 xl:mt-[18px]">
                 <input id="html" type="checkbox">
@@ -145,7 +141,7 @@
                        for="html">WiFi</label>
               </div>
             </div>
-            <hr class="mt-[14px] xl:mt-[18px] border-t border-dashed border-corporateBorder">
+            <hr class="mt-1 border-t border-dashed border-corporateBorder">
 
             <div class="mt-3 xl:mt-4 flex gap-x-4 justify-start items-center">
               <input class="border border-corporateBorder rounded-[4px] px-2 py-[6px] focus:outline-none"
@@ -153,7 +149,7 @@
                      type="text">
 
               <button
-                  class="bg-[#F7F7F7] flex gap-x-[11px] justify-center items-center border border-dashed border-corporateBorder px-4 py-[6px] rounded-[4px]">
+                  class="bg-[#EFF7FD] flex gap-x-[11px] justify-center items-center border border-dashed border-corporateSecondaryBlue px-4 py-[6px] rounded-[4px]">
                 <img alt="" class="w-[10px] h-[10px]" src="../assets/svg/facilities_plus.svg"> Add another facility
               </button>
             </div>
@@ -161,7 +157,7 @@
 
           <hr class="border-t border-corporateBorder">
           <div class="p-4">
-            <p class="text-corporateSecondaryBlue leading-[20px] xl:leading-[24px] text-[14px] xl:text-[16px] font-[500]">
+            <p class="text-corporateSecondaryBlue leading-[20px] xl:leading-[24px] text-[14px] xl:text-[16px] font-[600]">
               POLICIES</p>
 
             <p class="text-primaryText leading-[20px] xl:leading-[24px] text-[14px] xl:text-[16px] font-[600] mt-3 xl:mt-4">

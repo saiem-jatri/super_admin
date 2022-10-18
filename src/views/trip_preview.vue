@@ -25,8 +25,6 @@
             </div>
           </div>
           <div class="flex gap-x-[24px] p-4 w-1/2 justify-end items-center pr-2 ">
-            <!--            <input type="text" class="w-[270px] h-[40px] border border-[#DBDBDB] placeholder:text-[#4D4D4F] placeholder:text-[14px] leading-[20px] rounded-[4px] pl-8 focus:outline-none" placeholder="PNR or mobile number">-->
-            <!--            <img src="../assets/svg/search.svg" class="h-5 w-5 absolute left-[242px]" alt="">-->
             <div
                 class="w-[200px] h-[30px] xl:w-[270px] xl:h-[40px] border border-[#DBDBDB] flex justify-center items-center leading-[20px] rounded-[4px] pl-[9px] overflow-hidden">
               <img alt="" class="h-2 w-2 xl:h-5 xl:w-5" src="../assets/svg/search.svg">
@@ -45,14 +43,14 @@
         </div>
       </div>
       <!-- top nav bar end -->
+
       <!-- body start-->
       <div class="px-[30px] py-[24px]">
-
         <!--        card-->
-        <div class="bg-white rounded-[8px]">
+        <div class="bg-white rounded-[6px]">
           <div class="p-4">
             <div class="flex items-center gap-x-[6px] mr-2">
-              <p class="text-primaryText leading-[12px] text-[8px] xl:leading-[16px] xl:text-[12px] font-[600]">Trip
+              <p class="text-primaryText leading-[12px] text-[8px] xl:leading-[16px] xl:text-[12px] font-[400]">Trip
                 Information</p>
               <img alt="" class="w-1 h-2" src="../assets/svg/bgBack.svg">
               <p class="text-secondaryText leading-[12px] text-[8px] xl:leading-[16px] xl:text-[12px] font-[400]">
@@ -73,21 +71,21 @@
               <p class="text-secondaryText leading-[12px] text-[8px] xl:leading-[16px] xl:text-[12px] font-[400]">Trip
                 Facilities & Policies</p>
               <img alt="" class="w-1 h-2" src="../assets/svg/bgBack.svg">
-              <p class="text-secondaryText leading-[12px] text-[8px] xl:leading-[16px] xl:text-[12px] font-[400]">
+              <p class="text-secondaryText leading-[12px] text-[8px] xl:leading-[16px] xl:text-[12px] font-[600]">
                 Preview</p>
             </div>
-            <p class="text-corporateSecondaryBlue leading-[20px] xl:leading-[24px] text-[14px] xl:text-[16px] font-[500] mt-2">
+            <p class="text-corporateSecondaryBlue leading-[20px] xl:leading-[24px] text-[14px] xl:text-[16px] font-[600] mt-2">
               PREVIEW</p>
           </div>
         </div>
-        <div class="bg-white rounded-[8px] my-[12px] xl:mt-[16px] mb-[20px]">
-          <div class="p-4">
 
+        <div class="bg-white rounded-[10px] my-[12px] xl:mt-[16px] mb-[20px]">
+          <div class="p-4">
             <div class="flex justify-between">
-              <p class="text-[#676769] leading-[20px] xl:leading-[24px] text-[14px] xl:text-[16px] font-[500]">TRIP
+              <p class="text-[#676769] leading-[20px] xl:leading-[24px] text-[14px] xl:text-[16px] font-[600]">TRIP
                 PREVIEW</p>
               <button
-                  class="bg-corporateSecondaryBlue text-white leading-[18px] text-[12px] font-[400] border border-corporateBorder rounded-full px-[20px] py-[6px]">
+                  class="bg-corporateSecondaryBlue text-white leading-[18px] text-[12px] font-[400] border border-corporateBorder rounded-full px-[20px] py-[4px]">
                 Edit
               </button>
             </div>
@@ -129,7 +127,7 @@
             </div>
 
             <div class="flex justify-start items-center gap-x-[10px] xl:gap-x-[16px] mt-[12px] xl:mt-[16px]">
-              <div class="w-1/4">
+              <div class="w-[24.2%]">
                 <p class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]">
                   Route</p>
                 <div
@@ -137,7 +135,7 @@
                   Dhaka-Tangail-Bogura-Rangpur
                 </div>
               </div>
-              <div class="w-1/4">
+              <div class="w-[24.2%]">
                 <p class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]">Trip
                   heading</p>
                 <div
@@ -145,7 +143,7 @@
                   092, Dhaka-Rangpur
                 </div>
               </div>
-              <div class="w-1/4">
+              <div class="w-[24.2%]">
                 <p class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]">Trip
                   auto renewal in</p>
                 <div
@@ -170,7 +168,7 @@
 
           <hr class="mt-[12px] xl:mt-[4px] border-t border-corporateBorder">
           <div class="p-4">
-            <p class="text-corporateSecondaryBlue leading-[20px] xl:leading-[24px] text-[14px] xl:text-[16px] font-[500]">
+            <p class="text-corporateSecondaryBlue leading-[20px] xl:leading-[24px] text-[14px] xl:text-[16px] font-[600]">
               DATE & TIME</p>
             <div class="flex justify-center items-center gap-x-[10px] xl:gap-x-[16px] mt-[12px] xl:mt-[16px]">
               <div class="w-1/4">
@@ -210,9 +208,15 @@
 
           <hr class="mt-[12px] xl:mt-[4px] border-t border-corporateBorder">
           <div class="p-4">
-            <p class="text-corporateSecondaryBlue leading-[20px] xl:leading-[24px] text-[14px] xl:text-[16px] font-[500]">
+            <p class="text-corporateSecondaryBlue leading-[20px] xl:leading-[24px] text-[14px] xl:text-[16px] font-[600]">
               BOARDING INFORMATION</p>
-            <div class="flex justify-center items-center gap-x-[10px] xl:gap-x-[16px] mt-[12px] xl:mt-[16px]">
+            <div class="flex justify-between items-center">
+              <p class="text-primaryText text-[12px] my-[12px] xl:my-[16px]">BOARDING POINT 1</p>
+              <div class="form-group"><input type="checkbox" id="html">
+                <label for="html" class="text-primaryText leading-[20px] text-[14px] xl:leading-[24px] xl:text-[16px] font-[500]">Make available for Jatri</label>
+              </div>
+            </div>  
+            <div class="flex justify-center items-center gap-x-[10px] xl:gap-x-[16px]">
               <div class="w-1/4">
                 <p class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]">
                   City</p>
@@ -239,7 +243,7 @@
               </div>
               <div class="w-1/5">
                 <p class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]">
-                  Dropping date</p>
+                  Borarding date</p>
                 <div
                     class="w-full py-[10px] px-[8px] mt-[10px] text-[14px] leading-5 rounded text-primaryText bg-corporateBg">
                   19 July 2022
@@ -247,7 +251,7 @@
               </div>
               <div class="w-1/5">
                 <p class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]">
-                  Dropping time</p>
+                  Borarding time</p>
                 <div
                     class="w-full py-[10px] px-[8px] mt-[10px] text-[14px] leading-5 rounded text-primaryText bg-corporateBg">
                   09:45 PM
@@ -255,8 +259,14 @@
               </div>
             </div>
 
-            <hr class="my-[16px] border-t border-dashed border-corporateBorder">
-            <div class="flex justify-center items-center gap-x-[10px] xl:gap-x-[16px] mt-[12px] xl:mt-[16px]">
+            <hr class="mt-4 mb-2 border-t border-dashed border-corporateBorder">
+            <div class="flex justify-between items-center">
+              <p class="text-primaryText text-[12px]">BOARDING POINT 2</p>
+              <div class="form-group"><input type="checkbox" id="html">
+                <label for="html" class="text-primaryText leading-[20px] text-[14px] xl:leading-[24px] xl:text-[16px] font-[500]">Make available for Jatri</label>
+              </div>
+            </div> 
+            <div class="flex justify-center items-center gap-x-[10px] xl:gap-x-[16px] mt-1">
               <div class="w-1/4">
                 <p class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]">
                   City</p>
@@ -283,7 +293,7 @@
               </div>
               <div class="w-1/5">
                 <p class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]">
-                  Dropping date</p>
+                  Borarding date</p>
                 <div
                     class="w-full py-[10px] px-[8px] mt-[10px] text-[14px] leading-5 rounded text-primaryText bg-corporateBg">
                   Same date
@@ -291,7 +301,7 @@
               </div>
               <div class="w-1/5">
                 <p class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]">
-                  Dropping time</p>
+                  Borarding time</p>
                 <div
                     class="w-full py-[10px] px-[8px] mt-[10px] text-[14px] leading-5 rounded text-primaryText bg-corporateBg">
                   09:45 PM
@@ -302,15 +312,21 @@
 
           <hr class="mt-[12px] xl:mt-[4px] border-t border-corporateBorder">
           <div class="p-4">
-            <p class="text-corporateSecondaryBlue leading-[20px] xl:leading-[24px] text-[14px] xl:text-[16px] font-[500]">
+            <p class="text-corporateSecondaryBlue leading-[20px] xl:leading-[24px] text-[14px] xl:text-[16px] font-[600]">
               DROPPING INFORMATION</p>
-            <div class="flex justify-center items-center gap-x-[10px] xl:gap-x-[16px] mt-[12px] xl:mt-[16px]">
+            <div class="flex justify-between items-center">
+              <p class="text-primaryText text-[12px] my-[12px] xl:my-[16px]">DROPPING POINT 1</p>
+              <div class="form-group !hidden"><input type="checkbox" id="html">
+                <label for="html" class="text-primaryText leading-[20px] text-[14px] xl:leading-[24px] xl:text-[16px] font-[500]">Make available for Jatri</label>
+              </div>
+            </div>  
+            <div class="flex justify-center items-center gap-x-[10px] xl:gap-x-[16px]">
               <div class="w-1/4">
                 <p class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]">
                   City</p>
                 <div
                     class="w-full py-[10px] px-[8px] mt-[10px] text-[14px] leading-5 rounded text-primaryText bg-corporateBg">
-                  Rangpur
+                  Dhaka
                 </div>
               </div>
               <div class="w-1/5">
@@ -318,7 +334,7 @@
                   Stoppage</p>
                 <div
                     class="w-full py-[10px] px-[8px] mt-[10px] text-[14px] leading-5 rounded text-primaryText bg-corporateBg">
-                  Rangpur Bus Stand
+                  Arambag
                 </div>
               </div>
               <div class="w-1/5">
@@ -326,7 +342,7 @@
                   Counter</p>
                 <div
                     class="w-full py-[10px] px-[8px] mt-[10px] text-[14px] leading-5 rounded text-primaryText bg-corporateBg">
-                  Rangpur Bus Stand
+                  Arambag Counter
                 </div>
               </div>
               <div class="w-1/5">
@@ -347,14 +363,20 @@
               </div>
             </div>
 
-            <hr class="my-[16px] border-t border-dashed border-corporateBorder">
-            <div class="flex justify-center items-center gap-x-[10px] xl:gap-x-[16px] mt-[12px] xl:mt-[16px]">
+            <hr class="mt-4 mb-4 border-t border-dashed border-corporateBorder">
+            <div class="flex justify-between items-center">
+              <p class="text-primaryText text-[12px]">DROPPING POINT 2</p>
+              <div class="form-group !hidden"><input type="checkbox" id="html">
+                <label for="html" class="text-primaryText leading-[20px] text-[14px] xl:leading-[24px] xl:text-[16px] font-[500]">Make available for Jatri</label>
+              </div>
+            </div> 
+            <div class="flex justify-center items-center gap-x-[10px] xl:gap-x-[16px] mt-4">
               <div class="w-1/4">
                 <p class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]">
                   City</p>
                 <div
                     class="w-full py-[10px] px-[8px] mt-[10px] text-[14px] leading-5 rounded text-primaryText bg-corporateBg">
-                  Rangpur
+                  Dhaka
                 </div>
               </div>
               <div class="w-1/5">
@@ -362,7 +384,7 @@
                   Stoppage</p>
                 <div
                     class="w-full py-[10px] px-[8px] mt-[10px] text-[14px] leading-5 rounded text-primaryText bg-corporateBg">
-                  Rangpur Bus Stand
+                  Arambag
                 </div>
               </div>
               <div class="w-1/5">
@@ -370,7 +392,7 @@
                   Counter</p>
                 <div
                     class="w-full py-[10px] px-[8px] mt-[10px] text-[14px] leading-5 rounded text-primaryText bg-corporateBg">
-                  Rangpur Bus Stand
+                  Arambag Counter
                 </div>
               </div>
               <div class="w-1/5">
@@ -394,7 +416,7 @@
 
           <hr class="mt-[12px] xl:mt-[4px] border-t border-corporateBorder">
           <div class="p-4">
-            <p class="text-corporateSecondaryBlue leading-[20px] xl:leading-[24px] text-[14px] xl:text-[16px] font-[500]">
+            <p class="text-corporateSecondaryBlue leading-[20px] xl:leading-[24px] text-[14px] xl:text-[16px] font-[600]">
               TICKET FARE</p>
             <div class="w-[60%] xl:w-1/2 mt-3 xl:mt-4">
               <div class="flex justify-between gap-x-[20px] xl:gap-x-[27px]">
@@ -442,19 +464,19 @@
                            placeholder="Enter Fare"
                            type="text">
                     <div class="flex gap-x-[16px]">
-                      <div class="form-group mt-4">
+                      <div class="form-group">
                         <input id="read" type="checkbox">
                         <label class="text-primaryText leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px] font-[400]"
                                for="read">
                           Jatri</label>
                       </div>
-                      <div class="form-group mt-4">
+                      <div class="form-group">
                         <input id="read" type="checkbox">
                         <label class="text-primaryText leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px] font-[400]"
                                for="read">
                           Counter</label>
                       </div>
-                      <div class="form-group mt-4">
+                      <div class="form-group">
                         <input id="read" type="checkbox">
                         <label class="text-primaryText leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px] font-[400]"
                                for="read">
@@ -474,19 +496,19 @@
                            placeholder="Enter Fare"
                            type="text">
                     <div class="flex gap-x-[16px]">
-                      <div class="form-group mt-4">
+                      <div class="form-group">
                         <input id="read" type="checkbox">
                         <label class="text-primaryText leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px] font-[400]"
                                for="read">
                           Jatri</label>
                       </div>
-                      <div class="form-group mt-4">
+                      <div class="form-group">
                         <input id="read" type="checkbox">
                         <label class="text-primaryText leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px] font-[400]"
                                for="read">
                           Counter</label>
                       </div>
-                      <div class="form-group mt-4">
+                      <div class="form-group">
                         <input id="read" type="checkbox">
                         <label class="text-primaryText leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px] font-[400]"
                                for="read">
@@ -506,19 +528,19 @@
                            placeholder="Enter Fare"
                            type="text">
                     <div class="flex gap-x-[16px]">
-                      <div class="form-group mt-4">
+                      <div class="form-group">
                         <input id="read" type="checkbox">
                         <label class="text-primaryText leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px] font-[400]"
                                for="read">
                           Jatri</label>
                       </div>
-                      <div class="form-group mt-4">
+                      <div class="form-group">
                         <input id="read" type="checkbox">
                         <label class="text-primaryText leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px] font-[400]"
                                for="read">
                           Counter</label>
                       </div>
-                      <div class="form-group mt-4">
+                      <div class="form-group">
                         <input id="read" type="checkbox">
                         <label class="text-primaryText leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px] font-[400]"
                                for="read">
@@ -538,19 +560,19 @@
                            placeholder="Enter Fare"
                            type="text">
                     <div class="flex gap-x-[16px]">
-                      <div class="form-group mt-4">
+                      <div class="form-group">
                         <input id="read" type="checkbox">
                         <label class="text-primaryText leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px] font-[400]"
                                for="read">
                           Jatri</label>
                       </div>
-                      <div class="form-group mt-4">
+                      <div class="form-group">
                         <input id="read" type="checkbox">
                         <label class="text-primaryText leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px] font-[400]"
                                for="read">
                           Counter</label>
                       </div>
-                      <div class="form-group mt-4">
+                      <div class="form-group">
                         <input id="read" type="checkbox">
                         <label class="text-primaryText leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px] font-[400]"
                                for="read">
@@ -570,19 +592,19 @@
                            placeholder="Enter Fare"
                            type="text">
                     <div class="flex gap-x-[16px]">
-                      <div class="form-group mt-4">
+                      <div class="form-group">
                         <input id="read" type="checkbox">
                         <label class="text-primaryText leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px] font-[400]"
                                for="read">
                           Jatri</label>
                       </div>
-                      <div class="form-group mt-4">
+                      <div class="form-group">
                         <input id="read" type="checkbox">
                         <label class="text-primaryText leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px] font-[400]"
                                for="read">
                           Counter</label>
                       </div>
-                      <div class="form-group mt-4">
+                      <div class="form-group">
                         <input id="read" type="checkbox">
                         <label class="text-primaryText leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px] font-[400]"
                                for="read">
@@ -685,9 +707,9 @@
           </div>
 
 
-          <hr class="mt-[12px] xl:mt-[4px] border-t border-corporateBorder">
+          <hr class="border-t border-corporateBorder">
           <div class="p-4">
-            <p class="text-corporateSecondaryBlue leading-[20px] xl:leading-[24px] text-[14px] xl:text-[16px] font-[500]">
+            <p class="text-corporateSecondaryBlue leading-[20px] xl:leading-[24px] text-[14px] xl:text-[16px] font-[600]">
               TRIP PERMISSION</p>
             <div class="flex justify-center items-center gap-x-[10px] xl:gap-x-[16px] mt-[12px] xl:mt-[16px]">
               <div class="w-1/4">
@@ -737,7 +759,7 @@
               </div>
             </div>
             <div class="flex items-center gap-x-[10px] xl:gap-x-[16px] mt-[12px] xl:mt-[20px]">
-              <div class="w-1/4">
+              <div class="w-[24.2%]">
                 <p class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]">
                   Reserve</p>
                 <div class="flex justify-center items-center mt-[10px]">
@@ -751,7 +773,7 @@
                   </button>
                 </div>
               </div>
-              <div class="w-1/4">
+              <div class="w-[24.2%]">
                 <p class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]">
                   Cancel</p>
                 <div class="flex justify-center items-center mt-[10px]">
@@ -768,9 +790,9 @@
             </div>
           </div>
 
-          <hr class="mt-[12px] xl:mt-[4px] border-t border-corporateBorder">
+          <hr class="border-t border-corporateBorder">
           <div class="p-4">
-            <p class="text-corporateSecondaryBlue leading-[20px] xl:leading-[24px] text-[14px] xl:text-[16px] font-[500]">
+            <p class="text-corporateSecondaryBlue leading-[20px] xl:leading-[24px] text-[14px] xl:text-[16px] font-[600]">
               ROUTE PERMISSION</p>
             <div class="flex justify-center items-center gap-x-[10px] xl:gap-x-[16px] mt-[12px] xl:mt-[16px]">
               <div class="w-1/4">
@@ -831,7 +853,7 @@
               </div>
             </div>
             <div class="flex items-center gap-x-[10px] xl:gap-x-[16px] mt-[12px] xl:mt-[20px]">
-              <div class="w-1/4">
+              <div class="w-[24.2%]">
                 <p class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]">Eid
                   trip</p>
                 <div class="flex justify-center items-center mt-[10px]">
@@ -848,12 +870,12 @@
             </div>
           </div>
 
-          <hr class="mt-[12px] xl:mt-[4px] border-t border-corporateBorder">
+          <hr class="border-t border-corporateBorder">
           <div class="p-4">
-            <p class="text-corporateSecondaryBlue leading-[20px] xl:leading-[24px] text-[14px] xl:text-[16px] font-[500]">
+            <p class="text-corporateSecondaryBlue leading-[20px] xl:leading-[24px] text-[14px] xl:text-[16px] font-[600]">
               COMMISSION</p>
             <div class="flex items-center gap-x-[10px] xl:gap-x-[16px] mt-[12px] xl:mt-[16px]">
-              <div class="w-1/4">
+              <div class="w-[24.2%]">
                 <p class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]">
                   Ticket commission (Third party)</p>
                 <div
@@ -862,7 +884,7 @@
                   <div class="text-[#676769] leading-[20px] text-[14px] font-[400] border-l-2 px-4">Percentage %</div>
                 </div>
               </div>
-              <div class="w-1/4">
+              <div class="w-[24.2%]">
                 <p class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]">Jatri
                   commission</p>
                 <div
@@ -875,12 +897,12 @@
           </div>
 
 
-          <hr class="mt-[12px] xl:mt-[4px] border-t border-corporateBorder">
+          <hr class="border-t border-corporateBorder">
           <div class="p-4">
-            <p class="text-corporateSecondaryBlue leading-[20px] xl:leading-[24px] text-[14px] xl:text-[16px] font-[500]">
+            <p class="text-corporateSecondaryBlue leading-[20px] xl:leading-[24px] text-[14px] xl:text-[16px] font-[600]">
               PUBLISH FOR JATRI</p>
             <div class="flex items-center gap-x-[10px] xl:gap-x-[16px] mt-[12px] xl:mt-[20px]">
-              <div class="w-1/4">
+              <div class="w-[24.2%]">
                 <p class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]">
                   Web</p>
                 <div class="flex justify-center items-center mt-[10px]">
@@ -894,7 +916,7 @@
                   </button>
                 </div>
               </div>
-              <div class="w-1/4">
+              <div class="w-[24.2%]">
                 <p class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]">
                   App</p>
                 <div class="flex justify-center items-center mt-[10px]">
@@ -908,7 +930,7 @@
                   </button>
                 </div>
               </div>
-              <div class="w-1/4">
+              <div class="w-[24.2%]">
                 <p class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]">
                   Customer Care</p>
                 <div class="flex justify-center items-center mt-[10px]">
@@ -925,9 +947,9 @@
             </div>
           </div>
 
-          <hr class="mt-[12px] xl:mt-[4px] border-t border-corporateBorder">
+          <hr class="border-t border-corporateBorder">
           <div class="p-4">
-            <p class="text-corporateSecondaryBlue leading-[20px] xl:leading-[24px] text-[14px] xl:text-[16px] font-[500]">
+            <p class="text-corporateSecondaryBlue leading-[20px] xl:leading-[24px] text-[14px] xl:text-[16px] font-[600]">
               ASSIGN COUNTERMAN & AGENT</p>
             <div class="flex items-center gap-x-[10px] xl:gap-x-[16px] mt-[12px] xl:mt-[16px]">
               <div class="w-1/4">
@@ -955,60 +977,60 @@
             </div>
           </div>
 
-          <hr class="mt-[12px] xl:mt-[4px] border-t border-corporateBorder">
+          <hr class="border-t border-corporateBorder">
           <div class="p-4">
-            <p class="text-corporateSecondaryBlue leading-[20px] xl:leading-[24px] text-[14px] xl:text-[16px] font-[500]">
+            <p class="text-corporateSecondaryBlue leading-[20px] xl:leading-[24px] text-[14px] xl:text-[16px] font-[600]">
               ASSIGN QOUTA</p>
 
-            <div class="bg-white rounded-[8px] mt-4">
-              <!-- table start -->
-              <table class="min-w-full rounded">
+            <!-- table start -->
+            <div class="rounded-[6px] border border-[#EDEDED] mt-4 overflow-hidden">
+              <table class="min-w-full">
                 <thead>
-                <tr>
-                  <th class="border border-[#EDEDED]" scope="col" style="border-radius:8px 0 0 0;"></th>
-                  <th class="border border-[#EDEDED] text-4 leading-5 text-[#676769] text-left font-[400] p-[10px]"
-                      scope="col">
-                    Selected seats
-                  </th>
-                  <th class="border border-[#EDEDED] text-4 leading-5 text-[#676769] text-left font-[400] p-[10px]"
-                      scope="col"
-                      style="border-radius:0 8px 0 0;"> Release time
-                  </th>
-                </tr>
+                  <tr>
+                    <th class="border border-t-0 first:border-l-0 last:border-r-0 border-[#EDEDED]" scope="col"></th>
+                    <th class="border border-t-0 first:border-l-0 last:border-r-0 border-[#EDEDED] text-4 leading-5 text-[#676769] text-left font-[400] p-[10px]"
+                        scope="col">
+                      Selected seats
+                    </th>
+                    <th class="border border-t-0 first:border-l-0 last:border-r-0 border-[#EDEDED] text-4 leading-5 text-[#676769] text-left font-[400] p-[10px]"
+                        scope="col"> Release time
+                    </th>
+                  </tr>
                 </thead>
+
                 <tbody>
-                <tr>
-                  <td class="border border-[#EDEDED] text-4 leading-5 text-left p-[10px]">Jatri</td>
-                  <td class="border border-[#EDEDED] text-4 leading-5 text-left p-[10px]">[C1], [C2], [C3], [C4]</td>
-                  <td class="border border-[#EDEDED] text-4 leading-5 text-left p-[10px]">08:30 PM</td>
-                </tr>
-                <tr>
-                  <td class="border border-[#EDEDED] text-4 leading-5 text-left p-[10px]">Counter 1</td>
-                  <td class="border border-[#EDEDED] text-4 leading-5 text-left p-[10px]">[A1], [A2], [A3], [A4]</td>
-                  <td class="border border-[#EDEDED] text-4 leading-5 text-left p-[10px]">08:30 PM</td>
-                </tr>
-                <tr>
-                  <td class="border border-[#EDEDED] text-4 leading-5 text-left p-[10px]">Counter 2</td>
-                  <td class="border border-[#EDEDED] text-4 leading-5 text-left p-[10px]">[B1], [B2]</td>
-                  <td class="border border-[#EDEDED] text-4 leading-5 text-left p-[10px]">08:30 PM</td>
-                </tr>
+                  <tr>
+                    <td class="border border-b-0 first:border-l-0 last:border-r-0 border-[#EDEDED] text-4 leading-5 text-left p-[10px]">Jatri</td>
+                    <td class="border border-b-0 first:border-l-0 last:border-r-0 border-[#EDEDED] text-4 leading-5 text-left p-[10px]">[C1], [C2], [C3], [C4]</td>
+                    <td class="border border-b-0 first:border-l-0 last:border-r-0 border-[#EDEDED] text-4 leading-5 text-left p-[10px]">08:30 PM</td>
+                  </tr>
+                  <tr>
+                    <td class="border border-b-0 first:border-l-0 last:border-r-0 border-[#EDEDED] text-4 leading-5 text-left p-[10px]">Counter 1</td>
+                    <td class="border border-b-0 first:border-l-0 last:border-r-0 border-[#EDEDED] text-4 leading-5 text-left p-[10px]">[A1], [A2], [A3], [A4]</td>
+                    <td class="border border-b-0 first:border-l-0 last:border-r-0 border-[#EDEDED] text-4 leading-5 text-left p-[10px]">08:30 PM</td>
+                  </tr>
+                  <tr>
+                    <td class="border border-b-0 first:border-l-0 last:border-r-0 border-[#EDEDED] text-4 leading-5 text-left p-[10px]">Counter 2</td>
+                    <td class="border border-b-0 first:border-l-0 last:border-r-0 border-[#EDEDED] text-4 leading-5 text-left p-[10px]">[B1], [B2]</td>
+                    <td class="border border-b-0 first:border-l-0 last:border-r-0 border-[#EDEDED] text-4 leading-5 text-left p-[10px]">08:30 PM</td>
+                  </tr>
                 </tbody>
               </table>
             </div>
           </div>
 
-          <hr class="mt-[12px] xl:mt-[4px] border-t border-corporateBorder">
+          <hr class="border-t border-corporateBorder">
           <div class="p-4">
-            <p class="text-corporateSecondaryBlue leading-[20px] xl:leading-[24px] text-[14px] xl:text-[16px] font-[500]">
+            <p class="text-corporateSecondaryBlue leading-[20px] xl:leading-[24px] text-[14px] xl:text-[16px] font-[600]">
               TRIP FACILITES</p>
             <div class="mt-[12px] xl:mt-[16px] text-[14px] leading-5">
               WiFi, WiFi, Buffet
             </div>
           </div>
 
-          <hr class="mt-[12px] xl:mt-[4px] border-t border-corporateBorder">
+          <hr class="border-t border-corporateBorder">
           <div class="p-4">
-            <p class="text-corporateSecondaryBlue leading-[20px] xl:leading-[24px] text-[14px] xl:text-[16px] font-[500]">
+            <p class="text-corporateSecondaryBlue leading-[20px] xl:leading-[24px] text-[14px] xl:text-[16px] font-[600]">
               POLICIES</p>
             <div class="mt-[12px] xl:mt-[16px] text-[14px] leading-5">
               <p class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]">Trip
@@ -1036,92 +1058,9 @@
           </div>
         </div>
 
-        <!--Card-->
-        <div class="bg-white rounded-[8px]">
+        <div class="bg-white mt-4 rounded-[10px]">
           <div class="p-4">
-            <p class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600] mb-[17px]">
-              Update for an period</p>
-
-            <!-- table start -->
-            <table class="min-w-full rounded">
-              <thead>
-              <tr class="border border-corporateBorder">
-                <th class="border-r border-[#EDEDED] text-4 leading-6 font-[400] p-[10px] uppercase w-1/2" scope="col"
-                    style="border-radius:8px 0 0 0;"> DATE
-                </th>
-                <th class="text-4 leading-6 font-[400] p-[10px] uppercase flex items-center justify-center gap-x-5" scope="col"
-                    style="border-radius:0 8px 0 0;"> <span>Check for all</span> <span><div class="form-group mb-0"><input id="readAll" type="checkbox"><label class="text-primaryText leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px] font-[400]"
-                                                                                       for="readAll"></label>
-                  </div></span>
-                </th>
-              </tr>
-              </thead>
-
-              <tbody>
-              <tr class="bg-corporateBg border-l border-r border-corporateBorder">
-                <td class="border-r border-[#EDEDED] text-4 text-center leading-6 p-[16px]">18 July 2022</td>
-                <td class="text-4 text-center leading-6 p-[16px]">
-                  <div class="form-group mb-0"><input id="read1" type="checkbox"><label class="text-primaryText leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px] font-[400]"
-                                                                                       for="read1"></label>
-                  </div>
-                </td>
-              </tr>
-              <tr class="border-l border-r border-corporateBorder">
-                <td class="border-r border-[#EDEDED] text-4 text-center leading-6 p-[16px]">18 July 2022</td>
-                <td class="text-4 text-center leading-6 p-[16px]">
-                  <div class="form-group mb-0"><input id="read2" type="checkbox"><label class="text-primaryText leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px] font-[400]"
-                                                                                       for="read2"></label>
-                  </div>
-                </td>
-              </tr>
-              <tr class="bg-corporateBg border-l border-r border-corporateBorder">
-                <td class="border-r border-[#EDEDED] text-4 text-center leading-6 p-[16px]">18 July 2022</td>
-                <td class="text-4 text-center leading-6 p-[16px]">
-                  <div class="form-group mb-0"><input id="read3" type="checkbox"><label class="text-primaryText leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px] font-[400]"
-                                                                                       for="read3"></label>
-                  </div>
-                </td>
-              </tr>
-              <tr class="border-l border-r border-corporateBorder">
-                <td class="border-r border-[#EDEDED] text-4 text-center leading-6 p-[16px]">18 July 2022</td>
-                <td class="text-4 text-center leading-6 p-[16px]">
-                  <div class="form-group mb-0"><input id="read4" type="checkbox"><label class="text-primaryText leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px] font-[400]"
-                                                                                       for="read4"></label>
-                  </div>
-                </td>
-              </tr>
-              <tr class="bg-corporateBg border-l border-r border-corporateBorder">
-                <td class="border-r border-[#EDEDED] text-4 text-center leading-6 p-[16px]">18 July 2022</td>
-                <td class="text-4 text-center leading-6 p-[16px]">
-                  <div class="form-group mb-0"><input id="read5" type="checkbox"><label class="text-primaryText leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px] font-[400]"
-                                                                                       for="read5"></label>
-                  </div>
-                </td>
-              </tr>
-              <tr class="border-l border-r border-corporateBorder">
-                <td class="border-r border-[#EDEDED] text-4 text-center leading-6 p-[16px]">18 July 2022</td>
-                <td class="text-4 text-center leading-6 p-[16px]">
-                  <div class="form-group mb-0"><input id="read6" type="checkbox"><label class="text-primaryText leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px] font-[400]"
-                                                                                       for="read6"></label>
-                  </div>
-                </td>
-              </tr>
-              <tr class="bg-corporateBg border-l border-r border-b border-corporateBorder">
-                <td class="border-r border-[#EDEDED] text-4 text-center leading-6 p-[16px]">18 July 2022</td>
-                <td class="text-4 text-center leading-6 p-[16px]">
-                  <div class="form-group mb-0"><input id="read6" type="checkbox"><label class="text-primaryText leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px] font-[400]"
-                                                                                       for="read6"></label>
-                  </div>
-                </td>
-              </tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
-
-        <div class="bg-white mt-4 rounded-[8px]">
-          <div class="p-4">
-            <p class="text-corporateSecondaryBlue leading-[20px] xl:leading-[24px] text-[14px] xl:text-[16px] font-[500]" data-v-2f5150cb=""> PUBLISH TRIP</p>
+            <p class="text-corporateSecondaryBlue leading-[20px] xl:leading-[24px] text-[14px] xl:text-[16px] font-[600]" data-v-2f5150cb=""> PUBLISH TRIP</p>
             <div class="flex gap-x-4">
               <div class="mt-4 w w-1/4">
                 <p class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]">From date</p>
@@ -1142,7 +1081,7 @@
         </div>
 
         <div class="flex justify-center items-center mt-5">
-          <router-link to="/tripPreviewNext" class="corporateButton">Create routes</router-link>
+          <router-link to="/tripPreviewNext" class="corporateButton">Create trip</router-link>
         </div>
 
       </div>
@@ -1217,7 +1156,6 @@
     position: relative;
     vertical-align: middle;
     cursor: pointer;
-    margin-right: 5px;
     border-radius: 4px;
   }
 .form-group input:checked + label:before {

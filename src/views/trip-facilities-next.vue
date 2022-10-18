@@ -3,7 +3,6 @@
     <div class="bg-white h-[72px] sticky top-0 border-b border-[#DBDBDB] z-10 px-[32px]">
       <div class="flex justify-between">
         <div class="flex justify-center items-center gap-x-[32px]">
-
           <button class="flex justify-center items-center gap-x-[10px]">
             <img alt="" class="w-[12px] h-[12px]" src="../assets/svg/Back.svg">
             <p class="text-primaryText leading-[12px] text-[10px] xl:leading-[16px] xl:text-[12px] font-[500]">
@@ -25,8 +24,6 @@
           </div>
         </div>
         <div class="flex gap-x-[24px] p-4 w-1/2 justify-end items-center pr-2 ">
-          <!--            <input type="text" class="w-[270px] h-[40px] border border-[#DBDBDB] placeholder:text-[#4D4D4F] placeholder:text-[14px] leading-[20px] rounded-[4px] pl-8 focus:outline-none" placeholder="PNR or mobile number">-->
-          <!--            <img src="../assets/svg/search.svg" class="h-5 w-5 absolute left-[242px]" alt="">-->
           <div
               class="w-[200px] h-[30px] xl:w-[270px] xl:h-[40px] border border-[#DBDBDB] flex justify-center items-center leading-[20px] rounded-[4px] pl-[9px] overflow-hidden">
             <img alt="" class="h-2 w-2 xl:h-5 xl:w-5" src="../assets/svg/search.svg">
@@ -46,11 +43,12 @@
       </div>
     </div>
     <!-- top nav bar end -->
+
     <!-- body start-->
     <div class="px-[30px] py-[24px]">
 
       <!--        card-->
-      <div class="bg-white rounded-[8px]">
+      <div class="bg-white rounded-[6px]">
         <div class="p-4">
           <div class="flex items-center gap-x-[6px] mr-2">
             <p class="text-secondaryText leading-[12px] text-[8px] xl:leading-[16px] xl:text-[12px] font-[400]">Trip
@@ -78,11 +76,11 @@
               Preview</p>
           </div>
           <div class="flex justify-between items-center">
-            <p class="text-corporateSecondaryBlue leading-[20px] xl:leading-[24px] text-[14px] xl:text-[16px] font-[500] mt-2">
+            <p class="text-corporateSecondaryBlue leading-[20px] xl:leading-[24px] text-[14px] xl:text-[16px] font-[600] mt-2">
               TRIP FACILITES & POLICIES</p>
             <p class="flex gap-x-[10px]">
               <img alt="" src="../assets/svg/back_arrow.svg">
-              <a class="leading-[12px] xl:leading-[16px] text-[10px] xl:text-[12px] text-primaryText border-b-2 border-primaryText block text-primaryText font-[600]"
+              <a class="leading-[12px] xl:leading-[16px] text-[10px] xl:text-[12px] border-b-2 border-primaryText block text-primaryText font-[600]"
                  href="#">Prev
                 .step</a>
             </p>
@@ -91,10 +89,8 @@
       </div>
       <div class="bg-white rounded-[8px] mt-[12px] xl:mt-[16px]">
         <div class="p-4">
-          <p class="text-corporateSecondaryBlue leading-[20px] xl:leading-[24px] text-[14px] xl:text-[16px] font-[500]">
-            TRIP
-            FACILITES & POLICIES</p>
-
+          <p class="text-corporateSecondaryBlue leading-[20px] xl:leading-[24px] text-[14px] xl:text-[16px] font-[600]">
+            TRIP FACILITES</p>
           <div class="flex gap-x-[18px] justify-start items-center">
             <div class="form-group w-[238px] mt-3 xl:mt-[18px]">
               <input id="html" type="checkbox">
@@ -120,7 +116,7 @@
             </div>
           </div>
 
-          <hr class="mt-[14px] xl:mt-[18px] border-t border-dashed border-corporateBorder">
+          <hr class="mt-1 border-t border-dashed border-corporateBorder">
           <div class="flex gap-x-[18px] justify-start items-center">
             <div class="form-group w-[238px] mt-3 xl:mt-[18px]">
               <input id="html" type="checkbox">
@@ -145,16 +141,16 @@
                      for="html">WiFi</label>
             </div>
           </div>
-          <hr class="mt-[14px] xl:mt-[18px] border-t border-dashed border-corporateBorder">
+          <hr class="mt-1 border-t border-dashed border-corporateBorder">
 
           <div class="mt-3 xl:mt-4 flex gap-x-4 justify-start items-center">
-            <div class="flex justify-between min-w-[200px] border border-corporateBorder rounded-[4px] px-2 py-[6px]">
+            <div class="flex justify-between items-center min-w-[200px] border border-corporateBorder rounded-[4px] px-2 py-[6px]">
                 <span>Buffet</span>
-                <span><img src="../assets/svg/close-cirlce.svg" alt=""></span>
+                <span><img class="w-[13px]" src="../assets/svg/close-cirlce.svg" alt=""></span>
             </div>
             <input class="w-[200px] border border-corporateBorder rounded-[4px] px-2 py-[6px] focus:outline-none" placeholder="Enter facilty" type="text">
             <button
-                class="bg-[#EFF7FD] flex gap-x-[11px] justify-center items-center border border-dashed border-[#1E88E5] px-4 py-[6px] rounded-[4px]">
+                class="bg-[#EFF7FD] flex gap-x-[11px] justify-center items-center border border-dashed border-[#1E88E5] px-4 py-[6px] font-semibold rounded-[4px]">
               <img alt="" class="w-[10px] h-[10px]" src="../assets/svg/facilities_plus.svg"> Add another facility
             </button>
           </div>
@@ -170,94 +166,104 @@
             policy</p>
 
           <textarea id=""
-                    class="w-full mt-[18px] border border-corporateBorder rounded-[4px] p-[8px] focus:outline-none placeholder:text-[#676769] placeholder:leading-[20px] placeholder:text-[14px]"
+                    class="w-full mt-[10px] border border-corporateBorder rounded-[4px] p-[8px] focus:outline-none placeholder:text-[#676769] placeholder:leading-[20px] placeholder:text-[14px]"
                     cols="30" name=""
                     placeholder="Enter terms & condition"
                     rows="10"></textarea>
           <p class="text-[#676769] leading-[16px] text-[12px] font-[400] mt-[8px]">*Max 500 charecters</p>
         </div>
       </div>
+      
       <div class="bg-white rounded-[8px] mt-4">
           <div class="p-4">
             <p class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600] mb-[17px]">
               Update for an period</p>
-
             <!-- table start -->
-            <table class="min-w-full">
-              <thead>
-              <tr class="border border-corporateBorder">
-                <th class="border-r border-[#EDEDED] text-4 leading-6 font-[400] p-[10px] uppercase w-1/2" scope="col"
-                    style="border-radius:8px 0 0 0;"> DATE
-                </th>
-                <th class="text-4 leading-6 font-[400] p-[10px] uppercase flex items-center justify-center gap-x-5" scope="col"
-                    style="border-radius:0 8px 0 0;"> <span>Check for all</span> <span><div class="form-group mb-0"><input id="readAll" type="checkbox"><label class="text-primaryText leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px] font-[400]"
-                                                                                       for="readAll"></label>
-                  </div></span>
-                </th>
-              </tr>
-              </thead>
+            <div class="rounded-[10px] border border-[#EDEDED] mt-4 overflow-hidden">
+              <table class="min-w-full">
+                <thead>
+                  <tr>
+                    <th class="border-r border-[#EDEDED] text-4 leading-6 font-[400] p-[10px] uppercase w-1/2" scope="col"> DATE
+                    </th>
+                    <th class="text-4 leading-6 font-[400] p-[10px] uppercase flex items-center justify-center gap-x-5"
+                        scope="col"><span>Check for all</span> <span><div class="form-group mb-0"><input
+                        id="readAll" type="checkbox"><label
+                        class="text-primaryText leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px] font-[400]"
+                        for="readAll"></label>
+                          </div></span>
+                    </th>
+                  </tr>
+                </thead>
 
-              <tbody>
-              <tr class="bg-corporateBg border-l border-r border-corporateBorder">
-                <td class="border-r border-[#EDEDED] text-4 text-center leading-6 p-[16px]">18 July 2022</td>
-                <td class="text-4 text-center leading-6 p-[16px]">
-                  <div class="form-group mb-0"><input id="read1" type="checkbox" checked><label class="text-primaryText leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px] font-[400]"
-                                                                                       for="read1"></label>
-                  </div>
-                </td>
-              </tr>
-              <tr class="border-l border-r border-corporateBorder">
-                <td class="border-r border-[#EDEDED] text-4 text-center leading-6 p-[16px]">18 July 2022</td>
-                <td class="text-4 text-center leading-6 p-[16px]">
-                  <div class="form-group mb-0"><input id="read2" type="checkbox" checked><label class="text-primaryText leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px] font-[400]"
-                                                                                       for="read2"></label>
-                  </div>
-                </td>
-              </tr>
-              <tr class="bg-corporateBg border-l border-r border-corporateBorder">
-                <td class="border-r border-[#EDEDED] text-4 text-center leading-6 p-[16px]">18 July 2022</td>
-                <td class="text-4 text-center leading-6 p-[16px]">
-                  <div class="form-group mb-0"><input id="read3" type="checkbox" checked><label class="text-primaryText leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px] font-[400]"
-                                                                                       for="read3"></label>
-                  </div>
-                </td>
-              </tr>
-              <tr class="border-l border-r border-corporateBorder">
-                <td class="border-r border-[#EDEDED] text-4 text-center leading-6 p-[16px]">18 July 2022</td>
-                <td class="text-4 text-center leading-6 p-[16px]">
-                  <div class="form-group mb-0"><input id="read4" type="checkbox"><label class="text-primaryText leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px] font-[400]"
-                                                                                       for="read4"></label>
-                  </div>
-                </td>
-              </tr>
-              <tr class="bg-corporateBg border-l border-r border-corporateBorder">
-                <td class="border-r border-[#EDEDED] text-4 text-center leading-6 p-[16px]">18 July 2022</td>
-                <td class="text-4 text-center leading-6 p-[16px]">
-                  <div class="form-group mb-0"><input id="read5" type="checkbox"><label class="text-primaryText leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px] font-[400]"
-                                                                                       for="read5"></label>
-                  </div>
-                </td>
-              </tr>
-              <tr class="border-l border-r border-corporateBorder">
-                <td class="border-r border-[#EDEDED] text-4 text-center leading-6 p-[16px]">18 July 2022</td>
-                <td class="text-4 text-center leading-6 p-[16px]">
-                  <div class="form-group mb-0"><input id="read6" type="checkbox"><label class="text-primaryText leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px] font-[400]"
-                                                                                       for="read6"></label>
-                  </div>
-                </td>
-              </tr>
-              <tr class="bg-corporateBg border-l border-r border-b border-corporateBorder">
-                <td class="border-r border-[#EDEDED] text-4 text-center leading-6 p-[16px]">18 July 2022</td>
-                <td class="text-4 text-center leading-6 p-[16px]">
-                  <div class="form-group mb-0"><input id="read6" type="checkbox"><label class="text-primaryText leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px] font-[400]"
-                                                                                       for="read6"></label>
-                  </div>
-                </td>
-              </tr>
-              </tbody>
-            </table>
+                <tbody>
+                  <tr>
+                    <td class="border-r border-[#EDEDED] text-4 text-center leading-6 p-[16px] bg-[#F7F7F7]">18 July 2022</td>
+                    <td class="text-4 text-center leading-6 p-[16px] bg-[#F7F7F7]">
+                      <div class="form-group mb-0"><input id="read1" type="checkbox" checked><label
+                          class="text-primaryText leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px] font-[400]"
+                          for="read1"></label>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="border-r border-[#EDEDED] text-4 text-center leading-6 p-[16px]">18 July 2022</td>
+                    <td class="text-4 text-center leading-6 p-[16px]">
+                      <div class="form-group mb-0"><input id="read2" type="checkbox" checked><label
+                          class="text-primaryText leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px] font-[400]"
+                          for="read2"></label>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="border-r border-[#EDEDED] text-4 text-center leading-6 p-[16px] bg-[#F7F7F7]">18 July 2022</td>
+                    <td class="text-4 text-center leading-6 p-[16px] bg-[#F7F7F7]">
+                      <div class="form-group mb-0"><input id="read3" type="checkbox" checked><label
+                          class="text-primaryText leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px] font-[400]"
+                          for="read3"></label>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="border-r border-[#EDEDED] text-4 text-center leading-6 p-[16px]">18 July 2022</td>
+                    <td class="text-4 text-center leading-6 p-[16px]">
+                      <div class="form-group mb-0"><input id="read4" type="checkbox"><label
+                          class="text-primaryText leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px] font-[400]"
+                          for="read4"></label>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="border-r border-[#EDEDED] text-4 text-center leading-6 p-[16px] bg-[#F7F7F7]">18 July 2022</td>
+                    <td class="text-4 text-center leading-6 p-[16px] bg-[#F7F7F7]">
+                      <div class="form-group mb-0"><input id="read5" type="checkbox"><label
+                          class="text-primaryText leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px] font-[400]"
+                          for="read5"></label>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="border-r border-[#EDEDED] text-4 text-center leading-6 p-[16px]">18 July 2022</td>
+                    <td class="text-4 text-center leading-6 p-[16px]">
+                      <div class="form-group mb-0"><input id="read6" type="checkbox"><label
+                          class="text-primaryText leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px] font-[400]"
+                          for="read6"></label>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="border-r border-[#EDEDED] text-4 text-center leading-6 p-[16px] bg-[#F7F7F7]">18 July 2022</td>
+                    <td class="text-4 text-center leading-6 p-[16px] bg-[#F7F7F7]">
+                      <div class="form-group mb-0"><input id="read6" type="checkbox"><label
+                          class="text-primaryText leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px] font-[400]"
+                          for="read6"></label>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
           </div>
-        </div>
+          </div>
+          </div>
 
       <div class="flex justify-center items-center gap-x-4 my-5">
         <button class="bg-[#48A43F] flex gap-x-3 justify-center items-center text-white rounded-full px-5 py-3 leading-[12px] text-[10px] xl:leading-[16px] xl:text-[12px]" data-v-0d08c475="">
@@ -276,14 +282,14 @@
           <p class="text-primaryText ">By clicking “Cancel trip”, it will cancel the trip and the tickets in the trip. This action could not be undone.</p>
         </div>
         <div>
-          <button @click="openModal" class="border border-corporateBorder items-center text-corporateError rounded-full px-6 py-3 leading-[12px] text-[10px] xl:leading-[16px] xl:text-[12px]">
+          <button @click="openModal" class="border border-corporateBorder items-center text-corporateError font-semibold rounded-full px-6 py-3 leading-[12px] text-[10px] xl:leading-[16px] xl:text-[12px]">
           Cancel trip
           </button>
           <Dialog header="Cancel Trip" v-model:visible="displayModal" :breakpoints="{'960px': '75vw', '640px': '90vw'}" :style="{width: '360px'}" :modal="true">
             <p class="text-[14px] leading-5 text-[#4D4D4F] text-center">By confirming, the trip will be cancelled and all its ticket. You will not be able to perform any action in this trip further. Are you sure you want to cancel the trip?</p>
            <div class="mt-[30px] flex gap-x-8 justify-end items-center">
               <button @click="closeModal" icon="pi pi-times" class="p-button-text text-[12px] leading-4 font-[500] text-[#1E88E5]"> No, thanks</button>
-              <button @click="closeModal" icon="pi pi-check" autofocus class="bg-[#F04935] px-6 py-3 text-white text-[12px] leading-4 font-[500] rounded-[100px]">Cancel trip</button>
+              <button @click="closeModal" icon="pi pi-check" autofocus class="bg-[#F04935] px-6 py-3 text-white text-[12px] leading-4 font-[00] rounded-[100px]">Cancel trip</button>
           </div>
         </Dialog>
         </div>

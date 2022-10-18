@@ -186,7 +186,7 @@ body {
 }
 
 .tripPermissionBtnright {
-    @apply w-1/2 bg-transparent text-corporateSecondaryBlack leading-[16px] xl:leading-[20px] text-[12px] xl:text-[14px] border border-[#DBDBDB] flex justify-center items-center font-[400] h-[40px] rounded-r-[4px]
+    @apply w-1/2 bg-transparent text-corporateSecondaryBlack leading-[16px] xl:leading-[20px] text-[12px] xl:text-[14px] border border-l-0 border-[#DBDBDB] flex justify-center items-center font-[400] h-[40px] rounded-r-[4px]
 }
 
 .tripPermissionBtnleftWithbg {
@@ -194,7 +194,7 @@ body {
 }
 
 .counterDesign {
-    @apply p-[8px] xl:p-[10px] text-primaryText leading-[20px] xl:leading-[24px] text-[14px] xl:text-[16px]
+    @apply p-[8px] xl:p-[10px] text-[#676769] leading-[20px] xl:leading-[24px] text-[14px] xl:text-[16px]
 }
 
 .quotaSeat {
