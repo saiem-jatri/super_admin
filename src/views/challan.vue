@@ -24,10 +24,11 @@
     </div>
   </div>
   <!-- top nav bar end -->
+
   <!-- body start-->
   <div class="px-[30px] py-[24px]">
-    <!--        card-->
-    <div class="mt-[16px] bg-white rounded-[10px]">
+    <!--card-->
+    <div class="bg-white rounded-[10px]">
       <div class="p-4 flex justify-between gap-x-[21px] items-center">
         <div class="flex justify-start items-center gap-x-4 w-full">
           <div class="w-1/4">
@@ -37,7 +38,7 @@
                 v-model="selectedCity"
                 :options="cities"
                 class="w-full p-[1px] mt-[10px] placeholder:text-primaryText placeholder:leading-[16px] placeholder:text-[12px] xl:placeholder:leading-[20px] xl:placeholder:text-[14px]"
-                optionLabel="name" placeholder="Dash Travels"/>
+                optionLabel="name" placeholder="Select bus operator"/>
           </div>
           <div class="w-1/4">
             <p class="text-primaryText leading-[20px] text-[14px] xl:leading-[24px] xl:text-[16px] font-[600]">
@@ -46,7 +47,7 @@
                 v-model="selectedCity"
                 :options="cities"
                 class="w-full p-[1px] mt-[10px] placeholder:text-primaryText placeholder:leading-[16px] placeholder:text-[12px] xl:placeholder:leading-[20px] xl:placeholder:text-[14px]"
-                optionLabel="name" placeholder="Dash Travels"/>
+                optionLabel="name" placeholder="Select counter"/>
           </div>
           <div class="w-1/4">
             <p class="text-primaryText leading-[20px] text-[14px] xl:leading-[24px] xl:text-[16px] font-[600]">Challan
@@ -55,7 +56,7 @@
                 v-model="selectedCity"
                 :options="cities"
                 class="w-full p-[1px] mt-[10px] placeholder:text-primaryText placeholder:leading-[16px] placeholder:text-[12px] xl:placeholder:leading-[20px] xl:placeholder:text-[14px]"
-                optionLabel="name" placeholder="Dash Travels"/>
+                optionLabel="name" placeholder="Select challan format"/>
           </div>
         </div>
         <button

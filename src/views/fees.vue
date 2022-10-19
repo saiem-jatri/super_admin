@@ -59,8 +59,8 @@
             <Dropdown
                 v-model="selectedCity"
                 :options="cities"
-                class="w-full p-[4px] mt-[10px] placeholder:text-primaryText placeholder:leading-[16px] placeholder:text-[12px] xl:placeholder:leading-[20px] xl:placeholder:text-[14px]"
-                optionLabel="name" placeholder="Fixed"/>
+                class="w-full py-1 mt-[10px] placeholder:text-primaryText placeholder:leading-[16px] placeholder:text-[12px] xl:placeholder:leading-[20px] xl:placeholder:text-[14px]"
+                optionLabel="name" placeholder="Select online charge type"/>
           </div>
           <div class="w-1/6">
             <div class="flex justify-between items-center w-full">
@@ -69,7 +69,7 @@
             </div>
             <input
                 class="focus:outline-none mt-[10px] w-full border border-[#DBDBDB] rounded-[4px] pl-2 py-2 placeholder:text-[#676769] placeholder:leading-[16px] placeholder:text-[12px] xl:placeholder:leading-[20px] xl:placeholder:text-[14px]"
-                placeholder="50"
+                placeholder="Enter amount"
                 type="text">
           </div>
 
@@ -80,7 +80,7 @@
             </div>
             <input
                 class="focus:outline-none mt-[10px] w-full border border-[#DBDBDB] rounded-[4px] pl-2 py-2 placeholder:text-[#676769] placeholder:leading-[16px] placeholder:text-[12px] xl:placeholder:leading-[20px] xl:placeholder:text-[14px]"
-                placeholder="150"
+                placeholder="Enter amount"
                 type="text">
           </div>
           <div class="w-1/5">
@@ -89,8 +89,8 @@
             <Dropdown
                 v-model="selectedCity"
                 :options="cities"
-                class="w-full p-[4px] mt-[10px] placeholder:text-primaryText placeholder:leading-[16px] placeholder:text-[12px] xl:placeholder:leading-[20px] xl:placeholder:text-[14px]"
-                optionLabel="name" placeholder="Percentage"/>
+                class="w-full py-1 mt-[10px] placeholder:text-primaryText placeholder:leading-[16px] placeholder:text-[12px] xl:placeholder:leading-[20px] xl:placeholder:text-[14px]"
+                optionLabel="name" placeholder="Select gateway charge type"/>
           </div>
           <div class="w-1/7">
             <div class="flex justify-between items-center w-full">
@@ -99,12 +99,12 @@
             </div>
             <input
                 class="focus:outline-none mt-[10px] w-full border border-[#DBDBDB] rounded-[4px] pl-2 py-2 placeholder:text-primaryText placeholder:leading-[16px] placeholder:text-[12px] xl:placeholder:leading-[20px] xl:placeholder:text-[14px]"
-                placeholder="2"
+                placeholder="Enter amount"
                 type="text">
           </div>
         </div>
       </div>
-      <div class="flex justify-center items-center pt-4 xl:pt-6 pb-2 xl:pb-4">
+      <div class="flex justify-center items-center pt-1 pb-5">
         <button class="flex justify-center items-center gap-x-[10px] corporateButton">
           <img alt="" src="../assets/svg/save_change.svg">Save commission
         </button>

@@ -4,7 +4,7 @@
       <div class="flex justify-between items-center">
         <div class="pl-6 flex flex-col gap-y-[4px]">
           <p class="lg:leading-[16px] xl:leading-[28px] lg:text-[14px] xl:text-[20px] font-[600] text-primaryText">
-            Bill adjustment</p>
+            Bill Adjustment</p>
           <div class="flex justify-center items-center gap-x-[6px] mr-4">
             <p class="text-secondaryText leading-[12px] text-[8px] xl:leading-[16px] xl:text-[12px] font-[400]">
               Invoice</p>

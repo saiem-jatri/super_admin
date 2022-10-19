@@ -31,9 +31,10 @@
     </div>
   </div>
   <!-- top nav bar end -->
+
   <!-- body start-->
   <div class="px-[30px] py-[24px]">
-    <!--        tab start-->
+    <!--tab start-->
     <div class="border-b border-[#EDEDED]">
       <div class="flex justify-start items-center">
         <router-link :class="$route.path === '/fees' ? 'companyOwnerTabActive' : 'companyOwnerTabNonActive' "
@@ -55,49 +56,53 @@
         Charge</p>
       <hr class="px-4 border-t border-[#DBDBDB] mt-4">
       <div class="p-4 flex gap-x-[21px] items-center">
-        <div class="flex justify-start items-center gap-x-4 w-full">
-          <div class="w-1/4">
+        <div class="flex justify-start items-end gap-x-4 w-full">
+          <div class="w-1/5">
             <p class="text-primaryText leading-[20px] text-[14px] xl:leading-[24px] xl:text-[16px] font-[600]">Bus
               operator</p>
             <Dropdown
                 v-model="selectedCity"
                 :options="cities"
-                class="w-full p-[4px] mt-[10px] placeholder:text-primaryText placeholder:leading-[16px] placeholder:text-[12px] xl:placeholder:leading-[20px] xl:placeholder:text-[14px]"
-                optionLabel="name" placeholder="Dash Travels"/>
+                class="w-full py-1 mt-[10px] placeholder:text-primaryText placeholder:leading-[16px] placeholder:text-[12px] xl:placeholder:leading-[20px] xl:placeholder:text-[14px]"
+                optionLabel="name" placeholder="Select bus operator"/>
           </div>
-          <div class="w-1/4">
+          <div class="w-1/5">
             <p class="text-primaryText leading-[20px] text-[14px] xl:leading-[24px] xl:text-[16px] font-[600]">
               Commission type</p>
             <Dropdown
                 v-model="selectedCity"
                 :options="cities"
-                class="w-full p-[4px] mt-[10px] placeholder:text-primaryText placeholder:leading-[16px] placeholder:text-[12px] xl:placeholder:leading-[20px] xl:placeholder:text-[14px]"
-                optionLabel="name" placeholder="Fixed"/>
+                class="w-full py-1 mt-[10px] placeholder:text-primaryText placeholder:leading-[16px] placeholder:text-[12px] xl:placeholder:leading-[20px] xl:placeholder:text-[14px]"
+                optionLabel="name" placeholder="Select commission type"/>
           </div>
-          <div class="w-1/4">
+          <div class="w-1/5">
             <div class="flex justify-between items-center w-full">
               <p class="text-primaryText leading-[20px] text-[14px] xl:leading-[24px] xl:text-[16px] font-[600]">
                 Amount</p>
             </div>
             <input
                 class="focus:outline-none mt-[10px] w-full border border-[#DBDBDB] rounded-[4px] pl-2 py-2 placeholder:text-[#676769] placeholder:leading-[16px] placeholder:text-[12px] xl:placeholder:leading-[20px] xl:placeholder:text-[14px]"
-                placeholder="50"
+                placeholder="Enter amount"
                 type="text">
           </div>
-          <div class="w-1/4">
+          <div class="w-1/5">
             <div class="flex justify-between items-center w-full">
               <p class="text-primaryText leading-[20px] text-[14px] xl:leading-[24px] xl:text-[16px] font-[600]">
                 Up to (tk)</p>
             </div>
             <input
                 class="focus:outline-none mt-[10px] w-full border border-[#DBDBDB] rounded-[4px] pl-2 py-2 placeholder:text-[#676769] placeholder:leading-[16px] placeholder:text-[12px] xl:placeholder:leading-[20px] xl:placeholder:text-[14px]"
-                placeholder="50"
+                placeholder="Enter amount"
                 type="text">
           </div>
-          <div class="ml-[86px] mt-10">
+          <div class="w-1/5 flex justify-end">
             <button
-                class="flex justify-center items-center gap-x-[10px] text-white leading-[20px] text-[14px] font-[400] bg-corporate rounded-full w-[198px] h-[40px]">
+                class="flex justify-center items-center gap-x-[10px] text-white text-[12px] xl:text-sm font-[400] bg-corporate rounded-full pl-3 xl:pl-[18px] pr-3 xl:pr-6 py-2 xl:py-3">
               <img alt="" src="../assets/svg/white_check.svg">Create operator charge
+            </button>
+            <button
+                class="flex justify-center items-center gap-x-[10px] text-white leading-[20px] text-[14px] font-[400] bg-corporate rounded-full pl-[18px] pr-6 py-3 hidden">
+              <img alt="" src="../assets/svg/white_check.svg">Save operator charge
             </button>
           </div>
         </div>
@@ -117,8 +122,8 @@
               <Dropdown
                   v-model="selectedCity"
                   :options="cities"
-                  class="w-full p-[4px] mt-[10px] placeholder:text-primaryText placeholder:leading-[16px] placeholder:text-[12px] xl:placeholder:leading-[20px] xl:placeholder:text-[14px]"
-                  optionLabel="name" placeholder="Dash Travels"/>
+                  class="w-full py-1 mt-[10px] placeholder:text-primaryText placeholder:leading-[16px] placeholder:text-[12px] xl:placeholder:leading-[20px] xl:placeholder:text-[14px]"
+                  optionLabel="name" placeholder="Select bus operator"/>
             </div>
             <div class="w-1/4">
               <p class="text-primaryText leading-[20px] text-[14px] xl:leading-[24px] xl:text-[16px] font-[600]">
@@ -126,13 +131,13 @@
               <Dropdown
                   v-model="selectedCity"
                   :options="cities"
-                  class="w-full p-[4px] mt-[10px] placeholder:text-primaryText placeholder:leading-[16px] placeholder:text-[12px] xl:placeholder:leading-[20px] xl:placeholder:text-[14px]"
-                  optionLabel="name" placeholder="Fixed"/>
+                  class="w-full py-1 mt-[10px] placeholder:text-primaryText placeholder:leading-[16px] placeholder:text-[12px] xl:placeholder:leading-[20px] xl:placeholder:text-[14px]"
+                  optionLabel="name" placeholder="Select commission type"/>
             </div>
           </div>
           <div class="ml-[86px] xlmt-10">
             <button
-                class="mt-5 flex gap-x-[9px] justify-center items-center bg-transparent border border-[#8D8D8F] text-corporate leading-[14px] xl:leading-[16px] text-[11px] xl:text-[12px] font-[500] py-3 pl-[17px] pr-[24px] rounded-full"><span>
+                class="mt-5 flex gap-x-[9px] justify-center items-center bg-transparent border border-[#8D8D8F] text-corporate leading-[14px] xl:leading-[16px] text-[11px] xl:text-[12px] font-[600] py-3 pl-[17px] pr-[24px] rounded-full"><span>
                 <img alt="" class="w-[13px] xl:h-[13px]" src="../assets/svg/corporate_search.svg">
               </span>Search
             </button>
