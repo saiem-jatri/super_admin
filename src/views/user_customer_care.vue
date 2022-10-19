@@ -31,10 +31,11 @@
         </div>
       </div>
       <!-- top nav bar end -->
+
       <!-- body start-->
       <div class="px-[30px] py-[24px]">
         <!--        tab start-->
-        <div class="border-b border-[#EDEDED]">
+        <div class="border-b border-[#EDEDED] rounded">
           <div class="flex justify-start items-center">
             <router-link to="/user" :class="$route.path === '/user' ? 'companyOwnerTabActive' : 'companyOwnerTabNonActive' ">Owner</router-link>
             <router-link to="/userAdmin" :class="$route.path === '/userAdmin' ? 'companyOwnerTabActive' : 'companyOwnerTabNonActive' ">Jatri Admin</router-link>
@@ -44,7 +45,7 @@
           </div>
         </div>
         <!--        card-->
-        <div class="mt-[16px] bg-white">
+        <div class="mt-[16px] bg-white rounded">
           <div class="p-4 flex justify-between items-center">
             <div class="flex justify-start items-center gap-x-4 w-full">
               <div class="w-1/4 xl:w-1/5">
@@ -54,7 +55,7 @@
                 </div>
                 <input
                     class="focus:outline-none mt-[10px] w-full border border-[#DBDBDB] rounded-[4px] pl-2 py-2 placeholder:text-[#676769] placeholder:leading-[16px] placeholder:text-[12px] xl:placeholder:leading-[20px] xl:placeholder:text-[14px]"
-                    placeholder="Enter company name"
+                    placeholder="Enter name"
                     type="text">
               </div>
 
@@ -65,7 +66,7 @@
                 </div>
                 <input
                     class="focus:outline-none mt-[10px] w-full border border-[#DBDBDB] rounded-[4px] pl-2 py-2 placeholder:text-[#676769] placeholder:leading-[16px] placeholder:text-[12px] xl:placeholder:leading-[20px] xl:placeholder:text-[14px]"
-                    placeholder="Enter company name"
+                    placeholder="Enter mobile number"
                     type="text">
               </div>
             </div>
@@ -85,17 +86,14 @@
                 SL
               </th>
               <th class="companyTableHead" scope="col">
-                ADMIN NAME
+                NAME
               </th>
               <th class="companyTableHead" scope="col">
-                MOBILE
+                MOBILE NUMBER
               </th>
 
               <th class="companyTableHead" scope="col">
                 Email
-              </th>
-              <th class="companyTableHead" scope="col">
-                USER TYPE
               </th>
               <th class="companyTableHead" scope="col">
                 STATUS
@@ -119,9 +117,31 @@
               <td class="leading-[20px] text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText">
                 owner.mail@gmail.com
               </td>
-
+              <td class="border-r border-[#DBDBDB]">
+                <div class="flex justify-center items-center">
+                  <p class="companyTableStatus">Active</p>
+                </div>
+              </td>
+              <td class="border-r border-[#DBDBDB]">
+                <div class="py-[5px] px-[18px] flex justify-center items-center gap-x-[16px]">
+                  <button class="companyEditButton"><span><img alt="" class="w-3 h-3"
+                                                               src="../assets/svg/edit.svg"></span>Edit
+                  </button>
+                </div>
+              </td>
+            </tr>
+            <tr class="border-b border-[#EDEDED]">
+              <td class="text-primaryText border-r border-[#DBDBDB] text-center leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px]">
+                01
+              </td>
+              <td class="text-primaryText border-r border-[#DBDBDB] text-center leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px]">
+                Fahim Ahmed
+              </td>
               <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText">
-                JATRI ADMIN
+                +8801708630439
+              </td>
+              <td class="leading-[20px] text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText">
+                owner.mail@gmail.com
               </td>
               <td class="border-r border-[#DBDBDB]">
                 <div class="flex justify-center items-center">
@@ -149,10 +169,6 @@
               <td class="leading-[20px] text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText">
                 owner.mail@gmail.com
               </td>
-
-              <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText">
-                JATRI ADMIN
-              </td>
               <td class="border-r border-[#DBDBDB]">
                 <div class="flex justify-center items-center">
                   <p class="companyTableStatus">Active</p>
@@ -179,9 +195,31 @@
               <td class="leading-[20px] text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText">
                 owner.mail@gmail.com
               </td>
-
+              <td class="border-r border-[#DBDBDB]">
+                <div class="flex justify-center items-center">
+                  <p class="companyTableStatusInactive">Inactive</p>
+                </div>
+              </td>
+              <td class="border-r border-[#DBDBDB]">
+                <div class="py-[5px] px-[18px] flex justify-center items-center gap-x-[16px]">
+                  <button class="companyEditButton"><span><img alt="" class="w-3 h-3"
+                                                               src="../assets/svg/edit.svg"></span>Edit
+                  </button>
+                </div>
+              </td>
+            </tr>
+            <tr class="border-b border-[#EDEDED]">
+              <td class="text-primaryText border-r border-[#DBDBDB] text-center leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px]">
+                01
+              </td>
+              <td class="text-primaryText border-r border-[#DBDBDB] text-center leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px]">
+                Fahim Ahmed
+              </td>
               <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText">
-                JATRI ADMIN
+                +8801708630439
+              </td>
+              <td class="leading-[20px] text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText">
+                owner.mail@gmail.com
               </td>
               <td class="border-r border-[#DBDBDB]">
                 <div class="flex justify-center items-center">
@@ -208,70 +246,6 @@
               </td>
               <td class="leading-[20px] text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText">
                 owner.mail@gmail.com
-              </td>
-
-              <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText">
-                JATRI ADMIN
-              </td>
-              <td class="border-r border-[#DBDBDB]">
-                <div class="flex justify-center items-center">
-                  <p class="companyTableStatus">Active</p>
-                </div>
-              </td>
-              <td class="border-r border-[#DBDBDB]">
-                <div class="py-[5px] px-[18px] flex justify-center items-center gap-x-[16px]">
-                  <button class="companyEditButton"><span><img alt="" class="w-3 h-3"
-                                                               src="../assets/svg/edit.svg"></span>Edit
-                  </button>
-                </div>
-              </td>
-            </tr>
-            <tr class="border-b border-[#EDEDED]">
-              <td class="text-primaryText border-r border-[#DBDBDB] text-center leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px]">
-                01
-              </td>
-              <td class="text-primaryText border-r border-[#DBDBDB] text-center leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px]">
-                Fahim Ahmed
-              </td>
-              <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText">
-                +8801708630439
-              </td>
-              <td class="leading-[20px] text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText">
-                owner.mail@gmail.com
-              </td>
-
-              <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText">
-                JATRI ADMIN
-              </td>
-              <td class="border-r border-[#DBDBDB]">
-                <div class="flex justify-center items-center">
-                  <p class="companyTableStatus">Active</p>
-                </div>
-              </td>
-              <td class="border-r border-[#DBDBDB]">
-                <div class="py-[5px] px-[18px] flex justify-center items-center gap-x-[16px]">
-                  <button class="companyEditButton"><span><img alt="" class="w-3 h-3"
-                                                               src="../assets/svg/edit.svg"></span>Edit
-                  </button>
-                </div>
-              </td>
-            </tr>
-            <tr class="border-b border-[#EDEDED]">
-              <td class="text-primaryText border-r border-[#DBDBDB] text-center leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px]">
-                01
-              </td>
-              <td class="text-primaryText border-r border-[#DBDBDB] text-center leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px]">
-                Fahim Ahmed
-              </td>
-              <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText">
-                +8801708630439
-              </td>
-              <td class="leading-[20px] text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText">
-                owner.mail@gmail.com
-              </td>
-
-              <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText">
-                JATRI ADMIN
               </td>
               <td class="border-r border-[#DBDBDB]">
                 <div class="flex justify-center items-center">

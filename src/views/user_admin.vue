@@ -52,7 +52,7 @@
           </div>
         </div>
         <!--        card-->
-        <div class="mt-[16px] bg-white">
+        <div class="mt-[16px] bg-white rounded">
           <div class="p-4 flex justify-between items-center">
             <div class="flex justify-start items-center gap-x-4 w-full">
               <div class="w-1/4 xl:w-1/5">
@@ -96,7 +96,7 @@
                 ADMIN NAME
               </th>
               <th class="companyTableHead" scope="col">
-                MOBILE
+                MOBILE NUMBER
               </th>
 
               <th class="companyTableHead" scope="col">
@@ -253,7 +253,7 @@
               </td>
               <td class="border-r border-[#DBDBDB]">
                 <div class="flex justify-center items-center">
-                  <p class="companyTableStatus">Active</p>
+                  <p class="companyTableStatusInactive">Inactive</p>
                 </div>
               </td>
               <td class="border-r border-[#DBDBDB]">

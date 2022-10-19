@@ -44,11 +44,11 @@
         </div>
       </div>
       <!-- top nav bar end -->
+
       <!-- body start-->
       <div class="px-[30px] py-[24px]">
-
         <!--        card-->
-        <div class="mt-[16px] bg-white rounded-[10px]">
+        <div class="bg-white rounded-[10px]">
           <div class="">
             <div class="px-4 pt-4 flex justify-center items-center gap-x-[10px] xl:gap-x-[16px]">
               <div class="w-1/4">
@@ -94,9 +94,8 @@
                   Permissions</p>
                 <div class="form-group  mt-5">
                   <input id="html" type="checkbox">
-                  <label class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]"
-                         for="html">Give
-                    All Permission</label>
+                  <label class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[500]"
+                         for="html">Give All Permission</label>
                 </div>
               </div>
               <hr class="border-t border-corporateBorder mt-1">
@@ -114,7 +113,7 @@
                       </div>
                       <hr class="border-t border-dashed border-corporateBorder">
                       <div class="flex justify-start items-center">
-                        <div class="form-group mt-2 flex justify-end">
+                        <div class="form-group mt-4 flex justify-end">
                           <input id="booking" type="checkbox">
                           <label
                               class="text-primaryText leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px] font-[400]"
@@ -123,7 +122,7 @@
                       </div>
                       <hr class="border-t border-dashed border-corporateBorder">
                       <div class="flex justify-start items-center">
-                        <div class="form-group mt-2 flex justify-end">
+                        <div class="form-group mt-4 flex justify-end">
                           <input id="booking" type="checkbox">
                           <label
                               class="text-primaryText leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px] font-[400]"
@@ -132,7 +131,7 @@
                       </div>
                       <hr class="border-t border-dashed border-corporateBorder">
                       <div class="flex justify-start items-center">
-                        <div class="form-group mt-2 flex justify-end">
+                        <div class="form-group mt-4 flex justify-end">
                           <input id="booking" type="checkbox">
                           <label
                               class="text-primaryText leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px] font-[400]"
@@ -141,7 +140,7 @@
                       </div>
                       <hr class="border-t border-dashed border-corporateBorder">
                       <div class="flex justify-start items-center">
-                        <div class="form-group mt-2 flex justify-end">
+                        <div class="form-group mt-4 flex justify-end">
                           <input id="booking" type="checkbox">
                           <label
                               class="text-primaryText leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px] font-[400]"
@@ -150,7 +149,7 @@
                       </div>
                       <hr class="border-t border-dashed border-corporateBorder">
                       <div class="flex justify-start items-center">
-                        <div class="form-group mt-2 flex justify-end">
+                        <div class="form-group mt-4 mb-0 flex justify-end">
                           <input id="booking" type="checkbox">
                           <label
                               class="text-primaryText leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px] font-[400]"
@@ -162,7 +161,7 @@
                   <div class="w-1/2">
                     <div class="py-[8px] pl-[24px]">
                       <div class="flex justify-start items-center">
-                        <div class="form-group mt-2 flex justify-end">
+                        <div class="form-group mt-4 flex justify-end">
                           <input id="booking" type="checkbox">
                           <label
                               class="text-primaryText leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px] font-[400]"
@@ -171,7 +170,7 @@
                       </div>
                       <hr class="border-t border-dashed border-corporateBorder">
                       <div class="flex justify-start items-center">
-                        <div class="form-group mt-2 flex justify-end">
+                        <div class="form-group mt-4 flex justify-end">
                           <input id="booking" type="checkbox">
                           <label
                               class="text-primaryText leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px] font-[400]"
@@ -180,7 +179,7 @@
                       </div>
                       <hr class="border-t border-dashed border-corporateBorder">
                       <div class="flex justify-start items-center">
-                        <div class="form-group mt-2 flex justify-end">
+                        <div class="form-group mt-4 flex justify-end">
                           <input id="booking" type="checkbox">
                           <label
                               class="text-primaryText leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px] font-[400]"
@@ -189,7 +188,7 @@
                       </div>
                       <hr class="border-t border-dashed border-corporateBorder">
                       <div class="flex justify-start items-center">
-                        <div class="form-group mt-2 flex justify-end">
+                        <div class="form-group mt-4 flex justify-end">
                           <input id="booking" type="checkbox">
                           <label
                               class="text-primaryText leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px] font-[400]"
@@ -198,7 +197,7 @@
                       </div>
                       <hr class="border-t border-dashed border-corporateBorder">
                       <div class="flex justify-start items-center">
-                        <div class="form-group mt-2 flex justify-end">
+                        <div class="form-group mt-4 flex justify-end">
                           <input id="booking" type="checkbox">
                           <label
                               class="text-primaryText leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px] font-[400]"

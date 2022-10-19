@@ -19,9 +19,7 @@
             </div>
           </div>
           <div class="flex gap-x-[24px] p-4 w-1/2 justify-end items-center pr-2 ">
-            <!--            <input type="text" class="w-[270px] h-[40px] border border-[#DBDBDB] placeholder:text-[#4D4D4F] placeholder:text-[14px] leading-[20px] rounded-[4px] pl-8 focus:outline-none" placeholder="PNR or mobile number">-->
-            <!--            <img src="../assets/svg/search.svg" class="h-5 w-5 absolute left-[242px]" alt="">-->
-            <div
+           <div
                 class="w-[200px] h-[30px] xl:w-[270px] xl:h-[40px] border border-[#DBDBDB] flex justify-center items-center rounded-[4px] pl-[9px] gap-x-2">
               <img alt="" class="h-2 w-2 xl:h-5 xl:w-5" src="../assets/svg/search.svg">
               <input
@@ -53,7 +51,7 @@
           </div>
         </div>
         <!--        card-->
-        <div class="mt-[16px] bg-white">
+        <div class="mt-[16px] bg-white rounded">
           <div class="p-4 flex justify-between items-center">
             <div class="flex justify-start items-center gap-x-4 w-full">
               <div class="w-1/4 xl:w-1/5">
@@ -63,7 +61,7 @@
                     v-model="selectedCity"
                     :options="cities"
                     class="w-full p-[1px] mt-[10px] placeholder:text-primaryText placeholder:leading-[16px] placeholder:text-[12px] xl:placeholder:leading-[20px] xl:placeholder:text-[14px]"
-                    optionLabel="name" placeholder="Dash Travels"/>
+                    optionLabel="name" placeholder="Select bus operator"/>
               </div>
               <div class="w-1/4 xl:w-1/5">
                 <div class="flex justify-between items-center w-full">
@@ -72,7 +70,7 @@
                 </div>
                 <input
                     class="focus:outline-none mt-[10px] w-full border border-[#DBDBDB] rounded-[4px] pl-2 py-2 placeholder:text-[#676769] placeholder:leading-[16px] placeholder:text-[12px] xl:placeholder:leading-[20px] xl:placeholder:text-[14px]"
-                    placeholder="Enter company name"
+                    placeholder="Enter name"
                     type="text">
               </div>
 
@@ -83,7 +81,7 @@
                 </div>
                 <input
                     class="focus:outline-none mt-[10px] w-full border border-[#DBDBDB] rounded-[4px] pl-2 py-2 placeholder:text-[#676769] placeholder:leading-[16px] placeholder:text-[12px] xl:placeholder:leading-[20px] xl:placeholder:text-[14px]"
-                    placeholder="Enter company name"
+                    placeholder="Enter mobile name"
                     type="text">
               </div>
             </div>
@@ -214,7 +212,7 @@
               </td>
               <td class="border-r border-[#DBDBDB]">
                 <div class="flex justify-center items-center">
-                  <p class="companyTableStatus">Active</p>
+                  <p class="companyTableStatusInactive">Inactive</p>
                 </div>
               </td>
               <td class="border-r border-[#DBDBDB]">
