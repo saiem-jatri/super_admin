@@ -150,7 +150,7 @@
                 to="/invoiceGeneratebill">
               Generate Bill
             </router-link>
-            <router-link :class="$route.path === '' ? 'activeMenu' : 'menu p-[10px]' " to="">Bill Adjustment
+            <router-link :class="$route.path === '/billAdjustment' ? 'activeMenu' : 'menu p-[10px]' " to="/billAdjustment">Bill Adjustment
             </router-link>
           </dropdown-menu>
         </ul>
