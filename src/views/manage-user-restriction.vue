@@ -20,7 +20,9 @@
             </div>
           </div>
           <div class="flex gap-x-2 p-4 justify-center items-center mr-6 ">
-              <button class="bg-corporate flex gap-x-3 justify-center items-center text-white rounded-full px-6 py-3 mr-4 leading-[12px] text-[10px] xl:leading-[16px] xl:text-[12px]"><span><img src="../assets/svg/plus.svg" class="h-[9.33px] w-[9.33px]" alt=""></span>Add Trip</button>
+              <router-link class="topBarAddButton" to="/tripsAdd">
+                <span><img alt="" class="h-[9.33px] w-[9.33px]" src="../assets/svg/plus.svg"></span>Add Trips
+              </router-link>
               <img src="../assets/person/person1.png" alt="" class="h-[30px] xl:h-[40px] w-[30px] xl:w-[40px] rounded-full">
               <p class="text-[#151414] leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[500]">Mostafa Mamun Emon</p>
               <img src="../assets/person/downArrow.svg" alt="" class="w-[12px] h-[6px]">
@@ -30,8 +32,8 @@
       <!-- top nav bar end -->
         <!-- body start-->
         <div class="px-[30px] py-[24px]">
-  <!--        tab start-->
-  <!--        card-->
+            <!--tab start-->
+            <!--card-->
           <div class="bg-white rounded">
               <div class="p-4 flex justify-between items-center gap-x-[30px]">
                 <div class="flex justify-start items-center gap-x-4 w-full">

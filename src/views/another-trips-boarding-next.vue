@@ -250,93 +250,92 @@
           <div class="p-4">
             <p class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600] mb-[17px]">
               Update for an period</p>
-
             <!-- table start -->
-        <table class="min-w-full">
-          <thead>
-          <tr class="border border-corporateBorder">
-            <th class="border-r border-[#EDEDED] text-4 leading-6 font-[400] p-[10px] uppercase w-1/2" scope="col"
-                style="border-radius:8px 0 0 0;"> DATE
-            </th>
-            <th class="text-4 leading-6 font-[400] p-[10px] uppercase flex items-center justify-center gap-x-5"
-                scope="col"
-                style="border-radius:0 8px 0 0;"><span>Check for all</span> <span><div class="form-group mb-0"><input
-                id="readAll" type="checkbox"><label
-                class="text-primaryText leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px] font-[400]"
-                for="readAll"></label>
-                  </div></span>
-            </th>
-          </tr>
-          </thead>
+            <div class="rounded-[10px] border border-[#EDEDED] mt-4 overflow-hidden">
+              <table class="min-w-full">
+                <thead>
+                  <tr>
+                    <th class="border-r border-[#EDEDED] text-4 leading-6 font-[400] p-[10px] uppercase w-1/2" scope="col"> DATE
+                    </th>
+                    <th class="text-4 leading-6 font-[400] p-[10px] uppercase flex items-center justify-center gap-x-5"
+                        scope="col"><span>Check for all</span> <span><div class="form-group mb-0"><input
+                        id="readAll" type="checkbox"><label
+                        class="text-primaryText leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px] font-[400]"
+                        for="readAll"></label>
+                          </div></span>
+                    </th>
+                  </tr>
+                </thead>
 
-          <tbody>
-          <tr class=" border-l border-r border-corporateBorder">
-            <td class="border-r border-[#EDEDED] text-4 text-center leading-6 p-[16px] bg-[#F7F7F7]">18 July 2022</td>
-            <td class="text-4 text-center leading-6 p-[16px] bg-[#F7F7F7]">
-              <div class="form-group mb-0"><input id="read1" type="checkbox" checked><label
-                  class="text-primaryText leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px] font-[400]"
-                  for="read1"></label>
-              </div>
-            </td>
-          </tr>
-          <tr class="border-l border-r border-corporateBorder">
-            <td class="border-r border-[#EDEDED] text-4 text-center leading-6 p-[16px]">18 July 2022</td>
-            <td class="text-4 text-center leading-6 p-[16px]">
-              <div class="form-group mb-0"><input id="read2" type="checkbox" checked><label
-                  class="text-primaryText leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px] font-[400]"
-                  for="read2"></label>
-              </div>
-            </td>
-          </tr>
-          <tr class="bg-corporateBg border-l border-r border-corporateBorder">
-            <td class="border-r border-[#EDEDED] text-4 text-center leading-6 p-[16px] bg-[#F7F7F7]">18 July 2022</td>
-            <td class="text-4 text-center leading-6 p-[16px] bg-[#F7F7F7]">
-              <div class="form-group mb-0"><input id="read3" type="checkbox" checked><label
-                  class="text-primaryText leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px] font-[400]"
-                  for="read3"></label>
-              </div>
-            </td>
-          </tr>
-          <tr class="border-l border-r border-corporateBorder">
-            <td class="border-r border-[#EDEDED] text-4 text-center leading-6 p-[16px]">18 July 2022</td>
-            <td class="text-4 text-center leading-6 p-[16px]">
-              <div class="form-group mb-0"><input id="read4" type="checkbox"><label
-                  class="text-primaryText leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px] font-[400]"
-                  for="read4"></label>
-              </div>
-            </td>
-          </tr>
-          <tr class="bg-corporateBg border-l border-r border-corporateBorder">
-            <td class="border-r border-[#EDEDED] text-4 text-center leading-6 p-[16px] bg-[#F7F7F7]">18 July 2022</td>
-            <td class="text-4 text-center leading-6 p-[16px] bg-[#F7F7F7]">
-              <div class="form-group mb-0"><input id="read5" type="checkbox"><label
-                  class="text-primaryText leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px] font-[400]"
-                  for="read5"></label>
-              </div>
-            </td>
-          </tr>
-          <tr class="border-l border-r border-corporateBorder">
-            <td class="border-r border-[#EDEDED] text-4 text-center leading-6 p-[16px]">18 July 2022</td>
-            <td class="text-4 text-center leading-6 p-[16px]">
-              <div class="form-group mb-0"><input id="read6" type="checkbox"><label
-                  class="text-primaryText leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px] font-[400]"
-                  for="read6"></label>
-              </div>
-            </td>
-          </tr>
-          <tr class="bg-corporateBg border-l border-r border-b border-corporateBorder">
-            <td class="border-r border-[#EDEDED] text-4 text-center leading-6 p-[16px] bg-[#F7F7F7]">18 July 2022</td>
-            <td class="text-4 text-center leading-6 p-[16px] bg-[#F7F7F7]">
-              <div class="form-group mb-0"><input id="read6" type="checkbox"><label
-                  class="text-primaryText leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px] font-[400]"
-                  for="read6"></label>
-              </div>
-            </td>
-          </tr>
-          </tbody>
-        </table>
+                <tbody>
+                  <tr>
+                    <td class="border-r border-[#EDEDED] text-4 text-center leading-6 p-[16px] bg-[#F7F7F7]">18 July 2022</td>
+                    <td class="text-4 text-center leading-6 p-[16px] bg-[#F7F7F7]">
+                      <div class="form-group mb-0"><input id="read1" type="checkbox" checked><label
+                          class="text-primaryText leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px] font-[400]"
+                          for="read1"></label>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="border-r border-[#EDEDED] text-4 text-center leading-6 p-[16px]">18 July 2022</td>
+                    <td class="text-4 text-center leading-6 p-[16px]">
+                      <div class="form-group mb-0"><input id="read2" type="checkbox" checked><label
+                          class="text-primaryText leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px] font-[400]"
+                          for="read2"></label>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="border-r border-[#EDEDED] text-4 text-center leading-6 p-[16px] bg-[#F7F7F7]">18 July 2022</td>
+                    <td class="text-4 text-center leading-6 p-[16px] bg-[#F7F7F7]">
+                      <div class="form-group mb-0"><input id="read3" type="checkbox" checked><label
+                          class="text-primaryText leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px] font-[400]"
+                          for="read3"></label>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="border-r border-[#EDEDED] text-4 text-center leading-6 p-[16px]">18 July 2022</td>
+                    <td class="text-4 text-center leading-6 p-[16px]">
+                      <div class="form-group mb-0"><input id="read4" type="checkbox"><label
+                          class="text-primaryText leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px] font-[400]"
+                          for="read4"></label>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="border-r border-[#EDEDED] text-4 text-center leading-6 p-[16px] bg-[#F7F7F7]">18 July 2022</td>
+                    <td class="text-4 text-center leading-6 p-[16px] bg-[#F7F7F7]">
+                      <div class="form-group mb-0"><input id="read5" type="checkbox"><label
+                          class="text-primaryText leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px] font-[400]"
+                          for="read5"></label>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="border-r border-[#EDEDED] text-4 text-center leading-6 p-[16px]">18 July 2022</td>
+                    <td class="text-4 text-center leading-6 p-[16px]">
+                      <div class="form-group mb-0"><input id="read6" type="checkbox"><label
+                          class="text-primaryText leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px] font-[400]"
+                          for="read6"></label>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="border-r border-[#EDEDED] text-4 text-center leading-6 p-[16px] bg-[#F7F7F7]">18 July 2022</td>
+                    <td class="text-4 text-center leading-6 p-[16px] bg-[#F7F7F7]">
+                      <div class="form-group mb-0"><input id="read6" type="checkbox"><label
+                          class="text-primaryText leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px] font-[400]"
+                          for="read6"></label>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
           </div>
-        </div>
+          </div>
+          </div>
 
 
           <div class="flex justify-center items-center gap-x-4 my-5">
