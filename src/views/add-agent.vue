@@ -70,12 +70,12 @@
                 </div>
               </div>
               <div class="px-4 flex justify-start items-center gap-x-[10px] xl:gap-x-[16px] mt-[12px] xl:mt-[16px]">
-                <div class="w-1/4">
+                <div class="w-[24.2%]">
                   <p class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]">
                     NID number</p>
                   <input class="createNormalInput" placeholder="Enter NID number" type="text">
                 </div>
-                <div class="w-1/4">
+                <div class="w-[24.2%]">
                   <p class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]">
                     Address</p>
                   <input class="createNormalInput" placeholder="Enter address" type="text">
@@ -108,41 +108,29 @@
                 </div>
               </div>
               <div class="px-4 flex justify-start items-center gap-x-[10px] xl:gap-x-[16px]">
-                <div class="w-1/4">
+                <div class="w-[24.2%]">
                   <p class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]">
                     Payment type</p>
                   <Dropdown v-model="selectedCity" :opti6ns="cities" class="w-full py-[4px] mt-[10px]" optionLabel="name"
                             placeholder="Select Payment type"/>
                 </div>
-                <div class="w-1/4">
-                  <p class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]">
-                    Commission rate</p>
-                  <div class="py-[2px] border border-[#DBDBDB] mt-[10px] rounded-[4px] leading-[20px]">
-                    <div class="w-full h-[35px] flex justify-between items-center overflow-hidden divide-x">
-                      <input
-                          class="p-4 text-[#676769] leading-[20px] text-[14px] font-[400] w-2/5 placeholder:text-primaryText focus:outline-none"
-                          placeholder="30">
-                      <div class="p-2 w-3/5 ">
-                        <div class="flex justify-between xl:gap-x-2 items-center bg-[#F7F7F7] xl:px-2">
-                          <select aria-label="Default select example"
-                                  class="form-selectpy-1 text-base bg-[#F7F7F7] rounded focus:outline-none xl:w-full">
-                            <option class="leading-[16px] xl:leading-[20px] text-[10px] xl:text-[14px] font-[500]"
-                                    selected>
-                              Percentage %
-                            </option>
-                            <option value="1">One</option>
-                            <option value="2">Two</option>
-                            <option value="3">Three</option>
-                          </select>
-                          <img alt="" class="w-[12px] h-5" src="../assets/svg/down_arrow.svg">
-                        </div>
+                <div class="w-[24.2%]">
+                <p class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]"> Commission rate</p>
+                <div class="py-[2px] border border-[#DBDBDB] mt-[10px] rounded-[4px] leading-[20px]">
+                  <div class="w-full h-[35px] flex justify-between items-center overflow-hidden divide-x">
+                    <input class="px-2 py-4 text-[#676769] leading-[20px] text-[14px] font-[400] w-2/5 placeholder:text-primaryText focus:outline-none" placeholder="Days">
+                    <div class="p-2 w-3/5">
+                      <div class="flex justify-between xl:gap-x-2 items-center bg-[#F7F7F7] xl:px-2">
+                        <select class="py-1 text-base bg-[#F7F7F7] rounded focus:outline-none xl:w-full leading-[16px] xl:leading-[20px] text-[10px] xl:text-[14px] font-[500]">
+                          <option selected=""> Percentage % </option><option value="1">One</option><option value="2">Two</option>
+                          <option value="3">Three</option>
+                        </select>
+                        <img alt="" class="w-[10px] xl:w-[12px] h-5" src="/src/assets/svg/down_arrow.svg">
                       </div>
-  
                     </div>
                   </div>
-  
-  
                 </div>
+              </div>
               </div>
             </div>
             <div class="m-4">

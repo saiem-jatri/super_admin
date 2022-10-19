@@ -16,15 +16,16 @@
           </div>
         </div>
         <!-- top nav bar end -->
+        
         <!-- body start-->
         <div class="px-[30px] py-[24px]">
-  <!--        card-->
+        <!--card-->
           <div class="bg-white rounded">
               <div class="p-4 flex justify-between items-center">
                 <div class="flex justify-start items-center gap-x-4 w-full">
                   <div class="w-1/4 xl:w-1/5">
                     <p class="text-primaryText leading-[20px] text-[14px] xl:leading-[24px] xl:text-[16px] font-[600]">Bus operator</p>
-                    <Dropdown class="w-full py-1 mt-[10px] placeholder:text-primaryText placeholder:leading-[16px] placeholder:text-[12px] xl:placeholder:leading-[20px] xl:placeholder:text-[14px]" v-model="selectedCity" :options="cities" optionLabel="name" placeholder="Dash Travels" />
+                    <Dropdown class="w-full py-1 mt-[10px] placeholder:text-primaryText placeholder:leading-[16px] placeholder:text-[12px] xl:placeholder:leading-[20px] xl:placeholder:text-[14px]" v-model="selectedCity" :options="cities" optionLabel="name" placeholder="Select bus operator" />
                   </div>
                   <div class="w-1/4 xl:w-1/5">
                     <div class="flex justify-between items-center w-full">
