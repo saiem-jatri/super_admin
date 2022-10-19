@@ -45,7 +45,21 @@
                     v-model="selectedCity"
                     :options="cities"
                     class="w-full py-[4px] mt-[10px] placeholder:text-primaryText placeholder:leading-[16px] placeholder:text-[12px] xl:placeholder:leading-[20px] xl:placeholder:text-[14px]"
-                    optionLabel="name" placeholder="Desh Traveles"/>
+                    optionLabel="name" placeholder="Select bus travels"/>
+              </div>
+              <div class="w-1/4">
+                <p class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]">From</p>
+                <div class="w-full h-[40px] border border-[#DBDBDB] flex justify-between items-center mt-[10px] leading-[20px] rounded-[4px] px-2 overflow-hidden">
+                  <input class="outline-none placeholder:text-[#4D4D4F] placeholder:text-[14px] placeholder:leading-[20px]" placeholder="Select date" type="text">
+                  <img alt="" class="h-5 w-5" src="/src/assets/svg/count2.svg">
+                </div>
+              </div>
+              <div class="w-1/4">
+                <p class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]">To</p>
+                <div class="w-full h-[40px] border border-[#DBDBDB] flex justify-between items-center mt-[10px] leading-[20px] rounded-[4px] px-2 overflow-hidden">
+                  <input class="outline-none placeholder:text-[#4D4D4F] placeholder:text-[14px] placeholder:leading-[20px]" placeholder="Select date" type="text">
+                  <img alt="" class="h-5 w-5" src="/src/assets/svg/count2.svg">
+                </div>
               </div>
               <div class="w-1/4">
                 <p class="text-primaryText leading-[20px] text-[14px] xl:leading-[24px] xl:text-[16px] font-[600]">
@@ -56,29 +70,10 @@
                     class="w-full py-[4px] mt-[10px] placeholder:text-primaryText placeholder:leading-[16px] placeholder:text-[12px] xl:placeholder:leading-[20px] xl:placeholder:text-[14px]"
                     optionLabel="name" placeholder="Select counter type"/>
               </div>
-
-              <div class="w-1/4">
-                <p class="text-primaryText leading-[20px] text-[14px] xl:leading-[24px] xl:text-[16px] font-[600]">
-                  Counter</p>
-                <Dropdown
-                    v-model="selectedCity"
-                    :options="cities"
-                    class="w-full py-[4px] mt-[10px] placeholder:text-primaryText placeholder:leading-[16px] placeholder:text-[12px] xl:placeholder:leading-[20px] xl:placeholder:text-[14px]"
-                    optionLabel="name" placeholder="Select counter"/>
-              </div>
-              <div class="w-1/4">
-                <p class="text-primaryText leading-[20px] text-[14px] xl:leading-[24px] xl:text-[16px] font-[600]">
-                  Stoppage</p>
-                <Dropdown
-                    v-model="selectedCity"
-                    :options="cities"
-                    class="w-full py-[4px] mt-[10px] placeholder:text-primaryText placeholder:leading-[16px] placeholder:text-[12px] xl:placeholder:leading-[20px] xl:placeholder:text-[14px]"
-                    optionLabel="name" placeholder="Select stoppage"/>
-              </div>
             </div>
 
           </div>
-          <div class="px-4 pb-4 flex justify-between items-center">
+          <div class="px-4 pb-4 flex justify-between items-end">
             <div class="w-1/4">
               <p class="text-primaryText leading-[20px] text-[14px] xl:leading-[24px] xl:text-[16px] font-[600]">
                 Commission type</p>
@@ -86,7 +81,7 @@
                   v-model="selectedCity"
                   :options="cities"
                   class="w-full py-[4px] mt-[10px] placeholder:text-primaryText placeholder:leading-[16px] placeholder:text-[12px] xl:placeholder:leading-[20px] xl:placeholder:text-[14px]"
-                  optionLabel="name" placeholder="Fixed"/>
+                  optionLabel="name" placeholder="Select commission type"/>
             </div>
             <div class="mt-5">
               <button
@@ -109,6 +104,7 @@
               </span>Export
           </button>
         </div>
+
         <div class="bg-white rounded-[8px] mt-4">
           <!-- table start -->
           <table class="min-w-full">

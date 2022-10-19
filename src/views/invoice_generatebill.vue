@@ -4,13 +4,13 @@
         <div class="flex justify-between items-center">
           <div class="pl-6 flex flex-col gap-y-[4px]">
             <p class="lg:leading-[16px] xl:leading-[28px] lg:text-[14px] xl:text-[20px] font-[600] text-primaryText">
-              Preodic Due Bill</p>
+              Generate Bill</p>
             <div class="flex justify-center items-center gap-x-[6px] mr-4">
               <p class="text-secondaryText leading-[12px] text-[8px] xl:leading-[16px] xl:text-[12px] font-[400]">
                 Invoice</p>
               <img alt="" class="w-1 h-2" src="../assets/svg/bgBack.svg">
               <p class="text-secondaryText leading-[12px] text-[8px] xl:leading-[16px] xl:text-[12px] font-[400]">
-                Preodic due bill</p>
+                Generate bill</p>
             </div>
           </div>
           <div
@@ -31,9 +31,10 @@
         </div>
       </div>
       <!-- top nav bar end -->
+
       <!-- body start-->
       <div class="px-[30px] py-[24px]">
-        <!--        card-->
+        <!--card-->
         <div class="bg-white rounded-[10px]">
           <div class="p-4 flex justify-between items-center">
             <div class="flex justify-start items-center gap-x-4 w-full">
@@ -44,7 +45,7 @@
                     v-model="selectedCity"
                     :options="cities"
                     class="w-full py-[4px] mt-[10px] placeholder:text-primaryText placeholder:leading-[16px] placeholder:text-[12px] xl:placeholder:leading-[20px] xl:placeholder:text-[14px]"
-                    optionLabel="name" placeholder="Desh Traveles"/>
+                    optionLabel="name" placeholder="Select bus operator"/>
               </div>
               <div class="w-1/4">
                 <p class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]">
@@ -52,8 +53,8 @@
                 <div
                     class="w-full h-[40px] border border-[#DBDBDB] flex justify-between items-center mt-[10px] leading-[20px] rounded-[4px] px-[20px] xl:px-[8px] overflow-hidden">
                   <input
-                      class="outline-none pl-2 placeholder:text-[#4D4D4F] placeholder:text-[14px] placeholder:leading-[20px]"
-                      placeholder="19 July 2022"
+                      class="outline-none placeholder:text-[#4D4D4F] placeholder:text-[14px] placeholder:leading-[20px]"
+                      placeholder="Select date"
                       type="text">
                   <img alt="" class="h-5 w-5" src="../assets/svg/count2.svg">
                 </div>
@@ -64,8 +65,8 @@
                 <div
                     class="w-full h-[40px] border border-[#DBDBDB] flex justify-between items-center mt-[10px] leading-[20px] rounded-[4px] px-[20px] xl:px-[8px] overflow-hidden">
                   <input
-                      class="outline-none pl-2 placeholder:text-[#4D4D4F] placeholder:text-[14px] placeholder:leading-[20px]"
-                      placeholder="29 July 2022"
+                      class="outline-none placeholder:text-[#4D4D4F] placeholder:text-[14px] placeholder:leading-[20px]"
+                      placeholder="Select date"
                       type="text">
                   <img alt="" class="h-5 w-5" src="../assets/svg/count2.svg">
                 </div>
@@ -77,15 +78,15 @@
                     v-model="selectedCity"
                     :options="cities"
                     class="w-full py-[4px] mt-[10px] placeholder:text-primaryText placeholder:leading-[16px] placeholder:text-[12px] xl:placeholder:leading-[20px] xl:placeholder:text-[14px]"
-                    optionLabel="name" placeholder="Own counter"/>
+                    optionLabel="name" placeholder="Select counter type"/>
               </div>
             </div>
 
           </div>
 
-          <div class="flex justify-center pb-4">
+          <div class="flex justify-center mt-1 pb-5">
             <button
-                class="mt-5 flex gap-x-[9px] justify-center items-center bg-corporate text-white leading-[14px] xl:leading-[16px] text-[11px] xl:text-[12px] font-[500] py-3 pl-[17px] pr-[24px] rounded-full"><span>
+                class="flex gap-x-[9px] justify-center items-center bg-corporate text-white leading-[14px] xl:leading-[16px] text-[11px] xl:text-[12px] font-[500] py-3 pl-[17px] pr-[24px] rounded-full"><span>
                 <img alt="" class="w-[13px] xl:h-[13px]" src="../assets/svg/white_search.svg">
               </span>Search
             </button>

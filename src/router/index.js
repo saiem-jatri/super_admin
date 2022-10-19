@@ -105,7 +105,8 @@ import ChallanReport from '@/views/challan-report.vue'
 import TripWiseExpenseReport from '@/views/trip-wise-expense-report.vue'
 import Invoice from '@/views/invoice.vue'
 import InvoiceCurrentbill from '@/views/invoice_currentbill.vue'
-import InvoiceGeneratebill from '@/views/invoice_generatebill.vue'
+import InvoiceGeneratebill from '@/views/invoice_generatebill.vue'  
+import BillAdjustment from '@/views/bill-adjustment.vue'
 import Offer from '@/views/offer.vue'
 import OfferAdd from '@/views/offer_addNew.vue'
 import OfferAddFilled from '@/views/offer_addNew_filled.vue'
@@ -686,6 +687,11 @@ const router = createRouter({
             path: '/invoiceGeneratebill',
             name: 'InvoiceGeneratebill',
             component: InvoiceGeneratebill,
+        },
+        {
+            path: '/billAdjustment',
+            name: 'BillAdjustment',
+            component: BillAdjustment,
         },
         //offer and promotion started
         {
