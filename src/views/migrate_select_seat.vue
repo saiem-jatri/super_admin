@@ -3,14 +3,7 @@
       <div class="bg-white h-[72px] sticky top-0 border-b border-[#DBDBDB] z-10">
         <div class="flex justify-between items-center">
           <div class="pl-8 flex flex-col gap-y-2">
-            <p class="text-[#151414] leading-[28px] text-[20px] font-[600]">User</p>
-            <div class="flex justify-center items-center gap-x-[6px]">
-              <p class="text-secondaryText leading-[12px] text-[8px] xl:leading-[16px] xl:text-[12px] font-[400]">
-                User</p>
-              <img alt="" class="w-1 h-2" src="../assets/svg/bgBack.svg">
-              <p class="text-secondaryText leading-[12px] text-[8px] xl:leading-[16px] xl:text-[12px] font-[400]">Jatri
-                Admin</p>
-            </div>
+            <p class="text-[#151414] leading-[28px] text-[20px] font-[600]">Migrate Trips</p>
           </div>
           <div
               class="w-[230px] xl:w-[270px] h-[40px] border border-[#DBDBDB] flex justify-center items-center leading-[20px] rounded-[4px] pl-14 xl:pl-[9px] overflow-hidden">
@@ -33,7 +26,7 @@
       <!-- body start-->
       <div class="px-[30px] py-[24px]">
         <!--        card-->
-        <div class="mt-[16px] bg-white pb-4">
+        <div class="bg-white pb-4 rounded-[10px]">
           <div class="flex justify-between items-center divide-x border-b">
             <div class="p-4 w-1/2">
               <p class="leading-[20px] xl:leading-[24px] text-[14px] xl:text-[16px] font-[600] text-corporateSecondaryBlue">
@@ -48,7 +41,7 @@
                       v-model="selectedCity"
                       :options="cities"
                       class="w-full py-[4px] mt-[10px] placeholder:text-primaryText placeholder:leading-[16px] placeholder:text-[12px] xl:placeholder:leading-[20px] xl:placeholder:text-[14px]"
-                      optionLabel="name" placeholder="Desh Traveles"/>
+                      optionLabel="name" placeholder="Select bus operator"/>
                 </div>
                 <div class="w-1/2">
                   <p class="text-primaryText leading-[20px] text-[14px] xl:leading-[24px] xl:text-[16px] font-[600]">
@@ -57,7 +50,7 @@
                       v-model="selectedCity"
                       :options="cities"
                       class="w-full py-[4px] mt-[10px] placeholder:text-primaryText placeholder:leading-[16px] placeholder:text-[12px] xl:placeholder:leading-[20px] xl:placeholder:text-[14px]"
-                      optionLabel="name" placeholder="Route"/>
+                      optionLabel="name" placeholder="Select route"/>
                 </div>
               </div>
               <div class="flex justify-start items-center gap-x-4 w-full mt-3 xl:mt-4">
@@ -68,7 +61,7 @@
                       v-model="selectedCity"
                       :options="cities"
                       class="w-full py-[4px] mt-[10px] placeholder:text-primaryText placeholder:leading-[16px] placeholder:text-[12px] xl:placeholder:leading-[20px] xl:placeholder:text-[14px]"
-                      optionLabel="name" placeholder="Trip name"/>
+                      optionLabel="name" placeholder="Select trip"/>
                 </div>
                 <div class="w-1/2">
                   <p class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]">
@@ -76,10 +69,10 @@
                   <div
                       class="w-full h-[40px] border border-[#DBDBDB] flex justify-between items-center mt-[10px] leading-[20px] rounded-[4px] px-[20px] xl:px-[4px] 2xl:px-[8px] overflow-hidden">
                     <input
-                        class="outline-none pl-2 placeholder:text-[#4D4D4F] placeholder:text-[14px] placeholder:leading-[20px]"
+                        class="outline-none placeholder:text-[#4D4D4F] placeholder:text-[14px] placeholder:leading-[20px]"
                         placeholder="Select date"
                         type="text">
-                    <img alt="" class="h-5 w-5" src="../assets/svg/count2.svg">
+                    <img alt="" class="h-5 w-5" src="@/assets/svg/count2.svg">
                   </div>
                 </div>
               </div>
@@ -97,7 +90,7 @@
                       v-model="selectedCity"
                       :options="cities"
                       class="w-full py-[4px] mt-[10px] placeholder:text-primaryText placeholder:leading-[16px] placeholder:text-[12px] xl:placeholder:leading-[20px] xl:placeholder:text-[14px]"
-                      optionLabel="name" placeholder="Desh Traveles"/>
+                      optionLabel="name" placeholder="Select bus operator"/>
                 </div>
                 <div class="w-1/2">
                   <p class="text-primaryText leading-[20px] text-[14px] xl:leading-[24px] xl:text-[16px] font-[600]">
@@ -106,18 +99,18 @@
                       v-model="selectedCity"
                       :options="cities"
                       class="w-full py-[4px] mt-[10px] placeholder:text-primaryText placeholder:leading-[16px] placeholder:text-[12px] xl:placeholder:leading-[20px] xl:placeholder:text-[14px]"
-                      optionLabel="name" placeholder="Route"/>
+                      optionLabel="name" placeholder="Select route"/>
                 </div>
               </div>
               <div class="flex justify-start items-center gap-x-4 w-full mt-3 xl:mt-4">
                 <div class="w-1/2">
                   <p class="text-primaryText leading-[20px] text-[14px] xl:leading-[24px] xl:text-[16px] font-[600]">
-                    Operator</p>
+                    Trip</p>
                   <Dropdown
                       v-model="selectedCity"
                       :options="cities"
                       class="w-full py-[4px] mt-[10px] placeholder:text-primaryText placeholder:leading-[16px] placeholder:text-[12px] xl:placeholder:leading-[20px] xl:placeholder:text-[14px]"
-                      optionLabel="name" placeholder="Desh Traveles"/>
+                      optionLabel="name" placeholder="Select trip"/>
                 </div>
                 <div class="w-1/2">
                   <p class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]">
@@ -125,121 +118,23 @@
                   <div
                       class="w-full h-[40px] border border-[#DBDBDB] flex justify-between items-center mt-[10px] leading-[20px] rounded-[4px] px-[20px] xl:px-[4px] 2xl:px-[8px] overflow-hidden">
                     <input
-                        class="outline-none pl-2 placeholder:text-[#4D4D4F] placeholder:text-[14px] placeholder:leading-[20px]"
+                        class="outline-none placeholder:text-[#4D4D4F] placeholder:text-[14px] placeholder:leading-[20px]"
                         placeholder="Select date"
                         type="text">
-                    <img alt="" class="h-5 w-5" src="../assets/svg/count2.svg">
+                    <img alt="" class="h-5 w-5" src="@/assets/svg/count2.svg">
                   </div>
                 </div>
               </div>
             </div>
           </div>
 
-          <div class="p-2">
+          <div class="px-4 pt-4 pb-1">
             <div class="flex justify-between items-center border-b pb-4">
               <div class="w-1/2 border-r border-dashed border-corporateBorder">
                 <p class="leading-[20px] xl:leading-[24px] text-[14px] xl:text-[16px] font-[600] text-corporateSecondaryBlue">
                   SEATS</p>
-                <div class="mt-3 xl:mt-4 flex flex-col justify-center items-center">
-                  <div class="flex gap-x-[70px] xl:gap-x-[80px]">
-                    <div class="flex gap-x-[20px] xl:gap-x-[26px]">
-                      <button class="migrateSeat">A1</button>
-                      <button class="migrateSeat">A2</button>
-                    </div>
-                    <div class="flex gap-x-[20px] xl:gap-x-[26px]">
-                      <button class="migrateSeat">A3</button>
-                      <button class="migrateSeat">A4</button>
-                    </div>
-                  </div>
-                  <div class="flex gap-x-[70px] xl:gap-x-[80px] mt-[20px] xl:mt-[24px]">
-                    <div class="flex gap-x-[20px] xl:gap-x-[26px]">
-                      <button class="migrateSeat">A1</button>
-                      <button class="migrateSeat">A2</button>
-                    </div>
-                    <div class="flex gap-x-[20px] xl:gap-x-[26px]">
-                      <button class="migrateSeatAsh">A3</button>
-                      <button class="migrateSeatAsh">A4</button>
-                    </div>
-                  </div>
-                  <div class="flex gap-x-[70px] xl:gap-x-[80px] mt-[20px] xl:mt-[24px]">
-                    <div class="flex gap-x-[20px] xl:gap-x-[26px]">
-                      <button class="migrateSeatAsh">A1</button>
-                      <button class="migrateSeatAsh">A2</button>
-                    </div>
-                    <div class="flex gap-x-[20px] xl:gap-x-[26px]">
-                      <button class="migrateSeatAsh">A3</button>
-                      <button class="migrateSeatAsh">A4</button>
-                    </div>
-                  </div>
-                  <div class="flex gap-x-[70px] xl:gap-x-[80px] mt-[20px] xl:mt-[24px]">
-                    <div class="flex gap-x-[20px] xl:gap-x-[26px]">
-                      <button class="migrateSeatAsh">A1</button>
-                      <button class="migrateSeatAsh">A2</button>
-                    </div>
-                    <div class="flex gap-x-[20px] xl:gap-x-[26px]">
-                      <button class="migrateSeatAsh">A3</button>
-                      <button class="migrateSeatAsh">A4</button>
-                    </div>
-                  </div>
-                  <div class="flex gap-x-[70px] xl:gap-x-[80px] mt-[20px] xl:mt-[24px]">
-                    <div class="flex gap-x-[20px] xl:gap-x-[26px]">
-                      <button class="migrateSeatAsh">A1</button>
-                      <button class="migrateSeatAsh">A2</button>
-                    </div>
-                    <div class="flex gap-x-[20px] xl:gap-x-[26px]">
-                      <button class="migrateSeatAsh">A3</button>
-                      <button class="migrateSeatAsh">A4</button>
-                    </div>
-                  </div>
-                  <div class="flex gap-x-[70px] xl:gap-x-[80px] mt-[20px] xl:mt-[24px]">
-                    <div class="flex gap-x-[20px] xl:gap-x-[26px]">
-                      <button class="migrateSeatAsh">A1</button>
-                      <button class="migrateSeatAsh">A2</button>
-                    </div>
-                    <div class="flex gap-x-[20px] xl:gap-x-[26px]">
-                      <button class="migrateSeatAsh">A3</button>
-                      <button class="migrateSeatAsh">A4</button>
-                    </div>
-                  </div>
-                  <div class="flex gap-x-[70px] xl:gap-x-[80px] mt-[20px] xl:mt-[24px]">
-                    <div class="flex gap-x-[20px] xl:gap-x-[26px]">
-                      <button class="migrateSeatAsh">A1</button>
-                      <button class="migrateSeatAsh">A2</button>
-                    </div>
-                    <div class="flex gap-x-[20px] xl:gap-x-[26px]">
-                      <button class="migrateSeatAsh">A3</button>
-                      <button class="migrateSeatAsh">A4</button>
-                    </div>
-                  </div>
-                  <div class="flex gap-x-[70px] xl:gap-x-[80px] mt-[20px] xl:mt-[24px]">
-                    <div class="flex gap-x-[20px] xl:gap-x-[26px]">
-                      <button class="migrateSeatAsh">A1</button>
-                      <button class="migrateSeatAsh">A2</button>
-                    </div>
-                    <div class="flex gap-x-[20px] xl:gap-x-[26px]">
-                      <button class="migrateSeatAsh">A3</button>
-                      <button class="migrateSeatAsh">A4</button>
-                    </div>
-                  </div>
-                  <div class="flex gap-x-[70px] xl:gap-x-[80px] mt-[20px] xl:mt-[24px]">
-                    <div class="flex gap-x-[20px] xl:gap-x-[26px]">
-                      <button class="migrateSeatAsh">A1</button>
-                      <button class="migrateSeatAsh">A2</button>
-                    </div>
-                    <div class="flex gap-x-[20px] xl:gap-x-[26px] relative">
-                      <button class="migrateSeatAsh">A3</button>
-                      <button class="migrateSeatAsh">A4</button>
-                      <p class="absolute -right-10 top-0 2xl:top-2 leading-[12px] xl:leading-[16px] ">[A3]</p>
-                    </div>
-                  </div>
-
-                </div>
-
-              </div>
-
-              <div class="w-1/2">
-                <div class="mt-9 xl:mt-10 flex flex-col justify-center items-center">
-                  <div class="flex gap-x-[70px] xl:gap-x-[80px]">
+                <div class="mt-2 xl:mt-4 flex flex-col justify-center items-center">
+                  <div class="flex gap-x-[70px] xl:gap-x-[80px] mt-3">
                     <div class="flex gap-x-[20px] xl:gap-x-[26px]">
                       <button class="migrateSeatPrimaryOrange">A1</button>
                       <button class="migrateSeatPrimaryOrange">A2</button>
@@ -249,111 +144,266 @@
                       <button class="migrateSeatPrimaryOrange">A4</button>
                     </div>
                   </div>
-                  <div class="flex gap-x-[70px] xl:gap-x-[80px] mt-[20px] xl:mt-[24px]">
+                  <div class="flex gap-x-[70px] xl:gap-x-[80px] mt-3">
                     <div class="flex gap-x-[20px] xl:gap-x-[26px]">
-                      <button class="migrateSeatAsh tooltip bg-white">
+                      <button class="migrateSeatPrimaryOrange">B1</button>
+                      <button class="migrateSeatPrimaryOrange">B2</button>
+                    </div>
+                    <div class="flex gap-x-[20px] xl:gap-x-[26px]">
+                      <button class="migrateSeatPrimaryOrange">B3</button>
+                      <button class="migrateSeatAsh">B4</button>
+                    </div>
+                  </div>
+                  <div class="flex gap-x-[70px] xl:gap-x-[80px] mt-3">
+                    <div class="flex gap-x-[20px] xl:gap-x-[26px]">
+                      <button class="migrateSeatAsh">C1</button>
+                      <button class="migrateSeatAsh">C2</button>
+                    </div>
+                    <div class="flex gap-x-[20px] xl:gap-x-[26px]">
+                      <button class="migrateSeatPrimaryOrange">C3</button>
+                      <button class="migrateSeatAsh">C4</button>
+                    </div>
+                  </div>
+                  <div class="flex gap-x-[70px] xl:gap-x-[80px] mt-3">
+                    <div class="flex gap-x-[20px] xl:gap-x-[26px]">
+                      <button class="migrateSeatAsh">D1</button>
+                      <button class="migrateSeatAsh">D2</button>
+                    </div>
+                    <div class="flex gap-x-[20px] xl:gap-x-[26px]">
+                      <button class="migrateSeatPrimaryOrange">D3</button>
+                      <button class="migrateSeatAsh">D4</button>
+                    </div>
+                  </div>
+                  <div class="flex gap-x-[70px] xl:gap-x-[80px] mt-3">
+                    <div class="flex gap-x-[20px] xl:gap-x-[26px]">
+                      <button class="migrateSeatAsh">E1</button>
+                      <button class="migrateSeatAsh">E2</button>
+                    </div>
+                    <div class="flex gap-x-[20px] xl:gap-x-[26px]">
+                      <button class="migrateSeatAsh">E3</button>
+                      <button class="migrateSeatAsh">E4</button>
+                    </div>
+                  </div>
+                  <div class="flex gap-x-[70px] xl:gap-x-[80px] mt-3">
+                    <div class="flex gap-x-[20px] xl:gap-x-[26px]">
+                      <button class="migrateSeatAsh">F1</button>
+                      <button class="migrateSeatAsh">F2</button>
+                    </div>
+                    <div class="flex gap-x-[20px] xl:gap-x-[26px]">
+                      <button class="migrateSeatPrimaryOrange">F3</button>
+                      <button class="migrateSeatAsh">F4</button>
+                    </div>
+                  </div>
+                  <div class="flex gap-x-[70px] xl:gap-x-[80px] mt-3">
+                    <div class="flex gap-x-[20px] xl:gap-x-[26px]">
+                      <button class="migrateSeatAsh">G1</button>
+                      <button class="migrateSeatAsh">G2</button>
+                    </div>
+                    <div class="flex gap-x-[20px] xl:gap-x-[26px]">
+                      <button class="migrateSeatAsh">G3</button>
+                      <button class="migrateSeatAsh">G4</button>
+                    </div>
+                  </div>
+                  <div class="flex gap-x-[70px] xl:gap-x-[80px] mt-3">
+                    <div class="flex gap-x-[20px] xl:gap-x-[26px]">
+                      <button class="migrateSeatAsh">H1</button>
+                      <button class="migrateSeatAsh">H2</button>
+                    </div>
+                    <div class="flex gap-x-[20px] xl:gap-x-[26px]">
+                      <button class="migrateSeatAsh">H3</button>
+                      <button class="migrateSeatAsh">H4</button>
+                    </div>
+                  </div>
+                  <div class="flex gap-x-[70px] xl:gap-x-[80px] mt-3">
+                    <div class="flex gap-x-[20px] xl:gap-x-[26px]">
+                      <button class="migrateSeatAsh">I1</button>
+                      <button class="migrateSeatAsh">I2</button>
+                    </div>
+                    <div class="flex gap-x-[20px] xl:gap-x-[26px]">
+                      <button class="migrateSeatAsh">I3</button>
+                      <button class="migrateSeatAsh">I4</button>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="w-1/2">
+                <div class="mt-9 xl:mt-12 flex flex-col justify-center items-center">
+                  <div class="flex gap-x-[70px] xl:gap-x-[80px]">
+                    <div class="flex gap-x-[20px] xl:gap-x-[26px] relative">
+                      <p class="absolute -left-8 top-0 2xl:top-3 font-medium text-[12px] leading-4 hidden">[F3]</p>
+                      <button class="migrateSeat">A1</button>
+                      <button class="migrateSeat">A2</button>
+                      <p class="absolute -right-8 top-0 2xl:top-3 font-medium text-[12px] leading-4 hidden">[D3]</p>
+                    </div>
+                    <div class="flex gap-x-[20px] xl:gap-x-[26px] relative">
+                      <p class="absolute -left-8 top-0 2xl:top-3 font-medium text-[12px] leading-4 hidden">[F3]</p>
+                      <button class="migrateSeat">A3</button>
+                      <button class="migrateSeat">A4</button>
+                      <p class="absolute -right-8 top-0 2xl:top-3 font-medium text-[12px] leading-4 hidden">[D3]</p>
+                    </div>
+                  </div>
+
+                  <div class="flex gap-x-[70px] xl:gap-x-[80px] mt-3">
+                    <div class="flex gap-x-[20px] xl:gap-x-[26px] relative">
+                      <p class="absolute -left-8 top-0 2xl:top-3 font-medium text-[12px] leading-4 hidden">[F3]</p>
+                      <button class="migrateSeatAsh">B1</button>
+                      <button class="migrateSeatAsh">B2</button>
+                      <p class="absolute -right-8 top-0 2xl:top-3 font-medium text-[12px] leading-4 hidden">[D3]</p>
+                    </div>
+                    <div class="flex gap-x-[20px] xl:gap-x-[26px] relative">
+                      <p class="absolute -left-8 top-0 2xl:top-3 font-medium text-[12px] leading-4 hidden">[F3]</p>
+                      <button class="migrateSeat">B3</button>
+                      <button class="migrateSeatAsh">B4</button>
+                      <p class="absolute -right-8 top-0 2xl:top-3 font-medium text-[12px] leading-4 hidden">[D3]</p>
+                    </div>
+                  </div>
+
+                  <div class="flex gap-x-[70px] xl:gap-x-[80px] mt-3">
+                    <div class="flex gap-x-[20px] xl:gap-x-[26px] relative">
+                      <p class="absolute -left-8 top-0 2xl:top-3 font-medium text-[12px] leading-4 hidden">[F3]</p>
+                      <button class="migrateSeatGreen tooltip bg-white">
                         <span class="tooltiptext ">
                           <div class="w-[286px] border border-corporateBorder rounded-[4px] text-primaryText bg-white">
-                            <p class="border-b border-corporateBorder py-[8px]">Selected seat: [B1]</p>
-                            <div class="mt-[10px] flex gap-x-[10px] items-center px-2">
+                            <p class="border-b border-corporateBorder py-[8px]">Selected seat: <span class="font-semibold">[C1]</span></p>
+                            <div class="flex gap-x-[10px] items-center px-2">
                               <label class="w-[30%] bg-white" for="#">Migrate for:</label>
                               <div class="w-[70%]">
                                 <Dropdown v-model="selectedCity"
                                           :options="cities"
-                                          class="w-full py-[4px] mb-2 mt-[10px] placeholder:text-primaryText"
+                                          class="w-full py-[4px] mb-2 mt-[10px] text-left placeholder:text-primaryText"
                                           optionLabel="name"
                                           placeholder="Owner"/>
                              </div>
                             </div>
                           </div>
                         </span>
-                        A4
+                        C1
                       </button>
-                      <button class="migrateSeat">A2</button>
-                    </div>
-                    <div class="flex gap-x-[20px] xl:gap-x-[26px]">
-                      <button class="migrateSeatAsh">A3</button>
-                      <button class="migrateSeatAsh">A4</button>
-                    </div>
-                  </div>
-                  <div class="flex gap-x-[70px] xl:gap-x-[80px] mt-[20px] xl:mt-[24px]">
-                    <div class="flex gap-x-[20px] xl:gap-x-[26px]">
-                      <button class="migrateSeatAsh">A1</button>
-                      <button class="migrateSeatAsh">A2</button>
-                    </div>
-                    <div class="flex gap-x-[20px] xl:gap-x-[26px]">
-                      <button class="migrateSeatAsh">A3</button>
-                      <button class="migrateSeatAsh">A4</button>
-                    </div>
-                  </div>
-                  <div class="flex gap-x-[70px] xl:gap-x-[80px] mt-[20px] xl:mt-[24px]">
-                    <div class="flex gap-x-[20px] xl:gap-x-[26px]">
-                      <button class="migrateSeatPrimaryOrange">A1</button>
-                      <button class="migrateSeatPrimaryOrange">A2</button>
-                    </div>
-                    <div class="flex gap-x-[20px] xl:gap-x-[26px]">
-                      <button class="migrateSeatPrimaryOrange">A3</button>
-                      <button class="migrateSeatPrimaryOrange">A4</button>
-                    </div>
-                  </div>
-                  <div class="flex gap-x-[70px] xl:gap-x-[80px] mt-[20px] xl:mt-[24px]">
-                    <div class="flex gap-x-[20px] xl:gap-x-[26px]">
-                      <button class="migrateSeatPrimaryOrange">A1</button>
-                      <button class="migrateSeatPrimaryOrange">A2</button>
-                    </div>
-                    <div class="flex gap-x-[20px] xl:gap-x-[26px]">
-                      <button class="migrateSeatPrimaryOrange">A3</button>
-                      <button class="migrateSeatPrimaryOrange">A4</button>
-                    </div>
-                  </div>
-                  <div class="flex gap-x-[70px] xl:gap-x-[80px] mt-[20px] xl:mt-[24px]">
-                    <div class="flex gap-x-[20px] xl:gap-x-[26px]">
-                      <button class="migrateSeatAsh">A1</button>
-                      <button class="migrateSeatAsh">A2</button>
-                    </div>
-                    <div class="flex gap-x-[20px] xl:gap-x-[26px]">
-                      <button class="migrateSeatAsh">A3</button>
-                      <button class="migrateSeatAsh">A4</button>
-                    </div>
-                  </div>
-                  <div class="flex gap-x-[70px] xl:gap-x-[80px] mt-[20px] xl:mt-[24px]">
-                    <div class="flex gap-x-[20px] xl:gap-x-[26px]">
-                      <button class="migrateSeatAsh">A1</button>
-                      <button class="migrateSeatAsh">A2</button>
-                    </div>
-                    <div class="flex gap-x-[20px] xl:gap-x-[26px]">
-                      <button class="migrateSeat">A3</button>
-                      <button class="migrateSeatAsh">A4</button>
-                    </div>
-                  </div>
-                  <div class="flex gap-x-[70px] xl:gap-x-[80px] mt-[20px] xl:mt-[24px]">
-                    <div class="flex gap-x-[20px] xl:gap-x-[26px]">
-                      <button class="migrateSeatDarkAsh">A1</button>
-                      <button class="migrateSeatDarkAsh">A2</button>
-                    </div>
-                    <div class="flex gap-x-[20px] xl:gap-x-[26px]">
-                      <button class="migrateSeatDarkAsh">A3</button>
-                      <button class="migrateSeatDarkAsh">A4</button>
-                    </div>
-                  </div>
-                  <div class="flex gap-x-[70px] xl:gap-x-[80px] mt-[20px] xl:mt-[24px]">
-                    <div class="flex gap-x-[20px] xl:gap-x-[26px]">
-                      <button class="migrateSeatAsh">A1</button>
-                      <button class="migrateSeatAsh">A2</button>
-                    </div>
-                    <div class="flex gap-x-[20px] xl:gap-x-[26px]">
-                      <button class="migrateSeatAsh">A3</button>
-                      <button class="migrateSeatAsh">
-                        A4
+                      <button class="migrateSeatGreen tooltip bg-white">
+                        <span class="tooltiptext ">
+                          <div class="w-[286px] border border-corporateBorder rounded-[4px] text-primaryText bg-white">
+                            <p class="border-b border-corporateBorder py-[8px]">Selected seat: <span class="font-semibold">[C2]</span></p>
+                            <div class="flex gap-x-[10px] items-center px-2">
+                              <label class="w-[30%] bg-white" for="#">Migrate for:</label>
+                              <div class="w-[70%]">
+                                <Dropdown v-model="selectedCity"
+                                          :options="cities"
+                                          class="w-full py-[4px] mb-2 mt-[10px] text-left placeholder:text-primaryText"
+                                          optionLabel="name"
+                                          placeholder="Owner"/>
+                             </div>
+                            </div>
+                          </div>
+                        </span>
+                        C2
                       </button>
+                      <p class="absolute -right-8 top-0 2xl:top-3 font-medium text-[12px] leading-4 hidden">[D3]</p>
+                    </div>
+                    <div class="flex gap-x-[20px] xl:gap-x-[26px] relative">
+                      <p class="absolute -left-8 top-0 2xl:top-3 font-medium text-[12px] leading-4 hidden">[F3]</p>
+                      <button class="migrateSeat">C3</button>
+                      <button class="migrateSeatAsh">C4</button>
+                      <p class="absolute -right-8 top-0 2xl:top-3 font-medium text-[12px] leading-4 hidden">[D3]</p>
                     </div>
                   </div>
+
+                  <div class="flex gap-x-[70px] xl:gap-x-[80px] mt-3">
+                    <div class="flex gap-x-[20px] xl:gap-x-[26px] relative">
+                      <p class="absolute -left-8 top-0 2xl:top-3 font-medium text-[12px] leading-4 hidden">[F3]</p>
+                      <button class="migrateSeatAsh">D1</button>
+                      <button class="migrateSeatAsh">D2</button>
+                      <p class="absolute -right-8 top-0 2xl:top-3 font-medium text-[12px] leading-4 hidden">[D3]</p>
+                    </div>
+                    <div class="flex gap-x-[20px] xl:gap-x-[26px] relative">
+                      <p class="absolute -left-8 top-0 2xl:top-3 font-medium text-[12px] leading-4 hidden">[F3]</p>
+                      <button class="migrateSeat">D2</button>
+                      <button class="migrateSeatAsh">D4</button>
+                      <p class="absolute -right-8 top-0 2xl:top-3 font-medium text-[12px] leading-4 hidden">[D3]</p>
+                    </div>
+                  </div>
+
+                  <div class="flex gap-x-[70px] xl:gap-x-[80px] mt-3">
+                    <div class="flex gap-x-[20px] xl:gap-x-[26px] relative">
+                      <p class="absolute -left-8 top-0 2xl:top-3 font-medium text-[12px] leading-4 hidden">[F3]</p>
+                      <button class="migrateSeatAsh">E1</button>
+                      <button class="migrateSeatAsh">E2</button>
+                      <p class="absolute -right-8 top-0 2xl:top-3 font-medium text-[12px] leading-4 hidden">[D3]</p>
+                    </div>
+                    <div class="flex gap-x-[20px] xl:gap-x-[26px] relative">
+                      <p class="absolute -left-8 top-0 2xl:top-3 font-medium text-[12px] leading-4 hidden">[F3]</p>
+                      <button class="migrateSeatAsh">E3</button>
+                      <button class="migrateSeatAsh">E4</button>
+                      <p class="absolute -right-8 top-0 2xl:top-3 font-medium text-[12px] leading-4 hidden">[D3]</p>
+                    </div>
+                  </div>
+
+                  <div class="flex gap-x-[70px] xl:gap-x-[80px] mt-3">
+                    <div class="flex gap-x-[20px] xl:gap-x-[26px] relative">
+                      <p class="absolute -left-8 top-0 2xl:top-3 font-medium text-[12px] leading-4 hidden">[F3]</p>
+                      <button class="migrateSeatAsh">F1</button>
+                      <button class="migrateSeatAsh">F2</button>
+                      <p class="absolute -right-8 top-0 2xl:top-3 font-medium text-[12px] leading-4 hidden">[D3]</p>
+                    </div>
+                    <div class="flex gap-x-[20px] xl:gap-x-[26px] relative">
+                      <p class="absolute -left-8 top-0 2xl:top-3 font-medium text-[12px] leading-4 hidden">[F3]</p>
+                      <button class="migrateSeatAsh">F3</button>
+                      <button class="migrateSeatAsh">F4</button>
+                      <p class="absolute -right-8 top-0 2xl:top-3 font-medium text-[12px] leading-4 hidden">[D3]</p>
+                    </div>
+                  </div>
+
+                  <div class="flex gap-x-[70px] xl:gap-x-[80px] mt-3">
+                    <div class="flex gap-x-[20px] xl:gap-x-[26px] relative">
+                      <p class="absolute -left-8 top-0 2xl:top-3 font-medium text-[12px] leading-4 hidden">[F3]</p>
+                      <button class="migrateSeatDarkAsh">G1</button>
+                      <button class="migrateSeatDarkAsh">G2</button>
+                      <p class="absolute -right-8 top-0 2xl:top-3 font-medium text-[12px] leading-4 hidden">[D3]</p>
+                    </div>
+                    <div class="flex gap-x-[20px] xl:gap-x-[26px] relative">
+                      <p class="absolute -left-8 top-0 2xl:top-3 font-medium text-[12px] leading-4 hidden">[F3]</p>
+                      <button class="migrateSeatDarkAsh">G3</button>
+                      <button class="migrateSeatDarkAsh">G4</button>
+                      <p class="absolute -right-8 top-0 2xl:top-3 font-medium text-[12px] leading-4 hidden">[D3]</p>
+                    </div>
+                  </div>
+
+                  <div class="flex gap-x-[70px] xl:gap-x-[80px] mt-3">
+                    <div class="flex gap-x-[20px] xl:gap-x-[26px] relative">
+                      <p class="absolute -left-8 top-0 2xl:top-3 font-medium text-[12px] leading-4 hidden">[F3]</p>
+                      <button class="migrateSeatAsh">H1</button>
+                      <button class="migrateSeatAsh">H2</button>
+                      <p class="absolute -right-8 top-0 2xl:top-3 font-medium text-[12px] leading-4 hidden">[D3]</p>
+                    </div>
+                    <div class="flex gap-x-[20px] xl:gap-x-[26px] relative">
+                      <p class="absolute -left-8 top-0 2xl:top-3 font-medium text-[12px] leading-4 hidden">[F3]</p>
+                      <button class="migrateSeatAsh">H3</button>
+                      <button class="migrateSeatAsh">H4</button>
+                      <p class="absolute -right-8 top-0 2xl:top-3 font-medium text-[12px] leading-4 hidden">[D3]</p>
+                    </div>
+                  </div>
+
+                  <div class="flex gap-x-[70px] xl:gap-x-[80px] mt-3">
+                    <div class="flex gap-x-[20px] xl:gap-x-[26px] relative">
+                      <p class="absolute -left-8 top-0 2xl:top-3 font-medium text-[12px] leading-4 hidden">[F3]</p>
+                      <button class="migrateSeatAsh">I1</button>
+                      <button class="migrateSeatAsh">I2</button>
+                      <p class="absolute -right-8 top-0 2xl:top-3 font-medium text-[12px] leading-4 hidden">[D3]</p>
+                    </div>
+                    <div class="flex gap-x-[20px] xl:gap-x-[26px] relative">
+                      <p class="absolute -left-8 top-0 2xl:top-3 font-medium text-[12px] leading-4 hidden">[F3]</p>
+                      <button class="migrateSeatAsh">I3</button>
+                      <button class="migrateSeatAsh">I4</button>
+                      <p class="absolute -right-8 top-0 2xl:top-3 font-medium text-[12px] leading-4 hidden">[D3]</p>
+                    </div>
+                  </div>
+
 
                 </div>
-
               </div>
             </div>
-            <!--                modal-->
+            <!--modal-->
             <div class="flex items-center justify-center">
               <button class="createBtn mt-5" @click="toggleModal()">Confirm migration</button>
             </div>

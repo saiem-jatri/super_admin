@@ -144,7 +144,6 @@ body {
 .seatButton {
     @apply w-[25px] xl:w-[30px] h-[20px] xl:h-[24px] text-center text-white bg-corporate rounded-sm leading-[16px] xl:leading-[20px] text-[12px] xl:text-[14px]
 }
-
 .whiteSeatButton {
     @apply w-[40px] xl:w-[45px] h-[25px] xl:h-[30px] text-center text-corporate bg-white rounded-sm leading-[16px] xl:leading-[20px] text-[12px] xl:text-[14px]
 }
@@ -169,12 +168,16 @@ body {
     @apply w-[40px] xl:w-[50px] h-[26px] xl:h-[36px] text-center text-primaryText bg-corporateBg rounded-[2px] leading-[16px] xl:leading-[20px] text-[12px] xl:text-[14px]
 }
 
+.migrateSeatGreen {
+    @apply w-[40px] xl:w-[50px] h-[26px] xl:h-[36px] text-center text-white bg-[#48A43F] rounded-[2px] leading-[16px] xl:leading-[20px] text-[12px] xl:text-[14px]
+}
+
 .migrateSeatDarkAsh {
     @apply w-[40px] xl:w-[50px] h-[26px] xl:h-[36px] text-center text-primaryText bg-corporateBorder rounded-[2px] leading-[16px] xl:leading-[20px] text-[12px] xl:text-[14px]
 }
 
 .migrateSeatPrimaryOrange {
-    @apply w-[40px] xl:w-[50px] h-[26px] xl:h-[36px] text-center text-primaryText bg-[#FEF2F0] rounded-[2px] leading-[16px] xl:leading-[20px] text-[12px] xl:text-[14px]
+    @apply w-[40px] xl:w-[50px] h-[26px] xl:h-[36px] text-center text-[#F04935] bg-[#FEF2F0] rounded-[2px] leading-[16px] xl:leading-[20px] text-[12px] xl:text-[14px]
 }
 
 .placeholderDesign {
@@ -247,4 +250,8 @@ body {
 
 .orangeStatusButton {
     @apply bg-[#FBE0E3] text-primaryText text-[11px] leading-4 font-[600] px-2 py-1 rounded
+}
+
+.blankSeat {
+    @apply border-none bg-transparent cursor-default
 }
