@@ -59,14 +59,14 @@
                   <div class="w-1/4">
                     <p class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]">From date</p>
                     <div class="w-full h-[40px] border border-[#DBDBDB] flex justify-between items-center mt-[10px] leading-[20px] rounded-[4px] px-[20px] xl:px-[4px] 2xl:px-[8px] overflow-hidden">
-                        <input class="outline-none pl-2 placeholder:text-[#4D4D4F] placeholder:text-[14px] placeholder:leading-[20px]" placeholder="Select date" type="text">
+                        <input class="outline-none placeholder:text-[#4D4D4F] placeholder:text-[14px] placeholder:leading-[20px]" placeholder="Select date" type="text">
                         <img alt="" class="h-5 w-5" src="../assets/svg/count2.svg">
                     </div>
                  </div>
                  <div class="w-1/4">
                     <p class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]">To date</p>
                     <div class="w-full h-[40px] border border-[#DBDBDB] flex justify-between items-center mt-[10px] leading-[20px] rounded-[4px] px-[20px] xl:px-[4px] 2xl:px-[8px] overflow-hidden">
-                        <input class="outline-none pl-2 placeholder:text-[#4D4D4F] placeholder:text-[14px] placeholder:leading-[20px]" placeholder="Select date" type="text">
+                        <input class="outline-none placeholder:text-[#4D4D4F] placeholder:text-[14px] placeholder:leading-[20px]" placeholder="Select date" type="text">
                         <img alt="" class="h-5 w-5" src="../assets/svg/count2.svg">
                     </div>
                  </div>
@@ -145,13 +145,13 @@
                         Journey date
                     </th>
                     <th class="companyTableHead" scope="col">
-                        passenger name & MOBILE
+                        passenger name & <br>MOBILE
                     </th>
                     <th class="companyTableHead" scope="col">
                         Seat number
                     </th>
                     <th class="companyTableHead" scope="col">
-                        cancel TICEKT AMOUNT
+                        cancel TICEKT <br>AMOUNT
                     </th>
                     <th class="companyTableHead" scope="col">
                         TICKET STATUS
@@ -175,7 +175,48 @@
                     <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
                         Counter name
                     </td>
-                    <td class="grid place-content-center leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
+                    <td class="webkit-text-center text-primaryText border-r border-[#DBDBDB] text-center leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] py-3">
+                        <button class="tableDetailsGreyButton">
+                            <span class="underline">8WXOX3MVGF8UT</span><span><img src="/src/assets/svg/btn-arrow-right.svg" alt=""></span>
+                        </button>
+                    </td>
+                    <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
+                        <div>19 July 2022 </div> <div>09:45 AM</div>
+                    </td>
+                    <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
+                        <div>19 July 2022 </div> <div>09:45 AM</div>
+                    </td>
+                    <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
+                        <div>Fahim Ahmed </div> <div>+8801708630439</div>
+                    </td>
+                    <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
+                        <div>A1, A2, A3, A4</div> <div>B5, B6, B7, B8, B9 </div>
+                    </td>
+                    <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
+                        8291 TK
+                    </td>
+                    <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3 px-[10px]">
+                        <div class="violetStatusButton">Reserved Canceled</div>
+                    </td>
+                    <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
+                       <div>Alamin 01708630439</div> <div>(Counter name)</div>
+                    </td>
+                    <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
+                        <div>19 July 2022 </div> <div>09:45 AM</div>
+                    </td>
+                    </tr>
+
+                    <tr class="border-b border-[#EDEDED]">
+                    <td class="text-primaryText border-r border-[#DBDBDB] text-center leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] py-3">
+                        Desh Travels
+                    </td>
+                    <td class="text-primaryText border-r border-[#DBDBDB] text-center leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] py-3">
+                        lI6dFWyA
+                    </td>
+                    <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
+                        Counter name
+                    </td>
+                    <td class="webkit-text-center text-primaryText border-r border-[#DBDBDB] text-center leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] py-3">
                         <button class="tableDetailsGreyButton">
                             <span class="underline">8WXOX3MVGF8UT</span><span><img src="/src/assets/svg/btn-arrow-right.svg" alt=""></span>
                         </button>
@@ -216,48 +257,7 @@
                     <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
                         Counter name
                     </td>
-                    <td class="grid place-content-center leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
-                        <button class="tableDetailsGreyButton">
-                            <span class="underline">8WXOX3MVGF8UT</span><span><img src="/src/assets/svg/btn-arrow-right.svg" alt=""></span>
-                        </button>
-                    </td>
-                    <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
-                        <div>19 July 2022 </div> <div>09:45 AM</div>
-                    </td>
-                    <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
-                        <div>19 July 2022 </div> <div>09:45 AM</div>
-                    </td>
-                    <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
-                        <div>Fahim Ahmed </div> <div>+8801708630439</div>
-                    </td>
-                    <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
-                        <div>A1, A2, A3, A4</div> <div>B5, B6, B7, B8, B9 </div>
-                    </td>
-                    <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
-                        8291 TK
-                    </td>
-                    <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3 px-[10px]">
-                        <div class="violetStatusButton">Paid Canceled</div>
-                    </td>
-                    <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
-                       <div>Alamin 01708630439</div> <div>(Counter name)</div>
-                    </td>
-                    <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
-                        <div>19 July 2022 </div> <div>09:45 AM</div>
-                    </td>
-                    </tr>
-
-                    <tr class="border-b border-[#EDEDED]">
-                    <td class="text-primaryText border-r border-[#DBDBDB] text-center leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] py-3">
-                        Desh Travels
-                    </td>
-                    <td class="text-primaryText border-r border-[#DBDBDB] text-center leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] py-3">
-                        lI6dFWyA
-                    </td>
-                    <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
-                        Counter name
-                    </td>
-                    <td class="grid place-content-center leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
+                    <td class="webkit-text-center text-primaryText border-r border-[#DBDBDB] text-center leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] py-3">
                         <button class="tableDetailsGreyButton">
                             <span class="underline">8WXOX3MVGF8UT</span><span><img src="/src/assets/svg/btn-arrow-right.svg" alt=""></span>
                         </button>
@@ -298,7 +298,7 @@
                     <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
                         Counter name
                     </td>
-                    <td class="grid place-content-center leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
+                    <td class="webkit-text-center text-primaryText border-r border-[#DBDBDB] text-center leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] py-3">
                         <button class="tableDetailsGreyButton">
                             <span class="underline">8WXOX3MVGF8UT</span><span><img src="/src/assets/svg/btn-arrow-right.svg" alt=""></span>
                         </button>
@@ -339,7 +339,7 @@
                     <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
                         Counter name
                     </td>
-                    <td class="grid place-content-center leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
+                    <td class="webkit-text-center text-primaryText border-r border-[#DBDBDB] text-center leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] py-3">
                         <button class="tableDetailsGreyButton">
                             <span class="underline">8WXOX3MVGF8UT</span><span><img src="/src/assets/svg/btn-arrow-right.svg" alt=""></span>
                         </button>
@@ -380,7 +380,7 @@
                     <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
                         Counter name
                     </td>
-                    <td class="grid place-content-center leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
+                    <td class="webkit-text-center text-primaryText border-r border-[#DBDBDB] text-center leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] py-3">
                         <button class="tableDetailsGreyButton">
                             <span class="underline">8WXOX3MVGF8UT</span><span><img src="/src/assets/svg/btn-arrow-right.svg" alt=""></span>
                         </button>
@@ -417,13 +417,14 @@
             <div class="flex items-center gap-x-[128px] mt-[30px]">
                 <p class="text-[#4D4D4F] text-[12px] xl:text-sm leading-4 xl:leading-5">Showing result 1 to 50 of 500 (10 Pages)</p>
                 <div class="flex items-center gap-x-6">
-                    <button type="button"><img src="../assets/svg/pagination-back.svg" alt=""></button>
+                    <button type="button" class="paginationNextButton"><img class="transform rotate-180" src="../assets/svg/pagination-next.svg" alt=""></button>
                     <button type="button" class="activePaginationButton">01</button>
                     <button type="button" class="paginationButton">02</button>
                     <button type="button" class="paginationButton">03</button>
                     <div type="button" class="paginationButton">...</div>
                     <button type="button" class="paginationButton">10</button>
                     <button type="button" class="paginationNextButton">Next <img src="../assets/svg/pagination-next.svg" alt=""></button>
+                    <button type="button"><img class="transform rotate-180" src="../assets/svg/pagination-back.svg" alt=""></button>
                 </div>
             </div>
           </div>

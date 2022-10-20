@@ -93,7 +93,7 @@
                 </thead>
                 <tbody>
                 <tr class="border-b border-[#EDEDED]">
-                  <td class="grid place-content-center leading-[20px] text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
+                  <td class="webkit-text-center text-primaryText border-r border-[#DBDBDB] text-center leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] py-3">
                     <button class="tableDetailsGreyButton">
                       <span class="underline">8WXOX3MVGF8UT</span> 
                       <span><img src="../assets/svg/btn-arrow-right.svg" alt=""></span>
@@ -129,7 +129,7 @@
                 </tr>
 
                 <tr class="border-b border-[#EDEDED]">
-                  <td class="grid place-content-center leading-[20px] text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
+                  <td class="webkit-text-center text-primaryText border-r border-[#DBDBDB] text-center leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] py-3">
                     <button class="tableDetailsGreyButton">
                       <span class="underline">8WXOX3MVGF8UT</span> 
                       <span><img src="../assets/svg/btn-arrow-right.svg" alt=""></span>
@@ -165,7 +165,7 @@
                 </tr>
 
                 <tr class="border-b border-[#EDEDED]">
-                  <td class="grid place-content-center leading-[20px] text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
+                  <td class="webkit-text-center text-primaryText border-r border-[#DBDBDB] text-center leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] py-3">
                     <button class="tableDetailsGreyButton">
                       <span class="underline">8WXOX3MVGF8UT</span> 
                       <span><img src="../assets/svg/btn-arrow-right.svg" alt=""></span>
@@ -201,7 +201,7 @@
                 </tr>
 
                 <tr class="border-b border-[#EDEDED]">
-                  <td class="grid place-content-center leading-[20px] text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
+                  <td class="webkit-text-center text-primaryText border-r border-[#DBDBDB] text-center leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] py-3">
                     <button class="tableDetailsGreyButton">
                       <span class="underline">8WXOX3MVGF8UT</span> 
                       <span><img src="../assets/svg/btn-arrow-right.svg" alt=""></span>
@@ -237,7 +237,7 @@
                 </tr>
 
                 <tr class="border-b border-[#EDEDED]">
-                  <td class="grid place-content-center leading-[20px] text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
+                  <td class="webkit-text-center text-primaryText border-r border-[#DBDBDB] text-center leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] py-3">
                     <button class="tableDetailsGreyButton">
                       <span class="underline">8WXOX3MVGF8UT</span> 
                       <span><img src="../assets/svg/btn-arrow-right.svg" alt=""></span>
@@ -273,7 +273,7 @@
                 </tr>
 
                 <tr class="border-b border-[#EDEDED]">
-                  <td class="grid place-content-center leading-[20px] text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
+                  <td class="webkit-text-center text-primaryText border-r border-[#DBDBDB] text-center leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] py-3">
                     <button class="tableDetailsGreyButton">
                       <span class="underline">8WXOX3MVGF8UT</span> 
                       <span><img src="../assets/svg/btn-arrow-right.svg" alt=""></span>
@@ -309,7 +309,7 @@
                 </tr>
 
                 <tr class="border-b border-[#EDEDED]">
-                  <td class="grid place-content-center leading-[20px] text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
+                  <td class="webkit-text-center text-primaryText border-r border-[#DBDBDB] text-center leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] py-3">
                     <button class="tableDetailsGreyButton">
                       <span class="underline">8WXOX3MVGF8UT</span> 
                       <span><img src="../assets/svg/btn-arrow-right.svg" alt=""></span>

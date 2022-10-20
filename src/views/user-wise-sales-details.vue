@@ -63,7 +63,7 @@
                         pnr
                     </th>
                     <th class="companyTableHead" scope="col">
-                        issue date & time
+                        issue date & <br>time
                     </th>
                     <th class="companyTableHead" scope="col">
                         journey date
@@ -74,17 +74,17 @@
                     <th class="companyTableHead" scope="col">
                         route
                     </th>
-                    <th class="companyTableHead" scope="col">
+                    <th class="companyTableHead w-[121px]" scope="col">
                         seats
                     </th>
                     <th class="companyTableHead" scope="col">
                         DISCOUNT
                     </th>
                     <th class="companyTableHead" scope="col">
-                        Jatri COMMISSION
+                        Jatri <br>COMMISSION
                     </th>
                     <th class="companyTableHead" scope="col">
-                        TP COMMISSION
+                        TP <br>COMMISSION
                     </th>
                     <th class="companyTableHead" scope="col">
                         TOTAL AMOUNT
@@ -93,7 +93,7 @@
                 </thead>
                 <tbody>
                 <tr class="border-b border-[#EDEDED]">
-                  <td class="grid place-content-center leading-[20px] text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
+                  <td class="webkit-text-center text-primaryText border-r border-[#DBDBDB] text-center leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] py-3">
                     <button class="tableDetailsGreyButton">
                       <span class="underline">8WXOX3MVGF8UT</span> 
                       <span><img src="../assets/svg/btn-arrow-right.svg" alt=""></span>
@@ -103,7 +103,7 @@
                     <div>19 July 2022 </div> <div>09:45 AM</div>
                   </td>
                   <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
-                    09:45 AM <br>19 July 2022
+                    <div>09:45 AM</div> <div>19 July 2022 </div> 
                   </td>
                   <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
                     lI6dFWyA
@@ -112,7 +112,7 @@
                     Dhaka - Tangail
                   </td>
                   <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
-                    <div>A1, A2, A3, A4,</div> <div>B1, B2, B3, B4</div>
+                    A1, A2, A3, A4, B1, B2, B3, B4
                   </td>
                   <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
                     20 TK
@@ -129,7 +129,7 @@
                 </tr>
 
                 <tr class="border-b border-[#EDEDED]">
-                  <td class="grid place-content-center leading-[20px] text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
+                  <td class="webkit-text-center text-primaryText border-r border-[#DBDBDB] text-center leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] py-3">
                     <button class="tableDetailsGreyButton">
                       <span class="underline">8WXOX3MVGF8UT</span> 
                       <span><img src="../assets/svg/btn-arrow-right.svg" alt=""></span>
@@ -139,7 +139,7 @@
                     <div>19 July 2022 </div> <div>09:45 AM</div>
                   </td>
                   <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
-                    09:45 AM <br>19 July 2022
+                    <div>09:45 AM</div> <div>19 July 2022 </div> 
                   </td>
                   <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
                     lI6dFWyA
@@ -148,7 +148,7 @@
                     Dhaka - Tangail
                   </td>
                   <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
-                    <div>A1, A2, A3, A4,</div> <div>B1, B2, B3, B4</div>
+                    A1, A2, A3, A4, B1, B2, B3, B4
                   </td>
                   <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
                     20 TK
@@ -165,7 +165,7 @@
                 </tr>
 
                 <tr class="border-b border-[#EDEDED]">
-                  <td class="grid place-content-center leading-[20px] text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
+                  <td class="webkit-text-center text-primaryText border-r border-[#DBDBDB] text-center leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] py-3">
                     <button class="tableDetailsGreyButton">
                       <span class="underline">8WXOX3MVGF8UT</span> 
                       <span><img src="../assets/svg/btn-arrow-right.svg" alt=""></span>
@@ -175,7 +175,7 @@
                     <div>19 July 2022 </div> <div>09:45 AM</div>
                   </td>
                   <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
-                    09:45 AM <br>19 July 2022
+                    <div>09:45 AM</div> <div>19 July 2022 </div> 
                   </td>
                   <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
                     lI6dFWyA
@@ -184,7 +184,7 @@
                     Dhaka - Tangail
                   </td>
                   <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
-                    <div>A1, A2, A3, A4,</div> <div>B1, B2, B3, B4</div>
+                    A1, A2, A3, A4, B1, B2, B3, B4
                   </td>
                   <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
                     20 TK
@@ -201,7 +201,7 @@
                 </tr>
 
                 <tr class="border-b border-[#EDEDED]">
-                  <td class="grid place-content-center leading-[20px] text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
+                  <td class="webkit-text-center text-primaryText border-r border-[#DBDBDB] text-center leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] py-3">
                     <button class="tableDetailsGreyButton">
                       <span class="underline">8WXOX3MVGF8UT</span> 
                       <span><img src="../assets/svg/btn-arrow-right.svg" alt=""></span>
@@ -211,7 +211,7 @@
                     <div>19 July 2022 </div> <div>09:45 AM</div>
                   </td>
                   <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
-                    09:45 AM <br>19 July 2022
+                    <div>09:45 AM</div> <div>19 July 2022 </div> 
                   </td>
                   <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
                     lI6dFWyA
@@ -220,7 +220,7 @@
                     Dhaka - Tangail
                   </td>
                   <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
-                    <div>A1, A2, A3, A4,</div> <div>B1, B2, B3, B4</div>
+                    A1, A2, A3, A4, B1, B2, B3, B4
                   </td>
                   <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
                     20 TK
@@ -237,7 +237,7 @@
                 </tr>
 
                 <tr class="border-b border-[#EDEDED]">
-                  <td class="grid place-content-center leading-[20px] text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
+                  <td class="webkit-text-center text-primaryText border-r border-[#DBDBDB] text-center leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] py-3">
                     <button class="tableDetailsGreyButton">
                       <span class="underline">8WXOX3MVGF8UT</span> 
                       <span><img src="../assets/svg/btn-arrow-right.svg" alt=""></span>
@@ -247,7 +247,7 @@
                     <div>19 July 2022 </div> <div>09:45 AM</div>
                   </td>
                   <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
-                    09:45 AM <br>19 July 2022
+                    <div>09:45 AM</div> <div>19 July 2022 </div> 
                   </td>
                   <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
                     lI6dFWyA
@@ -256,7 +256,7 @@
                     Dhaka - Tangail
                   </td>
                   <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
-                    <div>A1, A2, A3, A4,</div> <div>B1, B2, B3, B4</div>
+                    A1, A2, A3, A4, B1, B2, B3, B4
                   </td>
                   <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
                     20 TK
@@ -273,7 +273,7 @@
                 </tr>
 
                 <tr class="border-b border-[#EDEDED]">
-                  <td class="grid place-content-center leading-[20px] text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
+                  <td class="webkit-text-center text-primaryText border-r border-[#DBDBDB] text-center leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] py-3">
                     <button class="tableDetailsGreyButton">
                       <span class="underline">8WXOX3MVGF8UT</span> 
                       <span><img src="../assets/svg/btn-arrow-right.svg" alt=""></span>
@@ -283,7 +283,7 @@
                     <div>19 July 2022 </div> <div>09:45 AM</div>
                   </td>
                   <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
-                    09:45 AM <br>19 July 2022
+                    <div>09:45 AM</div> <div>19 July 2022 </div> 
                   </td>
                   <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
                     lI6dFWyA
@@ -292,43 +292,7 @@
                     Dhaka - Tangail
                   </td>
                   <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
-                    <div>A1, A2, A3, A4,</div> <div>B1, B2, B3, B4</div>
-                  </td>
-                  <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
-                    20 TK
-                  </td>
-                  <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
-                    20 TK
-                  </td>
-                  <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
-                    20 TK
-                  </td>
-                  <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
-                    2000 TK
-                  </td>
-                </tr>
-
-                <tr class="border-b border-[#EDEDED]">
-                  <td class="grid place-content-center leading-[20px] text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
-                    <button class="tableDetailsGreyButton">
-                      <span class="underline">8WXOX3MVGF8UT</span> 
-                      <span><img src="../assets/svg/btn-arrow-right.svg" alt=""></span>
-                    </button>
-                  </td>
-                  <td class="text-primaryText border-r border-[#DBDBDB] text-center leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] py-3">
-                    <div>19 July 2022 </div> <div>09:45 AM</div>
-                  </td>
-                  <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
-                    09:45 AM <br>19 July 2022
-                  </td>
-                  <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
-                    lI6dFWyA
-                  </td>
-                  <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
-                    Dhaka - Tangail
-                  </td>
-                  <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
-                    <div>A1, A2, A3, A4,</div> <div>B1, B2, B3, B4</div>
+                    A1, A2, A3, A4, B1, B2, B3, B4
                   </td>
                   <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
                     20 TK

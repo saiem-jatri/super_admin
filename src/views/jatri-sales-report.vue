@@ -57,14 +57,14 @@
                   <div class="w-1/4">
                     <p class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]">From date</p>
                     <div class="w-full h-[40px] border border-[#DBDBDB] flex justify-between items-center mt-[10px] leading-[20px] rounded-[4px] px-[20px] xl:px-[4px] 2xl:px-[8px] overflow-hidden">
-                        <input class="outline-none pl-2 placeholder:text-[#4D4D4F] placeholder:text-[14px] placeholder:leading-[20px]" placeholder="Select date" type="text">
+                        <input class="outline-none placeholder:text-[#4D4D4F] placeholder:text-[14px] placeholder:leading-[20px]" placeholder="Select date" type="text">
                         <img alt="" class="h-5 w-5" src="../assets/svg/count2.svg">
                     </div>
                  </div>
                  <div class="w-1/4">
                     <p class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]">To date</p>
                     <div class="w-full h-[40px] border border-[#DBDBDB] flex justify-between items-center mt-[10px] leading-[20px] rounded-[4px] px-[20px] xl:px-[4px] 2xl:px-[8px] overflow-hidden">
-                        <input class="outline-none pl-2 placeholder:text-[#4D4D4F] placeholder:text-[14px] placeholder:leading-[20px]" placeholder="Select date" type="text">
+                        <input class="outline-none placeholder:text-[#4D4D4F] placeholder:text-[14px] placeholder:leading-[20px]" placeholder="Select date" type="text">
                         <img alt="" class="h-5 w-5" src="../assets/svg/count2.svg">
                     </div>
                  </div>
@@ -147,7 +147,7 @@
                     <th class="companyTableHead" scope="col">
                         Passenger <br>information
                     </th>
-                    <th class="companyTableHead" scope="col">
+                    <th class="companyTableHead w-[88px]" scope="col">
                         seat
                     </th>
                     <th class="companyTableHead" scope="col">
@@ -185,7 +185,7 @@
                   <div>Fahim Ahmed</div> <div>01708630439</div>
                   </td>
                   <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
-                    A1, A2, A3, <br>A4, B1, B2
+                    A1, A2, A3, A4, B1, B2
                   </td>
                   <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
                     Cash
@@ -390,13 +390,14 @@
             <div class="flex items-center gap-x-[128px] mt-[30px]">
                 <p class="text-[#4D4D4F] text-[12px] xl:text-sm leading-4 xl:leading-5">Showing result 1 to 50 of 500 (10 Pages)</p>
                 <div class="flex items-center gap-x-6">
-                    <button type="button"><img src="../assets/svg/pagination-back.svg" alt=""></button>
+                    <button type="button" class="paginationNextButton"><img class="transform rotate-180" src="../assets/svg/pagination-next.svg" alt=""></button>
                     <button type="button" class="activePaginationButton">01</button>
                     <button type="button" class="paginationButton">02</button>
                     <button type="button" class="paginationButton">03</button>
                     <div type="button" class="paginationButton">...</div>
                     <button type="button" class="paginationButton">10</button>
                     <button type="button" class="paginationNextButton">Next <img src="../assets/svg/pagination-next.svg" alt=""></button>
+                    <button type="button"><img class="transform rotate-180" src="../assets/svg/pagination-back.svg" alt=""></button>
                 </div>
             </div>
           </div>

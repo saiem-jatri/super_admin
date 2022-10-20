@@ -44,7 +44,7 @@
                         v-model="selectedCity"
                         :options="cities"
                         class="w-full py-[4px] mt-[10px] placeholder:text-primaryText placeholder:leading-[16px] placeholder:text-[12px] xl:placeholder:leading-[20px] xl:placeholder:text-[14px]"
-                        optionLabel="name" placeholder="Selectr bus operator"/>
+                        optionLabel="name" placeholder="Select bus operator"/>
                   </div>
                   <div class="w-1/4">
                     <p class="text-primaryText leading-[20px] text-[14px] xl:leading-[24px] xl:text-[16px] font-[600]">
@@ -81,14 +81,14 @@
                 <div class="w-1/4">
                     <p class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]">From date</p>
                     <div class="w-full h-[40px] border border-[#DBDBDB] flex justify-between items-center mt-[10px] leading-[20px] rounded-[4px] px-[20px] xl:px-[4px] 2xl:px-[8px] overflow-hidden">
-                        <input class="outline-none pl-2 placeholder:text-[#4D4D4F] placeholder:text-[14px] placeholder:leading-[20px]" placeholder="Select date" type="text">
+                        <input class="outline-none placeholder:text-[#4D4D4F] placeholder:text-[14px] placeholder:leading-[20px]" placeholder="Select date" type="text">
                         <img alt="" class="h-5 w-5" src="../assets/svg/count2.svg">
                     </div>
                  </div>
                  <div class="w-1/4">
                     <p class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]">To date</p>
                     <div class="w-full h-[40px] border border-[#DBDBDB] flex justify-between items-center mt-[10px] leading-[20px] rounded-[4px] px-[20px] xl:px-[4px] 2xl:px-[8px] overflow-hidden">
-                        <input class="outline-none pl-2 placeholder:text-[#4D4D4F] placeholder:text-[14px] placeholder:leading-[20px]" placeholder="Select date" type="text">
+                        <input class="outline-none placeholder:text-[#4D4D4F] placeholder:text-[14px] placeholder:leading-[20px]" placeholder="Select date" type="text">
                         <img alt="" class="h-5 w-5" src="../assets/svg/count2.svg">
                     </div>
                  </div>
@@ -111,11 +111,11 @@
                 <div class="w-1/4">
                     <p class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]">Bus type</p>
                     <div class="flex items-center gap-5">
-                        <div class="form-group mt-4" data-v-0d946802="">
+                        <div class="form-group mt-4 mb-0" data-v-0d946802="">
                             <input type="checkbox" id="read" data-v-0d946802="">
                             <label for="read" class="text-primaryText leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px] font-[400]" data-v-0d946802=""> AC</label>
                        </div>
-                       <div class="form-group mt-4" data-v-0d946802="">
+                       <div class="form-group mt-4 mb-0" data-v-0d946802="">
                             <input type="checkbox" id="read" data-v-0d946802="">
                             <label for="read" class="text-primaryText leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px] font-[400]" data-v-0d946802=""> Non AC</label>
                        </div>
@@ -156,31 +156,31 @@
                         Trip no
                     </th>
                     <th class="companyTableHead" scope="col">
-                        Sold ticket
+                        Sold <br>ticket
                     </th>
                     <th class="companyTableHead" scope="col">
-                        Sold ticket amount
+                        Sold ticket <br>amount
                     </th>
                     <th class="companyTableHead" scope="col">
-                        CANCELLED Ticket
+                        CANCELLED <br>Ticket
                     </th>
                     <th class="companyTableHead" scope="col">
-                        Cancelled amount
+                        Cancelled <br>amount
                     </th>
                     <th class="companyTableHead" scope="col">
-                        Company discount
+                        Company <br>discount
                     </th>
                     <th class="companyTableHead" scope="col">
-                        Third-party commission
+                        Third-party <br>commission
                     </th>
                     <th class="companyTableHead" scope="col">
-                        Third-party discount
+                        Third-party <br>discount
                     </th>
                     <th class="companyTableHead" scope="col">
-                        Jatri commission
+                        Jatri <br>commission
                     </th>
                     <th class="companyTableHead" scope="col">
-                        Total commission
+                        Total <br>commission
                     </th>
                     <th class="companyTableHead" scope="col" style="border-radius: 0 6px 0 0">
                         TOTAL AMOUNT

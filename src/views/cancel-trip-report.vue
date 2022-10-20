@@ -49,14 +49,14 @@
                 <div class="w-1/4">
                   <p class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]">From date</p>
                   <div class="w-full h-[40px] border border-[#DBDBDB] flex justify-between items-center mt-[10px] leading-[20px] rounded-[4px] px-[20px] xl:px-[4px] 2xl:px-[8px] overflow-hidden">
-                      <input class="outline-none pl-2 placeholder:text-[#4D4D4F] placeholder:text-[14px] placeholder:leading-[20px]" placeholder="Select date" type="text">
+                      <input class="outline-none placeholder:text-[#4D4D4F] placeholder:text-[14px] placeholder:leading-[20px]" placeholder="Select date" type="text">
                       <img alt="" class="h-5 w-5" src="../assets/svg/count2.svg">
                   </div>
                </div>
                <div class="w-1/4">
                   <p class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]">To date</p>
                   <div class="w-full h-[40px] border border-[#DBDBDB] flex justify-between items-center mt-[10px] leading-[20px] rounded-[4px] px-[20px] xl:px-[4px] 2xl:px-[8px] overflow-hidden">
-                      <input class="outline-none pl-2 placeholder:text-[#4D4D4F] placeholder:text-[14px] placeholder:leading-[20px]" placeholder="Select date" type="text">
+                      <input class="outline-none placeholder:text-[#4D4D4F] placeholder:text-[14px] placeholder:leading-[20px]" placeholder="Select date" type="text">
                       <img alt="" class="h-5 w-5" src="../assets/svg/count2.svg">
                   </div>
                </div>
@@ -75,12 +75,8 @@
             <div class="px-4 pb-4 flex justify-between items-center gap-x-4">
                 <div class="w-[24%]">
                   <p class="text-primaryText leading-[20px] text-[14px] xl:leading-[24px] xl:text-[16px] font-[600]">
-                      Trips</p>
-                  <Dropdown
-                      v-model="selectedCity"
-                      :options="cities"
-                      class="w-full py-[4px] mt-[10px] placeholder:text-primaryText placeholder:leading-[16px] placeholder:text-[12px] xl:placeholder:leading-[20px] xl:placeholder:text-[14px]"
-                      optionLabel="name" placeholder="Select trips"/>
+                    Trip/Coach no</p>
+                      <input class="createNormalInput" placeholder="Enter trip/coach no" type="text">
                 </div>
               <div class="w-1/4 flex justify-end self-end">
                   <button class="flex gap-x-[9px] justify-center items-center bg-corporate text-white leading-[14px] xl:leading-[16px] text-[11px] xl:text-[12px] font-[500] py-3 pl-[17px] pr-[24px] rounded-full"><span>
@@ -129,9 +125,9 @@
                       jatri seats
                   </th>
                   <th class="companyTableHead" scope="col">
-                      Cancelled amount
+                      Cancelled <br>amount
                   </th>
-                  <th class="companyTableHead" scope="col">
+                  <th class="companyTableHead w-[220px]" scope="col">
                       cancel reason
                   </th>
                 </tr>
@@ -162,176 +158,177 @@
                   <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
                       2000 TK
                   </td>
-                  <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
+                  <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] border-r border-[#DBDBDB] text-primaryText py-3 p-2">
                       Cancellation reason goes here. If line breaks.
                   </td>
                   </tr>
 
                   <tr class="border-b border-[#EDEDED]">
-                <td class="text-primaryText border-r border-[#DBDBDB] text-center leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] py-3">
-                  Desh Travels
-                </td>
-                <td class="text-primaryText border-r border-[#DBDBDB] text-center leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] py-3">
-                  lI6dFWyA
-                </td>
-                <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
-                  093
-                </td>
-                <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
-                  Fahim (Arambag)
-                </td>
-                <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
-                  <div>19 July 2022 </div> <div>09:45 AM</div>
-                </td>
-                <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
-                  A1, A2, A3, A4
-                </td>
-                <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
-                  A1, A2
-                </td>
-                <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
-                  2000 TK
-                </td>
-                <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
-                  Cancellation reason goes here. If line breaks.
-                </td>
-              </tr>
+                  <td class="text-primaryText border-r border-[#DBDBDB] text-center leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] py-3">
+                      Desh Travels
+                  </td>
+                  <td class="text-primaryText border-r border-[#DBDBDB] text-center leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] py-3">
+                      lI6dFWyA
+                  </td>
+                  <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
+                      093
+                  </td>
+                  <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
+                      Fahim (Arambag)
+                  </td>
+                  <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
+                      <div>19 July 2022 </div> <div>09:45 AM</div>
+                  </td>
+                  <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
+                      A1, A2, A3, A4
+                  </td>
+                  <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
+                      A1, A2
+                  </td>
+                  <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
+                      2000 TK
+                  </td>
+                  <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] border-r border-[#DBDBDB] text-primaryText py-3 p-2">
+                      Cancellation reason goes here. If line breaks.
+                  </td>
+                  </tr>
 
-              <tr class="border-b border-[#EDEDED]">
-                <td class="text-primaryText border-r border-[#DBDBDB] text-center leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] py-3">
-                  Desh Travels
-                </td>
-                <td class="text-primaryText border-r border-[#DBDBDB] text-center leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] py-3">
-                  lI6dFWyA
-                </td>
-                <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
-                  093
-                </td>
-                <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
-                  Fahim (Arambag)
-                </td>
-                <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
-                  <div>19 July 2022 </div> <div>09:45 AM</div>
-                </td>
-                <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
-                  A1, A2, A3, A4
-                </td>
-                <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
-                  A1, A2
-                </td>
-                <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
-                  2000 TK
-                </td>
-                <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
-                  Cancellation reason goes here. If line breaks.
-                </td>
-              </tr>
+                  <tr class="border-b border-[#EDEDED]">
+                  <td class="text-primaryText border-r border-[#DBDBDB] text-center leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] py-3">
+                      Desh Travels
+                  </td>
+                  <td class="text-primaryText border-r border-[#DBDBDB] text-center leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] py-3">
+                      lI6dFWyA
+                  </td>
+                  <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
+                      093
+                  </td>
+                  <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
+                      Fahim (Arambag)
+                  </td>
+                  <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
+                      <div>19 July 2022 </div> <div>09:45 AM</div>
+                  </td>
+                  <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
+                      A1, A2, A3, A4
+                  </td>
+                  <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
+                      A1, A2
+                  </td>
+                  <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
+                      2000 TK
+                  </td>
+                  <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] border-r border-[#DBDBDB] text-primaryText py-3 p-2">
+                      Cancellation reason goes here. If line breaks.
+                  </td>
+                  </tr>
 
-              <tr class="border-b border-[#EDEDED]">
-                <td class="text-primaryText border-r border-[#DBDBDB] text-center leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] py-3">
-                  Desh Travels
-                </td>
-                <td class="text-primaryText border-r border-[#DBDBDB] text-center leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] py-3">
-                  lI6dFWyA
-                </td>
-                <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
-                  093
-                </td>
-                <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
-                  Fahim (Arambag)
-                </td>
-                <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
-                  <div>19 July 2022 </div> <div>09:45 AM</div>
-                </td>
-                <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
-                  A1, A2, A3, A4
-                </td>
-                <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
-                  A1, A2
-                </td>
-                <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
-                  2000 TK
-                </td>
-                <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
-                  Cancellation reason goes here. If line breaks.
-                </td>
-              </tr>
+                  <tr class="border-b border-[#EDEDED]">
+                  <td class="text-primaryText border-r border-[#DBDBDB] text-center leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] py-3">
+                      Desh Travels
+                  </td>
+                  <td class="text-primaryText border-r border-[#DBDBDB] text-center leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] py-3">
+                      lI6dFWyA
+                  </td>
+                  <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
+                      093
+                  </td>
+                  <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
+                      Fahim (Arambag)
+                  </td>
+                  <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
+                      <div>19 July 2022 </div> <div>09:45 AM</div>
+                  </td>
+                  <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
+                      A1, A2, A3, A4
+                  </td>
+                  <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
+                      A1, A2
+                  </td>
+                  <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
+                      2000 TK
+                  </td>
+                  <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] border-r border-[#DBDBDB] text-primaryText py-3 p-2">
+                      Cancellation reason goes here. If line breaks.
+                  </td>
+                  </tr>
 
-              <tr class="border-b border-[#EDEDED]">
-                <td class="text-primaryText border-r border-[#DBDBDB] text-center leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] py-3">
-                  Desh Travels
-                </td>
-                <td class="text-primaryText border-r border-[#DBDBDB] text-center leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] py-3">
-                  lI6dFWyA
-                </td>
-                <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
-                  093
-                </td>
-                <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
-                  Fahim (Arambag)
-                </td>
-                <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
-                  <div>19 July 2022 </div> <div>09:45 AM</div>
-                </td>
-                <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
-                  A1, A2, A3, A4
-                </td>
-                <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
-                  A1, A2
-                </td>
-                <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
-                  2000 TK
-                </td>
-                <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
-                  Cancellation reason goes here. If line breaks.
-                </td>
-              </tr>
+                  <tr class="border-b border-[#EDEDED]">
+                  <td class="text-primaryText border-r border-[#DBDBDB] text-center leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] py-3">
+                      Desh Travels
+                  </td>
+                  <td class="text-primaryText border-r border-[#DBDBDB] text-center leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] py-3">
+                      lI6dFWyA
+                  </td>
+                  <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
+                      093
+                  </td>
+                  <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
+                      Fahim (Arambag)
+                  </td>
+                  <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
+                      <div>19 July 2022 </div> <div>09:45 AM</div>
+                  </td>
+                  <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
+                      A1, A2, A3, A4
+                  </td>
+                  <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
+                      A1, A2
+                  </td>
+                  <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
+                      2000 TK
+                  </td>
+                  <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] border-r border-[#DBDBDB] text-primaryText py-3 p-2">
+                      Cancellation reason goes here. If line breaks.
+                  </td>
+                  </tr>
 
-              <tr class="border-b border-[#EDEDED]">
-                <td class="text-primaryText border-r border-[#DBDBDB] text-center leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] py-3">
-                  Desh Travels
-                </td>
-                <td class="text-primaryText border-r border-[#DBDBDB] text-center leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] py-3">
-                  lI6dFWyA
-                </td>
-                <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
-                  093
-                </td>
-                <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
-                  Fahim (Arambag)
-                </td>
-                <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
-                  <div>19 July 2022 </div> <div>09:45 AM</div>
-                </td>
-                <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
-                  A1, A2, A3, A4
-                </td>
-                <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
-                  A1, A2
-                </td>
-                <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
-                  2000 TK
-                </td>
-                <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
-                  Cancellation reason goes here. If line breaks.
-                </td>
-              </tr>
+                  <tr class="border-b border-[#EDEDED]">
+                  <td class="text-primaryText border-r border-[#DBDBDB] text-center leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] py-3">
+                      Desh Travels
+                  </td>
+                  <td class="text-primaryText border-r border-[#DBDBDB] text-center leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] py-3">
+                      lI6dFWyA
+                  </td>
+                  <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
+                      093
+                  </td>
+                  <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
+                      Fahim (Arambag)
+                  </td>
+                  <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
+                      <div>19 July 2022 </div> <div>09:45 AM</div>
+                  </td>
+                  <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
+                      A1, A2, A3, A4
+                  </td>
+                  <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
+                      A1, A2
+                  </td>
+                  <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-3">
+                      2000 TK
+                  </td>
+                  <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] border-r border-[#DBDBDB] text-primaryText py-3 p-2">
+                      Cancellation reason goes here. If line breaks.
+                  </td>
+                  </tr>
               </tbody>
             </table>
           </div>
 
           <div class="flex items-center gap-x-[128px] mt-[30px]">
-              <p class="text-[#4D4D4F] text-[12px] xl:text-sm leading-4 xl:leading-5">Showing result 1 to 50 of 500 (10 Pages)</p>
-              <div class="flex items-center gap-x-6">
-                  <button type="button"><img src="../assets/svg/pagination-back.svg" alt=""></button>
-                  <button type="button" class="activePaginationButton">01</button>
-                  <button type="button" class="paginationButton">02</button>
-                  <button type="button" class="paginationButton">03</button>
-                  <div type="button" class="paginationButton">...</div>
-                  <button type="button" class="paginationButton">10</button>
-                  <button type="button" class="paginationNextButton">Next <img src="../assets/svg/pagination-next.svg" alt=""></button>
-              </div>
-          </div>
+                <p class="text-[#4D4D4F] text-[12px] xl:text-sm leading-4 xl:leading-5">Showing result 1 to 50 of 500 (10 Pages)</p>
+                <div class="flex items-center gap-x-6">
+                    <button type="button" class="paginationNextButton"><img class="transform rotate-180" src="../assets/svg/pagination-next.svg" alt=""></button>
+                    <button type="button" class="activePaginationButton">01</button>
+                    <button type="button" class="paginationButton">02</button>
+                    <button type="button" class="paginationButton">03</button>
+                    <div type="button" class="paginationButton">...</div>
+                    <button type="button" class="paginationButton">10</button>
+                    <button type="button" class="paginationNextButton">Next <img src="../assets/svg/pagination-next.svg" alt=""></button>
+                    <button type="button"><img class="transform rotate-180" src="../assets/svg/pagination-back.svg" alt=""></button>
+                </div>
+            </div>
         </div>
   </template>
   
