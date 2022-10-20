@@ -34,6 +34,7 @@
         </div>
       </div>
       <!-- top nav bar end -->
+
       <!-- body start-->
       <div class="px-[30px] py-[24px]">
         <!--        tab start-->
@@ -53,7 +54,7 @@
                 <Dropdown
                     v-model="selectedCity"
                     :options="cities"
-                    class="w-full p-[1px] mt-[10px] placeholder:text-primaryText placeholder:leading-[16px] placeholder:text-[12px] xl:placeholder:leading-[20px] xl:placeholder:text-[14px]"
+                    class="w-full py-1 mt-[10px] placeholder:text-primaryText placeholder:leading-[16px] placeholder:text-[12px] xl:placeholder:leading-[20px] xl:placeholder:text-[14px]"
                     optionLabel="name" placeholder="Dash Travels"/>
               </div>
               <div class="w-1/4">
@@ -110,7 +111,7 @@
               <th class="companyTableHead" scope="col">
                 Applied count
               </th>
-              <th class="companyTableHead" scope="col">
+              <th class="companyTableHead w-[270px]" scope="col">
                 date
               </th>
               <th class="companyTableHead" scope="col">
@@ -130,13 +131,13 @@
                 500 TK
               </td>
               <td class="leading-[20px] text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText ">
-                <div class="flex justify-center items-center gap-x-[8px]">
+                <div class="flex justify-center items-center gap-x-[8px] underline">
                   5000000 <span><img alt="" class="w-[7px] h-[12px]" src="../assets/svg/right-black-arrow.svg"></span>
                 </div>
               </td>
-              <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText">
-                Created: 19 July 2022, 09:45 AM <br>
-                Expiration: 19 July 2022, 09:45 AM
+              <td class="px-2 leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] border-r border-[#DBDBDB] text-primaryText">
+                <div>Created: 19 July 2022, 09:45 AM</div> 
+                <div>Expiration: 19 July 2022, 09:45 AM</div>
               </td>
               <td class="border-r border-[#DBDBDB]">
                 <div class="flex justify-center items-center">
@@ -159,13 +160,13 @@
                 500 TK
               </td>
               <td class="leading-[20px] text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText ">
-                <div class="flex justify-center items-center gap-x-[8px]">
+                <div class="flex justify-center items-center gap-x-[8px] underline">
                   5000000 <span><img alt="" class="w-[7px] h-[12px]" src="../assets/svg/right-black-arrow.svg"></span>
                 </div>
               </td>
-              <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText">
-                Created: 19 July 2022, 09:45 AM <br>
-                Expiration: 19 July 2022, 09:45 AM
+              <td class="px-2 leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] border-r border-[#DBDBDB] text-primaryText">
+                <div>Created: 19 July 2022, 09:45 AM</div> 
+                <div>Expiration: 19 July 2022, 09:45 AM</div>
               </td>
               <td class="border-r border-[#DBDBDB]">
                 <div class="flex justify-center items-center">
@@ -188,13 +189,42 @@
                 500 TK
               </td>
               <td class="leading-[20px] text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText ">
-                <div class="flex justify-center items-center gap-x-[8px]">
+                <div class="flex justify-center items-center gap-x-[8px] underline">
                   5000000 <span><img alt="" class="w-[7px] h-[12px]" src="../assets/svg/right-black-arrow.svg"></span>
                 </div>
               </td>
+              <td class="px-2 leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] border-r border-[#DBDBDB] text-primaryText">
+                <div>Created: 19 July 2022, 09:45 AM</div> 
+                <div>Expiration: 19 July 2022, 09:45 AM</div>
+              </td>
+              <td class="border-r border-[#DBDBDB]">
+                <div class="flex justify-center items-center">
+                  <p class="companyTableStatusInactive">Inactive</p>
+                </div>
+              </td>
+              <td class="border-r border-[#DBDBDB]">
+                <div class="py-[5px] px-[18px] flex justify-center items-center gap-x-[16px]">
+                  <button class="companyEditButton"><span><img alt="" class="w-3 h-3"
+                                                               src="../assets/svg/edit.svg"></span>Edit
+                  </button>
+                </div>
+              </td>
+            </tr>
+            <tr class="border-b border-[#EDEDED]">
+              <td class="text-primaryText border-r border-[#DBDBDB] text-center leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px]">
+                Operator name
+              </td>
               <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText">
-                Created: 19 July 2022, 09:45 AM <br>
-                Expiration: 19 July 2022, 09:45 AM
+                500 TK
+              </td>
+              <td class="leading-[20px] text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText ">
+                <div class="flex justify-center items-center gap-x-[8px] underline">
+                  5000000 <span><img alt="" class="w-[7px] h-[12px]" src="../assets/svg/right-black-arrow.svg"></span>
+                </div>
+              </td>
+              <td class="px-2 leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] border-r border-[#DBDBDB] text-primaryText">
+                <div>Created: 19 July 2022, 09:45 AM</div> 
+                <div>Expiration: 19 July 2022, 09:45 AM</div>
               </td>
               <td class="border-r border-[#DBDBDB]">
                 <div class="flex justify-center items-center">
@@ -217,42 +247,13 @@
                 500 TK
               </td>
               <td class="leading-[20px] text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText ">
-                <div class="flex justify-center items-center gap-x-[8px]">
+                <div class="flex justify-center items-center gap-x-[8px] underline">
                   5000000 <span><img alt="" class="w-[7px] h-[12px]" src="../assets/svg/right-black-arrow.svg"></span>
                 </div>
               </td>
-              <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText">
-                Created: 19 July 2022, 09:45 AM <br>
-                Expiration: 19 July 2022, 09:45 AM
-              </td>
-              <td class="border-r border-[#DBDBDB]">
-                <div class="flex justify-center items-center">
-                  <p class="companyTableStatus">Active</p>
-                </div>
-              </td>
-              <td class="border-r border-[#DBDBDB]">
-                <div class="py-[5px] px-[18px] flex justify-center items-center gap-x-[16px]">
-                  <button class="companyEditButton"><span><img alt="" class="w-3 h-3"
-                                                               src="../assets/svg/edit.svg"></span>Edit
-                  </button>
-                </div>
-              </td>
-            </tr>
-            <tr class="border-b border-[#EDEDED]">
-              <td class="text-primaryText border-r border-[#DBDBDB] text-center leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px]">
-                Operator name
-              </td>
-              <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText">
-                500 TK
-              </td>
-              <td class="leading-[20px] text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText ">
-                <div class="flex justify-center items-center gap-x-[8px]">
-                  5000000 <span><img alt="" class="w-[7px] h-[12px]" src="../assets/svg/right-black-arrow.svg"></span>
-                </div>
-              </td>
-              <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText">
-                Created: 19 July 2022, 09:45 AM <br>
-                Expiration: 19 July 2022, 09:45 AM
+              <td class="px-2 leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] border-r border-[#DBDBDB] text-primaryText">
+                <div>Created: 19 July 2022, 09:45 AM</div> 
+                <div>Expiration: 19 July 2022, 09:45 AM</div>
               </td>
               <td class="border-r border-[#DBDBDB]">
                 <div class="flex justify-center items-center">

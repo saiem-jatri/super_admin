@@ -34,6 +34,7 @@
         </div>
       </div>
       <!-- top nav bar end -->
+
       <!-- body start-->
       <div class="px-[30px] py-[24px]">
         <!--        tab start-->
@@ -53,8 +54,8 @@
                 <Dropdown
                     v-model="selectedCity"
                     :options="cities"
-                    class="w-full p-[1px] mt-[10px] placeholder:text-primaryText placeholder:leading-[16px] placeholder:text-[12px] xl:placeholder:leading-[20px] xl:placeholder:text-[14px]"
-                    optionLabel="name" placeholder="Dash Travels"/>
+                    class="w-full py-1 mt-[10px] placeholder:text-primaryText placeholder:leading-[16px] placeholder:text-[12px] xl:placeholder:leading-[20px] xl:placeholder:text-[14px]"
+                    optionLabel="name" placeholder="Select bus operator"/>
               </div>
               <div class="w-1/4">
                 <div class="flex justify-between items-center w-full">
@@ -82,7 +83,7 @@
               <th class="companyTableHead" scope="col">
                 Promo code
               </th>
-              <th class="companyTableHead" scope="col">
+              <th class="companyTableHead w-[150px]" scope="col">
                 Route
               </th>
 
@@ -115,22 +116,23 @@
                 Dhaka - Rnagpur
               </td>
               <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText">
-                Discount: 5% <br>
-                Up to: 50 TK
+                <div>Discount: 5%</div>
+                <div>Up to: 50 TK</div>
               </td>
-              <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-2">
-                Usage limit: 100 <br>
-                Usage limit per user: 100 <br>
-                Only first time: No
+              <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] px-2 border-r border-[#DBDBDB] text-primaryText py-2">
+                <div>Usage limit: 100 </div>
+                <div>Usage limit per user: 100</div>
+                <div>Only first time: No</div>
               </td>
               <td class="leading-[20px] text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText ">
-                <div class="flex justify-center items-center gap-x-[8px]">
+                <div class="flex justify-center items-center gap-x-[8px] underline">
                   5000000 <span><img alt="" class="w-[7px] h-[12px]" src="../assets/svg/right-black-arrow.svg"></span>
                 </div>
               </td>
-              <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText">
-                Created: 19 July 2022, 09:45 AM <br>
-                Expiration: 19 July 2022, 09:45 AM
+              <td class="px-2 text-[12px] font-[500] border-r border-[#DBDBDB] text-primaryText">
+                <div>Activation: 19 July 2022, 09:45 AM</div>
+                <div>Expiration: 19 July 2022, 09:45 AM</div>
+                <div>Created: 19 July 2022, 09:45 AM</div>
               </td>
               <td class="border-r border-[#DBDBDB]">
                 <div class="flex justify-center items-center">
@@ -153,22 +155,63 @@
                 Dhaka - Rnagpur
               </td>
               <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText">
-                Discount: 5% <br>
-                Up to: 50 TK
+                <div>Discount: 5%</div>
+                <div>Up to: 50 TK</div>
               </td>
-              <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-2">
-                Usage limit: 100 <br>
-                Usage limit per user: 100 <br>
-                Only first time: No
+              <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] px-2 border-r border-[#DBDBDB] text-primaryText py-2">
+                <div>Usage limit: 100 </div>
+                <div>Usage limit per user: 100</div>
+                <div>Only first time: No</div>
               </td>
               <td class="leading-[20px] text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText ">
-                <div class="flex justify-center items-center gap-x-[8px]">
+                <div class="flex justify-center items-center gap-x-[8px] underline">
                   5000000 <span><img alt="" class="w-[7px] h-[12px]" src="../assets/svg/right-black-arrow.svg"></span>
                 </div>
               </td>
+              <td class="px-2 text-[12px] font-[500] border-r border-[#DBDBDB] text-primaryText">
+                <div>Activation: 19 July 2022, 09:45 AM</div>
+                <div>Expiration: 19 July 2022, 09:45 AM</div>
+                <div>Created: 19 July 2022, 09:45 AM</div>
+              </td>
+              <td class="border-r border-[#DBDBDB]">
+                <div class="flex justify-center items-center">
+                  <p class="companyTableStatusInactive">Inactive</p>
+                </div>
+              </td>
+              <td class="border-r border-[#DBDBDB]">
+                <div class="py-[5px] px-[18px] flex justify-center items-center gap-x-[16px]">
+                  <button class="companyEditButton"><span><img alt="" class="w-3 h-3"
+                                                               src="../assets/svg/edit.svg"></span>Edit
+                  </button>
+                </div>
+              </td>
+            </tr>
+
+            <tr class="border-b border-[#EDEDED]">
+              <td class="text-primaryText border-r border-[#DBDBDB] text-center leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px]">
+                Promo code
+              </td>
               <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText">
-                Created: 19 July 2022, 09:45 AM <br>
-                Expiration: 19 July 2022, 09:45 AM
+                Chapainababganj- Chapainababganj
+              </td>
+              <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText">
+                <div>Discount: 5%</div>
+                <div>Up to: 50 TK</div>
+              </td>
+              <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] px-2 border-r border-[#DBDBDB] text-primaryText py-2">
+                <div>Usage limit: 100 </div>
+                <div>Usage limit per user: 100</div>
+                <div>Only first time: No</div>
+              </td>
+              <td class="leading-[20px] text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText ">
+                <div class="flex justify-center items-center gap-x-[8px] underline">
+                  5000000 <span><img alt="" class="w-[7px] h-[12px]" src="../assets/svg/right-black-arrow.svg"></span>
+                </div>
+              </td>
+              <td class="px-2 text-[12px] font-[500] border-r border-[#DBDBDB] text-primaryText">
+                <div>Activation: 19 July 2022, 09:45 AM</div>
+                <div>Expiration: 19 July 2022, 09:45 AM</div>
+                <div>Created: 19 July 2022, 09:45 AM</div>
               </td>
               <td class="border-r border-[#DBDBDB]">
                 <div class="flex justify-center items-center">
@@ -183,6 +226,7 @@
                 </div>
               </td>
             </tr>
+
             <tr class="border-b border-[#EDEDED]">
               <td class="text-primaryText border-r border-[#DBDBDB] text-center leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px]">
                 Promo code
@@ -191,22 +235,23 @@
                 Dhaka - Rnagpur
               </td>
               <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText">
-                Discount: 5% <br>
-                Up to: 50 TK
+                <div>Discount: 5%</div>
+                <div>Up to: 50 TK</div>
               </td>
-              <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-2">
-                Usage limit: 100 <br>
-                Usage limit per user: 100 <br>
-                Only first time: No
+              <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] px-2 border-r border-[#DBDBDB] text-primaryText py-2">
+                <div>Usage limit: 100 </div>
+                <div>Usage limit per user: 100</div>
+                <div>Only first time: No</div>
               </td>
               <td class="leading-[20px] text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText ">
-                <div class="flex justify-center items-center gap-x-[8px]">
+                <div class="flex justify-center items-center gap-x-[8px] underline">
                   5000000 <span><img alt="" class="w-[7px] h-[12px]" src="../assets/svg/right-black-arrow.svg"></span>
                 </div>
               </td>
-              <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText">
-                Created: 19 July 2022, 09:45 AM <br>
-                Expiration: 19 July 2022, 09:45 AM
+              <td class="px-2 text-[12px] font-[500] border-r border-[#DBDBDB] text-primaryText">
+                <div>Activation: 19 July 2022, 09:45 AM</div>
+                <div>Expiration: 19 July 2022, 09:45 AM</div>
+                <div>Created: 19 July 2022, 09:45 AM</div>
               </td>
               <td class="border-r border-[#DBDBDB]">
                 <div class="flex justify-center items-center">
@@ -221,30 +266,32 @@
                 </div>
               </td>
             </tr>
+
             <tr class="border-b border-[#EDEDED]">
               <td class="text-primaryText border-r border-[#DBDBDB] text-center leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px]">
                 Promo code
               </td>
               <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText">
-                Dhaka - Rnagpur
+                Chapainababganj- Chapainababganj
               </td>
               <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText">
-                Discount: 5% <br>
-                Up to: 50 TK
+                <div>Discount: 5%</div>
+                <div>Up to: 50 TK</div>
               </td>
-              <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-2">
-                Usage limit: 100 <br>
-                Usage limit per user: 100 <br>
-                Only first time: No
+              <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] px-2 border-r border-[#DBDBDB] text-primaryText py-2">
+                <div>Usage limit: 100 </div>
+                <div>Usage limit per user: 100</div>
+                <div>Only first time: No</div>
               </td>
               <td class="leading-[20px] text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText ">
-                <div class="flex justify-center items-center gap-x-[8px]">
+                <div class="flex justify-center items-center gap-x-[8px] underline">
                   5000000 <span><img alt="" class="w-[7px] h-[12px]" src="../assets/svg/right-black-arrow.svg"></span>
                 </div>
               </td>
-              <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText">
-                Created: 19 July 2022, 09:45 AM <br>
-                Expiration: 19 July 2022, 09:45 AM
+              <td class="px-2 text-[12px] font-[500] border-r border-[#DBDBDB] text-primaryText">
+                <div>Activation: 19 July 2022, 09:45 AM</div>
+                <div>Expiration: 19 July 2022, 09:45 AM</div>
+                <div>Created: 19 July 2022, 09:45 AM</div>
               </td>
               <td class="border-r border-[#DBDBDB]">
                 <div class="flex justify-center items-center">
@@ -259,6 +306,7 @@
                 </div>
               </td>
             </tr>
+
             <tr class="border-b border-[#EDEDED]">
               <td class="text-primaryText border-r border-[#DBDBDB] text-center leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px]">
                 Promo code
@@ -267,22 +315,23 @@
                 Dhaka - Rnagpur
               </td>
               <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText">
-                Discount: 5% <br>
-                Up to: 50 TK
+                <div>Discount: 5%</div>
+                <div>Up to: 50 TK</div>
               </td>
-              <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-2">
-                Usage limit: 100 <br>
-                Usage limit per user: 100 <br>
-                Only first time: No
+              <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] px-2 border-r border-[#DBDBDB] text-primaryText py-2">
+                <div>Usage limit: 100 </div>
+                <div>Usage limit per user: 100</div>
+                <div>Only first time: No</div>
               </td>
               <td class="leading-[20px] text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText ">
-                <div class="flex justify-center items-center gap-x-[8px]">
+                <div class="flex justify-center items-center gap-x-[8px] underline">
                   5000000 <span><img alt="" class="w-[7px] h-[12px]" src="../assets/svg/right-black-arrow.svg"></span>
                 </div>
               </td>
-              <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText">
-                Created: 19 July 2022, 09:45 AM <br>
-                Expiration: 19 July 2022, 09:45 AM
+              <td class="px-2 text-[12px] font-[500] border-r border-[#DBDBDB] text-primaryText">
+                <div>Activation: 19 July 2022, 09:45 AM</div>
+                <div>Expiration: 19 July 2022, 09:45 AM</div>
+                <div>Created: 19 July 2022, 09:45 AM</div>
               </td>
               <td class="border-r border-[#DBDBDB]">
                 <div class="flex justify-center items-center">

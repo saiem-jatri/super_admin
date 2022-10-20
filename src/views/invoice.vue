@@ -74,7 +74,7 @@
 
           </div>
           <div class="px-4 pb-4 flex justify-between items-end">
-            <div class="w-1/4">
+            <div class="w-[24.2%]">
               <p class="text-primaryText leading-[20px] text-[14px] xl:leading-[24px] xl:text-[16px] font-[600]">
                 Commission type</p>
               <Dropdown

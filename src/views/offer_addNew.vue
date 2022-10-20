@@ -28,8 +28,6 @@
             </div>
           </div>
           <div class="flex gap-x-[24px] p-4 w-1/2 justify-end items-center pr-2 ">
-            <!--            <input type="text" class="w-[270px] h-[40px] border border-[#DBDBDB] placeholder:text-[#4D4D4F] placeholder:text-[14px] leading-[20px] rounded-[4px] pl-8 focus:outline-none" placeholder="PNR or mobile number">-->
-            <!--            <img src="../assets/svg/search.svg" class="h-5 w-5 absolute left-[242px]" alt="">-->
             <div
                 class="w-[200px] h-[30px] xl:w-[270px] xl:h-[40px] border border-[#DBDBDB] flex justify-center items-center leading-[20px] rounded-[4px] pl-[9px] overflow-hidden">
               <img alt="" class="h-2 w-2 xl:h-5 xl:w-5" src="../assets/svg/search.svg">
@@ -49,18 +47,18 @@
         </div>
       </div>
       <!-- top nav bar end -->
+
       <!-- body start-->
       <div class="px-[30px] py-[24px]">
-
-        <!--        card-->
-        <div class="mt-[16px] bg-white rounded-[10px]">
+        <!--card-->
+        <div class="bg-white rounded-[10px]">
           <div class="p-4">
             <div class="flex justify-center items-center gap-x-[10px] xl:gap-x-[16px]">
               <div class="w-1/4">
                 <p class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]">
                   Bus operator</p>
                 <Dropdown v-model="selectedCity" :opti6ns="cities" class="w-full py-[4px] mt-[10px]" optionLabel="name"
-                          placeholder="Desh Travels"/>
+                          placeholder="Select bus operator"/>
               </div>
               <div class="w-1/4">
                 <p class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]">
@@ -80,10 +78,43 @@
             </div>
             <div class="flex justify-center items-center gap-x-[10px] xl:gap-x-[16px] mt-[12px] xl:mt-[16px]">
               <div class="w-1/4">
-                <p class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]">
-                  Route</p>
-                <Dropdown v-model="selectedCity" :opti6ns="cities" class="w-full py-[4px] mt-[10px]" optionLabel="name"
-                          placeholder="Select counter city"/>
+                <p class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]">Route</p>
+                <Dropdown v-model="selectedCity" :opti6ns="cities" class="w-full py-[4px] mt-[10px]" optionLabel="name" placeholder="Select route"/>
+                  <div id="modal" class="fixed z-10 overflow-y-auto top-0 w-full left-0 hidden">
+                    <div
+                        class="flex items-center justify-center min-height-100vh pt-4 px-4 pb-20 text-center sm:block sm:p-0">
+                      <div class="fixed inset-0 transition-opacity">
+                        <div class="absolute inset-0 bg-gray-900 opacity-75"/>
+                      </div>
+                      <span class="hidden sm:inline-block sm:align-middle sm:h-screen">&#8203;</span>
+                      <div
+                          aria-labelledby="modal-headline"
+                          aria-modal="true"
+                          class="inline-block align-center bg-white rounded-lg text-left overflow-hidden shadow-xl transform transition-all ease-in-out delay-700 sm:my-8 sm:align-middle sm:max-w-lg sm:w-full"
+                          role="dialog">
+                        <div
+                            class="w-full px-[24px] py-[8px] bg-corporate flex justify-between items-center transition transform ">
+                          <p class="leading-[24px] xl:leading-[28px] text-[18px] xl:text-[20px] font-[500] text-white">
+                            Migrate Trip</p>
+                          <img alt="" class="h-5 w-5 cursor-pointer" src="../assets/svg/modal_cross.svg"
+                              @click="toggleModal()">
+                        </div>
+                        <p class="px-[24px] mt-5 text-center">Are you sure you want to migrate this trip from trip 1 <br> to
+                          trip
+                          2</p>
+
+                        <div class="px-4 py-3 flex justify-center items-center gap-x-[16px] mt-8">
+                          <button class="py-2 px-8 bg-[#E0293B] text-white rounded-full mr-2"
+                                  type="button"
+                                  @click="toggleModal()"><i class="fas fa-times"></i> Cancel
+                          </button>
+                          <button class="py-2 px-6 bg-corporate text-white rounded-full mr-2" type="button"><i
+                              class="fas fa-plus"></i>Migrate trip
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
               </div>
               <div class="w-1/4">
                 <p class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]">
@@ -91,7 +122,7 @@
                 <div
                     class="w-full h-[40px] border border-[#DBDBDB] flex justify-between items-center mt-[10px] leading-[20px] rounded-[4px] px-[20px] xl:px-[8px] overflow-hidden">
                   <input
-                      class="outline-none pl-2 placeholder:text-[#4D4D4F] placeholder:text-[14px] placeholder:leading-[20px]"
+                      class="outline-none placeholder:text-[#4D4D4F] placeholder:text-[14px] placeholder:leading-[20px]"
                       placeholder="Select date"
                       type="text">
                   <img alt="" class="h-5 w-5" src="../assets/svg/count2.svg">
@@ -103,7 +134,7 @@
                 <div
                     class="w-full h-[40px] border border-[#DBDBDB] flex justify-between items-center mt-[10px] leading-[20px] rounded-[4px] px-[20px] xl:px-[8px] overflow-hidden">
                   <input
-                      class="outline-none pl-2 placeholder:text-[#4D4D4F] placeholder:text-[14px] placeholder:leading-[20px]"
+                      class="outline-none placeholder:text-[#4D4D4F] placeholder:text-[14px] placeholder:leading-[20px]"
                       placeholder="Select date"
                       type="text">
                   <img alt="" class="h-5 w-5" src="../assets/svg/count2.svg">
@@ -117,18 +148,18 @@
               </div>
             </div>
             <div class="flex justify-start items-center gap-x-[10px] xl:gap-x-[16px] mt-[12px] xl:mt-[16px]">
-              <div class="w-1/4">
+              <div class="w-[24.2%]">
                 <p class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]">Usage
                   limit for all</p>
                 <input class="createNormalInput" placeholder="Enter amount" type="text">
               </div>
-              <div class="w-1/4">
+              <div class="w-[24.2%]">
                 <p class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]">
                   Only first time usage</p>
                 <Dropdown v-model="selectedCity" :opti6ns="cities" class="w-full py-[4px] mt-[10px]" optionLabel="name"
-                          placeholder="Yes"/>
+                          placeholder="Select option"/>
               </div>
-              <div class="w-1/4">
+              <div class="w-[24.2%]">
                 <p class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]">Usage
                   limit per user</p>
                 <input class="createNormalInput" placeholder="Enter amount" type="text">
@@ -136,12 +167,12 @@
             </div>
           </div>
           <!--          offer access-->
-          <div class="p-4">
-            <div class="rounded-[4px] border border-corporateBorder px-4 py-4">
+          <div class="px-4">
+            <div class="rounded-[6px] border border-corporateBorder px-4 pt-4">
               <p class="leading-[20px] xl:leading-[24px] text-[14px] xl:text-[16px] text-primaryText font-[600]">Offer
                 access</p>
               <div class="flex justify-start gap-x-[43px]">
-                <div class="form-group mt-3 flex">
+                <div class="form-group mt-[13px] flex">
                   <input id="fare" type="checkbox">
                   <label
                       class="text-primaryText leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px] font-[400]"
@@ -188,7 +219,7 @@
               <input class="createNormalInput" placeholder="Enter offer title" type="text">
             </div>
           </div>
-          <div class="p-4">
+          <div class="px-4">
             <div class="w-full">
               <p class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]">
                 Description</p>
@@ -199,25 +230,25 @@
                         rows="5"></textarea>
             </div>
           </div>
-          <div class="p-4">
+          <div class="pt-3">
             <div class="rounded-[4px] px-4">
-              <hr class="border-t border-dashed border-corporateBorder mt-1">
-              <div class="pt-[8px] pb-[8px]">
+              <hr class="border-t border-corporateBorder">
+              <div class="py-4">
                 <div class="flex divide-x divide-dashed divide-corporateBorder">
                   <div class="w-1/2">
-                    <div class="py-[8px] pr-[24px]">
+                    <div class="pt-2 pr-4">
                       <p class="leading-[20px] xl:leading-[24px] text-[14px] xl:text-[16px] font-[600] text-primaryText">
                         Banner</p>
                       <div>
                         <input id="chooseFile" class="hidden" name="" type="file">
                         <label
-                            class="w-full bg-[#EFF7FD] h-[40px] cursor-pointer border border-dashed border-corporateSecondaryBlue mt-[10px] rounded-[4px] flex justify-center items-center"
+                            class="w-full bg-[#EFF7FD] h-[40px] cursor-pointer border border-dashed border-corporateSecondaryBlue mt-4 rounded-[4px] flex justify-center items-center"
                             for="chooseFile">
                           <div class="flex gap-x-[8px]">
                             <img alt="" class="w-[18px] h-[15px]" src="../assets/svg/file.svg">
                             <p class="text-corporateSecondaryBlue leading-[20px] text-[14px] font-[400]">Upload
                               banner</p>
-                            <p class="text-corporateSecondaryBlue leading-[20px] text-[14px] font-[400] border-b border-corporateSecondaryBlue">
+                            <p class="text-corporateSecondaryBlue leading-[20px] text-[14px] font-[600] border-b border-corporateSecondaryBlue">
                               Browse file</p>
                           </div>
                         </label>
@@ -225,7 +256,7 @@
                     </div>
                   </div>
                   <div class="w-1/2">
-                    <div class="py-2 pl-[16px]">
+                    <div class="pt-2 pl-4">
                       <p class="leading-[20px] xl:leading-[24px] text-[14px] xl:text-[16px] font-[600] text-primaryText">
                         File preview</p>
                       <div class="h-[358px] w-full flex justify-center items-center">
@@ -239,7 +270,6 @@
                   </div>
                 </div>
               </div>
-
             </div>
           </div>
           <hr class="border-t border-corporateBorder">
@@ -258,7 +288,7 @@
                 </button>
               </div>
             </div>
-            <router-link to="/offerAddFilled" class="corporateButton">Create routes</router-link>
+            <router-link to="/offerAddFilled" class="corporateButton">Create promo</router-link>
 
           </div>
         </div>
@@ -378,7 +408,11 @@ export default {
         // {name: 'Paris', code: 'PRS'}
       ]
     }
+  },
+  methods: {
+    toggleModal() {
+      document.getElementById('modal').classList.toggle('hidden')
+    }
   }
-
 }
 </script>

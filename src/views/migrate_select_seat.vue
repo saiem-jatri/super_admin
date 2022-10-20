@@ -398,8 +398,6 @@
                       <p class="absolute -right-8 top-0 2xl:top-3 font-medium text-[12px] leading-4 hidden">[D3]</p>
                     </div>
                   </div>
-
-
                 </div>
               </div>
             </div>

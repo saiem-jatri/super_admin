@@ -28,8 +28,6 @@
             </div>
           </div>
           <div class="flex gap-x-[24px] p-4 w-1/2 justify-end items-center pr-2 ">
-            <!--            <input type="text" class="w-[270px] h-[40px] border border-[#DBDBDB] placeholder:text-[#4D4D4F] placeholder:text-[14px] leading-[20px] rounded-[4px] pl-8 focus:outline-none" placeholder="PNR or mobile number">-->
-            <!--            <img src="../assets/svg/search.svg" class="h-5 w-5 absolute left-[242px]" alt="">-->
             <div
                 class="w-[200px] h-[30px] xl:w-[270px] xl:h-[40px] border border-[#DBDBDB] flex justify-center items-center leading-[20px] rounded-[4px] pl-[9px] overflow-hidden">
               <img alt="" class="h-2 w-2 xl:h-5 xl:w-5" src="../assets/svg/search.svg">
@@ -49,12 +47,13 @@
         </div>
       </div>
       <!-- top nav bar end -->
+
       <!-- body start-->
       <div class="px-[30px] py-[24px]">
 
         <!--        card-->
-        <div class="mt-[16px] rounded-[10px]">
-          <div class="flex justify-end items-center mt-4 xl:mt-6 gap-x-6">
+        <div class="rounded-[10px]">
+          <div class="flex justify-end items-center gap-x-6">
             <button
                 class="flex gap-x-[9px] justify-center items-center border border-[#8D8D8F] bg-transparent text-corporate leading-[14px] xl:leading-[16px] text-[11px] xl:text-[12px] font-[500] py-3 pl-[17px] pr-[24px] rounded-full"><span>
                 <img alt="" class="w-[13px] h-[13px]" src="../assets/svg/print.svg">
@@ -75,7 +74,7 @@
                 <th class="companyTableHead" scope="col" style="border-radius: 8px 0 0 0">
                   pnr
                 </th>
-                <th class="companyTableHead" scope="col">
+                <th class="companyTableHead w-[110px]" scope="col">
                   seats
                 </th>
 
@@ -115,15 +114,15 @@
                     <img alt="" class="w-[5px] h-[8px]" src="../assets/svg/right-black-arrow.svg">
                   </div>
                 </td>
-                <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText">
-                  B1, B2, B3, B4, <br> B5, B6, B7, B8, <br> B9
+                <td class="px-1 leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText">
+                  B1, B2, B3, B4, B5, B6, B7, B8, B9
                 </td>
                 <td class="leading-[20px] text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText ">
                   HYD39J39
                 </td>
                 <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText">
-                  Alamin <br>
-                  (Counter name)
+                  <div>Alamin</div>
+                  <div>(Counter name)</div>
                 </td>
                 <td class="eading-[20px] text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText ">
                   Counter name
@@ -141,6 +140,7 @@
 
                 </td>
               </tr>
+              
               <tr class="border-b border-[#EDEDED]">
                 <td class="text-primaryText border-r border-[#DBDBDB] text-center leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] px-4 py-6"
                     style="border-radius: 0 0 8px 0">
@@ -150,15 +150,15 @@
                     <img alt="" class="w-[5px] h-[8px]" src="../assets/svg/right-black-arrow.svg">
                   </div>
                 </td>
-                <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText">
-                  B1, B2, B3, B4, <br> B5, B6, B7, B8, <br> B9
+                <td class="px-1 leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText">
+                  B1, B2, B3, B4, B5, B6, B7, B8, B9
                 </td>
                 <td class="leading-[20px] text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText ">
                   HYD39J39
                 </td>
                 <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText">
-                  Alamin <br>
-                  (Counter name)
+                  <div>Alamin</div>
+                  <div>(Counter name)</div>
                 </td>
                 <td class="eading-[20px] text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText ">
                   Counter name
@@ -176,6 +176,7 @@
 
                 </td>
               </tr>
+
               <tr class="border-b border-[#EDEDED]">
                 <td class="text-primaryText border-r border-[#DBDBDB] text-center leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] px-4 py-6"
                     style="border-radius: 0 0 8px 0">
@@ -185,15 +186,14 @@
                     <img alt="" class="w-[5px] h-[8px]" src="../assets/svg/right-black-arrow.svg">
                   </div>
                 </td>
-                <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText">
-                  B1, B2, B3, B4, <br> B5, B6, B7, B8, <br> B9
+                <td class="px-1 leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText">
+                  B1, B2, B3, B4, B5, B6, B7, B8, B9
                 </td>
                 <td class="leading-[20px] text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText ">
                   HYD39J39
                 </td>
                 <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText">
-                  Alamin <br>
-                  (Counter name)
+                  Web
                 </td>
                 <td class="eading-[20px] text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText ">
                   Counter name
@@ -211,6 +211,7 @@
 
                 </td>
               </tr>
+
               <tr class="border-b border-[#EDEDED]">
                 <td class="text-primaryText border-r border-[#DBDBDB] text-center leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] px-4 py-6"
                     style="border-radius: 0 0 8px 0">
@@ -220,15 +221,14 @@
                     <img alt="" class="w-[5px] h-[8px]" src="../assets/svg/right-black-arrow.svg">
                   </div>
                 </td>
-                <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText">
-                  B1, B2, B3, B4, <br> B5, B6, B7, B8, <br> B9
+                <td class="px-1 leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText">
+                  B1, B2, B3, B4, B5, B6, B7, B8, B9
                 </td>
                 <td class="leading-[20px] text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText ">
                   HYD39J39
                 </td>
                 <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText">
-                  Alamin <br>
-                  (Counter name)
+                  App
                 </td>
                 <td class="eading-[20px] text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText ">
                   Counter name
@@ -246,6 +246,7 @@
 
                 </td>
               </tr>
+
               <tr class="border-b border-[#EDEDED]">
                 <td class="text-primaryText border-r border-[#DBDBDB] text-center leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] px-4 py-6"
                     style="border-radius: 0 0 8px 0">
@@ -255,15 +256,14 @@
                     <img alt="" class="w-[5px] h-[8px]" src="../assets/svg/right-black-arrow.svg">
                   </div>
                 </td>
-                <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText">
-                  B1, B2, B3, B4, <br> B5, B6, B7, B8, <br> B9
+                <td class="px-1 leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText">
+                  B1, B2, B3, B4, B5, B6, B7, B8, B9
                 </td>
                 <td class="leading-[20px] text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText ">
                   HYD39J39
                 </td>
                 <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText">
-                  Alamin <br>
-                  (Counter name)
+                  36 seater
                 </td>
                 <td class="eading-[20px] text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText ">
                   Counter name
@@ -281,6 +281,7 @@
 
                 </td>
               </tr>
+
               <tr class="border-b border-[#EDEDED]">
                 <td class="text-primaryText border-r border-[#DBDBDB] text-center leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] px-4 py-6"
                     style="border-radius: 0 0 8px 0">
@@ -290,15 +291,49 @@
                     <img alt="" class="w-[5px] h-[8px]" src="../assets/svg/right-black-arrow.svg">
                   </div>
                 </td>
-                <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText">
-                  B1, B2, B3, B4, <br> B5, B6, B7, B8, <br> B9
+                <td class="px-1 leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText">
+                  B1, B2, B3, B4, B5, B6, B7, B8, B9
                 </td>
                 <td class="leading-[20px] text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText ">
                   HYD39J39
                 </td>
                 <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText">
-                  Alamin <br>
-                  (Counter name)
+                  36 seater
+                </td>
+                <td class="eading-[20px] text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText ">
+                  Counter name
+                </td>
+                <td class="border-r border-[#DBDBDB]">
+
+                </td>
+                <td class="border-r border-[#DBDBDB]">
+
+                </td>
+                <td class="border-r border-[#DBDBDB]">
+
+                </td>
+                <td class="border-r border-[#DBDBDB]">
+
+                </td>
+              </tr>
+
+              <tr class="border-b border-[#EDEDED]">
+                <td class="text-primaryText border-r border-[#DBDBDB] text-center leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] px-4 py-6"
+                    style="border-radius: 0 0 8px 0">
+                  <div class="flex gap-x-2 p-2 bg-[#EDEDED] justify-center items-center rounded-[4px]">
+                    <p class="leading-[12px] xl:leading-[16px] text-[10px] font-[600] text-primaryText border-b border-primaryText">
+                      8WXOX3MVGF8UT</p>
+                    <img alt="" class="w-[5px] h-[8px]" src="../assets/svg/right-black-arrow.svg">
+                  </div>
+                </td>
+                <td class="px-1 leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText">
+                  B1, B2, B3, B4, B5, B6, B7, B8, B9
+                </td>
+                <td class="leading-[20px] text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText ">
+                  HYD39J39
+                </td>
+                <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText">
+                  36 seater
                 </td>
                 <td class="eading-[20px] text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText ">
                   Counter name

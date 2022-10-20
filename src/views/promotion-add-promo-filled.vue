@@ -25,9 +25,7 @@
           </div>
         </div>
         <div class="flex gap-x-[24px] p-4 w-1/2 justify-end items-center pr-2 ">
-          <!--            <input type="text" class="w-[270px] h-[40px] border border-[#DBDBDB] placeholder:text-[#4D4D4F] placeholder:text-[14px] leading-[20px] rounded-[4px] pl-8 focus:outline-none" placeholder="PNR or mobile number">-->
-          <!--            <img src="../assets/svg/search.svg" class="h-5 w-5 absolute left-[242px]" alt="">-->
-          <div
+         <div
               class="w-[200px] h-[30px] xl:w-[270px] xl:h-[40px] border border-[#DBDBDB] flex justify-center items-center leading-[20px] rounded-[4px] pl-[9px] overflow-hidden">
             <img alt="" class="h-2 w-2 xl:h-5 xl:w-5" src="../assets/svg/search.svg">
             <input
@@ -46,18 +44,19 @@
       </div>
     </div>
     <!-- top nav bar end -->
+
     <!-- body start-->
     <div class="px-[30px] py-[24px]">
 
       <!--        card-->
-      <div class="mt-[16px] bg-white rounded-[10px]">
+      <div class="bg-white rounded-[10px]">
         <div class="p-4">
           <div class="flex justify-center items-center gap-x-[10px] xl:gap-x-[16px]">
             <div class="w-1/4">
               <p class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]">
                 Bus operator</p>
               <Dropdown v-model="selectedCity" :opti6ns="cities" class="w-full py-[4px] mt-[10px]" optionLabel="name"
-                        placeholder="Desh Travels"/>
+                        placeholder="Select bus operator"/>
             </div>
             <div class="w-1/4">
               <p class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]">
@@ -66,19 +65,19 @@
             </div>
             <div class="w-1/4 relative">
             <div
-                class="absolute bottom-2 left-36 z-50 h-[28px] w-[30px] bg-[#1E88E5] text-white flex justify-center items-center">
+                class="absolute bottom-[6px] left-36 z-50 px-[6px] py-[3px] rounded-[2px] bg-[#1E88E5] text-white flex justify-center items-center">
               <p>+2</p>
             </div>
             <p class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]">
               Route</p>
             <Dropdown v-model="selectedCity" :opti6ns="cities" class="w-full py-[4px] mt-[10px]" optionLabel="name"
-                      placeholder="Dhaka - Rangpur"/>
+                      placeholder="Select routes"/>
           </div>
             <div class="w-1/4">
               <p class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]">
                 Service type</p>
               <Dropdown v-model="selectedCity" :opti6ns="cities" class="w-full py-[4px] mt-[10px]" optionLabel="name"
-                        placeholder="Desh Travels"/>
+                        placeholder="Select service type"/>
             </div>
           </div>
           <div class="flex justify-center items-center gap-x-[10px] xl:gap-x-[16px] mt-[12px] xl:mt-[16px]">
@@ -86,35 +85,35 @@
               <p class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]">
                 Discount type</p>
               <Dropdown v-model="selectedCity" :opti6ns="cities" class="w-full py-[4px] mt-[10px]" optionLabel="name"
-                        placeholder="Fixed"/>
+                        placeholder="Select discount type"/>
             </div>
             <div class="w-1/4">
               <p class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]">
                 Discount amount</p>
-              <input class="createNormalInput" placeholder="Enter promo code" type="text">
+              <input class="createNormalInput" placeholder="Enter amount" type="text">
             </div>
             <div class="w-1/4">
               <p class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]">
                 Discount amount up to</p>
-              <input class="createNormalInput" placeholder="Enter promo code" type="text">
+              <input class="createNormalInput" placeholder="Enter amount" type="text">
             </div>
             <div class="w-1/4">
               <p class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]">
                 Only first time usage</p>
               <Dropdown v-model="selectedCity" :opti6ns="cities" class="w-full py-[4px] mt-[10px]" optionLabel="name"
-                        placeholder="Yes"/>
+                        placeholder="Select option"/>
             </div>
           </div>
           <div class="flex justify-start items-center gap-x-[10px] xl:gap-x-[16px] mt-[12px] xl:mt-[16px]">
             <div class="w-1/4">
               <p class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]">Usage
                 limit for all</p>
-              <input class="createNormalInput" placeholder="Desh Travels" type="text">
+              <input class="createNormalInput" placeholder="Enter amount" type="text">
             </div>
             <div class="w-1/4">
               <p class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]">Usage
                 limit per user</p>
-              <input class="createNormalInput" placeholder="Desh Travels" type="text">
+              <input class="createNormalInput" placeholder="Enter amount" type="text">
             </div>
             <div class="w-1/4">
               <p class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]">
@@ -122,8 +121,8 @@
               <div
                   class="w-full h-[40px] border border-[#DBDBDB] flex justify-between items-center mt-[10px] leading-[20px] rounded-[4px] px-[20px] xl:px-[8px] overflow-hidden">
                 <input
-                    class="outline-none pl-2 placeholder:text-[#4D4D4F] placeholder:text-[14px] placeholder:leading-[20px]"
-                    placeholder="Desh Travels"
+                    class="outline-none placeholder:text-[#4D4D4F] placeholder:text-[14px] placeholder:leading-[20px]"
+                    placeholder="Select date"
                     type="text">
                 <img alt="" class="h-5 w-5" src="../assets/svg/count2.svg">
               </div>
@@ -134,15 +133,15 @@
               <div
                   class="w-full h-[40px] border border-[#DBDBDB] flex justify-between items-center mt-[10px] leading-[20px] rounded-[4px] px-[20px] xl:px-[8px] overflow-hidden">
                 <input
-                    class="outline-none pl-2 placeholder:text-[#4D4D4F] placeholder:text-[14px] placeholder:leading-[20px]"
-                    placeholder="Desh Travels"
+                    class="outline-none placeholder:text-[#4D4D4F] placeholder:text-[14px] placeholder:leading-[20px]"
+                    placeholder="Select date"
                     type="text">
                 <img alt="" class="h-5 w-5" src="../assets/svg/count2.svg">
               </div>
             </div>
           </div>
         </div>
-        <div class="p-4">
+        <div class="px-4 pb-3">
           <div class="w-full">
             <p class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]">
               Description</p>
