@@ -4,13 +4,13 @@
     <div class="flex justify-between items-center">
       <div class="px-[30px] flex flex-col gap-y-[4px]">
         <p class="lg:leading-[16px] xl:leading-[28px] lg:text-[14px] xl:text-[20px] font-[600] text-primaryText">
-          Online/Offline Access</p>
+          Date Range Permission</p>
         <div class="flex justify-center items-center gap-x-[6px] mr-4">
           <p class="text-secondaryText leading-[12px] text-[8px] xl:leading-[16px] xl:text-[12px] font-[400]">
             Action in Bulk</p>
           <img alt="" class="w-1 h-2" src="../assets/svg/bgBack.svg">
           <p class="text-secondaryText leading-[12px] text-[8px] xl:leading-[16px] xl:text-[12px] font-[400]">
-            Online/Offline Access</p>
+            Date range permission</p>
         </div>
       </div>
       <div
@@ -44,29 +44,40 @@
                 v-model="selectedCity"
                 :options="cities"
                 class="w-full py-[4px] mt-[10px] placeholder:text-primaryText placeholder:leading-[16px] placeholder:text-[12px] xl:placeholder:leading-[20px] xl:placeholder:text-[14px]"
-                optionLabel="name" placeholder="All operator"/>
+                optionLabel="name" placeholder="Select bus operator"/>
           </div>
           <div class="w-1/4">
             <p class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]">
-              Trip ID</p>
-            <input class="createNormalInput" placeholder="Trip id" type="text">
+              From</p>
+            <div
+                class="w-full h-[40px] border border-[#DBDBDB] flex justify-between items-center mt-[10px] leading-[20px] rounded-[4px] px-[20px] xl:px-[8px] overflow-hidden">
+              <input
+                  class="outline-none placeholder:text-[#4D4D4F] placeholder:text-[14px] placeholder:leading-[20px]"
+                  placeholder="Select date"
+                  type="text">
+              <img alt="" class="h-5 w-5" src="../assets/svg/count2.svg">
+            </div>
           </div>
           <div class="w-1/4">
-            <p class="text-primaryText leading-[20px] text-[14px] xl:leading-[24px] xl:text-[16px] font-[600]">Route</p>
-            <Dropdown
-                v-model="selectedCity"
-                :options="cities"
-                class="w-full py-[4px] mt-[10px] placeholder:text-primaryText placeholder:leading-[16px] placeholder:text-[12px] xl:placeholder:leading-[20px] xl:placeholder:text-[14px]"
-                optionLabel="name" placeholder="All route"/>
+            <p class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]">
+              To</p>
+            <div
+                class="w-full h-[40px] border border-[#DBDBDB] flex justify-between items-center mt-[10px] leading-[20px] rounded-[4px] px-[20px] xl:px-[8px] overflow-hidden">
+              <input
+                  class="outline-none placeholder:text-[#4D4D4F] placeholder:text-[14px] placeholder:leading-[20px]"
+                  placeholder="Select date"
+                  type="text">
+              <img alt="" class="h-5 w-5" src="../assets/svg/count2.svg">
+            </div>
           </div>
           <div class="w-1/4">
             <p class="text-primaryText leading-[20px] text-[14px] xl:leading-[24px] xl:text-[16px] font-[600]">
-              Status</p>
+              Permission type</p>
             <Dropdown
                 v-model="selectedCity"
                 :options="cities"
                 class="w-full py-[4px] mt-[10px] placeholder:text-primaryText placeholder:leading-[16px] placeholder:text-[12px] xl:placeholder:leading-[20px] xl:placeholder:text-[14px]"
-                optionLabel="name" placeholder="Active"/>
+                optionLabel="name" placeholder="Select permission type"/>
           </div>
         </div>
 
@@ -74,7 +85,7 @@
 
       <div class="flex justify-center pb-4">
         <button
-            class="mt-5 flex gap-x-[9px] justify-center items-center bg-corporate text-white leading-[14px] xl:leading-[16px] text-[11px] xl:text-[12px] font-[500] py-3 pl-[17px] pr-[24px] rounded-full"><span>
+            class="my-1 flex gap-x-[9px] justify-center items-center bg-corporate text-white leading-[14px] xl:leading-[16px] text-[11px] xl:text-[12px] font-[500] py-3 pl-[17px] pr-[24px] rounded-full"><span>
                 <img alt="" class="w-[13px] xl:h-[13px]" src="../assets/svg/white_search.svg">
               </span>Search
         </button>
@@ -141,8 +152,8 @@
       </div>
     </div>
     <div class="mt-4 xl:mt-5 w-[60%]">
-      <div class="flex justify-between items-center">
-        <p class="text-primaryText leading-[16px] xl:leading-[20px] text-[14px] xl:leading-[24px] xl:text-[16px] font-[400] mb-6">
+      <div class="flex justify-between">
+        <p class="text-primaryText text-sm font-[400] mb-6">
           *Last updated on 09:23 AM, 18 July 2022</p>
         <router-link class="flex justify-center items-center gap-x-[10px] text-white leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[500] bg-corporate rounded-full px-[20px] py-[11px] xl:px-[24px] xl:py-[13px]"
                      to="/dateRangePermissionEdit">

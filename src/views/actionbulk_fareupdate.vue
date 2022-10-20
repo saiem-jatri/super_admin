@@ -31,6 +31,7 @@
     </div>
   </div>
   <!-- top nav bar end -->
+
   <!-- body start-->
   <div class="px-[30px] py-[24px]">
     <!--        card-->
@@ -44,7 +45,7 @@
                 v-model="selectedCity"
                 :options="cities"
                 class="w-full py-[4px] mt-[10px] placeholder:text-primaryText placeholder:leading-[16px] placeholder:text-[12px] xl:placeholder:leading-[20px] xl:placeholder:text-[14px]"
-                optionLabel="name" placeholder="All operator"/>
+                optionLabel="name" placeholder="Select bus operator"/>
           </div>
           <div class="w-1/4">
             <p class="text-primaryText leading-[20px] text-[14px] xl:leading-[24px] xl:text-[16px] font-[600]">
@@ -53,7 +54,7 @@
                 v-model="selectedCity"
                 :options="cities"
                 class="w-full py-[4px] mt-[10px] placeholder:text-primaryText placeholder:leading-[16px] placeholder:text-[12px] xl:placeholder:leading-[20px] xl:placeholder:text-[14px]"
-                optionLabel="name" placeholder="All direction"/>
+                optionLabel="name" placeholder="Select bus direction"/>
           </div>
           <div class="w-1/4">
             <p class="text-primaryText leading-[20px] text-[14px] xl:leading-[24px] xl:text-[16px] font-[600]">Route</p>
@@ -61,7 +62,7 @@
                 v-model="selectedCity"
                 :options="cities"
                 class="w-full py-[4px] mt-[10px] placeholder:text-primaryText placeholder:leading-[16px] placeholder:text-[12px] xl:placeholder:leading-[20px] xl:placeholder:text-[14px]"
-                optionLabel="name" placeholder="All route"/>
+                optionLabel="name" placeholder="Select route"/>
           </div>
           <div class="w-1/4">
             <p class="text-primaryText leading-[20px] text-[14px] xl:leading-[24px] xl:text-[16px] font-[600]">
@@ -70,37 +71,76 @@
                 v-model="selectedCity"
                 :options="cities"
                 class="w-full py-[4px] mt-[10px] placeholder:text-primaryText placeholder:leading-[16px] placeholder:text-[12px] xl:placeholder:leading-[20px] xl:placeholder:text-[14px]"
-                optionLabel="name" placeholder="All trips"/>
+                optionLabel="name" placeholder="Select trip"/>
           </div>
         </div>
-
       </div>
 
       <div class="flex justify-center pb-4">
         <button
-            class="mt-5 flex gap-x-[9px] justify-center items-center bg-corporate text-white leading-[14px] xl:leading-[16px] text-[11px] xl:text-[12px] font-[500] py-3 pl-[17px] pr-[24px] rounded-full"><span>
+            class="my-1 flex gap-x-[9px] justify-center items-center bg-corporate text-white leading-[14px] xl:leading-[16px] text-[11px] xl:text-[12px] font-[500] py-3 pl-[17px] pr-[24px] rounded-full"><span>
                 <img alt="" class="w-[13px] xl:h-[13px]" src="../assets/svg/white_search.svg">
               </span>Search
         </button>
       </div>
     </div>
-    <div class="flex justify-start items-center mt-3 xl:mt-4 gap-x-6">
+
+    <div class="flex justify-between items-center mt-4 gap-x-6">
       <div class="w-1/3">
         <div>
           <input id="chooseFile" class="hidden" name="" type="file">
           <label
-              class="w-full bg-white h-[80px] cursor-pointer border border-dashed border-corporateSecondaryBlue mt-[10px] rounded-[4px] flex justify-center items-center"
+              class="w-full bg-white h-[80px] cursor-pointer border border-dashed border-corporateSecondaryBlue rounded-[4px] flex justify-center items-center"
               for="chooseFile">
             <div class="flex gap-x-[8px] items-center">
               <img alt="" class="w-[18px] h-[15px]" src="../assets/svg/file.svg">
-              <p class="text-corporateSecondaryBlue leading-[20px] text-[14px] font-[400]">Upload updated fare</p>
-              <p class="text-corporateSecondaryBlue leading-[20px] text-[14px] font-[400] border-b border-corporateSecondaryBlue">
+              <p class="text-corporateSecondaryBlue leading-[20px] text-[14px] font-[500]">Upload updated fare</p>
+              <p class="text-corporateSecondaryBlue leading-[20px] text-[14px] font-[600] border-b border-corporateSecondaryBlue">
                 Browse file</p>
             </div>
           </label>
         </div>
       </div>
+      <button
+          class="flex gap-x-[9px] justify-center items-center bg-corporate text-white leading-[14px] xl:leading-[16px] text-[11px] xl:text-[12px] font-[500] py-3 pl-[17px] pr-[24px] rounded-full mt-8"><span>
+                <img alt="" class="w-[13px] h-[13px]" src="../assets/svg/export.svg">
+              </span>Export
+      </button>
     </div>
+
+    <!-- Action after file upload -->
+    <div class="flex justify-between items-center mt-4 gap-x-6">
+        <div class="w-1/3">
+          <div
+              class="h-[80px] border border-dashed border-corporateSecondaryBlue rounded-[4px] flex justify-center items-center bg-white">
+            <div class="flex justify-between w-full items-center pl-4 pr-4 2xl:pr-[20px]">
+              <div class="flex w-full items-center gap-x-[10px]">
+                <p class="leading-[20px] xl:leading-[24px] text-[14px] xl:text-[16px] text-primaryText font-[400]">
+                  Updated
+                  fare.file</p>
+                <img alt="" class="w-[20px] h-[20px" src="../assets/svg/border-cross.svg">
+              </div>
+  
+              <input id="chooseFile" class="hidden" name="" type="file">
+              <label class="w-full cursor-pointer rounded-[4px] flex justify-center items-center"
+                     for="chooseFile">
+                <div class="2xl:ml-40">
+                  <p class="text-[#E0293B] leading-[20px] text-[14px] font-[600] border-b border-[#E0293B]">Replace
+                    file</p>
+                </div>
+              </label>
+            </div>
+          </div>
+          <p class="text-sm mt-2">*Last updated 20 mins ago</p>
+        </div>
+        <div class="mt-10">
+          <button
+              class="flex gap-x-[9px] justify-center items-center bg-corporate text-white leading-[14px] xl:leading-[16px] text-[11px] xl:text-[12px] font-[500] py-3 pl-[17px] pr-[24px] rounded-full mt-8"><span>
+                  <img alt="" class="w-[13px] h-[13px]" src="../assets/svg/export.svg">
+                </span>Export
+          </button>
+        </div>
+      </div>
 
     <div class="bg-white rounded-[8px] mt-4">
       <!-- table start -->

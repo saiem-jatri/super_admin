@@ -80,41 +80,6 @@
               <div class="w-1/4">
                 <p class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]">Route</p>
                 <Dropdown v-model="selectedCity" :opti6ns="cities" class="w-full py-[4px] mt-[10px]" optionLabel="name" placeholder="Select route"/>
-                  <div id="modal" class="fixed z-10 overflow-y-auto top-0 w-full left-0 hidden">
-                    <div
-                        class="flex items-center justify-center min-height-100vh pt-4 px-4 pb-20 text-center sm:block sm:p-0">
-                      <div class="fixed inset-0 transition-opacity">
-                        <div class="absolute inset-0 bg-gray-900 opacity-75"/>
-                      </div>
-                      <span class="hidden sm:inline-block sm:align-middle sm:h-screen">&#8203;</span>
-                      <div
-                          aria-labelledby="modal-headline"
-                          aria-modal="true"
-                          class="inline-block align-center bg-white rounded-lg text-left overflow-hidden shadow-xl transform transition-all ease-in-out delay-700 sm:my-8 sm:align-middle sm:max-w-lg sm:w-full"
-                          role="dialog">
-                        <div
-                            class="w-full px-[24px] py-[8px] bg-corporate flex justify-between items-center transition transform ">
-                          <p class="leading-[24px] xl:leading-[28px] text-[18px] xl:text-[20px] font-[500] text-white">
-                            Migrate Trip</p>
-                          <img alt="" class="h-5 w-5 cursor-pointer" src="../assets/svg/modal_cross.svg"
-                              @click="toggleModal()">
-                        </div>
-                        <p class="px-[24px] mt-5 text-center">Are you sure you want to migrate this trip from trip 1 <br> to
-                          trip
-                          2</p>
-
-                        <div class="px-4 py-3 flex justify-center items-center gap-x-[16px] mt-8">
-                          <button class="py-2 px-8 bg-[#E0293B] text-white rounded-full mr-2"
-                                  type="button"
-                                  @click="toggleModal()"><i class="fas fa-times"></i> Cancel
-                          </button>
-                          <button class="py-2 px-6 bg-corporate text-white rounded-full mr-2" type="button"><i
-                              class="fas fa-plus"></i>Migrate trip
-                          </button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
               </div>
               <div class="w-1/4">
                 <p class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]">
@@ -407,11 +372,6 @@ export default {
         // {name: 'Istanbul', code: 'IST'},
         // {name: 'Paris', code: 'PRS'}
       ]
-    }
-  },
-  methods: {
-    toggleModal() {
-      document.getElementById('modal').classList.toggle('hidden')
     }
   }
 }

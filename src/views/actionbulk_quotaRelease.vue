@@ -44,7 +44,7 @@
                 v-model="selectedCity"
                 :options="cities"
                 class="w-full py-[4px] mt-[10px] placeholder:text-primaryText placeholder:leading-[16px] placeholder:text-[12px] xl:placeholder:leading-[20px] xl:placeholder:text-[14px]"
-                optionLabel="name" placeholder="Jatri"/>
+                optionLabel="name" placeholder="Select quota type"/>
           </div>
           <div class="w-1/4">
             <p class="text-primaryText leading-[20px] text-[14px] xl:leading-[24px] xl:text-[16px] font-[600]">
@@ -61,7 +61,7 @@
                 v-model="selectedCity"
                 :options="cities"
                 class="w-full py-[4px] mt-[10px] placeholder:text-primaryText placeholder:leading-[16px] placeholder:text-[12px] xl:placeholder:leading-[20px] xl:placeholder:text-[14px]"
-                optionLabel="name" placeholder="All route"/>
+                optionLabel="name" placeholder="Select route"/>
           </div>
           <div class="w-1/4">
             <p class="text-primaryText leading-[20px] text-[14px] xl:leading-[24px] xl:text-[16px] font-[600]">
@@ -70,43 +70,43 @@
                 v-model="selectedCity"
                 :options="cities"
                 class="w-full py-[4px] mt-[10px] placeholder:text-primaryText placeholder:leading-[16px] placeholder:text-[12px] xl:placeholder:leading-[20px] xl:placeholder:text-[14px]"
-                optionLabel="name" placeholder="All trips"/>
+                optionLabel="name" placeholder="Select trip"/>
           </div>
         </div>
 
       </div>
 
-      <div class="flex justify-between p-4">
+      <div class="flex justify-between px-4 pb-4">
         <div class="w-[75%] flex gap-x-4">
-          <div class="w-1/2">
+          <div class="w-[32.3%]">
             <p class="text-primaryText leading-[20px] text-[14px] xl:leading-[24px] xl:text-[16px] font-[600]">
               Date type</p>
             <Dropdown
                 v-model="selectedCity"
                 :options="cities"
                 class="w-full py-[4px] mt-[10px] placeholder:text-primaryText placeholder:leading-[16px] placeholder:text-[12px] xl:placeholder:leading-[20px] xl:placeholder:text-[14px]"
-                optionLabel="name" placeholder="Journey date"/>
+                optionLabel="name" placeholder="Select date type"/>
           </div>
-          <div class="w-1/2">
+          <div class="w-[32.3%]">
             <p class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]">
               From</p>
             <div
                 class="w-full h-[40px] border border-[#DBDBDB] flex justify-between items-center mt-[10px] leading-[20px] rounded-[4px] px-[20px] xl:px-[8px] overflow-hidden">
               <input
-                  class="outline-none pl-2 placeholder:text-[#4D4D4F] placeholder:text-[14px] placeholder:leading-[20px]"
+                  class="outline-non placeholder:text-[#4D4D4F] placeholder:text-[14px] placeholder:leading-[20px]"
                   placeholder="Select date"
                   type="text">
               <img alt="" class="h-5 w-5" src="../assets/svg/count2.svg">
             </div>
           </div>
-          <div class="w-1/2">
+          <div class="w-[32.3%]">
             <p class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]">
               To</p>
             <div
                 class="w-full h-[40px] border border-[#DBDBDB] flex justify-between items-center mt-[10px] leading-[20px] rounded-[4px] px-[20px] xl:px-[8px] overflow-hidden">
               <input
-                  class="outline-none pl-2 placeholder:text-[#4D4D4F] placeholder:text-[14px] placeholder:leading-[20px]"
-                  placeholder="29 July 2022"
+                  class="outline-none placeholder:text-[#4D4D4F] placeholder:text-[14px] placeholder:leading-[20px]"
+                  placeholder="Select date"
                   type="text">
               <img alt="" class="h-5 w-5" src="../assets/svg/count2.svg">
             </div>
@@ -131,12 +131,12 @@
             Bus operator
           </th>
           <th class="companyTableHead" scope="col">
-            Bus operator
+            route
           </th>
           <th class="companyTableHead" scope="col">
             trip
           </th>
-          <th class="companyTableHead" scope="col">
+          <th class="companyTableHead w-[257px]" scope="col">
             qouta seats
           </th>
 
@@ -172,7 +172,7 @@
             Dhaka-Tangail-Bogura-Rangpur
           </td>
           <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-[18px] px-2 text-start">
-            092, Dhaka - Rangpur
+            Trip heading/Name
           </td>
           <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-[18px] px-2 text-start">
             7 seats : [B1], [B2], [B3], [B4], [C1],[C2], [C3]
@@ -190,10 +190,10 @@
             Dhaka-Tangail-Bogura-Rangpur
           </td>
           <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-[18px] px-2 text-start">
-            092, Dhaka - Rangpur
+            Trip heading/Name
           </td>
           <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-[18px] px-2 text-start">
-            7 seats : [B1], [B2], [B3], [B4], [C1],[C2], [C3]
+            Qouta released
           </td>
 
         </tr>
@@ -208,10 +208,10 @@
             Dhaka-Tangail-Bogura-Rangpur
           </td>
           <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-[18px] px-2 text-start">
-            092, Dhaka - Rangpur
+            Trip heading/Name
           </td>
           <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-[18px] px-2 text-start">
-            7 seats : [B1], [B2], [B3], [B4], [C1],[C2], [C3]
+            Qouta released
           </td>
 
         </tr>
@@ -226,10 +226,10 @@
             Dhaka-Tangail-Bogura-Rangpur
           </td>
           <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-[18px] px-2 text-start">
-            092, Dhaka - Rangpur
+            Trip heading/Name
           </td>
           <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText py-[18px] px-2 text-start">
-            7 seats : [B1], [B2], [B3], [B4], [C1],[C2], [C3]
+            Qouta released
           </td>
 
         </tr>
