@@ -22,8 +22,6 @@
         </div>
       </div>
       <div class="flex gap-x-[24px] p-4 w-1/2 justify-end items-center pr-2 ">
-        <!--            <input type="text" class="w-[270px] h-[40px] border border-[#DBDBDB] placeholder:text-[#4D4D4F] placeholder:text-[14px] leading-[20px] rounded-[4px] pl-8 focus:outline-none" placeholder="PNR or mobile number">-->
-        <!--            <img src="../assets/svg/search.svg" class="h-5 w-5 absolute left-[242px]" alt="">-->
         <div
             class="w-[200px] h-[30px] xl:w-[270px] xl:h-[40px] border border-[#DBDBDB] flex justify-center items-center leading-[20px] rounded-[4px] pl-[9px] overflow-hidden">
           <img alt="" class="h-2 w-2 xl:h-5 xl:w-5" src="../assets/svg/search.svg">
@@ -43,28 +41,29 @@
     </div>
   </div>
   <!-- top nav bar end -->
+
   <!-- body start-->
   <div class="px-[30px] py-[24px]">
 
-    <!--        card-->
-    <div class="mt-[16px] bg-white rounded-[10px]">
-      <div class="p-4 flex flex-col">
+    <!--card-->
+    <div class="bg-white rounded-[10px]">
+      <div class="px-4 pt-4 flex flex-col">
         <div class="flex justify-center items-center gap-x-[10px] xl:gap-x-[16px]">
           <div class="w-1/4">
             <p class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]">
-              Class/Type</p>
-            <input class="createNormalInput" placeholder="Enter amount" type="text">
+              Brand</p>
+            <input class="createNormalInput" placeholder="Enter bus brand name" type="text">
           </div>
           <div class="w-1/4">
             <p class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]">
               Display name</p>
-            <input class="createNormalInput" placeholder="Enter amount" type="text">
+            <input class="createNormalInput" placeholder="Enter bus display name" type="text">
           </div>
           <div class="w-1/4">
             <p class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]">
               Class/Type</p>
-            <Dropdown v-model="selectedCity" :opti6ns="cities" class="w-full py-[4px] mt-[10px]" optionLabel="name"
-                      placeholder="Economy class"/>
+            <Dropdown v-model="selectedCity" :options="cities" class="w-full py-[4px] mt-[10px]" optionLabel="name"
+                      placeholder="Select class"/>
           </div>
           <div class="w-1/4">
             <p class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]">
@@ -88,17 +87,10 @@
         </div>
         <hr class="px-4 border-t border-[#DBDBDB] mt-4">
         <!--          offer access-->
-
-        <div class="px-4 py-4 mt-4">
-          <p class="leading-[20px] xl:leading-[24px] text-[14px] xl:text-[16px] text-primaryText font-[600]">Bus
+        <div class="pt-4">
+          <p class="leading-[20px] xl:leading-[24px] text-[14px] xl:text-[16px] text-primaryText font-[600] mb-2">Bus
             facilities</p>
           <div class="flex justify-start gap-x-[19px]">
-            <div class="form-group mt-3 flex w-[16.66%]">
-              <input id="fare" type="checkbox">
-              <label
-                  class="text-primaryText leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px] font-[400]"
-                  for="fare">Jatri Web</label>
-            </div>
             <div class="form-group mt-3 flex w-[16.66%]">
               <input id="fare" type="checkbox">
               <label
@@ -136,14 +128,8 @@
                   for="fare">Leg rest</label>
             </div>
           </div>
-          <hr class="px-4 border-t border-dashed border-[#DBDBDB] mt-4">
-          <div class="flex justify-start gap-x-[19px] mt-4">
-            <div class="form-group mt-3 flex w-[16.66%]">
-              <input id="fare" type="checkbox">
-              <label
-                  class="text-primaryText leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px] font-[400]"
-                  for="fare">Jatri Web</label>
-            </div>
+          <hr class="px-4 pt-1 border-t border-dashed border-[#DBDBDB]">
+          <div class="flex justify-start gap-x-[19px]">
             <div class="form-group mt-3 flex w-[16.66%]">
               <input id="fare" type="checkbox">
               <label
@@ -184,7 +170,7 @@
         </div>
       </div>
       <div class="px-4">
-        <div class="rounded-[4px] px-4">
+        <div class="rounded-[4px]">
           <hr class="border-t border-corporateBorder mt-1">
           <div class="pt-[8px] pb-[8px]">
             <div class="flex divide-x divide-corporateBorder">
@@ -192,7 +178,7 @@
                 <div class="py-[8px] pr-[24px]">
                   <p class="leading-[20px] xl:leading-[24px] text-[14px] xl:text-[16px] font-[600] text-primaryText">
                     Add seat</p>
-                  <div class="flex gap-x-2 mt-4 items-center">
+                  <div class="flex gap-x-4 mt-4 items-center">
                     <p class="text-primaryText leading-[16px] xl:leading-[20px] text-[12px] xl:text-[14px]">Select
                       row:</p>
                     <div>
@@ -221,388 +207,394 @@
                   <div class="flex justify-center items-center mt-4 xl:mt-5">
                     <router-link
                         class="bg-corporate bg-opacity-30 flex gap-x-3 justify-center items-center text-white rounded-full w-[120px] h-[40px] mr-4 leading-[12px] text-[10px] xl:leading-[16px] xl:text-[12px] w-1/5"
-                        to="/busCreate">
+                        to="">
                       <span><img alt="" class="h-[9.33px] w-[9.33px]" src="../assets/svg/plus.svg"></span>Add seats
                     </router-link>
                   </div>
-
                 </div>
               </div>
+
               <div class="w-[45%]">
                 <div class="py-2 pl-[16px]">
-                  <p class="leading-[20px] xl:leading-[24px] text-[14px] xl:text-[16px] font-[600] text-primaryText">
-                    Seat layout preview</p>
+                  <div class="flex justify-between">
+                    <p class="leading-[20px] xl:leading-[24px] text-[14px] xl:text-[16px] font-[600] text-primaryText">
+                      Seat layout preview</p>
+                    <button class="flex gap-x-[9px] items-center">
+                      <img alt="" class="w-[13px]" src="../assets/svg/reset.svg">
+                      <p class="text-corporateError leading-[14px] xl:leading-[16px] text-[12px]">Reset</p>
+                    </button>
+                  </div>
                   <div class="flex gap-x-[30px] 2xl:gap-x-[50px] items-center mt-4">
                     <p class="w-[20%] leading-[14px] xl:leading-[16px] text-[12px] text-[#676769] font-[400]">Ex 2</p>
                     <div class="flex gap-x-[20px] xl:gap-x-[26px] justify-start w-[80%]">
                       <div
-                          class="bg-[#EDEDED] w-[40px] xl:w-[50px] h-[26px] xl:h-[36px] focus:outline-none text-center text-[12px] text-center flex items-center justify-center">
-                        <p>A1</p>
+                          class="bg-[#EDEDED] w-[40px] xl:w-[50px] h-[26px] xl:h-[36px] focus:outline-none text-center text-[12px] flex items-center justify-center rounded-[2px]">
+                        <p><span class="opacity-0">A1</span></p>
                       </div>
                       <div
-                          class="bg-[#EDEDED] w-[40px] xl:w-[50px] h-[26px] xl:h-[36px] focus:outline-none text-center text-[12px] text-center flex items-center justify-center">
-                        <p>A2</p>
+                          class="bg-[#EDEDED] w-[40px] xl:w-[50px] h-[26px] xl:h-[36px] focus:outline-none text-center text-[12px] flex items-center justify-center rounded-[2px]">
+                        <p><span class="opacity-0">A2</span></p>
                       </div>
                       <div
-                          class="bg-[#EDEDED] w-[40px] xl:w-[50px] h-[26px] xl:h-[36px] focus:outline-none text-center text-[12px] text-center flex items-center justify-center">
-                        <p>A3</p>
+                          class="bg-[#EDEDED] w-[40px] xl:w-[50px] h-[26px] xl:h-[36px] focus:outline-none text-center text-[12px] flex items-center justify-center rounded-[2px]">
+                          <p><span class="opacity-0">A3</span></p>
                       </div>
                       <div
-                          class="bg-[#EDEDED] w-[40px] xl:w-[50px] h-[26px] xl:h-[36px] focus:outline-none text-center text-[12px] text-center flex items-center justify-center">
-                        <p>A4</p>
+                          class="bg-[#EDEDED] w-[40px] xl:w-[50px] h-[26px] xl:h-[36px] focus:outline-none text-center text-[12px] flex items-center justify-center rounded-[2px]">
+                          <p><span class="opacity-0">A4</span></p>
                       </div>
                       <div
-                          class="bg-[#EDEDED] w-[40px] xl:w-[50px] h-[26px] xl:h-[36px] focus:outline-none text-center text-[12px] text-center flex items-center justify-center">
-                        <p>A5</p>
+                          class="bg-[#EDEDED] w-[40px] xl:w-[50px] h-[26px] xl:h-[36px] focus:outline-none text-center text-[12px] flex items-center justify-center rounded-[2px]">
+                          <p><span class="opacity-0">A5</span></p>
                       </div>
                     </div>
                   </div>
-                  <div class="flex gap-x-[30px] 2xl:gap-x-[50px] items-center mt-4">
+                  <div class="flex gap-x-[30px] 2xl:gap-x-[50px] items-center mt-3">
                     <p class="w-[20%] leading-[14px] xl:leading-[16px] text-[12px] text-[#676769] font-[400]">Ex 1</p>
                     <div class="flex gap-x-[20px] xl:gap-x-[26px] justify-start w-[80%]">
                       <div
-                          class="bg-[#f04935] text-white w-[40px] xl:w-[50px] h-[26px] xl:h-[36px] focus:outline-none text-center text-[12px] text-center flex items-center justify-center">
+                          class="bg-[#f04935] text-white w-[40px] xl:w-[50px] h-[26px] xl:h-[36px] focus:outline-none text-center text-[12px] flex items-center justify-center rounded-[2px]">
                         <p>A1</p>
                       </div>
                       <div
-                          class="bg-[#f04935] text-white w-[40px] xl:w-[50px] h-[26px] xl:h-[36px] focus:outline-none text-center text-[12px] text-center flex items-center justify-center">
+                          class="bg-[#f04935] text-white w-[40px] xl:w-[50px] h-[26px] xl:h-[36px] focus:outline-none text-center text-[12px] flex items-center justify-center rounded-[2px]">
                         <p>A2</p>
                       </div>
                       <div
-                          class="bg-[#EDEDED] text-primaryText w-[40px] xl:w-[50px] h-[26px] xl:h-[36px] focus:outline-none text-center text-[12px] text-center flex items-center justify-center">
+                          class="bg-[#EDEDED] text-primaryText w-[40px] xl:w-[50px] h-[26px] xl:h-[36px] focus:outline-none text-center text-[12px] flex items-center justify-center rounded-[2px]">
                         <p>A3</p>
                       </div>
                       <div
-                          class="bg-[#f04935] text-white w-[40px] xl:w-[50px] h-[26px] xl:h-[36px] focus:outline-none text-center text-[12px] text-center flex items-center justify-center">
+                          class="bg-[#f04935] text-white w-[40px] xl:w-[50px] h-[26px] xl:h-[36px] focus:outline-none text-center text-[12px] flex items-center justify-center rounded-[2px]">
                         <p>A4</p>
                       </div>
                       <div
-                          class="bg-[#f04935] text-white w-[40px] xl:w-[50px] h-[26px] xl:h-[36px] focus:outline-none text-center text-[12px] text-center flex items-center justify-center">
+                          class="bg-[#f04935] text-white w-[40px] xl:w-[50px] h-[26px] xl:h-[36px] focus:outline-none text-center text-[12px] flex items-center justify-center rounded-[2px]">
                         <p>A5</p>
                       </div>
                     </div>
                   </div>
-                  <div class="flex gap-x-[30px] 2xl:gap-x-[50px] items-center mt-4">
+                  <div class="flex gap-x-[30px] 2xl:gap-x-[50px] items-center mt-3">
                     <p class="w-[20%] leading-[14px] xl:leading-[16px] text-[12px] text-[#676769] font-[400]">Ex 1</p>
                     <div class="flex gap-x-[20px] xl:gap-x-[26px] justify-start w-[80%]">
                       <div
-                          class="bg-[#f04935] text-white w-[40px] xl:w-[50px] h-[26px] xl:h-[36px] focus:outline-none text-center text-[12px] text-center flex items-center justify-center">
+                          class="bg-[#f04935] text-white w-[40px] xl:w-[50px] h-[26px] xl:h-[36px] focus:outline-none text-center text-[12px] flex items-center justify-center rounded-[2px]">
                         <p>A1</p>
                       </div>
                       <div
-                          class="bg-[#f04935] text-white w-[40px] xl:w-[50px] h-[26px] xl:h-[36px] focus:outline-none text-center text-[12px] text-center flex items-center justify-center">
+                          class="bg-[#f04935] text-white w-[40px] xl:w-[50px] h-[26px] xl:h-[36px] focus:outline-none text-center text-[12px] flex items-center justify-center rounded-[2px]">
                         <p>A2</p>
                       </div>
                       <div
-                          class="bg-[#EDEDED] text-primaryText w-[40px] xl:w-[50px] h-[26px] xl:h-[36px] focus:outline-none text-center text-[12px] text-center flex items-center justify-center">
+                          class="bg-[#EDEDED] text-primaryText w-[40px] xl:w-[50px] h-[26px] xl:h-[36px] focus:outline-none text-center text-[12px] flex items-center justify-center rounded-[2px]">
                         <p>A3</p>
                       </div>
                       <div
-                          class="bg-[#f04935] text-white w-[40px] xl:w-[50px] h-[26px] xl:h-[36px] focus:outline-none text-center text-[12px] text-center flex items-center justify-center">
+                          class="bg-[#f04935] text-white w-[40px] xl:w-[50px] h-[26px] xl:h-[36px] focus:outline-none text-center text-[12px] flex items-center justify-center rounded-[2px]">
                         <p>A4</p>
                       </div>
                       <div
-                          class="bg-[#f04935] text-white w-[40px] xl:w-[50px] h-[26px] xl:h-[36px] focus:outline-none text-center text-[12px] text-center flex items-center justify-center">
+                          class="bg-[#f04935] text-white w-[40px] xl:w-[50px] h-[26px] xl:h-[36px] focus:outline-none text-center text-[12px] flex items-center justify-center rounded-[2px]">
                         <p>A5</p>
                       </div>
                     </div>
                   </div>
-                  <div class="flex gap-x-[30px] 2xl:gap-x-[50px] items-center mt-4">
+                  <div class="flex gap-x-[30px] 2xl:gap-x-[50px] items-center mt-3">
                     <p class="w-[20%] leading-[14px] xl:leading-[16px] text-[12px] text-[#676769] font-[400]">Ex 1</p>
                     <div class="flex gap-x-[20px] xl:gap-x-[26px] justify-start w-[80%]">
                       <div
-                          class="bg-[#f04935] text-white w-[40px] xl:w-[50px] h-[26px] xl:h-[36px] focus:outline-none text-center text-[12px] text-center flex items-center justify-center">
+                          class="bg-[#f04935] text-white w-[40px] xl:w-[50px] h-[26px] xl:h-[36px] focus:outline-none text-center text-[12px] flex items-center justify-center rounded-[2px]">
                         <p>A1</p>
                       </div>
                       <div
-                          class="bg-[#f04935] text-white w-[40px] xl:w-[50px] h-[26px] xl:h-[36px] focus:outline-none text-center text-[12px] text-center flex items-center justify-center">
+                          class="bg-[#f04935] text-white w-[40px] xl:w-[50px] h-[26px] xl:h-[36px] focus:outline-none text-center text-[12px]  flex items-center justify-center rounded-[2px]">
                         <p>A2</p>
                       </div>
                       <div
-                          class="bg-[#EDEDED] text-primaryText w-[40px] xl:w-[50px] h-[26px] xl:h-[36px] focus:outline-none text-center text-[12px] text-center flex items-center justify-center">
+                          class="bg-[#EDEDED] text-primaryText w-[40px] xl:w-[50px] h-[26px] xl:h-[36px] focus:outline-none text-center text-[12px] flex items-center justify-center rounded-[2px]">
                         <p>A3</p>
                       </div>
                       <div
-                          class="bg-[#f04935] text-white w-[40px] xl:w-[50px] h-[26px] xl:h-[36px] focus:outline-none text-center text-[12px] text-center flex items-center justify-center">
+                          class="bg-[#f04935] text-white w-[40px] xl:w-[50px] h-[26px] xl:h-[36px] focus:outline-none text-center text-[12px] flex items-center justify-center rounded-[2px]">
                         <p>A4</p>
                       </div>
                       <div
-                          class="bg-[#f04935] text-white w-[40px] xl:w-[50px] h-[26px] xl:h-[36px] focus:outline-none text-center text-[12px] text-center flex items-center justify-center">
+                          class="bg-[#f04935] text-white w-[40px] xl:w-[50px] h-[26px] xl:h-[36px] focus:outline-none text-center text-[12px] flex items-center justify-center rounded-[2px]">
                         <p>A5</p>
                       </div>
                     </div>
                   </div>
-                  <div class="flex gap-x-[30px] 2xl:gap-x-[50px] items-center mt-4">
+                  <div class="flex gap-x-[30px] 2xl:gap-x-[50px] items-center mt-3">
                     <p class="w-[20%] leading-[14px] xl:leading-[16px] text-[12px] text-[#676769] font-[400]">Ex 1</p>
                     <div class="flex gap-x-[20px] xl:gap-x-[26px] justify-start w-[80%]">
                       <div
-                          class="bg-[#f04935] text-white w-[40px] xl:w-[50px] h-[26px] xl:h-[36px] focus:outline-none text-center text-[12px] text-center flex items-center justify-center">
+                          class="bg-[#f04935] text-white w-[40px] xl:w-[50px] h-[26px] xl:h-[36px] focus:outline-none text-center text-[12px] flex items-center justify-center rounded-[2px]">
                         <p>A1</p>
                       </div>
                       <div
-                          class="bg-[#f04935] text-white w-[40px] xl:w-[50px] h-[26px] xl:h-[36px] focus:outline-none text-center text-[12px] text-center flex items-center justify-center">
+                          class="bg-[#f04935] text-white w-[40px] xl:w-[50px] h-[26px] xl:h-[36px] focus:outline-none text-center text-[12px] flex items-center justify-center rounded-[2px]">
                         <p>A2</p>
                       </div>
                       <div
-                          class="bg-[#EDEDED] text-primaryText w-[40px] xl:w-[50px] h-[26px] xl:h-[36px] focus:outline-none text-center text-[12px] text-center flex items-center justify-center">
+                          class="bg-[#EDEDED] text-primaryText w-[40px] xl:w-[50px] h-[26px] xl:h-[36px] focus:outline-none text-center text-[12px] flex items-center justify-center rounded-[2px]">
                         <p>A3</p>
                       </div>
                       <div
-                          class="bg-[#f04935] text-white w-[40px] xl:w-[50px] h-[26px] xl:h-[36px] focus:outline-none text-center text-[12px] text-center flex items-center justify-center">
+                          class="bg-[#f04935] text-white w-[40px] xl:w-[50px] h-[26px] xl:h-[36px] focus:outline-none text-center text-[12px] flex items-center justify-center rounded-[2px]">
                         <p>A4</p>
                       </div>
                       <div
-                          class="bg-[#f04935] text-white w-[40px] xl:w-[50px] h-[26px] xl:h-[36px] focus:outline-none text-center text-[12px] text-center flex items-center justify-center">
+                          class="bg-[#f04935] text-white w-[40px] xl:w-[50px] h-[26px] xl:h-[36px] focus:outline-none text-center text-[12px] flex items-center justify-center rounded-[2px]">
                         <p>A5</p>
                       </div>
                     </div>
                   </div>
-                  <div class="flex gap-x-[30px] 2xl:gap-x-[50px] items-center mt-4">
+                  <div class="flex gap-x-[30px] 2xl:gap-x-[50px] items-center mt-3">
                     <p class="w-[20%] leading-[14px] xl:leading-[16px] text-[12px] text-[#676769] font-[400]">Ex 1</p>
                     <div class="flex gap-x-[20px] xl:gap-x-[26px] justify-start w-[80%]">
                       <div
-                          class="bg-[#f04935] text-white w-[40px] xl:w-[50px] h-[26px] xl:h-[36px] focus:outline-none text-center text-[12px] text-center flex items-center justify-center">
+                          class="bg-[#f04935] text-white w-[40px] xl:w-[50px] h-[26px] xl:h-[36px] focus:outline-none text-center text-[12px] flex items-center justify-center rounded-[2px]">
                         <p>A1</p>
                       </div>
                       <div
-                          class="bg-[#f04935] text-white w-[40px] xl:w-[50px] h-[26px] xl:h-[36px] focus:outline-none text-center text-[12px] text-center flex items-center justify-center">
+                          class="bg-[#f04935] text-white w-[40px] xl:w-[50px] h-[26px] xl:h-[36px] focus:outline-none text-center text-[12px] flex items-center justify-center rounded-[2px]">
                         <p>A2</p>
                       </div>
                       <div
-                          class="bg-[#EDEDED] text-primaryText w-[40px] xl:w-[50px] h-[26px] xl:h-[36px] focus:outline-none text-center text-[12px] text-center flex items-center justify-center">
+                          class="bg-[#EDEDED] text-primaryText w-[40px] xl:w-[50px] h-[26px] xl:h-[36px] focus:outline-none text-center text-[12px] flex items-center justify-center rounded-[2px]">
                         <p>A3</p>
                       </div>
                       <div
-                          class="bg-[#f04935] text-white w-[40px] xl:w-[50px] h-[26px] xl:h-[36px] focus:outline-none text-center text-[12px] text-center flex items-center justify-center">
+                          class="bg-[#f04935] text-white w-[40px] xl:w-[50px] h-[26px] xl:h-[36px] focus:outline-none text-center text-[12px] flex items-center justify-center rounded-[2px]">
                         <p>A4</p>
                       </div>
                       <div
-                          class="bg-[#f04935] text-white w-[40px] xl:w-[50px] h-[26px] xl:h-[36px] focus:outline-none text-center text-[12px] text-center flex items-center justify-center">
+                          class="bg-[#f04935] text-white w-[40px] xl:w-[50px] h-[26px] xl:h-[36px] focus:outline-none text-center text-[12px] flex items-center justify-center rounded-[2px]">
                         <p>A5</p>
                       </div>
                     </div>
                   </div>
-                  <div class="flex gap-x-[30px] 2xl:gap-x-[50px] items-center mt-4">
+                  <div class="flex gap-x-[30px] 2xl:gap-x-[50px] items-center mt-3">
                     <p class="w-[20%] leading-[14px] xl:leading-[16px] text-[12px] text-[#676769] font-[400]">Ex 1</p>
                     <div class="flex gap-x-[20px] xl:gap-x-[26px] justify-start w-[80%]">
                       <div
-                          class="bg-[#f04935] text-white w-[40px] xl:w-[50px] h-[26px] xl:h-[36px] focus:outline-none text-center text-[12px] text-center flex items-center justify-center">
+                          class="bg-[#f04935] text-white w-[40px] xl:w-[50px] h-[26px] xl:h-[36px] focus:outline-none text-center text-[12px] flex items-center justify-center rounded-[2px]">
                         <p>A1</p>
                       </div>
                       <div
-                          class="bg-[#f04935] text-white w-[40px] xl:w-[50px] h-[26px] xl:h-[36px] focus:outline-none text-center text-[12px] text-center flex items-center justify-center">
+                          class="bg-[#f04935] text-white w-[40px] xl:w-[50px] h-[26px] xl:h-[36px] focus:outline-none text-center text-[12px] flex items-center justify-center rounded-[2px]">
                         <p>A2</p>
                       </div>
                       <div
-                          class="bg-[#EDEDED] text-primaryText w-[40px] xl:w-[50px] h-[26px] xl:h-[36px] focus:outline-none text-center text-[12px] text-center flex items-center justify-center">
+                          class="bg-[#EDEDED] text-primaryText w-[40px] xl:w-[50px] h-[26px] xl:h-[36px] focus:outline-none text-center text-[12px] flex items-center justify-center rounded-[2px]">
                         <p>A3</p>
                       </div>
                       <div
-                          class="bg-[#f04935] text-white w-[40px] xl:w-[50px] h-[26px] xl:h-[36px] focus:outline-none text-center text-[12px] text-center flex items-center justify-center">
+                          class="bg-[#f04935] text-white w-[40px] xl:w-[50px] h-[26px] xl:h-[36px] focus:outline-none text-center text-[12px] flex items-center justify-center rounded-[2px]">
                         <p>A4</p>
                       </div>
                       <div
-                          class="bg-[#f04935] text-white w-[40px] xl:w-[50px] h-[26px] xl:h-[36px] focus:outline-none text-center text-[12px] text-center flex items-center justify-center">
+                          class="bg-[#f04935] text-white w-[40px] xl:w-[50px] h-[26px] xl:h-[36px] focus:outline-none text-center text-[12px]  flex items-center justify-center rounded-[2px]">
                         <p>A5</p>
                       </div>
                     </div>
                   </div>
-                  <div class="flex gap-x-[30px] 2xl:gap-x-[50px] items-center mt-4">
+                  <div class="flex gap-x-[30px] 2xl:gap-x-[50px] items-center mt-3">
                     <p class="w-[20%] leading-[14px] xl:leading-[16px] text-[12px] text-[#676769] font-[400]">Ex 1</p>
                     <div class="flex gap-x-[20px] xl:gap-x-[26px] justify-start w-[80%]">
                       <div
-                          class="bg-[#f04935] text-white w-[40px] xl:w-[50px] h-[26px] xl:h-[36px] focus:outline-none text-center text-[12px] text-center flex items-center justify-center">
+                          class="bg-[#f04935] text-white w-[40px] xl:w-[50px] h-[26px] xl:h-[36px] focus:outline-none text-center text-[12px] flex items-center justify-center rounded-[2px]">
                         <p>A1</p>
                       </div>
                       <div
-                          class="bg-[#f04935] text-white w-[40px] xl:w-[50px] h-[26px] xl:h-[36px] focus:outline-none text-center text-[12px] text-center flex items-center justify-center">
+                          class="bg-[#f04935] text-white w-[40px] xl:w-[50px] h-[26px] xl:h-[36px] focus:outline-none text-center text-[12px] flex items-center justify-center rounded-[2px]">
                         <p>A2</p>
                       </div>
                       <div
-                          class="bg-[#f04935] text-white w-[40px] xl:w-[50px] h-[26px] xl:h-[36px] focus:outline-none text-center text-[12px] text-center flex items-center justify-center">
+                          class="bg-[#f04935] text-white w-[40px] xl:w-[50px] h-[26px] xl:h-[36px] focus:outline-none text-center text-[12px] flex items-center justify-center rounded-[2px]">
                         <p>A3</p>
                       </div>
                       <div
-                          class="bg-[#f04935] text-white w-[40px] xl:w-[50px] h-[26px] xl:h-[36px] focus:outline-none text-center text-[12px] text-center flex items-center justify-center">
+                          class="bg-[#f04935] text-white w-[40px] xl:w-[50px] h-[26px] xl:h-[36px] focus:outline-none text-center text-[12px] flex items-center justify-center rounded-[2px]">
                         <p>A4</p>
                       </div>
                       <div
-                          class="bg-[#f04935] text-white w-[40px] xl:w-[50px] h-[26px] xl:h-[36px] focus:outline-none text-center text-[12px] text-center flex items-center justify-center">
+                          class="bg-[#f04935] text-white w-[40px] xl:w-[50px] h-[26px] xl:h-[36px] focus:outline-none text-center text-[12px] flex items-center justify-center rounded-[2px]">
                         <p>A5</p>
                       </div>
                     </div>
                   </div>
-                  <div class="flex gap-x-[30px] 2xl:gap-x-[50px] items-center mt-4">
+                  <div class="flex gap-x-[30px] 2xl:gap-x-[50px] items-center mt-3">
                     <p class="w-[20%] leading-[14px] xl:leading-[16px] text-[12px] text-[#676769] font-[400]">Row 7</p>
                     <div class="flex gap-x-[20px] xl:gap-x-[26px] justify-start w-[80%]">
                       <div
-                          class="bg-[#EDEDED] w-[40px] xl:w-[50px] h-[26px] xl:h-[36px] focus:outline-none text-center text-[12px] text-center flex items-center justify-center">
+                          class="bg-[#EDEDED] w-[40px] xl:w-[50px] h-[26px] xl:h-[36px] focus:outline-none text-center text-[12px] flex items-center justify-center rounded-[2px]">
                         <p>A1</p>
                       </div>
                       <div
-                          class="bg-[#EDEDED] w-[40px] xl:w-[50px] h-[26px] xl:h-[36px] focus:outline-none text-center text-[12px] text-center flex items-center justify-center">
+                          class="bg-[#EDEDED] w-[40px] xl:w-[50px] h-[26px] xl:h-[36px] focus:outline-none text-center text-[12px] flex items-center justify-center rounded-[2px]">
                         <p>A2</p>
                       </div>
                       <div
-                          class="bg-[#EDEDED] w-[40px] xl:w-[50px] h-[26px] xl:h-[36px] focus:outline-none text-center text-[12px] text-center flex items-center justify-center">
+                          class="bg-[#EDEDED] w-[40px] xl:w-[50px] h-[26px] xl:h-[36px] focus:outline-none text-center text-[12px] flex items-center justify-center rounded-[2px]">
                         <p>A3</p>
                       </div>
                       <div
-                          class="bg-[#EDEDED] w-[40px] xl:w-[50px] h-[26px] xl:h-[36px] focus:outline-none text-center text-[12px] text-center flex items-center justify-center">
+                          class="bg-[#EDEDED] w-[40px] xl:w-[50px] h-[26px] xl:h-[36px] focus:outline-none text-center text-[12px] flex items-center justify-center rounded-[2px]">
                         <p>A4</p>
                       </div>
                       <div
-                          class="bg-[#EDEDED] w-[40px] xl:w-[50px] h-[26px] xl:h-[36px] focus:outline-none text-center text-[12px] text-center flex items-center justify-center">
+                          class="bg-[#EDEDED] border border-corporate w-[40px] xl:w-[50px] h-[26px] xl:h-[36px] focus:outline-none text-center text-[12px] flex items-center justify-center rounded-[2px]">
                         <p>A5</p>
                       </div>
                     </div>
                   </div>
-                  <div class="flex gap-x-[30px] 2xl:gap-x-[50px] items-center mt-4">
+                  <div class="flex gap-x-[30px] 2xl:gap-x-[50px] items-center mt-3">
                     <p class="w-[20%] leading-[14px] xl:leading-[16px] text-[12px] text-[#676769] font-[400]">Row 8</p>
                     <div class="flex gap-x-[20px] xl:gap-x-[26px] justify-start w-[80%]">
                       <div
-                          class="bg-[#EDEDED] w-[40px] xl:w-[50px] h-[26px] xl:h-[36px] focus:outline-none text-center text-[12px] text-center flex items-center justify-center">
+                          class="bg-[#EDEDED] w-[40px] xl:w-[50px] h-[26px] xl:h-[36px] focus:outline-none text-center text-[12px] flex items-center justify-center rounded-[2px]">
                         <p>A1</p>
                       </div>
                       <div
-                          class="bg-[#EDEDED] w-[40px] xl:w-[50px] h-[26px] xl:h-[36px] focus:outline-none text-center text-[12px] text-center flex items-center justify-center">
+                          class="bg-[#EDEDED] w-[40px] xl:w-[50px] h-[26px] xl:h-[36px] focus:outline-none text-center text-[12px] flex items-center justify-center rounded-[2px]">
                         <p>A2</p>
                       </div>
                       <div
-                          class="bg-[#EDEDED] w-[40px] xl:w-[50px] h-[26px] xl:h-[36px] focus:outline-none text-center text-[12px] text-center flex items-center justify-center">
+                          class="bg-[#EDEDED] w-[40px] xl:w-[50px] h-[26px] xl:h-[36px] focus:outline-none text-center text-[12px] flex items-center justify-center rounded-[2px]">
                         <p>A3</p>
                       </div>
                       <div
-                          class="bg-[#EDEDED] w-[40px] xl:w-[50px] h-[26px] xl:h-[36px] focus:outline-none text-center text-[12px] text-center flex items-center justify-center">
+                          class="bg-[#EDEDED] w-[40px] xl:w-[50px] h-[26px] xl:h-[36px] focus:outline-none text-center text-[12px] flex items-center justify-center rounded-[2px]">
                         <p>A4</p>
                       </div>
                       <div
-                          class="bg-[#EDEDED] w-[40px] xl:w-[50px] h-[26px] xl:h-[36px] focus:outline-none text-center text-[12px] text-center flex items-center justify-center">
+                          class="bg-[#EDEDED] w-[40px] xl:w-[50px] h-[26px] xl:h-[36px] focus:outline-none text-center text-[12px] flex items-center justify-center rounded-[2px]">
                         <p>A5</p>
                       </div>
                     </div>
                   </div>
-                  <div class="flex gap-x-[30px] 2xl:gap-x-[50px] items-center mt-4">
+                  <div class="flex gap-x-[30px] 2xl:gap-x-[50px] items-center mt-3">
                     <p class="w-[20%] leading-[14px] xl:leading-[16px] text-[12px] text-[#676769] font-[400]">Row 9</p>
                     <div class="flex gap-x-[20px] xl:gap-x-[26px] justify-start w-[80%]">
                       <div
-                          class="bg-[#EDEDED] w-[40px] xl:w-[50px] h-[26px] xl:h-[36px] focus:outline-none text-center text-[12px] text-center flex items-center justify-center">
+                          class="bg-[#EDEDED] w-[40px] xl:w-[50px] h-[26px] xl:h-[36px] focus:outline-none text-center text-[12px] flex items-center justify-center rounded-[2px]">
                         <p>A1</p>
                       </div>
                       <div
-                          class="bg-[#EDEDED] w-[40px] xl:w-[50px] h-[26px] xl:h-[36px] focus:outline-none text-center text-[12px] text-center flex items-center justify-center">
+                          class="bg-[#EDEDED] w-[40px] xl:w-[50px] h-[26px] xl:h-[36px] focus:outline-none text-center text-[12px] flex items-center justify-center rounded-[2px]">
                         <p>A2</p>
                       </div>
                       <div
-                          class="bg-[#EDEDED] w-[40px] xl:w-[50px] h-[26px] xl:h-[36px] focus:outline-none text-center text-[12px] text-center flex items-center justify-center">
+                          class="bg-[#EDEDED] w-[40px] xl:w-[50px] h-[26px] xl:h-[36px] focus:outline-none text-center text-[12px] flex items-center justify-center rounded-[2px]">
                         <p>A3</p>
                       </div>
                       <div
-                          class="bg-[#EDEDED] w-[40px] xl:w-[50px] h-[26px] xl:h-[36px] focus:outline-none text-center text-[12px] text-center flex items-center justify-center">
+                          class="bg-[#EDEDED] w-[40px] xl:w-[50px] h-[26px] xl:h-[36px] focus:outline-none text-center text-[12px] flex items-center justify-center rounded-[2px]">
                         <p>A4</p>
                       </div>
                       <div
-                          class="bg-[#EDEDED] w-[40px] xl:w-[50px] h-[26px] xl:h-[36px] focus:outline-none text-center text-[12px] text-center flex items-center justify-center">
+                          class="bg-[#EDEDED] w-[40px] xl:w-[50px] h-[26px] xl:h-[36px] focus:outline-none text-center text-[12px] flex items-center justify-center rounded-[2px]">
                         <p>A5</p>
                       </div>
                     </div>
                   </div>
-                  <div class="flex gap-x-[30px] 2xl:gap-x-[50px] items-center mt-4">
+                  <div class="flex gap-x-[30px] 2xl:gap-x-[50px] items-center mt-3">
                     <p class="w-[20%] leading-[14px] xl:leading-[16px] text-[12px] text-[#676769] font-[400]">Row 10</p>
                     <div class="flex gap-x-[20px] xl:gap-x-[26px] justify-start w-[80%]">
                       <div
-                          class="bg-[#EDEDED] w-[40px] xl:w-[50px] h-[26px] xl:h-[36px] focus:outline-none text-center text-[12px] text-center flex items-center justify-center">
+                          class="bg-[#EDEDED] w-[40px] xl:w-[50px] h-[26px] xl:h-[36px] focus:outline-none text-center text-[12px] flex items-center justify-center rounded-[2px]">
                         <p>A1</p>
                       </div>
                       <div
-                          class="bg-[#EDEDED] w-[40px] xl:w-[50px] h-[26px] xl:h-[36px] focus:outline-none text-center text-[12px] text-center flex items-center justify-center">
+                          class="bg-[#EDEDED] w-[40px] xl:w-[50px] h-[26px] xl:h-[36px] focus:outline-none text-center text-[12px] flex items-center justify-center rounded-[2px]">
                         <p>A2</p>
                       </div>
                       <div
-                          class="bg-[#EDEDED] w-[40px] xl:w-[50px] h-[26px] xl:h-[36px] focus:outline-none text-center text-[12px] text-center flex items-center justify-center">
+                          class="bg-[#EDEDED] w-[40px] xl:w-[50px] h-[26px] xl:h-[36px] focus:outline-none text-center text-[12px] flex items-center justify-center rounded-[2px]">
                         <p>A3</p>
                       </div>
                       <div
-                          class="bg-[#EDEDED] w-[40px] xl:w-[50px] h-[26px] xl:h-[36px] focus:outline-none text-center text-[12px] text-center flex items-center justify-center">
+                          class="bg-[#EDEDED] w-[40px] xl:w-[50px] h-[26px] xl:h-[36px] focus:outline-none text-center text-[12px] flex items-center justify-center rounded-[2px]">
                         <p>A4</p>
                       </div>
                       <div
-                          class="bg-[#EDEDED] w-[40px] xl:w-[50px] h-[26px] xl:h-[36px] focus:outline-none text-center text-[12px] text-center flex items-center justify-center">
+                          class="bg-[#EDEDED] w-[40px] xl:w-[50px] h-[26px] xl:h-[36px] focus:outline-none text-center text-[12px] flex items-center justify-center rounded-[2px]">
                         <p>A5</p>
                       </div>
                     </div>
                   </div>
-                  <div class="flex gap-x-[30px] 2xl:gap-x-[50px] items-center mt-4">
+                  <div class="flex gap-x-[30px] 2xl:gap-x-[50px] items-center mt-3">
                     <p class="w-[20%] leading-[14px] xl:leading-[16px] text-[12px] text-[#676769] font-[400]">Row 12</p>
                     <div class="flex gap-x-[20px] xl:gap-x-[26px] justify-start w-[80%]">
                       <div
-                          class="bg-[#EDEDED] w-[40px] xl:w-[50px] h-[26px] xl:h-[36px] focus:outline-none text-center text-[12px] text-center flex items-center justify-center">
+                          class="bg-[#EDEDED] w-[40px] xl:w-[50px] h-[26px] xl:h-[36px] focus:outline-none text-center text-[12px] flex items-center justify-center rounded-[2px]">
                         <p>A1</p>
                       </div>
                       <div
-                          class="bg-[#EDEDED] w-[40px] xl:w-[50px] h-[26px] xl:h-[36px] focus:outline-none text-center text-[12px] text-center flex items-center justify-center">
+                          class="bg-[#EDEDED] w-[40px] xl:w-[50px] h-[26px] xl:h-[36px] focus:outline-none text-center text-[12px] flex items-center justify-center rounded-[2px]">
                         <p>A2</p>
                       </div>
                       <div
-                          class="bg-[#EDEDED] w-[40px] xl:w-[50px] h-[26px] xl:h-[36px] focus:outline-none text-center text-[12px] text-center flex items-center justify-center">
+                          class="bg-[#EDEDED] w-[40px] xl:w-[50px] h-[26px] xl:h-[36px] focus:outline-none text-center text-[12px] flex items-center justify-center rounded-[2px]">
                         <p>A3</p>
                       </div>
                       <div
-                          class="bg-[#EDEDED] w-[40px] xl:w-[50px] h-[26px] xl:h-[36px] focus:outline-none text-center text-[12px] text-center flex items-center justify-center">
+                          class="bg-[#EDEDED] w-[40px] xl:w-[50px] h-[26px] xl:h-[36px] focus:outline-none text-center text-[12px] flex items-center justify-center rounded-[2px]">
                         <p>A4</p>
                       </div>
                       <div
-                          class="bg-[#EDEDED] w-[40px] xl:w-[50px] h-[26px] xl:h-[36px] focus:outline-none text-center text-[12px] text-center flex items-center justify-center">
+                          class="bg-[#EDEDED] w-[40px] xl:w-[50px] h-[26px] xl:h-[36px] focus:outline-none text-center text-[12px] flex items-center justify-center rounded-[2px]">
                         <p>A5</p>
                       </div>
                     </div>
                   </div>
-                  <div class="flex gap-x-[30px] 2xl:gap-x-[50px] items-center mt-4">
+                  <div class="flex gap-x-[30px] 2xl:gap-x-[50px] items-center mt-3">
                     <p class="w-[20%] leading-[14px] xl:leading-[16px] text-[12px] text-[#676769] font-[400]">Row 13</p>
                     <div class="flex gap-x-[20px] xl:gap-x-[26px] justify-start w-[80%]">
                       <div
-                          class="bg-[#EDEDED] w-[40px] xl:w-[50px] h-[26px] xl:h-[36px] focus:outline-none text-center text-[12px] text-center flex items-center justify-center">
+                          class="bg-[#EDEDED] w-[40px] xl:w-[50px] h-[26px] xl:h-[36px] focus:outline-none text-center text-[12px] flex items-center justify-center rounded-[2px]">
                         <p>A1</p>
                       </div>
                       <div
-                          class="bg-[#EDEDED] w-[40px] xl:w-[50px] h-[26px] xl:h-[36px] focus:outline-none text-center text-[12px] text-center flex items-center justify-center">
+                          class="bg-[#EDEDED] w-[40px] xl:w-[50px] h-[26px] xl:h-[36px] focus:outline-none text-center text-[12px] flex items-center justify-center rounded-[2px]">
                         <p>A2</p>
                       </div>
                       <div
-                          class="bg-[#EDEDED] w-[40px] xl:w-[50px] h-[26px] xl:h-[36px] focus:outline-none text-center text-[12px] text-center flex items-center justify-center">
+                          class="bg-[#EDEDED] w-[40px] xl:w-[50px] h-[26px] xl:h-[36px] focus:outline-none text-center text-[12px] flex items-center justify-center rounded-[2px]">
                         <p>A3</p>
                       </div>
                       <div
-                          class="bg-[#EDEDED] w-[40px] xl:w-[50px] h-[26px] xl:h-[36px] focus:outline-none text-center text-[12px] text-center flex items-center justify-center">
+                          class="bg-[#EDEDED] w-[40px] xl:w-[50px] h-[26px] xl:h-[36px] focus:outline-none text-center text-[12px] flex items-center justify-center rounded-[2px]">
                         <p>A4</p>
                       </div>
                       <div
-                          class="bg-[#EDEDED] w-[40px] xl:w-[50px] h-[26px] xl:h-[36px] focus:outline-none text-center text-[12px] text-center flex items-center justify-center">
+                          class="bg-[#EDEDED] w-[40px] xl:w-[50px] h-[26px] xl:h-[36px] focus:outline-none text-center text-[12px] flex items-center justify-center rounded-[2px]">
                         <p>A5</p>
                       </div>
                     </div>
                   </div>
-                  <div class="flex gap-x-[30px] 2xl:gap-x-[50px] items-center mt-4">
+                  <div class="flex gap-x-[30px] 2xl:gap-x-[50px] items-center mt-3">
                     <p class="w-[20%] leading-[14px] xl:leading-[16px] text-[12px] text-[#676769] font-[400]">Row 14</p>
                     <div class="flex gap-x-[20px] xl:gap-x-[26px] justify-start w-[80%]">
                       <div
-                          class="bg-[#EDEDED] w-[40px] xl:w-[50px] h-[26px] xl:h-[36px] focus:outline-none text-center text-[12px] text-center flex items-center justify-center">
+                          class="bg-[#EDEDED] w-[40px] xl:w-[50px] h-[26px] xl:h-[36px] focus:outline-none text-center text-[12px] flex items-center justify-center rounded-[2px]">
                         <p>A1</p>
                       </div>
                       <div
-                          class="bg-[#EDEDED] w-[40px] xl:w-[50px] h-[26px] xl:h-[36px] focus:outline-none text-center text-[12px] text-center flex items-center justify-center">
+                          class="bg-[#EDEDED] w-[40px] xl:w-[50px] h-[26px] xl:h-[36px] focus:outline-none text-center text-[12px] flex items-center justify-center rounded-[2px]">
                         <p>A2</p>
                       </div>
                       <div
-                          class="bg-[#EDEDED] w-[40px] xl:w-[50px] h-[26px] xl:h-[36px] focus:outline-none text-center text-[12px] text-center flex items-center justify-center">
+                          class="bg-[#EDEDED] w-[40px] xl:w-[50px] h-[26px] xl:h-[36px] focus:outline-none text-center text-[12px] flex items-center justify-center rounded-[2px]">
                         <p>A3</p>
                       </div>
                       <div
-                          class="bg-[#EDEDED] w-[40px] xl:w-[50px] h-[26px] xl:h-[36px] focus:outline-none text-center text-[12px] text-center flex items-center justify-center">
+                          class="bg-[#EDEDED] w-[40px] xl:w-[50px] h-[26px] xl:h-[36px] focus:outline-none text-center text-[12px] flex items-center justify-center rounded-[2px]">
                         <p>A4</p>
                       </div>
                       <div
-                          class="bg-[#EDEDED] w-[40px] xl:w-[50px] h-[26px] xl:h-[36px] focus:outline-none text-center text-[12px] text-center flex items-center justify-center">
+                          class="bg-[#EDEDED] w-[40px] xl:w-[50px] h-[26px] xl:h-[36px] focus:outline-none text-center text-[12px] flex items-center justify-center rounded-[2px]">
                         <p>A5</p>
                       </div>
                     </div>

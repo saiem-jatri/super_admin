@@ -22,9 +22,7 @@
         </div>
       </div>
       <div class="flex gap-x-[24px] p-4 w-1/2 justify-end items-center pr-2 ">
-        <!--            <input type="text" class="w-[270px] h-[40px] border border-[#DBDBDB] placeholder:text-[#4D4D4F] placeholder:text-[14px] leading-[20px] rounded-[4px] pl-8 focus:outline-none" placeholder="PNR or mobile number">-->
-        <!--            <img src="../assets/svg/search.svg" class="h-5 w-5 absolute left-[242px]" alt="">-->
-        <div
+       <div
             class="w-[200px] h-[30px] xl:w-[270px] xl:h-[40px] border border-[#DBDBDB] flex justify-center items-center leading-[20px] rounded-[4px] pl-[9px] overflow-hidden">
           <img alt="" class="h-2 w-2 xl:h-5 xl:w-5" src="../assets/svg/search.svg">
           <input
@@ -54,10 +52,10 @@
     </div>
     <!--        card-->
     <div class="mt-[16px] bg-white rounded-[10px]">
-      <div class="rounded-[4px] px-4">
+      <div class="rounded-[4px] p-4">
         <div class="flex divide-x divide-corporateBorder">
           <div class="w-[55%]">
-            <div class="py-[16px] pr-[6px]">
+            <div class="pr-4">
               <div class="flex gap-x-4 justify-between">
                 <div class="w-1/2">
                   <label
@@ -100,7 +98,7 @@
                 <div class="flex justify-center items-center">
                   <button
                       class="bg-[#F04935] w-[90px] xl:w-[110px] text-white leading-[16px] xl:leading-[20px] text-[12px] xl:text-[14px] flex justify-center items-center font-[400] h-[40px] rounded-l-[4px]">
-                    Ac
+                    AC
                   </button>
                   <button
                       class="bg-[#F7F7F7] w-[90px] xl:w-[110px] text-primaryText leading-[16px] xl:leading-[20px] text-[12px] xl:text-[14px] border border-[#DBDBDB] flex justify-center items-center font-[400] h-[40px] rounded-r-[4px]">
@@ -117,7 +115,7 @@
             </div>
           </div>
           <div class="w-[45%]">
-            <div class="py-2 pl-[16px]">
+            <div class="pl-[16px]">
               <p class="leading-[20px] xl:leading-[24px] text-[14px] xl:text-[16px] font-[600] text-primaryText">
                 Seat layout</p>
               <hr class="border-t border-[#DBDBDB] mt-3">
@@ -322,7 +320,7 @@
       <div class="px-[16px] py-[20px] w-full flex justify-center items-center">
         <router-link
             class="flex justify-center items-center text-white leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[600] bg-corporate rounded-full px-[20px] py-[11px] xl:px-[24px] xl:py-[13px]"
-            to="/sleeperCoachBUsCreate">
+            to="">
           Create bus
         </router-link>
       </div>

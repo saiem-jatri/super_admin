@@ -28,9 +28,10 @@
     </div>
   </div>
   <!-- top nav bar end -->
+
   <!-- body start-->
   <div class="px-[30px] py-[24px]">
-    <div class="bg-white rounded-[8px] mt-4">
+    <div class="bg-white rounded-[8px]">
       <!-- table start -->
       <table class="min-w-full">
         <thead>
@@ -137,7 +138,7 @@
             Hino 1J - 36 Seat
           </td>
           <td class="leading-[20px] text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText ">
-            AC
+            Non AC
           </td>
           <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText">
             Economy
@@ -161,7 +162,7 @@
             Hino 1J - 36 Seat
           </td>
           <td class="leading-[20px] text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText ">
-            AC
+            Non AC
           </td>
           <td class="leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[400] text-center border-r border-[#DBDBDB] text-primaryText">
             Economy
@@ -171,15 +172,23 @@
           </td>
           <td class="border-r border-[#DBDBDB]">
             <div class="py-[5px] px-[18px] flex justify-center items-center gap-x-[16px]">
-              <button class="companyEditButton"><span><img alt="" class="w-3 h-3"
-                                                           src="../assets/svg/edit.svg"></span>Edit
+              <button class="companyEditButton"><span><img alt="" class="w-3 h-3" src="../assets/svg/edit.svg"></span>Edit
               </button>
             </div>
           </td>
         </tr>
-
         </tbody>
       </table>
+    </div>
+
+    <!-- Buttons just for show routing. Remove after development -->
+    <div class="mt-6">
+      <p class="mb-4 italic text-red-500">*Buttons just for show routing. Remove after development*</p>
+      <div class="flex items-center gap-x-4">
+        <router-link class="corporateButton" to="/mixedbusCreate">Mixed Class</router-link>
+        <router-link class="corporateButton" to="/doubleDackerbusCreate">Double Decker</router-link>
+        <router-link class="corporateButton" to="/sleeperCoachBUsCreate">Sleeper Coach</router-link>
+      </div>
     </div>
   </div>
 </template>

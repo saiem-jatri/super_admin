@@ -41,28 +41,29 @@
     </div>
   </div>
   <!-- top nav bar end -->
+
   <!-- body start-->
   <div class="px-[30px] py-[24px]">
 
-    <!--        card-->
-    <div class="mt-[16px] bg-white rounded-[10px]">
-      <div class="p-4 flex flex-col">
+    <!--card-->
+    <div class="bg-white rounded-[10px]">
+      <div class="px-4 pt-4 flex flex-col">
         <div class="flex justify-center items-center gap-x-[10px] xl:gap-x-[16px]">
           <div class="w-1/4">
             <p class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]">
               Brand</p>
-            <input class="createNormalInput" placeholder="Enter amount" type="text">
+            <input class="createNormalInput" placeholder="Enter bus brand name" type="text">
           </div>
           <div class="w-1/4">
             <p class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]">
               Display name</p>
-            <input class="createNormalInput" placeholder="Enter amount" type="text">
+            <input class="createNormalInput" placeholder="Enter bus display name" type="text">
           </div>
           <div class="w-1/4">
             <p class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]">
               Class/Type</p>
-            <Dropdown v-model="selectedCity" :opti6ns="cities" class="w-full py-[4px] mt-[10px]" optionLabel="name"
-                      placeholder="Economy class"/>
+            <Dropdown v-model="selectedCity" :options="cities" class="w-full py-[4px] mt-[10px]" optionLabel="name"
+                      placeholder="Select class"/>
           </div>
           <div class="w-1/4">
             <p class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]">
@@ -86,17 +87,10 @@
         </div>
         <hr class="px-4 border-t border-[#DBDBDB] mt-4">
         <!--          offer access-->
-
-        <div class="mt-4">
-          <p class="leading-[20px] xl:leading-[24px] text-[14px] xl:text-[16px] text-primaryText font-[600]">Bus
+        <div class="pt-4">
+          <p class="leading-[20px] xl:leading-[24px] text-[14px] xl:text-[16px] text-primaryText font-[600] mb-2">Bus
             facilities</p>
           <div class="flex justify-start gap-x-[19px]">
-            <div class="form-group mt-3 flex w-[16.66%]">
-              <input id="fare" type="checkbox">
-              <label
-                  class="text-primaryText leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px] font-[400]"
-                  for="fare">Jatri Web</label>
-            </div>
             <div class="form-group mt-3 flex w-[16.66%]">
               <input id="fare" type="checkbox">
               <label
@@ -134,14 +128,8 @@
                   for="fare">Leg rest</label>
             </div>
           </div>
-          <hr class="px-4 border-t border-dashed border-[#DBDBDB] mt-4">
-          <div class="flex justify-start gap-x-[19px] mt-4">
-            <div class="form-group mt-3 flex w-[16.66%]">
-              <input id="fare" type="checkbox">
-              <label
-                  class="text-primaryText leading-[16px] text-[10px] xl:leading-[20px] xl:text-[14px] font-[400]"
-                  for="fare">Jatri Web</label>
-            </div>
+          <hr class="px-4 pt-1 border-t border-dashed border-[#DBDBDB]">
+          <div class="flex justify-start gap-x-[19px]">
             <div class="form-group mt-3 flex w-[16.66%]">
               <input id="fare" type="checkbox">
               <label
@@ -181,8 +169,8 @@
           </div>
         </div>
       </div>
-      <div class="">
-        <div class="rounded-[4px] px-4">
+      <div class="px-4">
+        <div class="rounded-[4px]">
           <hr class="border-t border-corporateBorder mt-1">
           <div class="pt-[8px] pb-[8px]">
             <div class="flex divide-x divide-corporateBorder">
@@ -190,36 +178,28 @@
                 <div class="py-[8px] pr-[24px]">
                   <p class="leading-[20px] xl:leading-[24px] text-[14px] xl:text-[16px] font-[600] text-primaryText">
                     Add seat</p>
-                  <div class="flex gap-x-2 mt-4 items-center">
+                  <div class="flex gap-x-4 mt-4 items-center">
                     <p class="text-primaryText leading-[16px] xl:leading-[20px] text-[12px] xl:text-[14px]">Select
                       row:</p>
                     <div>
                       <Dropdown v-model="selectedCity" :opti6ns="cities" class="w-full py-1"
                                 optionLabel="name"
-                                placeholder="Select Bus"/>
+                                placeholder="Select row"/>
                     </div>
                   </div>
-                  <div class="mt-4 flex justify-center gap-x-2">
-                    <input
-                        class="w-[20%] border border-[#DBDBDB] text-center rounded-[4px] py-1 xl:py-2 focus:outline-none"
-                        placeholder="Seat 1"
-                        type="text">
-                    <input
-                        class="w-[20%] border border-[#DBDBDB] text-center rounded-[4px] py-1 xl:py-2 focus:outline-none"
-                        placeholder="Seat 2"
-                        type="text">
-                    <input
-                        class="w-[20%] border border-[#DBDBDB] text-center rounded-[4px] py-1 xl:py-2 focus:outline-none"
-                        placeholder="Seat 3"
-                        type="text">
-                    <input
-                        class="w-[20%] border border-[#DBDBDB] text-center rounded-[4px] py-1 xl:py-2 focus:outline-none"
-                        placeholder="Seat 4"
-                        type="text">
-                    <input
-                        class="w-[20%] border border-[#DBDBDB] text-center rounded-[4px] py-1 xl:py-2 focus:outline-none"
-                        placeholder="Seat 5"
-                        type="text">
+                  <div class="mt-4 flex gap-x-2">
+                    <input class="w-1/4 border border-[#DBDBDB] text-center rounded-[4px] py-3 focus:outline-none"
+                           placeholder="Seat 1"
+                           type="text">
+                    <input class="w-1/4 border border-[#DBDBDB] text-center rounded-[4px] py-3 focus:outline-none"
+                           placeholder="Seat 2"
+                           type="text">
+                    <input class="w-1/4 border border-[#DBDBDB] text-center rounded-[4px] py-3 focus:outline-none"
+                           placeholder="Seat 3"
+                           type="text">
+                    <input class="w-1/4 border border-[#DBDBDB] text-center rounded-[4px] py-3 focus:outline-none"
+                           placeholder="Seat 4"
+                           type="text">
                   </div>
                   <div class="flex justify-center items-center mt-4 xl:mt-5">
                     <router-link
@@ -228,16 +208,22 @@
                       <span><img alt="" class="h-[9.33px] w-[9.33px]" src="../assets/svg/plus.svg"></span>Add seats
                     </router-link>
                   </div>
-
                 </div>
               </div>
+
               <div class="w-[45%]">
                 <div class="py-2 pl-[16px]">
-                  <p class="leading-[20px] xl:leading-[24px] text-[14px] xl:text-[16px] font-[600] text-primaryText">
-                    Seat layout preview</p>
+                  <div class="flex justify-between">
+                    <p class="leading-[20px] xl:leading-[24px] text-[14px] xl:text-[16px] font-[600] text-primaryText">
+                      Seat layout preview</p>
+                    <button class="flex gap-x-[9px] items-center">
+                      <img alt="" class="w-[13px]" src="../assets/svg/reset.svg">
+                      <p class="text-corporateError leading-[14px] xl:leading-[16px] text-[12px]">Reset</p>
+                    </button>
+                  </div>
                   <hr class="border-t border-[#DBDBDB] mt-3">
                   <div
-                      class="mt-4 py-[2px] flex justify-center items-center bg-[#EFF7FD] text-[#1E88E5] leading-[16px] xl:leading-[20px] text-[12px] xl:text-[14px] text-[#676769] font-[600] rounded-[4px]">
+                      class="mt-4 py-[2px] flex justify-center items-center bg-[#EFF7FD] text-[#1E88E5] leading-[16px] xl:leading-[20px] text-[12px] xl:text-[14px] font-[600] rounded-[4px]">
                     <p>LOWER DECK</p>
                   </div>
                   <div class="flex gap-x-[30px] 2xl:gap-x-[50px] items-center mt-4 xl:px-[50px]">
@@ -245,7 +231,7 @@
                     <div class="flex gap-x-[32px] xl:gap-x-[42px] justify-start w-[80%]">
                       <div
                           class="w-[25px] xl:w-[30px] h-[33px] xl:h-[44px] flex items-center justify-center">
-                        <img alt="" src="../assets/svg/sleeper_raw.svg">
+                        <img alt="" src="../assets/svg/sleeper_active.svg">
                       </div>
                       <div
                           class="w-[25px] xl:w-[30px] h-[33px] xl:h-[44px] flex items-center justify-center">
@@ -253,11 +239,32 @@
                       </div>
                       <div
                           class="w-[25px] xl:w-[30px] h-[33px] xl:h-[44px] flex items-center justify-center">
-                        <img alt="" src="../assets/svg/sleeper_raw.svg">
+                        <img alt="" src="../assets/svg/sleeper_active.svg">
+                      </div>
+                      <div
+                          class="w-[25px] xl:w-[30px] h-[33px] xl:h-[44px] flex items-center justify-center">
+                        <img alt="" src="../assets/svg/sleeper_active.svg">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="flex gap-x-[30px] 2xl:gap-x-[50px] items-center mt-4 xl:px-[50px]">
+                    <p class="w-[20%] leading-[14px] xl:leading-[16px] text-[12px] text-[#676769] font-[400]">Row 1</p>
+                    <div class="flex gap-x-[32px] xl:gap-x-[42px] justify-start w-[80%]">
+                      <div
+                          class="w-[25px] xl:w-[30px] h-[33px] xl:h-[44px] flex items-center justify-center">
+                        <img alt="" src="../assets/svg/sleeper_active.svg">
                       </div>
                       <div
                           class="w-[25px] xl:w-[30px] h-[33px] xl:h-[44px] flex items-center justify-center">
                         <img alt="" src="../assets/svg/sleeper_raw.svg">
+                      </div>
+                      <div
+                          class="w-[25px] xl:w-[30px] h-[33px] xl:h-[44px] flex items-center justify-center">
+                        <img alt="" src="../assets/svg/sleeper_active.svg">
+                      </div>
+                      <div
+                          class="w-[25px] xl:w-[30px] h-[33px] xl:h-[44px] flex items-center justify-center">
+                        <img alt="" src="../assets/svg/sleeper_active.svg">
                       </div>
                     </div>
                   </div>
@@ -287,7 +294,7 @@
                     <div class="flex gap-x-[32px] xl:gap-x-[42px] justify-start w-[80%]">
                       <div
                           class="w-[25px] xl:w-[30px] h-[33px] xl:h-[44px] flex items-center justify-center">
-                        <img alt="" src="../assets/svg/sleeper_raw.svg">
+                        <img alt="" src="../assets/svg/sleeper_active.svg">
                       </div>
                       <div
                           class="w-[25px] xl:w-[30px] h-[33px] xl:h-[44px] flex items-center justify-center">
@@ -295,32 +302,11 @@
                       </div>
                       <div
                           class="w-[25px] xl:w-[30px] h-[33px] xl:h-[44px] flex items-center justify-center">
-                        <img alt="" src="../assets/svg/sleeper_raw.svg">
+                        <img alt="" src="../assets/svg/sleeper_active.svg">
                       </div>
                       <div
                           class="w-[25px] xl:w-[30px] h-[33px] xl:h-[44px] flex items-center justify-center">
-                        <img alt="" src="../assets/svg/sleeper_raw.svg">
-                      </div>
-                    </div>
-                  </div>
-                  <div class="flex gap-x-[30px] 2xl:gap-x-[50px] items-center mt-4 xl:px-[50px]">
-                    <p class="w-[20%] leading-[14px] xl:leading-[16px] text-[12px] text-[#676769] font-[400]">Row 1</p>
-                    <div class="flex gap-x-[32px] xl:gap-x-[42px] justify-start w-[80%]">
-                      <div
-                          class="w-[25px] xl:w-[30px] h-[33px] xl:h-[44px] flex items-center justify-center">
-                        <img alt="" src="../assets/svg/sleeper_raw.svg">
-                      </div>
-                      <div
-                          class="w-[25px] xl:w-[30px] h-[33px] xl:h-[44px] flex items-center justify-center">
-                        <img alt="" src="../assets/svg/sleeper_raw.svg">
-                      </div>
-                      <div
-                          class="w-[25px] xl:w-[30px] h-[33px] xl:h-[44px] flex items-center justify-center">
-                        <img alt="" src="../assets/svg/sleeper_raw.svg">
-                      </div>
-                      <div
-                          class="w-[25px] xl:w-[30px] h-[33px] xl:h-[44px] flex items-center justify-center">
-                        <img alt="" src="../assets/svg/sleeper_raw.svg">
+                        <img alt="" src="../assets/svg/sleeper_active.svg">
                       </div>
                     </div>
                   </div>
@@ -329,7 +315,7 @@
                     <div class="flex gap-x-[32px] xl:gap-x-[42px] justify-start w-[80%]">
                       <div
                           class="w-[25px] xl:w-[30px] h-[33px] xl:h-[44px] flex items-center justify-center">
-                        <img alt="" src="../assets/svg/sleeper_raw.svg">
+                        <img alt="" src="../assets/svg/sleeper_active.svg">
                       </div>
                       <div
                           class="w-[25px] xl:w-[30px] h-[33px] xl:h-[44px] flex items-center justify-center">
@@ -337,11 +323,11 @@
                       </div>
                       <div
                           class="w-[25px] xl:w-[30px] h-[33px] xl:h-[44px] flex items-center justify-center">
-                        <img alt="" src="../assets/svg/sleeper_raw.svg">
+                        <img alt="" src="../assets/svg/sleeper_active.svg">
                       </div>
                       <div
                           class="w-[25px] xl:w-[30px] h-[33px] xl:h-[44px] flex items-center justify-center">
-                        <img alt="" src="../assets/svg/sleeper_raw.svg">
+                        <img alt="" src="../assets/svg/sleeper_active.svg">
                       </div>
                     </div>
                   </div>
@@ -350,7 +336,7 @@
                     <div class="flex gap-x-[32px] xl:gap-x-[42px] justify-start w-[80%]">
                       <div
                           class="w-[25px] xl:w-[30px] h-[33px] xl:h-[44px] flex items-center justify-center">
-                        <img alt="" src="../assets/svg/sleeper_raw.svg">
+                        <img alt="" src="../assets/svg/sleeper_active.svg">
                       </div>
                       <div
                           class="w-[25px] xl:w-[30px] h-[33px] xl:h-[44px] flex items-center justify-center">
@@ -358,11 +344,11 @@
                       </div>
                       <div
                           class="w-[25px] xl:w-[30px] h-[33px] xl:h-[44px] flex items-center justify-center">
-                        <img alt="" src="../assets/svg/sleeper_raw.svg">
+                        <img alt="" src="../assets/svg/sleeper_active.svg">
                       </div>
                       <div
                           class="w-[25px] xl:w-[30px] h-[33px] xl:h-[44px] flex items-center justify-center">
-                        <img alt="" src="../assets/svg/sleeper_raw.svg">
+                        <img alt="" src="../assets/svg/sleeper_active.svg">
                       </div>
                     </div>
                   </div>
@@ -397,7 +383,7 @@
                     <div class="flex gap-x-[32px] xl:gap-x-[42px] justify-start w-[80%]">
                       <div
                           class="w-[25px] xl:w-[30px] h-[33px] xl:h-[44px] flex items-center justify-center">
-                        <img alt="" src="../assets/svg/sleeper_raw.svg">
+                        <img alt="" src="../assets/svg/sleeper_active.svg">
                       </div>
                       <div
                           class="w-[25px] xl:w-[30px] h-[33px] xl:h-[44px] flex items-center justify-center">
@@ -405,11 +391,32 @@
                       </div>
                       <div
                           class="w-[25px] xl:w-[30px] h-[33px] xl:h-[44px] flex items-center justify-center">
-                        <img alt="" src="../assets/svg/sleeper_raw.svg">
+                        <img alt="" src="../assets/svg/sleeper_active.svg">
+                      </div>
+                      <div
+                          class="w-[25px] xl:w-[30px] h-[33px] xl:h-[44px] flex items-center justify-center">
+                        <img alt="" src="../assets/svg/sleeper_active.svg">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="flex gap-x-[30px] 2xl:gap-x-[50px] items-center mt-4 xl:px-[50px]">
+                    <p class="w-[20%] leading-[14px] xl:leading-[16px] text-[12px] text-[#676769] font-[400]">Row 1</p>
+                    <div class="flex gap-x-[32px] xl:gap-x-[42px] justify-start w-[80%]">
+                      <div
+                          class="w-[25px] xl:w-[30px] h-[33px] xl:h-[44px] flex items-center justify-center">
+                        <img alt="" src="../assets/svg/sleeper_active.svg">
                       </div>
                       <div
                           class="w-[25px] xl:w-[30px] h-[33px] xl:h-[44px] flex items-center justify-center">
                         <img alt="" src="../assets/svg/sleeper_raw.svg">
+                      </div>
+                      <div
+                          class="w-[25px] xl:w-[30px] h-[33px] xl:h-[44px] flex items-center justify-center">
+                        <img alt="" src="../assets/svg/sleeper_active.svg">
+                      </div>
+                      <div
+                          class="w-[25px] xl:w-[30px] h-[33px] xl:h-[44px] flex items-center justify-center">
+                        <img alt="" src="../assets/svg/sleeper_active.svg">
                       </div>
                     </div>
                   </div>
@@ -439,7 +446,7 @@
                     <div class="flex gap-x-[32px] xl:gap-x-[42px] justify-start w-[80%]">
                       <div
                           class="w-[25px] xl:w-[30px] h-[33px] xl:h-[44px] flex items-center justify-center">
-                        <img alt="" src="../assets/svg/sleeper_raw.svg">
+                        <img alt="" src="../assets/svg/sleeper_active.svg">
                       </div>
                       <div
                           class="w-[25px] xl:w-[30px] h-[33px] xl:h-[44px] flex items-center justify-center">
@@ -447,32 +454,11 @@
                       </div>
                       <div
                           class="w-[25px] xl:w-[30px] h-[33px] xl:h-[44px] flex items-center justify-center">
-                        <img alt="" src="../assets/svg/sleeper_raw.svg">
+                        <img alt="" src="../assets/svg/sleeper_active.svg">
                       </div>
                       <div
                           class="w-[25px] xl:w-[30px] h-[33px] xl:h-[44px] flex items-center justify-center">
-                        <img alt="" src="../assets/svg/sleeper_raw.svg">
-                      </div>
-                    </div>
-                  </div>
-                  <div class="flex gap-x-[30px] 2xl:gap-x-[50px] items-center mt-4 xl:px-[50px]">
-                    <p class="w-[20%] leading-[14px] xl:leading-[16px] text-[12px] text-[#676769] font-[400]">Row 1</p>
-                    <div class="flex gap-x-[32px] xl:gap-x-[42px] justify-start w-[80%]">
-                      <div
-                          class="w-[25px] xl:w-[30px] h-[33px] xl:h-[44px] flex items-center justify-center">
-                        <img alt="" src="../assets/svg/sleeper_raw.svg">
-                      </div>
-                      <div
-                          class="w-[25px] xl:w-[30px] h-[33px] xl:h-[44px] flex items-center justify-center">
-                        <img alt="" src="../assets/svg/sleeper_raw.svg">
-                      </div>
-                      <div
-                          class="w-[25px] xl:w-[30px] h-[33px] xl:h-[44px] flex items-center justify-center">
-                        <img alt="" src="../assets/svg/sleeper_raw.svg">
-                      </div>
-                      <div
-                          class="w-[25px] xl:w-[30px] h-[33px] xl:h-[44px] flex items-center justify-center">
-                        <img alt="" src="../assets/svg/sleeper_raw.svg">
+                        <img alt="" src="../assets/svg/sleeper_active.svg">
                       </div>
                     </div>
                   </div>
@@ -481,7 +467,7 @@
                     <div class="flex gap-x-[32px] xl:gap-x-[42px] justify-start w-[80%]">
                       <div
                           class="w-[25px] xl:w-[30px] h-[33px] xl:h-[44px] flex items-center justify-center">
-                        <img alt="" src="../assets/svg/sleeper_raw.svg">
+                        <img alt="" src="../assets/svg/sleeper_active.svg">
                       </div>
                       <div
                           class="w-[25px] xl:w-[30px] h-[33px] xl:h-[44px] flex items-center justify-center">
@@ -489,11 +475,11 @@
                       </div>
                       <div
                           class="w-[25px] xl:w-[30px] h-[33px] xl:h-[44px] flex items-center justify-center">
-                        <img alt="" src="../assets/svg/sleeper_raw.svg">
+                        <img alt="" src="../assets/svg/sleeper_active.svg">
                       </div>
                       <div
                           class="w-[25px] xl:w-[30px] h-[33px] xl:h-[44px] flex items-center justify-center">
-                        <img alt="" src="../assets/svg/sleeper_raw.svg">
+                        <img alt="" src="../assets/svg/sleeper_active.svg">
                       </div>
                     </div>
                   </div>
@@ -502,7 +488,7 @@
                     <div class="flex gap-x-[32px] xl:gap-x-[42px] justify-start w-[80%]">
                       <div
                           class="w-[25px] xl:w-[30px] h-[33px] xl:h-[44px] flex items-center justify-center">
-                        <img alt="" src="../assets/svg/sleeper_raw.svg">
+                        <img alt="" src="../assets/svg/sleeper_active.svg">
                       </div>
                       <div
                           class="w-[25px] xl:w-[30px] h-[33px] xl:h-[44px] flex items-center justify-center">
@@ -510,11 +496,11 @@
                       </div>
                       <div
                           class="w-[25px] xl:w-[30px] h-[33px] xl:h-[44px] flex items-center justify-center">
-                        <img alt="" src="../assets/svg/sleeper_raw.svg">
+                        <img alt="" src="../assets/svg/sleeper_active.svg">
                       </div>
                       <div
                           class="w-[25px] xl:w-[30px] h-[33px] xl:h-[44px] flex items-center justify-center">
-                        <img alt="" src="../assets/svg/sleeper_raw.svg">
+                        <img alt="" src="../assets/svg/sleeper_active.svg">
                       </div>
                     </div>
                   </div>
@@ -550,7 +536,7 @@
       <div class="px-[16px] py-[20px] w-full flex justify-center items-center">
         <router-link
             class="flex justify-center items-center text-white leading-[16px] text-[12px] xl:leading-[20px] xl:text-[14px] font-[600] bg-corporate bg-opacity-30 rounded-full px-[20px] py-[11px] xl:px-[24px] xl:py-[13px]"
-            to="/sleeperCoachBUsCreateActive">
+            to="/sleeperCoachCreateFilled">
           Preview bus
         </router-link>
       </div>

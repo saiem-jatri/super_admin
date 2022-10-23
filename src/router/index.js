@@ -125,13 +125,10 @@ import Bus from '@/views/bus.vue'
 import BusCreate from '@/views/bus_create.vue'
 import BusCreateEdit from '@/views/bus_createEdit.vue'
 import MixedbusCreate from '@/views/mixed_bus_create.vue'
-import MixedbusCreateActive from '@/views/mixed_bus_create_active.vue'
 import MixedbusCreateFilled from '@/views/mixed_bus_create_filled.vue'
 import DoubleDackerbusCreate from '@/views/doubleDacker_bus_create.vue'
-import DoubleDackerbusCreateActive from '@/views/doubleDacker_bus_create_active.vue'
 import DoubleDackerCreateFilled from '@/views/doubleDacker_create_filled.vue'
 import SleeperCoachBUsCreate from '@/views/sleeperCoach_bus_create.vue'
-import SleeperCoachBUsCreateActive from '@/views/sleeperCoach_bus_create_active.vue'
 import SleeperCoachCreateFilled from '@/views/sleeperCoach_create_filled.vue'
 import StoppageCity from '@/views/stoppage-city.vue'
 import StoppageCityNext from '@/views/stoppage-city-next.vue'
@@ -801,11 +798,6 @@ const router = createRouter({
             component: MixedbusCreate
         },
         {
-            path: '/mixedbusCreateActive',
-            name: 'MixedbusCreateActive',
-            component: MixedbusCreateActive
-        },
-        {
             path: '/mixedbusCreateFilled',
             name: 'MixedbusCreateFilled',
             component: MixedbusCreateFilled
@@ -816,11 +808,6 @@ const router = createRouter({
             component: DoubleDackerbusCreate
         },
         {
-            path: '/doubleDackerbusCreateActive',
-            name: 'DoubleDackerbusCreateActive',
-            component: DoubleDackerbusCreateActive
-        },
-        {
             path: '/doubleDackerCreateFilled',
             name: 'DoubleDackerCreateFilled',
             component: DoubleDackerCreateFilled
@@ -829,11 +816,6 @@ const router = createRouter({
             path: '/sleeperCoachBUsCreate',
             name: 'SleeperCoachBUsCreate',
             component: SleeperCoachBUsCreate
-        },
-        {
-            path: '/sleeperCoachBUsCreateActive',
-            name: 'SleeperCoachBUsCreateActive',
-            component: SleeperCoachBUsCreateActive
         },
         {
             path: '/sleeperCoachCreateFilled',
