@@ -254,3 +254,52 @@ body {
 .blankSeat {
     @apply border-none bg-transparent cursor-default
 }
+
+/* Popup Buttons */
+.popupGreenButton {
+    @apply bg-[#48A43F] px-[42px] py-[10px] text-white text-xs font-medium rounded-full
+}
+.popupRedButton {
+    @apply bg-[#E0293B] px-[42px] py-[10px] text-white text-xs font-medium rounded-full
+}
+.popupPrimaryButton {
+    @apply bg-corporate px-7 py-[10px] text-white text-xs font-medium rounded-full
+}
+.popupCancelButton {
+    @apply bg-[#E0293B] px-[42px] py-[10px] text-white text-xs font-medium rounded-full
+}
+
+/* Prime Dialog Style */
+.dropdownIcon .p-dropdown-trigger{
+    @apply hidden
+}
+
+.popup-with-bg-header {
+    @apply rounded-[10px]
+}
+.popup-with-bg-header .p-dialog-content {
+    @apply pt-6 pb-5 px-8
+}
+.popup-with-bg-header .p-dialog-header {
+    @apply bg-corporate py-3 pl-6 pr-4 !justify-between !items-center
+}
+.popup-with-bg-header .p-dialog-header .p-dialog-title,
+.popup-with-bg-header .p-dialog-header .pi {
+   @apply text-white text-sm xl:text-base font-medium
+}
+.popup-with-bg-header .p-dialog-header-icons {
+    @apply !block
+}
+.popup-with-bg-header .p-dialog-header .p-dialog-header-icon:enabled:hover {
+    @apply bg-transparent
+}
+
+
+/* Prime Checkbox */
+.p-checkbox .p-checkbox-box {
+    @apply border-[#151414] rounded
+}
+.p-checkbox:not(.p-checkbox-disabled) .p-checkbox-box.p-highlight:hover,
+.p-checkbox .p-checkbox-box.p-highlight {
+    @apply bg-corporate border-corporate
+ }

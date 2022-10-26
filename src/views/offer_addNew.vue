@@ -76,11 +76,92 @@
                 <input class="createNormalInput" placeholder="Enter amount" type="text">
               </div>
             </div>
+
+            <!-- Modal Dropdown -->
             <div class="flex justify-center items-center gap-x-[10px] xl:gap-x-[16px] mt-[12px] xl:mt-[16px]">
               <div class="w-1/4">
                 <p class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]">Route</p>
-                <Dropdown v-model="selectedCity" :opti6ns="cities" class="w-full py-[4px] mt-[10px]" optionLabel="name" placeholder="Select route"/>
-              </div>
+                  <button @click="openModal" class="relative mt-[10px] w-full flex justify-between items-center px-2 h-[40px] py-2 outline-none border border-corporateBorder rounded text-sm text-[#4D4D4F]">
+                    Select Route
+                    <img alt="" class="absolute right-4 top-1/2 transform -translate-y-1/2" src="@/assets/svg/down_arrow.svg">
+                  </button>
+
+                  <Dialog v-model:visible="displayModal" :breakpoints="{'960px': '75vw', '640px': '90vw'}" :modal="true"
+                        :style="{minWidth: '870px', background: '#000'}" header="ROUTES" class="popup-with-bg-header">
+                            <div class="border border-corporateBorder rounded grid grid-cols-2 mb-5">
+
+                              <div class="field-checkbox py-[19px] px-[11px] border-r border-b border-corporateBorder flex items-center gap-x-14">
+                                  <Checkbox inputId="binary" v-model="checked" :binary="true" />
+                                  <label for="binary" class="text-xs xl:text-sm text-primaryText font-medium">Dhaka - Tangail - Bogura - Rangpur</label>
+                              </div>
+
+                              <div class="field-checkbox py-[19px] px-[11px] border-b border-corporateBorder flex items-center gap-x-14">
+                                  <Checkbox inputId="binary" v-model="checked" :binary="true" />
+                                  <label for="binary" class="text-xs xl:text-sm text-primaryText font-medium">Dhaka - Tangail - Bogura - Rangpur</label>
+                              </div>
+
+                              <div class="field-checkbox py-[19px] px-[11px] border-r border-b border-corporateBorder flex items-center gap-x-14">
+                                  <Checkbox inputId="binary" v-model="checked" :binary="true" />
+                                  <label for="binary" class="text-xs xl:text-sm text-primaryText font-medium">Dhaka - Tangail - Bogura - Rangpur</label>
+                              </div>
+
+                              <div class="field-checkbox py-[19px] px-[11px] border-b border-corporateBorder flex items-center gap-x-14">
+                                  <Checkbox inputId="binary" v-model="checked" :binary="true" />
+                                  <label for="binary" class="text-xs xl:text-sm text-primaryText font-medium">Dhaka - Tangail - Bogura - Rangpur</label>
+                              </div>
+
+                              <div class="field-checkbox py-[19px] px-[11px] border-r border-b border-corporateBorder flex items-center gap-x-14">
+                                  <Checkbox inputId="binary" v-model="checked" :binary="true" />
+                                  <label for="binary" class="text-xs xl:text-sm text-primaryText font-medium">Dhaka - Tangail - Bogura - Rangpur</label>
+                              </div>
+
+                              <div class="field-checkbox py-[19px] px-[11px] border-b border-corporateBorder flex items-center gap-x-14">
+                                  <Checkbox inputId="binary" v-model="checked" :binary="true" />
+                                  <label for="binary" class="text-xs xl:text-sm text-primaryText font-medium">Dhaka - Tangail - Bogura - Rangpur</label>
+                              </div>
+
+                              <div class="field-checkbox py-[19px] px-[11px] border-r border-b border-corporateBorder flex items-center gap-x-14">
+                                  <Checkbox inputId="binary" v-model="checked" :binary="true" />
+                                  <label for="binary" class="text-xs xl:text-sm text-primaryText font-medium">Dhaka - Tangail - Bogura - Rangpur</label>
+                              </div>
+
+                              <div class="field-checkbox py-[19px] px-[11px] border-b border-corporateBorder flex items-center gap-x-14">
+                                  <Checkbox inputId="binary" v-model="checked" :binary="true" />
+                                  <label for="binary" class="text-xs xl:text-sm text-primaryText font-medium">Dhaka - Tangail - Bogura - Rangpur</label>
+                              </div>
+
+                              <div class="field-checkbox py-[19px] px-[11px] border-r border-b border-corporateBorder flex items-center gap-x-14">
+                                  <Checkbox inputId="binary" v-model="checked" :binary="true" />
+                                  <label for="binary" class="text-xs xl:text-sm text-primaryText font-medium">Dhaka - Tangail - Bogura - Rangpur</label>
+                              </div>
+
+                              <div class="field-checkbox py-[19px] px-[11px] border-b border-corporateBorder flex items-center gap-x-14">
+                                  <Checkbox inputId="binary" v-model="checked" :binary="true" />
+                                  <label for="binary" class="text-xs xl:text-sm text-primaryText font-medium">Dhaka - Tangail - Bogura - Rangpur</label>
+                              </div>
+
+                              <div class="field-checkbox py-[19px] px-[11px] border-r border-corporateBorder flex items-center gap-x-14">
+                                  <Checkbox inputId="binary" v-model="checked" :binary="true" />
+                                  <label for="binary" class="text-xs xl:text-sm text-primaryText font-medium">Dhaka - Tangail - Bogura - Rangpur</label>
+                              </div>
+
+                              <div class="field-checkbox py-[19px] px-[11px] flex items-center gap-x-14">
+                                  <Checkbox inputId="binary" v-model="checked" :binary="true" />
+                                  <label for="binary" class="text-xs xl:text-sm text-primaryText font-medium">Dhaka - Tangail - Bogura - Rangpur</label>
+                              </div>
+                            </div>
+
+                            <div class="flex gap-x-7 justify-center items-center">
+                              <button autofocus class="px-9 py-3 border border-corporateBorder text-corporate text-sm font-medium rounded-full flex gap-x-[11px] items-center" icon="pi pi-check" @click="closeModal">
+                                  <img src="../assets/svg/reset.svg" alt=""> Reset
+                                </button>
+                                <button autofocus class="bg-corporate px-5 py-3 text-white text-sm font-medium rounded-full flex gap-x-[11px] items-center" icon="pi pi-check" @click="closeModal">
+                                  <img src="../assets/svg/white_check.svg" alt=""> Select routes
+                                </button>
+                            </div>
+                    </Dialog>
+              </div> 
+
               <div class="w-1/4">
                 <p class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]">
                   Start date</p>
@@ -303,8 +384,6 @@ select::-ms-expand {
 
 
 /*checkbox*/
-
-
 .form-group {
   display: block;
   /*margin-bottom: 15px;*/
@@ -364,14 +443,21 @@ select::-ms-expand {
 export default {
   data() {
     return {
+      checked: false,
       selectedCity: null,
+      displayModal: false,
       cities: [
-        {name: 'Own', code: 'NY'},
-        {name: 'Third Party', code: 'RM'},
-        // {name: 'London', code: 'LDN'},
-        // {name: 'Istanbul', code: 'IST'},
-        // {name: 'Paris', code: 'PRS'}
+        {name: 'Dhaka', code: 'Dhaka'},
+        {name: 'Rangpur', code: 'Rangpur'},
       ]
+    }
+  },
+  methods: {
+    openModal() {
+      this.displayModal = true;
+    },
+    closeModal() {
+      this.displayModal = false;
     }
   }
 }

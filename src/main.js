@@ -9,6 +9,7 @@ import TopBarNav from '../src/components/TopBarNav.vue'
 import SelectButton from 'primevue/selectbutton';
 import InputSwitch from 'primevue/inputswitch';
 import Dialog from 'primevue/dialog';
+import Checkbox from 'primevue/checkbox';
 const app = createApp(App)
 
 app.component('SidebarNav', SidebarNav);
@@ -19,4 +20,5 @@ app.component('Dropdown', Dropdown);
 app.component('SelectButton', SelectButton);
 app.component('InputSwitch', InputSwitch);
 app.component('Dialog', Dialog);
+app.component('Checkbox', Checkbox);
 app.mount('#app')
