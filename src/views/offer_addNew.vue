@@ -90,7 +90,7 @@
                         :style="{minWidth: '870px', background: '#000'}" header="ROUTES" class="popup-with-bg-header">
                             <div class="rounded grid grid-cols-2 divide-x divide-y border-r border-b border-corporateBorder mb-5">
 
-                              <div class="field-checkbox py-[19px] px-[11px] flex items-center gap-x-14  border-l border-t border-corporateBorder">
+                              <div class="field-checkbox py-[19px] px-[11px] flex items-center gap-x-14 rounded-tl border-l border-t border-corporateBorder">
                                   <Checkbox inputId="binary" v-model="checked" :binary="true" />
                                   <label for="binary" class="text-xs xl:text-sm text-primaryText font-medium">Dhaka - Tangail - Bogura - Rangpur</label>
                               </div>
