@@ -88,59 +88,59 @@
 
                   <Dialog v-model:visible="displayModal" :breakpoints="{'960px': '75vw', '640px': '90vw'}" :modal="true"
                         :style="{minWidth: '870px', background: '#000'}" header="ROUTES" class="popup-with-bg-header">
-                            <div class="border border-corporateBorder rounded grid grid-cols-2 mb-5">
+                            <div class="rounded grid grid-cols-2 divide-x divide-y border-r border-b border-corporateBorder mb-5">
 
-                              <div class="field-checkbox py-[19px] px-[11px] border-r border-b border-corporateBorder flex items-center gap-x-14">
+                              <div class="field-checkbox py-[19px] px-[11px] flex items-center gap-x-14  border-l border-t border-corporateBorder">
                                   <Checkbox inputId="binary" v-model="checked" :binary="true" />
                                   <label for="binary" class="text-xs xl:text-sm text-primaryText font-medium">Dhaka - Tangail - Bogura - Rangpur</label>
                               </div>
 
-                              <div class="field-checkbox py-[19px] px-[11px] border-b border-corporateBorder flex items-center gap-x-14">
+                              <div class="field-checkbox py-[19px] px-[11px] flex items-center gap-x-14">
                                   <Checkbox inputId="binary" v-model="checked" :binary="true" />
                                   <label for="binary" class="text-xs xl:text-sm text-primaryText font-medium">Dhaka - Tangail - Bogura - Rangpur</label>
                               </div>
 
-                              <div class="field-checkbox py-[19px] px-[11px] border-r border-b border-corporateBorder flex items-center gap-x-14">
+                              <div class="field-checkbox py-[19px] px-[11px] flex items-center gap-x-14">
                                   <Checkbox inputId="binary" v-model="checked" :binary="true" />
                                   <label for="binary" class="text-xs xl:text-sm text-primaryText font-medium">Dhaka - Tangail - Bogura - Rangpur</label>
                               </div>
 
-                              <div class="field-checkbox py-[19px] px-[11px] border-b border-corporateBorder flex items-center gap-x-14">
+                              <div class="field-checkbox py-[19px] px-[11px] flex items-center gap-x-14">
                                   <Checkbox inputId="binary" v-model="checked" :binary="true" />
                                   <label for="binary" class="text-xs xl:text-sm text-primaryText font-medium">Dhaka - Tangail - Bogura - Rangpur</label>
                               </div>
 
-                              <div class="field-checkbox py-[19px] px-[11px] border-r border-b border-corporateBorder flex items-center gap-x-14">
+                              <div class="field-checkbox py-[19px] px-[11px] flex items-center gap-x-14">
                                   <Checkbox inputId="binary" v-model="checked" :binary="true" />
                                   <label for="binary" class="text-xs xl:text-sm text-primaryText font-medium">Dhaka - Tangail - Bogura - Rangpur</label>
                               </div>
 
-                              <div class="field-checkbox py-[19px] px-[11px] border-b border-corporateBorder flex items-center gap-x-14">
+                              <div class="field-checkbox py-[19px] px-[11px] flex items-center gap-x-14">
                                   <Checkbox inputId="binary" v-model="checked" :binary="true" />
                                   <label for="binary" class="text-xs xl:text-sm text-primaryText font-medium">Dhaka - Tangail - Bogura - Rangpur</label>
                               </div>
 
-                              <div class="field-checkbox py-[19px] px-[11px] border-r border-b border-corporateBorder flex items-center gap-x-14">
+                              <div class="field-checkbox py-[19px] px-[11px] flex items-center gap-x-14">
                                   <Checkbox inputId="binary" v-model="checked" :binary="true" />
                                   <label for="binary" class="text-xs xl:text-sm text-primaryText font-medium">Dhaka - Tangail - Bogura - Rangpur</label>
                               </div>
 
-                              <div class="field-checkbox py-[19px] px-[11px] border-b border-corporateBorder flex items-center gap-x-14">
+                              <div class="field-checkbox py-[19px] px-[11px] flex items-center gap-x-14">
                                   <Checkbox inputId="binary" v-model="checked" :binary="true" />
                                   <label for="binary" class="text-xs xl:text-sm text-primaryText font-medium">Dhaka - Tangail - Bogura - Rangpur</label>
                               </div>
 
-                              <div class="field-checkbox py-[19px] px-[11px] border-r border-b border-corporateBorder flex items-center gap-x-14">
+                              <div class="field-checkbox py-[19px] px-[11px] flex items-center gap-x-14">
                                   <Checkbox inputId="binary" v-model="checked" :binary="true" />
                                   <label for="binary" class="text-xs xl:text-sm text-primaryText font-medium">Dhaka - Tangail - Bogura - Rangpur</label>
                               </div>
 
-                              <div class="field-checkbox py-[19px] px-[11px] border-b border-corporateBorder flex items-center gap-x-14">
+                              <div class="field-checkbox py-[19px] px-[11px] flex items-center gap-x-14">
                                   <Checkbox inputId="binary" v-model="checked" :binary="true" />
                                   <label for="binary" class="text-xs xl:text-sm text-primaryText font-medium">Dhaka - Tangail - Bogura - Rangpur</label>
                               </div>
 
-                              <div class="field-checkbox py-[19px] px-[11px] border-r border-corporateBorder flex items-center gap-x-14">
+                              <div class="field-checkbox py-[19px] px-[11px] flex items-center gap-x-14">
                                   <Checkbox inputId="binary" v-model="checked" :binary="true" />
                                   <label for="binary" class="text-xs xl:text-sm text-primaryText font-medium">Dhaka - Tangail - Bogura - Rangpur</label>
                               </div>
