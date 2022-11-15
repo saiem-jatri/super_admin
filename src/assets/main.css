@@ -273,7 +273,6 @@ body {
 .dropdownIcon .p-dropdown-trigger{
     @apply hidden
 }
-
 .popup-with-bg-header {
     @apply rounded-[10px]
 }
@@ -303,3 +302,77 @@ body {
 .p-checkbox .p-checkbox-box.p-highlight {
     @apply bg-corporate border-corporate
  }
+
+
+ /* Form Styles */
+.formSmallMessage {
+    @apply text-[#676769] text-[10px] xl:text-xs font-medium mt-1
+}
+.requiredFieldBlock {
+    @apply w-full flex justify-between items-center
+}
+.requiredFiledIcon {
+    @apply w-[9px] h-[24px]
+}
+.primaryFormLabel {
+    @apply text-primaryText text-xs xl:text-base font-semibold block capitalize
+}
+.smallFormLabel {
+    @apply text-primaryText text-xs xl:text-sm font-semibold block capitalize
+}
+.primaryInputField {
+    @apply w-full mt-2.5 p-2 h-10 outline-none border border-corporateBorder rounded text-xs xl:text-sm placeholder:text-[#676769] placeholder:capitalize placeholder:text-xs xl:placeholder:text-sm
+}
+.primaryTextareaField {
+    @apply w-full mt-2.5 p-2 outline-none border border-corporateBorder rounded text-xs xl:text-sm placeholder:text-[#676769] placeholder:capitalize placeholder:text-xs xl:placeholder:text-sm
+}
+.primaryDateField {
+    @apply relative mt-2.5 h-10 bg-white flex justify-between outline-none border border-corporateBorder rounded
+}
+.primaryDateFieldInput {
+    @apply w-full bg-transparent p-2 h-10 outline-none text-xs xl:text-sm placeholder:text-[#676769] placeholder:capitalize placeholder:text-xs xl:placeholder:text-sm
+} 
+.primaryDateFieldIcon {
+    @apply pr-2.5 w-7 xl:w-8
+}
+.primaryFormDropdown {
+    @apply w-full mt-2.5 p-2 h-10 border border-solid border-corporateBorder rounded text-xs xl:text-sm placeholder:text-[#676769] placeholder:capitalize placeholder:text-xs xl:placeholder:text-sm focus:outline-none
+}
+.dividerFieldBlock {
+    @apply relative bg-white px-2 py-1 mt-2.5 h-10 flex justify-between gap-2 xl:gap-5 outline-none border border-corporateBorder divide-x divide-[#D9D9D9] rounded
+}
+.dividerFieldInput {
+    @apply w-full bg-transparent flex items-center outline-none border-none text-xs xl:text-sm placeholder:text-[#676769] placeholder:capitalize placeholder:text-xs xl:placeholder:text-sm
+}
+.dividerFieldText {
+    @apply flex items-center pl-2 xl:pl-4 text-xs xl:text-sm text-[#676769]
+}
+.dividerFieldWithBg {
+    @apply flex items-center pl-2
+}
+.dividerFieldWithBg select {
+    @apply p-1 bg-corporateBg rounded-sm text-xs xl:text-sm text-primaryText outline-none
+}
+.primaryCheckbox {
+    @apply w-[18px] h-[18px] accent-corporateSuccess
+}
+
+/* Fare Block */
+.fareInputField {
+    @apply w-20 xl:w-[120px] px-2 py-1.5 outline-none border border-corporateBorder rounded text-xs xl:text-sm placeholder:text-[#676769] placeholder:capitalize placeholder:text-xs xl:placeholder:text-sm
+}
+.fareFormLabel {
+    @apply w-[120px] xl:w-[155px] text-primaryText text-xs xl:text-base font-medium block capitalize
+}
+.fareCheckBoxes .fareCheckBox {
+    @apply grid gap-2 xl:gap-9
+}
+.fareCheckBoxes .fareCheckBox {
+    grid-template-columns: 100px 100px 100px 1fr;
+}
+.fareCheckboxPrimaryLabel {
+    @apply text-primaryText text-xs xl:text-base font-medium block capitalize
+}
+.fareCheckboxSmallLabel {
+    @apply text-primaryText text-[11px] xl:text-sm font-medium block capitalize
+}

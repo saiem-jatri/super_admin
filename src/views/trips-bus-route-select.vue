@@ -74,10 +74,227 @@
             <p class="text-[#1E88E5] leading-[20px] xl:leading-[24px] text-[14px] xl:text-[16px] font-[600]">TICKET FARE</p>
               <div class="w-1/4 mt-3 xl:mt-4">
                 <p class="text-primaryText leading-[20px] text-[12px] xl:leading-[24px] xl:text-[16px] font-[600]">Route</p>
-                <Dropdown class="w-full py-[4px] mt-[10px]" v-model="selectedCity" :opti6ns="cities" optionLabel="name" placeholder="Dhaka-Tangail-Bogura-Rangpur" />
+                <Dropdown class="w-full py-[4px] mt-[10px]" v-model="selectedCity" :opti6ns="cities" optionLabel="name" placeholder="Select Route" />
               </div>
-            <hr class="mt-3 xl:mt-4 border-t border-dashed border-[#DBDBDB]">
-            <div class="w-[70%] mt-3 xl:mt-4">
+            <hr class="mt-4 border-t border-dashed border-[#DBDBDB]">
+
+
+            <!-- Fare Block -->
+            <div class="pt-4 flex gap-4 divide-x divide-corporateBorder">
+              <div class="flex flex-col gap-2">
+                <div class="flex gap-3 xl:gap-6">
+                  <p class="w-[120px] xl:w-[155px]">&nbsp;</p>
+                  <p class="text-primaryText text-xs xl:text-sm font-medium block capitalize">Economy</p>
+                </div>
+
+                <div class="flex gap-3 xl:gap-6">
+                  <p class="w-[120px] xl:w-[155px] text-[10px] xl:text-xs text-[#676769] font-medium uppercase">MAIN ROUTE</p>
+                  <p></p>
+                </div>
+                <div class="flex gap-3 xl:gap-6 items-center">
+                  <label for="" class="fareFormLabel">Dhaka - Rangpur:</label>
+                  <input type="text" class="fareInputField" placeholder="Enter Fare">
+                </div>
+
+                <div class="flex gap-3 xl:gap-6">
+                  <p class="w-[120px] xl:w-[155px] text-[10px] xl:text-xs text-[#676769] !font-medium uppercase">SUB ROUTE</p>
+                  <p></p>
+                </div>
+                <div class="flex gap-3 xl:gap-6 items-center">
+                  <label for="" class="fareFormLabel">Dhaka - Bogura:</label>
+                  <input type="text" class="fareInputField" placeholder="Enter Fare">
+                </div>
+
+                <div class="flex gap-3 xl:gap-6 items-center">
+                  <label for="" class="fareFormLabel">Dhaka - Tangail:</label>
+                  <input type="text" class="fareInputField" placeholder="Enter Fare">
+                </div>
+
+                <div class="flex gap-3 xl:gap-6 items-center">
+                  <label for="" class="fareFormLabel">Tangail - Bogura:</label>
+                  <input type="text" class="fareInputField" placeholder="Enter Fare">
+                </div>
+
+                <div class="flex gap-3 xl:gap-6 items-center">
+                  <label for="" class="fareFormLabel">Tangail - Rangpur:</label>
+                  <input type="text" class="fareInputField" placeholder="Enter Fare">
+                </div>
+
+                <div class="flex gap-3 xl:gap-6 items-center">
+                  <label for="" class="fareFormLabel">Bogura - Rangpur:</label>
+                  <input type="text" class="fareInputField" placeholder="Enter Fare">
+                </div>
+
+                <div class="flex gap-3 xl:gap-6 items-center">
+                  <label for="" class="fareFormLabel">Dhaka - Chittagong:</label>
+                  <input type="text" class="fareInputField" placeholder="Enter Fare">
+                </div>
+              </div>
+
+              <div class="flex flex-col justify-center gap-5 pl-4 fareCheckBoxes">
+                <div class="fareCheckBox">
+                  <div class="form-group mb-0">
+                    <input type="checkbox" id="read1">
+                    <label for="read1" class="fareCheckboxSmallLabel">Mark all</label>
+                  </div>
+                  <div class="form-group mb-0">
+                    <input type="checkbox" id="read1">
+                    <label for="read1" class="fareCheckboxSmallLabel">Mark all</label>
+                  </div>
+                  <div class="form-group mb-0">
+                    <input type="checkbox" id="read1">
+                    <label for="read1" class="fareCheckboxSmallLabel">Mark all</label>
+                  </div>
+                  <div class="form-group mb-0">
+                    <input type="checkbox" id="read1">
+                    <label for="read1" class="fareCheckboxSmallLabel">Mark all</label>
+                  </div>
+                </div>
+
+                <div></div>
+
+                <div class="fareCheckBox">
+                  <div class="form-group mb-0">
+                    <input type="checkbox" id="read1">
+                    <label for="read1" class="fareCheckboxPrimaryLabel">Jatri</label>
+                  </div>
+                  <div class="form-group mb-0">
+                    <input type="checkbox" id="read1">
+                    <label for="read1" class="fareCheckboxPrimaryLabel">Counter</label>
+                  </div>
+                  <div class="form-group mb-0">
+                    <input type="checkbox" id="read1">
+                    <label for="read1" class="fareCheckboxPrimaryLabel">Agent</label>
+                  </div>
+                  <div class="form-group mb-0">
+                    <input type="checkbox" id="read1">
+                    <label for="read1" class="fareCheckboxPrimaryLabel">Customer Care</label>
+                  </div>
+                </div>
+
+                <div></div>
+
+                <div class="fareCheckBox">
+                  <div class="form-group mb-0">
+                    <input type="checkbox" id="read1">
+                    <label for="read1" class="fareCheckboxPrimaryLabel">Jatri</label>
+                  </div>
+                  <div class="form-group mb-0">
+                    <input type="checkbox" id="read1">
+                    <label for="read1" class="fareCheckboxPrimaryLabel">Counter</label>
+                  </div>
+                  <div class="form-group mb-0">
+                    <input type="checkbox" id="read1">
+                    <label for="read1" class="fareCheckboxPrimaryLabel">Agent</label>
+                  </div>
+                  <div class="form-group mb-0">
+                    <input type="checkbox" id="read1">
+                    <label for="read1" class="fareCheckboxPrimaryLabel">Customer Care</label>
+                  </div>
+                </div>
+
+                <div class="fareCheckBox">
+                  <div class="form-group mb-0">
+                    <input type="checkbox" id="read1">
+                    <label for="read1" class="fareCheckboxPrimaryLabel">Jatri</label>
+                  </div>
+                  <div class="form-group mb-0">
+                    <input type="checkbox" id="read1">
+                    <label for="read1" class="fareCheckboxPrimaryLabel">Counter</label>
+                  </div>
+                  <div class="form-group mb-0">
+                    <input type="checkbox" id="read1">
+                    <label for="read1" class="fareCheckboxPrimaryLabel">Agent</label>
+                  </div>
+                  <div class="form-group mb-0">
+                    <input type="checkbox" id="read1">
+                    <label for="read1" class="fareCheckboxPrimaryLabel">Customer Care</label>
+                  </div>
+                </div>
+
+                <div class="fareCheckBox">
+                  <div class="form-group mb-0">
+                    <input type="checkbox" id="read1">
+                    <label for="read1" class="fareCheckboxPrimaryLabel">Jatri</label>
+                  </div>
+                  <div class="form-group mb-0">
+                    <input type="checkbox" id="read1">
+                    <label for="read1" class="fareCheckboxPrimaryLabel">Counter</label>
+                  </div>
+                  <div class="form-group mb-0">
+                    <input type="checkbox" id="read1">
+                    <label for="read1" class="fareCheckboxPrimaryLabel">Agent</label>
+                  </div>
+                  <div class="form-group mb-0">
+                    <input type="checkbox" id="read1">
+                    <label for="read1" class="fareCheckboxPrimaryLabel">Customer Care</label>
+                  </div>
+                </div>
+
+                <div class="fareCheckBox">
+                  <div class="form-group mb-0">
+                    <input type="checkbox" id="read1">
+                    <label for="read1" class="fareCheckboxPrimaryLabel">Jatri</label>
+                  </div>
+                  <div class="form-group mb-0">
+                    <input type="checkbox" id="read1">
+                    <label for="read1" class="fareCheckboxPrimaryLabel">Counter</label>
+                  </div>
+                  <div class="form-group mb-0">
+                    <input type="checkbox" id="read1">
+                    <label for="read1" class="fareCheckboxPrimaryLabel">Agent</label>
+                  </div>
+                  <div class="form-group mb-0">
+                    <input type="checkbox" id="read1">
+                    <label for="read1" class="fareCheckboxPrimaryLabel">Customer Care</label>
+                  </div>
+                </div>
+
+                <div class="fareCheckBox">
+                  <div class="form-group mb-0">
+                    <input type="checkbox" id="read1">
+                    <label for="read1" class="fareCheckboxPrimaryLabel">Jatri</label>
+                  </div>
+                  <div class="form-group mb-0">
+                    <input type="checkbox" id="read1">
+                    <label for="read1" class="fareCheckboxPrimaryLabel">Counter</label>
+                  </div>
+                  <div class="form-group mb-0">
+                    <input type="checkbox" id="read1">
+                    <label for="read1" class="fareCheckboxPrimaryLabel">Agent</label>
+                  </div>
+                  <div class="form-group mb-0">
+                    <input type="checkbox" id="read1">
+                    <label for="read1" class="fareCheckboxPrimaryLabel">Customer Care</label>
+                  </div>
+                </div>
+
+                <div class="fareCheckBox">
+                  <div class="form-group mb-0">
+                    <input type="checkbox" id="read1">
+                    <label for="read1" class="fareCheckboxPrimaryLabel">Jatri</label>
+                  </div>
+                  <div class="form-group mb-0">
+                    <input type="checkbox" id="read1">
+                    <label for="read1" class="fareCheckboxPrimaryLabel">Counter</label>
+                  </div>
+                  <div class="form-group mb-0">
+                    <input type="checkbox" id="read1">
+                    <label for="read1" class="fareCheckboxPrimaryLabel">Agent</label>
+                  </div>
+                  <div class="form-group mb-0">
+                    <input type="checkbox" id="read1">
+                    <label for="read1" class="fareCheckboxPrimaryLabel">Customer Care</label>
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+
+
+
+
+            <!-- <div class="w-[70%] mt-3 xl:mt-4">
               <div class="flex justify-between gap-x-[20px] xl:gap-x-[27px]">
                 <div class="w-full">
                   <div class="flex justify-between items-center">
@@ -230,7 +447,9 @@
                 </div>
               </div>
 
-            </div>
+            </div> -->
+
+
           </div>
           <hr class="border-t border-corporateBorder">
           <div class="p-4">
