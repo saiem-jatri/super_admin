@@ -4,18 +4,22 @@
 body {
     @apply font-inter
 }
+
 .p-dropdown {
     border-radius: 4px;
 }
+
 .p-dropdown:not(.p-disabled).p-focus,
 .p-dropdown:not(.p-disabled):hover {
-  box-shadow: none !important;
-  outline: none !important;
-  border-color: #ced4da !important;
+    box-shadow: none !important;
+    outline: none !important;
+    border-color: #ced4da !important;
 }
+
 .webkit-text-center {
     text-align: -webkit-center;
 }
+
 .menu {
     @apply p-2 w-full text-black leading-[20px] text-[14px] font-[500] border-b border-[#DBDBDB] block cursor-pointer last:border-b-0
 }
@@ -109,7 +113,7 @@ body {
 }
 
 .createNormalInput {
-    @apply focus:outline-none mt-[10px] w-full border border-[#DBDBDB] rounded-[4px] pl-2 py-[8px] placeholder:text-[#676769] placeholder:leading-[16px] placeholder:text-[14px] xl:placeholder:leading-[20px] xl:placeholder:text-[14px]
+    @apply focus:outline-none mt-[10px] w-full border border-[#DBDBDB] rounded-[4px] pl-2 py-[8px] placeholder:text-[#676769] placeholder:leading-[16px] placeholder:text-[12px] xl:placeholder:leading-[20px]
 }
 
 .createNormalInputActive {
@@ -143,6 +147,7 @@ body {
 .seatButton {
     @apply w-[25px] xl:w-[30px] h-[20px] xl:h-[24px] text-center text-white bg-corporate rounded-sm leading-[16px] xl:leading-[20px] text-[12px] xl:text-[14px]
 }
+
 .whiteSeatButton {
     @apply w-[40px] xl:w-[45px] h-[25px] xl:h-[30px] text-center text-corporate bg-white rounded-sm leading-[16px] xl:leading-[20px] text-[12px] xl:text-[14px]
 }

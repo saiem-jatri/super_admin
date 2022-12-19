@@ -95,7 +95,7 @@
                   type="text">
             </div>
           </div>
-            
+
           <div class="flex items-center gap-x-4 w-full px-4 pb-4">
             <div class="w-1/4">
               <div class="flex justify-between items-center w-full">
@@ -557,7 +557,7 @@
                   </button>
                 </div>
               </div>
-              
+
             <div class="flex gap-x-2 items-center">
               <router-link to="/userCreateAdmin" class="lessOpacityCorporateButton">Create jatri admin</router-link>
               <button class="flex justify-center items-center gap-x-[10px] corporateButton">

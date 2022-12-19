@@ -105,7 +105,7 @@ import ChallanReport from '@/views/challan-report.vue'
 import TripWiseExpenseReport from '@/views/trip-wise-expense-report.vue'
 import Invoice from '@/views/invoice.vue'
 import InvoiceCurrentbill from '@/views/invoice_currentbill.vue'
-import InvoiceGeneratebill from '@/views/invoice_generatebill.vue'  
+import InvoiceGeneratebill from '@/views/invoice_generatebill.vue'
 import BillAdjustment from '@/views/bill-adjustment.vue'
 import Offer from '@/views/offer.vue'
 import OfferAdd from '@/views/offer_addNew.vue'
@@ -138,6 +138,8 @@ import Challan from '@/views/challan.vue'
 import Fees from '@/views/fees.vue'
 import OperatorCharge from '@/views/operator-charge.vue'
 import SystemUsageBill from '@/views/syatem-usage-bill.vue'
+import TicketDesign from '@/views/ticket_design.vue'
+import TicketEdit from '@/views/ticket_edit.vue'
 
 const router = createRouter({
     history: createWebHistory(import.meta.env.BASE_URL),
@@ -151,6 +153,16 @@ const router = createRouter({
             path: '/forgetPassword',
             name: 'forgetPassword',
             component: ForgetPassword
+        },
+        {
+            path: '/ticketDesign',
+            name: 'ticketDesign',
+            component: TicketDesign
+        },
+        {
+            path: '/ticketEdit',
+            name: 'ticketEdit',
+            component: TicketEdit
         },
         {
             path: '/dashboard',
