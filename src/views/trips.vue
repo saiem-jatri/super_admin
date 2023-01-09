@@ -175,9 +175,164 @@
                   class="flex justify-center items-center bg-[#EDEDED] gap-x-[10px] leading-[16px] text-[12px] font-[500] text-primaryText rounded-full w-[80px] h-[26px] xl:w-[90px] xl:h-[36px]">
                 <span><img alt="" class="w-[8px] h-[8px]" src="../assets/svg/ash_cross.svg"></span>Cancel
               </button>
-              <button class="companyEditButton"><span><img alt="" class="w-[16px] h-[231px]"
-                                                           src="../assets/svg/copy.svg"></span>Copy
+
+
+              <!-- Trip Copy -->
+              <button @click="openModal2" class="companyEditButton">
+                <img alt="copy-icon" src="../assets/svg/copy.svg">
+                <span>Copy</span>
               </button>
+
+              <Dialog v-model:visible="displayModal2" :breakpoints="{'960px': '75vw', '640px': '90vw'}" :modal="true" :style="{minWidth: '80%', background: '#000'}" header="TRIP COPY" class="popup-with-bg-header">
+                <div class="divide-y divide-corporateBorder space-y-4">
+                  <div class="divide-y divide-dashed divide-corporateBorder space-y-4">
+                    <div class="grid grid-cols-4 gap-4"> 
+                      <div>
+                        <label class="primaryFormLabel">Coach / Trip ID</label>
+                        <input
+                          class="primaryInputField"
+                          placeholder="Enter coach / trip id"
+                          type="text">
+                      </div>
+                    </div>
+
+                    <div>
+                      <p class="small-blue-heading my-4">PUBLISH TRIP FOR</p>
+                      <div class="grid grid-cols-4 gap-4">
+                        <div>
+                          <label class="primaryFormLabel">Jatri</label>
+                          <div class="flex items-center mt-2.5">
+                            <div class="w-1/2">
+                              <input type="radio" name="buttonSelect" hidden="" value="true">
+                              <label class="tripPermissionActiveBtn rounded-l" for=""> Yes </label>
+                            </div>
+                            <div class="w-1/2">
+                              <input id="" type="radio" name="buttonSelect" hidden="" value="false">
+                              <label for="" class="tripPermissionBtn rounded-r"> No </label>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div>
+                          <label class="primaryFormLabel">CC</label>
+                          <div class="flex items-center mt-2.5">
+                            <div class="w-1/2">
+                              <input type="radio" name="buttonSelect" hidden="" value="true">
+                              <label class="tripPermissionActiveBtn rounded-l" for=""> Yes </label>
+                            </div>
+                            <div class="w-1/2">
+                              <input id="" type="radio" name="buttonSelect" hidden="" value="false">
+                              <label for="" class="tripPermissionBtn rounded-r"> No </label>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div>
+                          <label class="primaryFormLabel">Agent</label>
+                          <div class="flex items-center mt-2.5">
+                            <div class="w-1/2">
+                              <input type="radio" name="buttonSelect" hidden="" value="true">
+                              <label class="tripPermissionActiveBtn rounded-l" for=""> Yes </label>
+                            </div>
+                            <div class="w-1/2">
+                              <input id="" type="radio" name="buttonSelect" hidden="" value="false">
+                              <label for="" class="tripPermissionBtn rounded-r"> No </label>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div>
+                      <p class="small-blue-heading my-4">TIME & AUTO RENEWAL</p>
+                      <div class="grid grid-cols-4 gap-4"> 
+                        <div>
+                          <label class="primaryFormLabel">Departure date</label>
+                          <div class="primaryDateField">
+                            <input
+                              class="primaryDateFieldInput"
+                              placeholder="Select date"
+                              type="text">
+                            <img alt="Calender Icon" class="primaryDateFieldIcon" src="@/assets/svg/count2.svg">
+                          </div>
+                        </div>
+
+                        <div>
+                          <label class="primaryFormLabel">Departure time</label>
+                          <input
+                            class="primaryTimeField"
+                            placeholder="Enter departure time"/>
+                        </div>
+
+                        <div>
+                          <label class="primaryFormLabel">Trip auto renewal in</label>
+                          <div class="dividerFieldBlock">
+                            <Dropdown
+                              class="dividerFieldInput"
+                              placeholder="Select day"/>
+                            <span class="dividerFieldText">Days</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div>
+                      <p class="small-blue-heading my-4">PUBLISH FOR A DATE</p>
+                      <div class="grid grid-cols-4 gap-4"> 
+                        <div>
+                          <label class="primaryFormLabel">From date</label>
+                          <div class="primaryDateField">
+                            <input
+                              class="primaryDateFieldInput"
+                              placeholder="Select date"
+                              type="text">
+                            <img alt="Calender Icon" class="primaryDateFieldIcon" src="@/assets/svg/count2.svg">
+                          </div>
+                        </div>
+
+                        <div>
+                          <label class="primaryFormLabel">From date</label>
+                          <div class="primaryDateField">
+                            <input
+                              class="primaryDateFieldInput"
+                              placeholder="Select date"
+                              type="text">
+                            <img alt="Calender Icon" class="primaryDateFieldIcon" src="@/assets/svg/count2.svg">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="pt-4 flex justify-between items-center">
+                    <div class="flex gap-4 items-center">
+                      <label class="primaryFormLabel">Status</label>
+                      <div class="flex items-center">
+                        <div>
+                          <input id="buttonSelect-active" type="radio" :value="true" name="buttonSelect" hidden>
+                          <label
+                            class="cursor-pointer w-[90px] xl:w-[110px]  text-xs xl:text-sm flex justify-center items-center font-medium h-10 rounded-l"
+                            :class="status ? 'bg-[#48A43F] text-white' : 'bg-corporateBg border border-corporateBorder '"
+                            for="buttonSelect-active">
+                            Active
+                          </label>
+                        </div>
+                        <div>
+                          <input id="buttonSelect-inactive" type="radio" :value="false" name="buttonSelect" hidden>
+                          <label
+                            for="buttonSelect-inactive"
+                            :class="!status ? 'bg-[#48A43F] text-white' : 'bg-corporateBg border border-corporateBorder '"
+                            class="cursor-pointer w-[90px] xl:w-[110px] text-primaryText text-xs xl:text-sm flex justify-center items-center font-medium h-10 rounded-r">
+                            Inactive
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                    <button class="corporateButton">Copy trip</button>
+                  </div>
+                </div>
+              </Dialog>
+
               <button
                   class="flex justify-center items-center gap-x-[10px] bg-[#1E88E5] leading-[16px] text-[12px] font-[500] text-white rounded-full w-[80px] h-[26px] xl:w-[90px] xl:h-[36px]">
                 <span><img alt="" class="w-[16px] h-[231px]" src="../assets/svg/white_edit.svg"></span>Edit
@@ -496,7 +651,8 @@ export default {
   data() {
     return {
       checked: true,
-      displayModal: false
+      displayModal: false,
+      displayModal2: false,
     }
   },
 
@@ -507,6 +663,12 @@ export default {
     closeModal() {
       this.displayModal = false;
     },
+    openModal2() {
+      this.displayModal2 = true;
+    },
+    closeModal2() {
+      this.displayModal2 = false;
+    }
   }
 }
 </script>
