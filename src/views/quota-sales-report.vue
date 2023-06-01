@@ -114,7 +114,7 @@
             </div>
             <div class="bg-white rounded-[8px] mt-4">
               <!-- table start -->
-              <table class="min-w-full">
+              <!-- <table class="min-w-full">
                 <thead>
                   <tr class="bg-[#4D4D4F] h-[36px]">
                     <th class="companyTableHead" scope="col" style="border-radius: 6px 0 0 0">
@@ -183,8 +183,222 @@
                         </td>
                     </tr>
                 </tbody>
-              </table>
+              </table> -->
               
+
+              <!--Table Start-->
+              <table class="min-w-full">
+                  <thead>
+                    <tr class="bg-[#4D4D4F] h-[36px]">
+                      <th class="companyTableHead" scope="col" style="border-radius: 6px 0 0 0">
+                        bus operator 
+                      </th>
+                      <th class="companyTableHead" scope="col">
+                          trip/coach no
+                      </th>
+                      <th class="companyTableHead" scope="col">
+                          Date
+                      </th>
+                      <th class="companyTableHead" scope="col">
+                          counter
+                      </th>
+                      <th class="companyTableHead" scope="col">
+                          counter type
+                      </th>
+                      <th class="companyTableHead" scope="col">
+                          assinged qouta
+                      </th>
+                      <th class="companyTableHead" scope="col">
+                          Sold seats
+                      </th>
+                      <th class="companyTableHead" scope="col">
+                          available seats
+                      </th>
+                      <th class="companyTableHead" scope="col">
+                          qouta release
+                      </th>
+                      <th class="companyTableHead" scope="col">
+                          Action
+                      </th>
+                    </tr>
+                  </thead>
+
+                  <!-- Bus Operator -->
+                  <tr class="border-b border-l border-[#EDEDED]">
+                      <td rowspan="18" class="tableTd">Desh Travels</td>
+                      <td rowspan="9" class="tableTd">id1</td>
+                      <td rowspan="3" class="tableTd">date 1</td>
+                      <td class="tableTd">State1</td>
+                      <td class="tableTd">State2</td>
+                      <td class="tableTd">State3</td>
+                      <td class="tableTd">State4</td>
+                      <td class="tableTd">State5</td>
+                      <td class="tableTd">State6</td>
+                      <td class="tableTd">State7</td>
+                  </tr>
+                  <tr class="border-b border-l border-[#EDEDED]">
+                      <td class="tableTd">State1</td>
+                      <td class="tableTd">State2</td>
+                      <td class="tableTd">State3</td>
+                      <td class="tableTd">State4</td>
+                      <td class="tableTd">State5</td>
+                      <td class="tableTd">State6</td>
+                      <td class="tableTd">State7</td>
+                  </tr>
+                  <tr class="border-b border-l border-[#EDEDED]">
+                      <td class="tableTd">State1</td>
+                      <td class="tableTd">State2</td>
+                      <td class="tableTd">State3</td>
+                      <td class="tableTd">State4</td>
+                      <td class="tableTd">State5</td>
+                      <td class="tableTd">State6</td>
+                      <td class="tableTd">State7</td>
+                  </tr>
+                  <tr class="border-b border-l border-[#EDEDED]">
+                      <td rowspan="3" class="tableTd">date 2</td>
+                      <td class="tableTd">State1</td>
+                      <td class="tableTd">State2</td>
+                      <td class="tableTd">State3</td>
+                      <td class="tableTd">State4</td>
+                      <td class="tableTd">State5</td>
+                      <td class="tableTd">State6</td>
+                      <td class="tableTd">State7</td>
+                  </tr>
+                  <tr class="border-b border-l border-[#EDEDED]">
+                      <td class="tableTd">State1</td>
+                      <td class="tableTd">State2</td>
+                      <td class="tableTd">State3</td>
+                      <td class="tableTd">State4</td>
+                      <td class="tableTd">State5</td>
+                      <td class="tableTd">State6</td>
+                      <td class="tableTd">State7</td>
+                  </tr>
+                  <tr class="border-b border-l border-[#EDEDED]">
+                      <td class="tableTd">State1</td>
+                      <td class="tableTd">State2</td>
+                      <td class="tableTd">State3</td>
+                      <td class="tableTd">State4</td>
+                      <td class="tableTd">State5</td>
+                      <td class="tableTd">State6</td>
+                      <td class="tableTd">State7</td>
+                  </tr>
+
+                  <tr class="border-b border-l border-[#EDEDED]">
+                      <td rowspan="3" class="tableTd">date 3</td>
+                      <td class="tableTd">State1</td>
+                      <td class="tableTd">State2</td>
+                      <td class="tableTd">State3</td>
+                      <td class="tableTd">State4</td>
+                      <td class="tableTd">State5</td>
+                      <td class="tableTd">State6</td>
+                      <td class="tableTd">State7</td>
+                  </tr>
+                  <tr class="border-b border-l border-[#EDEDED]">
+                      <td class="tableTd">State1</td>
+                      <td class="tableTd">State2</td>
+                      <td class="tableTd">State3</td>
+                      <td class="tableTd">State4</td>
+                      <td class="tableTd">State5</td>
+                      <td class="tableTd">State6</td>
+                      <td class="tableTd">State7</td>
+                  </tr>
+                  <tr class="border-b border-l border-[#EDEDED]">
+                      <td class="tableTd">State1</td>
+                      <td class="tableTd">State2</td>
+                      <td class="tableTd">State3</td>
+                      <td class="tableTd">State4</td>
+                      <td class="tableTd">State5</td>
+                      <td class="tableTd">State6</td>
+                      <td class="tableTd">State7</td>
+                  </tr>
+
+                  <!--2nd ID-->
+                  <tr class="border-b border-l border-[#EDEDED]">
+                      <td rowspan="9" class="tableTd">id2</td>
+                      <td rowspan="3" class="tableTd">date 1</td>
+                      <td class="tableTd">State1</td>
+                      <td class="tableTd">State2</td>
+                      <td class="tableTd">State3</td>
+                      <td class="tableTd">State4</td>
+                      <td class="tableTd">State5</td>
+                      <td class="tableTd">State6</td>
+                      <td class="tableTd">State7</td>
+                  </tr>
+                  <tr class="border-b border-l border-[#EDEDED]">
+                      <td class="tableTd">State1</td>
+                      <td class="tableTd">State2</td>
+                      <td class="tableTd">State3</td>
+                      <td class="tableTd">State4</td>
+                      <td class="tableTd">State5</td>
+                      <td class="tableTd">State6</td>
+                      <td class="tableTd">State7</td>
+                  </tr>
+                  <tr class="border-b border-l border-[#EDEDED]">
+                      <td class="tableTd">State1</td>
+                      <td class="tableTd">State2</td>
+                      <td class="tableTd">State3</td>
+                      <td class="tableTd">State4</td>
+                      <td class="tableTd">State5</td>
+                      <td class="tableTd">State6</td>
+                      <td class="tableTd">State7</td>
+                  </tr>
+                  <tr class="border-b border-l border-[#EDEDED]">
+                      <td rowspan="3" class="tableTd">date 2</td>
+                      <td class="tableTd">State1</td>
+                      <td class="tableTd">State2</td>
+                      <td class="tableTd">State3</td>
+                      <td class="tableTd">State4</td>
+                      <td class="tableTd">State5</td>
+                      <td class="tableTd">State6</td>
+                      <td class="tableTd">State7</td>
+                  </tr>
+                  <tr class="border-b border-l border-[#EDEDED]">
+                      <td class="tableTd">State2</td>
+                      <td class="tableTd">State3</td>
+                      <td class="tableTd">State1</td>
+                      <td class="tableTd">State4</td>
+                      <td class="tableTd">State5</td>
+                      <td class="tableTd">State6</td>
+                      <td class="tableTd">State7</td>
+                  </tr>
+                  <tr class="border-b border-l border-[#EDEDED]">
+                      <td class="tableTd">State1</td>
+                      <td class="tableTd">State2</td>
+                      <td class="tableTd">State3</td>
+                      <td class="tableTd">State4</td>
+                      <td class="tableTd">State5</td>
+                      <td class="tableTd">State6</td>
+                      <td class="tableTd">State7</td>
+                  </tr>
+                  <tr class="border-b border-l border-[#EDEDED]">
+                      <td rowspan="3" class="tableTd">date 3</td>
+                      <td class="tableTd">State1</td>
+                      <td class="tableTd">State2</td>
+                      <td class="tableTd">State3</td>
+                      <td class="tableTd">State4</td>
+                      <td class="tableTd">State5</td>
+                      <td class="tableTd">State6</td>
+                      <td class="tableTd">State7</td>
+                  </tr>
+                  <tr class="border-b border-l border-[#EDEDED]">
+                      <td class="tableTd">State1</td>
+                      <td class="tableTd">State2</td>
+                      <td class="tableTd">State3</td>
+                      <td class="tableTd">State4</td>
+                      <td class="tableTd">State5</td>
+                      <td class="tableTd">State6</td>
+                      <td class="tableTd">State7</td>
+                  </tr>
+                  <tr class="border-b border-l border-[#EDEDED]">
+                      <td class="tableTd">State1</td>
+                      <td class="tableTd">State2</td>
+                      <td class="tableTd">State3</td>
+                      <td class="tableTd">State4</td>
+                      <td class="tableTd">State5</td>
+                      <td class="tableTd">State6</td>
+                      <td class="tableTd">State7</td>
+                  </tr>
+              </table>
             </div>
 
             <div class="flex items-center gap-x-[128px] mt-[30px]">
